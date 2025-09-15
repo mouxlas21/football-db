@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ country.name }} — Country</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <h1 style="margin:0 0 .5rem">{{ country.name }}</h1>
+      <p><strong>ISO2:</strong> {{ country.iso2 or '—' }}</p>
+    </div>
+
+    <section style="margin-top:1rem">
+      <h2 style="margin:0 0 .5rem">Leagues</h2>
+      <div class="card">
+        <div style="overflow:auto">
+          <table style="width:100%; border-collapse:collapse">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">League</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Tier</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for lg in leagues %}
+              <tr>
+                <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.name }}</td>
+                <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.tier if lg.tier is not none else '—' }}</td>
+                <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                  <a href="/leagues/{{ lg.league_id }}">View</a>
+                </td>
+              </tr>
+              {% else %}
+              <tr><td colspan="3" style="padding:.75rem">No leagues yet.</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="footer">
+          <a href="/leagues?country_id={{ country.country_id }}">Browse all leagues in {{ country.name }}</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:1rem">
+      <h2 style="margin:0 0 .5rem">Cups & Competitions</h2>
+      <div class="card">
+        {% if cups and cups|length > 0 %}
+          <!-- render cups when you add that table -->
+        {% else %}
+          <p style="margin:0">No cups yet. (We’ll add this when the cups table is in.)</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <p style="margin-top:1rem"><a href="/countries">← All Countries</a></p>
+  </main>
+</body>
+</html>

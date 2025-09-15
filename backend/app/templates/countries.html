@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Countries — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="container">
+    <h1>Countries</h1>
+    <form method="get" action="/countries" class="search-bar" style="margin-top:.75rem">
+      <input type="text" name="q" value="{{ q }}" placeholder="Search by name…" aria-label="Search countries"/>
+      <button type="submit">Search</button>
+    </form>
+    <p style="margin:.5rem 0 0; color:#444">{{ countries|length }} result{{ '' if countries|length == 1 else 's' }}</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <div style="overflow:auto">
+        <table style="width:100%; border-collapse:collapse">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Name</th>
+              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">ISO2</th>
+              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for c in countries %}
+            <tr>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.name }}</td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.iso2 or '—' }}</td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                <a href="/countries/{{ c.country_id }}">View</a>
+              </td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3" style="padding:.75rem">No countries found.</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p style="margin-top:1rem">
+      <a href="/">← Back to Home</a>
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="container">
+    <h1>Football Database</h1>
+    <form id="global-search" action="/search" method="get" class="search-bar">
+      <input type="text" name="q" placeholder="Search players, clubs, leagues, matches…" aria-label="Search"/>
+      <input type="hidden" name="season" value="{{ season }}"/>
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="season-row">
+      <label for="season">Season:</label>
+      <select id="season">
+        <!-- Add/compute your available seasons here or fill via JS -->
+        <option value="">All</option>
+        <option value="2024-25" {{ "selected" if season=="2024-25" else "" }}>2024-25</option>
+        <option value="2023-24" {{ "selected" if season=="2023-24" else "" }}>2023-24</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- DASHBOARD ROW -->
+    <section class="grid">
+      <article class="card" id="card-matches-today">
+        <h2>Today’s Matches</h2>
+        <ul class="list" data-role="list"></ul>
+        <div class="footer">
+          <a id="link-matches-today" href="/matches?date=today">View matches</a>
+        </div>
+      </article>
+
+      <article class="card" id="card-top-leagues">
+        <h2>Top Leagues</h2>
+        <div class="chips" data-role="chips"></div>
+        <div class="footer">
+          <a id="link-leagues" href="/leagues">View leagues</a>
+        </div>
+      </article>
+
+      <article class="card" id="card-trending-clubs">
+        <h2>Trending Clubs</h2>
+        <ul class="list" data-role="list"></ul>
+        <div class="footer">
+          <a id="link-clubs" href="/clubs?sort=trending">View clubs</a>
+        </div>
+      </article>
+
+      <article class="card" id="card-leaderboards">
+        <h2>Leaderboards</h2>
+        <nav class="tabs">
+          <button data-tab="scorers" class="active">Scorers</button>
+          <button data-tab="assists">Assists</button>
+          <button data-tab="clean_sheets">Clean Sheets</button>
+        </nav>
+        <ul class="list" data-role="list"></ul>
+        <div class="footer">
+          <a id="link-stats" href="/stats">Full stats</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- CLASSIC INDEX -->
+    <section class="index-grid">
+      <a class="index-card" href="/countries{{ '?season=' + season if season else '' }}">
+        <h3>🌍 Countries</h3>
+        <p>Browse all countries in the database.</p>
+      </a>
+      <a class="index-card" href="/leagues{{ '?season=' + season if season else '' }}">
+        <h3>🏆 Leagues / Competitions</h3>
+        <p>Standings, fixtures, results, and stats.</p>
+      </a>
+      <a class="index-card" href="/clubs{{ '?season=' + season if season else '' }}">
+        <h3>🏟️ Clubs</h3>
+        <p>Squads, fixtures, club stats, history.</p>
+      </a>
+      <a class="index-card" href="/players{{ '?season=' + season if season else '' }}">
+        <h3>👤 Players</h3>
+        <p>Profiles, career paths, season stats.</p>
+      </a>
+      <a class="index-card" href="/matches{{ '?season=' + season if season else '' }}">
+        <h3>⚽ Matches</h3>
+        <p>By date, league, or club; full details.</p>
+      </a>
+      <a class="index-card" href="/stats{{ '?season=' + season if season else '' }}">
+        <h3>📊 Stats / Analytics</h3>
+        <p>Leaderboards and comparisons.</p>
+      </a>
+    </section>
+  </main>
+
+  <script>
+    // pass season from server to JS
+    window.__SEASON__ = "{{ season }}";
+  </script>
+  <script src="/static/js/home.js" defer></script>
+</body>
+</html>
