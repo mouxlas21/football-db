@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Clubs</title></head>
+<body>
+  <h1>Clubs</h1>
+
+  <form method="get" style="margin-bottom:1rem">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by name">
+    <input type="number" name="country_id" value="{{ country_id or '' }}" placeholder="country_id">
+    <button type="submit">Filter</button>
+  </form>
+
+  <ul>
+  {% for c in clubs %}
+    <li>
+      <a href="/clubs/{{ c.club_id }}">{{ c.name }}</a>
+      {% if c.short_name %} ({{ c.short_name }}){% endif %}
+      — {{ country_map.get(c.country_id, '—') }}
+    </li>
+  {% else %}
+    <li>No clubs found.</li>
+  {% endfor %}
+  </ul>
+
+  <p><a href="/">Home</a></p>
+</body>
+</html>

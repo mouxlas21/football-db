@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CSV Import</title></head>
+<body>
+  <h1>CSV Import</h1>
+
+  <section>
+    <h2>Countries</h2>
+    <p>Headers: <code>name, iso2</code> (iso2 optional)</p>
+    <form action="/import/csv?entity=countries" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Countries</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Clubs</h2>
+    <p>Headers: <code>name, short_name, founded, country_id, stadium_id, colors</code> (only <code>name</code> required)</p>
+    <form action="/import/csv?entity=clubs" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Clubs</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Competitions</h2>
+    <p>Headers: <code>name, type, organizer, country_id, confederation</code></p>
+    <form action="/import/csv?entity=competitions" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Competitions</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Players</h2>
+    <p>Headers: <code>full_name, known_as, dob (YYYY-MM-DD), country_id, height_cm, weight_kg, foot, primary_position</code></p>
+    <form action="/import/csv?entity=players" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Players</button>
+    </form>
+  </section>
+
+  <p style="margin-top:2rem"><a href="/">Home</a></p>
+</body>
+</html>

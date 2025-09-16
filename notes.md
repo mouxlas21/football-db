@@ -34,3 +34,4 @@ docker compose logs -f backend
 
 docker compose build backend
 docker compose up -d backend
+docker compose restart backend

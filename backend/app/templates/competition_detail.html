@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ competition.name }}</title></head>
+<body>
+  <h1>{{ competition.name }}</h1>
+  <p><strong>Type:</strong> {{ competition.type }}</p>
+  {% if competition.organizer %}<p><strong>Organizer:</strong> {{ competition.organizer }}</p>{% endif %}
+  <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
+  {% if competition.confederation %}<p><strong>Confederation:</strong> {{ competition.confederation }}</p>{% endif %}
+  <p><a href="/competitions">← Back to competitions</a></p>
+</body>
+</html>

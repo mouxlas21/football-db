@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ person.full_name }}</title></head>
+<body>
+  <h1>{{ person.full_name }}</h1>
+  {% if person.known_as %}<p><strong>Known as:</strong> {{ person.known_as }}</p>{% endif %}
+  {% if person.dob %}<p><strong>Date of birth:</strong> {{ person.dob }}</p>{% endif %}
+  <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
+  {% if person.height_cm %}<p><strong>Height:</strong> {{ person.height_cm }} cm</p>{% endif %}
+  {% if person.weight_kg %}<p><strong>Weight:</strong> {{ person.weight_kg }} kg</p>{% endif %}
+
+  <h2>Player info</h2>
+  {% if player.primary_position %}<p><strong>Position:</strong> {{ player.primary_position }}</p>{% endif %}
+  {% if player.foot %}<p><strong>Foot:</strong> {{ player.foot }}</p>{% endif %}
+
+  <p><a href="/players">← Back to players</a></p>
+</body>
+</html>

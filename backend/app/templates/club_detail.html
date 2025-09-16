@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ club.name }}</title></head>
+<body>
+  <h1>{{ club.name }}</h1>
+  {% if club.short_name %}<p><strong>Short name:</strong> {{ club.short_name }}</p>{% endif %}
+  {% if club.founded %}<p><strong>Founded:</strong> {{ club.founded }}</p>{% endif %}
+  <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
+  <p><strong>Stadium:</strong> {{ stadium.name if stadium else '—' }}</p>
+  {% if club.colors %}<p><strong>Colors:</strong> {{ club.colors }}</p>{% endif %}
+  <p><a href="/clubs">← Back to clubs</a></p>
+</body>
+</html>

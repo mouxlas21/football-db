@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Players</title>
+</head>
+<body>
+  <h1>Players</h1>
+
+  <form method="get" style="margin-bottom:1rem">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search by name">
+    <input type="number" name="country_id" value="{{ country_id or '' }}" placeholder="country_id">
+    <button type="submit">Filter</button>
+  </form>
+
+  <ul>
+    {% for row in players %}
+      {% set p = row.player %}
+      {% set pe = row.person %}
+      <li>
+        <a href="/players/{{ p.player_id }}">{{ pe.full_name }}</a>
+        {% if pe.known_as %} ({{ pe.known_as }}){% endif %}
+        — {{ country_map.get(pe.country_id, '—') }}
+        {% if p.primary_position %} • {{ p.primary_position }}{% endif %}
+      </li>
+    {% else %}
+      <li>No players found.</li>
+    {% endfor %}
+  </ul>
+
+  <p><a href="/">Home</a></p>
+</body>
+</html>
