@@ -10,7 +10,7 @@
   <header class="container">
     <h1>Football Database</h1>
     <form id="global-search" action="/search" method="get" class="search-bar">
-      <input type="text" name="q" placeholder="Search players, clubs, leagues, matches…" aria-label="Search"/>
+      <input type="text" name="q" placeholder="Search players, clubs, leagues, fixtures…" aria-label="Search"/>
       <input type="hidden" name="season" value="{{ season }}"/>
       <button type="submit">Search</button>
     </form>
@@ -33,7 +33,7 @@
         <h2>Today’s Matches</h2>
         <ul class="list" data-role="list"></ul>
         <div class="footer">
-          <a id="link-matches-today" href="/matches?date=today">View matches</a>
+          <a id="link-matches-today" href="/fixtures?date=today">View fixtures</a>
         </div>
       </article>
 
@@ -85,8 +85,8 @@
         <h3>👤 Players</h3>
         <p>Profiles, career paths, season stats.</p>
       </a>
-      <a class="index-card" href="/matches{{ '?season=' + season if season else '' }}">
-        <h3>⚽ Matches</h3>
+      <a class="index-card" href="/fixtures{{ '?season=' + season if season else '' }}">
+        <h3>⚽ Fixtures</h3>
         <p>By date, league, or club; full details.</p>
       </a>
       <a class="index-card" href="/stats{{ '?season=' + season if season else '' }}">

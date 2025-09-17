@@ -13,7 +13,7 @@
   }
 
   // Wire season into “View all” links
-  setHref("link-matches-today", "/matches?date=today");
+  setHref("link-matches-today", "/fixtures?date=today");
   setHref("link-leagues", "/leagues");
   setHref("link-clubs", "/clubs?sort=trending");
   setHref("link-stats", "/stats");
@@ -45,7 +45,7 @@
   (async function loadMatchesToday() {
     const root = document.querySelector("#card-matches-today [data-role='list']");
     if (!root) return;
-    const data = await getJSON("/api/matches?date=today&limit=10");
+    const data = await getJSON("/api/fixtures?date=today&limit=10");
     root.innerHTML = "";
     if (!data || !Array.isArray(data) || data.length === 0) {
       root.innerHTML = `<li>No matches found for today.</li>`;
@@ -53,11 +53,11 @@
     }
     data.forEach(m => {
       // Adjust fields to your schema
-      const id = m.id || m.match_id || m.uuid;
+      const id = m.id || m.fixture_id || m.match_id || m.uuid;
       const home = m.home_name || m.home || m.home_team?.name || "Home";
       const away = m.away_name || m.away || m.away_team?.name || "Away";
       const time = m.kickoff || m.start_time || m.date || "";
-      const href = withSeason(`/matches/${id}`);
+      const href = withSeason(`/fixtures/${id}`);
       const li = document.createElement("li");
       li.innerHTML = `<a href="${href}">${home} vs ${away}</a> ${time ? "— " + time : ""}`;
       root.appendChild(li);

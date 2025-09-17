@@ -1,11 +1,11 @@
-# backend/app/services/importers/matches.py
+# backend/app/services/importers/fixtures.py
 from typing import Dict, Any, Tuple
 from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 from sqlalchemy import select, and_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import Match, Season, Stage, StageRound  # Round -> StageRound
+from app.models import Fixture, Season, Stage, StageRound  # Fixture instead of Match
 
 def _parse_dt(val: str | None) -> datetime | None:
     if not val:
@@ -33,31 +33,23 @@ def _to_int(val):
     except Exception:
         return None
 
-class MatchesImporter(BaseImporter):
+class FixturesImporter(BaseImporter):
     """
     Accepted CSV headers (either style works):
 
     A) ID-based
-       stage_round_id (or round_id), group_id, home_team_id, away_team_id,
+       stage_round_id, group_id, home_team_id, away_team_id,
        kickoff_utc, stadium_id, attendance, status, home_score, away_score, winner_team_id
 
-    B) Name-based (no stage_round_id/round_id)
+    B) Name-based (no stage_round_id)
        season_name, stage_name, round_name, home_team_id, away_team_id,
        kickoff_utc, stadium_id, attendance, status, home_score, away_score, winner_team_id
     """
-    entity = "matches"
-
-    # detect FK field name on the ORM (new vs old)
-    _round_fk_attr = "stage_round_id" if hasattr(Match, "stage_round_id") else "round_id"
+    entity = "fixtures"
 
     def _resolve_stage_round_id(self, raw: Dict[str, Any], db: Session) -> int | None:
-        # 1) Prefer explicit ID if provided (new name first)
+        # 1) Prefer explicit ID if provided
         rid = _to_int(raw.get("stage_round_id"))
-        if rid:
-            return rid
-
-        # Back-compat: accept old CSV header "round_id"
-        rid = _to_int(raw.get("round_id"))
         if rid:
             return rid
 
@@ -100,9 +92,8 @@ class MatchesImporter(BaseImporter):
         if not (kickoff and home_team_id and away_team_id and stage_round_id):
             return False, {}
 
-        # Build kwargs using the correct FK key name for the current ORM
-        kwargs = {
-            self._round_fk_attr: stage_round_id,
+        return True, {
+            "stage_round_id": stage_round_id,
             "group_id": group_id,
             "home_team_id": home_team_id,
             "away_team_id": away_team_id,
@@ -114,23 +105,21 @@ class MatchesImporter(BaseImporter):
             "away_score": away_score,
             "winner_team_id": winner_team_id,
         }
-        return True, kwargs
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
         """
         Idempotent-ish upsert:
-        - If a match with the same (stage_round_id/round_id, home_team_id, away_team_id, kickoff_utc) exists,
+        - If a fixture with the same (stage_round_id, home_team_id, away_team_id, kickoff_utc) exists,
           update status/scores/attendance/stadium/winner/group.
         - Else insert.
         """
-        fk = self._round_fk_attr  # "stage_round_id" or "round_id"
         existing = db.execute(
-            select(Match).where(
+            select(Fixture).where(
                 and_(
-                    getattr(Match, fk) == kwargs[fk],
-                    Match.home_team_id == kwargs["home_team_id"],
-                    Match.away_team_id == kwargs["away_team_id"],
-                    Match.kickoff_utc == kwargs["kickoff_utc"],
+                    Fixture.stage_round_id == kwargs["stage_round_id"],
+                    Fixture.home_team_id == kwargs["home_team_id"],
+                    Fixture.away_team_id == kwargs["away_team_id"],
+                    Fixture.kickoff_utc == kwargs["kickoff_utc"],
                 )
             )
         ).scalar_one_or_none()
@@ -148,5 +137,5 @@ class MatchesImporter(BaseImporter):
                 db.flush()
             return False
 
-        res = db.execute(insert(Match).values(**kwargs))
+        res = db.execute(insert(Fixture).values(**kwargs))
         return bool(getattr(res, "rowcount", 0))

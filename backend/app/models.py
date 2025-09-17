@@ -95,12 +95,13 @@ class Team(Base):
     club_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("club.club_id", ondelete="SET NULL"))
     national_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
 
-class Match(Base):
-    __tablename__ = "match"
-
-    match_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    round_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("round.round_id", ondelete="CASCADE"), nullable=False)
-    group_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("group.group_id", ondelete="SET NULL"))
+class Fixture(Base):
+    __tablename__ = "fixture"
+    fixture_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    # FK to stage_round
+    stage_round_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage_round.stage_round_id", ondelete="CASCADE"), nullable=False)
+    # FK to stage_group (nullable)
+    group_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stage_group.group_id", ondelete="SET NULL"))
     home_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     away_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     kickoff_utc: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)

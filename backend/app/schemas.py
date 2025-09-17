@@ -137,8 +137,8 @@ class TeamRead(BaseModel):
     class Config:
         from_attributes = True
 
-class MatchCreate(BaseModel):
-    round_id: int
+class FixtureCreate(BaseModel):
+    stage_round_id: int
     home_team_id: int
     away_team_id: int
     kickoff_utc: datetime
@@ -150,9 +150,9 @@ class MatchCreate(BaseModel):
     away_score: Optional[int] = 0
     winner_team_id: Optional[int] = None
 
-class MatchRead(BaseModel):
-    match_id: int
-    round_id: int
+class FixtureRead(BaseModel):
+    fixture_id: int
+    stage_round_id: int
     group_id: Optional[int] = None
     home_team_id: int
     away_team_id: int
@@ -163,5 +163,6 @@ class MatchRead(BaseModel):
     home_score: int
     away_score: int
     winner_team_id: Optional[int] = None
+
     class Config:
         from_attributes = True

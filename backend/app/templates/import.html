@@ -45,11 +45,11 @@
   <hr />
 
   <section>
-    <h2>Matches</h2>
-    <p>Headers: <code>round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id</code></p>
-    <form action="/import/csv?entity=matches" method="post" enctype="multipart/form-data">
+    <h2>Fixtures</h2>
+    <p>Headers: <code>stage_round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id</code></p>
+    <form action="/import/csv?entity=fixtures" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
-      <button type="submit">Upload Matches</button>
+      <button type="submit">Upload Fixtures</button>
     </form>
   </section>
 

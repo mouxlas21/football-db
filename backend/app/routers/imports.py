@@ -17,7 +17,7 @@ def import_page(request: Request):
 @router.post("/csv")
 async def import_csv(
     request: Request,
-    entity: str = Query(..., regex="^(country|countries|club|clubs|competition|competitions|player|players|stadium|stadiums|season|seasons|stage|stages|stage_round|stage_rounds|team|teams|match|matches)$"),
+    entity: str = Query(..., regex="^(country|countries|club|clubs|competition|competitions|player|players|stadium|stadiums|season|seasons|stage|stages|stage_round|stage_rounds|team|teams|fixture|fixtures)$"),
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
 ):

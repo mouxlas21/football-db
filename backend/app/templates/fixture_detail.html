@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Fixture {{ f.fixture_id }}</title></head>
+<body>
+  <h1>
+    {{ home.name if home else f.home_team_id }}
+    {{ " " }}vs{{ " " }}
+    {{ away.name if away else f.away_team_id }}
+  </h1>
+  <p><strong>Kickoff:</strong> {{ f.kickoff_utc }}</p>
+  <p><strong>Status:</strong> {{ f.status }}</p>
+  <p><strong>Score:</strong> {{ f.home_score }} - {{ f.away_score }}</p>
+  {% if winner %}<p><strong>Winner:</strong> {{ winner.name }}</p>{% endif %}
+  {% if stadium %}<p><strong>Stadium:</strong> {{ stadium.name }}</p>{% endif %}
+  {% if f.attendance %}<p><strong>Attendance:</strong> {{ f.attendance }}</p>{% endif %}
+
+  <p><a href="/fixtures">← Back to fixtures</a></p>
+</body>
+</html>

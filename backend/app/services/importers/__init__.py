@@ -6,7 +6,7 @@ from .countries import CountriesImporter
 from .clubs import ClubsImporter
 from .competitions import CompetitionsImporter
 from .players import PlayersImporter
-from .matches import MatchesImporter
+from .fixtures import FixturesImporter
 from .stadiums import StadiumsImporter
 from .seasons import SeasonsImporter
 from .stages import StagesImporter
@@ -22,8 +22,8 @@ REGISTRY: dict[str, BaseImporter] = {
     "competitions": CompetitionsImporter(),
     "player": PlayersImporter(),
     "players": PlayersImporter(),
-    "match": MatchesImporter(),
-    "matches": MatchesImporter(),
+    "fixture": FixturesImporter(),
+    "fixtures": FixturesImporter(),
     "stadium": StadiumsImporter(),
     "stadiums": StadiumsImporter(),
     "season": SeasonsImporter(),
