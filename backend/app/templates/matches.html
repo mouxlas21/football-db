@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Matches</title></head>
+<body>
+  <h1>Matches</h1>
+
+  <form method="get" style="margin-bottom:1rem">
+    <input type="date" name="date_from" value="{{ date_from }}">
+    <input type="date" name="date_to" value="{{ date_to }}">
+    <input type="number" name="team_id" value="{{ team_id or '' }}" placeholder="team_id">
+    <input type="number" name="limit" value="{{ limit }}" min="1" max="500">
+    <button type="submit">Filter</button>
+  </form>
+
+  <table border="1" cellspacing="0" cellpadding="6">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Kickoff (UTC)</th>
+        <th>Home</th>
+        <th></th>
+        <th>Away</th>
+        <th>Status</th>
+        <th>Score</th>
+        <th>Stadium</th>
+        <th>Attendance</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for m in matches %}
+        {% set home = teams.get(m.home_team_id) %}
+        {% set away = teams.get(m.away_team_id) %}
+        {% set stad = stadiums.get(m.stadium_id) %}
+        <tr>
+          <td><a href="/matches/{{ m.match_id }}">{{ m.match_id }}</a></td>
+          <td>{{ m.kickoff_utc }}</td>
+          <td>{{ home.name if home else m.home_team_id }}</td>
+          <td>vs</td>
+          <td>{{ away.name if away else m.away_team_id }}</td>
+          <td>{{ m.status }}</td>
+          <td>{{ m.home_score }} - {{ m.away_score }}</td>
+          <td>{{ stad.name if stad else "" }}</td>
+          <td>{{ m.attendance or "" }}</td>
+        </tr>
+      {% else %}
+        <tr><td colspan="9">No matches found.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <p><a href="/">Home</a></p>
+</body>
+</html>

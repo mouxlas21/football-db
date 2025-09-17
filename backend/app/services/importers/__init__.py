@@ -5,6 +5,12 @@ from .countries import CountriesImporter
 from .clubs import ClubsImporter
 from .competitions import CompetitionsImporter
 from .players import PlayersImporter
+from .matches import MatchesImporter
+from .stadiums import StadiumsImporter
+from .seasons import SeasonsImporter
+from .stages import StagesImporter
+from .rounds import RoundsImporter
+from .teams import TeamsImporter
 
 REGISTRY: dict[str, BaseImporter] = {
     "country": CountriesImporter(),
@@ -15,6 +21,18 @@ REGISTRY: dict[str, BaseImporter] = {
     "competitions": CompetitionsImporter(),
     "player": PlayersImporter(),
     "players": PlayersImporter(),
+    "match": MatchesImporter(),
+    "matches": MatchesImporter(),
+    "stadium": StadiumsImporter(),
+    "stadiums": StadiumsImporter(),
+    "season": SeasonsImporter(),
+    "seasons": SeasonsImporter(),
+    "stage": StagesImporter(),
+    "stages": StagesImporter(),
+    "round": RoundsImporter(),
+    "rounds": RoundsImporter(),
+    "team": TeamsImporter(),
+    "teams": TeamsImporter(),
 }
 
 def get_importer(entity: str) -> BaseImporter:

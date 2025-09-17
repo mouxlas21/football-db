@@ -6,7 +6,6 @@
 
   <section>
     <h2>Countries</h2>
-    <p>Headers: <code>name, iso2</code> (iso2 optional)</p>
     <form action="/import/csv?entity=countries" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
       <button type="submit">Upload Countries</button>
@@ -17,7 +16,6 @@
 
   <section>
     <h2>Clubs</h2>
-    <p>Headers: <code>name, short_name, founded, country_id, stadium_id, colors</code> (only <code>name</code> required)</p>
     <form action="/import/csv?entity=clubs" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
       <button type="submit">Upload Clubs</button>
@@ -28,7 +26,6 @@
 
   <section>
     <h2>Competitions</h2>
-    <p>Headers: <code>name, type, organizer, country_id, confederation</code></p>
     <form action="/import/csv?entity=competitions" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
       <button type="submit">Upload Competitions</button>
@@ -39,13 +36,78 @@
 
   <section>
     <h2>Players</h2>
-    <p>Headers: <code>full_name, known_as, dob (YYYY-MM-DD), country_id, height_cm, weight_kg, foot, primary_position</code></p>
     <form action="/import/csv?entity=players" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
       <button type="submit">Upload Players</button>
     </form>
   </section>
 
-  <p style="margin-top:2rem"><a href="/">Home</a></p>
+  <hr />
+
+  <section>
+    <h2>Matches</h2>
+    <p>Headers: <code>round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id</code></p>
+    <form action="/import/csv?entity=matches" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Matches</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Stadiums</h2>
+    <p>Headers: <code>name,city,country_id,capacity,opened_year,lat,lng</code></p>
+    <form action="/import/csv?entity=stadiums" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Stadiums</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Seasons</h2>
+    <p>Headers: <code>competition_id,competition_name,name,start_date,end_date</code> (either id or name)</p>
+    <form action="/import/csv?entity=seasons" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Seasons</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Stages</h2>
+    <p>Headers: <code>season_id,competition_name,season_name,name,stage_order,format</code> (resolve by season_id or (competition_name+season_name))</p>
+    <form action="/import/csv?entity=stages" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Stages</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Rounds</h2>
+    <p>Headers: <code>stage_id,season_name,stage_name,name,round_order,two_legs</code> (resolve by stage_id or (season_name+stage_name))</p>
+    <form action="/import/csv?entity=rounds" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Rounds</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Teams</h2>
+    <p>Headers: <code>team_id,name,type,club_id,club_name,national_country_id</code> (club can be resolved by name)</p>
+    <form action="/import/csv?entity=teams" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Teams</button>
+    </form>
+  </section>
+
+<p style="margin-top:2rem"><a href="/">Home</a></p>
 </body>
 </html>

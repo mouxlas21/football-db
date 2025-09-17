@@ -35,3 +35,11 @@ docker compose logs -f backend
 docker compose build backend
 docker compose up -d backend
 docker compose restart backend
+
+Competition
+   └── Season (e.g. Bundesliga 2024/25)
+        └── Stage (e.g. Regular Season, Group Stage, Knockout)
+             └── Round (e.g. Matchday 1, Quarterfinals)
+                  └── Match (e.g. Bayern vs Dortmund, 15 Jan 2025)
+
+matches take teams_ids from team table

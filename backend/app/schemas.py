@@ -1,7 +1,7 @@
 from __future__ import annotations
 from pydantic import BaseModel, Field
 from typing import Optional
-from datetime import date
+from datetime import date, datetime
 
 class CountryRead(BaseModel):
     country_id: int
@@ -125,5 +125,43 @@ class PlayerRead(BaseModel):
     foot: Optional[str] = None
     primary_position: Optional[str] = None
     person: PersonRead
+    class Config:
+        from_attributes = True
+
+class TeamRead(BaseModel):
+    team_id: int
+    name: str
+    type: str
+    club_id: Optional[int] = None
+    national_country_id: Optional[int] = None
+    class Config:
+        from_attributes = True
+
+class MatchCreate(BaseModel):
+    round_id: int
+    home_team_id: int
+    away_team_id: int
+    kickoff_utc: datetime
+    group_id: Optional[int] = None
+    stadium_id: Optional[int] = None
+    attendance: Optional[int] = None
+    status: Optional[str] = "scheduled"
+    home_score: Optional[int] = 0
+    away_score: Optional[int] = 0
+    winner_team_id: Optional[int] = None
+
+class MatchRead(BaseModel):
+    match_id: int
+    round_id: int
+    group_id: Optional[int] = None
+    home_team_id: int
+    away_team_id: int
+    kickoff_utc: datetime
+    stadium_id: Optional[int] = None
+    attendance: Optional[int] = None
+    status: str
+    home_score: int
+    away_score: int
+    winner_team_id: Optional[int] = None
     class Config:
         from_attributes = True

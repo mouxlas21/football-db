@@ -1,0 +1,2 @@
+round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id
+1,,11,38,2025-01-15T19:45:00Z,1,55000,final,3,1,11

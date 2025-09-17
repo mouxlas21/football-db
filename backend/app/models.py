@@ -6,6 +6,7 @@ from sqlalchemy import (
     String,
     Text,
     Date,
+    DateTime,
     SmallInteger,
     ForeignKey,
     Index,
@@ -13,7 +14,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 
 from .db import Base
-from datetime import date
+from datetime import date, datetime
 
 class Country(Base):
     __tablename__ = "country"
@@ -84,3 +85,52 @@ class Player(Base):
     primary_position: Mapped[str | None] = mapped_column(Text)
 
     person = relationship("Person", backref="player", uselist=False)
+
+class Team(Base):
+    __tablename__ = "team"
+
+    team_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    type: Mapped[str] = mapped_column(Text, nullable=False, default="club")
+    club_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("club.club_id", ondelete="SET NULL"))
+    national_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+
+class Match(Base):
+    __tablename__ = "match"
+
+    match_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    round_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("round.round_id", ondelete="CASCADE"), nullable=False)
+    group_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("group.group_id", ondelete="SET NULL"))
+    home_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
+    away_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
+    kickoff_utc: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    stadium_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stadium.stadium_id", ondelete="SET NULL"))
+    attendance: Mapped[int | None] = mapped_column(Integer)
+    status: Mapped[str] = mapped_column(Text, nullable=False, default="scheduled")
+    home_score: Mapped[int] = mapped_column(SmallInteger, default=0)
+    away_score: Mapped[int] = mapped_column(SmallInteger, default=0)
+    winner_team_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="SET NULL"))
+
+class Season(Base):
+    __tablename__ = "season"
+    season_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    competition_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("competition.competition_id", ondelete="CASCADE"), nullable=False)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    start_date: Mapped[date | None] = mapped_column(Date)
+    end_date: Mapped[date | None] = mapped_column(Date)
+
+class Stage(Base):
+    __tablename__ = "stage"
+    stage_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    season_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("season.season_id", ondelete="CASCADE"), nullable=False)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    stage_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
+    format: Mapped[str] = mapped_column(Text, nullable=False)
+
+class Round(Base):
+    __tablename__ = "round"
+    round_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    stage_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage.stage_id", ondelete="CASCADE"), nullable=False)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    round_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
+    two_legs: Mapped[bool] = mapped_column(default=False)
