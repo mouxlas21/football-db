@@ -21,7 +21,7 @@ class Country(Base):
 
     country_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
-    iso2: Mapped[str | None] = mapped_column(String(2), unique=True)
+    fifa_code: Mapped[str | None] = mapped_column(String(3), unique=True)
 
 
 class Stadium(Base):
@@ -127,10 +127,10 @@ class Stage(Base):
     stage_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
     format: Mapped[str] = mapped_column(Text, nullable=False)
 
-class Round(Base):
-    __tablename__ = "round"
-    round_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+class StageRound(Base):
+    __tablename__ = "stage_round"
+    stage_round_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     stage_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage.stage_id", ondelete="CASCADE"), nullable=False)
     name: Mapped[str] = mapped_column(Text, nullable=False)
-    round_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
+    stage_round_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
     two_legs: Mapped[bool] = mapped_column(default=False)

@@ -43,3 +43,31 @@ Competition
                   └── Match (e.g. Bayern vs Dortmund, 15 Jan 2025)
 
 matches take teams_ids from team table
+
+### Build order (safe topological order)
+
+## Phase A – bases
+1)country
+2)competition
+3)person → player
+4)season
+5)stadium
+6)club
+7)stage
+8)"group" (quoted name)
+9)round
+10)team
+
+entry
+
+Phase B – fixtures
+12) match
+
+Phase C – match data
+13) lineup
+14) appearance
+15) substitution
+16) event
+17) team_match_stats
+18) player_match_stats
+19) table_standings

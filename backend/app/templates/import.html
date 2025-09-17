@@ -89,11 +89,11 @@
   <hr />
 
   <section>
-    <h2>Rounds</h2>
-    <p>Headers: <code>stage_id,season_name,stage_name,name,round_order,two_legs</code> (resolve by stage_id or (season_name+stage_name))</p>
-    <form action="/import/csv?entity=rounds" method="post" enctype="multipart/form-data">
+    <h2>Stage Rounds</h2>
+    <p>Headers: <code>stage_id,season_name,stage_name,name,stage_round_order,two_legs</code> (resolve by stage_id or (season_name+stage_name))</p>
+    <form action="/import/csv?entity=stage_rounds" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
-      <button type="submit">Upload Rounds</button>
+      <button type="submit">Upload Stage Rounds</button>
     </form>
   </section>
 

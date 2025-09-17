@@ -1,3 +1,4 @@
+# backend/app/services/importers/__init__.py
 from typing import Iterable, Dict
 from sqlalchemy.orm import Session
 from .base import BaseImporter
@@ -9,7 +10,7 @@ from .matches import MatchesImporter
 from .stadiums import StadiumsImporter
 from .seasons import SeasonsImporter
 from .stages import StagesImporter
-from .rounds import RoundsImporter
+from .stage_rounds import StageRoundsImporter  # <-- renamed
 from .teams import TeamsImporter
 
 REGISTRY: dict[str, BaseImporter] = {
@@ -29,8 +30,8 @@ REGISTRY: dict[str, BaseImporter] = {
     "seasons": SeasonsImporter(),
     "stage": StagesImporter(),
     "stages": StagesImporter(),
-    "round": RoundsImporter(),
-    "rounds": RoundsImporter(),
+    "stage_round": StageRoundsImporter(),
+    "stage_rounds": StageRoundsImporter(),
     "team": TeamsImporter(),
     "teams": TeamsImporter(),
 }

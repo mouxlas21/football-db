@@ -5,7 +5,8 @@
 CREATE TABLE IF NOT EXISTS country (
   country_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name            TEXT NOT NULL UNIQUE,
-  iso2            CHAR(2) UNIQUE
+  fifa_code       VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$')
+
 );
 CREATE INDEX IF NOT EXISTS ix_country_name ON country(name);
 
@@ -88,24 +89,24 @@ CREATE TABLE IF NOT EXISTS stage (
   UNIQUE (season_id, name)
 );
 
-CREATE TABLE IF NOT EXISTS round (
-  round_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS stage_round (
+  stage_round_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   stage_id        BIGINT NOT NULL REFERENCES stage(stage_id) ON DELETE CASCADE,
   name            TEXT NOT NULL,
-  round_order     SMALLINT NOT NULL,
+  stage_round_order     SMALLINT NOT NULL,
   two_legs        BOOLEAN NOT NULL DEFAULT FALSE,
   UNIQUE (stage_id, name)
 );
 
-CREATE TABLE IF NOT EXISTS "group" (
+CREATE TABLE IF NOT EXISTS stage_group (
   group_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   stage_id        BIGINT NOT NULL REFERENCES stage(stage_id) ON DELETE CASCADE,
   name            TEXT NOT NULL,
   UNIQUE (stage_id, name)
 );
 
-CREATE TABLE IF NOT EXISTS entry (
-  entry_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS season_team (
+  season_team_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   season_id       BIGINT NOT NULL REFERENCES season(season_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   seeding         TEXT,
@@ -114,10 +115,10 @@ CREATE TABLE IF NOT EXISTS entry (
   UNIQUE (season_id, team_id)
 );
 
-CREATE TABLE IF NOT EXISTS match (
-  match_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  round_id        BIGINT NOT NULL REFERENCES round(round_id) ON DELETE CASCADE,
-  group_id        BIGINT REFERENCES "group"(group_id) ON DELETE SET NULL,
+CREATE TABLE IF NOT EXISTS fixture (
+  fixture_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  stage_round_id        BIGINT NOT NULL REFERENCES stage_round(stage_round_id) ON DELETE CASCADE,
+  group_id        BIGINT REFERENCES stage_group(group_id) ON DELETE SET NULL,
   home_team_id    BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
   away_team_id    BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
   kickoff_utc     TIMESTAMPTZ NOT NULL,
@@ -127,23 +128,23 @@ CREATE TABLE IF NOT EXISTS match (
   home_score      SMALLINT DEFAULT 0,
   away_score      SMALLINT DEFAULT 0,
   winner_team_id  BIGINT REFERENCES team(team_id) ON DELETE SET NULL,
-  CONSTRAINT match_teams_different CHECK (home_team_id <> away_team_id)
+  CONSTRAINT fixture_teams_different CHECK (home_team_id <> away_team_id)
 );
-CREATE INDEX IF NOT EXISTS ix_match_round ON match(round_id);
-CREATE INDEX IF NOT EXISTS ix_match_kickoff ON match(kickoff_utc);
-CREATE INDEX IF NOT EXISTS ix_match_teams ON match(home_team_id, away_team_id);
+CREATE INDEX IF NOT EXISTS ix_fixture_stage_round ON fixture(stage_round_id);
+CREATE INDEX IF NOT EXISTS ix_fixture_kickoff ON fixture(kickoff_utc);
+CREATE INDEX IF NOT EXISTS ix_fixture_teams ON fixture(home_team_id, away_team_id);
 
 CREATE TABLE IF NOT EXISTS lineup (
   lineup_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   formation       TEXT,
-  UNIQUE (match_id, team_id)
+  UNIQUE (fixture_id, team_id)
 );
 
 CREATE TABLE IF NOT EXISTS appearance (
   appearance_id   BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   player_id       BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE,
   shirt_number    SMALLINT,
@@ -152,24 +153,24 @@ CREATE TABLE IF NOT EXISTS appearance (
   minute_off      SMALLINT,
   captain         BOOLEAN DEFAULT FALSE,
   position        TEXT,
-  UNIQUE (match_id, player_id)
+  UNIQUE (fixture_id, player_id)
 );
-CREATE INDEX IF NOT EXISTS ix_app_match_team ON appearance(match_id, team_id);
-CREATE INDEX IF NOT EXISTS ix_app_match_player ON appearance(match_id, player_id);
+CREATE INDEX IF NOT EXISTS ix_app_fixture_team ON appearance(fixture_id, team_id);
+CREATE INDEX IF NOT EXISTS ix_app_fixture_player ON appearance(fixture_id, player_id);
 
 CREATE TABLE IF NOT EXISTS substitution (
   sub_id          BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   minute          SMALLINT NOT NULL,
   player_off_id   BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE,
   player_on_id    BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE
 );
-CREATE INDEX IF NOT EXISTS ix_sub_match ON substitution(match_id);
+CREATE INDEX IF NOT EXISTS ix_sub_fixture ON substitution(fixture_id);
 
-CREATE TABLE IF NOT EXISTS event (
-  event_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+CREATE TABLE IF NOT EXISTS match_event (
+  match_event_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT REFERENCES team(team_id) ON DELETE SET NULL,
   player_id       BIGINT REFERENCES player(player_id) ON DELETE SET NULL,
   minute          SMALLINT NOT NULL,
@@ -184,12 +185,12 @@ CREATE TABLE IF NOT EXISTS event (
   body_part       TEXT,
   qualifiers      JSONB
 );
-CREATE INDEX IF NOT EXISTS ix_event_match ON event(match_id);
-CREATE INDEX IF NOT EXISTS ix_event_match_player ON event(match_id, player_id);
-CREATE INDEX IF NOT EXISTS ix_event_type ON event(type);
+CREATE INDEX IF NOT EXISTS ix_match_event_fixture ON match_event(fixture_id);
+CREATE INDEX IF NOT EXISTS ix_match_event_fixture_player ON match_event(fixture_id, player_id);
+CREATE INDEX IF NOT EXISTS ix_match_event_type ON match_event(type);
 
-CREATE TABLE IF NOT EXISTS team_match_stats (
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+CREATE TABLE IF NOT EXISTS team_fixture_stats (
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   possession_pct  NUMERIC(5,2),
   shots           SMALLINT,
@@ -200,11 +201,11 @@ CREATE TABLE IF NOT EXISTS team_match_stats (
   corners         SMALLINT,
   fouls           SMALLINT,
   offsides        SMALLINT,
-  PRIMARY KEY (match_id, team_id)
+  PRIMARY KEY (fixture_id, team_id)
 );
 
-CREATE TABLE IF NOT EXISTS player_match_stats (
-  match_id        BIGINT NOT NULL REFERENCES match(match_id) ON DELETE CASCADE,
+CREATE TABLE IF NOT EXISTS player_fixture_stats (
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   player_id       BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE,
   minutes         SMALLINT,
   touches         INTEGER,
@@ -220,14 +221,14 @@ CREATE TABLE IF NOT EXISTS player_match_stats (
   xg              NUMERIC(6,3),
   xa              NUMERIC(6,3),
   key_passes      SMALLINT,
-  PRIMARY KEY (match_id, player_id)
+  PRIMARY KEY (fixture_id, player_id)
 );
 
 CREATE TABLE IF NOT EXISTS table_standings (
   standing_id     BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   season_id       BIGINT NOT NULL REFERENCES season(season_id) ON DELETE CASCADE,
   stage_id        BIGINT REFERENCES stage(stage_id) ON DELETE SET NULL,
-  group_id        BIGINT REFERENCES "group"(group_id) ON DELETE SET NULL,
+  group_id        BIGINT REFERENCES stage_group(group_id) ON DELETE SET NULL,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
   played          SMALLINT NOT NULL DEFAULT 0,
   w               SMALLINT NOT NULL DEFAULT 0,
@@ -240,3 +241,115 @@ CREATE TABLE IF NOT EXISTS table_standings (
   position        SMALLINT,
   UNIQUE (season_id, COALESCE(stage_id,0), COALESCE(group_id,0), team_id)
 );
+
+-- ======================================================
+-- Added indexes and constraints (Stratis suggestions)
+-- ======================================================
+
+-- Countries / People / Clubs / Stadiums
+CREATE INDEX IF NOT EXISTS idx_person_country_id            ON person(country_id);
+CREATE INDEX IF NOT EXISTS idx_stadium_country_id           ON stadium(country_id);
+CREATE INDEX IF NOT EXISTS idx_club_country_id              ON club(country_id);
+
+-- Competitions / Seasons / Stages / Stage rounds / Stage Groups
+CREATE INDEX IF NOT EXISTS idx_season_competition_id        ON season(competition_id);
+CREATE INDEX IF NOT EXISTS idx_stage_season_id              ON stage(season_id);
+CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id               ON stage_round(stage_id);
+CREATE INDEX IF NOT EXISTS idx_stage_group_stage_id         ON stage_group(stage_id);
+
+-- Teams & Entries
+CREATE INDEX IF NOT EXISTS idx_team_club_id                 ON team(club_id);
+CREATE INDEX IF NOT EXISTS idx_team_national_country_id     ON team(national_country_id);
+CREATE INDEX IF NOT EXISTS idx_season_team_season_id              ON season_team(season_id);
+CREATE INDEX IF NOT EXISTS idx_season_team_team_id                ON season_team(team_id);
+
+-- fixtures
+CREATE INDEX IF NOT EXISTS idx_fixture_stage_round_id               ON fixture(stage_round_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_group_id               ON fixture(group_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_stadium_id             ON fixture(stadium_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_home_team_id           ON fixture(home_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_away_team_id           ON fixture(away_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_winner_team_id         ON fixture(winner_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_kickoff_utc            ON fixture(kickoff_utc);
+
+-- Lineups / Appearances / Subs / Match events
+CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id              ON lineup(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_team_id               ON lineup(team_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_player_id             ON lineup(player_id);
+
+CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id          ON appearance(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_player_id         ON appearance(player_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_team_id           ON appearance(team_id);
+
+CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id        ON substitution(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_team_id         ON substitution(team_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_player_on_id    ON substitution(player_on_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_player_off_id   ON substitution(player_off_id);
+
+CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id               ON match_event(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_team_id                ON match_event(team_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_player_id              ON match_event(player_id);
+
+-- Stats / Standings
+CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_fixture_id    ON team_fixture_stats(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_team_id     ON team_fixture_stats(team_id);
+
+CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_fixture_id  ON player_fixture_stats(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_player_id ON player_fixture_stats(player_id);
+
+CREATE INDEX IF NOT EXISTS idx_table_standings_scope        ON table_standings(season_id, stage_id, group_id, team_id);
+
+-- ======================================================
+-- Constraints
+-- ======================================================
+
+ALTER TABLE fixture
+  ADD CONSTRAINT chk_fixture_status
+  CHECK (status IN ('scheduled','live','played','postponed','canceled'))
+  NOT VALID;
+
+ALTER TABLE fixture
+  ADD CONSTRAINT chk_fixture_scores_nonneg
+  CHECK (
+    COALESCE(home_score, 0) >= 0
+    AND COALESCE(away_score, 0) >= 0
+  )
+  NOT VALID;
+
+ALTER TABLE appearance
+  ADD CONSTRAINT chk_appearance_minutes
+  CHECK (
+    COALESCE(minute_on, 0) >= 0
+    AND (minute_off IS NULL OR minute_off >= minute_on)
+    AND COALESCE(minute_off, 130) <= 130
+  )
+  NOT VALID;
+
+ALTER TABLE match_event
+  ADD CONSTRAINT chk_match_event_xy_bounds
+  CHECK (
+    (x      IS NULL OR (x      >= 0 AND x      <= 100)) AND
+    (y      IS NULL OR (y      >= 0 AND y      <= 100)) AND
+    (end_x  IS NULL OR (end_x  >= 0 AND end_x  <= 100)) AND
+    (end_y  IS NULL OR (end_y  >= 0 AND end_y  <= 100))
+  )
+  NOT VALID;
+
+ALTER TABLE team
+  ADD CONSTRAINT chk_team_type
+  CHECK (type IN ('club','national','youth','women','other'))
+  NOT VALID;
+
+CREATE UNIQUE INDEX IF NOT EXISTS uniq_team_per_club
+  ON team(club_id)
+  WHERE type = 'club';
+
+-- ===============================================
+-- Extra helpful indexes on foreign key fixture_id
+-- ===============================================
+CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id                 ON lineup(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id             ON appearance(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id           ON substitution(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id            ON match_event(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
