@@ -1,0 +1,7 @@
+code,name,level,parent_org_id
+UEFA,Union of European Football Associations,confederation,1
+CONMEBOL,Confederación Sudamericana de Fútbol,confederation,1
+CONCACAF,"Confederation of North, Central America and Caribbean Association Football",confederation,1
+AFC,Asian Football Confederation,confederation,1
+CAF,Confederation of African Football,confederation,1
+OFC,Oceania Football Confederation,confederation,1

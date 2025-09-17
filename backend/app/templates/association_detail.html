@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ a.code }} — {{ a.name }}</title></head>
+<body>
+  <h1>{{ a.code }} — {{ a.name }}</h1>
+  <p><strong>Level:</strong> {{ a.level }}</p>
+  {% if parent %}
+    <p><strong>Parent:</strong> <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a> — {{ parent.name }}</p>
+  {% endif %}
+  {% if children and children|length > 0 %}
+    <h3>Children</h3>
+    <ul>
+      {% for c in children %}
+        <li><a href="/associations/{{ c.ass_id }}">{{ c.code }}</a> — {{ c.name }} ({{ c.level }})</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  <p><a href="/associations">← Back to associations</a></p>
+</body>
+</html>

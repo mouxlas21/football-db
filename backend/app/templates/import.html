@@ -5,6 +5,17 @@
   <h1>CSV Import</h1>
 
   <section>
+    <h2>Associations</h2>
+    <p>Headers: <code>code,name,level,parent_code</code></p>
+    <form action="/import/csv?entity=associations" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Associations</button>
+    </form>
+  </section>  
+  
+  <hr />
+
+  <section>
     <h2>Countries</h2>
     <form action="/import/csv?entity=countries" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />

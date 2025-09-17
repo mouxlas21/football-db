@@ -16,11 +16,21 @@ from sqlalchemy.orm import relationship, Mapped, mapped_column
 from .db import Base
 from datetime import date, datetime
 
+class Association(Base):
+    __tablename__ = "association"
+
+    ass_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    code:   Mapped[str] = mapped_column(Text, unique=True, nullable=False)
+    name:   Mapped[str] = mapped_column(Text, nullable=False)
+    level:  Mapped[str] = mapped_column(Text, nullable=False)  # 'federation' | 'confederation' | 'association' | 'league_body'
+    parent_org_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+
 class Country(Base):
     __tablename__ = "country"
 
     country_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
     fifa_code: Mapped[str | None] = mapped_column(String(3), unique=True)
 
 
@@ -62,10 +72,8 @@ class Competition(Base):
     competition_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
     type: Mapped[str] = mapped_column(Text, nullable=False)  # 'league' | 'cup' | ...
-    organizer: Mapped[str | None] = mapped_column(Text)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
-    confederation: Mapped[str | None] = mapped_column(Text)
-
+    confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
 class Person(Base):
     __tablename__ = "person"
 

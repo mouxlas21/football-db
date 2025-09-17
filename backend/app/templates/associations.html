@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Associations</title></head>
+<body>
+  <h1>Associations</h1>
+  <form method="get">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search code or name" />
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+    {% for a in rows %}
+      <li>
+        <a href="/associations/{{ a.ass_id }}">{{ a.code }}</a> — {{ a.name }} ({{ a.level }})
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

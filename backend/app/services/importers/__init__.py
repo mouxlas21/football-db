@@ -2,6 +2,7 @@
 from typing import Iterable, Dict
 from sqlalchemy.orm import Session
 from .base import BaseImporter
+from .associations import AssociationsImporter
 from .countries import CountriesImporter
 from .clubs import ClubsImporter
 from .competitions import CompetitionsImporter
@@ -14,6 +15,8 @@ from .stage_rounds import StageRoundsImporter  # <-- renamed
 from .teams import TeamsImporter
 
 REGISTRY: dict[str, BaseImporter] = {
+    "association": AssociationsImporter(),
+    "associations": AssociationsImporter(),
     "country": CountriesImporter(),
     "countries": CountriesImporter(),
     "club": ClubsImporter(),

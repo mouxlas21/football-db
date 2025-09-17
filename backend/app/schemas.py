@@ -3,19 +3,31 @@ from pydantic import BaseModel, Field
 from typing import Optional
 from datetime import date, datetime
 
+class AssociationCreate(BaseModel):
+    code: str
+    name: str
+    level: str
+    parent_code: Optional[str] = None  # convenience for input
+
+class AssociationRead(BaseModel):
+    ass_id: int
+    code: str
+    name: str
+    level: str
+    parent_org_id: Optional[int] = None
+    class Config: from_attributes = True
+
+class CountryCreate(BaseModel):
+    name: str
+    fifa_code: Optional[str] = None
+    confederation_code: Optional[str] = None  # convenience for input
+
 class CountryRead(BaseModel):
     country_id: int
     name: str
-    iso2: Optional[str] = None
-
-    class Config:
-        from_attributes = True
-
-
-class CountryCreate(BaseModel):
-    name: str = Field(..., min_length=2)
-    iso2: Optional[str] = None
-
+    fifa_code: Optional[str] = None
+    confed_ass_id: Optional[int] = None
+    class Config: from_attributes = True
 
 class ClubCreate(BaseModel):
     name: str = Field(..., min_length=2)
@@ -24,7 +36,6 @@ class ClubCreate(BaseModel):
     country_id: Optional[int] = None
     stadium_id: Optional[int] = None
     colors: Optional[str] = None
-
 
 class ClubRead(BaseModel):
     club_id: int
@@ -38,42 +49,23 @@ class ClubRead(BaseModel):
     class Config:
         from_attributes = True
 
-
 class CompetitionCreate(BaseModel):
-    name: str = Field(..., min_length=2)
-    type: Optional[str] = "league"      # 'league' | 'cup' | ...
-    organizer: Optional[str] = None
+    name: str
+    type: str
     country_id: Optional[int] = None
-    confederation: Optional[str] = None
-
+    organizer_code: Optional[str] = None  # convenience for input
 
 class CompetitionRead(BaseModel):
     competition_id: int
     name: str
     type: str
-    organizer: Optional[str] = None
     country_id: Optional[int] = None
-    confederation: Optional[str] = None
-
-    @classmethod
-    def from_model(cls, m):
-        return cls(
-            competition_id=m.competition_id,
-            name=m.name,
-            type=m.type,
-            organizer=m.organizer,
-            country_id=m.country_id,
-            confederation=m.confederation,
-        )
-
-    class Config:
-        from_attributes = True
-
+    confed_ass_id: Optional[int] = None
+    class Config: from_attributes = True
 
 # Backwards-compatible league API models (if you still use /leagues JSON)
 class LeagueCreate(CompetitionCreate):
     type: Optional[str] = "league"
-
 
 class LeagueRead(BaseModel):
     league_id: int
@@ -127,6 +119,12 @@ class PlayerRead(BaseModel):
     person: PersonRead
     class Config:
         from_attributes = True
+
+class TeamCreate(BaseModel):
+    name: str
+    type: str                  
+    club_id: Optional[int] = None      
+    national_country_id: Optional[int] = None  
 
 class TeamRead(BaseModel):
     team_id: int

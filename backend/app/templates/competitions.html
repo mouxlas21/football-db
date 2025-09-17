@@ -12,14 +12,20 @@
   </form>
 
   <ul>
-    {% for c in competitions %}
+    {% for comp in competitions %}
       <li>
-        <a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a>
-        <em>({{ c.type }})</em>
-        — {{ country_map.get(c.country_id, '—') }}
+        <a href="/competitions/{{ comp.competition_id }}">{{ comp.name }}</a>
+        ({{ comp.type }})
+        {% if comp.country_id and country_map.get(comp.country_id) %}
+          — {{ country_map[comp.country_id].name }}
+        {% endif %}
+        {% if comp.confed_ass_id and ass_map.get(comp.confed_ass_id) %}
+          — Organizer:
+          <a href="/associations/{{ comp.confed_ass_id }}">
+            {{ ass_map[comp.confed_ass_id].code }}
+          </a>
+        {% endif %}
       </li>
-    {% else %}
-      <li>No competitions found.</li>
     {% endfor %}
   </ul>
 

@@ -2,13 +2,24 @@
 -- PHASE 1 — CORE ENTITIES
 -- =========================
 
+CREATE TABLE IF NOT EXISTS association (
+  ass_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  code          TEXT NOT NULL UNIQUE,     -- 'FIFA','UEFA','CONMEBOL','DFB','FA', ...
+  name          TEXT NOT NULL,
+  level         TEXT NOT NULL CHECK (level IN ('federation','confederation','association','league_body')),
+  parent_org_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
+);
+
 CREATE TABLE IF NOT EXISTS country (
   country_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name            TEXT NOT NULL UNIQUE,
+  confed_ass_id   BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
   fifa_code       VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$')
 
 );
+
 CREATE INDEX IF NOT EXISTS ix_country_name ON country(name);
+CREATE INDEX IF NOT EXISTS idx_country_onfed_ass_id ON country(confed_ass_id);
 
 CREATE TABLE IF NOT EXISTS stadium (
   stadium_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -66,10 +77,12 @@ CREATE TABLE IF NOT EXISTS competition (
   competition_id  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name            TEXT NOT NULL UNIQUE,
   type            TEXT NOT NULL,
-  organizer       TEXT,
+  
   country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  confederation   TEXT
+  confed_ass_id   BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
 );
+
+CREATE INDEX IF NOT EXISTS idx_competition_confed_ass_id ON competition(confed_ass_id);
 
 CREATE TABLE IF NOT EXISTS season (
   season_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -136,8 +149,9 @@ CREATE INDEX IF NOT EXISTS ix_fixture_teams ON fixture(home_team_id, away_team_i
 
 CREATE TABLE IF NOT EXISTS lineup (
   lineup_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
+  fixture_id      BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
   team_id         BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  player_id       BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE,
   formation       TEXT,
   UNIQUE (fixture_id, team_id)
 );
@@ -239,7 +253,7 @@ CREATE TABLE IF NOT EXISTS table_standings (
   gd              SMALLINT NOT NULL DEFAULT 0,
   pts             SMALLINT NOT NULL DEFAULT 0,
   position        SMALLINT,
-  UNIQUE (season_id, COALESCE(stage_id,0), COALESCE(group_id,0), team_id)
+  UNIQUE (season_id, stage_id, group_id, team_id)
 );
 
 -- ======================================================
@@ -254,17 +268,17 @@ CREATE INDEX IF NOT EXISTS idx_club_country_id              ON club(country_id);
 -- Competitions / Seasons / Stages / Stage rounds / Stage Groups
 CREATE INDEX IF NOT EXISTS idx_season_competition_id        ON season(competition_id);
 CREATE INDEX IF NOT EXISTS idx_stage_season_id              ON stage(season_id);
-CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id               ON stage_round(stage_id);
+CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id         ON stage_round(stage_id);
 CREATE INDEX IF NOT EXISTS idx_stage_group_stage_id         ON stage_group(stage_id);
 
 -- Teams & Entries
 CREATE INDEX IF NOT EXISTS idx_team_club_id                 ON team(club_id);
 CREATE INDEX IF NOT EXISTS idx_team_national_country_id     ON team(national_country_id);
-CREATE INDEX IF NOT EXISTS idx_season_team_season_id              ON season_team(season_id);
-CREATE INDEX IF NOT EXISTS idx_season_team_team_id                ON season_team(team_id);
+CREATE INDEX IF NOT EXISTS idx_season_team_season_id        ON season_team(season_id);
+CREATE INDEX IF NOT EXISTS idx_season_team_team_id          ON season_team(team_id);
 
 -- fixtures
-CREATE INDEX IF NOT EXISTS idx_fixture_stage_round_id               ON fixture(stage_round_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_stage_round_id         ON fixture(stage_round_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_group_id               ON fixture(group_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_stadium_id             ON fixture(stadium_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_home_team_id           ON fixture(home_team_id);
@@ -274,8 +288,8 @@ CREATE INDEX IF NOT EXISTS idx_fixture_kickoff_utc            ON fixture(kickoff
 
 -- Lineups / Appearances / Subs / Match events
 CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id              ON lineup(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_lineup_team_id               ON lineup(team_id);
-CREATE INDEX IF NOT EXISTS idx_lineup_player_id             ON lineup(player_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_team_id                 ON lineup(team_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_player_id               ON lineup(player_id);
 
 CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id          ON appearance(fixture_id);
 CREATE INDEX IF NOT EXISTS idx_appearance_player_id         ON appearance(player_id);
@@ -299,46 +313,7 @@ CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_player_id ON player_fixture_
 
 CREATE INDEX IF NOT EXISTS idx_table_standings_scope        ON table_standings(season_id, stage_id, group_id, team_id);
 
--- ======================================================
--- Constraints
--- ======================================================
 
-ALTER TABLE fixture
-  ADD CONSTRAINT chk_fixture_status
-  CHECK (status IN ('scheduled','live','played','postponed','canceled'))
-  NOT VALID;
-
-ALTER TABLE fixture
-  ADD CONSTRAINT chk_fixture_scores_nonneg
-  CHECK (
-    COALESCE(home_score, 0) >= 0
-    AND COALESCE(away_score, 0) >= 0
-  )
-  NOT VALID;
-
-ALTER TABLE appearance
-  ADD CONSTRAINT chk_appearance_minutes
-  CHECK (
-    COALESCE(minute_on, 0) >= 0
-    AND (minute_off IS NULL OR minute_off >= minute_on)
-    AND COALESCE(minute_off, 130) <= 130
-  )
-  NOT VALID;
-
-ALTER TABLE match_event
-  ADD CONSTRAINT chk_match_event_xy_bounds
-  CHECK (
-    (x      IS NULL OR (x      >= 0 AND x      <= 100)) AND
-    (y      IS NULL OR (y      >= 0 AND y      <= 100)) AND
-    (end_x  IS NULL OR (end_x  >= 0 AND end_x  <= 100)) AND
-    (end_y  IS NULL OR (end_y  >= 0 AND end_y  <= 100))
-  )
-  NOT VALID;
-
-ALTER TABLE team
-  ADD CONSTRAINT chk_team_type
-  CHECK (type IN ('club','national','youth','women','other'))
-  NOT VALID;
 
 CREATE UNIQUE INDEX IF NOT EXISTS uniq_team_per_club
   ON team(club_id)
@@ -351,5 +326,7 @@ CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id                 ON lineup(fixtu
 CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id             ON appearance(fixture_id);
 CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id           ON substitution(fixture_id);
 CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id            ON match_event(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
+--CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
+--CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
+
+INSERT INTO association (code, name, level, parent_org_id) VALUES ('FIFA','Fédération Internationale de Football Association','federation',NULL);

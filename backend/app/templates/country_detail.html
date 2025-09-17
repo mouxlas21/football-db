@@ -10,8 +10,22 @@
   <main class="container">
     <div class="card">
       <h1 style="margin:0 0 .5rem">{{ country.name }}</h1>
-      <p><strong>ISO2:</strong> {{ country.iso2 or '—' }}</p>
+      <p><strong>FIFA CODE</strong> {{ country.fifa_code or '—' }}</p>
     </div>
+
+    <section style="margin-top:1rem">
+      <h2 style="margin:0 0 .5rem">Associations</h2>
+      <div class="card">
+        {% if association %}
+          <p>
+            <strong>Confederation:</strong>
+            <a href="/associations/{{ association.ass_id }}">{{ association.code }}</a> — {{ association.name }}
+          </p>
+        {% else %}
+          <p><strong>Confederation:</strong> —</p>
+        {% endif %}
+      </div>
+    </section>
 
     <section style="margin-top:1rem">
       <h2 style="margin:0 0 .5rem">Leagues</h2>
