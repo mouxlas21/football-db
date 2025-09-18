@@ -10,6 +10,7 @@ from sqlalchemy import (
     SmallInteger,
     ForeignKey,
     Index,
+    UniqueConstraint,
 )
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 
@@ -46,6 +47,14 @@ class Stadium(Base):
     lat: Mapped[float | None] = mapped_column()
     lng: Mapped[float | None] = mapped_column()
 
+class Competition(Base):
+    __tablename__ = "competition"
+
+    competition_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    type: Mapped[str] = mapped_column(Text, nullable=False)  # 'league' | 'cup' | ...
+    country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+    organizer_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
 
 class Club(Base):
     __tablename__ = "club"
@@ -66,14 +75,17 @@ class Club(Base):
         Index("ix_club_stadium", "stadium_id"),
     )
 
-class Competition(Base):
-    __tablename__ = "competition"
+class Team(Base):
+    __tablename__ = "team"
 
-    competition_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
-    type: Mapped[str] = mapped_column(Text, nullable=False)  # 'league' | 'cup' | ...
-    country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
-    confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+    team_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    type: Mapped[str] = mapped_column(Text, nullable=False, default="club")
+    club_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("club.club_id", ondelete="SET NULL"))
+    national_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+    gender: Mapped[str | None] = mapped_column(Text)
+    age_group: Mapped[str | None] = mapped_column(Text)
+    squad_level: Mapped[str | None] = mapped_column(Text)
 class Person(Base):
     __tablename__ = "person"
 
@@ -93,15 +105,6 @@ class Player(Base):
     primary_position: Mapped[str | None] = mapped_column(Text)
 
     person = relationship("Person", backref="player", uselist=False)
-
-class Team(Base):
-    __tablename__ = "team"
-
-    team_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(Text, nullable=False)
-    type: Mapped[str] = mapped_column(Text, nullable=False, default="club")
-    club_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("club.club_id", ondelete="SET NULL"))
-    national_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
 
 class Fixture(Base):
     __tablename__ = "fixture"
@@ -143,3 +146,19 @@ class StageRound(Base):
     name: Mapped[str] = mapped_column(Text, nullable=False)
     stage_round_order: Mapped[int] = mapped_column(SmallInteger, nullable=False, default=1)
     two_legs: Mapped[bool] = mapped_column(default=False)
+
+class StageGroup(Base):
+    __tablename__ = "stage_group"
+
+    group_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    stage_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage.stage_id", ondelete="CASCADE"), nullable=False)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    code: Mapped[str | None] = mapped_column(Text)
+
+    stage = relationship("Stage")
+
+    __table_args__ = (
+        UniqueConstraint("stage_id", "name", name="uq_stage_group_name"),
+        UniqueConstraint("stage_id", "code", name="uq_stage_group_code"),
+        Index("idx_stage_group_stage_id", "stage_id"),
+    )

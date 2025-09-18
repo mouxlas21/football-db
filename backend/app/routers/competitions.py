@@ -11,7 +11,7 @@ from ..core.templates import templates
 router = APIRouter(prefix="/competitions", tags=["competitions"])
 
 @router.get("", response_class=HTMLResponse)
-def competitions_page(request: Request, q: str | None = None, type: str | None = None, country_id: int | None = None, confed_ass_id: int | None = None, db: Session = Depends(get_db)):
+def competitions_page(request: Request, q: str | None = None, type: str | None = None, country_id: int | None = None, organizer_ass_id: int | None = None, db: Session = Depends(get_db)):
     stmt = select(Competition)
     if q:
         stmt = stmt.where(Competition.name.ilike(f"%{q.strip()}%"))
@@ -19,14 +19,14 @@ def competitions_page(request: Request, q: str | None = None, type: str | None =
         stmt = stmt.where(Competition.type.ilike(type.strip()))
     if country_id:
         stmt = stmt.where(Competition.country_id == country_id)
-    if confed_ass_id:
-        stmt = stmt.where(Competition.confed_ass_id == confed_ass_id)
+    if organizer_ass_id:
+        stmt = stmt.where(Competition.organizer_ass_id == organizer_ass_id)
 
     rows = db.execute(stmt.order_by(Competition.name)).scalars().all()
 
     countries = db.execute(select(Country.country_id, Country.name).order_by(Country.name)).all()
     country_map = {cid: cname for cid, cname in countries}
-    ass_ids = {cmp.confed_ass_id for cmp in rows if cmp.confed_ass_id}
+    ass_ids = {cmp.organizer_ass_id for cmp in rows if cmp.organizer_ass_id}
     ass_map = {}
     if ass_ids:
         assocs = db.execute(select(Association).where(Association.ass_id.in_(ass_ids))).scalars().all()
@@ -54,8 +54,8 @@ def competition_detail_page(competition_id: int, request: Request, db: Session =
     if comp.country_id:
         country = db.execute(select(Country).where(Country.country_id == comp.country_id)).scalar_one_or_none()
     organizer = None
-    if comp.confed_ass_id:
-        organizer = db.execute(select(Association).where(Association.ass_id == comp.confed_ass_id)).scalar_one_or_none()
+    if comp.organizer_ass_id:
+        organizer = db.execute(select(Association).where(Association.ass_id == comp.organizer_ass_id)).scalar_one_or_none()
     return templates.TemplateResponse(
         "competition_detail.html",
         {"request": request, "competition": comp, "country": country, "organizer": organizer},

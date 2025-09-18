@@ -11,7 +11,8 @@ from .fixtures import FixturesImporter
 from .stadiums import StadiumsImporter
 from .seasons import SeasonsImporter
 from .stages import StagesImporter
-from .stage_rounds import StageRoundsImporter  # <-- renamed
+from .stage_rounds import StageRoundsImporter 
+from .stage_groups import StageGroupsImporter
 from .teams import TeamsImporter
 
 REGISTRY: dict[str, BaseImporter] = {
@@ -35,6 +36,8 @@ REGISTRY: dict[str, BaseImporter] = {
     "stages": StagesImporter(),
     "stage_round": StageRoundsImporter(),
     "stage_rounds": StageRoundsImporter(),
+    "stage_group": StageGroupsImporter(),
+    "stage_groups": StageGroupsImporter(),
     "team": TeamsImporter(),
     "teams": TeamsImporter(),
 }

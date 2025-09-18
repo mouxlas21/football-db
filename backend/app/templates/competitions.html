@@ -19,10 +19,10 @@
         {% if comp.country_id and country_map.get(comp.country_id) %}
           — {{ country_map[comp.country_id].name }}
         {% endif %}
-        {% if comp.confed_ass_id and ass_map.get(comp.confed_ass_id) %}
+        {% if comp.organizer_ass_id and ass_map.get(comp.organizer_ass_id) %}
           — Organizer:
-          <a href="/associations/{{ comp.confed_ass_id }}">
-            {{ ass_map[comp.confed_ass_id].code }}
+          <a href="/associations/{{ comp.organizer_ass_id }}">
+            {{ ass_map[comp.organizer_ass_id].code }}
           </a>
         {% endif %}
       </li>

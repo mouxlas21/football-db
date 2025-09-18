@@ -1,31 +1,6 @@
-name,type,club_id
-FC Bayern München,club,1
-Bayer 04 Leverkusen,club,2
-VfB Stuttgart,club,3
-RB Leipzig,club,4
-Borussia Dortmund,club,5
-Eintracht Frankfurt,club,6
-TSG 1899 Hoffenheim,club,7
-1. FC Heidenheim 1846,club,8
-SV Werder Bremen,club,9
-SC Freiburg,club,10
-1. FC Köln,club,11
-1. FSV Mainz 05,club,12
-Borussia Mönchengladbach,club,13
-FC Augsburg,club,14
-VfL Bochum 1848,club,15
-Union Berlin,club,16
-VfL Wolfsburg,club,17
-St. Pauli,club,18
-Manchester City,club,19
-Real Madrid,club,20
-Juventus,club,21
-Paris Saint-Germain,club,22
-AFC Ajax,club,23
-SL Benfica,club,24
-Panathinaikos,club,25
-Club Brugge,club,26
-Malmö FF,club,27
-
-
-
+name,type,club_id,national_country_id,gender,age_group,squad_level
+FC Bayern München,club,FC Bayern München,,men,senior,first
+Borussia Dortmund,club,Borussia Dortmund,,men,senior,first
+Germany,national,,GER,men,senior,first
+Germany U21,national,,GER,men,U21,first
+Germany Women,national,,GER,women,senior,first

@@ -1,2 +1,7 @@
-season_id,name,stage_order,format
-1,Regular Season,1,league
+competition,season_id,name,stage_order,format
+Bundesliga,2024/25,Regular Season,1,league
+UEFA Champions League,2024/25,Qualifying,1,knockout
+UEFA Champions League,2024/25,Play-offs,2,knockout
+UEFA Champions League,2024/25,Group Stage,3,groups
+UEFA Champions League,2024/25,Knockout Phase,4,knockout
+

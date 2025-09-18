@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ t.name }}</title></head>
+<body>
+  <h1>{{ t.name }}</h1>
+  <p><strong>Type:</strong> {{ t.type }}</p>
+
+  {% if t.type == 'club' and club %}
+    <p><strong>Club:</strong> <a href="/clubs/{{ club.club_id }}">{{ club.name }}</a></p>
+  {% endif %}
+
+  {% if t.type == 'national' and country %}
+    <p><strong>Country:</strong> <a href="/countries/{{ country.country_id }}">{{ country.name }}</a></p>
+  {% endif %}
+
+  {% if t.gender %}<p><strong>Gender:</strong> {{ t.gender }}</p>{% endif %}
+  {% if t.age_group %}<p><strong>Age Group:</strong> {{ t.age_group }}</p>{% endif %}
+  {% if t.squad_level %}<p><strong>Squad Level:</strong> {{ t.squad_level }}</p>{% endif %}
+
+  <p><a href="/teams">← Back to teams</a></p>
+</body>
+</html>

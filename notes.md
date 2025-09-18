@@ -47,16 +47,20 @@ matches take teams_ids from team table
 ### Build order (safe topological order)
 
 ## Phase A – bases
-1)country
-2)competition
+1)associations
+2)countries
+3)stadiums
+4)competitions
+5)clubs
+6)teams
+
+7)seasons
+8)stages
+9)stages rounds
+10)stages groups
+
 3)person → player
-4)season
-5)stadium
-6)club
-7)stage
-8)"group" (quoted name)
-9)round
-10)team
+
 
 entry
 

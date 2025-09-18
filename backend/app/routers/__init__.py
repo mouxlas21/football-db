@@ -1,1 +1,1 @@
-from . import countries, competitions, clubs, players, fixtures, imports
+from . import associations, countries, competitions, clubs, teams, players, fixtures, imports

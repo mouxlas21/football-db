@@ -1,3 +1,41 @@
-stage_id,name,stage_round_order,two_legs
-1,Matchday 1,1,0
-1,Matchday 2,2,0
+competition,season_name,stage_name,name,stage_round_order,two_legs
+Bundesliga,2024/25,Regular Season,Matchday 1,1,false
+Bundesliga,2024/25,Regular Season,Matchday 2,2,false
+Bundesliga,2024/25,Regular Season,Matchday 3,3,false
+Bundesliga,2024/25,Regular Season,Matchday 4,4,false
+Bundesliga,2024/25,Regular Season,Matchday 5,5,false
+Bundesliga,2024/25,Regular Season,Matchday 6,6,false
+Bundesliga,2024/25,Regular Season,Matchday 7,7,false
+Bundesliga,2024/25,Regular Season,Matchday 8,8,false
+Bundesliga,2024/25,Regular Season,Matchday 9,9,false
+Bundesliga,2024/25,Regular Season,Matchday 10,10,false
+Bundesliga,2024/25,Regular Season,Matchday 11,11,false
+Bundesliga,2024/25,Regular Season,Matchday 12,12,false
+Bundesliga,2024/25,Regular Season,Matchday 13,13,false
+Bundesliga,2024/25,Regular Season,Matchday 14,14,false
+Bundesliga,2024/25,Regular Season,Matchday 15,15,false
+Bundesliga,2024/25,Regular Season,Matchday 16,16,false
+Bundesliga,2024/25,Regular Season,Matchday 17,17,false
+Bundesliga,2024/25,Regular Season,Matchday 18,18,false
+Bundesliga,2024/25,Regular Season,Matchday 19,19,false
+Bundesliga,2024/25,Regular Season,Matchday 20,20,false
+Bundesliga,2024/25,Regular Season,Matchday 21,21,false
+Bundesliga,2024/25,Regular Season,Matchday 22,22,false
+Bundesliga,2024/25,Regular Season,Matchday 23,23,false
+Bundesliga,2024/25,Regular Season,Matchday 24,24,false
+Bundesliga,2024/25,Regular Season,Matchday 25,25,false
+Bundesliga,2024/25,Regular Season,Matchday 26,26,false
+Bundesliga,2024/25,Regular Season,Matchday 27,27,false
+Bundesliga,2024/25,Regular Season,Matchday 28,28,false
+Bundesliga,2024/25,Regular Season,Matchday 29,29,false
+Bundesliga,2024/25,Regular Season,Matchday 30,30,false
+Bundesliga,2024/25,Regular Season,Matchday 31,31,false
+Bundesliga,2024/25,Regular Season,Matchday 32,32,false
+Bundesliga,2024/25,Regular Season,Matchday 33,33,false
+Bundesliga,2024/25,Regular Season,Matchday 34,34,false
+UEFA Champions League,2024/25,Group Stage,Matchday 1,1,false
+UEFA Champions League,2024/25,Group Stage,Matchday 2,2,false
+UEFA Champions League,2024/25,Group Stage,Matchday 3,3,false
+UEFA Champions League,2024/25,Group Stage,Matchday 4,4,false
+UEFA Champions League,2024/25,Group Stage,Matchday 5,5,false
+UEFA Champions League,2024/25,Group Stage,Matchday 6,6,false

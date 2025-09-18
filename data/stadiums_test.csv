@@ -1,11 +1,11 @@
 name,city,country_id,capacity,opened_year,lat,lng
-Allianz Arena,Munich,1,75000,2005,48.2188,11.6247
-Signal Iduna Park,Dortmund,1,81365,1974,51.4928,7.4519
-Wembley Stadium,London,2,90000,2007,51.556,-0.2796
-Old Trafford,Manchester,2,74310,1910,53.4631,-2.2913
-Camp Nou,Barcelona,3,99354,1957,41.3809,2.1228
-Santiago Bernabéu,Madrid,3,81044,1947,40.4531,-3.6883
-San Siro,Milan,4,80018,1926,45.4781,9.124
-Allianz Stadium,Turin,4,41507,2011,45.1096,7.6413
-Parc des Princes,Paris,5,48712,1972,48.8414,2.253
-Stade Vélodrome,Marseille,5,67394,1937,43.2699,5.3959
+Allianz Arena,Munich,germany,75000,2005,48.2188,11.6247
+Signal Iduna Park,Dortmund,ger,81365,1974,51.4928,7.4519
+Wembley Stadium,London,England,90000,2007,51.556,-0.2796
+Old Trafford,Manchester,England,74310,1910,53.4631,-2.2913
+Camp Nou,Barcelona,ESP,99354,1957,41.3809,2.1228
+Santiago Bernabéu,Madrid,Spain,81044,1947,40.4531,-3.6883
+San Siro,Milan,ITA,80018,1926,45.4781,9.124
+Allianz Stadium,Turin,ita,41507,2011,45.1096,7.6413
+Parc des Princes,Paris,FRA,48712,1972,48.8414,2.253
+Stade Vélodrome,Marseille,FRA,67394,1937,43.2699,5.3959

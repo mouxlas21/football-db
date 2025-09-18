@@ -1,28 +1,28 @@
 name,short_name,founded,country_id,stadium_id,colors
-FC Bayern München,Bayern,1900,1,,Red/White
-Bayer 04 Leverkusen,Leverkusen,1904,1,,Red/Black
-VfB Stuttgart,Stuttgart,1893,1,,White/Red
-RB Leipzig,Leipzig,2009,1,,Red/White
-Borussia Dortmund,Dortmund,1909,1,,Black/Yellow
-Eintracht Frankfurt,Frankfurt,1899,1,,Black/Red/White
-TSG 1899 Hoffenheim,Hoffenheim,1899,1,,Blue/White
-1. FC Heidenheim 1846,Heidenheim,1846,1,,Red/Blue
-SV Werder Bremen,Werder,1899,1,,Green/White
-SC Freiburg,Freiburg,1904,1,,Red/White
-1. FC Köln,Köln,1948,1,,White/Red
-1. FSV Mainz 05,Mainz,1905,1,,Red/White
-Borussia Mönchengladbach,Gladbach,1900,1,,Black/White/Green
-FC Augsburg,Augsburg,1907,1,,Red/Green/White
-VfL Bochum 1848,Bochum,1848,1,,Blue/White
-Union Berlin,Union Berlin,1966,1,,Red/White
-VfL Wolfsburg,Wolfsburg,1945,1,,Green/White
-St. Pauli,St. Pauli,1910,1,,Brown/White
-Manchester City,Man City,1880,2,,Sky Blue/White
-Real Madrid,Real,1902,3,,White
-Juventus,Juve,1897,4,,Black/White
-Paris Saint-Germain,PSG,1970,5,,Blue/Red
-AFC Ajax,Ajax,1900,6,,Red/White
-SL Benfica,Benfica,1904,7,,Red/White
-Panathinaikos,PAO,1908,8,,Green/White
-Club Brugge,Club Brugge,1891,9,,Blue/Black
-Malmö FF,Malmö,1910,10,,Light Blue/White
+FC Bayern München,Bayern,1900,Germany,,Red/White
+Bayer 04 Leverkusen,Leverkusen,1904,Germany,,Red/Black
+VfB Stuttgart,Stuttgart,1893,Germany,,White/Red
+RB Leipzig,Leipzig,2009,Germany,,Red/White
+Borussia Dortmund,Dortmund,1909,Germany,,Black/Yellow
+Eintracht Frankfurt,Frankfurt,1899,Germany,,Black/Red/White
+TSG 1899 Hoffenheim,Hoffenheim,1899,Germany,,Blue/White
+1. FC Heidenheim 1846,Heidenheim,1846,Germany,,Red/Blue
+SV Werder Bremen,Werder,1899,Germany,,Green/White
+SC Freiburg,Freiburg,1904,Germany,,Red/White
+1. FC Köln,Köln,1948,Germany,,White/Red
+1. FSV Mainz 05,Mainz,1905,Germany,,Red/White
+Borussia Mönchengladbach,Gladbach,1900,Germany,,Black/White/Green
+FC Augsburg,Augsburg,1907,Germany,,Red/Green/White
+VfL Bochum 1848,Bochum,1848,Germany,,Blue/White
+Union Berlin,Union Berlin,1966,Germany,,Red/White
+VfL Wolfsburg,Wolfsburg,1945,Germany,,Green/White
+St. Pauli,St. Pauli,1910,Germany,,Brown/White
+Manchester City,Man City,1880,England,,Sky Blue/White
+Real Madrid,Real,1902,Spain,,White
+Juventus,Juve,1897,ITA,,Black/White
+Paris Saint-Germain,PSG,1970,FRA,,Blue/Red
+AFC Ajax,Ajax,1900,ned,,Red/White
+SL Benfica,Benfica,1904,POR,,Red/White
+Panathinaikos,PAO,1908,Greece,,Green/White
+Club Brugge,Club Brugge,1891,Belgium,,Blue/Black
+Malmö FF,Malmö,1910,Sweden,,Light Blue/White

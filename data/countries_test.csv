@@ -1,11 +1,13 @@
 name,confed_ass_id,fifa_code
-Germany,2,GER
-England,2,ENG
-Spain,2,ESP
-Italy,2,ITA
-France,2,FRA
-Netherlands,2,NED
-Portugal,2,POR
-Greece,2,GRE
-Belgium,2,BEL
-Sweden,2,SWE
+Germany,UEFA,GER
+England,UEFA,ENG
+Spain,UEFA,ESP
+Italy,UEFA,ITA
+France,UEFA,FRA
+Netherlands,UEFA,NED
+Portugal,UEFA,POR
+Greece,UEFA,GRE
+Belgium,UEFA,BEL
+Sweden,UEFA,SWE
+Brazil,CONMEBOL,BRA
+Japan,Asian Football Confederation,JPN

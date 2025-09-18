@@ -53,14 +53,14 @@ class CompetitionCreate(BaseModel):
     name: str
     type: str
     country_id: Optional[int] = None
-    organizer_code: Optional[str] = None  # convenience for input
+    organizer_code: Optional[str] = None  
 
 class CompetitionRead(BaseModel):
     competition_id: int
     name: str
     type: str
     country_id: Optional[int] = None
-    confed_ass_id: Optional[int] = None
+    organizer_ass_id: Optional[int] = None
     class Config: from_attributes = True
 
 # Backwards-compatible league API models (if you still use /leagues JSON)
@@ -124,7 +124,10 @@ class TeamCreate(BaseModel):
     name: str
     type: str                  
     club_id: Optional[int] = None      
-    national_country_id: Optional[int] = None  
+    national_country_id: Optional[int] = None
+    gender: Optional[str] = None
+    age_group: Optional[str] = None
+    squad_level: Optional[str] = None  
 
 class TeamRead(BaseModel):
     team_id: int
@@ -132,6 +135,9 @@ class TeamRead(BaseModel):
     type: str
     club_id: Optional[int] = None
     national_country_id: Optional[int] = None
+    gender: Optional[str] = None
+    age_group: Optional[str] = None
+    squad_level: Optional[str] = None
     class Config:
         from_attributes = True
 

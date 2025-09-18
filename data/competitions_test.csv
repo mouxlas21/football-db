@@ -1,11 +1,14 @@
-name,type,organizer,country_id,confederation
+name,type,organizer,country_id,organizer_ass_id
 Bundesliga,league,DFL,1,UEFA
-DFB-Pokal,cup,DFB,1,UEFA
-Premier League,league,The FA / PL,2,UEFA
-FA Cup,cup,The FA,2,UEFA
+FA Cup,cup,FA,2,UEFA
 La Liga,league,LaLiga,3,UEFA
 Copa del Rey,cup,RFEF,3,UEFA
 Serie A,league,Lega Serie A,4,UEFA
 Ligue 1,league,LFP,5,UEFA
 Eredivisie,league,KNVB / Eredivisie,6,UEFA
 Primeira Liga,league,FPF / Liga Portugal,7,UEFA
+FIFA World Cup,cup,FIFA,,FIFA
+UEFA Champions League,cup,UEFA,,UEFA
+DFB-Pokal,cup,DFB,Germany,UEFA
+Premier League,league,Premier League,England,UEFA
+Copa do Brasil,cup,CBF,Brazil,CONMEBOL

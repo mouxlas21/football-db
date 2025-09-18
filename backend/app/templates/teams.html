@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Teams</title></head>
+<body>
+  <h1>Teams</h1>
+
+  <form method="get" style="margin-bottom:1rem;">
+    <input type="text" name="q" value="{{ q }}" placeholder="Search team name" />
+    <select name="type">
+      <option value="" {{ 'selected' if not type }}>All</option>
+      <option value="club" {{ 'selected' if type=='club' }}>Club</option>
+      <option value="national" {{ 'selected' if type=='national' }}>National</option>
+    </select>
+    <input type="text" name="country" value="{{ country }}" placeholder="Country (id/FIFA/name)" />
+    <input type="text" name="club" value="{{ club }}" placeholder="Club (id/name)" />
+    <input type="number" name="limit" value="{{ limit }}" min="1" max="1000" />
+    <button type="submit">Filter</button>
+  </form>
+
+  <ul>
+    {% for t in teams %}
+      <li>
+        <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+        — <em>{{ t.type }}</em>
+        {% if t.type == 'club' and t.club_id and clubs.get(t.club_id) %}
+          · Club: <a href="/clubs/{{ t.club_id }}">{{ clubs[t.club_id].name }}</a>
+        {% elif t.type == 'national' and t.national_country_id and countries.get(t.national_country_id) %}
+          · Country: <a href="/countries/{{ t.national_country_id }}">{{ countries[t.national_country_id].name }}</a>
+        {% endif %}
+        {% if t.age_group %} · {{ t.age_group }}{% endif %}
+        {% if t.gender %} · {{ t.gender }}{% endif %}
+        {% if t.squad_level %} · {{ t.squad_level }}{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

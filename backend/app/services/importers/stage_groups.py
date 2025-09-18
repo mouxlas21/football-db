@@ -1,10 +1,10 @@
-# backend/app/services/importers/stage_rounds.py
+# backend/app/services/importers/stage_groups.py
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func, and_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import StageRound, Stage, Season, Competition
+from app.models import StageGroup, Stage, Season, Competition
 
 def _to_int(v):
     if v is None: return None
@@ -13,15 +13,14 @@ def _to_int(v):
     try: return int(s)
     except Exception: return None
 
-def _to_bool(v):
-    if v is None: return False
-    s = str(v).strip().lower()
-    return s in ("1","true","t","yes","y")
-
-class StageRoundsImporter(BaseImporter):
-    entity = "stage_rounds"
+class StageGroupsImporter(BaseImporter):
+    entity = "stage_groups"
 
     def _resolve_stage_id(self, token, db: Session, ctx: Dict[str, Any]) -> int | None:
+        """
+        Resolve stage_id either directly from an integer, or by (competition, season_name, stage_name).
+        ctx can include: competition | competition_name, season_id | season_name, stage_name
+        """
         sid = _to_int(token)
         if sid is not None:
             return sid
@@ -60,43 +59,36 @@ class StageRoundsImporter(BaseImporter):
         if not name:
             return False, {}
 
+        # Accept stage via multiple styles:
         ctx = {
             "competition": raw.get("competition") or raw.get("competition_name"),
-            "season_name": raw.get("season_name") or raw.get("season_id"),
+            "season_name": raw.get("season_name") or raw.get("season_id"),  # season_id may be a name like 2024/25
             "stage_name": raw.get("stage_name"),
         }
         stage_id = self._resolve_stage_id(raw.get("stage_id"), db, ctx)
         if not stage_id:
             return False, {}
 
-        stage_round_order = _to_int(raw.get("stage_round_order")) or _to_int(raw.get("round_order")) or 1
-        two_legs = _to_bool(raw.get("two_legs"))
+        code = (raw.get("code") or "").strip() or None
 
-        return True, {
-            "stage_id": stage_id,
-            "name": name,
-            "stage_round_order": stage_round_order,
-            "two_legs": two_legs,
-        }
+        return True, {"stage_id": stage_id, "name": name, "code": code}
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
         existing = db.execute(
-            select(StageRound).where(
-                StageRound.stage_id == kwargs["stage_id"],
-                func.lower(StageRound.name) == func.lower(kwargs["name"])
+            select(StageGroup).where(
+                StageGroup.stage_id == kwargs["stage_id"],
+                func.lower(StageGroup.name) == func.lower(kwargs["name"])
             )
         ).scalar_one_or_none()
 
         if existing:
             changed = False
-            for f in ("stage_round_order", "two_legs"):
-                v = kwargs.get(f)
-                if v is not None and getattr(existing, f) != v:
-                    setattr(existing, f, v)
-                    changed = True
+            if kwargs.get("code") is not None and existing.code != kwargs["code"]:
+                existing.code = kwargs["code"]
+                changed = True
             if changed:
                 db.flush()
             return False
 
-        res = db.execute(insert(StageRound).values(**kwargs))
+        res = db.execute(insert(StageGroup).values(**kwargs))
         return bool(getattr(res, "rowcount", 0))
