@@ -2,83 +2,115 @@
 from typing import Dict, Any, Tuple
 from datetime import date
 from sqlalchemy.orm import Session
-from sqlalchemy import select
+from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import Person, Player
+from app.models import Person, Player, Country
+
+ALLOWED_POS = {"GK", "DF", "MF", "FW"}
 
 def _parse_iso_date(value: str | None) -> date | None:
-    if not value:
-        return None
-    v = value.strip()
-    if not v:
-        return None
-    try:
-        # Expecting YYYY-MM-DD
-        return date.fromisoformat(v)
-    except Exception:
-        return None
+    if not value: return None
+    v = str(value).strip()
+    if not v: return None
+    try: return date.fromisoformat(v)
+    except Exception: return None
+
+def _to_int(v):
+    if v is None: return None
+    s = str(v).strip()
+    if s == "": return None
+    try: return int(s)
+    except Exception: return None
 
 class PlayersImporter(BaseImporter):
     entity = "players"
 
+    def _resolve_country_id(self, token, db: Session) -> int | None:
+        if token is None: return None
+        as_int = _to_int(token)
+        if as_int is not None: return as_int
+        val = str(token).strip()
+        if not val: return None
+        row = db.execute(select(Country).where(Country.fifa_code == val.upper())).scalar_one_or_none()
+        if row: return row.country_id
+        row = db.execute(select(Country).where(func.lower(Country.name) == func.lower(val))).scalar_one_or_none()
+        return row.country_id if row else None
+
     def parse_row(self, raw: Dict[str, Any], db: Session) -> Tuple[bool, Dict[str, Any]]:
-        # Expected headers:
-        # full_name, known_as, dob (YYYY-MM-DD), country_id, height_cm, weight_kg, foot, primary_position
-        full_name = (raw.get("full_name") or raw.get("FullName") or "").strip()
-        if not full_name:
-            return False, {}
-        known_as = (raw.get("known_as") or raw.get("KnownAs") or None) or None
-        dob_str = (raw.get("dob") or raw.get("DOB") or None)
-        dob = _parse_iso_date(dob_str)
+        """
+        CSV headers accepted:
+          full_name, known_as, birth_date(=dob), country_id(=country),
+          height_cm, weight_kg, position, active
+        """
+        full_name = (raw.get("full_name") or "").strip()
+        if not full_name: return False, {}
 
-        country_id_raw = (raw.get("country_id") or "").strip()
-        country_id = int(country_id_raw) if str(country_id_raw).isdigit() else None
+        known_as = (raw.get("known_as") or "").strip() or None
+        birth_date = _parse_iso_date(raw.get("birth_date") or raw.get("dob"))
+        country_id = self._resolve_country_id(raw.get("country_id") or raw.get("country"), db)
+        height_cm = _to_int(raw.get("height_cm"))
+        weight_kg = _to_int(raw.get("weight_kg"))
 
-        height_raw = (raw.get("height_cm") or "").strip()
-        height_cm = int(height_raw) if str(height_raw).isdigit() else None
+        pos = (raw.get("position") or "").strip().upper() or None
+        if pos and pos not in ALLOWED_POS:
+            pos = None
 
-        weight_raw = (raw.get("weight_kg") or "").strip()
-        weight_kg = int(weight_raw) if str(weight_raw).isdigit() else None
-
-        foot = (raw.get("foot") or None) or None
-        primary_position = (raw.get("primary_position") or None) or None
+        active_raw = str(raw.get("active") or "").strip().lower()
+        player_active = True if active_raw in ("1","true","t","yes","y") else False if active_raw in ("0","false","f","no","n") else True
 
         return True, {
             "full_name": full_name,
             "known_as": known_as,
-            "dob": dob,  # Python date (or None)
+            "birth_date": birth_date,
             "country_id": country_id,
             "height_cm": height_cm,
             "weight_kg": weight_kg,
-            "foot": foot,
-            "primary_position": primary_position,
+            "player_position": pos,     # <-- matches model
+            "player_active": player_active,  # <-- matches model
         }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
-        # Heuristic: try to find existing person by (full_name, dob)
-        sel = select(Person).where(Person.full_name.ilike(kwargs["full_name"]))
-        if kwargs.get("dob") is not None:
-            sel = sel.where(Person.dob == kwargs["dob"])  # both are date
+        # Person upsert by (full_name[, birth_date])
+        sel = select(Person).where(func.lower(Person.full_name) == func.lower(kwargs["full_name"]))
+        if kwargs.get("birth_date") is not None:
+            sel = sel.where(Person.birth_date == kwargs["birth_date"])
         person = db.execute(sel).scalar_one_or_none()
 
         if not person:
             person = Person(
                 full_name=kwargs["full_name"],
                 known_as=kwargs.get("known_as"),
-                dob=kwargs.get("dob"),  # already a date
+                birth_date=kwargs.get("birth_date"),
                 country_id=kwargs.get("country_id"),
                 height_cm=kwargs.get("height_cm"),
                 weight_kg=kwargs.get("weight_kg"),
             )
             db.add(person)
             db.flush()
+        else:
+            changed = False
+            for f in ("known_as","country_id","height_cm","weight_kg"):
+                v = kwargs.get(f)
+                if v is not None and getattr(person, f) != v:
+                    setattr(person, f, v); changed = True
+            if changed: db.flush()
 
-        # Ensure player row exists for this person
-        stmt = insert(Player).values(
-            player_id=person.person_id,
-            foot=kwargs.get("foot"),
-            primary_position=kwargs.get("primary_position"),
-        ).on_conflict_do_nothing(index_elements=["player_id"])
-        result = db.execute(stmt)
-        return bool(getattr(result, "rowcount", 0))
+        # Player upsert keyed by person_id
+        stmt = (
+            insert(Player)
+            .values(
+                person_id=person.person_id,
+                player_position=kwargs.get("player_position"),
+                player_active=kwargs.get("player_active"),
+            )
+            .on_conflict_do_update(
+                index_elements=["person_id"],
+                set_={
+                    "player_position": kwargs.get("player_position"),
+                    "player_active": kwargs.get("player_active"),
+                },
+            )
+        )
+        res = db.execute(stmt)
+        return bool(getattr(res, "rowcount", 0))

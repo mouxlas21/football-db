@@ -1,33 +1,80 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Players</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.45; }
+    .toolbar { margin-bottom: 1rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: .5rem .6rem; border-bottom: 1px solid #eee; text-align: left; }
+    th { background: #fafafa; }
+    .pill { padding:.2rem .5rem; border-radius:999px; background:#f3f4f6; font-size:.85rem; }
+  </style>
 </head>
 <body>
   <h1>Players</h1>
 
-  <form method="get" style="margin-bottom:1rem">
-    <input type="text" name="q" value="{{ q }}" placeholder="Search by name">
-    <input type="number" name="country_id" value="{{ country_id or '' }}" placeholder="country_id">
+  <form class="toolbar" method="get">
+    <input type="text" name="q" value="{{ q or '' }}" placeholder="Search name…" />
+    <select name="position">
+      <option value="" {{ 'selected' if not position }}>All positions</option>
+      <option value="GK" {{ 'selected' if position == 'GK' }}>GK</option>
+      <option value="DF" {{ 'selected' if position == 'DF' }}>DF</option>
+      <option value="MF" {{ 'selected' if position == 'MF' }}>MF</option>
+      <option value="FW" {{ 'selected' if position == 'FW' }}>FW</option>
+    </select>
+    <select name="active">
+      <option value="" {{ 'selected' if active is none or active=='' }}>Any status</option>
+      <option value="true"  {{ 'selected' if active == 'true' }}>Active</option>
+      <option value="false" {{ 'selected' if active == 'false' }}>Inactive</option>
+    </select>
+    <input type="text" name="country" value="{{ country or '' }}" placeholder="Country (id/FIFA/name)" />
+    <input type="number" name="limit" value="{{ limit or 200 }}" min="1" max="1000" />
     <button type="submit">Filter</button>
   </form>
 
-  <ul>
-    {% for row in players %}
-      {% set p = row.player %}
-      {% set pe = row.person %}
-      <li>
-        <a href="/players/{{ p.player_id }}">{{ pe.full_name }}</a>
-        {% if pe.known_as %} ({{ pe.known_as }}){% endif %}
-        — {{ country_map.get(pe.country_id, '—') }}
-        {% if p.primary_position %} • {{ p.primary_position }}{% endif %}
-      </li>
-    {% else %}
-      <li>No players found.</li>
-    {% endfor %}
-  </ul>
-
-  <p><a href="/">Home</a></p>
+  {% if players|length == 0 %}
+    <p>No players found.</p>
+  {% else %}
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Status</th>
+          <th>Country</th>
+          <th>Height</th>
+          <th>Weight</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for row in players %}
+        <tr>
+          <td>
+            <a href="/players/{{ row.player_id }}">{{ persons[row.person_id].full_name if persons.get(row.person_id) else '—' }}</a>
+            {% if persons.get(row.person_id) and persons[row.person_id].known_as %}
+              <span class="pill">{{ persons[row.person_id].known_as }}</span>
+            {% endif %}
+          </td>
+          <td>{{ row.player_position or '—' }}</td>
+          <td>{{ 'Active' if row.player_active else 'Inactive' }}</td>
+          <td>
+            {% set p = persons.get(row.person_id) %}
+            {% if p and p.country_id and countries.get(p.country_id) %}
+              <a href="/countries/{{ p.country_id }}">{{ countries[p.country_id].name }}</a>
+            {% else %} — {% endif %}
+          </td>
+          <td>
+            {% if p and p.height_cm %}{{ p.height_cm }} cm{% else %}—{% endif %}
+          </td>
+          <td>
+            {% if p and p.weight_kg %}{{ p.weight_kg }} kg{% else %}—{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
 </body>
 </html>

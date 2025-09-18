@@ -86,42 +86,107 @@ class Team(Base):
     gender: Mapped[str | None] = mapped_column(Text)
     age_group: Mapped[str | None] = mapped_column(Text)
     squad_level: Mapped[str | None] = mapped_column(Text)
+
 class Person(Base):
     __tablename__ = "person"
 
     person_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    first_name: Mapped[str | None] = mapped_column(Text)
+    last_name: Mapped[str | None] = mapped_column(Text)
     full_name: Mapped[str] = mapped_column(Text, nullable=False)
     known_as: Mapped[str | None] = mapped_column(Text)
-    dob: Mapped[date | None] = mapped_column(Date)
+    birth_date: Mapped[date | None] = mapped_column(Date)  # was dob
+    birth_place: Mapped[str | None] = mapped_column(Text)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+    second_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+    gender: Mapped[str | None] = mapped_column(Text)
     height_cm: Mapped[int | None] = mapped_column(SmallInteger)
     weight_kg: Mapped[int | None] = mapped_column(SmallInteger)
+    photo_url: Mapped[str | None] = mapped_column(Text)
 
 class Player(Base):
     __tablename__ = "player"
 
-    player_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"), primary_key=True)
-    foot: Mapped[str | None] = mapped_column(Text)
-    primary_position: Mapped[str | None] = mapped_column(Text)
+    player_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    person_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"))
+    player_position: Mapped[str | None] = mapped_column(Text)  # 'GK','DF','MF','FW'
+    player_active: Mapped[bool] = mapped_column(default=True)
 
     person = relationship("Person", backref="player", uselist=False)
 
+class Coach(Base):
+    __tablename__ = "coach"
+
+    coach_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    person_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"), unique=True, nullable=False)
+    role_default: Mapped[str | None] = mapped_column(Text)  # 'head','assistant','gk','fitness',...
+    coach_active: Mapped[bool] = mapped_column(default=True)
+
+    person = relationship("Person", backref="coach", uselist=False)
+
+class Official(Base):
+    __tablename__ = "official"
+
+    official_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    person_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"), unique=True, nullable=False)
+    association_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+    roles: Mapped[str | None] = mapped_column(Text)  # e.g. 'referee;assistant;VAR'
+    official_active: Mapped[bool] = mapped_column(default=True)
+
+    person = relationship("Person", backref="official", uselist=False)
+
+class PlayerRegistration(Base):
+    __tablename__ = "player_registration"
+
+    registration_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    player_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("player.player_id", ondelete="CASCADE"), nullable=False)
+    team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="CASCADE"), nullable=False)
+    start_date: Mapped[date] = mapped_column(Date, nullable=False)
+    end_date: Mapped[date | None] = mapped_column(Date)
+    shirt_no: Mapped[int | None] = mapped_column(SmallInteger)
+    on_loan: Mapped[bool] = mapped_column(default=False)
+
+class StaffAssignment(Base):
+    __tablename__ = "staff_assignment"
+
+    assignment_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    person_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"), nullable=False)
+    team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="CASCADE"), nullable=False)
+    staff_role: Mapped[str] = mapped_column(Text, nullable=False)  # 'head coach','assistant','gk coach',...
+    start_date: Mapped[date] = mapped_column(Date, nullable=False)
+    end_date: Mapped[date | None] = mapped_column(Date)
+
+class MatchOfficial(Base):
+    __tablename__ = "match_official"
+
+    match_official_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    fixture_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("fixture.fixture_id", ondelete="CASCADE"), nullable=False)
+    person_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("person.person_id", ondelete="CASCADE"), nullable=False)
+    duty: Mapped[str] = mapped_column(Text, nullable=False)  # 'referee','AR1','AR2','4th','VAR','AVAR'
+
+
 class Fixture(Base):
     __tablename__ = "fixture"
+
     fixture_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    # FK to stage_round
     stage_round_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage_round.stage_round_id", ondelete="CASCADE"), nullable=False)
-    # FK to stage_group (nullable)
     group_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stage_group.group_id", ondelete="SET NULL"))
     home_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     away_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     kickoff_utc: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     stadium_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stadium.stadium_id", ondelete="SET NULL"))
     attendance: Mapped[int | None] = mapped_column(Integer)
-    status: Mapped[str] = mapped_column(Text, nullable=False, default="scheduled")
+    fixture_status: Mapped[str] = mapped_column(Text, nullable=False, default="scheduled")
     home_score: Mapped[int] = mapped_column(SmallInteger, default=0)
     away_score: Mapped[int] = mapped_column(SmallInteger, default=0)
     winner_team_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="SET NULL"))
+
+    stage_round = relationship("StageRound")
+    group = relationship("StageGroup")
+    home_team = relationship("Team", foreign_keys=[home_team_id])
+    away_team = relationship("Team", foreign_keys=[away_team_id])
+    stadium = relationship("Stadium")
+    winner_team = relationship("Team", foreign_keys=[winner_team_id])
 
 class Season(Base):
     __tablename__ = "season"
@@ -161,4 +226,17 @@ class StageGroup(Base):
         UniqueConstraint("stage_id", "name", name="uq_stage_group_name"),
         UniqueConstraint("stage_id", "code", name="uq_stage_group_code"),
         Index("idx_stage_group_stage_id", "stage_id"),
+    )
+
+class StageGroupTeam(Base):
+    __tablename__ = "stage_group_team"
+
+    stage_group_team_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    group_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage_group.group_id", ondelete="CASCADE"), nullable=False)
+    team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="CASCADE"), nullable=False)
+
+    __table_args__ = (
+        UniqueConstraint("group_id", "team_id", name="uq_stage_group_team"),
+        Index("idx_sgt_group", "group_id"),
+        Index("idx_sgt_team", "team_id"),
     )

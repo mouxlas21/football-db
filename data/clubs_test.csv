@@ -1,26 +1,26 @@
 name,short_name,founded,country_id,stadium_id,colors
-FC Bayern München,Bayern,1900,Germany,,Red/White
-Bayer 04 Leverkusen,Leverkusen,1904,Germany,,Red/Black
-VfB Stuttgart,Stuttgart,1893,Germany,,White/Red
-RB Leipzig,Leipzig,2009,Germany,,Red/White
-Borussia Dortmund,Dortmund,1909,Germany,,Black/Yellow
-Eintracht Frankfurt,Frankfurt,1899,Germany,,Black/Red/White
-TSG 1899 Hoffenheim,Hoffenheim,1899,Germany,,Blue/White
-1. FC Heidenheim 1846,Heidenheim,1846,Germany,,Red/Blue
-SV Werder Bremen,Werder,1899,Germany,,Green/White
-SC Freiburg,Freiburg,1904,Germany,,Red/White
-1. FC Köln,Köln,1948,Germany,,White/Red
-1. FSV Mainz 05,Mainz,1905,Germany,,Red/White
-Borussia Mönchengladbach,Gladbach,1900,Germany,,Black/White/Green
-FC Augsburg,Augsburg,1907,Germany,,Red/Green/White
-VfL Bochum 1848,Bochum,1848,Germany,,Blue/White
-Union Berlin,Union Berlin,1966,Germany,,Red/White
-VfL Wolfsburg,Wolfsburg,1945,Germany,,Green/White
-St. Pauli,St. Pauli,1910,Germany,,Brown/White
+FC Bayern München,Bayern,1900,Germany,Allianz Arena,Red/White
+Bayer 04 Leverkusen,Leverkusen,1904,Germany,BayArena,Red/Black
+VfB Stuttgart,Stuttgart,1893,Germany,MHPArena,White/Red
+RB Leipzig,Leipzig,2009,Germany,Red Bull Arena,Red/White
+Borussia Dortmund,Dortmund,1909,Germany,Signal Iduna Park,Black/Yellow
+Eintracht Frankfurt,Frankfurt,1899,Germany,Deutsche Bank Park,Black/Red/White
+TSG 1899 Hoffenheim,Hoffenheim,1899,Germany,PreZero Arena,Blue/White
+1. FC Heidenheim 1846,Heidenheim,1846,Germany,Voith-Arena,Red/Blue
+SV Werder Bremen,Werder,1899,Germany,Weserstadion,Green/White
+SC Freiburg,Freiburg,1904,Germany,Europa-Park Stadion,Red/White
+1. FC Köln,Köln,1948,Germany,RheinEnergieSTADION,White/Red
+1. FSV Mainz 05,Mainz,1905,Germany,Mewa Arena,Red/White
+Borussia Mönchengladbach,Gladbach,1900,Germany,Borussia-Park,Black/White/Green
+FC Augsburg,Augsburg,1907,Germany,WWK Arena,Red/Green/White
+VfL Bochum 1848,Bochum,1848,Germany,Vonovia Ruhrstadion,Blue/White
+Union Berlin,Union Berlin,1966,Germany,Stadion An der Alten Försterei,Red/White
+VfL Wolfsburg,Wolfsburg,1945,Germany,Volkswagen Arena,Green/White
+St. Pauli,St. Pauli,1910,Germany,Millerntor-Stadion,Brown/White
 Manchester City,Man City,1880,England,,Sky Blue/White
-Real Madrid,Real,1902,Spain,,White
-Juventus,Juve,1897,ITA,,Black/White
-Paris Saint-Germain,PSG,1970,FRA,,Blue/Red
+Real Madrid,Real,1902,Spain,Santiago Bernabéu,White
+Juventus,Juve,1897,ITA,Allianz Stadium,Black/White
+Paris Saint-Germain,PSG,1970,FRA,Parc des Princes,Blue/Red
 AFC Ajax,Ajax,1900,ned,,Red/White
 SL Benfica,Benfica,1904,POR,,Red/White
 Panathinaikos,PAO,1908,Greece,,Green/White

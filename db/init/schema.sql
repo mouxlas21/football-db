@@ -128,6 +128,15 @@ CREATE TABLE IF NOT EXISTS stage_group (
 
 CREATE INDEX IF NOT EXISTS idx_stage_group_stage_id ON stage_group(stage_id);
 
+CREATE TABLE IF NOT EXISTS stage_group_team (
+  stage_group_team_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  group_id            BIGINT NOT NULL REFERENCES stage_group(group_id) ON DELETE CASCADE,
+  team_id             BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  UNIQUE (group_id, team_id)
+);
+CREATE INDEX IF NOT EXISTS idx_sgt_group ON stage_group_team(group_id);
+CREATE INDEX IF NOT EXISTS idx_sgt_team ON stage_group_team(team_id);
+
 -- ===========================================
 -- Stage rounds: matchdays or knockout rounds inside a stage
 -- ===========================================
@@ -145,20 +154,76 @@ CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id ON stage_round(stage_id);
 CREATE INDEX IF NOT EXISTS idx_stage_round_stage_order ON stage_round(stage_id, stage_round_order);
 
 CREATE TABLE IF NOT EXISTS person (
-  person_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  full_name       TEXT NOT NULL,
-  known_as        TEXT,
-  dob             DATE,
-  country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  height_cm       SMALLINT,
-  weight_kg       SMALLINT
+  person_id          BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  first_name         TEXT,
+  last_name          TEXT,
+  full_name          TEXT,
+  known_as           TEXT,
+  birth_date         DATE,
+  birth_place        TEXT,
+  country_id         BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  second_country_id  BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  gender             TEXT,
+  height_cm          SMALLINT,
+  weight_kg          SMALLINT,
+  photo_url          TEXT
 );
 
+CREATE UNIQUE INDEX IF NOT EXISTS uq_person_name_dob ON person (lower(full_name), birth_date) WHERE full_name IS NOT NULL AND birth_date IS NOT NULL;
+CREATE INDEX IF NOT EXISTS idx_person_country ON person(country_id);
+
 CREATE TABLE IF NOT EXISTS player (
-  player_id       BIGINT PRIMARY KEY REFERENCES person(person_id) ON DELETE CASCADE,
-  foot            TEXT,
-  primary_position TEXT
+  player_id   BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  person_id   BIGINT NOT NULL UNIQUE REFERENCES person(person_id) ON DELETE CASCADE,
+  player_position    TEXT,
+  player_active      BOOLEAN DEFAULT TRUE,
+  CONSTRAINT chk_player_position
+    CHECK (player_position IS NULL OR player_position IN ('GK','DF','MF','FW'))
 );
+
+CREATE TABLE IF NOT EXISTS coach (
+  coach_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  person_id     BIGINT NOT NULL UNIQUE REFERENCES person(person_id) ON DELETE CASCADE,
+  role_default  TEXT,                 -- 'head','assistant','gk','fitness',...
+  coach_active  BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE IF NOT EXISTS official (
+  official_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  person_id         BIGINT NOT NULL UNIQUE REFERENCES person(person_id) ON DELETE CASCADE,
+  association_id    BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
+  roles             TEXT,             -- e.g. "referee;assistant;VAR"
+  official_active   BOOLEAN DEFAULT TRUE
+);
+
+CREATE INDEX IF NOT EXISTS idx_official_association ON official(association_id);
+
+CREATE TABLE IF NOT EXISTS player_registration (
+  registration_id  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  player_id        BIGINT NOT NULL REFERENCES player(player_id) ON DELETE CASCADE,
+  team_id          BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  start_date       DATE NOT NULL,
+  end_date         DATE,
+  shirt_no         SMALLINT,
+  on_loan          BOOLEAN DEFAULT FALSE
+);
+
+CREATE INDEX IF NOT EXISTS idx_player_reg_player ON player_registration(player_id);
+CREATE INDEX IF NOT EXISTS idx_player_reg_team   ON player_registration(team_id);
+CREATE INDEX IF NOT EXISTS idx_player_reg_period ON player_registration(start_date, end_date);
+
+CREATE TABLE IF NOT EXISTS staff_assignment (
+  assignment_id  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  person_id      BIGINT NOT NULL REFERENCES person(person_id) ON DELETE CASCADE,
+  team_id        BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  staff_role     TEXT NOT NULL,          -- 'head coach','assistant','gk coach',...
+  start_date     DATE NOT NULL,
+  end_date       DATE
+);
+
+CREATE INDEX IF NOT EXISTS idx_staff_person ON staff_assignment(person_id);
+CREATE INDEX IF NOT EXISTS idx_staff_team   ON staff_assignment(team_id);
+CREATE INDEX IF NOT EXISTS idx_staff_period ON staff_assignment(start_date, end_date);
 
 CREATE TABLE IF NOT EXISTS season_team (
   season_team_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -179,7 +244,7 @@ CREATE TABLE IF NOT EXISTS fixture (
   kickoff_utc     TIMESTAMPTZ NOT NULL,
   stadium_id      BIGINT REFERENCES stadium(stadium_id) ON DELETE SET NULL,
   attendance      INTEGER,
-  status          TEXT NOT NULL DEFAULT 'scheduled',
+  fixture_status  TEXT NOT NULL DEFAULT 'scheduled',
   home_score      SMALLINT DEFAULT 0,
   away_score      SMALLINT DEFAULT 0,
   winner_team_id  BIGINT REFERENCES team(team_id) ON DELETE SET NULL,
@@ -194,6 +259,16 @@ CREATE INDEX IF NOT EXISTS idx_fixture_stadium_id ON fixture(stadium_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_home_team_id ON fixture(home_team_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_away_team_id ON fixture(away_team_id);
 CREATE INDEX IF NOT EXISTS idx_fixture_winner_team_id ON fixture(winner_team_id);
+
+CREATE TABLE IF NOT EXISTS match_official (
+  match_official_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
+  person_id         BIGINT NOT NULL REFERENCES person(person_id) ON DELETE CASCADE,
+  duty              TEXT NOT NULL          -- 'referee','AR1','AR2','4th','VAR','AVAR'
+);
+
+CREATE INDEX IF NOT EXISTS idx_match_official_fixture ON match_official(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_match_official_person  ON match_official(person_id);
 
 CREATE TABLE IF NOT EXISTS lineup (
   lineup_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -309,46 +384,39 @@ CREATE TABLE IF NOT EXISTS table_standings (
 -- ======================================================
 
 -- Countries / People / Clubs / Stadiums
-CREATE INDEX IF NOT EXISTS idx_person_country_id            ON person(country_id);
-
-
-
--- Competitions / Seasons / Stages / Stage rounds / Stage Groups
 
 -- Teams & Entries
 
-CREATE INDEX IF NOT EXISTS idx_season_team_season_id        ON season_team(season_id);
-CREATE INDEX IF NOT EXISTS idx_season_team_team_id          ON season_team(team_id);
-
--- fixtures
+CREATE INDEX IF NOT EXISTS idx_season_team_season_id ON season_team(season_id);
+CREATE INDEX IF NOT EXISTS idx_season_team_team_id ON season_team(team_id);
 
 
 -- Lineups / Appearances / Subs / Match events
-CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id              ON lineup(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_lineup_team_id                 ON lineup(team_id);
-CREATE INDEX IF NOT EXISTS idx_lineup_player_id               ON lineup(player_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id ON lineup(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_team_id ON lineup(team_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_player_id ON lineup(player_id);
 
-CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id          ON appearance(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_appearance_player_id         ON appearance(player_id);
-CREATE INDEX IF NOT EXISTS idx_appearance_team_id           ON appearance(team_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id ON appearance(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_player_id ON appearance(player_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_team_id ON appearance(team_id);
 
-CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id        ON substitution(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_substitution_team_id         ON substitution(team_id);
-CREATE INDEX IF NOT EXISTS idx_substitution_player_on_id    ON substitution(player_on_id);
-CREATE INDEX IF NOT EXISTS idx_substitution_player_off_id   ON substitution(player_off_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id ON substitution(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_team_id ON substitution(team_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_player_on_id ON substitution(player_on_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_player_off_id ON substitution(player_off_id);
 
-CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id               ON match_event(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_match_event_team_id                ON match_event(team_id);
-CREATE INDEX IF NOT EXISTS idx_match_event_player_id              ON match_event(player_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id ON match_event(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_team_id ON match_event(team_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_player_id ON match_event(player_id);
 
 -- Stats / Standings
-CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_fixture_id    ON team_fixture_stats(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_team_id     ON team_fixture_stats(team_id);
+CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_fixture_id ON team_fixture_stats(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_team_fixture_stats_team_id ON team_fixture_stats(team_id);
 
-CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_fixture_id  ON player_fixture_stats(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_fixture_id ON player_fixture_stats(fixture_id);
 CREATE INDEX IF NOT EXISTS idx_player_fixture_stats_player_id ON player_fixture_stats(player_id);
 
-CREATE INDEX IF NOT EXISTS idx_table_standings_scope        ON table_standings(season_id, stage_id, group_id, team_id);
+CREATE INDEX IF NOT EXISTS idx_table_standings_scope ON table_standings(season_id, stage_id, group_id, team_id);
 
 
 
@@ -359,10 +427,10 @@ CREATE UNIQUE INDEX IF NOT EXISTS uniq_team_per_club
 -- ===============================================
 -- Extra helpful indexes on foreign key fixture_id
 -- ===============================================
-CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id                 ON lineup(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id             ON appearance(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id           ON substitution(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id            ON match_event(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_lineup_fixture_id ON lineup(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_appearance_fixture_id ON appearance(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_substitution_fixture_id ON substitution(fixture_id);
+CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id ON match_event(fixture_id);
 --CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
 --CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
 

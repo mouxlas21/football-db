@@ -3,6 +3,7 @@
 cd ~/Documents/football-db
 docker compose up -d         # start/recreate containers (backend, db, pgAdmin)
 docker compose logs -f backend 
+docker compose logs --tail=200 backend
 
 ## password changes
 
@@ -59,7 +60,7 @@ matches take teams_ids from team table
 9)stages rounds
 10)stages groups
 
-3)person → player
+11)person → player, coach, official
 
 
 entry

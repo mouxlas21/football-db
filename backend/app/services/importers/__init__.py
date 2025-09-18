@@ -4,32 +4,36 @@ from sqlalchemy.orm import Session
 from .base import BaseImporter
 from .associations import AssociationsImporter
 from .countries import CountriesImporter
-from .clubs import ClubsImporter
-from .competitions import CompetitionsImporter
-from .players import PlayersImporter
-from .fixtures import FixturesImporter
 from .stadiums import StadiumsImporter
+from .competitions import CompetitionsImporter
+from .clubs import ClubsImporter
+from .teams import TeamsImporter
 from .seasons import SeasonsImporter
 from .stages import StagesImporter
 from .stage_rounds import StageRoundsImporter 
 from .stage_groups import StageGroupsImporter
-from .teams import TeamsImporter
+from .stage_group_teams import StageGroupTeamsImporter
+from .players import PlayersImporter
+from .coaches import CoachesImporter
+from .officials import OfficialsImporter
+from .fixtures import FixturesImporter
+
+
+
 
 REGISTRY: dict[str, BaseImporter] = {
     "association": AssociationsImporter(),
     "associations": AssociationsImporter(),
     "country": CountriesImporter(),
     "countries": CountriesImporter(),
-    "club": ClubsImporter(),
-    "clubs": ClubsImporter(),
-    "competition": CompetitionsImporter(),
-    "competitions": CompetitionsImporter(),
-    "player": PlayersImporter(),
-    "players": PlayersImporter(),
-    "fixture": FixturesImporter(),
-    "fixtures": FixturesImporter(),
     "stadium": StadiumsImporter(),
     "stadiums": StadiumsImporter(),
+    "competition": CompetitionsImporter(),
+    "competitions": CompetitionsImporter(),
+    "club": ClubsImporter(),
+    "clubs": ClubsImporter(),
+    "team": TeamsImporter(),
+    "teams": TeamsImporter(),
     "season": SeasonsImporter(),
     "seasons": SeasonsImporter(),
     "stage": StagesImporter(),
@@ -38,8 +42,16 @@ REGISTRY: dict[str, BaseImporter] = {
     "stage_rounds": StageRoundsImporter(),
     "stage_group": StageGroupsImporter(),
     "stage_groups": StageGroupsImporter(),
-    "team": TeamsImporter(),
-    "teams": TeamsImporter(),
+    "stage_group_team": StageGroupTeamsImporter(),
+    "stage_group_teams": StageGroupTeamsImporter(),
+    "player": PlayersImporter(),
+    "players": PlayersImporter(),
+    "coache": CoachesImporter(),
+    "coaches": CoachesImporter(),
+    "official": OfficialsImporter(),
+    "officials": OfficialsImporter(),
+    "fixture": FixturesImporter(),
+    "fixtures": FixturesImporter(),
 }
 
 def get_importer(entity: str) -> BaseImporter:

@@ -32,12 +32,12 @@
         {% set away = teams.get(f.away_team_id) %}
         {% set stad = stadiums.get(f.stadium_id) %}
         <tr>
-          <td><a href="/matches/{{ f.fixture_id }}">{{ f.fixture_id }}</a></td>
+          <td><a href="/fixtures/{{ f.fixture_id }}">{{ f.fixture_id }}</a></td>
           <td>{{ f.kickoff_utc }}</td>
           <td>{{ home.name if home else f.home_team_id }}</td>
           <td>vs</td>
           <td>{{ away.name if away else f.away_team_id }}</td>
-          <td>{{ f.status }}</td>
+          <td>{{ f.fixture_status }}</td>
           <td>{{ f.home_score }} - {{ f.away_score }}</td>
           <td>{{ stad.name if stad else "" }}</td>
           <td>{{ f.attendance or "" }}</td>

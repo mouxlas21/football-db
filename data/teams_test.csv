@@ -1,6 +1,31 @@
 name,type,club_id,national_country_id,gender,age_group,squad_level
 FC Bayern München,club,FC Bayern München,,men,senior,first
+Bayer 04 Leverkusen,club,Bayer 04 Leverkusen,,men,senior,first
+VfB Stuttgart,club,VfB Stuttgart,,men,senior,first
+RB Leipzig,club,RB Leipzig,,men,senior,first
 Borussia Dortmund,club,Borussia Dortmund,,men,senior,first
+Eintracht Frankfurt,club,Eintracht Frankfurt,,men,senior,first
+TSG 1899 Hoffenheim,club,TSG 1899 Hoffenheim,,men,senior,first
+1. FC Heidenheim 1846,club,1. FC Heidenheim 1846,,men,senior,first
+SV Werder Bremen,club,SV Werder Bremen,,men,senior,first
+SC Freiburg,club,SC Freiburg,,men,senior,first
+1. FC Köln,club,1. FC Köln,,men,senior,first
+1. FSV Mainz 05,club,1. FSV Mainz 05,,men,senior,first
+Borussia Mönchengladbach,club,Borussia Mönchengladbach,,men,senior,first
+FC Augsburg,club,FC Augsburg,,men,senior,first
+VfL Bochum 1848,club,VfL Bochum 1848,,men,senior,first
+Union Berlin,club,Union Berlin,,men,senior,first
+VfL Wolfsburg,club,VfL Wolfsburg,,men,senior,first
+St. Pauli,club,St. Pauli,,men,senior,first
+Manchester City,club,Manchester City,,men,senior,first
+Real Madrid,club,Real Madrid,,men,senior,first
+Juventus,club,Juventus,,men,senior,first
+Paris Saint-Germain,club,Paris Saint-Germain,,men,senior,first
+AFC Ajax,club,AFC Ajax,,men,senior,first
+SL Benfica,club,SL Benfica,,men,senior,first
+Panathinaikos,club,Panathinaikos,,men,senior,first
+Club Brugge,club,Club Brugge,,men,senior,first
+Malmö FF,club,Malmö FF,,men,senior,first
 Germany,national,,GER,men,senior,first
 Germany U21,national,,GER,men,U21,first
 Germany Women,national,,GER,women,senior,first

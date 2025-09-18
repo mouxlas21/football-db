@@ -110,12 +110,46 @@
   </section>
 
   <hr />
+
+  <section>
+    <h2>Stage Group Memberships</h2>
+    <p>Headers (either style): <br>A) <code>group_id,team_id</code> <br>B) <code>competition,season_name,stage_name,group,team</code></p>
+    <form action="/import/csv?entity=stage_group_teams" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Group Memberships</button>
+    </form>
+  </section>
+
+  <hr />
   
   <section>
     <h2>Players</h2>
     <form action="/import/csv?entity=players" method="post" enctype="multipart/form-data">
       <input type="file" name="file" accept=".csv" required />
       <button type="submit">Upload Players</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Coaches</h2>
+    <p>Headers: <code>full_name,known_as,birth_date,role_default,coach_active</code></p>
+    <form action="/import/csv?entity=coaches" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Coaches</button>
+    </form>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Officials</h2>
+    <p>Headers: <code>full_name,known_as,birth_date,association,roles,official_active</code>
+      (<em>association</em> can be ID, code like "UEFA/FIFA", or full name)</p>
+    <form action="/import/csv?entity=officials" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Officials</button>
     </form>
   </section>
 

@@ -45,9 +45,7 @@ class ClubRead(BaseModel):
     country_id: Optional[int] = None
     stadium_id: Optional[int] = None
     colors: Optional[str] = None
-
-    class Config:
-        from_attributes = True
+    class Config: from_attributes = True
 
 class CompetitionCreate(BaseModel):
     name: str
@@ -62,63 +60,6 @@ class CompetitionRead(BaseModel):
     country_id: Optional[int] = None
     organizer_ass_id: Optional[int] = None
     class Config: from_attributes = True
-
-# Backwards-compatible league API models (if you still use /leagues JSON)
-class LeagueCreate(CompetitionCreate):
-    type: Optional[str] = "league"
-
-class LeagueRead(BaseModel):
-    league_id: int
-    name: str
-    organizer: Optional[str] = None
-    country_id: Optional[int] = None
-    confederation: Optional[str] = None
-
-    @classmethod
-    def model_validate_from_competition(cls, c):
-        return cls(
-            league_id=c.competition_id,
-            name=c.name,
-            organizer=c.organizer,
-            country_id=c.country_id,
-            confederation=c.confederation,
-        )
-
-    class Config:
-        from_attributes = True
-        
-class PersonCreate(BaseModel):
-    full_name: str
-    known_as: Optional[str] = None
-    dob: Optional[date] = None
-    country_id: Optional[int] = None
-    height_cm: Optional[int] = None
-    weight_kg: Optional[int] = None
-
-class PersonRead(BaseModel):
-    person_id: int
-    full_name: str
-    known_as: Optional[str] = None
-    dob: Optional[date] = None
-    country_id: Optional[int] = None
-    height_cm: Optional[int] = None
-    weight_kg: Optional[int] = None
-    class Config:
-        from_attributes = True
-
-class PlayerCreate(BaseModel):
-    person_id: Optional[int] = None
-    person: Optional[PersonCreate] = None
-    foot: Optional[str] = None
-    primary_position: Optional[str] = None
-
-class PlayerRead(BaseModel):
-    player_id: int
-    foot: Optional[str] = None
-    primary_position: Optional[str] = None
-    person: PersonRead
-    class Config:
-        from_attributes = True
 
 class TeamCreate(BaseModel):
     name: str
@@ -138,8 +79,7 @@ class TeamRead(BaseModel):
     gender: Optional[str] = None
     age_group: Optional[str] = None
     squad_level: Optional[str] = None
-    class Config:
-        from_attributes = True
+    class Config: from_attributes = True
 
 class FixtureCreate(BaseModel):
     stage_round_id: int
@@ -149,7 +89,7 @@ class FixtureCreate(BaseModel):
     group_id: Optional[int] = None
     stadium_id: Optional[int] = None
     attendance: Optional[int] = None
-    status: Optional[str] = "scheduled"
+    fixture_status: Optional[str] = "scheduled"
     home_score: Optional[int] = 0
     away_score: Optional[int] = 0
     winner_team_id: Optional[int] = None
@@ -163,10 +103,122 @@ class FixtureRead(BaseModel):
     kickoff_utc: datetime
     stadium_id: Optional[int] = None
     attendance: Optional[int] = None
-    status: str
+    fixture_status: str
     home_score: int
     away_score: int
     winner_team_id: Optional[int] = None
+    class Config: from_attributes = True
 
-    class Config:
-        from_attributes = True
+class PersonCreate(BaseModel):
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    full_name: str
+    known_as: Optional[str] = None
+    birth_date: Optional[date] = None   
+    birth_place: Optional[str] = None
+    country_id: Optional[int] = None
+    second_country_id: Optional[int] = None
+    gender: Optional[str] = None
+    height_cm: Optional[int] = None
+    weight_kg: Optional[int] = None
+    photo_url: Optional[str] = None
+
+class PersonRead(BaseModel):
+    person_id: int
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    full_name: str
+    known_as: Optional[str] = None
+    birth_date: Optional[date] = None   
+    birth_place: Optional[str] = None
+    country_id: Optional[int] = None
+    second_country_id: Optional[int] = None
+    gender: Optional[str] = None
+    height_cm: Optional[int] = None
+    weight_kg: Optional[int] = None
+    photo_url: Optional[str] = None
+    class Config: from_attributes = True
+
+class PlayerCreate(BaseModel):
+    person_id: Optional[int] = None         
+    player_position: Optional[str] = None          # 'GK','DF','MF','FW'
+    player_active: Optional[bool] = True
+
+class PlayerRead(BaseModel):
+    player_id: int
+    person_id: Optional[int] = None
+    player_position: Optional[str] = None
+    player_active: bool
+    class Config: from_attributes = True
+
+class CoachCreate(BaseModel):
+    person_id: Optional[int] = None
+    role_default: Optional[str] = None
+    coach_active: Optional[bool] = True
+
+class CoachRead(BaseModel):
+    coach_id: int
+    person_id: Optional[int] = None
+    role_default: Optional[str] = None
+    coach_active: bool
+    class Config: from_attributes = True
+
+class OfficialCreate(BaseModel):
+    person_id: Optional[int] = None
+    association_id: Optional[int] = None   
+    roles: Optional[str] = None
+    official_active: Optional[bool] = True
+
+class OfficialRead(BaseModel):
+    official_id: int
+    person_id: Optional[int] = None
+    association_id: Optional[int] = None
+    roles: Optional[str] = None
+    official_active: bool
+    class Config: from_attributes = True
+
+class PlayerRegistrationCreate(BaseModel):
+    player_id: int
+    team_id: int
+    start_date: date
+    end_date: Optional[date] = None
+    shirt_no: Optional[int] = None
+    on_loan: Optional[bool] = False
+
+class PlayerRegistrationRead(BaseModel):
+    registration_id: int
+    player_id: int
+    team_id: int
+    start_date: date
+    end_date: Optional[date] = None
+    shirt_no: Optional[int] = None
+    on_loan: bool
+    class Config: from_attributes = True
+
+class StaffAssignmentCreate(BaseModel):
+    person_id: int
+    team_id: int
+    staff_role: str
+    start_date: date
+    end_date: Optional[date] = None
+
+class StaffAssignmentRead(BaseModel):
+    assignment_id: int
+    person_id: int
+    team_id: int
+    staff_role: str
+    start_date: date
+    end_date: Optional[date] = None
+    class Config: from_attributes = True
+
+class MatchOfficialCreate(BaseModel):
+    fixture_id: int
+    person_id: int
+    duty: str
+
+class MatchOfficialRead(BaseModel):
+    match_official_id: int
+    fixture_id: int
+    person_id: int
+    duty: str
+    class Config: from_attributes = True

@@ -1,18 +1,74 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>{{ person.full_name }}</title></head>
+<head>
+  <meta charset="utf-8" />
+  <title>{{ person.full_name }}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.45; }
+    .meta { color:#555; }
+    ul { padding-left: 1.2rem; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .card { border:1px solid #eee; border-radius: .5rem; padding: .8rem; }
+    dt { color:#666; font-size:.9rem; }
+    dd { margin:0 0 .5rem 0; font-weight:600; }
+  </style>
+</head>
 <body>
   <h1>{{ person.full_name }}</h1>
-  {% if person.known_as %}<p><strong>Known as:</strong> {{ person.known_as }}</p>{% endif %}
-  {% if person.dob %}<p><strong>Date of birth:</strong> {{ person.dob }}</p>{% endif %}
-  <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
-  {% if person.height_cm %}<p><strong>Height:</strong> {{ person.height_cm }} cm</p>{% endif %}
-  {% if person.weight_kg %}<p><strong>Weight:</strong> {{ person.weight_kg }} kg</p>{% endif %}
+  {% if person.known_as %}<p class="meta">Also known as: {{ person.known_as }}</p>{% endif %}
 
-  <h2>Player info</h2>
-  {% if player.primary_position %}<p><strong>Position:</strong> {{ player.primary_position }}</p>{% endif %}
-  {% if player.foot %}<p><strong>Foot:</strong> {{ player.foot }}</p>{% endif %}
+  <div class="grid">
+    <section class="card">
+      <h2>Bio</h2>
+      <dl>
+        <dt>Birth date</dt><dd>{{ person.birth_date or '—' }}</dd>
+        <dt>Nationality</dt>
+        <dd>
+          {% if country %}<a href="/countries/{{ country.country_id }}">{{ country.name }}</a>{% else %}—{% endif %}
+        </dd>
+        <dt>Height / Weight</dt>
+        <dd>
+          {% if person.height_cm %}{{ person.height_cm }} cm{% else %}—{% endif %} /
+          {% if person.weight_kg %}{{ person.weight_kg }} kg{% else %}—{% endif %}
+        </dd>
+      </dl>
+    </section>
 
-  <p><a href="/players">← Back to players</a></p>
+    <section class="card">
+      <h2>Player Profile</h2>
+      <dl>
+        <dt>Position</dt><dd>{{ player.player_position or '—' }}</dd>
+        <dt>Status</dt><dd>{{ 'Active' if player.player_active else 'Inactive' }}</dd>
+      </dl>
+    </section>
+  </div>
+
+  {% if registrations and registrations|length %}
+    <section class="card" style="margin-top:1rem;">
+      <h2>Registrations</h2>
+      <table>
+        <thead>
+          <tr><th>Team</th><th>From</th><th>To</th><th>Shirt #</th><th>Loan</th></tr>
+        </thead>
+        <tbody>
+          {% for r in registrations %}
+            <tr>
+              <td>
+                {% if teams.get(r.team_id) %}
+                  <a href="/teams/{{ r.team_id }}">{{ teams[r.team_id].name }}</a>
+                {% else %}—{% endif %}
+              </td>
+              <td>{{ r.start_date }}</td>
+              <td>{{ r.end_date or '' }}</td>
+              <td>{{ r.shirt_no or '' }}</td>
+              <td>{{ 'Yes' if r.on_loan else 'No' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  {% endif %}
+
+  <p style="margin-top:1rem;"><a href="/players">← Back to players</a></p>
 </body>
 </html>
