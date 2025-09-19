@@ -80,9 +80,9 @@ class FixturesImporter(BaseImporter):
             return rid
 
         comp_tok    = (raw.get("competition") or raw.get("competition_name") or "").strip()
-        season_name = (raw.get("season_name") or "").strip()
-        stage_name  = (raw.get("stage_name") or "").strip()
-        round_name  = (raw.get("round_name") or "").strip()
+        season_name = (raw.get("season") or raw.get("season_name") or "").strip()
+        stage_name  = (raw.get("stage") or raw.get("stage_name") or "").strip()
+        round_name  = (raw.get("round") or raw.get("round_name") or "").strip()
         if not (season_name and stage_name and round_name):
             return None
 
@@ -198,13 +198,16 @@ class FixturesImporter(BaseImporter):
     # ---------- importer API ----------
 
     def parse_row(self, raw: Dict[str, Any], db: Session) -> Tuple[bool, Dict[str, Any]]:
-        kickoff        = _parse_dt(raw.get("kickoff_utc"))
+        kickoff        = _parse_dt(raw.get("kickoff_utc") or raw.get("kickoff"))
         stage_round_id = self._resolve_stage_round_id(raw, db)
 
-        home_team_id   = self._resolve_team_id(raw.get("home_team_id"), db)
-        away_team_id   = self._resolve_team_id(raw.get("away_team_id"), db)
-        group_id       = self._resolve_group_id(raw.get("group_id"), stage_round_id, db)
-        stadium_id     = self._resolve_stadium_id(raw.get("stadium_id"), db)
+        home_team_id   = self._resolve_team_id(raw.get("home_team_id") or raw.get("home_team") or raw.get("home"), db)
+        away_team_id   = self._resolve_team_id(raw.get("away_team_id") or raw.get("away_team") or raw.get("away"), db)
+        group_id       = self._resolve_group_id(raw.get("group_id") or raw.get("group"), stage_round_id, db)
+
+        # Try CSV stadium (id or name). It's fine if the header doesn't exist.
+        stadium_id     = self._resolve_stadium_id(raw.get("stadium_id") or raw.get("stadium") or "", db)
+
         attendance     = _to_int(raw.get("attendance"))
 
         # period splits (all optional)
@@ -217,65 +220,64 @@ class FixturesImporter(BaseImporter):
         pen_home = _to_int(raw.get("pen_home_score"))
         pen_away = _to_int(raw.get("pen_away_score"))
 
-        # flow flags (optional; if omitted we'll infer below)
-        went_et = _to_bool(raw.get("went_to_extra_time"), default=None)
-        went_pen = _to_bool(raw.get("went_to_penalties"), default=None)
+        # flow flags (optional; infer if omitted)
+        went_et  = _to_bool(raw.get("went_to_extra_time") or raw.get("extra_time"), default=None)
+        went_pen = _to_bool(raw.get("went_to_penalties") or raw.get("penalties"), default=None)
 
-        # explicit final scores (optional; we may compute them)
-        csv_home_final = _to_int(raw.get("home_score"))
-        csv_away_final = _to_int(raw.get("away_score"))
-
-        # derive flow flags if not provided
         if went_et is None:
             went_et = (et_home is not None and et_away is not None)
         if went_pen is None:
             went_pen = (pen_home is not None and pen_away is not None)
 
+        # explicit final scores (optional; may compute below)
+        csv_home_final = _to_int(raw.get("home_score"))
+        csv_away_final = _to_int(raw.get("away_score"))
+
         # derive final score: ET > FT > explicit > default 0
         if et_home is not None and et_away is not None:
-            home_final = et_home
-            away_final = et_away
+            home_final, away_final = et_home, et_away
         elif ft_home is not None and ft_away is not None:
-            home_final = ft_home
-            away_final = ft_away
+            home_final, away_final = ft_home, ft_away
         elif csv_home_final is not None and csv_away_final is not None:
-            home_final = csv_home_final
-            away_final = csv_away_final
+            home_final, away_final = csv_home_final, csv_away_final
         else:
-            home_final = 0
-            away_final = 0
+            home_final, away_final = 0, 0
 
-        # status / winner
+        # status + auto-played (fix precedence)
         fixture_status = (raw.get("fixture_status") or raw.get("status") or "scheduled").strip() or "scheduled"
-        winner_team_id = self._resolve_team_id(raw.get("winner_team_id"), db)
+        if fixture_status == "scheduled" and (
+            (ft_home is not None and ft_away is not None) or
+            (et_home is not None and et_away is not None)
+        ):
+            fixture_status = "played"
+
+        # winner (explicit or infer)
+        winner_team_id = self._resolve_team_id(raw.get("winner_team_id") or raw.get("winner") or raw.get("winner_name"), db)
+        if winner_team_id is None:
+            winner_team_id = _decide_winner(home_team_id, away_team_id, home_final, away_final, bool(went_pen), pen_home, pen_away)
 
         # Auto-infer group if missing and possible
         if group_id is None and stage_round_id and home_team_id and away_team_id:
             group_id = self._infer_group_id_from_membership(stage_round_id, home_team_id, away_team_id, db)
 
-        # If winner not provided, decide from scores (only meaningful once played/has scores)
-        if winner_team_id is None:
-            winner_team_id = _decide_winner(home_team_id, away_team_id, home_final, away_final, bool(went_pen), pen_home, pen_away)
-
-        # find stadium from home team if stadium id or name as missing
+        # If stadium still missing, try to infer from the home team's club
         if not stadium_id and home_team_id:
             team = db.execute(select(Team).where(Team.team_id == home_team_id)).scalar_one_or_none()
             if team and team.club_id:
                 club = db.execute(select(Club).where(Club.club_id == team.club_id)).scalar_one_or_none()
                 stadium_id = getattr(club, "stadium_id", None)
 
-
         # required fields
         if not (kickoff and home_team_id and away_team_id and stage_round_id):
             return False, {}
 
-        return True, {
+        # Build payload, OMIT stadium_id if unresolved (None/falsey)
+        payload: Dict[str, Any] = {
             "stage_round_id": stage_round_id,
             "group_id": group_id,
             "home_team_id": home_team_id,
             "away_team_id": away_team_id,
             "kickoff_utc": kickoff,
-            "stadium_id": stadium_id,
             "attendance": attendance,
             "fixture_status": fixture_status,
 
@@ -289,7 +291,7 @@ class FixturesImporter(BaseImporter):
             "pen_home_score": pen_home,
             "pen_away_score": pen_away,
 
-            # flow flags (derived if absent)
+            # flow flags
             "went_to_extra_time": bool(went_et),
             "went_to_penalties": bool(went_pen),
 
@@ -299,6 +301,10 @@ class FixturesImporter(BaseImporter):
 
             "winner_team_id": winner_team_id,
         }
+        if stadium_id:
+            payload["stadium_id"] = stadium_id
+
+        return True, payload
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
         existing = db.execute(
