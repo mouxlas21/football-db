@@ -22,6 +22,7 @@
         <th>Away</th>
         <th>Status</th>
         <th>Score</th>
+        <th>Winner</th>
         <th>Stadium</th>
         <th>Attendance</th>
       </tr>
@@ -30,6 +31,7 @@
       {% for f in fixtures %}
         {% set home = teams.get(f.home_team_id) %}
         {% set away = teams.get(f.away_team_id) %}
+        {% set winner = teams.get(f.winner_team_id) %}
         {% set stad = stadiums.get(f.stadium_id) %}
         <tr>
           <td><a href="/fixtures/{{ f.fixture_id }}">{{ f.fixture_id }}</a></td>
@@ -39,6 +41,7 @@
           <td>{{ away.name if away else f.away_team_id }}</td>
           <td>{{ f.fixture_status }}</td>
           <td>{{ f.home_score }} - {{ f.away_score }}</td>
+          <td>{{ winner.name if winner else f.winner_team_id }}</td>
           <td>{{ stad.name if stad else "" }}</td>
           <td>{{ f.attendance or "" }}</td>
         </tr>
