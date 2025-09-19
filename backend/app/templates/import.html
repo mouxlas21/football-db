@@ -121,6 +121,17 @@
   </section>
 
   <hr />
+
+  <section>
+    <h2>Fixtures</h2>
+    <p>Headers: <code>stage_round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id</code></p>
+    <form action="/import/csv?entity=fixtures" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".csv" required />
+      <button type="submit">Upload Fixtures</button>
+    </form>
+  </section>
+
+  <hr />
   
   <section>
     <h2>Players</h2>
@@ -152,22 +163,6 @@
       <button type="submit">Upload Officials</button>
     </form>
   </section>
-
-  <hr />
-
-  <section>
-    <h2>Fixtures</h2>
-    <p>Headers: <code>stage_round_id,group_id,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,status,home_score,away_score,winner_team_id</code></p>
-    <form action="/import/csv?entity=fixtures" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" accept=".csv" required />
-      <button type="submit">Upload Fixtures</button>
-    </form>
-  </section>
-
-
-
-
-
 <p style="margin-top:2rem"><a href="/">Home</a></p>
 </body>
 </html>
