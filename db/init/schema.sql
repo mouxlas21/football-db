@@ -153,6 +153,52 @@ CREATE TABLE IF NOT EXISTS stage_round (
 CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id ON stage_round(stage_id);
 CREATE INDEX IF NOT EXISTS idx_stage_round_stage_order ON stage_round(stage_id, stage_round_order);
 
+CREATE TABLE IF NOT EXISTS fixture (
+  fixture_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  stage_round_id    BIGINT NOT NULL REFERENCES stage_round(stage_round_id) ON DELETE CASCADE,
+  group_id          BIGINT REFERENCES stage_group(group_id) ON DELETE SET NULL,
+
+  home_team_id      BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
+  away_team_id      BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
+  CONSTRAINT fixture_teams_different CHECK (home_team_id <> away_team_id),
+
+  kickoff_utc       TIMESTAMPTZ NOT NULL,
+  stadium_id        BIGINT REFERENCES stadium(stadium_id) ON DELETE SET NULL,
+  attendance        INTEGER,
+
+  fixture_status    TEXT NOT NULL DEFAULT 'scheduled',  -- scheduled|live|played|postponed|canceled
+
+  -- Period splits (all optional, but recommended to fill when known)
+  ht_home_score     SMALLINT,
+  ht_away_score     SMALLINT,
+  ft_home_score     SMALLINT,
+  ft_away_score     SMALLINT,
+  et_home_score     SMALLINT,
+  et_away_score     SMALLINT,
+  pen_home_score    SMALLINT,
+  pen_away_score    SMALLINT,
+
+  -- Flow flags
+  went_to_extra_time  BOOLEAN NOT NULL DEFAULT FALSE,
+  went_to_penalties   BOOLEAN NOT NULL DEFAULT FALSE,
+
+  -- Final (after 120'; penalties not counted here)
+  home_score        SMALLINT DEFAULT 0,
+  away_score        SMALLINT DEFAULT 0,
+
+  winner_team_id    BIGINT REFERENCES team(team_id) ON DELETE SET NULL
+);
+
+-- Basic indexes
+CREATE INDEX IF NOT EXISTS ix_fixture_stage_round ON fixture(stage_round_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_group_id ON fixture(group_id);
+CREATE INDEX IF NOT EXISTS ix_fixture_kickoff ON fixture(kickoff_utc);
+CREATE INDEX IF NOT EXISTS ix_fixture_teams ON fixture(home_team_id, away_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_stadium_id ON fixture(stadium_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_home_team_id ON fixture(home_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_away_team_id ON fixture(away_team_id);
+CREATE INDEX IF NOT EXISTS idx_fixture_winner_team_id ON fixture(winner_team_id);
+
 CREATE TABLE IF NOT EXISTS person (
   person_id          BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   first_name         TEXT,
@@ -209,7 +255,7 @@ CREATE TABLE IF NOT EXISTS player_registration (
 );
 
 CREATE INDEX IF NOT EXISTS idx_player_reg_player ON player_registration(player_id);
-CREATE INDEX IF NOT EXISTS idx_player_reg_team   ON player_registration(team_id);
+CREATE INDEX IF NOT EXISTS idx_player_reg_team ON player_registration(team_id);
 CREATE INDEX IF NOT EXISTS idx_player_reg_period ON player_registration(start_date, end_date);
 
 CREATE TABLE IF NOT EXISTS staff_assignment (
@@ -222,7 +268,7 @@ CREATE TABLE IF NOT EXISTS staff_assignment (
 );
 
 CREATE INDEX IF NOT EXISTS idx_staff_person ON staff_assignment(person_id);
-CREATE INDEX IF NOT EXISTS idx_staff_team   ON staff_assignment(team_id);
+CREATE INDEX IF NOT EXISTS idx_staff_team ON staff_assignment(team_id);
 CREATE INDEX IF NOT EXISTS idx_staff_period ON staff_assignment(start_date, end_date);
 
 CREATE TABLE IF NOT EXISTS season_team (
@@ -235,31 +281,6 @@ CREATE TABLE IF NOT EXISTS season_team (
   UNIQUE (season_id, team_id)
 );
 
-CREATE TABLE IF NOT EXISTS fixture (
-  fixture_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  stage_round_id        BIGINT NOT NULL REFERENCES stage_round(stage_round_id) ON DELETE CASCADE,
-  group_id        BIGINT REFERENCES stage_group(group_id) ON DELETE SET NULL,
-  home_team_id    BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
-  away_team_id    BIGINT NOT NULL REFERENCES team(team_id) ON DELETE RESTRICT,
-  kickoff_utc     TIMESTAMPTZ NOT NULL,
-  stadium_id      BIGINT REFERENCES stadium(stadium_id) ON DELETE SET NULL,
-  attendance      INTEGER,
-  fixture_status  TEXT NOT NULL DEFAULT 'scheduled',
-  home_score      SMALLINT DEFAULT 0,
-  away_score      SMALLINT DEFAULT 0,
-  winner_team_id  BIGINT REFERENCES team(team_id) ON DELETE SET NULL,
-  CONSTRAINT fixture_teams_different CHECK (home_team_id <> away_team_id)
-);
-CREATE INDEX IF NOT EXISTS ix_fixture_stage_round ON fixture(stage_round_id);
-CREATE INDEX IF NOT EXISTS idx_fixture_group_id ON fixture(group_id);
-
-CREATE INDEX IF NOT EXISTS ix_fixture_kickoff ON fixture(kickoff_utc);
-CREATE INDEX IF NOT EXISTS ix_fixture_teams ON fixture(home_team_id, away_team_id);
-CREATE INDEX IF NOT EXISTS idx_fixture_stadium_id ON fixture(stadium_id);
-CREATE INDEX IF NOT EXISTS idx_fixture_home_team_id ON fixture(home_team_id);
-CREATE INDEX IF NOT EXISTS idx_fixture_away_team_id ON fixture(away_team_id);
-CREATE INDEX IF NOT EXISTS idx_fixture_winner_team_id ON fixture(winner_team_id);
-
 CREATE TABLE IF NOT EXISTS match_official (
   match_official_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   fixture_id        BIGINT NOT NULL REFERENCES fixture(fixture_id) ON DELETE CASCADE,
@@ -268,7 +289,7 @@ CREATE TABLE IF NOT EXISTS match_official (
 );
 
 CREATE INDEX IF NOT EXISTS idx_match_official_fixture ON match_official(fixture_id);
-CREATE INDEX IF NOT EXISTS idx_match_official_person  ON match_official(person_id);
+CREATE INDEX IF NOT EXISTS idx_match_official_person ON match_official(person_id);
 
 CREATE TABLE IF NOT EXISTS lineup (
   lineup_id       BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,

@@ -1,0 +1,307 @@
+competition,season_name,stage_name,round_name,home_team_id,away_team_id,kickoff_utc,stadium_id,attendance,fixture_status,ht_home_score,ht_away_score,ft_home_score,ft_away_score
+Bundesliga,2024/25,Regular Season,Matchday 1,Borussia Mönchengladbach,Bayer 04 Leverkusen,2024-08-23T14:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 1,FC Augsburg,SV Werder Bremen,2024-08-24T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 1,1. FSV Mainz 05,Union Berlin,2024-08-24T09:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 1,TSG 1899 Hoffenheim,Holstein Kiel,2024-08-24T09:30:00+02:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 1,SC Freiburg,VfB Stuttgart,2024-08-24T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 1,RB Leipzig,VfL Bochum 1848,2024-08-24T09:30:00+02:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 1,Borussia Dortmund,Eintracht Frankfurt,2024-08-24T12:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 1,VfL Wolfsburg,FC Bayern München,2024-08-25T09:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 1,St. Pauli,1. FC Heidenheim 1846,2024-08-25T11:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 2,Union Berlin,St. Pauli,2024-08-30T14:30:00+02:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 2,VfL Bochum 1848,Borussia Mönchengladbach,2024-08-31T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 2,VfB Stuttgart,1. FSV Mainz 05,2024-08-31T09:30:00+02:00,,,played,,,3,3
+Bundesliga,2024/25,Regular Season,Matchday 2,Holstein Kiel,VfL Wolfsburg,2024-08-31T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 2,Eintracht Frankfurt,TSG 1899 Hoffenheim,2024-08-31T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 2,SV Werder Bremen,Borussia Dortmund,2024-08-31T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 2,Bayer 04 Leverkusen,RB Leipzig,2024-08-31T12:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 2,1. FC Heidenheim 1846,FC Augsburg,2024-09-01T09:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 2,FC Bayern München,SC Freiburg,2024-09-01T11:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 3,Borussia Dortmund,1. FC Heidenheim 1846,2024-09-13T14:30:00+02:00,,,played,,,4,2
+Bundesliga,2024/25,Regular Season,Matchday 3,SC Freiburg,VfL Bochum 1848,2024-09-14T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 3,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,2024-09-14T09:30:00+02:00,,,played,,,1,4
+Bundesliga,2024/25,Regular Season,Matchday 3,RB Leipzig,Union Berlin,2024-09-14T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 3,VfL Wolfsburg,Eintracht Frankfurt,2024-09-14T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 3,Borussia Mönchengladbach,VfB Stuttgart,2024-09-14T09:30:00+02:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 3,Holstein Kiel,FC Bayern München,2024-09-14T12:30:00+02:00,,,played,,,1,6
+Bundesliga,2024/25,Regular Season,Matchday 3,FC Augsburg,St. Pauli,2024-09-15T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 3,1. FSV Mainz 05,SV Werder Bremen,2024-09-15T11:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 4,FC Augsburg,1. FSV Mainz 05,2024-09-20T14:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 4,Union Berlin,TSG 1899 Hoffenheim,2024-09-21T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 4,1. FC Heidenheim 1846,SC Freiburg,2024-09-21T09:30:00+02:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 4,VfL Bochum 1848,Holstein Kiel,2024-09-21T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 4,SV Werder Bremen,FC Bayern München,2024-09-21T09:30:00+02:00,,,played,,,0,5
+Bundesliga,2024/25,Regular Season,Matchday 4,Eintracht Frankfurt,Borussia Mönchengladbach,2024-09-21T12:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 4,Bayer 04 Leverkusen,VfL Wolfsburg,2024-09-22T09:30:00+02:00,,,played,,,4,3
+Bundesliga,2024/25,Regular Season,Matchday 4,VfB Stuttgart,Borussia Dortmund,2024-09-22T11:30:00+02:00,,,played,,,5,1
+Bundesliga,2024/25,Regular Season,Matchday 4,St. Pauli,RB Leipzig,2024-09-22T13:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 5,Borussia Dortmund,VfL Bochum 1848,2024-09-27T14:30:00+02:00,,,played,,,4,2
+Bundesliga,2024/25,Regular Season,Matchday 5,SC Freiburg,St. Pauli,2024-09-28T09:30:00+02:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 5,VfL Wolfsburg,VfB Stuttgart,2024-09-28T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 5,Borussia Mönchengladbach,Union Berlin,2024-09-28T09:30:00+02:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 5,1. FSV Mainz 05,1. FC Heidenheim 1846,2024-09-28T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 5,RB Leipzig,FC Augsburg,2024-09-28T09:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 5,FC Bayern München,Bayer 04 Leverkusen,2024-09-28T12:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 5,Holstein Kiel,Eintracht Frankfurt,2024-09-29T09:30:00+02:00,,,played,,,2,4
+Bundesliga,2024/25,Regular Season,Matchday 5,TSG 1899 Hoffenheim,SV Werder Bremen,2024-09-29T11:30:00+02:00,,,played,,,3,4
+Bundesliga,2024/25,Regular Season,Matchday 6,FC Augsburg,Borussia Mönchengladbach,2024-10-04T14:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 6,Union Berlin,Borussia Dortmund,2024-10-05T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 6,VfL Bochum 1848,VfL Wolfsburg,2024-10-05T09:30:00+02:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 6,SV Werder Bremen,SC Freiburg,2024-10-05T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 6,Bayer 04 Leverkusen,Holstein Kiel,2024-10-05T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 6,St. Pauli,1. FSV Mainz 05,2024-10-05T12:30:00+02:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 6,1. FC Heidenheim 1846,RB Leipzig,2024-10-06T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 6,Eintracht Frankfurt,FC Bayern München,2024-10-06T11:30:00+02:00,,,played,,,3,3
+Bundesliga,2024/25,Regular Season,Matchday 6,VfB Stuttgart,TSG 1899 Hoffenheim,2024-10-06T13:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 7,Borussia Dortmund,St. Pauli,2024-10-18T14:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 7,1. FSV Mainz 05,RB Leipzig,2024-10-19T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 7,TSG 1899 Hoffenheim,VfL Bochum 1848,2024-10-19T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 7,Borussia Mönchengladbach,1. FC Heidenheim 1846,2024-10-19T09:30:00+02:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 7,Bayer 04 Leverkusen,Eintracht Frankfurt,2024-10-19T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 7,SC Freiburg,FC Augsburg,2024-10-19T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 7,FC Bayern München,VfB Stuttgart,2024-10-19T12:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 7,Holstein Kiel,Union Berlin,2024-10-20T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 7,VfL Wolfsburg,SV Werder Bremen,2024-10-20T11:30:00+02:00,,,played,,,2,4
+Bundesliga,2024/25,Regular Season,Matchday 8,1. FSV Mainz 05,Borussia Mönchengladbach,2024-10-25T14:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 8,St. Pauli,VfL Wolfsburg,2024-10-26T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 8,FC Augsburg,Borussia Dortmund,2024-10-26T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 8,VfB Stuttgart,Holstein Kiel,2024-10-26T09:30:00+02:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 8,RB Leipzig,SC Freiburg,2024-10-26T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 8,SV Werder Bremen,Bayer 04 Leverkusen,2024-10-26T12:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 8,VfL Bochum 1848,FC Bayern München,2024-10-27T10:30:00+01:00,,,played,,,0,5
+Bundesliga,2024/25,Regular Season,Matchday 8,Union Berlin,Eintracht Frankfurt,2024-10-27T12:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 8,1. FC Heidenheim 1846,TSG 1899 Hoffenheim,2024-10-27T14:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 9,Bayer 04 Leverkusen,VfB Stuttgart,2024-11-01T15:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 9,FC Bayern München,Union Berlin,2024-11-02T10:30:00+01:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 9,VfL Wolfsburg,FC Augsburg,2024-11-02T10:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 9,Eintracht Frankfurt,VfL Bochum 1848,2024-11-02T10:30:00+01:00,,,played,,,7,2
+Bundesliga,2024/25,Regular Season,Matchday 9,Holstein Kiel,1. FC Heidenheim 1846,2024-11-02T10:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 9,TSG 1899 Hoffenheim,St. Pauli,2024-11-02T10:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 9,Borussia Dortmund,RB Leipzig,2024-11-02T13:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 9,SC Freiburg,1. FSV Mainz 05,2024-11-03T09:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 9,Borussia Mönchengladbach,SV Werder Bremen,2024-11-03T11:30:00+01:00,,,played,,,4,1
+Bundesliga,2024/25,Regular Season,Matchday 10,Union Berlin,SC Freiburg,2024-11-08T14:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 10,1. FSV Mainz 05,Borussia Dortmund,2024-11-09T09:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 10,St. Pauli,FC Bayern München,2024-11-09T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 10,VfL Bochum 1848,Bayer 04 Leverkusen,2024-11-09T09:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 10,SV Werder Bremen,Holstein Kiel,2024-11-09T09:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 10,RB Leipzig,Borussia Mönchengladbach,2024-11-09T12:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 10,FC Augsburg,TSG 1899 Hoffenheim,2024-11-10T09:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 10,VfB Stuttgart,Eintracht Frankfurt,2024-11-10T11:30:00+01:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 10,1. FC Heidenheim 1846,VfL Wolfsburg,2024-11-10T13:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 11,FC Bayern München,FC Augsburg,2024-11-22T14:30:00+01:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 11,VfL Wolfsburg,Union Berlin,2024-11-23T09:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 11,TSG 1899 Hoffenheim,RB Leipzig,2024-11-23T09:30:00+01:00,,,played,,,4,3
+Bundesliga,2024/25,Regular Season,Matchday 11,Borussia Dortmund,SC Freiburg,2024-11-23T09:30:00+01:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 11,VfB Stuttgart,VfL Bochum 1848,2024-11-23T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 11,Bayer 04 Leverkusen,1. FC Heidenheim 1846,2024-11-23T09:30:00+01:00,,,played,,,5,2
+Bundesliga,2024/25,Regular Season,Matchday 11,Eintracht Frankfurt,SV Werder Bremen,2024-11-23T12:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 11,Holstein Kiel,1. FSV Mainz 05,2024-11-24T09:30:00+01:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 11,Borussia Mönchengladbach,St. Pauli,2024-11-24T11:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 12,St. Pauli,Holstein Kiel,2024-11-29T14:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 12,RB Leipzig,VfL Wolfsburg,2024-11-30T09:30:00+01:00,,,played,,,1,5
+Bundesliga,2024/25,Regular Season,Matchday 12,SV Werder Bremen,VfB Stuttgart,2024-11-30T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 12,FC Augsburg,VfL Bochum 1848,2024-11-30T09:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 12,SC Freiburg,Borussia Mönchengladbach,2024-11-30T09:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 12,Union Berlin,Bayer 04 Leverkusen,2024-11-30T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 12,Borussia Dortmund,FC Bayern München,2024-11-30T12:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 12,1. FSV Mainz 05,TSG 1899 Hoffenheim,2024-12-01T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 12,1. FC Heidenheim 1846,Eintracht Frankfurt,2024-12-01T11:30:00+01:00,,,played,,,0,4
+Bundesliga,2024/25,Regular Season,Matchday 13,VfB Stuttgart,Union Berlin,2024-12-06T14:30:00+01:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 13,Holstein Kiel,RB Leipzig,2024-12-07T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 13,Eintracht Frankfurt,FC Augsburg,2024-12-07T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 13,FC Bayern München,1. FC Heidenheim 1846,2024-12-07T09:30:00+01:00,,,played,,,4,2
+Bundesliga,2024/25,Regular Season,Matchday 13,VfL Bochum 1848,SV Werder Bremen,2024-12-07T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 13,Bayer 04 Leverkusen,St. Pauli,2024-12-07T09:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 13,Borussia Mönchengladbach,Borussia Dortmund,2024-12-07T12:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 13,VfL Wolfsburg,1. FSV Mainz 05,2024-12-08T09:30:00+01:00,,,played,,,4,3
+Bundesliga,2024/25,Regular Season,Matchday 13,TSG 1899 Hoffenheim,SC Freiburg,2024-12-08T11:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 14,SC Freiburg,VfL Wolfsburg,2024-12-13T14:30:00+01:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 14,Union Berlin,VfL Bochum 1848,2024-12-14T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 14,Borussia Mönchengladbach,Holstein Kiel,2024-12-14T09:30:00+01:00,,,played,,,4,1
+Bundesliga,2024/25,Regular Season,Matchday 14,FC Augsburg,Bayer 04 Leverkusen,2024-12-14T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 14,1. FSV Mainz 05,FC Bayern München,2024-12-14T09:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 14,St. Pauli,SV Werder Bremen,2024-12-14T12:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 14,1. FC Heidenheim 1846,VfB Stuttgart,2024-12-15T09:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 14,Borussia Dortmund,TSG 1899 Hoffenheim,2024-12-15T11:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 14,RB Leipzig,Eintracht Frankfurt,2024-12-15T13:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 15,FC Bayern München,RB Leipzig,2024-12-20T14:30:00+01:00,,,played,,,5,1
+Bundesliga,2024/25,Regular Season,Matchday 15,Eintracht Frankfurt,1. FSV Mainz 05,2024-12-21T09:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 15,Holstein Kiel,FC Augsburg,2024-12-21T09:30:00+01:00,,,played,,,5,1
+Bundesliga,2024/25,Regular Season,Matchday 15,TSG 1899 Hoffenheim,Borussia Mönchengladbach,2024-12-21T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 15,VfB Stuttgart,St. Pauli,2024-12-21T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 15,SV Werder Bremen,Union Berlin,2024-12-21T09:30:00+01:00,,,played,,,4,1
+Bundesliga,2024/25,Regular Season,Matchday 15,Bayer 04 Leverkusen,SC Freiburg,2024-12-21T12:30:00+01:00,,,played,,,5,1
+Bundesliga,2024/25,Regular Season,Matchday 15,VfL Bochum 1848,1. FC Heidenheim 1846,2024-12-22T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 15,VfL Wolfsburg,Borussia Dortmund,2024-12-22T11:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 16,Borussia Dortmund,Bayer 04 Leverkusen,2025-01-10T14:45:00+01:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 16,TSG 1899 Hoffenheim,VfL Wolfsburg,2025-01-11T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 16,St. Pauli,Eintracht Frankfurt,2025-01-11T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 16,1. FC Heidenheim 1846,Union Berlin,2025-01-11T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 16,1. FSV Mainz 05,VfL Bochum 1848,2025-01-11T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 16,SC Freiburg,Holstein Kiel,2025-01-11T09:30:00+01:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 16,Borussia Mönchengladbach,FC Bayern München,2025-01-11T12:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 16,RB Leipzig,SV Werder Bremen,2025-01-12T09:30:00+01:00,,,played,,,4,2
+Bundesliga,2024/25,Regular Season,Matchday 16,FC Augsburg,VfB Stuttgart,2025-01-12T11:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 17,Holstein Kiel,Borussia Dortmund,2025-01-14T12:30:00+01:00,,,played,,,4,2
+Bundesliga,2024/25,Regular Season,Matchday 17,Eintracht Frankfurt,SC Freiburg,2025-01-14T14:30:00+01:00,,,played,,,4,1
+Bundesliga,2024/25,Regular Season,Matchday 17,Bayer 04 Leverkusen,1. FSV Mainz 05,2025-01-14T14:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 17,VfL Wolfsburg,Borussia Mönchengladbach,2025-01-14T14:30:00+01:00,,,played,,,5,1
+Bundesliga,2024/25,Regular Season,Matchday 17,VfL Bochum 1848,St. Pauli,2025-01-15T12:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 17,FC Bayern München,TSG 1899 Hoffenheim,2025-01-15T14:30:00+01:00,,,played,,,5,0
+Bundesliga,2024/25,Regular Season,Matchday 17,VfB Stuttgart,RB Leipzig,2025-01-15T14:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 17,Union Berlin,FC Augsburg,2025-01-15T14:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 17,SV Werder Bremen,1. FC Heidenheim 1846,2025-01-15T14:30:00+01:00,,,played,,,3,3
+Bundesliga,2024/25,Regular Season,Matchday 18,Eintracht Frankfurt,Borussia Dortmund,2025-01-17T14:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 18,1. FC Heidenheim 1846,St. Pauli,2025-01-18T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 18,Holstein Kiel,TSG 1899 Hoffenheim,2025-01-18T09:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 18,FC Bayern München,VfL Wolfsburg,2025-01-18T09:30:00+01:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 18,VfB Stuttgart,SC Freiburg,2025-01-18T09:30:00+01:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 18,VfL Bochum 1848,RB Leipzig,2025-01-18T09:30:00+01:00,,,played,,,3,3
+Bundesliga,2024/25,Regular Season,Matchday 18,Bayer 04 Leverkusen,Borussia Mönchengladbach,2025-01-18T12:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 18,Union Berlin,1. FSV Mainz 05,2025-01-19T09:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 18,SV Werder Bremen,FC Augsburg,2025-01-19T11:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 19,VfL Wolfsburg,Holstein Kiel,2025-01-24T14:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 19,Borussia Dortmund,SV Werder Bremen,2025-01-25T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 19,1. FSV Mainz 05,VfB Stuttgart,2025-01-25T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 19,FC Augsburg,1. FC Heidenheim 1846,2025-01-25T09:30:00+01:00,,,played,,,2,1
+Bundesliga,2024/25,Regular Season,Matchday 19,SC Freiburg,FC Bayern München,2025-01-25T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 19,RB Leipzig,Bayer 04 Leverkusen,2025-01-25T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 19,Borussia Mönchengladbach,VfL Bochum 1848,2025-01-25T12:30:00+01:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 19,TSG 1899 Hoffenheim,Eintracht Frankfurt,2025-01-26T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 19,St. Pauli,Union Berlin,2025-01-26T11:30:00+01:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 20,SV Werder Bremen,1. FSV Mainz 05,2025-01-31T14:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 20,1. FC Heidenheim 1846,Borussia Dortmund,2025-02-01T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 20,VfL Bochum 1848,SC Freiburg,2025-02-01T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 20,FC Bayern München,Holstein Kiel,2025-02-01T09:30:00+01:00,,,played,,,4,3
+Bundesliga,2024/25,Regular Season,Matchday 20,VfB Stuttgart,Borussia Mönchengladbach,2025-02-01T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 20,St. Pauli,FC Augsburg,2025-02-01T09:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 20,Union Berlin,RB Leipzig,2025-02-01T12:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 20,Eintracht Frankfurt,VfL Wolfsburg,2025-02-02T09:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 20,Bayer 04 Leverkusen,TSG 1899 Hoffenheim,2025-02-02T11:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 21,FC Bayern München,SV Werder Bremen,2025-02-07T14:30:00+01:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 21,TSG 1899 Hoffenheim,Union Berlin,2025-02-08T09:30:00+01:00,,,played,,,0,4
+Bundesliga,2024/25,Regular Season,Matchday 21,VfL Wolfsburg,Bayer 04 Leverkusen,2025-02-08T09:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 21,SC Freiburg,1. FC Heidenheim 1846,2025-02-08T09:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 21,1. FSV Mainz 05,FC Augsburg,2025-02-08T09:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 21,Borussia Dortmund,VfB Stuttgart,2025-02-08T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 21,Borussia Mönchengladbach,Eintracht Frankfurt,2025-02-08T12:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 21,Holstein Kiel,VfL Bochum 1848,2025-02-09T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 21,RB Leipzig,St. Pauli,2025-02-09T11:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 22,FC Augsburg,RB Leipzig,2025-02-14T14:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 22,VfL Bochum 1848,Borussia Dortmund,2025-02-15T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 22,VfB Stuttgart,VfL Wolfsburg,2025-02-15T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 22,Union Berlin,Borussia Mönchengladbach,2025-02-15T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 22,St. Pauli,SC Freiburg,2025-02-15T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 22,Bayer 04 Leverkusen,FC Bayern München,2025-02-15T12:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 22,SV Werder Bremen,TSG 1899 Hoffenheim,2025-02-16T09:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 22,Eintracht Frankfurt,Holstein Kiel,2025-02-16T11:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 22,1. FC Heidenheim 1846,1. FSV Mainz 05,2025-02-16T13:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 23,SC Freiburg,SV Werder Bremen,2025-02-21T14:30:00+01:00,,,played,,,5,0
+Bundesliga,2024/25,Regular Season,Matchday 23,VfL Wolfsburg,VfL Bochum 1848,2025-02-22T09:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 23,Borussia Mönchengladbach,FC Augsburg,2025-02-22T09:30:00+01:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 23,1. FSV Mainz 05,St. Pauli,2025-02-22T09:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 23,Holstein Kiel,Bayer 04 Leverkusen,2025-02-22T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 23,Borussia Dortmund,Union Berlin,2025-02-22T12:30:00+01:00,,,played,,,6,0
+Bundesliga,2024/25,Regular Season,Matchday 23,RB Leipzig,1. FC Heidenheim 1846,2025-02-23T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 23,FC Bayern München,Eintracht Frankfurt,2025-02-23T11:30:00+01:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 23,TSG 1899 Hoffenheim,VfB Stuttgart,2025-02-23T13:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 24,VfB Stuttgart,FC Bayern München,2025-02-28T14:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 24,RB Leipzig,1. FSV Mainz 05,2025-03-01T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 24,VfL Bochum 1848,TSG 1899 Hoffenheim,2025-03-01T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 24,SV Werder Bremen,VfL Wolfsburg,2025-03-01T09:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 24,1. FC Heidenheim 1846,Borussia Mönchengladbach,2025-03-01T09:30:00+01:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 24,St. Pauli,Borussia Dortmund,2025-03-01T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 24,Eintracht Frankfurt,Bayer 04 Leverkusen,2025-03-01T12:30:00+01:00,,,played,,,1,4
+Bundesliga,2024/25,Regular Season,Matchday 24,Union Berlin,Holstein Kiel,2025-03-02T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 24,FC Augsburg,SC Freiburg,2025-03-02T11:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 25,Borussia Mönchengladbach,1. FSV Mainz 05,2025-03-07T14:30:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 25,Bayer 04 Leverkusen,SV Werder Bremen,2025-03-08T09:30:00+01:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 25,FC Bayern München,VfL Bochum 1848,2025-03-08T09:30:00+01:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 25,VfL Wolfsburg,St. Pauli,2025-03-08T09:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 25,Borussia Dortmund,FC Augsburg,2025-03-08T09:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 25,Holstein Kiel,VfB Stuttgart,2025-03-08T09:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 25,SC Freiburg,RB Leipzig,2025-03-08T12:30:00+01:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 25,Eintracht Frankfurt,Union Berlin,2025-03-09T10:30:00+01:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 25,TSG 1899 Hoffenheim,1. FC Heidenheim 1846,2025-03-09T12:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 26,St. Pauli,TSG 1899 Hoffenheim,2025-03-14T15:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 26,SV Werder Bremen,Borussia Mönchengladbach,2025-03-15T10:30:00+01:00,,,played,,,2,4
+Bundesliga,2024/25,Regular Season,Matchday 26,1. FSV Mainz 05,SC Freiburg,2025-03-15T10:30:00+01:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 26,Union Berlin,FC Bayern München,2025-03-15T10:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 26,FC Augsburg,VfL Wolfsburg,2025-03-15T10:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 26,RB Leipzig,Borussia Dortmund,2025-03-15T13:30:00+01:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 26,VfL Bochum 1848,Eintracht Frankfurt,2025-03-16T11:20:00+01:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 26,1. FC Heidenheim 1846,Holstein Kiel,2025-03-16T12:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 26,VfB Stuttgart,Bayer 04 Leverkusen,2025-03-16T14:30:00+01:00,,,played,,,3,4
+Bundesliga,2024/25,Regular Season,Matchday 27,Bayer 04 Leverkusen,VfL Bochum 1848,2025-03-28T15:30:00+01:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 27,Borussia Mönchengladbach,RB Leipzig,2025-03-29T10:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 27,Holstein Kiel,SV Werder Bremen,2025-03-29T10:30:00+01:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 27,VfL Wolfsburg,1. FC Heidenheim 1846,2025-03-29T10:30:00+01:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 27,TSG 1899 Hoffenheim,FC Augsburg,2025-03-29T10:30:00+01:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 27,FC Bayern München,St. Pauli,2025-03-29T10:30:00+01:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 27,Eintracht Frankfurt,VfB Stuttgart,2025-03-29T13:30:00+01:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 27,SC Freiburg,Union Berlin,2025-03-30T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 27,Borussia Dortmund,1. FSV Mainz 05,2025-03-30T11:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 28,FC Augsburg,FC Bayern München,2025-04-04T14:30:00+02:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 28,SC Freiburg,Borussia Dortmund,2025-04-05T09:30:00+02:00,,,played,,,1,4
+Bundesliga,2024/25,Regular Season,Matchday 28,1. FSV Mainz 05,Holstein Kiel,2025-04-05T09:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 28,1. FC Heidenheim 1846,Bayer 04 Leverkusen,2025-04-05T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 28,RB Leipzig,TSG 1899 Hoffenheim,2025-04-05T09:30:00+02:00,,,played,,,3,1
+Bundesliga,2024/25,Regular Season,Matchday 28,VfL Bochum 1848,VfB Stuttgart,2025-04-05T09:30:00+02:00,,,played,,,0,4
+Bundesliga,2024/25,Regular Season,Matchday 28,SV Werder Bremen,Eintracht Frankfurt,2025-04-05T12:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 28,St. Pauli,Borussia Mönchengladbach,2025-04-06T09:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 28,Union Berlin,VfL Wolfsburg,2025-04-06T11:30:00+02:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 29,VfL Wolfsburg,RB Leipzig,2025-04-11T14:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 29,TSG 1899 Hoffenheim,1. FSV Mainz 05,2025-04-12T09:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 29,Holstein Kiel,St. Pauli,2025-04-12T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 29,Bayer 04 Leverkusen,Union Berlin,2025-04-12T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 29,Borussia Mönchengladbach,SC Freiburg,2025-04-12T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 29,VfL Bochum 1848,FC Augsburg,2025-04-12T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 29,FC Bayern München,Borussia Dortmund,2025-04-12T12:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 29,VfB Stuttgart,SV Werder Bremen,2025-04-13T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 29,Eintracht Frankfurt,1. FC Heidenheim 1846,2025-04-13T11:30:00+02:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 30,1. FC Heidenheim 1846,FC Bayern München,2025-04-19T09:30:00+02:00,,,played,,,0,4
+Bundesliga,2024/25,Regular Season,Matchday 30,1. FSV Mainz 05,VfL Wolfsburg,2025-04-19T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 30,SV Werder Bremen,VfL Bochum 1848,2025-04-19T09:30:00+02:00,,,played,,,1,0
+Bundesliga,2024/25,Regular Season,Matchday 30,RB Leipzig,Holstein Kiel,2025-04-19T09:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 30,SC Freiburg,TSG 1899 Hoffenheim,2025-04-19T09:30:00+02:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 30,Union Berlin,VfB Stuttgart,2025-04-19T12:30:00+02:00,,,played,,,4,4
+Bundesliga,2024/25,Regular Season,Matchday 30,FC Augsburg,Eintracht Frankfurt,2025-04-20T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 30,Borussia Dortmund,Borussia Mönchengladbach,2025-04-20T11:30:00+02:00,,,played,,,3,2
+Bundesliga,2024/25,Regular Season,Matchday 30,St. Pauli,Bayer 04 Leverkusen,2025-04-20T13:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 31,VfB Stuttgart,1. FC Heidenheim 1846,2025-04-25T14:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 31,TSG 1899 Hoffenheim,Borussia Dortmund,2025-04-26T09:30:00+02:00,,,played,,,2,3
+Bundesliga,2024/25,Regular Season,Matchday 31,VfL Wolfsburg,SC Freiburg,2025-04-26T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 31,Holstein Kiel,Borussia Mönchengladbach,2025-04-26T09:30:00+02:00,,,played,,,4,3
+Bundesliga,2024/25,Regular Season,Matchday 31,FC Bayern München,1. FSV Mainz 05,2025-04-26T09:30:00+02:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 31,Bayer 04 Leverkusen,FC Augsburg,2025-04-26T09:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 31,Eintracht Frankfurt,RB Leipzig,2025-04-26T12:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 31,VfL Bochum 1848,Union Berlin,2025-04-27T09:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 31,SV Werder Bremen,St. Pauli,2025-04-27T11:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 32,1. FC Heidenheim 1846,VfL Bochum 1848,2025-05-02T14:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 32,Borussia Mönchengladbach,TSG 1899 Hoffenheim,2025-05-03T09:30:00+02:00,,,played,,,4,4
+Bundesliga,2024/25,Regular Season,Matchday 32,St. Pauli,VfB Stuttgart,2025-05-03T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 32,Union Berlin,SV Werder Bremen,2025-05-03T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 32,RB Leipzig,FC Bayern München,2025-05-03T09:30:00+02:00,,,played,,,3,3
+Bundesliga,2024/25,Regular Season,Matchday 32,Borussia Dortmund,VfL Wolfsburg,2025-05-03T12:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 32,FC Augsburg,Holstein Kiel,2025-05-04T09:30:00+02:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 32,SC Freiburg,Bayer 04 Leverkusen,2025-05-04T11:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 32,1. FSV Mainz 05,Eintracht Frankfurt,2025-05-04T13:30:00+02:00,,,played,,,1,1
+Bundesliga,2024/25,Regular Season,Matchday 33,VfL Wolfsburg,TSG 1899 Hoffenheim,2025-05-09T14:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 33,VfL Bochum 1848,1. FSV Mainz 05,2025-05-10T09:30:00+02:00,,,played,,,1,4
+Bundesliga,2024/25,Regular Season,Matchday 33,Holstein Kiel,SC Freiburg,2025-05-10T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 33,Union Berlin,1. FC Heidenheim 1846,2025-05-10T09:30:00+02:00,,,played,,,0,3
+Bundesliga,2024/25,Regular Season,Matchday 33,SV Werder Bremen,RB Leipzig,2025-05-10T09:30:00+02:00,,,played,,,0,0
+Bundesliga,2024/25,Regular Season,Matchday 33,FC Bayern München,Borussia Mönchengladbach,2025-05-10T12:30:00+02:00,,,played,,,2,0
+Bundesliga,2024/25,Regular Season,Matchday 33,Bayer 04 Leverkusen,Borussia Dortmund,2025-05-11T09:30:00+02:00,,,played,,,2,4
+Bundesliga,2024/25,Regular Season,Matchday 33,Eintracht Frankfurt,St. Pauli,2025-05-11T11:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 33,VfB Stuttgart,FC Augsburg,2025-05-11T13:30:00+02:00,,,played,,,4,0
+Bundesliga,2024/25,Regular Season,Matchday 34,1. FC Heidenheim 1846,SV Werder Bremen,2025-05-17T09:30:00+02:00,,,played,,,1,4
+Bundesliga,2024/25,Regular Season,Matchday 34,Borussia Dortmund,Holstein Kiel,2025-05-17T09:30:00+02:00,,,played,,,3,0
+Bundesliga,2024/25,Regular Season,Matchday 34,Borussia Mönchengladbach,VfL Wolfsburg,2025-05-17T09:30:00+02:00,,,played,,,0,1
+Bundesliga,2024/25,Regular Season,Matchday 34,FC Augsburg,Union Berlin,2025-05-17T09:30:00+02:00,,,played,,,1,2
+Bundesliga,2024/25,Regular Season,Matchday 34,1. FSV Mainz 05,Bayer 04 Leverkusen,2025-05-17T09:30:00+02:00,,,played,,,2,2
+Bundesliga,2024/25,Regular Season,Matchday 34,St. Pauli,VfL Bochum 1848,2025-05-17T09:30:00+02:00,,,played,,,0,2
+Bundesliga,2024/25,Regular Season,Matchday 34,SC Freiburg,Eintracht Frankfurt,2025-05-17T09:30:00+02:00,,,played,,,1,3
+Bundesliga,2024/25,Regular Season,Matchday 34,TSG 1899 Hoffenheim,FC Bayern München,2025-05-17T09:30:00+02:00,,,played,,,0,4
+Bundesliga,2024/25,Regular Season,Matchday 34,RB Leipzig,VfB Stuttgart,2025-05-17T09:30:00+02:00,,,played,,,2,3

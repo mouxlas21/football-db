@@ -171,22 +171,31 @@ class Fixture(Base):
     fixture_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     stage_round_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("stage_round.stage_round_id", ondelete="CASCADE"), nullable=False)
     group_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stage_group.group_id", ondelete="SET NULL"))
+
     home_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     away_team_id: Mapped[int] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="RESTRICT"), nullable=False)
     kickoff_utc: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
     stadium_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stadium.stadium_id", ondelete="SET NULL"))
     attendance: Mapped[int | None] = mapped_column(Integer)
+
     fixture_status: Mapped[str] = mapped_column(Text, nullable=False, default="scheduled")
+
+    ht_home_score: Mapped[int | None] = mapped_column(SmallInteger)
+    ht_away_score: Mapped[int | None] = mapped_column(SmallInteger)
+    ft_home_score: Mapped[int | None] = mapped_column(SmallInteger)
+    ft_away_score: Mapped[int | None] = mapped_column(SmallInteger)
+    et_home_score: Mapped[int | None] = mapped_column(SmallInteger)
+    et_away_score: Mapped[int | None] = mapped_column(SmallInteger)
+    pen_home_score: Mapped[int | None] = mapped_column(SmallInteger)
+    pen_away_score: Mapped[int | None] = mapped_column(SmallInteger)
+
+    went_to_extra_time: Mapped[bool] = mapped_column(default=False)
+    went_to_penalties: Mapped[bool] = mapped_column(default=False)
+
     home_score: Mapped[int] = mapped_column(SmallInteger, default=0)
     away_score: Mapped[int] = mapped_column(SmallInteger, default=0)
-    winner_team_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="SET NULL"))
 
-    stage_round = relationship("StageRound")
-    group = relationship("StageGroup")
-    home_team = relationship("Team", foreign_keys=[home_team_id])
-    away_team = relationship("Team", foreign_keys=[away_team_id])
-    stadium = relationship("Stadium")
-    winner_team = relationship("Team", foreign_keys=[winner_team_id])
+    winner_team_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("team.team_id", ondelete="SET NULL"))
 
 class Season(Base):
     __tablename__ = "season"

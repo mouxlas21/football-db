@@ -90,6 +90,19 @@ class FixtureCreate(BaseModel):
     stadium_id: Optional[int] = None
     attendance: Optional[int] = None
     fixture_status: Optional[str] = "scheduled"
+
+    ht_home_score: Optional[int] = None
+    ht_away_score: Optional[int] = None
+    ft_home_score: Optional[int] = None
+    ft_away_score: Optional[int] = None
+    et_home_score: Optional[int] = None
+    et_away_score: Optional[int] = None
+    pen_home_score: Optional[int] = None
+    pen_away_score: Optional[int] = None
+
+    went_to_extra_time: Optional[bool] = False
+    went_to_penalties: Optional[bool] = False
+
     home_score: Optional[int] = 0
     away_score: Optional[int] = 0
     winner_team_id: Optional[int] = None
@@ -104,10 +117,25 @@ class FixtureRead(BaseModel):
     stadium_id: Optional[int] = None
     attendance: Optional[int] = None
     fixture_status: str
+
+    ht_home_score: Optional[int] = None
+    ht_away_score: Optional[int] = None
+    ft_home_score: Optional[int] = None
+    ft_away_score: Optional[int] = None
+    et_home_score: Optional[int] = None
+    et_away_score: Optional[int] = None
+    pen_home_score: Optional[int] = None
+    pen_away_score: Optional[int] = None
+
+    went_to_extra_time: bool
+    went_to_penalties: bool
+
     home_score: int
     away_score: int
     winner_team_id: Optional[int] = None
+
     class Config: from_attributes = True
+
 
 class PersonCreate(BaseModel):
     first_name: Optional[str] = None
