@@ -3,18 +3,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import Competition, Association, Country
-
-def _to_int(val):
-    if val is None:
-        return None
-    s = str(val).strip()
-    if s == "":
-        return None
-    try:
-        return int(s)
-    except Exception:
-        return None
+from app.models import Competition, Association
+from .utils.helpers import _to_int
 
 class CompetitionsImporter(BaseImporter):
     """

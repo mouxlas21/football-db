@@ -4,13 +4,7 @@ from sqlalchemy import select, func, and_, or_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Competition, Season, Stage, StageGroup, Team, StageGroupTeam
-
-def _to_int(v):
-    if v is None: return None
-    s = str(v).strip()
-    if s == "": return None
-    try: return int(s)
-    except Exception: return None
+from .utils.helpers import _to_int
 
 class StageGroupTeamsImporter(BaseImporter):
     """

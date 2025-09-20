@@ -93,6 +93,20 @@ CREATE TABLE IF NOT EXISTS season (
 
 CREATE INDEX IF NOT EXISTS idx_season_competition_id ON season(competition_id);
 
+CREATE TABLE competition_season_summary (
+    id SERIAL PRIMARY KEY,
+    competition_id INT NOT NULL REFERENCES competition(competition_id) ON DELETE CASCADE,
+    season_id INT NOT NULL REFERENCES season(season_id) ON DELETE CASCADE,
+    summary TEXT,
+    --future expansions,
+    --winner_team_id INT REFERENCES teams(id),
+    --runner_up_team_id INT REFERENCES teams(id),
+    --third_place_team_id INT REFERENCES teams(id),
+    --top_scorer_player_id INT REFERENCES players(id),
+    UNIQUE (competition_id, season_id)
+);
+
+
 -- ===========================================
 -- Stage: phases within a season
 -- ===========================================

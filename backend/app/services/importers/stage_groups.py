@@ -1,17 +1,10 @@
-# backend/app/services/importers/stage_groups.py
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func, and_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import StageGroup, Stage, Season, Competition
-
-def _to_int(v):
-    if v is None: return None
-    s = str(v).strip()
-    if s == "": return None
-    try: return int(s)
-    except Exception: return None
+from .utils.helpers import _to_int
 
 class StageGroupsImporter(BaseImporter):
     entity = "stage_groups"

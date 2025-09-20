@@ -1,18 +1,10 @@
-# backend/app/services/importers/coaches.py
 from typing import Dict, Any, Tuple
-from datetime import date
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Person, Coach
-
-def _parse_iso_date(v: str | None) -> date | None:
-    if not v: return None
-    s = str(v).strip()
-    if not s: return None
-    try: return date.fromisoformat(s)
-    except Exception: return None
+from .utils.helpers import _parse_iso_date
 
 class CoachesImporter(BaseImporter):
     entity = "coaches"

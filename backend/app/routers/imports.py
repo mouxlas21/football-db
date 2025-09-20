@@ -3,10 +3,11 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from sqlalchemy.orm import Session
 import csv
 from io import TextIOWrapper
-
 from ..db import get_db
 from ..core.templates import templates
 from ..services.importers import import_rows, get_importer
+from ..services.importers.utils.bulk_team_sync import ensure_club_teams, ensure_national_teams  
+
 
 router = APIRouter(prefix="/import", tags=["import"])
 
@@ -37,7 +38,13 @@ async def import_csv(
         return JSONResponse({"inserted": 0, "skipped": 0, "errors": [], "entity": entity, "message": "No data"}, 200)
 
     try:
-        result = import_rows(entity, rows, db)
+        result = import_rows(entity, rows, db)  
+        if entity in ("club", "clubs"):
+            with db.begin():
+                ensure_club_teams(db)
+        elif entity in ("country", "countries"):
+            with db.begin():
+                ensure_national_teams(db)
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Import failed: {e}")
 

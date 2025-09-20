@@ -1,54 +1,12 @@
-# backend/app/services/importers/fixtures.py
 from typing import Dict, Any, Tuple
-from datetime import datetime, timezone
 from sqlalchemy.orm import Session
 from sqlalchemy import select, and_, func, or_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import (Fixture, Season, Stage, Club, StageRound, StageGroup, StageGroupTeam, Competition,Team, Stadium,
-)
+from app.models import (Fixture, Season, Stage, Club, StageRound, StageGroup, StageGroupTeam, Competition,Team, Stadium,)
+from .utils.helpers import _to_int, _to_bool, _parse_dt, _decide_winner
 
-def _parse_dt(val: str | None) -> datetime | None:
-    if not val:
-        return None
-    v = str(val).strip()
-    if not v:
-        return None
-    try:
-        dt = datetime.fromisoformat(v.replace("Z", "+00:00"))
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt
-    except Exception:
-        return None
 
-def _to_int(val):
-    if val is None:
-        return None
-    s = str(val).strip()
-    if s == "":
-        return None
-    try:
-        return int(s)
-    except Exception:
-        return None
-
-def _to_bool(val, default=None):
-    if val is None or str(val).strip() == "":
-        return default
-    s = str(val).strip().lower()
-    if s in ("1","true","t","yes","y"):  return True
-    if s in ("0","false","f","no","n"):  return False
-    return default
-
-def _decide_winner(home_team_id, away_team_id, home_final, away_final, went_pen, pen_home, pen_away):
-    # Penalties decide the winner first, if present and non-draw
-    if went_pen and pen_home is not None and pen_away is not None and pen_home != pen_away:
-        return home_team_id if pen_home > pen_away else away_team_id
-    # Otherwise use final score (after ET if present, else FT/explicit)
-    if home_final is not None and away_final is not None and home_final != away_final:
-        return home_team_id if home_final > away_final else away_team_id
-    return None
 
 class FixturesImporter(BaseImporter):
     """

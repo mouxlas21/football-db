@@ -1,4 +1,3 @@
-# backend/app/routers/teams.py
 from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session

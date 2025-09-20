@@ -1,4 +1,3 @@
-# backend/app/routers/competitions.py
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from sqlalchemy.orm import Session

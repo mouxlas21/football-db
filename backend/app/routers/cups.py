@@ -1,4 +1,3 @@
-# app/routers/cups.py
 import re
 from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from fastapi.responses import HTMLResponse

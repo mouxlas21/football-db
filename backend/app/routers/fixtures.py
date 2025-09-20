@@ -1,4 +1,3 @@
-# backend/app/routers/fixtures.py
 from datetime import datetime, date
 from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from fastapi.responses import HTMLResponse

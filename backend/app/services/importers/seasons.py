@@ -1,33 +1,10 @@
-# backend/app/services/importers/seasons.py
 from typing import Dict, Any, Tuple
-from datetime import date
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func, text
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Season, Competition
-
-def _parse_date(v):
-    if not v:
-        return None
-    s = str(v).strip()
-    if not s:
-        return None
-    try:
-        return date.fromisoformat(s)
-    except Exception:
-        return None
-
-def _to_int(v):
-    if v is None:
-        return None
-    s = str(v).strip()
-    if s == "":
-        return None
-    try:
-        return int(s)
-    except Exception:
-        return None
+from .utils.helpers import _to_int, _parse_date
 
 class SeasonsImporter(BaseImporter):
     entity = "seasons"

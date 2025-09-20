@@ -1,4 +1,3 @@
-# app/routers/league.py
 from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session

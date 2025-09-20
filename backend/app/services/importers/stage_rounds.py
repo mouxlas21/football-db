@@ -1,22 +1,10 @@
-# backend/app/services/importers/stage_rounds.py
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func, and_
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import StageRound, Stage, Season, Competition
-
-def _to_int(v):
-    if v is None: return None
-    s = str(v).strip()
-    if s == "": return None
-    try: return int(s)
-    except Exception: return None
-
-def _to_bool(v):
-    if v is None: return False
-    s = str(v).strip().lower()
-    return s in ("1","true","t","yes","y")
+from .utils.helpers import _to_int, _to_bool
 
 class StageRoundsImporter(BaseImporter):
     entity = "stage_rounds"
