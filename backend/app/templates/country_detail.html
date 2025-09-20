@@ -45,7 +45,7 @@
                 <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.name }}</td>
                 <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.tier if lg.tier is not none else '—' }}</td>
                 <td style="padding:.5rem; border-bottom:1px dashed #eee;">
-                  <a href="/leagues/{{ lg.league_id }}">View</a>
+                  <a href="/competitions/{{ lg.competition_id }}">View</a>
                 </td>
               </tr>
               {% else %}
@@ -55,7 +55,7 @@
           </table>
         </div>
         <div class="footer">
-          <a href="/leagues?country_id={{ country.country_id }}">Browse all leagues in {{ country.name }}</a>
+          <a href="/competitions?country_id={{ country.country_id }}&type=league"> Browse all leagues in {{ country.name }}</a>
         </div>
       </div>
     </section>

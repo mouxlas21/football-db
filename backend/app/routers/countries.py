@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 from ..db import get_db
-from ..models import Country, Association
+from ..models import Country, Association, Competition
 from ..schemas import CountryCreate, CountryRead
 from ..core.templates import templates
 
@@ -31,14 +31,24 @@ def country_detail_page(country_id: int, request: Request, db: Session = Depends
     country = db.execute(select(Country).where(Country.country_id == country_id)).scalar_one_or_none()
     if not country:
         raise HTTPException(status_code=404, detail="Country not found")
+
     association = None
     if country.confed_ass_id:
         association = db.execute(
             select(Association).where(Association.ass_id == country.confed_ass_id)
         ).scalar_one_or_none()
+
+    # NEW: fetch country leagues
+    leagues = db.execute(
+        select(Competition)
+        .where(Competition.country_id == country.country_id)
+        .where(Competition.type.ilike("league"))
+        .order_by(Competition.name)
+    ).scalars().all()
+
     return templates.TemplateResponse(
         "country_detail.html",
-        {"request": request, "country": country, "association": association},
+        {"request": request, "country": country, "association": association, "leagues": leagues},  # + leagues
     )
 
 @router.get("/api", response_model=list[CountryRead])

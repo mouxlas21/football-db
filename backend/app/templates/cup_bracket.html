@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ stage.name }} — Bracket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .grid { display:grid; gap:1rem; grid-auto-flow: column; grid-auto-columns: 1fr; }
+    .round-col { display:flex; flex-direction:column; gap:1rem; }
+    .tie { border:1px solid #e5e7eb; border-radius:10px; padding:.6rem .8rem; background:#fff; }
+    .muted { color:#666; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .teams { display:flex; justify-content:space-between; gap:.5rem; }
+    h2 { margin: 1rem 0 .5rem; }
+    h3 { margin: .5rem 0; }
+    table.clean { width:100%; border-collapse: collapse; margin:.5rem 0; }
+    table.clean th, table.clean td { padding:.4rem .5rem; border-bottom:1px dashed #eee; text-align:left; vertical-align:top; }
+    table.clean th { border-bottom:1px solid #e5e7eb; background:#fafafa; font-weight:600; }
+    .mini { width:100%; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; margin:.4rem 0 .8rem; }
+    .mini td { border-bottom:1px dashed #eee; padding:.4rem .5rem; }
+    .mini tr:last-child td { border-bottom:none; }
+    .winner { font-weight:700; }
+    .view-note { margin:.25rem 0 .75rem; }
+  </style>
+</head>
+<body>
+  <h1>{{ stage.name }} — Bracket</h1>
+
+  {% if not round_cols or round_cols|length == 0 %}
+    <p><em>No knockout rounds found for this stage.</em></p>
+  {% else %}
+
+    <!-- View 1: Column / tree-ish -->
+<h2>Bracket (columns)</h2>
+<p class="view-note muted">Rounds as columns; ties stacked with aggregate and legs.</p>
+<div class="grid">
+  {% for i in range(round_cols|length) %}
+    {% set col = round_cols[i] %}
+    {% set rnd = rounds[i] %}
+    {% set name = (rnd.name or '')|lower %}
+    <section class="round-col">
+      <h3>{{ rnd.name }}</h3>
+      {% if not col or col|length == 0 %}
+        <p class="muted">No fixtures.</p>
+      {% else %}
+        {% for tie in col %}
+          <div class="tie">
+            <div class="teams">
+              <div>{{ tie.a_name }}</div>
+
+              {# middle label #}
+              <div class="muted">
+                {% if tie.__is_leg2 %}
+                  {# show combined aggregate across both legs, oriented to 2nd-leg home #}
+                  agg {{ tie.combined_agg_leg2_home or tie.combined_agg or tie.agg }}
+                {% elif tie.__is_single_final %}
+                  {# final: no aggregate shown #}
+                  &nbsp;
+                {% else %}
+                  {# first leg or other: hide aggregate #}
+                  &nbsp;
+                {% endif %}
+              </div>
+
+              <div>{{ tie.b_name }}</div>
+            </div>
+
+            <ul style="margin:.4rem 0 0; padding-left:1rem">
+              {% for leg in tie.legs %}
+                <li>
+                  <span class="mono">{{ leg.kickoff_utc }}</span> —
+                  <strong>{{ leg.home_name }}</strong>
+                  {% if leg.ft_home_score is not none and leg.ft_away_score is not none %}
+                    {{ leg.ft_home_score }}–{{ leg.ft_away_score }}
+                    {% if leg.went_to_extra_time %} (ET){% endif %}
+                    {% if leg.went_to_penalties %} (Pens {{ leg.pen_home_score }}–{{ leg.pen_away_score }}){% endif %}
+                  {% else %}
+                    vs
+                  {% endif %}
+                  <strong>{{ leg.away_name }}</strong>
+                </li>
+              {% endfor %}
+            </ul>
+
+            {# Winner line #}
+            {% if tie.__is_leg2 %}
+              <div class="muted" style="margin-top:.3rem">
+                Winner: <strong>{{ tie.combined_winner or tie.winner }}</strong>
+                {% if tie.combined_agg_leg2_home %}
+                  · agg {{ tie.combined_agg_leg2_home }}
+                {% endif %}
+              </div>
+            {% elif tie.__is_single_final %}
+              {% if tie.winner %}
+                <div class="muted" style="margin-top:.3rem">
+                  Winner: <strong>{{ tie.winner }}</strong>
+                </div>
+              {% endif %}
+            {% else %}
+              {# first leg or other: no winner yet #}
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>
+
+  <hr>
+
+  <!-- View 2: Round → Matches (leg list) -->
+  <h2>By round → matches</h2>
+  <p class="view-note muted">Each round listed with its ties and legs. First legs hide aggregate and winner; second legs show combined aggregate and winner. Finals show winner only.</p>
+
+  {% for block in paired_blocks %}
+
+    {% if block.second_round_name %}
+      <!-- First-leg section -->
+      <section>
+        <h3>{{ block.first_round_name }}</h3>
+        {% if not block.pairs or block.pairs|length == 0 %}
+          <p class="muted">No fixtures.</p>
+        {% else %}
+          <table class="clean">
+            <thead>
+              <tr>
+                <th style="width:22%">Tie</th>
+                <th>Legs</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for p in block.pairs %}
+                <tr>
+                  <td><strong>{{ p.a_name }}</strong> vs <strong>{{ p.b_name }}</strong></td>
+                  <td>
+                    <ul style="margin:0; padding-left:1.1rem">
+                      {% if p.leg1 %}
+                        <li>
+                          <span class="mono">{{ p.leg1.kickoff_utc }}</span> —
+                          <strong>{{ p.leg1.home_name }}</strong>
+                          {% if p.leg1.ft_home_score is not none and p.leg1.ft_away_score is not none %}
+                            {{ p.leg1.ft_home_score }}–{{ p.leg1.ft_away_score }}
+                            {% if p.leg1.went_to_extra_time %} (ET){% endif %}
+                            {% if p.leg1.went_to_penalties %} (Pens {{ p.leg1.pen_home_score }}–{{ p.leg1.pen_away_score }}){% endif %}
+                          {% else %}vs{% endif %}
+                          <strong>{{ p.leg1.away_name }}</strong>
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% endif %}
+      </section>
+
+      <!-- Second-leg section (shows aggregate + winner) -->
+      <section>
+        <h3>{{ block.second_round_name }}</h3>
+        <table class="clean">
+          <thead>
+            <tr>
+              <th style="width:22%">Tie</th>
+              <th>Legs</th>
+              <th style="width:16%">Aggregate</th>
+              <th style="width:20%">Winner</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in block.pairs %}
+              <tr>
+                <td><strong>{{ p.a_name }}</strong> vs <strong>{{ p.b_name }}</strong></td>
+                <td>
+                  <ul style="margin:0; padding-left:1.1rem">
+                    {% if p.leg2 %}
+                      <li>
+                        <span class="mono">{{ p.leg2.kickoff_utc }}</span> —
+                        <strong>{{ p.leg2.home_name }}</strong>
+                        {% if p.leg2.ft_home_score is not none and p.leg2.ft_away_score is not none %}
+                          {{ p.leg2.ft_home_score }}–{{ p.leg2.ft_away_score }}
+                          {% if p.leg2.went_to_extra_time %} (ET){% endif %}
+                          {% if p.leg2.went_to_penalties %} (Pens {{ p.leg2.pen_home_score }}–{{ p.leg2.pen_away_score }}){% endif %}
+                        {% else %}vs{% endif %}
+                        <strong>{{ p.leg2.away_name }}</strong>
+                      </li>
+                    {% else %}
+                      <li><span class="muted">—</span></li>
+                    {% endif %}
+                  </ul>
+                </td>
+                <td>agg {{ p.agg_text_leg2_home or p.agg_text }}</td>
+                <td>
+                  {% if p.winner %}
+                    <span class="winner">{{ p.winner }}</span>
+                  {% else %}
+                    <span class="muted">—</span>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+    {% else %}
+      <!-- Single-leg round (e.g., Final): show once, winner only -->
+      <section>
+        <h3>{{ block.round_title }}</h3>
+        <table class="clean">
+          <thead>
+            <tr>
+              <th style="width:22%">Tie</th>
+              <th>Leg</th>
+              <th style="width:20%">Winner</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in block.pairs %}
+              <tr>
+                <td><strong>{{ p.a_name }}</strong> vs <strong>{{ p.b_name }}</strong></td>
+                <td>
+                  {% if p.leg1 %}
+                    <span class="mono">{{ p.leg1.kickoff_utc }}</span> —
+                    <strong>{{ p.leg1.home_name }}</strong>
+                    {% if p.leg1.ft_home_score is not none and p.leg1.ft_away_score is not none %}
+                      {{ p.leg1.ft_home_score }}–{{ p.leg1.ft_away_score }}
+                      {% if p.leg1.went_to_extra_time %} (ET){% endif %}
+                      {% if p.leg1.went_to_penalties %} (Pens {{ p.leg1.pen_home_score }}–{{ p.leg1.pen_away_score }}){% endif %}
+                    {% else %}vs{% endif %}
+                    <strong>{{ p.leg1.away_name }}</strong>
+                  {% endif %}
+                </td>
+                <td>
+                  {% if p.winner %}
+                    <span class="winner">{{ p.winner }}</span>
+                  {% else %}
+                    <span class="muted">—</span>
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+    {% endif %}
+
+  {% endfor %}
+
+  <hr>
+
+
+      <!-- View 3: Paired mini tables (Leg 1 / Leg 2 / Winner) -->
+  <h2>Paired ties (mini tables)</h2>
+  <p class="view-note muted">Each tie paired across legs. Finals show a single leg.</p>
+
+  {% for block in paired_blocks %}
+    <section>
+      <h3>{{ block.round_title }}</h3>
+      {% if not block.pairs or block.pairs|length == 0 %}
+        <p class="muted">No fixtures.</p>
+      {% else %}
+        {% for p in block.pairs %}
+          <div class="mini">
+            <table class="clean" style="margin:0">
+              <tbody>
+                <tr>
+                  <td style="width:18%;"><strong>First leg</strong></td>
+                  <td>
+                    {% if p.leg1 %}
+                      <span class="mono">{{ p.leg1.kickoff_utc }}</span> —
+                      <strong>{{ p.leg1.home_name }}</strong>
+                      {% if p.leg1.ft_home_score is not none and p.leg1.ft_away_score is not none %}
+                        {{ p.leg1.ft_home_score }}–{{ p.leg1.ft_away_score }}
+                        {% if p.leg1.went_to_extra_time %} (ET){% endif %}
+                        {% if p.leg1.went_to_penalties %} (Pens {{ p.leg1.pen_home_score }}–{{ p.leg1.pen_away_score }}){% endif %}
+                      {% else %}vs{% endif %}
+                      <strong>{{ p.leg1.away_name }}</strong>
+                    {% else %}
+                      <span class="muted">—</span>
+                    {% endif %}
+                  </td>
+                </tr>
+                {% if p.leg2 %}
+                  <tr>
+                    <td><strong>Second leg</strong></td>
+                    <td>
+                      <span class="mono">{{ p.leg2.kickoff_utc }}</span> —
+                      <strong>{{ p.leg2.home_name }}</strong>
+                      {% if p.leg2.ft_home_score is not none and p.leg2.ft_away_score is not none %}
+                        {{ p.leg2.ft_home_score }}–{{ p.leg2.ft_away_score }}
+                        {% if p.leg2.went_to_extra_time %} (ET){% endif %}
+                        {% if p.leg2.went_to_penalties %} (Pens {{ p.leg2.pen_home_score }}–{{ p.leg2.pen_away_score }}){% endif %}
+                      {% else %}vs{% endif %}
+                      <strong>{{ p.leg2.away_name }}</strong>
+                    </td>
+                  </tr>
+                {% endif %}
+                <tr>
+                  <td><strong>Winner</strong></td>
+                  <td>
+                    {% if p.winner %}
+                      <span class="winner">{{ p.winner }}</span>
+                      <span class="muted"> · {{ p.agg_text }}</span>
+                    {% else %}
+                      <span class="muted">—</span>
+                    {% endif %}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </section>
+  {% endfor %}
+
+
+  {% endif %}
+
+  <p style="margin-top:1rem">
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/overview">← Overview</a>
+    &nbsp;·&nbsp;
+    <a href="/competitions/{{ competition_id }}">Competition</a>
+  </p>
+</body>
+</html>

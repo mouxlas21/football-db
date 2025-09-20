@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>{{ stage.name }} — Groups</title></head>
+<body>
+  <h1>{{ stage.name }} — Groups</h1>
+
+  <ul>
+    {% for g in groups %}
+      <li>
+        <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/group/{{ g.group_id }}">
+          {{ g.name or g.code }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/overview">← Overview</a>
+  </p>
+</body>
+</html>

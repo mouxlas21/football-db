@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>League Overview</title></head>
+<body>
+  <h1>League Overview</h1>
+
+  <div style="display:flex; gap:2rem; align-items:flex-start">
+    <!-- Left column: matchday selector + fixtures -->
+    <section style="flex:1">
+      <form method="get" action="" style="margin-bottom:1rem">
+        <label>Matchday:
+          <select name="md" onchange="this.form.submit()">
+            {% for md in range(1, total_matchdays + 1) %}
+              <option value="{{ md }}" {% if md == selected_md %}selected{% endif %}>MD {{ md }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <noscript><button type="submit">Go</button></noscript>
+      </form>
+
+      <h2>Matchday {{ selected_md }} – Fixtures</h2>
+      <ul>
+        {% for m in fixtures %}
+          <li>
+            <span>{{ m.kickoff_utc }}</span> —
+            <strong>{{ m.home_name }}</strong>
+            {% if m.ft_home_score is not none and m.ft_away_score is not none %}
+              {{ m.ft_home_score }}–{{ m.ft_away_score }}
+            {% else %}
+              vs
+            {% endif %}
+            <strong>{{ m.away_name }}</strong>
+            <em>({{ m.fixture_status }})</em>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <!-- Right column: final standings + as-of standings -->
+    <section style="flex:1.2">
+      <h2>Final Standings</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+          <tr><th>#</th><th>Team</th><th>Pld</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          {% for r in final_rows %}
+            <tr>
+              <td>{{ r.position }}</td>
+              <td>{{ r.name }}</td>
+              <td>{{ r.played }}</td>
+              <td>{{ r.wins }}</td>
+              <td>{{ r.draws }}</td>
+              <td>{{ r.losses }}</td>
+              <td>{{ r.gf }}</td>
+              <td>{{ r.ga }}</td>
+              <td>{{ r.gd }}</td>
+              <td><strong>{{ r.pts }}</strong></td>
+              <td>{{ r.notes or '' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h2 style="margin-top:2rem">Standings after Matchday {{ selected_md }}</h2>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+          <tr><th>#</th><th>Team</th><th>Pld</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
+        </thead>
+        <tbody>
+          {% for r in md_rows %}
+            <tr>
+              <td>{{ r.position }}</td>
+              <td>{{ r.name }}</td>
+              <td>{{ r.pld }}</td>
+              <td>{{ r.w }}</td>
+              <td>{{ r.d }}</td>
+              <td>{{ r.l }}</td>
+              <td>{{ r.gf }}</td>
+              <td>{{ r.ga }}</td>
+              <td>{{ r.gd }}</td>
+              <td><strong>{{ r.pts }}</strong></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <p style="margin-top:1rem">
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/table">Full computed standings</a> ·
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/matchday/{{ selected_md }}">Matchday view</a> ·
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}">Season</a>
+  </p>
+</body>
+</html>

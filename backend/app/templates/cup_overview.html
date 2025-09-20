@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cup Overview</title>
+  <style>
+    .stage { border:1px solid #eee; border-radius:10px; padding:1rem; margin:1rem 0; }
+    .muted { color:#666; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <h1>Cup Overview</h1>
+
+  {% if winner_name %}
+    <p><strong>Winner:</strong> {{ winner_name }}</p>
+  {% endif %}
+
+  {% if final_fixtures and final_fixtures|length %}
+    <h2>Final</h2>
+    <ul>
+      {% for f in final_fixtures %}
+        <li>
+          <span class="mono">{{ f.kickoff_utc }}</span> —
+          <strong>{{ f.home_name }}</strong>
+          {% if f.ft_home_score is not none and f.ft_away_score is not none %}
+            {{ f.ft_home_score }}–{{ f.ft_away_score }}
+            {% if f.went_to_extra_time %} (ET){% endif %}
+            {% if f.went_to_penalties %} (Pens {{ f.pen_home_score }}–{{ f.pen_away_score }}){% endif %}
+          {% else %}
+            vs
+          {% endif %}
+          <strong>{{ f.away_name }}</strong>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if not stage_infos or stage_infos|length == 0 %}
+    <p><em>No stages found for this season.</em></p>
+  {% endif %}
+
+  {% for info in stage_infos %}
+    {% set s = info.stage %}
+    <section class="stage">
+      <h2 style="margin:0 0 .5rem">{{ s.name }}</h2>
+
+      {% if s.format == 'groups' %}
+        {% if info.groups and info.groups|length %}
+          <p>
+            <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/groups">View groups</a>
+             <span class="muted">· {{ info.n_fixtures }} matches.</span></p>
+          <ul>
+            {% for g in info.groups %}
+              <li>
+                <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/group/{{ g.group_id }}">{{ g.name or g.code }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">No groups defined.</p>
+        {% endif %}
+        {% if info.n_fixtures == 0 %}
+          <p class="muted">No matches found in this stage.</p>
+        {% endif %}
+      {% else %}
+        {% if info.rounds and info.rounds|length %}
+          <p>
+            <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/bracket?stage_id={{ s.stage_id }}">View bracket</a>
+            <span class="muted">· {{ info.n_fixtures }} matches.</span>
+          </p>
+          <ul>
+            {% for r in info.rounds %}
+              <li>{{ r.name }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">No rounds found.</p>
+          {% if info.n_fixtures == 0 %}
+            <p class="muted">No matches found in this stage.</p>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    </section>
+  {% endfor %}
+
+  <p><a href="/competitions/{{ competition_id }}">← Competition</a></p>
+</body>
+</html>

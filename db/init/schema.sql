@@ -153,6 +153,71 @@ CREATE TABLE IF NOT EXISTS stage_round (
 CREATE INDEX IF NOT EXISTS idx_stage_round_stage_id ON stage_round(stage_id);
 CREATE INDEX IF NOT EXISTS idx_stage_round_stage_order ON stage_round(stage_id, stage_round_order);
 
+-- Official final table snapshot, one row per team per season.
+CREATE TABLE IF NOT EXISTS league_table_snapshot (
+  season_id     BIGINT NOT NULL REFERENCES season(season_id) ON DELETE CASCADE,
+  team_id       BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  position      INTEGER NOT NULL,
+  played        INTEGER NOT NULL,
+  wins          INTEGER NOT NULL,
+  draws         INTEGER NOT NULL,
+  losses        INTEGER NOT NULL,
+  goals_for     INTEGER NOT NULL,
+  goals_against INTEGER NOT NULL,
+  goal_diff     INTEGER NOT NULL,
+  points        INTEGER NOT NULL,
+  notes         TEXT, -- e.g., "−3 pts (financial)", "Matchday 22 abandoned, 3–0 awarded"
+  PRIMARY KEY (season_id, team_id)
+);
+
+-- Per-season adjustments (deductions/bonuses), summed into computed standings.
+CREATE TABLE IF NOT EXISTS league_points_adjustment (
+  adjustment_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  season_id     BIGINT NOT NULL REFERENCES season(season_id) ON DELETE CASCADE,
+  team_id       BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  points_delta  INTEGER NOT NULL,  -- negative for deductions
+  reason        TEXT NOT NULL,     -- required: we want to display it
+  applied_on    DATE DEFAULT CURRENT_DATE
+);
+
+-- Season points rules (defaults to 3-1-0 if absent).
+CREATE TABLE IF NOT EXISTS season_points_rule (
+  season_id   BIGINT PRIMARY KEY REFERENCES season(season_id) ON DELETE CASCADE,
+  win_points  SMALLINT NOT NULL DEFAULT 3,
+  draw_points SMALLINT NOT NULL DEFAULT 1,
+  loss_points SMALLINT NOT NULL DEFAULT 0
+);
+
+-- Official group table snapshot. One row per team per group.
+CREATE TABLE IF NOT EXISTS group_table_snapshot (
+  group_id      BIGINT NOT NULL REFERENCES stage_group(group_id) ON DELETE CASCADE,
+  team_id       BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  position      INTEGER NOT NULL,
+  played        INTEGER NOT NULL,
+  wins          INTEGER NOT NULL,
+  draws         INTEGER NOT NULL,
+  losses        INTEGER NOT NULL,
+  goals_for     INTEGER NOT NULL,
+  goals_against INTEGER NOT NULL,
+  goal_diff     INTEGER NOT NULL,
+  points        INTEGER NOT NULL,
+  notes         TEXT,
+  PRIMARY KEY (group_id, team_id)
+);
+
+-- Per-team points deltas within a group (deductions/bonuses).
+CREATE TABLE IF NOT EXISTS group_points_adjustment (
+  adjustment_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  group_id      BIGINT NOT NULL REFERENCES stage_group(group_id) ON DELETE CASCADE,
+  team_id       BIGINT NOT NULL REFERENCES team(team_id) ON DELETE CASCADE,
+  points_delta  INTEGER NOT NULL,  -- negative for deductions
+  reason        TEXT NOT NULL,
+  applied_on    DATE DEFAULT CURRENT_DATE
+);
+
+CREATE INDEX IF NOT EXISTS idx_gpa_group ON group_points_adjustment(group_id);
+CREATE INDEX IF NOT EXISTS idx_gts_group ON group_table_snapshot(group_id);
+
 CREATE TABLE IF NOT EXISTS fixture (
   fixture_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   stage_round_id    BIGINT NOT NULL REFERENCES stage_round(stage_round_id) ON DELETE CASCADE,
@@ -168,7 +233,6 @@ CREATE TABLE IF NOT EXISTS fixture (
 
   fixture_status    TEXT NOT NULL DEFAULT 'scheduled',  -- scheduled|live|played|postponed|canceled
 
-  -- Period splits (all optional, but recommended to fill when known)
   ht_home_score     SMALLINT,
   ht_away_score     SMALLINT,
   ft_home_score     SMALLINT,
@@ -178,15 +242,14 @@ CREATE TABLE IF NOT EXISTS fixture (
   pen_home_score    SMALLINT,
   pen_away_score    SMALLINT,
 
-  -- Flow flags
   went_to_extra_time  BOOLEAN NOT NULL DEFAULT FALSE,
   went_to_penalties   BOOLEAN NOT NULL DEFAULT FALSE,
 
-  -- Final (after 120'; penalties not counted here)
   home_score        SMALLINT DEFAULT 0,
   away_score        SMALLINT DEFAULT 0,
 
-  winner_team_id    BIGINT REFERENCES team(team_id) ON DELETE SET NULL
+  winner_team_id    BIGINT REFERENCES team(team_id) ON DELETE SET NULL,
+  optional_second_leg BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 -- Basic indexes

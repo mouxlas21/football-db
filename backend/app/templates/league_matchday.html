@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Matchday {{ n }}</title></head>
+<body>
+  <h1>Matchday {{ n }}</h1>
+
+  <nav style="margin-bottom:1rem">
+    {% if n > 1 %}
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/matchday/{{ n - 1 }}">← Prev</a>
+    {% endif %}
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}">Season</a>
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/table">Table</a>
+    {% if n < total_matchdays %}
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/matchday/{{ n + 1 }}">Next →</a>
+    {% endif %}
+  </nav>
+
+  <ul>
+    {% for m in fixtures %}
+      <li>
+        <span>{{ m.kickoff_utc }}</span> —
+        <strong>{{ m.home_name }}</strong>
+        {% if m.ft_home_score is not none and m.ft_away_score is not none %}
+          {{ m.ft_home_score }}–{{ m.ft_away_score }}
+        {% else %}
+          vs
+        {% endif %}
+        <strong>{{ m.away_name }}</strong>
+        <em>({{ m.fixture_status }})</em>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <nav style="margin-top:1rem">
+    {% if n > 1 %}
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/matchday/{{ n - 1 }}">← Prev</a>
+    {% endif %}
+    {% if n < total_matchdays %}
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/league/matchday/{{ n + 1 }}">Next →</a>
+    {% endif %}
+  </nav>
+</body>
+</html>

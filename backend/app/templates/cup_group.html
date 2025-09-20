@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ group.name or group.code }} — Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .container { max-width: 960px; margin: 1rem auto; padding: 0 1rem; }
+    .card { border:1px solid #e5e7eb; border-radius:12px; padding:1rem; background:#fff; }
+    h1 { margin: 0 0 .5rem; }
+    h2 { margin: 1rem 0 .5rem; }
+    .muted { color:#666; }
+    table.clean { width:100%; border-collapse: collapse; }
+    table.clean th, table.clean td { padding:.5rem .6rem; border-bottom:1px dashed #eee; text-align:left; }
+    table.clean th { border-bottom:1px solid #e5e7eb; font-weight:600; background:#fafafa; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .footer { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="card">
+      <h1>{{ group.name or group.code }}</h1>
+      <p class="muted" style="margin:0">
+        Stage: {{ stage.name }} · Group ID: {{ group.group_id }}
+      </p>
+    </header>
+
+    <section class="card" style="margin-top:1rem">
+      <h2 style="margin-top:0">Table</h2>
+
+      {% if table_is_snapshot %}
+        <table class="clean">
+          <thead>
+            <tr>
+              <th>#</th><th>Team</th><th>Pld</th><th>W</th><th>D</th><th>L</th>
+              <th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in table %}
+              <tr>
+                <td>{{ r.position }}</td>
+                <td>{{ r.name }}</td>
+                <td>{{ r.played }}</td>
+                <td>{{ r.wins }}</td>
+                <td>{{ r.draws }}</td>
+                <td>{{ r.losses }}</td>
+                <td>{{ r.gf }}</td>
+                <td>{{ r.ga }}</td>
+                <td>{{ r.gd }}</td>
+                <td><strong>{{ r.pts }}</strong></td>
+                <td>{{ r.notes or '' }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <p class="muted" style="margin:.5rem 0 0">Showing official snapshot (frozen).</p>
+      {% else %}
+        <table class="clean">
+          <thead>
+            <tr>
+              <th>#</th><th>Team</th><th>Pld</th><th>W</th><th>D</th><th>L</th>
+              <th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in table %}
+              <tr>
+                <td>{{ r.position }}</td>
+                <td>{{ r.name }}</td>
+                <td>{{ r.played or r.pld }}</td>
+                <td>{{ r.wins or r.w }}</td>
+                <td>{{ r.draws or r.d }}</td>
+                <td>{{ r.losses or r.l }}</td>
+                <td>{{ r.gf }}</td>
+                <td>{{ r.ga }}</td>
+                <td>{{ r.gd }}</td>
+                <td><strong>{{ r.pts }}</strong></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <p class="muted" style="margin:.5rem 0 0">Computed from results{% if adjustments_applied %} (with points adjustments){% endif %}.</p>
+      {% endif %}
+    </section>
+
+    <section class="card" style="margin-top:1rem">
+      <h2 style="margin-top:0">Fixtures</h2>
+      {% if fixtures and fixtures|length %}
+        <ul style="margin:0; padding-left:1.1rem">
+          {% for m in fixtures %}
+            <li style="margin:.25rem 0">
+              <span class="mono">{{ m.kickoff_utc }}</span> —
+              <strong>{{ m.home_name }}</strong>
+              {% if m.ft_home_score is not none and m.ft_away_score is not none %}
+                {{ m.ft_home_score }}–{{ m.ft_away_score }}
+              {% else %}
+                vs
+              {% endif %}
+              <strong>{{ m.away_name }}</strong>
+              <em class="muted">({{ m.fixture_status }})</em>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="muted" style="margin:0">No fixtures found for this group.</p>
+      {% endif %}
+    </section>
+
+    <div class="footer">
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/groups">← Groups</a>
+      &nbsp;·&nbsp;
+      <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}/cup/overview">Cup Overview</a>
+      &nbsp;·&nbsp;
+      <a href="/competitions/{{ competition_id }}">Competition</a>
+    </div>
+  </main>
+</body>
+</html>

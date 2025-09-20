@@ -5,10 +5,28 @@
   <h1>{{ competition.name }}</h1>
   <p><strong>Type:</strong> {{ competition.type }}</p>
   <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
-  {% if organizer %}<p><strong>Organizer:</strong><a href="/associations/{{ organizer.ass_id }}">{{ organizer.code }}</a> — {{ organizer.name }}</p>
+  {% if organizer %}
+    <p><strong>Organizer:</strong> <a href="/associations/{{ organizer.ass_id }}">{{ organizer.code }}</a> — {{ organizer.name }}</p>
   {% else %}
     <p><strong>Organizer:</strong> —</p>
   {% endif %}
+
+  {% if seasons and seasons|length %}
+    <h2>Seasons</h2>
+    <ul>
+      {% for s in seasons %}
+        <li>
+          {{ s.name }}
+          — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}{% if competition.type == 'league' %}/league/overview{% else %}/cup/overview{% endif %}">Overview</a>
+          {% if competition.type == 'league' %}
+            — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}/league/table">Standings</a>
+            — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}/league/matchday/1">Matchday 1</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   <p><a href="/competitions">← Back to competitions</a></p>
 </body>
 </html>

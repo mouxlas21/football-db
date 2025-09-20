@@ -1,20 +1,171 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>{{ a.code }} — {{ a.name }}</title></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ a.code }} — {{ a.name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <style>
+    .grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border:1px solid #e5e7eb; border-radius:12px; padding:1rem; background:#fff; }
+    .card h3 { margin:.25rem 0 .75rem; }
+    .muted { color:#6b7280; }
+    table.clean { width:100%; border-collapse:collapse; }
+    table.clean th, table.clean td { padding:.5rem .6rem; border-bottom:1px dashed #eee; text-align:left; }
+    table.clean th { border-bottom:1px solid #e5e7eb; font-weight:600; }
+    .tag { display:inline-block; padding:.1rem .4rem; border:1px solid #ddd; border-radius:8px; font-size:.85rem; color:#374151; }
+    .pill { display:inline-block; padding:.2rem .6rem; background:#f3f4f6; border-radius:999px; font-size:.8rem; color:#374151; }
+    nav a { margin-right:.6rem; }
+  </style>
+</head>
 <body>
-  <h1>{{ a.code }} — {{ a.name }}</h1>
-  <p><strong>Level:</strong> {{ a.level }}</p>
-  {% if parent %}
-    <p><strong>Parent:</strong> <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a> — {{ parent.name }}</p>
-  {% endif %}
-  {% if children and children|length > 0 %}
-    <h3>Children</h3>
-    <ul>
-      {% for c in children %}
-        <li><a href="/associations/{{ c.ass_id }}">{{ c.code }}</a> — {{ c.name }} ({{ c.level }})</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-  <p><a href="/associations">← Back to associations</a></p>
+  <main class="container" style="padding:1rem; max-width:1000px;">
+    <header class="card" style="display:flex; justify-content:space-between; align-items:flex-start;">
+      <div>
+        <h1 style="margin:0 0 .25rem">{{ a.code }} — {{ a.name }}</h1>
+        <p class="muted" style="margin:.25rem 0 0">
+          <span class="pill">Level: {{ a.level }}</span>
+          {% if parent %}
+            <span class="pill">Parent: <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a></span>
+          {% endif %}
+        </p>
+      </div>
+      <nav>
+        <a href="/associations" class="tag">← Back</a>
+        {% if children and children|length > 0 %}
+          {% if include_children %}
+            <a class="tag" href="/associations/{{ a.ass_id }}">Hide children comps</a>
+          {% else %}
+            <a class="tag" href="/associations/{{ a.ass_id }}?include_children=1">Show children comps</a>
+          {% endif %}
+        {% endif %}
+      </nav>
+    </header>
+
+    <section class="grid" style="margin-top:1rem">
+      <div class="card">
+        <h3>Hierarchy</h3>
+        {% if parent %}
+          <p><strong>Parent:</strong> <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a> — {{ parent.name }}</p>
+        {% else %}
+          <p><strong>Parent:</strong> —</p>
+        {% endif %}
+
+        {% if children and children|length > 0 %}
+          <p><strong>Children ({{ children|length }}):</strong></p>
+          <ul style="margin:.5rem 0 0; padding-left:1.2rem">
+            {% for c in children %}
+              <li><a href="/associations/{{ c.ass_id }}">{{ c.code }}</a> — {{ c.name }} (level {{ c.level }})</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">No child associations.</p>
+        {% endif %}
+      </div>
+
+      <div class="card">
+        <h3>About</h3>
+        <p><strong>Code:</strong> {{ a.code }}</p>
+        <p><strong>Name:</strong> {{ a.name }}</p>
+        <p><strong>Level:</strong> {{ a.level }}</p>
+      </div>
+
+    </section>
+
+    <section style="margin-top:1rem">
+      {% if has_participant_type %}
+        <div class="grid">
+          <div class="card">
+            <h3>International — Club</h3>
+            {% if intl_club and intl_club|length %}
+              <table class="clean">
+                <thead><tr><th>Competition</th><th>Type</th></tr></thead>
+                <tbody>
+                  {% for c in intl_club %}
+                    <tr>
+                      <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
+                      <td>{{ c.type }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {% else %}
+              <p class="muted">No international club competitions.</p>
+            {% endif %}
+          </div>
+
+          <div class="card">
+            <h3>International — National Teams</h3>
+            {% if intl_nat and intl_nat|length %}
+              <table class="clean">
+                <thead><tr><th>Competition</th><th>Type</th></tr></thead>
+                <tbody>
+                  {% for c in intl_nat %}
+                    <tr>
+                      <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
+                      <td>{{ c.type }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            {% else %}
+              <p class="muted">No national-team competitions.</p>
+            {% endif %}
+          </div>
+        </div>
+      {% else %}
+        <div class="card">
+          <h3>International competitions</h3>
+          {% if intl_club and intl_club|length %}
+            <table class="clean">
+              <thead><tr><th>Competition</th><th>Type</th></tr></thead>
+              <tbody>
+                {% for c in intl_club %}
+                  <tr>
+                    <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
+                    <td>{{ c.type }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <p class="muted">No international competitions.</p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </section>
+
+    <section style="margin-top:1rem">
+      <div class="card">
+        <h3>Domestic competitions (organized by {{ a.code }})</h3>
+        {% if domestics and domestics|length %}
+          <table class="clean">
+            <thead>
+              <tr><th>Competition</th><th>Country</th><th>Type</th></tr>
+            </thead>
+            <tbody>
+              {% for c in domestics %}
+                <tr>
+                  <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
+                  <td>{{ c.country_id or '—' }}</td>
+                  <td>{{ c.type }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% if include_children and (child_domestics|length or child_internationals|length) %}
+            <p class="muted" style="margin-top:.5rem">
+              Includes {{ child_domestics|length }} domestic and {{ child_internationals|length }} international competitions from child associations.
+            </p>
+          {% endif %}
+        {% else %}
+          <p class="muted">No domestic competitions listed.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <p style="margin-top:1rem"><a href="/associations">← Back to associations</a></p>
+  </main>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>League Table</title></head>
+<body>
+  <h1>Standings</h1>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>#</th><th>Team</th><th>Pld</th><th>W</th><th>D</th><th>L</th>
+        <th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in table %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.pld }}</td>
+        <td>{{ row.w }}</td>
+        <td>{{ row.d }}</td>
+        <td>{{ row.l }}</td>
+        <td>{{ row.gf }}</td>
+        <td>{{ row.ga }}</td>
+        <td>{{ row.gd }}</td>
+        <td><strong>{{ row.pts }}</strong></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <p>
+    <a href="/competitions/{{ competition_id }}/seasons/{{ season_id }}">← Season overview</a>
+  </p>
+</body>
+</html>

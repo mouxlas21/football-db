@@ -43,11 +43,11 @@ Competition
              └── Round (e.g. Matchday 1, Quarterfinals)
                   └── Match (e.g. Bayern vs Dortmund, 15 Jan 2025)
 
-matches take teams_ids from team table
+matches take teams_ids from team table and resolve name from team.name
 
 ### Build order (safe topological order)
 
-## Phase A – bases
+## Phase A - bases
 1)associations
 2)countries
 3)stadiums
@@ -55,20 +55,20 @@ matches take teams_ids from team table
 5)clubs
 6)teams
 
+## Phase B - seasons and structure
 7)seasons
+    7a)if need be league_points_adjustment and/or league_table_snapshot
 8)stages
 9)stages rounds
 10)stages groups
+    10a)stages groups teams
 
 11)person → player, coach, official
 
+## Phase C - fixtures
+12) fixture
 
-entry
-
-Phase B – fixtures
-12) match
-
-Phase C – match data
+## Phase D – match data
 13) lineup
 14) appearance
 15) substitution

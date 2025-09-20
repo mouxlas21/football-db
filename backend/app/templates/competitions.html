@@ -8,6 +8,7 @@
     <input type="text"   name="q" value="{{ q }}" placeholder="Search by name">
     <input type="text"   name="type" value="{{ type }}" placeholder="type (league, cup, ...)">
     <input type="number" name="country_id" value="{{ country_id or '' }}" placeholder="country_id">
+    <input type="number" name="organizer_ass_id" value="{{ request.query_params.get('organizer_ass_id','') }}" placeholder="organizer_ass_id">
     <button type="submit">Filter</button>
   </form>
 
