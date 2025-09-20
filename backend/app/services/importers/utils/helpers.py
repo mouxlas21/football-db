@@ -11,10 +11,29 @@ def _to_int(v):
     except Exception:
         return None
     
-def _to_bool(v):
-    if v is None: return False
+def _to_bool(v, *, default: bool = False) -> bool:
+    """
+    Convert v to bool. Accepts common truthy/falsey strings and ints.
+    If v is None/empty/unknown, return `default`.
+    """
+    if v is None:
+        return default
     s = str(v).strip().lower()
-    return s in ("1","true","t","yes","y")
+    if s == "":
+        return default
+
+    # truthy
+    if s in ("1", "true", "t", "yes", "y", "on"):
+        return True
+    # falsey
+    if s in ("0", "false", "f", "no", "n", "off"):
+        return False
+
+    # numbers (e.g., "2" → True, "0" → False)
+    try:
+        return bool(int(s))
+    except Exception:
+        return default
 
 def _to_float(val):
     if val is None:
