@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSV Import</title>
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 2rem; color: #eaeaea; background: #121212; }
+        h1 { margin: 0 0 1rem 0; }
+        .muted { color: #aaa; }
+        .row { display: flex; gap: 1rem; align-items: center; margin: 1rem 0; }
+        input[type="text"] { flex:1; padding:.5rem .75rem; border-radius:8px; border:1px solid #555; background:#1f1f1f; color:#eaeaea; }
+        label { display: inline-flex; align-items: center; gap: .5rem; }
+        button { padding:.6rem 1rem; border-radius:8px; border:1px solid #555; background:#1f1f1f; color:#eaeaea; cursor:pointer; }
+        button:disabled { opacity:.6; cursor:wait; }
+        pre { background:#181818; padding:1rem; border-radius:8px; overflow:auto; }
+        .ok { color:#8fda8f; } .err { color:#ff7b7b; }
+        code { background:#181818; padding:.15rem .35rem; border-radius:6px; }
+    </style>
+</head>
+<body>
+    <h1>CSV Import</h1>
+    <p class="muted">
+        Data dir: <code>{{ data_dir }}</code> • Manifest: <code>{{ manifest_path }}</code> • Base URL: <code>{{ base_url }}</code>
+    </p>
+
+    <div class="row">
+        <label><input id="dry" type="checkbox"> Dry run</label>
+        <input id="pack" type="text" placeholder="(optional) pack name e.g. bundesliga_2024_25">
+        <button id="runBtn">Import CSVs</button>
+    </div>
+
+    <h2>Results</h2>
+    <pre id="out">— press the button —</pre>
+
+    <script>
+        const btn = document.getElementById('runBtn');
+        const out = document.getElementById('out');
+
+        btn.addEventListener('click', async () => {
+        btn.disabled = true;
+        out.textContent = 'Running…';
+        const pack = document.getElementById('pack').value.trim();
+        const dry = document.getElementById('dry').checked;
+
+        const qs = new URLSearchParams();
+        if (dry) qs.set('dry_run', 'true');
+        if (pack) qs.set('pack', pack);
+
+        const res = await fetch(`/admin/import/run${qs.toString() ? '?' + qs.toString() : ''}`, { method: 'POST' });
+        const data = await res.json();
+
+        const lines = [];
+        lines.push(`OK: ${data.ok ? 'yes' : 'no'}  (base: ${data.base_url})`);
+        if (data.message) lines.push(`Info: ${data.message}`);
+        lines.push(`Files recognized: ${data.found ?? 0}`);
+        for (const r of data.results) {
+            lines.push(`${r.ok ? '✔' : '✖'}  ${r.entity} — ${r.path}`);
+        }
+        out.textContent = lines.join('\n');
+        btn.disabled = false;
+        });
+    </script>
+</body>
+</html>

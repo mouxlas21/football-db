@@ -1,0 +1,30 @@
+{
+  "base_url": "http://localhost:8000",
+  "overrides": [
+    { "file": "data/associations.csv", "entity": "association" },
+
+    { "file": "data/countries_test.csv", "entity": "country" },
+    { "file": "data/stadiums_test.csv", "entity": "stadium" },
+    { "file": "data/competitions_test.csv", "entity": "competition" },
+    { "file": "data/clubs_test.csv", "entity": "club" },
+    { "file": "data/teams_test.csv", "entity": "team" },
+
+    { "file": "data/players_test.csv", "entity": "player" },
+    { "file": "data/coaches_test.csv", "entity": "coach" },
+    { "file": "data/officials_test.csv", "entity": "official" },
+
+    { "file": "data/cl_2023_24_season.csv", "entity": "season" },
+    { "file": "data/cl_2023_24_stages.csv", "entity": "stage" },
+    { "file": "data/cl_2023_24_stage_rounds.csv", "entity": "stage_round" },
+    { "file": "data/cl_2023_24_stage_groups.csv", "entity": "stage_group" },
+    { "file": "data/cl_2023_24_stage_group_teams.csv", "entity": "stage_group_team" },
+
+    { "file": "data/cl_2023_24_group_stage_fixtures.csv", "entity": "fixture" },
+    { "file": "data/cl_2023_24_knockout_stage_fixtures.csv", "entity": "fixture" },
+
+    { "file": "data/bundesliga_2024_25_season.csv", "entity": "season" },
+    { "file": "data/bundesliga_2024_25_stages.csv", "entity": "stage" },
+    { "file": "data/bundesliga_2024_25_stage_rounds.csv", "entity": "stage_round" },
+    { "file": "data/bundesliga_2024_25_fixtures.csv", "entity": "fixture" }
+  ]
+}

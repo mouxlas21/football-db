@@ -63,10 +63,14 @@ matches take teams_ids from team table and resolve name from team.name
 10)stages groups
     10a)stages groups teams
 
-11)person → player, coach, official
-
 ## Phase C - fixtures
-12) fixture
+11) fixture
+
+## Phase D - people
+12)person
+    12a)player
+    12b)coach
+    12c)official
 
 ## Phase D – match data
 13) lineup
@@ -76,3 +80,60 @@ matches take teams_ids from team table and resolve name from team.name
 17) team_match_stats
 18) player_match_stats
 19) table_standings
+
+    See the plan and import via CLI:
+
+        docker compose exec backend python app/import_runner.py --dry-run
+        docker compose exec backend python app/import_runner.py
+
+
+    From the UI: open http://localhost:8000/admin/import and click Import CSVs.
+
+    Only a pack later (when you adopt packs/):
+
+    CLI: --pack bundesliga_2024_25
+
+    UI: put bundesliga_2024_25 in the text field (uncomment the query string in JS if you want it wired).
+
+/admin/import
+
+football-db/
+└─ data/
+   ├─ base/
+   │  ├─ associations.csv
+   │  ├─ countries.csv
+   │  ├─ stadiums.csv
+   │  ├─ competitions.csv
+   │  ├─ clubs.csv
+   │  └─ teams.csv
+   │
+   ├─ people/                
+   │  ├─ players.csv
+   │  ├─ coaches.csv
+   │  └─ officials.csv
+   ├─ packs/
+   │  ├─ uefa_cl_2023_24/
+   │  │  ├─ season.csv
+   │  │  ├─ stages.csv
+   │  │  ├─ stage_rounds.csv
+   │  │  ├─ stage_groups.csv
+   │  │  ├─ stage_group_teams.csv
+   │  │  ├─ fixtures.csv
+   │  │  ├─ people/            
+   │  │  │  ├─ players.csv
+   │  │  │  └─ coaches.csv
+   │  │  └─ match_data/
+   │  │     ├─ lineups.csv
+   │  │     ├─ appearances.csv
+   │  │     ├─ substitutions.csv
+   │  │     ├─ events.csv
+   │  │     ├─ team_match_stats.csv
+   │  │     ├─ player_match_stats.csv
+   │  │     └─ table_standings.csv
+   │  │
+   │  └─ bundesliga_2024_25/
+   │     ├─ season.csv
+   │     ├─ stages.csv
+   │     ├─ stage_rounds.csv
+   │     ├─ fixtures.csv
+   └─ import_manifest.json
