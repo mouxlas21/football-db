@@ -9,7 +9,12 @@
 <body>
   <main class="container">
     <div class="card">
-      <h1 style="margin:0 0 .5rem">{{ country.name }}</h1>
+      <h1 style="margin:0 0 .5rem; display:flex; align-items:center; gap:.5rem">
+        {% if country.flag_filename %}
+          <img src="{{ flag_url(country.flag_filename, 'normal') }}" alt="{{ country.name }} flag" style="height:22px;">
+        {% endif %}
+        <span>{{ country.name }}</span>
+      </h1>
       <p><strong>FIFA CODE</strong> {{ country.fifa_code or '—' }}</p>
     </div>
 

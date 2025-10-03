@@ -60,7 +60,18 @@ class AssociationsImporter(BaseImporter):
         parent_token = raw.pop("parent_org_id", None)
         parent_org_id = self._resolve_parent_id(parent_token, db)
 
-        return True, {"code": code, "name": name, "level": level, "parent_org_id": parent_org_id}
+        # logo filename (single, used for base/small/big in templates)
+        logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
+        if logo_filename:
+            logo_filename = logo_filename.strip() or None
+
+        return True, {
+            "code": code,
+            "name": name,
+            "level": level,
+            "parent_org_id": parent_org_id,
+            "logo_filename": logo_filename,
+        }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
         # code is unique
@@ -70,6 +81,7 @@ class AssociationsImporter(BaseImporter):
                 "name": kwargs["name"],
                 "level": kwargs["level"],
                 "parent_org_id": kwargs["parent_org_id"],
+                "logo_filename": kwargs.get("logo_filename"),
             },
         )
         res = db.execute(stmt)

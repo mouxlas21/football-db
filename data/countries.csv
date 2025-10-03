@@ -1,0 +1,236 @@
+name,confed_ass_id,fifa_code,flag_filename,status
+Afghanistan,AFC,AFG,afg.png,active
+Albania,UEFA,ALB,alb.png,active
+Algeria,CAF,ALG,alg.png,active
+American Samoa,OFC,ASA,asa.png,active
+Andorra,UEFA,AND,and.png,active
+Angola,CAF,ANG,ang.png,active
+Anguilla,CONCACAF,AIA,aia.png,active
+Antigua & Barbuda,CONCACAF,ATG,atg.png,active
+Argentina,CONMEBOL,ARG,arg.png,active
+Armenia,UEFA,ARM,arm.png,active
+Aruba,CONCACAF,ARU,aru.png,active
+Australia,AFC,AUS,aus.png,active
+Austria,UEFA,AUT,aut.png,active
+Azerbaijan,UEFA,AZE,aze.png,active
+Bahamas,CONCACAF,BAH,bah.png,active
+Bahrain,AFC,BHR,bhr.png,active
+Bangladesh,AFC,BAN,ban.png,active
+Barbados,CONCACAF,BRB,brb.png,active
+Belarus,UEFA,BLR,blr.png,active
+Belgium,UEFA,BEL,bel.png,active
+Belize,CONCACAF,BLZ,blz.png,active
+Benin,CAF,BEN,ben.png,active
+Bermuda,CONCACAF,BER,ber.png,active
+Bhutan,AFC,BHU,bhu.png,active
+Bolivia,CONMEBOL,BOL,bol.png,active
+Bonaire,CONCACAF,BOE,boe.png,active
+Bosnia & Herzegovina,UEFA,BIH,bih.png,active
+Botswana,CAF,BOT,bot.png,active
+Brazil,CONMEBOL,BRA,bra.png,active
+British Virgin Islands,CONCACAF,VGB,vgb.png,active
+Brunei,AFC,BRU,bru.png,active
+Bulgaria,UEFA,BUL,bul.png,active
+Burkina Faso,CAF,BFA,bfa.png,active
+Burundi,CAF,BDI,bdi.png,active
+Cambodia,AFC,CAM,cam.png,active
+Cameroon,CAF,CMR,cmr.png,active
+Canada,CONCACAF,CAN,can.png,active
+Cape Verde,CAF,CPV,cpv.png,active
+Cayman Islands,CONCACAF,CAY,cay.png,active
+Central African Republic,CAF,CTA,cta.png,active
+Chad,CAF,CHA,cha.png,active
+Chile,CONMEBOL,CHI,chi.png,active
+China PR,AFC,CHN,chn.png,active
+Chinese Taipei,AFC,TPE,tpe.png,active
+Colombia,CONMEBOL,COL,col.png,active
+Comoros,CAF,COM,com.png,active
+Congo,CAF,CGO,cgo.png,active
+Cook Islands,OFC,COK,cok.png,active
+Costa Rica,CONCACAF,CRC,crc.png,active
+Crimea,UEFA,CRM,crm.png,active
+Croatia,UEFA,CRO,cro.png,active
+Cuba,CONCACAF,CUB,cub.png,active
+Curaçao,CONCACAF,CUW,cuw.png,active
+Cyprus,UEFA,CYP,cyp.png,active
+Czechia,UEFA,CZE,cze.png,active
+Denmark,UEFA,DEN,den.png,active
+Djibouti,CAF,DJI,dji.png,active
+Dominica,CONCACAF,DMA,dma.png,active
+Dominican Republic,CONCACAF,DOM,dom.png,active
+DR Congo,CAF,COD,cod.png,active
+Ecuador,CONMEBOL,ECU,ecu.png,active
+Egypt,CAF,EGY,egy.png,active
+El Salvador,CONCACAF,SLV,slv.png,active
+England,UEFA,ENG,eng.png,active
+Equatorial Guinea,CAF,EQG,eqg.png,active
+Eritrea,CAF,ERI,eri.png,active
+Estonia,UEFA,EST,est.png,active
+Eswatini,CAF,SWZ,swz.png,active
+Ethiopia,CAF,ETH,eth.png,active
+Faroe Islands,UEFA,FRO,fro.png,active
+Fiji,OFC,FIJ,fij.png,active
+Finland,UEFA,FIN,fin.png,active
+France,UEFA,FRA,fra.png,active
+French Guiana,CONCACAF,GUF,guf.png,active
+Gabon,CAF,GAB,gab.png,active
+Georgia,UEFA,GEO,geo.png,active
+Germany,UEFA,GER,ger.png,active
+Ghana,CAF,GHA,gha.png,active
+Gibraltar,UEFA,GIB,gib.png,active
+Greece,UEFA,GRE,gre.png,active
+Grenada,CONCACAF,GRN,grn.png,active
+Guadeloupe,CONCACAF,GLP,glp.png,active
+Guam,AFC,GUM,gum.png,active
+Guatemala,CONCACAF,GUA,gua.png,active
+Guinea,CAF,GUI,gui.png,active
+Guinea-Bissau,CAF,GNB,gnb.png,active
+Guyana,CONCACAF,GUY,guy.png,active
+Haiti,CONCACAF,HAI,hai.png,active
+Honduras,CONCACAF,HON,hon.png,active
+Hong Kong,AFC,HKG,hkg.png,active
+Hungary,UEFA,HUN,hun.png,active
+Iceland,UEFA,ISL,isl.png,active
+India,AFC,IND,ind.png,active
+Indonesia,AFC,IDN,idn.png,active
+Iran,AFC,IRN,irn.png,active
+Iraq,AFC,IRQ,irq.png,active
+Israel,UEFA,ISR,isr.png,active
+Italy,UEFA,ITA,ita.png,active
+Ivory Coast,CAF,CIV,civ.png,active
+Jamaica,CONCACAF,JAM,jam.png,active
+Japan,AFC,JPN,jpn.png,active
+Jordan,AFC,JOR,jor.png,active
+Kazakhstan,UEFA,KAZ,kaz.png,active
+Kenya,CAF,KEN,ken.png,active
+Kiribati,OFC,KIR,kir.png,active
+Kosovo,UEFA,KOS,kos.png,active
+Kuwait,AFC,KUW,kuw.png,active
+Kyrgyzstan,AFC,KGZ,kgz.png,active
+Laos,AFC,LAO,lao.png,active
+Latvia,UEFA,LVA,lva.png,active
+Lebanon,AFC,LIB,lib.png,active
+Lesotho,CAF,LES,les.png,active
+Liberia,CAF,LBR,lbr.png,active
+Libya,CAF,LBY,lby.png,active
+Lithuania,UEFA,LTU,ltu.png,active
+Luxembourg,UEFA,LUX,lux.png,active
+Macau,AFC,MAC,mac.png,active
+Madagascar,CAF,MAD,mad.png,active
+Malawi,CAF,MWI,mwi.png,active
+Malaysia,AFC,MAS,mas.png,active
+Maldives,AFC,MDV,mdv.png,active
+Mali,CAF,MLI,mli.png,active
+Malta,UEFA,MLT,mlt.png,active
+Martinique,CONCACAF,MTQ,mtq.png,active
+Mauritania,CAF,MTN,mtn.png,active
+Mauritius,CAF,MRI,mri.png,active
+Mayotte,CAF,MAY,may.png,active
+Mexico,CONCACAF,MEX,mex.png,active
+Micronesia,OFC,FSM,fsm.png,active
+Moldova,UEFA,MDA,mda.png,active
+Mongolia,AFC,MNG,mng.png,active
+Montenegro,UEFA,MNE,mne.png,active
+Montserrat,CONCACAF,MSR,msr.png,active
+Morocco,CAF,MAR,mar.png,active
+Mozambique,CAF,MOZ,moz.png,active
+Myanmar,AFC,MYA,mya.png,active
+Namibia,CAF,NAM,nam.png,active
+Nepal,AFC,NEP,nep.png,active
+Netherlands,UEFA,NED,ned.png,active
+New Caledonia,OFC,NCL,ncl.png,active
+New Zealand,OFC,NZL,nzl.png,active
+Nicaragua,CONCACAF,NCA,nca.png,active
+Niger,CAF,NIG,nig.png,active
+Nigeria,CAF,NGA,nga.png,active
+North Korea,AFC,PRK,prk.png,active
+North Macedonia,UEFA,MKD,mkd.png,active
+Northern Ireland,UEFA,NIR,nir.png,active
+Northern Mariana,AFC,NMI,nmi.png,active
+Norway,UEFA,NOR,nor.png,active
+Oman,AFC,OMA,oma.png,active
+Pakistan,AFC,PAK,pak.png,active
+Palestine,AFC,PLE,ple.png,active
+Panama,CONCACAF,PAN,pan.png,active
+Papua New Guinea,OFC,PNG,png.png,active
+Paraguay,CONMEBOL,PAR,par.png,active
+Peru,CONMEBOL,PER,per.png,active
+Philippines,AFC,PHI,phi.png,active
+Poland,UEFA,POL,pol.png,active
+Portugal,UEFA,POR,por.png,active
+Puerto Rico,CONCACAF,PUR,pur.png,active
+Qatar,AFC,QAT,qat.png,active
+Republic of Ireland,UEFA,IRL,irl.png,active
+Réunion,CAF,REU,reu.png,active
+Romania,UEFA,ROU,rou.png,active
+Russia,UEFA,RUS,rus.png,active
+Rwanda,CAF,RWA,rwa.png,active
+Saint Kitts & Nevis,CONCACAF,SKN,skn.png,active
+Saint Lucia,CONCACAF,LCA,lca.png,active
+Saint Pierre & Miquelon,CONCACAF,SPM,spm.png,active
+Saint Vincent & the Grenadines,CONCACAF,VIN,vin.png,active
+Saint-Martin,CONCACAF,SMN,smn.png,active
+Samoa,OFC,SAM,sam.png,active
+San Marino,UEFA,SMR,smr.png,active
+São Tomé & Príncipe,CAF,STP,stp.png,active
+Saudi Arabia,AFC,KSA,ksa.png,active
+Scotland,UEFA,SCO,sco.png,active
+Senegal,CAF,SEN,sen.png,active
+Serbia,UEFA,SRB,srb.png,active
+Seychelles,CAF,SEY,sey.png,active
+Sierra Leone,CAF,SLE,sle.png,active
+Singapore,AFC,SIN,sin.png,active
+Sint Maarten,CONCACAF,SMA,sma.png,active
+Slovakia,UEFA,SVK,svk.png,active
+Slovenia,UEFA,SVN,svn.png,active
+Solomon Islands,OFC,SOL,sol.png,active
+Somalia,CAF,SOM,som.png,active
+South Africa,CAF,RSA,rsa.png,active
+South Korea,AFC,KOR,kor.png,active
+South Sudan,CAF,SSD,ssd.png,active
+Spain,UEFA,ESP,esp.png,active
+Sri Lanka,AFC,SRI,sri.png,active
+St. Barthélemy,CONCACAF,BLM,blm.png,active
+Sudan,CAF,SUD,sud.png,active
+Suriname,CONCACAF,SUR,sur.png,active
+Sweden,UEFA,SWE,swe.png,active
+Switzerland,UEFA,SUI,sui.png,active
+Syria,AFC,SYR,syr.png,active
+Tahiti,OFC,TAH,tah.png,active
+Tajikistan,AFC,TJK,tjk.png,active
+Tanzania,CAF,TAN,tan.png,active
+Thailand,AFC,THA,tha.png,active
+The Gambia,CAF,GAM,gam.png,active
+Timor-Leste,AFC,TLS,tls.png,active
+Togo,CAF,TOG,tog.png,active
+Tonga,OFC,TGA,tga.png,active
+Trinidad & Tobago,CONCACAF,TRI,tri.png,active
+Tunisia,CAF,TUN,tun.png,active
+Türkiye,UEFA,TUR,tur.png,active
+Turkmenistan,AFC,TKM,tkm.png,active
+Turks & Caicos Islands,CONCACAF,TCA,tca.png,active
+Tuvalu,OFC,TUV,tuv.png,active
+UAE,AFC,UAE,uae.png,active
+Uganda,CAF,UGA,uga.png,active
+Ukraine,UEFA,UKR,ukr.png,active
+Uruguay,CONMEBOL,URU,uru.png,active
+US Virgin Islands,CONCACAF,VIR,vir.png,active
+USA,CONCACAF,USA,usa.png,active
+Uzbekistan,AFC,UZB,uzb.png,active
+Vanuatu,OFC,VAN,van.png,active
+Venezuela,CONMEBOL,VEN,ven.png,active
+Vietnam,AFC,VIE,vie.png,active
+Wales,UEFA,WAL,wal.png,active
+Wallis & Futuna,OFC,WFI,wfi.png,active
+Yemen,AFC,YEM,yem.png,active
+Zambia,CAF,ZAM,zam.png,active
+Zanzibar,CAF,ZAN,zan.png,active
+Zimbabwe,CAF,ZIM,zim.png,active
+CIS,UEFA,CIS,cis.png,historical
+Czechoslovakia,UEFA,TCH,tch.png,historical
+East Germany,UEFA,GDR,gdr.png,historical
+Soviet Union,UEFA,URS,urs.png,historical
+Liechtenstein,UEFA,LIE,lie.png,active
+Zaire,CAF,ZAI,zai.png,historical
+Yugoslavia,UEFA,YUG,yug.png,historical
+West Germany,UEFA,FRG,ger.png,historical

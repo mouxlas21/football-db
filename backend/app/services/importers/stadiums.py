@@ -35,6 +35,11 @@ class StadiumsImporter(BaseImporter):
         lat = _to_float(raw.pop("lat", None))
         lng = _to_float(raw.pop("lng", None))
 
+        # photo filename (single; no size folders in your tree)
+        photo_filename = (raw.pop("photo_filename", None) or raw.pop("photo", None) or raw.pop("image", None) or None)
+        if photo_filename:
+            photo_filename = photo_filename.strip() or None
+
         return True, {
             "name": name,
             "city": city,
@@ -43,7 +48,9 @@ class StadiumsImporter(BaseImporter):
             "opened_year": opened_year,
             "lat": lat,
             "lng": lng,
+            "photo_filename": photo_filename,
         }
+
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
         """
@@ -61,7 +68,7 @@ class StadiumsImporter(BaseImporter):
         existing = db.execute(sel).scalar_one_or_none()
         if existing:
             changed = False
-            for f in ("capacity", "opened_year", "lat", "lng", "city", "country_id"):
+            for f in ("capacity", "opened_year", "lat", "lng", "city", "country_id", "photo_filename"):
                 v = kwargs.get(f, None)
                 if v is not None and getattr(existing, f) != v:
                     setattr(existing, f, v)

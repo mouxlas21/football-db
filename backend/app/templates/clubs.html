@@ -12,10 +12,15 @@
 
   <ul>
   {% for c in clubs %}
-    <li>
-      <a href="/clubs/{{ c.club_id }}">{{ c.name }}</a>
-      {% if c.short_name %} ({{ c.short_name }}){% endif %}
-      — {{ country_map.get(c.country_id, '—') }}
+    <li style="display:flex; align-items:center; gap:.5rem">
+      {% if c.logo_filename %}
+        <img src="{{ club_logo_url(c.logo_filename, 'small') }}" alt="{{ c.name }} crest" style="height:18px;">
+      {% endif %}
+      <span>
+        <a href="/clubs/{{ c.club_id }}">{{ c.name }}</a>
+        {% if c.short_name %} ({{ c.short_name }}){% endif %}
+        — {{ country_map.get(c.country_id, '—') }}
+      </span>
     </li>
   {% else %}
     <li>No clubs found.</li>

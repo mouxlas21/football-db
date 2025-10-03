@@ -108,11 +108,16 @@ class CompetitionsImporter(BaseImporter):
                 self.log_warn(f"[competitions] '{name}': confederation hint '{confed_token}' "
                               f"!= organizer lineage (derived id={derived_confed_id})")
 
+        logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
+        if logo_filename:
+            logo_filename = logo_filename.strip() or None
+
         return True, {
             "name": name,
             "type": ctype,
             "organizer_ass_id": organizer_ass_id,  # <-- the new canonical FK
             "country_id": country_id,
+            "logo_filename": logo_filename,
         }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
@@ -128,6 +133,7 @@ class CompetitionsImporter(BaseImporter):
                     "type": kwargs["type"],
                     "organizer_ass_id": kwargs["organizer_ass_id"],
                     "country_id": kwargs["country_id"],
+                    "logo_filename": kwargs.get("logo_filename"),
                 },
             )
         )

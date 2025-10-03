@@ -14,18 +14,23 @@
 
   <ul>
     {% for comp in competitions %}
-      <li>
-        <a href="/competitions/{{ comp.competition_id }}">{{ comp.name }}</a>
-        ({{ comp.type }})
-        {% if comp.country_id and country_map.get(comp.country_id) %}
-          — {{ country_map[comp.country_id].name }}
+      <li style="display:flex; align-items:center; gap:.5rem">
+        {% if comp.logo_filename %}
+          <img src="{{ competition_logo_url(comp.logo_filename, 'small') }}" alt="{{ comp.name }} logo" style="height:18px;">
         {% endif %}
-        {% if comp.organizer_ass_id and ass_map.get(comp.organizer_ass_id) %}
-          — Organizer:
-          <a href="/associations/{{ comp.organizer_ass_id }}">
-            {{ ass_map[comp.organizer_ass_id].code }}
-          </a>
-        {% endif %}
+        <span>
+          <a href="/competitions/{{ comp.competition_id }}">{{ comp.name }}</a>
+          ({{ comp.type }})
+          {% if comp.country_id and country_map.get(comp.country_id) %}
+            — {{ country_map[comp.country_id].name }}
+          {% endif %}
+          {% if comp.organizer_ass_id and ass_map.get(comp.organizer_ass_id) %}
+            — Organizer:
+            <a href="/associations/{{ comp.organizer_ass_id }}">
+              {{ ass_map[comp.organizer_ass_id].code }}
+            </a>
+          {% endif %}
+        </span>
       </li>
     {% endfor %}
   </ul>

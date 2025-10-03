@@ -10,6 +10,7 @@ from sqlalchemy import (
     SmallInteger,
     ForeignKey,
     Index,
+    Enum,
     UniqueConstraint,
 )
 from sqlalchemy.orm import relationship, Mapped, mapped_column
@@ -24,6 +25,7 @@ class Association(Base):
     code:   Mapped[str] = mapped_column(Text, unique=True, nullable=False)
     name:   Mapped[str] = mapped_column(Text, nullable=False)
     level:  Mapped[str] = mapped_column(Text, nullable=False)  # 'federation' | 'confederation' | 'association' | 'league_body'
+    logo_filename: Mapped[str | None] = mapped_column(Text)
     parent_org_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
 
 class Country(Base):
@@ -31,9 +33,14 @@ class Country(Base):
 
     country_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    flag_filename: Mapped[str | None] = mapped_column(Text)
     confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
     fifa_code: Mapped[str | None] = mapped_column(String(3), unique=True)
-
+    c_status: Mapped[str] = mapped_column(
+        Enum('active', 'historical', name='country_status', create_type=False),
+        nullable=False,
+        server_default='active'
+    )
 
 class Stadium(Base):
     __tablename__ = "stadium"
@@ -44,6 +51,7 @@ class Stadium(Base):
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
     capacity: Mapped[int | None] = mapped_column(Integer)
     opened_year: Mapped[int | None] = mapped_column(SmallInteger)
+    photo_filename: Mapped[str | None] = mapped_column(Text)
     lat: Mapped[float | None] = mapped_column()
     lng: Mapped[float | None] = mapped_column()
 
@@ -53,6 +61,7 @@ class Competition(Base):
     competition_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
     type: Mapped[str] = mapped_column(Text, nullable=False)  # 'league' | 'cup' | ...
+    logo_filename: Mapped[str | None] = mapped_column(Text)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
     organizer_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
 
@@ -65,6 +74,7 @@ class Club(Base):
     founded: Mapped[int | None] = mapped_column(SmallInteger)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
     stadium_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("stadium.stadium_id", ondelete="SET NULL"))
+    logo_filename: Mapped[str | None] = mapped_column(Text)
     colors: Mapped[str | None] = mapped_column(Text)
 
     country = relationship("Country")
@@ -83,6 +93,7 @@ class Team(Base):
     type: Mapped[str] = mapped_column(Text, nullable=False, default="club")
     club_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("club.club_id", ondelete="SET NULL"))
     national_country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
+    logo_filename: Mapped[str | None] = mapped_column(Text)
     gender: Mapped[str | None] = mapped_column(Text)
     age_group: Mapped[str | None] = mapped_column(Text)
     squad_level: Mapped[str | None] = mapped_column(Text)

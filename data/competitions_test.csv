@@ -1,14 +1,14 @@
-name,type,organizer,country_id,organizer_ass_id
-Bundesliga,league,DFL,Germany,UEFA
-FA Cup,cup,FA,England,UEFA
-La Liga,league,LaLiga,Spain,UEFA
-Copa del Rey,cup,RFEF,Spain,UEFA
-Serie A,league,Lega Serie A,Italia,UEFA
-Ligue 1,league,LFP,France,UEFA
-Eredivisie,league,KNVB / Eredivisie,Netherlands,UEFA
-Primeira Liga,league,FPF / Liga Portugal,Portugal,UEFA
-FIFA World Cup,cup,FIFA,,FIFA
-UEFA Champions League,cup,UEFA,,UEFA
-DFB-Pokal,cup,DFB,Germany,UEFA
-Premier League,league,Premier League,England,UEFA
-Copa do Brasil,cup,CBF,Brazil,CONMEBOL
+name,type,organizer,country_id,organizer_ass_id,flag_filename
+Bundesliga,league,DFL,Germany,UEFA,
+FA Cup,cup,FA,England,UEFA,
+La Liga,league,LaLiga,Spain,UEFA,
+Copa del Rey,cup,RFEF,Spain,UEFA,
+Serie A,league,Lega Serie A,Italia,UEFA,
+Ligue 1,league,LFP,France,UEFA,
+Eredivisie,league,KNVB / Eredivisie,Netherlands,UEFA,
+Primeira Liga,league,FPF / Liga Portugal,Portugal,UEFA,
+FIFA World Cup,cup,FIFA,,FIFA,
+UEFA Champions League,cup,UEFA,,UEFA,
+DFB-Pokal,cup,DFB,Germany,UEFA,
+Premier League,league,Premier League,England,UEFA,
+Copa do Brasil,cup,CBF,Brazil,CONMEBOL,

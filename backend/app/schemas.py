@@ -1,40 +1,87 @@
 from __future__ import annotations
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, Literal
 from datetime import date, datetime
+
+CountryStatus = Literal['active', 'historical']
 
 class AssociationCreate(BaseModel):
     code: str
     name: str
     level: str
-    parent_code: Optional[str] = None  # convenience for input
+    logo_filename: Optional[str] = None
+    parent_code: Optional[str] = None  
 
 class AssociationRead(BaseModel):
     ass_id: int
     code: str
     name: str
     level: str
+    logo_filename: Optional[str] = None
     parent_org_id: Optional[int] = None
     class Config: from_attributes = True
 
 class CountryCreate(BaseModel):
     name: str
+    flag_filename: Optional[str] = None
     fifa_code: Optional[str] = None
-    confederation_code: Optional[str] = None  # convenience for input
+    confederation_code: Optional[str] = None
+    c_status: Optional[str] = Field(default='active', pattern='^(active|historical)$')
 
 class CountryRead(BaseModel):
     country_id: int
     name: str
+    flag_filename: Optional[str] = None
     fifa_code: Optional[str] = None
     confed_ass_id: Optional[int] = None
+    c_status: CountryStatus
+    class Config: from_attributes = True
+    
+class StadiumCreate(BaseModel):
+    name: str
+    city: str
+    country_id: Optional[int] = None
+    capacity: Optional[int] = None
+    opened_year: Optional[int] = None
+    lat: Optional[float] = None
+    lng: Optional[float] = None
+    photo_filename: Optional[str] = None
+
+class StadiumRead(BaseModel):
+    stadium_id: int
+    name: str
+    city: str
+    country_id: Optional[int] = None
+    capacity: Optional[int] = None
+    opened_year: Optional[int] = None
+    lat: Optional[float] = None 
+    lng: Optional[float] = None
+    photo_filename: Optional[str] = None
     class Config: from_attributes = True
 
+class CompetitionCreate(BaseModel):
+    name: str
+    type: str
+    logo_filename: Optional[str] = None
+    country_id: Optional[int] = None
+    organizer_code: Optional[str] = None  
+
+class CompetitionRead(BaseModel):
+    competition_id: int
+    name: str
+    type: str
+    logo_filename: Optional[str] = None
+    country_id: Optional[int] = None
+    organizer_ass_id: Optional[int] = None
+    class Config: from_attributes = True
+    
 class ClubCreate(BaseModel):
     name: str = Field(..., min_length=2)
     short_name: Optional[str] = None
     founded: Optional[int] = None
     country_id: Optional[int] = None
     stadium_id: Optional[int] = None
+    logo_filename: Optional[str] = None
     colors: Optional[str] = None
 
 class ClubRead(BaseModel):
@@ -44,28 +91,16 @@ class ClubRead(BaseModel):
     founded: Optional[int] = None
     country_id: Optional[int] = None
     stadium_id: Optional[int] = None
+    logo_filename: Optional[str] = None
     colors: Optional[str] = None
     class Config: from_attributes = True
-
-class CompetitionCreate(BaseModel):
-    name: str
-    type: str
-    country_id: Optional[int] = None
-    organizer_code: Optional[str] = None  
-
-class CompetitionRead(BaseModel):
-    competition_id: int
-    name: str
-    type: str
-    country_id: Optional[int] = None
-    organizer_ass_id: Optional[int] = None
-    class Config: from_attributes = True
-
+    
 class TeamCreate(BaseModel):
     name: str
     type: str                  
     club_id: Optional[int] = None      
     national_country_id: Optional[int] = None
+    logo_filename: Optional[str] = None
     gender: Optional[str] = None
     age_group: Optional[str] = None
     squad_level: Optional[str] = None  
@@ -76,6 +111,7 @@ class TeamRead(BaseModel):
     type: str
     club_id: Optional[int] = None
     national_country_id: Optional[int] = None
+    logo_filename: Optional[str] = None
     gender: Optional[str] = None
     age_group: Optional[str] = None
     squad_level: Optional[str] = None

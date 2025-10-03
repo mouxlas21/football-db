@@ -1,3 +1,4 @@
+{% from "partials/macros.html" import team_badge %}
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Teams</title></head>
@@ -19,18 +20,22 @@
 
   <ul>
     {% for t in teams %}
-      <li>
-        <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
-        — <em>{{ t.type }}</em>
-        {% if t.type == 'club' and t.club_id and clubs.get(t.club_id) %}
-          · Club: <a href="/clubs/{{ t.club_id }}">{{ clubs[t.club_id].name }}</a>
-        {% elif t.type == 'national' and t.national_country_id and countries.get(t.national_country_id) %}
-          · Country: <a href="/countries/{{ t.national_country_id }}">{{ countries[t.national_country_id].name }}</a>
-        {% endif %}
-        {% if t.age_group %} · {{ t.age_group }}{% endif %}
-        {% if t.gender %} · {{ t.gender }}{% endif %}
-        {% if t.squad_level %} · {{ t.squad_level }}{% endif %}
+      <li style="display:flex; align-items:center; gap:.5rem">
+        {{ team_badge(t, clubs=clubs, countries=countries, size='small') }}
+        <span>
+          <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+          — <em>{{ t.type }}</em>
+          {% if t.type == 'club' and t.club_id and clubs.get(t.club_id) %}
+            · Club: <a href="/clubs/{{ t.club_id }}">{{ clubs[t.club_id].name }}</a>
+          {% elif t.type == 'national' and t.national_country_id and countries.get(t.national_country_id) %}
+            · Country: <a href="/countries/{{ t.national_country_id }}">{{ countries[t.national_country_id].name }}</a>
+          {% endif %}
+          {% if t.age_group %} · {{ t.age_group }}{% endif %}
+          {% if t.gender %} · {{ t.gender }}{% endif %}
+          {% if t.squad_level %} · {{ t.squad_level }}{% endif %}
+        </span>
       </li>
+
     {% endfor %}
   </ul>
 </body>

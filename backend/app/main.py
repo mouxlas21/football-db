@@ -19,7 +19,7 @@ app.include_router(imports.router)
 app.include_router(leagues.router)
 app.include_router(cups.router)
 app.include_router(admin_import.router)
-
+#app.include_router(reference.router)
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):

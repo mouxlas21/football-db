@@ -1,9 +1,7 @@
-code,name,level,parent_org_id
-UEFA,Union of European Football Associations,confederation,FIFA
-CONMEBOL,Confederación Sudamericana de Fútbol,confederation,FIFA
-CONCACAF,"Confederation of North, Central America and Caribbean Association Football",confederation,FIFA
-AFC,Asian Football Confederation,confederation,FIFA
-CAF,Confederation of African Football,confederation,FIFA
-OFC,Oceania Football Confederation,confederation,FIFA
-DFB,Deutscher Fußball-Bund,association,UEFA
-FA,The Football Association (England),association,Union of European Football Associations
+code,name,level,parent_org_id,logo_filename
+UEFA,Union of European Football Associations,confederation,FIFA,uefa.png
+CONMEBOL,Confederación Sudamericana de Fútbol,confederation,FIFA,conmebol.png
+CONCACAF,"Confederation of North, Central America and Caribbean Association Football",confederation,FIFA,concacaf.png
+AFC,Asian Football Confederation,confederation,FIFA,afc.png
+CAF,Confederation of African Football,confederation,FIFA,caf.png
+OFC,Oceania Football Confederation,confederation,FIFA,ofc.png

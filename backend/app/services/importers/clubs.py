@@ -34,6 +34,11 @@ class ClubsImporter(BaseImporter):
 
         stadium_id = resolve_stadium_id(stadium_token, db, city_hint=city_hint, country_id_hint=country_id)
 
+        # logo filename (single; base/small/big resolved in templates)
+        logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
+        if logo_filename:
+            logo_filename = logo_filename.strip() or None
+
         return True, {
             "name": name,
             "short_name": short_name,
@@ -41,6 +46,7 @@ class ClubsImporter(BaseImporter):
             "country_id": country_id,
             "stadium_id": stadium_id,
             "colors": colors,
+            "logo_filename": logo_filename,
         }
 
 
@@ -56,6 +62,7 @@ class ClubsImporter(BaseImporter):
                     "country_id": kwargs.get("country_id"),
                     "stadium_id": kwargs.get("stadium_id"),
                     "colors": kwargs.get("colors"),
+                    "logo_filename": kwargs.get("logo_filename"),
                 },
             )
         )

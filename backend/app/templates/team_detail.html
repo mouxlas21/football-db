@@ -1,8 +1,13 @@
+{% from "partials/macros.html" import team_badge %}
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><title>{{ t.name }}</title></head>
 <body>
-  <h1>{{ t.name }}</h1>
+  <h1 style="display:flex; align-items:center; gap:.5rem">{{ t.name }}</h1>
+  {{ team_badge(t, clubs={club.club_id: club} if club else None,
+                 countries={country.country_id: country} if country else None,
+                 size='big') }}
+
   <p><strong>Type:</strong> {{ t.type }}</p>
 
   {% if t.type == 'club' and club %}

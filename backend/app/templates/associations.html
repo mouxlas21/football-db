@@ -9,7 +9,10 @@
   </form>
   <ul>
     {% for a in rows %}
-      <li>
+      <li style="display:flex; align-items:center; gap:.5rem">
+        {% if a.logo_filename %}
+          <img src="{{ association_logo_url(a.logo_filename, 'small') }}" alt="{{ a.code }} logo" style="height:18px; vertical-align:middle;">
+        {% endif %}
         <a href="/associations/{{ a.ass_id }}">{{ a.code }}</a> — {{ a.name }} ({{ a.level }})
       </li>
     {% endfor %}

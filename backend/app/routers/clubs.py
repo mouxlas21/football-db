@@ -71,8 +71,9 @@ def create_club(payload: ClubCreate, db: Session = Depends(get_db)):
         country_id=payload.country_id,
         stadium_id=payload.stadium_id,
         colors=(payload.colors or None),
+        logo_filename=payload.logo_filename,
     )
     db.add(row)
     db.commit()
     db.refresh(row)
-    return ClubRead.model_validate(row)
+    return ClubRead.model_validate(row, from_attributes=True)

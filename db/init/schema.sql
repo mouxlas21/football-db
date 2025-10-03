@@ -3,69 +3,82 @@
 -- =========================
 
 CREATE TABLE IF NOT EXISTS association (
-  ass_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  code          TEXT NOT NULL UNIQUE,     -- 'FIFA','UEFA','CONMEBOL','DFB','FA', ...
-  name          TEXT NOT NULL,
-  level         TEXT NOT NULL CHECK (level IN ('federation','confederation','association','league_body')),
+  ass_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  code TEXT NOT NULL UNIQUE,     -- 'FIFA','UEFA','CONMEBOL','DFB','FA', ...
+  name TEXT NOT NULL,
+  level TEXT NOT NULL CHECK (level IN ('federation','confederation','association','league_body')),
+  logo_filename TEXT,
   parent_org_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
 );
 
-CREATE TABLE IF NOT EXISTS country (
-  country_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name            TEXT NOT NULL UNIQUE,
-  confed_ass_id   BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
-  fifa_code       VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$')
+DO $$
+BEGIN
+  IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'country_status') THEN
+    CREATE TYPE country_status AS ENUM ('active','historical');
+  END IF;
+END$$;
 
+CREATE TABLE IF NOT EXISTS country (
+  country_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  flag_filename TEXT,
+  confed_ass_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
+  fifa_code VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$'),
+  c_status country_status NOT NULL DEFAULT 'active'
 );
 
 CREATE INDEX IF NOT EXISTS ix_country_name ON country(name);
 CREATE INDEX IF NOT EXISTS idx_country_onfed_ass_id ON country(confed_ass_id);
+CREATE INDEX IF NOT EXISTS ix_country_status ON country(c_status);
 
 CREATE TABLE IF NOT EXISTS stadium (
-  stadium_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name            TEXT NOT NULL,
-  city            TEXT,
-  country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  capacity        INTEGER,
-  opened_year     SMALLINT,
-  lat             DOUBLE PRECISION,
-  lng             DOUBLE PRECISION
+  stadium_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  city TEXT,
+  country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  capacity INTEGER,
+  opened_year SMALLINT,
+  photo_filename TEXT,
+  lat DOUBLE PRECISION,
+  lng DOUBLE PRECISION
 );
 
 CREATE INDEX IF NOT EXISTS idx_stadium_country_id ON stadium(country_id);
 
 CREATE TABLE IF NOT EXISTS competition (
-  competition_id  BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name            TEXT NOT NULL UNIQUE,
-  type            TEXT NOT NULL,
-
-  country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  organizer_ass_id   BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
+  competition_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  type TEXT NOT NULL,
+  logo_filename TEXT,
+  country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  organizer_ass_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
 );
 
 CREATE INDEX IF NOT EXISTS idx_competition_organizer_ass_id ON competition(organizer_ass_id);
 
 CREATE TABLE IF NOT EXISTS club (
-  club_id         BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name            TEXT NOT NULL UNIQUE,
-  short_name      TEXT,
-  founded         SMALLINT,
-  country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  stadium_id      BIGINT REFERENCES stadium(stadium_id) ON DELETE SET NULL,
-  colors          TEXT
+  club_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL UNIQUE,
+  short_name TEXT,
+  founded SMALLINT,
+  country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  stadium_id BIGINT REFERENCES stadium(stadium_id) ON DELETE SET NULL,
+  logo_filename TEXT,
+  colors TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_club_country_id ON club(country_id);
 CREATE INDEX IF NOT EXISTS idx_club_stadium_id ON club(stadium_id);
 
 CREATE TABLE IF NOT EXISTS team (
-  team_id         BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name            TEXT NOT NULL,
-  type            TEXT NOT NULL DEFAULT 'club',
-  club_id         BIGINT REFERENCES club(club_id) ON DELETE SET NULL,
+  team_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  type TEXT NOT NULL DEFAULT 'club',
+  club_id BIGINT REFERENCES club(club_id) ON DELETE SET NULL,
   national_country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  gender          TEXT,
-  age_group       TEXT,
-  squad_level     TEXT,
+  logo_filename TEXT,
+  gender TEXT,
+  age_group TEXT,
+  squad_level TEXT,
 
   CONSTRAINT chk_team_affiliation
     CHECK (
@@ -73,7 +86,6 @@ CREATE TABLE IF NOT EXISTS team (
       OR
       (type = 'national' AND national_country_id IS NOT NULL AND club_id IS NULL)
     )
-  
 );
 
 CREATE UNIQUE INDEX IF NOT EXISTS uniq_team_per_club_name ON team (club_id, name) WHERE type = 'club';
@@ -532,4 +544,4 @@ CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id ON match_event(fixture_id)
 --CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
 --CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
 
-INSERT INTO association (code, name, level, parent_org_id) VALUES ('FIFA','Fédération Internationale de Football Association','federation',NULL);
+INSERT INTO association (code, name, level, parent_org_id, logo_filename) VALUES ('FIFA','Fédération Internationale de Football Association','federation',NULL,'fifa.png');

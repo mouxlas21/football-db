@@ -1,12 +1,20 @@
+{% from "partials/macros.html" import team_badge %}
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Fixture {{ f.fixture_id }}</title></head>
 <body>
-  <h1>
-    {{ home.name if home else f.home_team_id }}
-    {{ " " }}vs{{ " " }}
-    {{ away.name if away else f.away_team_id }}
+  <h1 style="display:flex; align-items:center; gap:.75rem">
+    {{ team_badge(home,  clubs={home_club.club_id: home_club} if home_club else None,
+                      countries={home_country.country_id: home_country} if home_country else None,
+                      size='small') }}
+    <span>{{ home.name if home else f.home_team_id }}</span>
+    <span>vs</span>
+    <span>{{ away.name if away else f.away_team_id }}</span>
+    {{ team_badge(away,  clubs={away_club.club_id: away_club} if away_club else None,
+                        countries={away_country.country_id: away_country} if away_country else None,
+                        size='small') }}
   </h1>
+
   <p><strong>Kickoff:</strong> {{ f.kickoff_utc }}</p>
   <p><strong>Status:</strong> {{ f.fixture_status }}</p>
   <p><strong>Score:</strong> {{ f.home_score }} - {{ f.away_score }}</p>

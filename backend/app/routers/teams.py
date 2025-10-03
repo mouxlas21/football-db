@@ -157,7 +157,9 @@ def create_team(payload: TeamCreate, db: Session = Depends(get_db)):
         gender=payload.gender,
         age_group=payload.age_group,
         squad_level=payload.squad_level,
+        logo_filename=payload.logo_filename,
     )
+
     db.add(row)
     db.commit()
     db.refresh(row)

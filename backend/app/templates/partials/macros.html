@@ -1,0 +1,35 @@
+{# Team/crest/flag helper macro — single source of truth for badge URLs #}
+{% macro team_badge(t, clubs=None, countries=None, size='small', height=None, alt=None, class_='') -%}
+  {%- if not t -%}{%- return -%}{%- endif -%}
+
+  {# pick a default height by size if none given #}
+  {%- if height is none -%}
+    {%- set height = 18 if size == 'small' else 64 if size == 'big' else 22 -%}
+  {%- endif -%}
+
+  {%- set src = None -%}
+
+  {# CLUB teams: prefer team.logo_filename -> club.logo_filename #}
+  {%- if t.type == 'club' -%}
+    {%- if t.logo_filename -%}
+      {%- set src = club_logo_url(t.logo_filename, size) -%}
+    {%- elif t.club_id and clubs and clubs.get(t.club_id) and clubs[t.club_id].logo_filename -%}
+      {%- set src = club_logo_url(clubs[t.club_id].logo_filename, size) -%}
+    {%- endif -%}
+
+  {# NATIONAL teams: prefer team.logo_filename -> country flag #}
+  {%- else -%}
+    {%- if t.logo_filename -%}
+      {%- set src = team_logo_url(t.logo_filename) -%}
+    {%- elif t.national_country_id and countries and countries.get(t.national_country_id)
+          and countries[t.national_country_id].flag_filename -%}
+      {# flags have 'small' or 'normal' only #}
+      {%- set flag_size = 'small' if size == 'small' else 'normal' -%}
+      {%- set src = flag_url(countries[t.national_country_id].flag_filename, flag_size) -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if not src -%}{%- return -%}{%- endif -%}
+  {%- set alt_text = alt if alt is not none else (t.name ~ ' logo') -%}
+  <img src="{{ src }}" alt="{{ alt_text }}" style="height:{{ height }}px;" class="{{ class_ }}">
+{%- endmacro %}

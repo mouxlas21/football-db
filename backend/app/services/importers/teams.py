@@ -47,34 +47,51 @@ class TeamsImporter(BaseImporter):
                 name = row.name if row else None
             if not name:
                 return False, {}
+            
+        # logo filename (single; small/big handled by template helper later)
+        logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
+        if logo_filename:
+            logo_filename = logo_filename.strip() or None
 
         return True, {
             "name": name,
             "type": ttype,
             "club_id": club_id,
             "national_country_id": national_country_id,
+            "logo_filename": logo_filename,
             "gender": gender,
             "age_group": age_group,
             "squad_level": squad_level,
         }
 
-
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
-        # Prevent duplicates by (name, type)
+        """
+        Upsert by (lower(name), type). If found, update selected fields in-place.
+        Returns True if an INSERT happened, False if we only UPDATED/NO-OP.
+        """
+        # Find existing by (name, type) as in your current logic
         existing = db.execute(
-            select(Team).where(and_(func.lower(Team.name) == func.lower(kwargs["name"]), Team.type == kwargs["type"]))
+            select(Team).where(
+                and_(
+                    func.lower(Team.name) == func.lower(kwargs["name"]),
+                    Team.type == kwargs["type"],
+                )
+            )
         ).scalar_one_or_none()
 
         if existing:
             changed = False
-            for f in ("club_id", "national_country_id", "gender", "age_group", "squad_level"):
+            # now also track logo_filename in updates
+            for f in ("club_id", "national_country_id", "gender", "age_group", "squad_level", "logo_filename"):
                 v = kwargs.get(f)
                 if v is not None and getattr(existing, f) != v:
                     setattr(existing, f, v)
                     changed = True
             if changed:
                 db.flush()
+            # return False to indicate we didn't INSERT (same as your original pattern)
             return False
 
+        # No existing row -> INSERT
         res = db.execute(insert(Team).values(**kwargs))
         return bool(getattr(res, "rowcount", 0))

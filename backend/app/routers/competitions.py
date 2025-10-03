@@ -54,7 +54,6 @@ def competition_detail_page(competition_id: int, request: Request, db: Session =
     organizer = db.execute(select(Association).where(Association.ass_id == comp.organizer_ass_id)).scalar_one_or_none() if comp.organizer_ass_id else None
 
     # seasons for this competition
-    from ..models import Season
     seasons = db.execute(select(Season).where(Season.competition_id == comp.competition_id).order_by(Season.start_date.desc().nullslast(), Season.name.desc())).scalars().all()
 
     return templates.TemplateResponse(
@@ -136,6 +135,7 @@ def api_create_competition(payload: CompetitionCreate, db: Session = Depends(get
         type=payload.type,
         country_id=payload.country_id,
         organizer_ass_id=organizer_ass_id,
+        logo_filename=payload.logo_filename,
     )
     db.add(row)
     db.commit()

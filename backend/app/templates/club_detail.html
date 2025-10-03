@@ -3,6 +3,9 @@
 <head><meta charset="utf-8"><title>{{ club.name }}</title></head>
 <body>
   <h1>{{ club.name }}</h1>
+  {% if club.logo_filename %}
+  <p><img src="{{ club_logo_url(club.logo_filename, 'big') }}" alt="{{ club.name }} crest" style="height:64px;"></p>
+  {% endif %}
   {% if club.short_name %}<p><strong>Short name:</strong> {{ club.short_name }}</p>{% endif %}
   {% if club.founded %}<p><strong>Founded:</strong> {{ club.founded }}</p>{% endif %}
   <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>

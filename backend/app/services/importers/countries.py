@@ -15,22 +15,51 @@ class CountriesImporter(BaseImporter):
             return False, {}
 
         # fifa_code (normalize to upper, allow empty)
-        fifa_code = (raw.pop("fifa_code", None) or raw.pop("FIFA", None) or raw.pop("code", None) or "")
+        fifa_code = (
+            raw.pop("fifa_code", None)
+            or raw.pop("FIFA", None)
+            or raw.pop("code", None)
+            or ""
+        )
         fifa_code = fifa_code.strip().upper() or None
 
         # Accept EITHER an integer confed_ass_id OR a code/name in the same column,
         # plus optional alternate headers for convenience.
         conf_token = (
-            raw.pop("confed_ass_id", None)          # can be int ("2") or code ("UEFA") or name
-            or raw.pop("confederation", None)       # e.g., "UEFA"
-            or raw.pop("association", None)         # e.g., "FIFA"
+            raw.pop("confed_ass_id", None)
+            or raw.pop("confederation", None)
+            or raw.pop("association", None)
         )
         confed_ass_id = resolve_association_id(conf_token, db)
 
-        return True, {"name": name, "fifa_code": fifa_code, "confed_ass_id": confed_ass_id}
+        # flag filename
+        flag_filename = (raw.pop("flag_filename", None) or raw.pop("flag", None) or None)
+        if flag_filename:
+            flag_filename = flag_filename.strip() or None
+
+        # NEW: c_status (active/historical)
+        c_status = (
+            raw.pop("c_status", None)
+            or raw.pop("status", None)
+            or "active"
+        )
+        c_status = c_status.strip().lower()
+        if c_status not in ("active", "historical"):
+            c_status = "active"
+
+        return True, {
+            "name": name,
+            "fifa_code": fifa_code,
+            "confed_ass_id": confed_ass_id,
+            "flag_filename": flag_filename,
+            "c_status": c_status,   # <-- pass to model
+        }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
-        # name unique in schema
-        stmt = insert(Country).values(**kwargs).on_conflict_do_nothing(index_elements=["name"])
+        stmt = (
+            insert(Country)
+            .values(**kwargs)
+            .on_conflict_do_nothing(index_elements=["name"])
+        )
         result = db.execute(stmt)
         return bool(getattr(result, "rowcount", 0))

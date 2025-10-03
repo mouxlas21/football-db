@@ -3,6 +3,9 @@
 <head><meta charset="utf-8"><title>{{ competition.name }}</title></head>
 <body>
   <h1>{{ competition.name }}</h1>
+  {% if competition.logo_filename %}
+  <p><img src="{{ competition_logo_url(competition.logo_filename, 'big') }}" alt="{{ competition.name }} logo" style="height:64px;"></p>
+  {% endif %}
   <p><strong>Type:</strong> {{ competition.type }}</p>
   <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
   {% if organizer %}

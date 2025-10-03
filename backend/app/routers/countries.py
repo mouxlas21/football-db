@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException, Request, Query
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
 from sqlalchemy import select
@@ -10,21 +10,44 @@ from ..core.templates import templates
 router = APIRouter(prefix="/countries", tags=["countries"])
 
 @router.get("", response_class=HTMLResponse)
-def countries_page(request: Request, q: str | None = None, db: Session = Depends(get_db)):
-    stmt = select(Country)
+def countries_page(
+    request: Request,
+    q: str | None = None,
+    db: Session = Depends(get_db),
+):
+    base = select(Country)
     if q:
         q_like = f"%{q.strip()}%"
-        stmt = stmt.where(Country.name.ilike(q_like))
-    rows = db.execute(stmt.order_by(Country.name)).scalars().all()
-    ass_ids = {c.confed_ass_id for c in rows if c.confed_ass_id}
+        base = base.where(Country.name.ilike(q_like))
+
+    active_rows = db.execute(
+        base.where(Country.c_status == 'active').order_by(Country.name)
+    ).scalars().all()
+
+    hist_rows = db.execute(
+        base.where(Country.c_status == 'historical').order_by(Country.name)
+    ).scalars().all()
+
+    # Build confed map from both lists
+    ass_ids = {c.confed_ass_id for c in active_rows + hist_rows if c.confed_ass_id}
     ass_map = {}
     if ass_ids:
-        assocs = db.execute(select(Association).where(Association.ass_id.in_(ass_ids))).scalars().all()
+        assocs = db.execute(
+            select(Association).where(Association.ass_id.in_(ass_ids))
+        ).scalars().all()
         ass_map = {a.ass_id: a for a in assocs}
+
     return templates.TemplateResponse(
         "countries.html",
-        {"request": request, "countries": rows, "q": q or "", "ass_map": ass_map},
+        {
+            "request": request,
+            "q": q or "",
+            "active_countries": active_rows,
+            "historical_countries": hist_rows,
+            "ass_map": ass_map,
+        },
     )
+
 
 @router.get("/{country_id}", response_class=HTMLResponse)
 def country_detail_page(country_id: int, request: Request, db: Session = Depends(get_db)):
@@ -54,7 +77,7 @@ def country_detail_page(country_id: int, request: Request, db: Session = Depends
 @router.get("/api", response_model=list[CountryRead])
 def list_countries(db: Session = Depends(get_db)):
     rows = db.execute(select(Country).order_by(Country.name)).scalars().all()
-    return [CountryRead(country_id=r.country_id, name=r.name, fifa_code=r.fifa_code) for r in rows]
+    return [CountryRead.model_validate(r, from_attributes=True) for r in rows]
 
 @router.post("/api", response_model=CountryRead)
 def create_country(payload: CountryCreate, db: Session = Depends(get_db)):
@@ -63,8 +86,12 @@ def create_country(payload: CountryCreate, db: Session = Depends(get_db)):
     exists = db.execute(select(Country).where(Country.name.ilike(name))).scalar_one_or_none()
     if exists:
         raise HTTPException(status_code=400, detail="Country already exists")
-    row = Country(name=name, fifa_code=fifa_code)
+    row = Country(
+        name=name,
+        fifa_code=fifa_code,
+        flag_filename=payload.flag_filename,
+    )
     db.add(row)
     db.commit()
     db.refresh(row)
-    return CountryRead(country_id=row.country_id, name=row.name, fifa_code=row.fifa_code)
+    return CountryRead.model_validate(row, from_attributes=True)
