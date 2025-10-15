@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ a.code }} — {{ a.name }} — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <style>
+    .grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
+    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border:1px solid #e5e7eb; border-radius:12px; padding:1rem; background:#fff; }
+    .card h3 { margin:.25rem 0 .75rem; }
+    .muted { color:#6b7280; }
+    table.clean { width:100%; border-collapse:collapse; }
+    table.clean th, table.clean td { padding:.5rem .6rem; border-bottom:1px dashed #eee; text-align:left; }
+    table.clean th { border-bottom:1px solid #e5e7eb; font-weight:600; }
+    .tag { display:inline-block; padding:.1rem .4rem; border:1px solid #ddd; border-radius:8px; font-size:.85rem; color:#374151; }
+    nav a { margin-left:.6rem; }
+
+    /* header row */
+    .header-flex { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+    .logo img { display:block; height:auto; max-height:none; } /* natural size */
+    .logo { line-height:0; } /* remove inline gap */
+
+    /* members (countries) box */
+    .members-box {
+      border:1px solid #eee; border-radius:10px; padding:.5rem;
+      max-height:280px; overflow:auto; background:#fafafa;
+    }
+    .members-list { list-style:none; margin:0; padding:0; }
+    .members-list li { display:flex; align-items:center; gap:.5rem; padding:.25rem .3rem; }
+    .members-list li img { height:16px; vertical-align:middle; }
+    .members-list li a { text-decoration:none; color:#111; }
+    .members-list li a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <main class="container" style="padding:1rem; max-width:1000px;">
+    <header class="card header-flex">
+      <div>
+        <h1 style="margin:0 0 .25rem">{{ a.code }} — {{ a.name }}</h1>
+        <p class="muted" style="margin:.25rem 0 0">
+          {% if parent %}
+            Parent: <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a>
+          {% else %}
+            Parent: —
+          {% endif %}
+        </p>
+      </div>
+
+      {% if a.logo_filename %}
+        <div class="logo">
+          <!-- use the real file; no small/big variants; natural size -->
+          <img src="/static/images/associations/{{ a.logo_filename }}" alt="{{ a.code }} logo">
+        </div>
+      {% endif %}
+
+      <nav>
+        <a href="/confederations" class="tag">← Back</a>
+      </nav>
+    </header>
+
+    <section class="grid" style="margin-top:1rem">
+      <div class="card">
+        <h3>About</h3>
+        <p><strong>Code:</strong> {{ a.code }}</p>
+        <p><strong>Name:</strong> {{ a.name }}</p>
+      </div>
+
+      <div class="card">
+        <h3>
+            {% if is_fifa %}Members (confederations){% else %}Members (countries){% endif %}
+        </h3>
+
+        {% if is_fifa %}
+            {% if children_confeds and children_confeds|length %}
+            <div class="members-box">
+                <ul class="members-list">
+                {% for assoc in children_confeds %}
+                    <li>
+                    {% if assoc.logo_filename %}
+                        <img src="/static/images/associations/{{ assoc.logo_filename }}" alt="{{ assoc.code }} logo" style="height:16px;">
+                    {% endif %}
+                    <a href="/confederations/{{ assoc.ass_id }}">{{ assoc.code }}</a> — {{ assoc.name }}
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% else %}
+            <p class="muted">No member confederations listed.</p>
+            {% endif %}
+        {% else %}
+            {% if (countries_active and countries_active|length) or (countries_former and countries_former|length) %}
+            <div class="members-box">
+                <ul class="members-list">
+                {% for c in countries_active %}
+                    <li>
+                    {% if c.flag_filename %}
+                        <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag">
+                    {% endif %}
+                    <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
+                    </li>
+                {% endfor %}
+
+                {% if countries_former and countries_former|length %}
+                    <li class="separator" style="opacity:.8; padding-top:.4rem; margin-top:.4rem; border-top:1px dashed #ddd;">
+                    — former members —
+                    </li>
+                    {% for c in countries_former %}
+                    <li>
+                        {% if c.flag_filename %}
+                        <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag">
+                        {% endif %}
+                        <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
+                    </li>
+                    {% endfor %}
+                {% endif %}
+                </ul>
+            </div>
+            {% else %}
+            <p class="muted">No member countries listed.</p>
+            {% endif %}
+        {% endif %}
+      </div>
+
+
+
+    <section style="margin-top:1rem">
+      <div class="card">
+        <h3>Competitions organized by {{ a.code }}</h3>
+        {% set comps = (intl_club or []) + (intl_nat or []) %}
+        {% if comps and comps|length %}
+          <table class="clean">
+            <thead>
+              <tr><th>Competition</th><th>Type</th></tr>
+            </thead>
+            <tbody>
+              {% for c in comps %}
+                <tr>
+                  <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
+                  <td>{{ c.type }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <p class="muted">No competitions listed.</p>
+        {% endif %}
+      </div>
+    </section>
+
+    <p style="margin-top:1rem"><a href="/confederations">← Back to Confederations</a></p>
+  </main>
+</body>
+</html>

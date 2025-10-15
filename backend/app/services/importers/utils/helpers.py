@@ -87,3 +87,30 @@ def _decide_winner(home_team_id, away_team_id, home_final, away_final, went_pen,
     if home_final is not None and away_final is not None and home_final != away_final:
         return home_team_id if home_final > away_final else away_team_id
     return None
+
+def _to_int_list(val):
+    if val is None:
+        return None
+    if isinstance(val, (list, tuple)):
+        return [x for x in (_to_int(v) for v in val) if x is not None]
+    s = str(val).strip()
+    if not s:
+        return None
+    parts = [p.strip() for p in s.replace(';', ',').split(',')]
+    out = []
+    for p in parts:
+        v = _to_int(p)
+        if v is not None:
+            out.append(v)
+    return out or None
+
+def _to_str_list(val):
+    if val is None:
+        return None
+    if isinstance(val, (list, tuple)):
+        out = [str(v).strip() for v in val if str(v).strip()]
+        return out or None
+    s = str(val)
+    parts = [p.strip() for p in s.replace(';', ',').split(',')]
+    out = [p for p in parts if p]
+    return out or None

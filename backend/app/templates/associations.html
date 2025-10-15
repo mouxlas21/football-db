@@ -1,21 +1,82 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>Associations</title></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Confederations — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <style>
+    .confed-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      display: grid;
+      gap: .75rem;
+    }
+    .confed-item {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .75rem 1rem;
+      border: 1px solid #eee;
+      border-radius: .75rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background .15s ease, box-shadow .15s ease;
+    }
+    .confed-item:hover {
+      background: #fafafa;
+      box-shadow: 0 1px 4px rgba(0,0,0,.04);
+    }
+    .confed-logo {
+      height: 48px;
+      flex-shrink: 0;
+    }
+    .confed-info h3 {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+    .confed-info p {
+      margin: 0;
+      color: #555;
+      font-size: .9rem;
+    }
+  </style>
+</head>
 <body>
-  <h1>Associations</h1>
-  <form method="get">
-    <input type="text" name="q" value="{{ q }}" placeholder="Search code or name" />
-    <button type="submit">Search</button>
-  </form>
-  <ul>
-    {% for a in rows %}
-      <li style="display:flex; align-items:center; gap:.5rem">
-        {% if a.logo_filename %}
-          <img src="{{ association_logo_url(a.logo_filename, 'small') }}" alt="{{ a.code }} logo" style="height:18px; vertical-align:middle;">
-        {% endif %}
-        <a href="/associations/{{ a.ass_id }}">{{ a.code }}</a> — {{ a.name }} ({{ a.level }})
-      </li>
-    {% endfor %}
-  </ul>
+  <header class="container">
+    <h1>Confederations</h1>
+    <form method="get" action="/confederations" class="search-bar" style="margin-top:.75rem; display:flex; gap:.5rem; align-items:center;">
+      <input type="text" name="q" value="{{ q }}" placeholder="Search by code or name…" aria-label="Search confederations"/>
+      <button type="submit">Search</button>
+    </form>
+    <p style="margin:.5rem 0 0; color:#444">{{ rows|length }} result{{ '' if rows|length == 1 else 's' }}</p>
+  </header>
+
+  <main class="container">
+    {% if rows|length == 0 %}
+      <div class="card" style="margin-top:1rem;">
+        <p style="margin:0;">No confederations found.</p>
+      </div>
+    {% else %}
+      <ul class="confed-list">
+        {% for c in rows %}
+          <li>
+            <a class="confed-item" href="/associations/{{ c.ass_id }}">
+              {% if c.logo_filename %}
+                <img src="/static/images/associations/{{ c.logo_filename }}" alt="{{ c.code }} logo" class="confed-logo">
+              {% endif %}
+              <div class="confed-info">
+                <h3>{{ c.code }}</h3>
+                <p>{{ c.name }}</p>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <p style="margin-top:1rem;"><a href="/">← Back to Home</a></p>
+  </main>
 </body>
 </html>

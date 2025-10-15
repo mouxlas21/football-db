@@ -32,18 +32,23 @@ CREATE INDEX IF NOT EXISTS idx_country_onfed_ass_id ON country(confed_ass_id);
 CREATE INDEX IF NOT EXISTS ix_country_status ON country(c_status);
 
 CREATE TABLE IF NOT EXISTS stadium (
-  stadium_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name TEXT NOT NULL,
-  city TEXT,
-  country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  capacity INTEGER,
-  opened_year SMALLINT,
-  photo_filename TEXT,
-  lat DOUBLE PRECISION,
-  lng DOUBLE PRECISION
+  stadium_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name            TEXT NOT NULL,
+  city            TEXT,
+  country_id      BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  capacity        INTEGER,
+  opened_year     SMALLINT,
+  photo_filename  TEXT,
+  lat             DOUBLE PRECISION,
+  lng             DOUBLE PRECISION,
+  renovated_years SMALLINT[],      
+  closed_year     SMALLINT,       
+  tenants         TEXT[]           
 );
 
 CREATE INDEX IF NOT EXISTS idx_stadium_country_id ON stadium(country_id);
+CREATE INDEX IF NOT EXISTS idx_stadium_closed_year ON stadium(closed_year);
+CREATE INDEX IF NOT EXISTS idx_stadium_name_ci ON stadium((lower(name)));
 
 CREATE TABLE IF NOT EXISTS competition (
   competition_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,

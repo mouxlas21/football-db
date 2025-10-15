@@ -69,6 +69,15 @@
 
     <!-- CLASSIC INDEX -->
     <section class="index-grid">
+      <a class="index-card" href="/stadiums{{ '?season=' + season if season else '' }}">
+        <h3>🏟️ Stadiums</h3>
+        <p>Browse stadiums by country; details, tenants, maps.</p>
+      </a>
+      <a class="index-card" href="/confederations{{ '?season=' + season if season else '' }}">
+        <h3>🏛️ Confederations</h3>
+        <p>Confederations.</p>
+      </a>
+
       <a class="index-card" href="/countries{{ '?season=' + season if season else '' }}">
         <h3>🌍 Countries</h3>
         <p>Browse all countries in the database.</p>

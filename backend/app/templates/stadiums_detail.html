@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ stadium.name }} — {{ country.name }} — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    .stadium-detail { display: grid; grid-template-columns: minmax(320px, 1fr) 1fr; gap: 1rem; margin-top: 1rem; }
+    .stadium-photo img { display: block; width: 100%; height: auto; max-height: none; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+    .stadium-info { flex:1 1 300px; }
+    dl { display:grid; grid-template-columns:max-content 1fr; gap:.4rem .75rem; }
+    dt { font-weight:600; color:#333; }
+    dd { margin:0; color:#555; }
+    .badge { background:#eee; color:#333; padding:.15rem .4rem; border-radius:.4rem; font-size:.85em; margin-left:.5rem; }
+    .badge.closed { background:#f5d0d0; color:#b00; }
+    #map { height:320px; margin-top:1.5rem; border-radius:8px; }
+    .muted { color:#777; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1 style="display:flex; align-items:center; gap:.5rem;">
+      {{ stadium.name }}
+      {% if stadium.closed_year %}
+        <span class="badge closed">Closed in {{ stadium.closed_year }}</span>
+      {% else %}
+        <span class="badge">Active</span>
+      {% endif %}
+    </h1>
+    <p style="margin:.25rem 0;">
+      {% if country.flag_filename %}
+        <img src="{{ flag_url(country.flag_filename, 'main') }}" alt="{{ country.name }} flag" style="height:18px; vertical-align:middle;">
+      {% endif %}
+      {% if stadium.city %} {{ stadium.city }} {% else %} <strong>{{ country.name }}</strong> {% endif %}
+    </p>
+  </header>
+
+  <main class="container">
+    <div class="stadium-detail">
+      <div class="stadium-photo">
+        <a href="{{ stadium.image_url }}" target="_blank" rel="noopener">
+          <img src="{{ stadium.image_url }}" alt="{{ stadium.name }}">
+        </a>
+      </div>
+      <div class="stadium-info">
+        <dl>
+          <dt>Country</dt><dd>{{ country.name }}</dd>
+          <dt>City</dt><dd>{{ stadium.city or '—' }}</dd>
+          <dt>Capacity</dt>
+          <dd>
+            {% if stadium.capacity %}
+              {{ '{:,.0f}'.format(stadium.capacity).replace(',', '.') }}
+            {% else %}
+              —
+            {% endif %}
+          </dd>
+          <dt>Opened</dt><dd>{{ stadium.opened_year or '—' }}</dd>
+          <dt>Renovated</dt>
+          <dd>
+            {% if stadium.renovated_years %}
+              {{ stadium.renovated_years | join(', ') }}
+            {% else %}
+              —
+            {% endif %}
+          </dd>
+          {% if stadium.closed_year %}
+            <dt>Closed</dt><dd>{{ stadium.closed_year }}</dd>
+          {% endif %}
+          <dt>Tenants</dt>
+          <dd>
+            {% if stadium.tenants %}
+              {{ stadium.tenants | join(', ') }}
+            {% else %}
+              —
+            {% endif %}
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+    {% if stadium.lat and stadium.lng %}
+    <div id="map"></div>
+    <p class="muted" style="margin-top:.25rem;">
+      <a href="https://www.openstreetmap.org/?mlat={{ stadium.lat }}&mlon={{ stadium.lng }}&zoom=16" target="_blank">Open in OpenStreetMap</a> —
+      <a href="https://www.google.com/maps?q={{ stadium.lat }},{{ stadium.lng }}" target="_blank">Open in Google Maps</a>
+    </p>
+    <script>
+      var map = L.map('map').setView([{{ stadium.lat }}, {{ stadium.lng }}], 15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      L.marker([{{ stadium.lat }}, {{ stadium.lng }}]).addTo(map)
+        .bindPopup('{{ stadium.name | tojson }}')
+        .openPopup();
+    </script>
+    {% endif %}
+
+    <p style="margin-top:1rem;"><a href="/stadiums">← Back to Stadiums</a></p>
+  </main>
+</body>
+</html>

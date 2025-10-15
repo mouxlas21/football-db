@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pydantic import BaseModel, Field
-from typing import Optional, Literal
+from typing import Optional, Literal, List
 from datetime import date, datetime
 
 CountryStatus = Literal['active', 'historical']
@@ -46,6 +46,9 @@ class StadiumCreate(BaseModel):
     lat: Optional[float] = None
     lng: Optional[float] = None
     photo_filename: Optional[str] = None
+    renovated_years: Optional[list[int]] = None      
+    closed_year: Optional[int] = None
+    tenants: Optional[list[str]] = None 
 
 class StadiumRead(BaseModel):
     stadium_id: int
@@ -57,6 +60,9 @@ class StadiumRead(BaseModel):
     lat: Optional[float] = None 
     lng: Optional[float] = None
     photo_filename: Optional[str] = None
+    renovated_years: Optional[list[int]] = None
+    closed_year: Optional[int] = None
+    tenants: Optional[list[str]] = None
     class Config: from_attributes = True
 
 class CompetitionCreate(BaseModel):

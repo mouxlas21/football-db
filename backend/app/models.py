@@ -14,6 +14,7 @@ from sqlalchemy import (
     UniqueConstraint,
 )
 from sqlalchemy.orm import relationship, Mapped, mapped_column
+from sqlalchemy.dialects.postgresql import ARRAY
 
 from .db import Base
 from datetime import date, datetime
@@ -54,6 +55,9 @@ class Stadium(Base):
     photo_filename: Mapped[str | None] = mapped_column(Text)
     lat: Mapped[float | None] = mapped_column()
     lng: Mapped[float | None] = mapped_column()
+    renovated_years: Mapped[list[int] | None] = mapped_column(ARRAY(SmallInteger))
+    closed_year: Mapped[int | None] = mapped_column(SmallInteger)
+    tenants: Mapped[list[str] | None] = mapped_column(ARRAY(Text))
 
 class Competition(Base):
     __tablename__ = "competition"

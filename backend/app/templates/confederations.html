@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Confederations — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <style>
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: .75rem;
+      margin-top: 1rem;
+    }
+    .card-link {
+      display:flex; align-items:center; gap:.75rem;
+      padding:.9rem 1rem; border:1px solid #eee; border-radius:.75rem;
+      text-decoration:none; color:inherit;
+      transition: background .15s ease, box-shadow .15s ease;
+    }
+    .card-link:hover { background:#fafafa; box-shadow:0 1px 4px rgba(0,0,0,.04); }
+    .logo { height:48px; flex-shrink:0; }
+    .title { margin:0; font-size:1.05rem; }
+    .subtitle { margin:0; color:#555; font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Confederations</h1>
+    <form method="get" action="/confederations" class="search-bar" style="margin-top:.75rem; display:flex; gap:.5rem; align-items:center;">
+      <input type="text" name="q" value="{{ q }}" placeholder="Search by code or name…" aria-label="Search confederations"/>
+      <button type="submit">Search</button>
+    </form>
+    <p style="margin:.5rem 0 0; color:#444">{{ total }} result{{ '' if total == 1 else 's' }}</p>
+  </header>
+
+  <main class="container">
+    <div class="card" style="margin-top:1rem;">
+      <h2 style="margin:0 0 .25rem 0;">FIFA & Confederations</h2>
+
+      <!-- FIFA first -->
+      {% if fifa %}
+        <div class="grid-cards" style="margin-bottom:.5rem;">
+          <a class="card-link" href="/confederations/{{ fifa.ass_id }}">
+            {% if fifa.logo_filename %}<img class="logo" src="/static/images/associations/{{ fifa.logo_filename }}" alt="FIFA logo">{% endif %}
+            <div>
+              <h3 class="title">{{ fifa.code }}</h3>
+              <p class="subtitle">{{ fifa.name }}</p>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+
+      <!-- Then the 6 regional confederations in fixed order -->
+      {% if regionals|length == 0 and not fifa %}
+        <p style="margin:0;">No confederations found.</p>
+      {% elif regionals|length > 0 %}
+        <div class="grid-cards">
+          {% for c in regionals %}
+            <a class="card-link" href="/confederations/{{ c.ass_id }}">
+              {% if c.logo_filename %}<img class="logo" src="/static/images/associations/{{ c.logo_filename }}" alt="{{ c.code }} logo">{% endif %}
+              <div>
+                <h3 class="title">{{ c.code }}</h3>
+                <p class="subtitle">{{ c.name }}</p>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <p style="margin-top:1rem;"><a href="/">← Back to Home</a></p>
+  </main>
+</body>
+</html>

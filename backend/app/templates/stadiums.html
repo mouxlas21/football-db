@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Stadiums — Football Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="/static/css/main.css" rel="stylesheet"/>
+  <style>
+    /* Optional: nicer summary look */
+    details.country { border: 1px solid #eee; border-radius: 8px; margin:.5rem 0; }
+    details.country summary { list-style: none; cursor: pointer; padding:.5rem .75rem; display:flex; align-items:center; gap:.5rem; }
+    details.country summary::-webkit-details-marker { display:none; }
+    details.country[open] { border-color:#ddd; box-shadow: 0 0 0 3px rgba(0,0,0,.02) inset; }
+    .muted { color:#666; font-size:.9em; }
+    .chev { margin-left:auto; transition: transform .15s ease; }
+    details[open] .chev { transform: rotate(90deg); }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Stadiums</h1>
+    <form method="get" action="/stadiums" class="search-bar" style="margin-top:.75rem; display:flex; gap:.5rem; align-items:center;">
+      <input type="text" name="q" value="{{ q }}" placeholder="Search by name or city…" aria-label="Search stadiums"/>
+      <select name="status" aria-label="Filter by status">
+        <option value="active" {{ 'selected' if status=='active' }}>Active</option>
+        <option value="closed" {{ 'selected' if status=='closed' }}>Closed</option>
+        <option value="all" {{ 'selected' if status=='all' }}>All</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main class="container">
+
+    <!-- Active stadiums -->
+    <div class="card" style="margin-top:1rem;">
+      <h2 style="margin:0 0 .5rem 0;">Active stadiums</h2>
+
+      {% if active_grouped|length == 0 %}
+        <p style="margin:0">No active stadiums match your filters.</p>
+      {% else %}
+        {% for grp in active_grouped %}
+          <details class="country">
+            <summary>
+              {% if grp.country.flag_filename %}
+                <img src="{{ flag_url(grp.country.flag_filename, 'main') }}" alt="{{ grp.country.name }} flag" style="height:18px; vertical-align:middle;">
+              {% endif %}
+              <strong>{{ grp.country.name }}</strong>
+              <span class="muted">({{ grp['items']|length }})</span>
+              <span class="chev">›</span>
+            </summary>
+
+            <div style="overflow:auto; padding:.25rem .75rem .75rem;">
+              <table style="width:100%; border-collapse:collapse">
+                <thead>
+                  <tr>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Photo</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Name</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">City</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Capacity</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Opened</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for s in grp['items'] %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; width:64px">
+                      {% if s.photo_filename %}
+                        <img src="/static/images/stadiums/{{ grp.country.slug }}/thumbs/{{ s.photo_filename }}" alt="{{ s.name }}" style="height:36px;">
+                      {% endif %}
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                      <a href="/stadiums/{{ s.stadium_id }}">{{ s.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.city or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.capacity or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.opened_year or '—' }}</td>
+                  </tr>
+                  {% else %}
+                  <tr><td colspan="5" style="padding:.75rem">No stadiums.</td></tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <!-- Closed stadiums -->
+    <div class="card" style="margin-top:1rem;">
+      <h2 style="margin:0 0 .5rem 0;">Closed stadiums</h2>
+
+      {% if closed_grouped|length == 0 %}
+        <p style="margin:0">No closed stadiums match your filters.</p>
+      {% else %}
+        {% for grp in closed_grouped %}
+          <details class="country">
+            <summary>
+              {% if grp.country.flag_filename %}
+                <img src="{{ flag_url(grp.country.flag_filename, 'main') }}" alt="{{ grp.country.name }} flag" style="height:18px; vertical-align:middle;">
+              {% endif %}
+              <strong>{{ grp.country.name }}</strong>
+              <span class="muted">({{ grp['items']|length }})</span>
+              <span class="chev">›</span>
+            </summary>
+
+            <div style="overflow:auto; padding:.25rem .75rem .75rem;">
+              <table style="width:100%; border-collapse:collapse">
+                <thead>
+                  <tr>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Photo</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Name</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">City</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Capacity</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Opened</th>
+                    <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Closed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for s in grp['items'] %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; width:64px">
+                      {% if s.photo_filename %}
+                        <img src="/static/images/stadiums/{{ grp.country.slug }}/thumbs/{{ s.photo_filename }}" alt="{{ s.name }}">
+                      {% endif %}
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                      <a href="/stadiums/{{ s.stadium_id }}">{{ s.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.city or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.capacity or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.opened_year or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ s.closed_year or '—' }}</td>
+                  </tr>
+                  {% else %}
+                  <tr><td colspan="6" style="padding:.75rem">No stadiums.</td></tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </details>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <p style="margin-top:1rem"><a href="/">← Back to Home</a></p>
+  </main>
+</body>
+</html>

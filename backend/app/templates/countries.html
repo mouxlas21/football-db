@@ -10,20 +10,20 @@
   <header class="container">
     <h1>Countries</h1>
     <form method="get" action="/countries" class="search-bar" style="margin-top:.75rem; display:flex; gap:.5rem; align-items:center;">
-    <input type="text" name="q" value="{{ q }}" placeholder="Search by name…" aria-label="Search countries"/>
-    <select name="status" aria-label="Filter by status">
-      <option value="active" {{ 'selected' if status=='active' }}>Active</option>
-      <option value="historical" {{ 'selected' if status=='historical' }}>Historical</option>
-      <option value="all" {{ 'selected' if status=='all' }}>All</option>
-    </select>
-    <button type="submit">Search</button>
-  </form>
+      <input type="text" name="q" value="{{ q }}" placeholder="Search by name…" aria-label="Search countries"/>
+      <select name="status" aria-label="Filter by status">
+        <option value="active" {{ 'selected' if status=='active' }}>Active</option>
+        <option value="historical" {{ 'selected' if status=='historical' }}>Historical</option>
+        <option value="all" {{ 'selected' if status=='all' }}>All</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
     <p style="margin:.5rem 0 0; color:#444">{{ countries|length }} result{{ '' if countries|length == 1 else 's' }}</p>
   </header>
 
   <main class="container">
 
-    <!-- Active countries card (first) -->
+    <!-- Active countries card -->
     <div class="card">
       <h2 style="margin:0 0 .5rem 0;">Active countries ({{ active_countries|length }})</h2>
       <div style="overflow:auto">
@@ -33,7 +33,7 @@
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Flag</th>
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Name</th>
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">FIFA CODE</th>
-              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Confederation</th>
             </tr>
           </thead>
           <tbody>
@@ -44,12 +44,15 @@
                   <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag" style="height:24px; vertical-align:middle;">
                 {% endif %}
               </td>
-              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.name }}</td>
-              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.fifa_code or '—' }}</td>
               <td style="padding:.5rem; border-bottom:1px dashed #eee;">
                 <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
+              </td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.fifa_code or '—' }}</td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">
                 {% if c.confed_ass_id and ass_map.get(c.confed_ass_id) %}
-                  — Confederation: <a href="/associations/{{ c.confed_ass_id }}">{{ ass_map[c.confed_ass_id].code }}</a>
+                  <a href="/confederations/{{ c.confed_ass_id }}">{{ ass_map[c.confed_ass_id].code }}</a>
+                {% else %}
+                  —
                 {% endif %}
               </td>
             </tr>
@@ -61,7 +64,7 @@
       </div>
     </div>
 
-    <!-- Historical countries card (second) -->
+    <!-- Historical countries card -->
     <div class="card" style="margin-top:1rem">
       <h2 style="margin:0 0 .5rem 0;">Historical countries ({{ historical_countries|length }})</h2>
       <div style="overflow:auto">
@@ -71,7 +74,7 @@
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Flag</th>
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Name</th>
               <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">FIFA CODE</th>
-              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+              <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Confederation</th>
             </tr>
           </thead>
           <tbody>
@@ -82,12 +85,15 @@
                   <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag" style="height:24px; vertical-align:middle;">
                 {% endif %}
               </td>
-              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.name }}</td>
-              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.fifa_code or '—' }}</td>
               <td style="padding:.5rem; border-bottom:1px dashed #eee;">
                 <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
+              </td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ c.fifa_code or '—' }}</td>
+              <td style="padding:.5rem; border-bottom:1px dashed #eee;">
                 {% if c.confed_ass_id and ass_map.get(c.confed_ass_id) %}
-                  — Confederation: <a href="/associations/{{ c.confed_ass_id }}">{{ ass_map[c.confed_ass_id].code }}</a>
+                  <a href="/confederations/{{ c.confed_ass_id }}">{{ ass_map[c.confed_ass_id].code }}</a>
+                {% else %}
+                  —
                 {% endif %}
               </td>
             </tr>
@@ -101,6 +107,5 @@
 
     <p style="margin-top:1rem"><a href="/">← Back to Home</a></p>
   </main>
-
 </body>
 </html>
