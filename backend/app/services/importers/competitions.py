@@ -1,142 +1,146 @@
-from typing import Dict, Any, Tuple
+from typing import Dict, Any, Tuple, Optional
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Competition, Association
 from .utils.helpers import _to_int
+import re, unicodedata
 
 class CompetitionsImporter(BaseImporter):
     """
-    CSV headers (supported):
-      name,type,organizer,country_id,confederation
+    Accepts CSV headers:
+      association,country,name,type,tier,cup_rank,gender,age_group,status,notes,logo_filename
 
-    - organizer: ID (e.g. 1) OR code (UEFA/FIFA/DFB/…) OR full name (case-insensitive)
-    - country_id: ID OR FIFA code (GER/ENG/…) OR country name (case-insensitive)
-    - confederation: (optional) code or name; used only to validate against organizer's lineage
+    - association: ID | CODE (UEFA/FIFA/DFB/CAF/...) | full name (case-insensitive)
+    - country:     ID | FIFA code (GER/ENG/...) | country name (case-insensitive)
     """
+
     entity = "competitions"
 
-    # ------- resolvers -------
+    # ---------- simple utils ----------
 
-    def _resolve_ass_id(self, token: str | None, db: Session) -> int | None:
-        """Resolve association by ID, code (upper), or name (case-insensitive)."""
-        if token is None:
+    def _slugify(self, s: str) -> str:
+        nfkd = unicodedata.normalize("NFKD", s)
+        s = nfkd.encode("ascii", "ignore").decode("ascii")
+        s = re.sub(r"[^a-zA-Z0-9]+", "_", s).strip("_").lower()
+        return s
+
+    def _parse_tier(self, token: Optional[str]) -> Optional[int]:
+        if not token or not str(token).strip():
             return None
+        m = re.search(r"(\d+)", str(token))
+        return int(m.group(1)) if m else None
+
+    # ---------- resolvers (reuse your previous approach) ----------
+
+    def _resolve_ass(self, token: str | None, db: Session) -> tuple[Optional[int], Optional[str]]:
+        """Return (ass_id, ass_code_lower)."""
+        if token is None or str(token).strip() == "":
+            return None, None
         as_int = _to_int(token)
         if as_int is not None:
-            return as_int
-        val = str(token).strip()
-        if not val:
-            return None
-        # by code (upper)
-        code = val.upper()
-        row = db.execute(select(Association).where(Association.code == code)).scalar_one_or_none()
-        if row:
-            return row.ass_id
-        # by name (case-insensitive exact)
-        row = db.execute(
-            select(Association).where(func.lower(Association.name) == func.lower(val))
-        ).scalar_one_or_none()
-        if row:
-            return row.ass_id
-        return None
+            row = db.execute(select(Association).where(Association.ass_id == as_int)).scalar_one_or_none()
+            return (row.ass_id, (row.code or "").lower()) if row else (None, None)
 
-    def _resolve_country_id(self, token: str | None, db: Session) -> int | None:
-        """Resolve country by ID, FIFA code (upper), or name (case-insensitive)."""
-        if token is None:
-            return None
-        as_int = _to_int(token)
-        if as_int is not None:
-            return as_int
         val = str(token).strip()
-        if not val:
-            return None
-        # by FIFA code (upper)
+        # by CODE
+        row = db.execute(select(Association).where(Association.code == val.upper())).scalar_one_or_none()
+        if row:
+            return row.ass_id, (row.code or "").lower()
+        # by NAME (case-insensitive exact)
+        row = db.execute(select(Association).where(func.lower(Association.name) == func.lower(val))).scalar_one_or_none()
+        if row:
+            return row.ass_id, (row.code or "").lower()
+        return None, None
+
+    def _resolve_country(self, token: str | None, db: Session) -> tuple[Optional[int], Optional[str]]:
+        """Return (country_id, country_slug_lower)."""
+        if token is None or str(token).strip() == "":
+            return None, None
+        as_int = _to_int(token)
         from app.models import Country
-        fifa = val.upper()
-        row = db.execute(select(Country).where(Country.fifa_code == fifa)).scalar_one_or_none()
-        if row:
-            return row.country_id
-        # by name (case-insensitive exact)
-        row = db.execute(
-            select(Country).where(func.lower(Country.name) == func.lower(val))
-        ).scalar_one_or_none()
-        if row:
-            return row.country_id
-        return None
+        if as_int is not None:
+            row = db.execute(select(Country).where(Country.country_id == as_int)).scalar_one_or_none()
+            if not row: return None, None
+            return row.country_id, self._slugify(row.name)
 
-    def _derive_confed_from_org(self, org_id: int | None, db: Session) -> int | None:
-        """Walk parent_org_id until we hit a confederation level (UEFA/CONMEBOL/...)."""
-        if not org_id:
-            return None
-        confed_codes = {"UEFA", "CONMEBOL", "CONCACAF", "AFC", "CAF", "OFC"}
-        seen = set()
-        cur = org_id
-        while cur and cur not in seen:
-            seen.add(cur)
-            row = db.execute(select(Association).where(Association.ass_id == cur)).scalar_one_or_none()
-            if not row:
-                return None
-            if row.level == "confederation" or (row.code and row.code.upper() in confed_codes):
-                return row.ass_id
-            cur = row.parent_org_id
-        # Optionally treat FIFA as its own "global confederation"
-        # if row and row.code == "FIFA": return row.ass_id
-        return None
+        val = str(token).strip()
+        # by FIFA code
+        row = db.execute(select(Country).where(Country.fifa_code == val.upper())).scalar_one_or_none()
+        if row:
+            return row.country_id, self._slugify(row.name)
+        # by NAME (case-insensitive exact)
+        row = db.execute(select(Country).where(func.lower(Country.name) == func.lower(val))).scalar_one_or_none()
+        if row:
+            return row.country_id, self._slugify(row.name)
+        return None, None
 
-    # ------- importer hooks -------
+    # ---------- importer hooks ----------
 
     def parse_row(self, raw: Dict[str, Any], db: Session) -> Tuple[bool, Dict[str, Any]]:
-        name = (raw.pop("name", None) or "").strip()
-        ctype = (raw.pop("type", None) or "").strip().lower()
+        name = (raw.get("name") or "").strip()
+        ctype = (raw.get("type") or "").strip().lower()
         if not name or not ctype:
             return False, {}
 
-        organizer_token = raw.pop("organizer", None)      # id | code | name
-        country_token   = raw.pop("country_id", None)     # id | fifa | name
-        confed_token    = raw.pop("confederation", None)  # optional validation only
+        organizer_ass_id, organizer_code = self._resolve_ass(raw.get("association"), db)
+        country_id, country_slug = self._resolve_country(raw.get("country"), db)
 
-        organizer_ass_id = self._resolve_ass_id(organizer_token, db)
-        country_id = self._resolve_country_id(country_token, db)
+        # slug strategy: country prefix if available, else association code
+        base = self._slugify(name)
+        prefix = country_slug or organizer_code or ""
+        slug = f"{prefix}_{base}" if prefix else base
 
-        # validate confederation hint (if provided)
-        derived_confed_id = self._derive_confed_from_org(organizer_ass_id, db)
-        if confed_token:
-            hinted_confed_id = self._resolve_ass_id(confed_token, db)
-            if hinted_confed_id and derived_confed_id and hinted_confed_id != derived_confed_id:
-                self.log_warn(f"[competitions] '{name}': confederation hint '{confed_token}' "
-                              f"!= organizer lineage (derived id={derived_confed_id})")
+        tier = self._parse_tier(raw.get("tier"))
 
-        logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
+        # normalize 'cup_rank' -> domain
+        cup_rank = (raw.get("cup_rank") or "").strip().lower()
+        gender = (raw.get("gender") or None)
+        age_group = (raw.get("age_group") or None)
+        status = (raw.get("status") or None) or "active"
+        notes = (raw.get("notes") or None)
+
+        logo_filename = (raw.get("logo_filename") or raw.get("logo") or None)
         if logo_filename:
             logo_filename = logo_filename.strip() or None
 
         return True, {
+            "slug": slug,
             "name": name,
             "type": ctype,
-            "organizer_ass_id": organizer_ass_id,  # <-- the new canonical FK
-            "country_id": country_id,
+            "tier": tier,
+            "cup_rank": cup_rank,
+            "gender": gender,
+            "age_group": age_group,
+            "status": status,
+            "notes": notes,
             "logo_filename": logo_filename,
+            "country_id": country_id,
+            "organizer_ass_id": organizer_ass_id,
         }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
-        """
-        Unique by name (per your schema). If you ever relax that, consider (name, type).
-        """
         stmt = (
             insert(Competition)
             .values(**kwargs)
             .on_conflict_do_update(
-                index_elements=["name"],
+                index_elements=["slug"],
                 set_={
+                    "name": kwargs["name"],
                     "type": kwargs["type"],
-                    "organizer_ass_id": kwargs["organizer_ass_id"],
-                    "country_id": kwargs["country_id"],
+                    "tier": kwargs["tier"],
+                    "cup_rank": kwargs["cup_rank"],
+                    "gender": kwargs["gender"],
+                    "age_group": kwargs["age_group"],
+                    "status": kwargs["status"],
+                    "notes": kwargs["notes"],
                     "logo_filename": kwargs.get("logo_filename"),
+                    "country_id": kwargs["country_id"],
+                    "organizer_ass_id": kwargs["organizer_ass_id"],
+                    "updated_at": func.now(),
                 },
             )
         )
         res = db.execute(stmt)
-        # rowcount>0 indicates an INSERT happened; UPDATEs can be reported as False if you want.
         return bool(getattr(res, "rowcount", 0))

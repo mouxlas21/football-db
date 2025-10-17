@@ -1,0 +1,1011 @@
+association,country,name,type,tier,cup_rank,gender,age_group,status,notes,logo_filename
+AFC,,AFC Champions League,cup,1st-tier,Clubs,Men,Senior,,,asia_afc_champions_league.png
+AFC,,AFC Champions League Two,cup,2nd-tier,Clubs,Men,Senior,,,asia_afc_champions_league_two.png
+AFC,,AFC Cup,cup,2nd-tier,Clubs,Men,Senior,defunct,Replaced by AFC Champions League Two,asia_afc_cup.png
+AFC,,AFC Challenge League,cup,3rd-tier,Clubs,Men,Senior,,,asia_afc_challenge_league.png
+AFC,,AFC Women's Champions League,cup,,Clubs,Women,Senior,,,asia_afc_women_s_champions_league.png
+AFC,,AFC President's Cup,cup,,Clubs,Men,Senior,defunct,Replaced by AFC Challenge League,asia_afc_president_s_cup.png
+AFC,Malaysia,Piala Malaysia,cup,,Domestic Cup,Men,Senior,,,malaysia_piala_malaysia.png
+AFC,Bahrain,BFA Cup,cup,,Domestic Cup,Men,Senior,,,bahrain_bfa_cup.png
+AFC,Bangladesh,Federation Cup,cup,,League cup,Men,Senior,,,bangladesh_federation_cup.png
+AFC,Cambodia,Cambodia League Cup,cup,,League cup,Men,Senior,,,cambodia_cambodia_league_cup.png
+AFC,Hong Kong,HK Senior Challenge Shield,cup,,League cup,Men,Senior,,,hong_kong_sar_hk_senior_challenge_shield.png
+AFC,Japan,J.League Cup,cup,,League cup,Men,Senior,,,japan_j_league_cup.png
+AFC,Jordan,Jordan FA Shield,cup,,League cup,Men,Senior,,,jordan_jordan_fa_shield.png
+AFC,Kuwait,Federation Cup,cup,,League cup,Men,Senior,,,kuwait_federation_cup.png
+AFC,Lebanon,Lebanese Federation Cup,cup,,League cup,Men,Senior,,,lebanon_lebanese_federation_cup.png
+AFC,Maldives,Maldives President Cup,cup,,League cup,Men,Senior,,,maldives_maldives_president_cup.png
+AFC,Nepal,Nepal Super League,cup,,League cup,Men,Senior,,,nepal_nepal_super_league.png
+AFC,Oman,Jetour Cup,cup,,League cup,Men,Senior,,,oman_oman_fa_cup.png
+AFC,Saudi Arabia,Crown Prince Cup,cup,,League cup,Men,Senior,,,saudi_arabia_crown_prince_cup.png
+AFC,Singapore,Singapore League Cup,cup,,League cup,Men,Senior,,,singapore_singapore_league_cup.png
+AFC,UAE,League Cup,cup,,League cup,Men,Senior,,,united_arab_emirates_league_cup.png
+AFC,Kuwait,Emir Cup,cup,,Domestic Cup,Men,Senior,,,kuwait_emir_cup.png
+AFC,Australia,Australia Cup,cup,,National Cup,Men,Senior,,,australia_australia_cup.png
+AFC,Bahrain,King's Cup,cup,,National Cup,Men,Senior,,,bahrain_king_s_cup.png
+AFC,Bangladesh,Independence Cup,cup,,National Cup,Men,Senior,,,bangladesh_independence_cup.png
+AFC,Brunei,FA Cup,cup,,National Cup,Men,Senior,,,brunei_darussalam_fa_cup.png
+AFC,Cambodia,Hun Sen Cup,cup,,National Cup,Men,Senior,,,cambodia_hun_sen_cup.png
+AFC,China PR,China FA Cup,cup,,National Cup,Men,Senior,,,china_pr_china_fa_cup.png
+AFC,Ghana,FA Cup,cup,,National Cup,Men,Senior,,,ghana_fa_cup.png
+AFC,Guinea,Coupe de la Ligue,cup,,National Cup,Men,Senior,,,guinea_coupe_de_la_ligue.png
+AFC,Hong Kong,Hong Kong FA Cup,cup,,National Cup,Men,Senior,,,hong_kong_sar_hong_kong_fa_cup.png
+AFC,India,Federation Cup,cup,,National Cup,Men,Senior,,,india_federation_cup.png
+AFC,Indonesia,Piala Presiden,cup,,National Cup,Men,Senior,,,indonesia_piala_presiden.png
+AFC,Iran,Hazfi Cup,cup,,National Cup,Men,Senior,,,iran/ir_iran_hazfi_cup.png
+AFC,Iraq,Iraqi FA Cup,cup,,National Cup,Men,Senior,,,iraq_iraqi_fa_cup.png
+AFC,Japan,Emperor's Cup,cup,,National Cup,Men,Senior,,,japan_emperor_s_cup.png
+AFC,Jordan,Jordan Cup,cup,,National Cup,Men,Senior,,,jordan_jordan_cup.png
+AFC,South Korea,Korean FA Cup,cup,,National Cup,Men,Senior,,,korea_republic_korean_fa_cup.png
+AFC,Kuwait,Crown Prince Cup,cup,,National Cup,Men,Senior,,,kuwait_crown_prince_cup.png
+AFC,Kyrgyzstan,Kubok Kırgızskoy Respubliki,cup,,National Cup,Men,Senior,,,kyrgyz_republic_kubok_krgzskoy_respubliki.png
+AFC,Laos,LFF Cup,cup,,National Cup,Men,Senior,,,lao_pdr_lff_cup.png
+AFC,Lebanon,Lebanese Cup,cup,,National Cup,Men,Senior,,,lebanon_lebanese_cup.png
+AFC,Lebanon,Lebanese Women's Cup,cup,,National Cup,Women,Senior,,,lebanon_lebanese_women_s_cup.png
+AFC,Lebanon,Lebanese U19 Women's Cup,cup,,National Cup,Women,Youth,,,lebanon_lebanese_u19_women_s_cup.png
+AFC,Macau,FA Cup,cup,,National Cup,Men,Senior,,,macau_fa_cup.png
+AFC,Malaysia,Piala FA,cup,,National Cup,Men,Senior,,,malaysia_piala_fa.png
+AFC,Myanmar,MFF Cup,cup,,National Cup,Men,Senior,,,myanmar_mff_cup.png
+AFC,Nepal,Ncell Cup,cup,,National Cup,Men,Senior,,,nepal_ncell_cup.png
+AFC,Oman,His Majesty's Cup,cup,,National Cup,Men,Senior,,,oman_his_majesty_s_cup.png
+AFC,Pakistan,National Challenge Cup,cup,,National Cup,Men,Senior,,,pakistan_national_challenge_cup.png
+AFC,Philippines,Copa Paulino Alcantara,cup,,National Cup,Men,Senior,,,philippines_copa_paulino_alcantara.png
+AFC,Qatar,Emir Cup,cup,,National Cup,Men,Senior,,,qatar_emir_cup.png
+AFC,Saudi Arabia,King Cup,cup,,National Cup,Men,Senior,,,saudi_arabia_king_cup.png
+AFC,Saudi Arabia,Saudi Women's Cup,cup,,National Cup,Women,Senior,,,saudi_arabia_saudi_women_s_cup.png
+AFC,Singapore,Singapore Cup,cup,,National Cup,Men,Senior,,,singapore_singapore_cup.png
+AFC,Tajikistan,Çomi Toçikiston,cup,,National Cup,Men,Senior,,,tajikistan_comi_tocikiston.png
+AFC,Thailand,Thai FA Cup,cup,,National Cup,Men,Senior,,,thailand_thai_fa_cup.png
+AFC,Turkmenistan,Türkmenistanyň kubogy,cup,,National Cup,Men,Senior,,,turkmenistan_turkmenistanyn_kubogy.png
+AFC,UAE,FA Cup,cup,,National Cup,Men,Senior,,,united_arab_emirates_fa_cup.png
+AFC,UAE,Presidents Cup,cup,,National Cup,Men,Senior,,,united_arab_emirates_presidents_cup.png
+AFC,Uzbekistan,Oʻzbekiston Superkubogi,cup,,National Cup,Men,Senior,,,uzbekistan_ozbekiston_superkubogi.png
+AFC,Uzbekistan,O‘zbekiston Ayollar Kubogi,cup,,National Cup,Women,Senior,,,uzbekistan_ozbekiston_ayollar_kubogi.png
+AFC,Vietnam,Cúp Quốc Gia,cup,,National Cup,Men,Senior,,,vietnam_cup_quoc_gia.png
+AFC,Yemen,President's Cup,cup,,National Cup,Men,Senior,,,yemen_president_s_cup.png
+AFC,,AFC Asian Cup,cup,,National Teams,Men,Senior,,Qualification is linked with AFC Asian Qualifiers for the FIFA World Cup,asia_afc_asian_cup.png
+AFC,,AFC Asian Cup Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for AFC Asian Cup,asia_afc_asian_cup_qualification.png
+AFC,,WC Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for World Cup,asia_wc_qualification.png
+AFC,,AFC Challenge Cup,cup,,National Teams,Men,Senior,defunct,,asia_afc_challenge_cup.png
+AFC,,Asian Games,cup,,National Teams,Men,Senior,,,asia_asian_games.png
+AFC,,AFC U-23 Asian Cup,cup,,National Teams,Men,Youth,,Linked with Qualifiers for the Men's Olympic Football Tournament,asia_afc_u_23_asian_cup.png
+AFC,,AFC U-23 Asian Cup Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for AFC U-23 Asian Cup,asia_afc_u_23_asian_cup_qualifiers.png
+AFC,,AFC U-20 Asian Cup,cup,,National Teams,Men,Youth,,,asia_afc_u_20_asian_cup.png
+AFC,,AFC U-20 Asian Cup Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for AFC U-20 Asian Cup,asia_afc_u_20_asian_cup_qualifiers.png
+AFC,,AFC U-17 Asian Cup,cup,,National Teams,Men,Youth,,,asia_afc_u_17_asian_cup.png
+AFC,,AFC U-17 Asian Cup Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for AFC U-17 Asian Cup,asia_afc_u_17_asian_cup_qualifiers.png
+AFC,,AFC Solidarity Cup,cup,,National Teams,Men,Senior,defunct,,asia_afc_solidarity_cup.png
+AFC,,AFC Women's Asian Cup,cup,,National Teams,Women,Senior,,,asia_afc_women_s_asian_cup.png
+AFC,,AFC Women's Asian Cup Qualification,qualifiers,,National Teams,Women,Senior,,Qualifiers for AFC Women's Asian Cup,asia_afc_women_s_asian_cup_qualification.png
+AFC,,AFC Women's Olympic Qualifying,qualifiers,,National Teams,Women,Senior,,Qualifiers for the Women's Olympic Football Tournament,asia_afc_women_s_olympic_qualifying.png
+AFC,,AFC U-20 Women Asian Cup,cup,,National Teams,Women,Youth,,,asia_afc_u_20_women_asian_cup.png
+AFC,,AFC U-20 Women Asian Cup Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for AFC U-20 Women Asian Cup,asia_afc_u_20_women_asian_cup_qualifiers.png
+AFC,,AFC U-17 Women Asian Cup,cup,,National Teams,Women,Youth,,,asia_afc_u_17_women_asian_cup.png
+AFC,,AFC U-17 Women Asian Cup Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for AFC U-17 Women Asian Cup,asia_afc_u_17_women_asian_cup_qualifiers.png
+AFC,Bahrain,Super Cup,cup,,Super Cup,Men,Senior,,,bahrain_super_cup.png
+AFC,Brunei,Sumbangsih Cup,cup,,Super Cup,Men,Senior,,,brunei_darussalam_sumbangsih_cup.png
+AFC,Cambodia,Cambodian Super Cup,cup,,Super Cup,Men,Senior,,,cambodia_cambodian_super_cup.png
+AFC,China PR,China Super Cup,super_cup,,Super Cup,Men,Senior,,,china_pr_china_super_cup.png
+AFC,Ghana,Super Cup,cup,,Super Cup,Men,Senior,,,ghana_super_cup.png
+AFC,Guinea,Guinea Super Cup,super_cup,,Super Cup,Men,Senior,,,guinea_guinea_super_cup.png
+AFC,India,Indian Super Cup,cup,,Super Cup,Men,Senior,,,india_indian_super_cup.png
+AFC,Iraq,Iraqi Super Cup,cup,,Super Cup,Men,Senior,,,iraq_iraqi_super_cup.png
+AFC,Japan,Super Cup,cup,,Super Cup,Men,Senior,,,japan_super_cup.png
+AFC,Jordan,Jordan Super Cup,cup,,Super Cup,Men,Senior,,,jordan_jordan_super_cup.png
+AFC,South Korea,Korean Super Cup,cup,,Super Cup,Men,Senior,,,korea_republic_korean_super_cup.png
+AFC,Kuwait,Super Cup,cup,,Super Cup,Men,Senior,,,kuwait_super_cup.png
+AFC,Kyrgyzstan,Superkubok,cup,,Super Cup,Men,Senior,,,kyrgyz_republic_superkubok.png
+AFC,Lebanon,Super Cup,cup,,Super Cup,Men,Senior,,,lebanon_super_cup.png
+AFC,Lebanon,Women's Super Cup,cup,,Super Cup,Women,Senior,,,lebanon_women_s_super_cup.png
+AFC,Malaysia,Piala Sumbangsih,cup,,Super Cup,Men,Senior,,,malaysia_piala_sumbangsih.png
+AFC,Maldives,Charity Shield,cup,,Super Cup,Men,Senior,,,maldives_charity_shield.png
+AFC,Mongolia,MFF Super Cup,cup,,Super Cup,Men,Senior,,,mongolia_mff_super_cup.png
+AFC,Myanmar,MFF Charity Cup,cup,,Super Cup,Men,Senior,,,myanmar_mff_charity_cup.png
+AFC,Oman,Oman Super Cup,cup,,Super Cup,Men,Senior,,,oman_oman_super_cup.png
+AFC,Qatar,Sheikh Jassem Cup,cup,,Super Cup,Men,Senior,,,qatar_sheikh_jassem_cup.png
+AFC,Réunion,Trophée des Champions LRF,cup,,Super Cup,Men,Senior,,,reunion_trophee_des_champions_lrf.png
+AFC,Saudi Arabia,Saudi Super Cup,cup,,Super Cup,Men,Senior,,,saudi_arabia_saudi_super_cup.png
+AFC,Saudi Arabia,Saudi Women's Super Cup,super_cup,,Super Cup,Women,Senior,,,saudi_arabia_saudi_women_s_super_cup.png
+AFC,Singapore,Singapore Community Shield,cup,,Super Cup,Men,Senior,,,singapore_singapore_community_shield.png
+AFC,Tajikistan,Superçomi Toçikiston,cup,,Super Cup,Men,Senior,,,tajikistan_supercomi_tocikiston.png
+AFC,Turkmenistan,Türkmenistanyň Naýbaşy Kubogy,cup,,Super Cup,Men,Senior,,,turkmenistan_turkmenistanyn_naybasy_kubogy.png
+AFC,UAE,Super Cup,cup,,Super Cup,Men,Senior,,,united_arab_emirates_super_cup.png
+AFC,Uzbekistan,O‘zbekiston Kubogi,cup,,Super Cup,Men,Senior,,,uzbekistan_ozbekiston_kubogi.png
+AFC,Uzbekistan,Oʻzbekiston Ayollar Superkubogi,cup,,Super Cup,Women,Senior,,,uzbekistan_ozbekiston_ayollar_superkubogi.png
+AFC,Afghanistan,Afghanistan Champions League,league,1st-tier,,Men,Senior,,,afghanistan_afghanistan_champions_league.png
+AFC,Australia,A League,league,1st-tier,,Men,Senior,,,australia_a_league.png
+AFC,Australia,NPL Northern NSW,league,2nd-tier,,Men,Senior,,,australia_npl_northern_nsw.png
+AFC,Australia,NPL South Australia,league,2nd-tier,,Men,Senior,,,australia_npl_south_australia.png
+AFC,Australia,NorZone Premier League,league,2nd-tier,,Men,Senior,,,australia_norzone_premier_league.png
+AFC,Australia,NPL Capital Football,league,2nd-tier,,Men,Senior,,,australia_npl_capital_football.png
+AFC,Australia,NPL New South Wales,league,2nd-tier,,Men,Senior,,,australia_npl_new_south_wales.png
+AFC,Australia,NPL Tasmania,league,2nd-tier,,Men,Senior,,,australia_npl_tasmania.png
+AFC,Australia,NPL Western Australia,league,2nd-tier,,Men,Senior,,,australia_npl_western_australia.png
+AFC,Australia,Queensland NPL,league,2nd-tier,,Men,Senior,,,australia_queensland_npl.png
+AFC,Australia,Victoria Premier League,league,2nd-tier,,Men,Senior,,,australia_victoria_premier_league.png
+AFC,Australia,A-League Women,league,1st-tier,,Women,Senior,,,australia_a_league_women.png
+AFC,Bahrain,Bahraini Premier League,league,1st-tier,,Men,Senior,,,bahrain_bahraini_premier_league.png
+AFC,Bahrain,Second Division League,league,2nd-tier,,Men,Senior,,,bahrain_second_division_league.png
+AFC,Bangladesh,Bangladesh Premier League,league,1st-tier,,Men,Senior,,,bangladesh_bangladesh_premier_league.png
+AFC,Bangladesh,Championship League,league,2nd-tier,,Men,Senior,,,bangladesh_championship_league.png
+AFC,Bhutan,National League,league,1st-tier,,Men,Senior,,,bhutan_national_league.png
+AFC,Brunei,Brunei Super League,league,1st-tier,,Men,Senior,,,brunei_darussalam_brunei_super_league.png
+AFC,Brunei,Brunei Premier League,league,1st-tier,,Men,Senior,defunct,,brunei_darussalam_brunei_premier_league.png
+AFC,Cambodia,C-League,league,1st-tier,,Men,Senior,,,cambodia_c_league.png
+AFC,Cambodia,Cambodian League 2,league,2nd-tier,,Men,Senior,,,cambodia_cambodian_league_2.png
+AFC,China PR,Chinese Super League,league,1st-tier,,Men,Senior,,,china_pr_chinese_super_league.png
+AFC,China PR,China League One,league,2nd-tier,,Men,Senior,,,china_pr_china_league_one.png
+AFC,China PR,Women Super League,league,1st-tier,,Women,Senior,,,china_pr_women_super_league.png
+AFC,Chinese Taipei,Taiwan Football Premier League,league,1st-tier,,Men,Senior,,,chinese_taipei_taiwan_football_premier_league.png
+AFC,Chinese Taipei,City A-League,league,1st-tier,,Men,Senior,defunct,,chinese_taipei_city_a_league.png
+AFC,Chinese Taipei,Taiwan Mulan Football League,league,1st-tier,,Women,Senior,,,chinese_taipei_taiwan_mulan_football_league.png
+AFC,Ghana,Ghana Premier League,league,1st-tier,,Men,Senior,,,ghana_ghana_premier_league.png
+AFC,Ghana,Division One,league,2nd-tier,,Men,Senior,,,ghana_division_one.png
+AFC,Ghana,Women Premier League,league,1st-tier,,Women,Senior,,,ghana_women_premier_league.png
+AFC,Guam,G-League,league,1st-tier,,Men,Senior,,,guam_g_league.png
+AFC,Guinea,Ligue 1,league,1st-tier,,Men,Senior,,,guinea_ligue_1.png
+AFC,Guinea,Ligue 2,league,2nd-tier,,Men,Senior,,,guinea_ligue_2.png
+AFC,Guinea,Ligue 1 Féminine,league,,,Women,Senior,,,guinea_ligue_1_feminine.png
+AFC,Hong Kong,Premier League,league,1st-tier,,Men,Senior,,,hong_kong_sar_premier_league.png
+AFC,Hong Kong,1st Division,league,2nd-tier,,Men,Senior,,,hong_kong_sar_1st_division.png
+AFC,Hong Kong,2nd Division,league,3rd-tier,,Men,Senior,,,hong_kong_sar_2nd_division.png
+AFC,Hong Kong,3rd Division,league,4th-tier,,Men,Senior,,,hong_kong_sar_3rd_division.png
+AFC,India,I-League,league,2nd-tier,,Men,Senior,,,india_i_league.png
+AFC,India,I-League 2nd Division,league,3rd-tier,,Men,Senior,,,india_i_league_2nd_division.png
+AFC,India,Indian Super League,league,1st-tier,,Men,Senior,,,india_indian_super_league.png
+AFC,Indonesia,Liga 1,league,1st-tier,,Men,Senior,,,indonesia_liga_1.png
+AFC,Indonesia,Liga 2,league,2nd-tier,,Men,Senior,,,indonesia_liga_2.png
+AFC,Iran,Persian Gulf Pro League,league,1st-tier,,Men,Senior,,,ir_iran_persian_gulf_pro_league.png
+AFC,Iran,Azadegan League,league,2nd-tier,,Men,Senior,,,ir_iran_azadegan_league.png
+AFC,Iraq,Asia Cell Premier League,league,1st-tier,,Men,Senior,,,iraq_asia_cell_premier_league.png
+AFC,Japan,J. League,league,1st-tier,,Men,Senior,,,japan_j_league.png
+AFC,Japan,J2 League,league,2nd-tier,,Men,Senior,,,japan_j2_league.png
+AFC,Japan,J3 League,league,3rd-tier,,Men,Senior,,,japan_j3_league.png
+AFC,Japan,Japan Football League,league,4th-tier,,Men,Senior,,,japan_japan_football_league.png
+AFC,Japan,WE League,league,1st-tier,,Women,Senior,,,japan_we_league.png
+AFC,Japan,Nadeshiko League,league,2nd-tier,,Women,Senior,,,japan_nadeshiko_league.png
+AFC,Jordan,Jordanian Pro League,league,1st-tier,,Men,Senior,,,jordan_jordanian_pro_league.png
+AFC,Jordan,Jordan League Division 1,league,2nd-tier,,Men,Senior,,,jordan_jordan_league_division_1.png
+AFC,Jordan,Jordan Women's Pro League,league,1st-tier,,Women,Senior,,,jordan_jordan_women_s_pro_league.png
+AFC,South Korea,K League 1,league,1st-tier,,Men,Senior,,,korea_republic_k_league_1.png
+AFC,South Korea,K League 2,league,2nd-tier,,Men,Senior,,,korea_republic_k_league_2.png
+AFC,South Korea,K League 3,league,3rd-tier,,Men,Senior,,,korea_republic_k_league_3.png
+AFC,South Korea,K League 4,league,4th-tier,,Men,Senior,,,korea_republic_k_league_4.png
+AFC,Kuwait,Kuwaiti Premier League,league,1st-tier,,Men,Senior,,,kuwait_kuwaiti_premier_league.png
+AFC,Kuwait,Kuwaiti First Division,league,2nd-tier,,Men,Senior,,,kuwait_kuwaiti_first_division.png
+AFC,Kyrgyzstan,Premier Liga,league,,,Men,Senior,,,kyrgyz_republic_premier_liga.png
+AFC,Laos,Lao Premier League,league,1st-tier,,Men,Senior,,,lao_pdr_lao_premier_league.png
+AFC,Laos,Lao League 2,league,2nd-tier,,Men,Senior,,,lao_pdr_lao_league_2.png
+AFC,Laos,Lao Women's League,league,1st-tier,,Women,Senior,,,lao_pdr_lao_women_s_league.png
+AFC,Lebanon,Lebanese Premier League,league,1st-tier,,Men,Senior,,,lebanon_lebanese_premier_league.png
+AFC,Lebanon,Second Division,league,2nd-tier,,Men,Senior,,,lebanon_second_division.png
+AFC,Lebanon,Third Division,league,3rd-tier,,Men,Senior,,,lebanon_third_division.png
+AFC,Lebanon,Lebanese U-20 League,league,,,Men,Youth,,,lebanon_lebanese_u_20_league.png
+AFC,Lebanon,Women's First Division,league,1st-tier,,Women,Senior,,,lebanon_women_s_first_division.png
+AFC,Lebanon,Lebanese Women U-19 League,league,,,Women,Youth,,,lebanon_lebanese_u_19_league.png
+AFC,Macau,Liga de Elite,league,1st-tier,,Men,Senior,,,macau_liga_de_elite.png
+AFC,Macau,2a Divisão,league,2nd-tier,,Men,Senior,,,macau_2a_divisao.png
+AFC,Macau,Woman Division League,league,1st-tier,,Women,Senior,,,macau_woman_division_league.png
+AFC,Malaysia,Super League,league,1st-tier,,Men,Senior,,,malaysia_super_league.png
+AFC,Malaysia,Liga A1 Semi-Pro Malaysia,league,2nd-tier,,Men,Senior,,,malaysia_liga_a1_semi_pro_malaysia.png
+AFC,Maldives,Dhiraagu Dhivehi League,league,1st-tier,,Men,Senior,,,maldives_dhiraagu_dhivehi_league.png
+AFC,Mongolia,Niyslel Lig,league,1st-tier,,Men,Senior,,,mongolia_niyslel_lig.png
+AFC,Myanmar,Myanmar National League,league,1st-tier,,Men,Senior,,,myanmar_myanmar_national_league.png
+AFC,Myanmar,MNL-2,league,2nd-tier,,Men,Senior,,,myanmar_mnl_2.png
+AFC,Nepal,A Division League,league,1st-tier,,Men,Senior,,,nepal_a_division_league.png
+AFC,Nepal,B Division League,league,2nd-tier,,Men,Senior,,,nepal_b_division_league.png
+AFC,Northern Mariana Islands,M-League Division 1,league,1st-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_1.png
+AFC,Northern Mariana Islands,M-League Division 2,league,2nd-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_2.png
+AFC,Oman,Omantel Professional League,league,1st-tier,,Men,Senior,,,oman_omantel_professional_league.png
+AFC,Oman,Omani First Division League,league,2nd-tier,,Men,Senior,,,oman_omani_first_division_league.png
+AFC,Oman,Omani Second Division League,league,3rd-tier,,Men,Senior,,,oman_omani_second_division_league.png
+AFC,Pakistan,Pakistan Premier League,league,1st-tier,,Men,Senior,,,pakistan_pakistan_premier_league.png
+AFC,Pakistan,B. Division League,league,2nd-tier,,Men,Senior,,,pakistan_b_division_league.png
+AFC,Pakistan,Pakistan U23 championship,league,,,Men,Youth,,,pakistan_pakistan_u23_championship.png
+AFC,Pakistan,National Women Championship,women,1st-tier,,Women,Senior,,,pakistan_national_women_championship.png
+AFC,Pakistan,National U-19 Football Championship,unknown,,,Men,Youth,,,pakistan_national_u_19_football_championship.png
+AFC,Philippines,PFL,league,1st-tier,,Men,Senior,,,philippines_pfl.png
+AFC,Philippines,UFL Division 1,league,1st-tier,,Men,Senior,defunct,,philippines_ufl_division_1.png
+AFC,Philippines,UFL Division 2,league,2nd-tier,,Men,Senior,defunct,,philippines_ufl_division_2.png
+AFC,Qatar,Qatar Stars League,league,1st-tier,,Men,Senior,,,qatar_qatar_stars_league.png
+AFC,Qatar,Second Division,league,2nd-tier,,Men,Senior,,,qatar_second_division.png
+AFC,Réunion,Division 1 Promotionnelle,league,1st-tier,,Men,Senior,,,reunion_division_1_promotionnelle.png
+AFC,Saudi Arabia,Saudi Professional League,league,1st-tier,,Men,Senior,,,saudi_arabia_saudi_professional_league.png
+AFC,Saudi Arabia,Division 1,league,2nd-tier,,Men,Senior,,,saudi_arabia_division_1.png
+AFC,Saudi Arabia,Division 2,league,3rd-tier,,Men,Senior,,,saudi_arabia_division_2.png
+AFC,Saudi Arabia,Saudi Women's Premier League,league,1st-tier,,Women,Senior,,,saudi_arabia_saudi_women_s_premier_league.png
+AFC,Singapore,S.League,league,1st-tier,,Men,Senior,,,singapore_s_league.png
+AFC,Sri Lanka,Super League,league,1st-tier,,Men,Senior,,,sri_lanka_super_league.png
+AFC,Sri Lanka,Champions League,league,2nd-tier,,Men,Senior,,,sri_lanka_champions_league.png
+AFC,Syria,Syrian Premier League,league,1st-tier,,Men,Senior,,,syria_syrian_premier_league.png
+AFC,Tajikistan,Tajik Championship,league,1st-tier,,Men,Senior,,,tajikistan_tajik_championship.png
+AFC,Tajikistan,First Division,league,2nd-tier,,Men,Senior,,,tajikistan_first_division.png
+AFC,Thailand,Thai League 1,league,1st-tier,,Men,Senior,,,thailand_thai_league_1.png
+AFC,Thailand,Thai League 2,league,2nd-tier,,Men,Senior,,,thailand_thai_league_2.png
+AFC,Timor-Leste,Liga Futebol Amadora,league,1st-tier,,Men,Senior,,,timor_leste_liga_futebol_amadora.png
+AFC,Turkmenistan,Ýokary Liga,league,1st-tier,,Men,Senior,,,turkmenistan_yokary_liga.png
+AFC,Turkmenistan,Birinji Liga,league,2nd-tier,,Men,Senior,,,turkmenistan_birinji_liga.png
+AFC,UAE,Arabian Gulf League,league,1st-tier,,Men,Senior,,,united_arab_emirates_arabian_gulf_league.png
+AFC,UAE,First Division League,league,2nd-tier,,Men,Senior,,,united_arab_emirates_first_division_league.png
+AFC,UAE,Second Division League,league,3rd-tier,,Men,Senior,,,united_arab_emirates_second_division_league.png
+AFC,UAE,Pro League U23,league,,,Men,Youth,,,united_arab_emirates_pro_league_u23.png
+AFC,UAE,UAE Women League,league,1st-tier,,Women,Senior,,,united_arab_emirates_uae_women_league.png
+AFC,Uzbekistan,Oʻzbekiston Superligasi,league,1st-tier,,Men,Senior,,,uzbekistan_ozbekiston_superligasi.png
+AFC,Uzbekistan,Pro Liga,league,2nd-tier,,Men,Senior,,,uzbekistan_pro_liga.png
+AFC,Uzbekistan,O‘zbekiston Pro B Ligasi,league,3rd-tier,,Men,Senior,,,uzbekistan_ozbekiston_pro_b_ligasi.png
+AFC,Uzbekistan,Oʻzbekiston Ayollar Chempionati,league,1st-tier,,Women,Senior,,,uzbekistan_ozbekiston_ayollar_chempionati.png
+AFC,Vietnam,V.League 1,league,1st-tier,,Men,Senior,,,vietnam_v_league_1.png
+AFC,Yemen,Yemeni League,league,1st-tier,,Men,Senior,,,yemen_yemeni_league.png
+AFC,Yemen,Second Division,league,2nd-tier,,Men,Senior,,,yemen_second_division.png
+CAF,,CAF Champions League,cup,1st-tier,Clubs,Men,Senior,,,africa_caf_champions_league.png
+CAF,,CAF Confederation Cup,cup,2nd-tier,Clubs,Men,Senior,,,africa_caf_confederation_cup.png
+CAF,,CAF Super Cup,cup,3rd-tier,Clubs,Men,Senior,,,africa_caf_super_cup.png
+CAF,,CAF Women's Champions League,cup,,Clubs,Women,Senior,,,africa_caf_women_s_champions_league.png
+CAF,Burundi,Nkurunziza Cup,cup,,Commemorative,Men,Senior,,,burundi_nkurunziza_cup.png
+CAF,Burundi,Coupe de l'Unité Nationale,cup,,Commemorative,Men,Senior,,,burundi_coupe_de_l_unite_nationale.png
+CAF,Ivory Coast,Coupe de la Ligue,cup,,League cup,Men,Senior,,,cote_divoire_coupe_de_la_ligue.png
+CAF,Egypt,League Cup,cup,,League cup,Men,Senior,,,egypt_league_cup.png
+CAF,Kenya,Top 8 Cup,cup,,League cup,Men,Senior,,,kenya_top_8_cup.png
+CAF,Lesotho,Top 8,cup,,League cup,Men,Senior,,,lesotho_top_8.png
+CAF,South Africa,Top 8,cup,,League cup,Men,Senior,,,south_africa_top_8.png
+CAF,Algeria,Coupe Nationale,cup,,National Cup,Men,Senior,,,algeria_coupe_nationale.png
+CAF,Angola,Taça de Angola,cup,,National Cup,Men,Senior,,,angola_taca_de_angola.png
+CAF,Benin,Super Coupe,cup,,National Cup,Men,Senior,,,benin_super_coupe.png
+CAF,Burkina Faso,Coupe du Faso,cup,,National Cup,Men,Senior,,,burkina_faso_coupe_du_faso.png
+CAF,Burkina Faso,Coupe du Faso Féminine,cup,,National Cup,Women,Senior,,,burkina_faso_coupe_du_faso_feminine.png
+CAF,Burundi,Coupe du Président,cup,,National Cup,Men,Senior,,,burundi_coupe_du_president.png
+CAF,Cameroon,Cameroon Cup,cup,,National Cup,Men,Senior,,,cameroon_cameroon_cup.png
+CAF,Ivory Coast,Coupe Nationale,cup,,National Cup,Men,Senior,,,cote_divoire_coupe_nationale.png
+CAF,Egypt,Egypt Cup,cup,,National Cup,Men,Senior,,,egypt_egypt_cup.png
+CAF,Ethiopia,EFF Cup,cup,,National Cup,Men,Senior,,,ethiopia_eff_cup.png
+CAF,Ethiopia,EFF U-17 Cup,cup,,National Cup,Men,Senior,,,ethiopia_eff_u_17_cup.png
+CAF,Gambia,FA Cup,cup,,National Cup,Men,Senior,,,gambia_fa_cup.png
+CAF,Kenya,FKF President's Cup,cup,,National Cup,Men,Senior,,,kenya_fkf_president_s_cup.png
+CAF,Lesotho,Independence Cup,cup,,National Cup,Men,Senior,,,lesotho_independence_cup.png
+CAF,Madagascar,Coupe de Madagascar,cup,,National Cup,Men,Senior,,,madagascar_coupe_de_madagascar.png
+CAF,Malawi,FAM Cup,cup,,National Cup,Men,Senior,,,malawi_fam_cup.png
+CAF,Mali,Coupe du Mali,cup,,National Cup,Men,Senior,,,mali_coupe_du_mali.png
+CAF,Mauritania,Coupe du Président,cup,,National Cup,Men,Senior,,,mauritania_coupe_du_president.png
+CAF,Mauritius,Republic Cup,cup,,National Cup,Men,Senior,,,mauritius_republic_cup.png
+CAF,Mauritius,MFA Cup,cup,,National Cup,Men,Senior,,,mauritius_mfa_cup.png
+CAF,Morocco,Coupe du Trône,cup,,National Cup,Men,Senior,,,morocco_coupe_du_trone.png
+CAF,Mozambique,Taça Nacional,cup,,National Cup,Men,Senior,,,mozambique_taca_nacional.png
+CAF,Namibia,Namibia Cup,cup,,National Cup,Men,Senior,,,namibia_namibia_cup.png
+CAF,Niger,Coupe du Niger,cup,,National Cup,Men,Senior,,,niger_coupe_du_niger.png
+CAF,Rwanda,Peace Cup,cup,,National Cup,Men,Senior,,,rwanda_peace_cup.png
+CAF,Seychelles,FA Cup,cup,,National Cup,Men,Senior,,,seychelles_fa_cup.png
+CAF,Sierra Leone,FA Cup,cup,,National Cup,Men,Senior,,,sierra_leone_fa_cup.png
+CAF,South Africa,Nedbank Cup,cup,,National Cup,Men,Senior,,,south_africa_nedbank_cup.png
+CAF,South Africa,Carling Black Label,cup,,National Cup,Men,Senior,,,south_africa_carling_black_label.png
+CAF,Sudan,Sudan Cup,cup,,National Cup,Men,Senior,,,sudan_sudan_cup.png
+CAF,Togo,Coupe du Togo,cup,,National Cup,Men,Senior,,,togo_coupe_du_togo.png
+CAF,Togo,Coupe de l'Indépendance,cup,,National Cup,Men,Senior,,,togo_coupe_de_l_independance.png
+CAF,Tunisia,Coupe de Tunisie,cup,,National Cup,Men,Senior,,,tunisia_coupe_de_tunisie.png
+CAF,Uganda,FUFA Uganda Cup,cup,,National Cup,Men,Senior,,,uganda_fufa_uganda_cup.png
+CAF,,Africa Cup of Nations,cup,,National Teams,Men,Senior,,,africa_africa_cup_of_nations.png
+CAF,,AFCON Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for Africa Cup of Nations,africa_afcon_qualification.png
+CAF,,WC Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for World Cup,africa_wc_qualification.png
+CAF,,African Nations Championship,cup,,National Teams,Men,Senior,,The participating teams must consist of players playing in their national league competitions.,africa_african_nations_championship.png
+CAF,,CHAN Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for African Nations Championship,africa_chan_qualification.png
+CAF,,African Games Men,cup,,National Teams,Men,Senior,,,africa_african_games.png
+CAF,,African Games Women,cup,,National Teams,Men,Senior,,,africa_african_games.png
+CAF,,Africa U-23 Cup of Nations,cup,,National Teams,Men,Youth,,Linked with Qualifiers for the Men's Olympic Football Tournament,africa_africa_u_23_cup_of_nations.png
+CAF,,Africa U-20 Cup of Nations,cup,,National Teams,Men,Youth,,,africa_africa_u_20_cup_of_nations.png
+CAF,,Africa U-17 Cup of Nations,cup,,National Teams,Men,Youth,,,africa_africa_u_17_cup_of_nations.png
+CAF,,Africa Women Cup of Nations,cup,,National Teams,Women,Senior,,Linked with Qualifiers for the FIFA Women's World Cup,africa_africa_women_cup_of_nations.png
+CAF,,Women's Africa Cup Of Nations Qualification,qualifiers,,National Teams,Women,Senior,,Qualifiers for Africa Women Cup of Nations,africa_women_s_africa_cup_of_nations_qualification.png
+CAF,,CAF Olympic Women Qualifiers,qualifiers,,National Teams,Women,Senior,,Qualifiers for the Women's Olympic Football Tournament,africa_caf_olympic_women_qualifiers.png
+CAF,,U20 WC Qualification,cup,,National Teams,Women,Youth,,Qualifiers for FIFA U-20 Women's World Cup,africa_u20_wc_qualification.png
+CAF,,U17 WC Qualification,cup,,National Teams,Women,Youth,,Qualifiers for FIFA U-17 Women's World Cup,africa_u17_wc_qualification.png
+CAF,Algeria,Supercoupe d'Algérie,cup,,Super Cup,Men,Senior,,,algeria_supercoupe_d_algerie.png
+CAF,Angola,Supertaça de Angola,cup,,Super Cup,Men,Senior,,,angola_supertaca_de_angola.png
+CAF,Benin,Championnat National Féminin,cup,,Super Cup,Men,Senior,,,benin_championnat_national_feminin.png
+CAF,Burkina Faso,Super Coupe AJSB,cup,,Super Cup,Men,Senior,,,burkina_faso_super_coupe_ajsb.png
+CAF,Burkina Faso,Supercoupe Féminine,cup,,Super Cup,Women,Senior,,,burkina_faso_supercoupe_feminine.png
+CAF,Burundi,Super Coupe,cup,,Super Cup,Men,Senior,,,burundi_super_coupe.png
+CAF,Cameroon,Trophée des Champions,cup,,Super Cup,Men,Senior,,,cameroon_trophee_des_champions.png
+CAF,Cameroon,Trophée des Championnes,cup,,Super Cup,Women,Senior,,,cameroon_trophee_des_championnes.png
+CAF,Ivory Coast,Super Coupe,cup,,Super Cup,Men,Senior,,,cote_divoire_super_coupe.png
+CAF,Egypt,Egypt Super Cup,cup,,Super Cup,Men,Senior,,,egypt_egypt_super_cup.png
+CAF,Gambia,Super Cup,cup,,Super Cup,Men,Senior,,,gambia_super_cup.png
+CAF,Kenya,Super Cup,super_cup,,Super Cup,Men,Senior,,,kenya_super_cup.png
+CAF,Liberia,Super Cup,cup,,Super Cup,Men,Senior,,,liberia_super_cup.png
+CAF,Madagascar,Supercoupe de Madagascar,cup,,Super Cup,Men,Senior,,,madagascar_supercoupe_de_madagascar.png
+CAF,Malawi,Charity Shield,cup,,Super Cup,Men,Senior,,,malawi_charity_shield.png
+CAF,Mali,Super Coupe,cup,,Super Cup,Men,Senior,,,mali_super_coupe.png
+CAF,Mauritania,Supercoupe de Mauritanie,cup,,Super Cup,Men,Senior,,,mauritania_supercoupe_de_mauritanie.png
+CAF,Mauritius,MFA Super Cup,cup,,Super Cup,Men,Senior,,,mauritius_mfa_super_cup.png
+CAF,Mozambique,Supertaça Nacional,cup,,Super Cup,Men,Senior,,,mozambique_supertaca_nacional.png
+CAF,Namibia,Namibia Super Cup,league,,Super Cup,Men,Senior,,,namibia_namibia_super_cup.png
+CAF,Niger,Super Coupe,cup,,Super Cup,Men,Senior,,,niger_super_coupe.png
+CAF,Sierra Leone,Super Cup,cup,,Super Cup,Men,Senior,,,sierra_leone_super_cup.png
+CAF,Somalia,Super Cup,cup,,Super Cup,Men,Senior,,,somalia_super_cup.png
+CAF,South Sudan,SSFA Super Cup,cup,,Super Cup,Men,Senior,,,south_sudan_ssfa_super_cup.png
+CAF,Tanzania,Community Shield,cup,,Super Cup,Men,Senior,,,tanzania_community_shield.png
+CAF,Togo,Supercoupe du Togo,cup,,Super Cup,Men,Senior,,,togo_supercoupe_du_togo.png
+CAF,Tunisia,Supercoupe de Tunisie,cup,,Super Cup,Men,Senior,,,tunisia_supercoupe_de_tunisie.png
+CAF,Uganda,FUFA Super Cup,cup,,Super Cup,Men,Senior,,,uganda_fufa_super_cup.png
+CAF,Algeria,Ligue 1,league,1st-tier,,Men,Senior,,,algeria_ligue_1.png
+CAF,Algeria,Ligue 2,league,2nd-tier,,Men,Senior,,,algeria_ligue_2.png
+CAF,Angola,Girabola,league,1st-tier,,Men,Senior,,,angola_girabola.png
+CAF,Benin,Ligue 1 du Bénin,league,1st-tier,,Men,Senior,,,benin_ligue_1_du_benin.png
+CAF,Botswana,FNB Premiership,league,1st-tier,,Men,Senior,,,botswana_botswana_premier_league.png
+CAF,Burkina Faso,Championnat National D1,league,1st-tier,,Men,Senior,,,burkina_faso_championnat_national_d1.png
+CAF,Burkina Faso,Championnat National D2,league,2nd-tier,,Men,Senior,,,burkina_faso_championnat_national_d2.png
+CAF,Burkina Faso,Championnat National D3,league,3rd-tier,,Men,Senior,,,burkina_faso_championnat_national_d3.png
+CAF,Burkina Faso,Championnat National D1 Féminin,league,1st-tier,,Women,Senior,,,burkina_faso_championnat_national_d1_feminin.png
+CAF,Burkina Faso,Championnat National D2 Féminin,league,2nd-tier,,Women,Senior,,,burkina_faso_championnat_national_d2_feminin.png
+CAF,Burundi,Ligue A,league,1st-tier,,Men,Senior,,,burundi_ligue_a.png
+CAF,Burundi,Ligue B,league,2nd-tier,,Men,Senior,,,burundi_ligue_b.png
+CAF,Burundi,Women's League,league,1st-tier,,Women,Senior,,,burundi_women_s_league.png
+CAF,Cape Verde,Campeonato Nacional,league,1st-tier,,Men,Senior,,,cabo_verde_campeonato_nacional.png
+CAF,Cameroon,Elite One,league,1st-tier,,Men,Senior,,,cameroon_elite_one.png
+CAF,Cameroon,Elite Two,league,2nd-tier,,Men,Senior,,,cameroon_elite_two.png
+CAF,Cameroon,Guinness Super League,league,1st-tier,,Women,Senior,,,cameroon_guinness_super_league.png
+CAF,Central African Republic,Ligue de Bangui,league,1st-tier,,Men,Senior,,,central_african_republic_ligue_de_bangui.png
+CAF,Chad,Championnat National,league,1st-tier,,Men,Senior,,,chad_championnat_national.png
+CAF,Congo,Ligue 1,league,1st-tier,,Men,Senior,,,congo_ligue_1.png
+CAF,Ivory Coast,MTN Ligue 1,league,1st-tier,,Men,Senior,,,cote_divoire_mtn_ligue_1.png
+CAF,Ivory Coast,Ligue 2 Pool A,league,2nd-tier,,Men,Senior,,,cote_divoire_ligue_2.png
+CAF,Ivory Coast,Ligue 2 Bool A,league,2nd-tier,,Men,Senior,,,cote_divoire_ligue_2.png
+CAF,Ivory Coast,Championnat Féminin,league,1st-tier,,Women,Senior,,,cote_divoire_championnat_feminin.png
+CAF,Djibouti,Première Division,league,1st-tier,,Men,Senior,,,djibouti_premiere_division.png
+CAF,Djibouti,Championnat National D2,league,2nd-tier,,Men,Senior,,,djibouti_championnat_national_d2.png
+CAF,DR Congo,Vodacom Superligue,league,1st-tier,,Men,Senior,,,dr_congo_vodacom_superligue.png
+CAF,Egypt,Egyptian Premier League,league,1st-tier,,Men,Senior,,,egypt_egyptian_premier_league.png
+CAF,Egypt,Second Division,league,2nd-tier,,Men,Senior,,,egypt_second_division.png
+CAF,Egypt,Egyptian Women League Top Division,league,1st-tier,,Women,Senior,,,egypt_egyptian_women_league_top_division.png
+CAF,Eswatini,MTN Premier League,league,1st-tier,,Men,Senior,,,eswatini_mtn_premier_league.png
+CAF,Ethiopia,Ethiopia Premier League,league,1st-tier,,Men,Senior,,,ethiopia_ethiopia_premier_league.png
+CAF,Ethiopia,Ethiopian Higher League,league,2nd-tier,,Men,Senior,,,ethiopia_ethiopian_higher_league.png
+CAF,Ethiopia,EFF League One,league,2nd-tier,,Men,Senior,,,ethiopia_eff_league_one.png
+CAF,Ethiopia,U-20 Premier League,league,,,Men,Senior,,,ethiopia_u_20_premier_league.png
+CAF,Ethiopia,U-17 Premier League,league,,,Men,Senior,,,ethiopia_u_17_premier_league.png
+CAF,Ethiopia,Women Premier League,league,,,Women,Senior,,,ethiopia_women_premier_league.png
+CAF,Ethiopia,Women Higher League,league,,,Women,Senior,,,ethiopia_women_higher_league.png
+CAF,Gabon,National Foot 1,league,1st-tier,,Men,Senior,,,gabon_national_foot_1.png
+CAF,Gabon,National Foot 2,league,2nd-tier,,Men,Senior,,,gabon_national_foot_2.png
+CAF,Gambia,GFA First Division,league,1st-tier,,Men,Senior,,,gambia_gfa_first_division.png
+CAF,Gambia,GFF National League Div 2,league,2nd-tier,,Men,Senior,,,gambia_gff_national_league_div_2.png
+CAF,Gambia,National Women League,league,1st-tier,,Women,Senior,,,gambia_national_women_league.png
+CAF,Kenya,Kenya Premier League,league,1st-tier,,Men,Senior,,,kenya_kenya_premier_league.png
+CAF,Kenya,National Super League,league,2nd-tier,,Men,Senior,,,kenya_national_super_league.png
+CAF,Kenya,KPL U20 Championship,league,1st-tier,,Men,Youth,,,kenya_kpl_u20_championship.png
+CAF,Lesotho,Lesotho Premier League,league,1st-tier,,Men,Senior,,,lesotho_lesotho_premier_league.png
+CAF,Liberia,First Division,league,1st-tier,,Men,Senior,,,liberia_first_division.png
+CAF,Liberia,Second Division,league,2nd-tier,,Men,Senior,,,liberia_second_division.png
+CAF,Libya,Libyan Premier League,league,1st-tier,,Men,Senior,,,libya_libyan_premier_league.png
+CAF,Madagascar,Pureplay Football League,league,1st-tier,,Men,Senior,,,madagascar_pureplay_football_league.png
+CAF,Malawi,Super League,league,1st-tier,,Men,Senior,,,malawi_super_league.png
+CAF,Mali,Ligue 1,league,1st-tier,,Men,Senior,,,mali_ligue_1.png
+CAF,Mali,Ligue 2,league,2nd-tier,,Men,Senior,,,mali_ligue_2.png
+CAF,Mali,Championnat National D1 Féminin,league,1st-tier,,Women,Senior,,,mali_championnat_national_d1_feminin.png
+CAF,Mauritania,Super D1,league,1st-tier,,Men,Senior,,,mauritania_super_d1.png
+CAF,Mauritania,Super D2,league,2nd-tier,,Men,Senior,,,mauritania_super_d2.png
+CAF,Mauritius,Mauritian Premier League,league,1st-tier,,Men,Senior,,,mauritius_mauritian_premier_league.png
+CAF,Mauritius,Division 1 League,league,2nd-tier,,Men,Senior,,,mauritius_division_1_league.png
+CAF,Morocco,Botola Pro,league,1st-tier,,Men,Senior,,,morocco_botola_pro.png
+CAF,Morocco,Botola 2,league,2nd-tier,,Men,Senior,,,morocco_botola_2.png
+CAF,Mozambique,Moçambola,league,1st-tier,,Men,Senior,,,mozambique_mocambola.png
+CAF,Namibia,Namibia Premier League,league,1st-tier,,Men,Senior,,,namibia_namibia_premier_league.png
+CAF,Niger,Ligue 1,league,1st-tier,,Men,Senior,,,niger_ligue_1.png
+CAF,Niger,Ligue Nationale,league,2nd-tier,,Men,Senior,,,niger_ligue_nationale.png
+CAF,Nigeria,Nigeria Premier League,league,1st-tier,,Men,Senior,,,nigeria_nigeria_premier_league.png
+CAF,Rwanda,Premier League,league,1st-tier,,Men,Senior,,,rwanda_premier_league.png
+CAF,Rwanda,Second Division,league,2nd-tier,,Men,Senior,,,rwanda_second_division.png
+CAF,Rwanda,Super Cup,cup,,,Men,Senior,,,rwanda_super_cup.png
+CAF,Rwanda,First Division,league,1st-tier,,Women,Senior,,,rwanda_first_division.png
+CAF,São Tomé & Príncipe,Campeonato Nacional,league,1st-tier,,Men,Senior,,,sao_tome_e_principe_campeonato_nacional.png
+CAF,Senegal,Ligue 1,league,1st-tier,,Men,Senior,,,senegal_ligue_1.png
+CAF,Senegal,Ligue 2,league,2nd-tier,,Men,Senior,,,senegal_ligue_2.png
+CAF,Seychelles,Premier League,league,1st-tier,,Men,Senior,,,seychelles_premier_league.png
+CAF,Seychelles,Championship,league,2nd-tier,,Men,Senior,,,seychelles_championship.png
+CAF,Sierra Leone,Premier League,league,,,Men,Senior,,,sierra_leone_premier_league.png
+CAF,Sierra Leone,Women's Premier League,league,1st-tier,,Women,Senior,,,sierra_leone_women_s_premier_league.png
+CAF,Somalia,First Division,league,,,Men,Senior,,,somalia_first_division.png
+CAF,South Africa,ABSA Premiership,league,1st-tier,,Men,Senior,,,south_africa_absa_premiership.png
+CAF,South Africa,National First Division,league,2nd-tier,,Men,Senior,,,south_africa_national_first_division.png
+CAF,South Africa,ABC Motsepe,league,3rd-tier,,Men,Senior,,,south_africa_abc_motsepe.png
+CAF,South Africa,Women's National League,league,1st-tier,,Women,Senior,,,south_africa_women_s_national_league.png
+CAF,South Sudan,South Sudan Premier League,league,1st-tier,,Men,Senior,,,south_sudan_south_sudan_premier_league.png
+CAF,Sudan,Sudani Premier League,league,1st-tier,,Men,Senior,,,sudan_sudani_premier_league.png
+CAF,Tanzania,Ligi kuu Bara,league,1st-tier,,Men,Senior,,,tanzania_ligi_kuu_bara.png
+CAF,Tanzania,Championship League,league,2nd-tier,,Men,Senior,,,tanzania_championship_league.png
+CAF,Tanzania,Nationwide Third division,league,3rd-tier,,Men,Senior,,,tanzania_nationwide_third_division.png
+CAF,Tanzania,Women's Premier League,league,1st-tier,,Women,Senior,,,tanzania_women_s_premier_league.png
+CAF,Togo,Championnat National,unknown,1st-tier,,Men,Senior,,,togo_championnat_national.png
+CAF,Togo,Championnat National de 2ème Division,league,2nd-tier,,Men,Senior,,,togo_championnat_national_de_2eme_division.png
+CAF,Togo,Championnat National Féminin,league,1st-tier,,Women,Senior,,,togo_championnat_national_feminin.png
+CAF,Tunisia,Ligue Professionnelle 1,league,1st-tier,,Men,Senior,,,tunisia_ligue_professionnelle_1.png
+CAF,Tunisia,Ligue Professionnelle 2,league,2nd-tier,,Men,Senior,,,tunisia_ligue_professionnelle_2.png
+CAF,Uganda,FUFA Super League,league,1st-tier,,Men,Senior,,,uganda_fufa_super_league.png
+CAF,Uganda,FUFA Big League,league,2nd-tier,,Men,Senior,,,uganda_fufa_big_league.png
+CAF,Zambia,Super Division,league,1st-tier,,Men,Senior,,,zambia_super_division.png
+CAF,Zanzibar,Ligi Kuu ya Zanzibar,unknown,1st-tier,,Men,Senior,,,zanzibar_ligi_kuu_ya_zanzibar.png
+CAF,Zimbabwe,Premier Soccer League,league,1st-tier,,Men,Senior,,,zimbabwe_premier_soccer_league.png
+CONCACAF,USA,USL Cup,cup,,Amateur Cup,Men,Senior,,,united_states_usl_cup.png
+CONCACAF,,CONCACAF Champions Cup,cup,1st-tier,Clubs,Men,Senior,,,n_c_america_concacaf_champions_cup.png
+CONCACAF,,CONCACAF League,cup,2nd-tier,Clubs,Men,Senior,defunct,,n_c_america_concacaf_league.png
+CONCACAF,,CONCACAF W Champions Cup,cup,1st-tier,Clubs,Women,Senior,,,n_c_america_concacaf_w_champions_cup.png
+CONCACAF,British Virgin Islands,BVIFA President's Cup,cup,,League cup,Men,Senior,,,british_virgin_islands_bvifa_president_s_cup.png
+CONCACAF,Sint Maarten,SXMFF League Cup,cup,,League cup,Men,Senior,,,sint_maarten_sxmff_league_cup.png
+CONCACAF,Anguilla,The Knockout Cup,cup,,National Cup,Men,Senior,,,anguilla_the_knockout_cup.png
+CONCACAF,Aruba,Copa Betico Croes,cup,,National Cup,Men,Senior,,,aruba_copa_betico_croes.png
+CONCACAF,Bahamas,BFA Cup,cup,,National Cup,Men,Senior,,,bahamas_bfa_cup.png
+CONCACAF,Bermuda,BFA Cup,cup,,National Cup,Men,Senior,,,bermuda_bfa_cup.png
+CONCACAF,Canada,Canadian Championship,unknown,,National Cup,Men,Senior,,,canada_canadian_championship.png
+CONCACAF,Cayman Islands,FA Cup,cup,,National Cup,Men,Senior,,,cayman_islands_fa_cup.png
+CONCACAF,Dominica,Nation Cup League,cup,,National Cup,Men,Senior,,,dominica_nation_cup_league.png
+CONCACAF,French Guiana,Coupe de Guyane,cup,,National Cup,Men,Senior,,,french_guiana_coupe_de_guyane.png
+CONCACAF,Grenada,GFA Cup,cup,,National Cup,Men,Senior,,,grenada_gfa_cup.png
+CONCACAF,Guadeloupe,Coupe de Guadeloupe,cup,,National Cup,Men,Senior,,,guadeloupe_coupe_de_guadeloupe.png
+CONCACAF,Martinique,Coupe de Martinique,cup,,National Cup,Men,Senior,,,martinique_coupe_de_martinique.png
+CONCACAF,Mexico,Copa MX,cup,,National Cup,Men,Senior,,,mexico_copa_mx.png
+CONCACAF,Nicaragua,Copa Nicaragua,cup,,National Cup,Men,Senior,,,nicaragua_copa_nicaragua.png
+CONCACAF,Saint-Martin,Coupe de Saint Martin,cup,,National Cup,Men,Senior,,,saint_martin_coupe_de_saint_martin.png
+CONCACAF,Saint Kitts & Nevis,SKNFA FA Cup,cup,,National Cup,Men,Senior,,,st_kitts_and_nevis_sknfa_fa_cup.png
+CONCACAF,Suriname,SVB Beker,cup,,National Cup,Men,Senior,,,suriname_svb_beker.png
+CONCACAF,Trinidad & Tobago,FA Cup,cup,,National Cup,Men,Senior,,,trinidad_and_tobago_fa_cup.png
+CONCACAF,USA,US Open Cup,cup,,National Cup,Men,Senior,,,united_states_us_open_cup.png
+CONCACAF,USA,NWSL Challenge Cup,cup,,National Cup,Women,Senior,,,united_states_nwsl_challenge_cup.png
+CONCACAF,,WC Qualification,qualifiers,,National Teams,Men,,,Qualifiers for World Cup,n_c_america_wc_qualification.png
+CONCACAF,,CONCACAF Gold Cup,cup,,National Teams,Men,Senior,,,n_c_america_concacaf_gold_cup.png
+CONCACAF,,Concacaf Nations League,cup,,National Teams,Men,Senior,,"also determine qualify for the next edition of the CONCACAF Gold Cup; in the top league, League A, the winners of each groups go on to play in the CONCACAF Nations League Finals",n_c_america_concacaf_nations_league.png
+CONCACAF,,CONCACAF Gold Cup Qualifiers,qualifiers,,National Teams,Men,Senior,,Qualifiers for CONCACAF Gold Cup,n_c_america_concacaf_gold_cup_qualifiers.png
+CONCACAF,,Copa Centroamericana,cup,,National Teams,Men,Senior,defunct,,n_c_america_copa_centroamericana.png
+CONCACAF,,CONCACAF W Gold Cup,cup,,National Teams,Women,Senior,,,n_c_america_concacaf_w_gold_cup.png
+CONCACAF,,CONCACAF W Gold Cup Qualifiers,qualifiers,,National Teams,Women,Senior,,Qualifiers for CONCACAF W Gold Cup,n_c_america_concacaf_w_gold_cup_qualifiers.png
+CONCACAF,,CONCACAF Olympic Qualifying,qualifiers,,National Teams,Men,Senior,,Qualifiers for the Men's Olympic Football Tournament,n_c_america_concacaf_olympic_qualifying.png
+CONCACAF,,CONCACAF U20 Championship,cup,,National Teams,Men,Youth,,,n_c_america_concacaf_u20_championship.png
+CONCACAF,,CONCACAF U20 Qualification,qualifiers,,National Teams,Men,Youth,,Qualifiers for CONCACAF U20 Championship,n_c_america_concacaf_u20_qualification.png
+CONCACAF,,CONCACAF U17 Championship,cup,,National Teams,Men,Youth,,,n_c_america_concacaf_u17_championship.png
+CONCACAF,,CONCACAF U17 Qualification,qualifiers,,National Teams,Men,Youth,,Qualifiers for CONCACAF U17 Championship,n_c_america_concacaf_u17_qualification.png
+CONCACAF,,CONCACAF Cup,cup,,National Teams,Men,Senior,defunct,,n_c_america_concacaf_cup.png
+CONCACAF,,CONCACAF Women's Olympic Qualifying,qualifiers,,National Teams,Women,Senior,,Qualifiers for the Women's Olympic Football Tournament,n_c_america_concacaf_women_s_olympic_qualifying.png
+CONCACAF,,CONCACAF Women's Championship,cup,,National Teams,Women,Senior,,Linked with Qualifiers for the FIFA Women's World Cup and Women's Olympic Football Tournament.,n_c_america_concacaf_women_s_championship.png
+CONCACAF,,CONCACAF Women's Qualifiers,qualifiers,,National Teams,Women,Senior,,Qualifiers for CONCACAF Women's Championship,n_c_america_concacaf_women_s_qualifiers.png
+CONCACAF,,CONCACAF Women's U-17 Championship,cup,,National Teams,Women,Youth,,,n_c_america_concacaf_women_s_u_17_championship.png
+CONCACAF,,CONCACAF Women's U-20 Championship,cup,,National Teams,Women,Youth,,,n_c_america_concacaf_women_s_u_20_championship.png
+CONCACAF,,CONCACAF Women's U-20 Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for CONCACAF Women's U-20 Championship,n_c_america_concacaf_women_s_u_20_qualifiers.png
+CONCACAF,,CONCACAF Women's U-17 Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for CONCACAF Women's U-17 Championship,n_c_america_concacaf_women_s_u_17_qualifiers.png
+CONCACAF,Cayman Islands,Charity Shield,cup,,Super Cup,Men,Senior,,,cayman_islands_charity_shield.png
+CONCACAF,Guadeloupe,Trophée des Champions,cup,,Super Cup,Men,Senior,,,guadeloupe_trophee_des_champions.png
+CONCACAF,Mexico,SuperCopa MX,cup,,Super Cup,Men,Senior,,,mexico_supercopa_mx.png
+CONCACAF,Mexico,Campeón de Campeones,unknown,,Super Cup,Men,Senior,,,mexico_campeon_de_campeones.png
+CONCACAF,Suriname,President's Cup,cup,,Super Cup,Men,Senior,,,suriname_president_s_cup.png
+CONCACAF,Anguilla,Premier League,league,1st-tier,,Men,Senior,,,anguilla_premier_league.png
+CONCACAF,Anguilla,AFL Women's League,league,1st-tier,,Women,Senior,,,anguilla_afl_women_s_league.png
+CONCACAF,Anguilla,Anguilla U17 League,league,1st-tier,,Men,Youth,,,anguilla_anguilla_u17_league.png
+CONCACAF,Antigua & Barbuda,ABFA Premier League,league,2nd-tier,,Men,Senior,,,antigua_and_barbuda_abfa_premier_league.png
+CONCACAF,Aruba,Division di Honor,league,1st-tier,,Men,Senior,,,aruba_division_di_honor.png
+CONCACAF,Aruba,Division Uno,league,2nd-tier,,Men,Senior,,,aruba_division_uno.png
+CONCACAF,Aruba,Division Dos,league,3rd-tier,,Men,Senior,,,aruba_division_dos.png
+CONCACAF,Aruba,Division Damas,league,1st-tier,,Women,Senior,,,aruba_division_damas.png
+CONCACAF,Bahamas,BFA Senior League,league,1st-tier,,Men,Senior,,,bahamas_bfa_senior_league.png
+CONCACAF,Barbados,Premier League,league,1st-tier,,Men,Senior,,,barbados_premier_league.png
+CONCACAF,Barbados,Division One,league,2nd-tier,,Men,Senior,,,barbados_division_one.png
+CONCACAF,Barbados,Womens Premier League,league,1st-tier,,Women,Senior,,,barbados_womens_premier_league.png
+CONCACAF,Belize,Premier League of Belize,league,1st-tier,,Men,Senior,,,belize_premier_league_of_belize.png
+CONCACAF,Bermuda,Premier Division,league,1st-tier,,Men,Senior,,,bermuda_premier_division.png
+CONCACAF,Bermuda,First Division,league,2nd-tier,,Men,Senior,,,bermuda_first_division.png
+CONCACAF,Bonaire,Kampionato,league,1st-tier,,Men,Senior,,,bonaire_kampionato.png
+CONCACAF,British Virgin Islands,BVIFA National League,league,1st-tier,,Men,Senior,,,british_virgin_islands_bvifa_national_league.png
+CONCACAF,British Virgin Islands,BVIFA Division One,league,2nd-tier,,Men,Senior,,,british_virgin_islands_bvifa_division_one.png
+CONCACAF,Canada,Canadian Premier League,league,1st-tier,,Men,Senior,,,canada_canadian_premier_league.png
+CONCACAF,Canada,Canadian Soccer League,league,2nd-tier,,Men,Senior,,,canada_canadian_soccer_league.png
+CONCACAF,Cayman Islands,CIFA Premier League,league,1st-tier,,Men,Senior,,,cayman_islands_cifa_premier_league.png
+CONCACAF,Cayman Islands,Division One,league,2nd-tier,,Men,Senior,,,cayman_islands_division_one.png
+CONCACAF,Costa Rica,Liga Promérica,league,1st-tier,,Men,Senior,,,costa_rica_liga_promerica.png
+CONCACAF,Cuba,Campeonato Nacional,league,1st-tier,,Men,Senior,,,cuba_campeonato_nacional.png
+CONCACAF,Curaçao,Sekshon Pagá,league,1st-tier,,Men,Senior,,,curacao_sekshon_paga.png
+CONCACAF,Curaçao,Second Division,league,2nd-tier,,Men,Senior,,,curacao_second_division.png
+CONCACAF,Dominica,Premier League,league,1st-tier,,Men,Senior,,,dominica_premier_league.png
+CONCACAF,Dominica,Women League,league,1st-tier,,Women,Senior,,,dominica_women_league.png
+CONCACAF,Dominican Republic,Liga Dominicana de Fútbol,league,1st-tier,,Men,Senior,,,dominican_republic_liga_dominicana_de_futbol.png
+CONCACAF,El Salvador,Primera División,league,1st-tier,,Men,Senior,,,el_salvador_primera_division.png
+CONCACAF,French Guiana,Régional 1,league,1st-tier,,Men,Senior,,,french_guiana_regional_1.png
+CONCACAF,Grenada,Premier Division,league,1st-tier,,Men,Senior,,,grenada_premier_division.png
+CONCACAF,Grenada,First Division,league,2nd-tier,,Men,Senior,,,grenada_first_division.png
+CONCACAF,Grenada,National Youth League,league,,,Men,Youth,,,grenada_national_youth_league.png
+CONCACAF,Guadeloupe,Ligue Régionale 1,league,1st-tier,,Men,Senior,,,guadeloupe_ligue_regionale_1.png
+CONCACAF,Guadeloupe,Ligue Régionale 2,league,2nd-tier,,Men,Senior,,,guadeloupe_ligue_regionale_2.png
+CONCACAF,Guatemala,Liga Nacional,league,1st-tier,,Men,Senior,,,guatemala_liga_nacional.png
+CONCACAF,Honduras,Liga Nacional,league,1st-tier,,Men,Senior,,,honduras_liga_nacional.png
+CONCACAF,Jamaica,Jamaica Premier League,league,1st-tier,,Men,Senior,,,jamaica_jamaica_premier_league.png
+CONCACAF,Jamaica,JFF National Tier II Football Competition,league,2nd-tier,,Men,Senior,,,jamaica_jff_national_tier_ii_football_competition.png
+CONCACAF,Martinique,Division d'Honneur,league,1st-tier,,Men,Senior,,,martinique_division_d_honneur.png
+CONCACAF,Martinique,Promotion d'Honneur Régionale,league,2nd-tier,,Men,Senior,,,martinique_promotion_d_honneur_regionale.png
+CONCACAF,Mexico,Liga MX,league,1st-tier,,Men,Senior,,,mexico_liga_mx.png
+CONCACAF,Mexico,Ascenso MX,unknown,2nd-tier,,Men,Senior,defunct,,mexico_ascenso_mx.png
+CONCACAF,Mexico,Liga de Expansión MX,league,2nd-tier,,Men,Senior,,,mexico_liga_de_expansion_mx.png
+CONCACAF,Nicaragua,Primera División,league,1st-tier,,Men,Senior,,,nicaragua_primera_division.png
+CONCACAF,Panama,Liga Panameña de Fútbol,league,1st-tier,,Men,Senior,,,panama_liga_panamena_de_futbol.png
+CONCACAF,Puerto Rico,Liga Puerto Rico,league,1st-tier,,Men,Senior,,,puerto_rico_liga_puerto_rico.png
+CONCACAF,Saint-Martin,SMFA Senior Championship,league,1st-tier,,Men,Senior,,,saint_martin_smfa_senior_championship.png
+CONCACAF,Sint Maarten,Senior League,league,1st-tier,,Men,Senior,,,sint_maarten_senior_league.png
+CONCACAF,Saint Kitts & Nevis,SKNFA Premier League,league,1st-tier,,Men,Senior,,,st_kitts_and_nevis_sknfa_premier_league.png
+CONCACAF,Saint Kitts & Nevis,Division 1,league,2nd-tier,,Men,Senior,,,st_kitts_and_nevis_division_1.png
+CONCACAF,Suriname,Topklasse,league,1st-tier,,Men,Senior,,,suriname_topklasse.png
+CONCACAF,Suriname,Hoofdklasse,league,2nd-tier,,Men,Senior,,,suriname_hoofdklasse.png
+CONCACAF,Trinidad & Tobago,TT Pro League,league,1st-tier,,Men,Senior,,,trinidad_and_tobago_tt_pro_league.png
+CONCACAF,Trinidad & Tobago,TT Pro League 2,league,2nd-tier,,Men,Senior,,,trinidad_and_tobago_tt_pro_league_2.png
+CONCACAF,USA,MLS,league,1st-tier,,Men,Senior,,,united_states_mls.png
+CONCACAF,USA,USL Championship,league,2nd-tier,,Men,Senior,,,united_states_usl_championship.png
+CONCACAF,USA,USL League One,league,3rd-tier,,Men,Senior,,,united_states_usl_league_one.png
+CONCACAF,USA,NASL,league,1st-tier,,Men,Senior,defunct,,united_states_nasl.png
+CONCACAF,USA,NWSL,league,1st-tier,,Women,Senior,,,united_states_nwsl.png
+CONCACAF,US Virgin Islands,USVI Soccer League,league,1st-tier,,Men,Senior,,,us_virgin_islands_usvi_soccer_league.png
+CONMEBOL,,Copa Libertadores,cup,1st-tier,Clubs,Men,Senior,,,south_america_copa_libertadores.png
+CONMEBOL,,Copa Sudamericana,cup,2nd-tier,Clubs,Men,Senior,,,south_america_copa_sudamericana.png
+CONMEBOL,,Recopa Sudamericana,cup,3rd-tier,Clubs,Men,Senior,,,south_america_recopa_sudamericana.png
+CONMEBOL,,Copa CONMEBOL Libertadores Femenina,cup,,Clubs,Women,Senior,,,south_america_copa_conmebol_libertadores_femenina.png
+CONMEBOL,Argentina,Copa Liga Profesional,cup,,League cup,Men,Senior,,,argentina_copa_liga_profesional.png
+CONMEBOL,Peru,Copa Inca,cup,,League cup,Men,Senior,,,peru_copa_inca.png
+CONMEBOL,Argentina,Copa Argentina,cup,,National Cup,Men,Senior,,,argentina_copa_argentina.png
+CONMEBOL,Brazil,Copa do Brasil,cup,,National Cup,Men,Senior,,,brazil_copa_do_brasil.png
+CONMEBOL,Chile,Copa Chile,cup,,National Cup,Men,Senior,,,chile_copa_chile.png
+CONMEBOL,Colombia,Copa Colombia,cup,,National Cup,Men,Senior,,,colombia_copa_colombia.png
+CONMEBOL,Ecuador,Copa Ecuador,cup,,National Cup,Men,Senior,,,ecuador_copa_ecuador.png
+CONMEBOL,Paraguay,Copa Paraguay,cup,,National Cup,Men,Senior,,,paraguay_copa_paraguay.png
+CONMEBOL,Peru,Copa Bicentenario,cup,,National Cup,Men,Senior,,,peru_copa_bicentenario.png
+CONMEBOL,Uruguay,Copa Uruguay,cup,,National Cup,Men,Senior,,,uruguay_copa_uruguay.png
+CONMEBOL,Venezuela,Copa Venezuela,cup,,National Cup,Men,Senior,,,venezuela_copa_venezuela.png
+CONMEBOL,,Copa America,cup,,National Teams,Men,Senior,,,south_america_copa_america.png
+CONMEBOL,,WC Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for World Cup,south_america_wc_qualification.png
+CONMEBOL,,Sudamericano U20,cup,,National Teams,Men,Youth,,,south_america_sudamericano_u20.png
+CONMEBOL,,Sudamericano U17,cup,,National Teams,Men,Youth,,,south_america_sudamericano_u17.png
+CONMEBOL,,CONMEBOL PreOlímpico,qualifiers,,National Teams,Men,Senior,,Qualifiers for Men's Olympic Football Tournament,south_america_conmebol_preolimpico.png
+CONMEBOL,,Copa América Femenina,cup,,National Teams,Women,Senior,,inked with Qualifiers for the FIFA Women's World Cup and Women's Olympic Football Tournament,south_america_copa_america_femenina.png
+CONMEBOL,Brazil,Copa do Nordeste,cup,,State Cup,Men,Senior,,,brazil_copa_do_nordeste.png
+CONMEBOL,Brazil,Copa Paulista,cup,,State Cup,Men,Senior,,,brazil_copa_paulista.png
+CONMEBOL,Brazil,Copa Rio,cup,,State Cup,Men,Senior,,,brazil_copa_rio.png
+CONMEBOL,Argentina,Supercopa Argentina,cup,,Super Cup,Men,Senior,,,argentina_supercopa_argentina.png
+CONMEBOL,Brazil,Supercopa do Brasil,super_cup,,Super Cup,Men,Senior,,,brazil_supercopa_do_brasil.png
+CONMEBOL,Chile,Supercopa de Chile,super_cup,,Super Cup,Men,Senior,,,chile_supercopa_de_chile.png
+CONMEBOL,Colombia,Superliga de Colombia,cup,,Super Cup,Men,Senior,,,colombia_superliga_de_colombia.png
+CONMEBOL,Ecuador,Supercopa,super_cup,,Super Cup,Men,Senior,,,ecuador_supercopa.png
+CONMEBOL,Paraguay,Supercopa,cup,,Super Cup,Men,Senior,,,paraguay_supercopa.png
+CONMEBOL,Uruguay,Supercopa Uruguaya,cup,,Super Cup,Men,Senior,,,uruguay_supercopa_uruguaya.png
+CONMEBOL,Argentina,Liga Profesional de Fútbol,league,1st-tier,,Men,Senior,,,argentina_liga_profesional_de_futbol.png
+CONMEBOL,Argentina,Primera Nacional,league,2nd-tier,,Men,Senior,,,argentina_primera_b_nacional.png
+CONMEBOL,Argentina,Torneo Federal A,league,3rd-tier,,Men,Senior,,,argentina_torneo_federal_a.png
+CONMEBOL,Argentina,Primera B Metropolitana,league,3rd-tier,,Men,Senior,,,argentina_primera_b_metropolitana.png
+CONMEBOL,Bolivia,División Profesional,league,1st-tier,,Men,Senior,,,bolivia_lfpb.png
+CONMEBOL,Brazil,Série A,league,1st-tier,,Men,Senior,,,brazil_serie_a.png
+CONMEBOL,Brazil,Série B,league,2nd-tier,,Men,Senior,,,brazil_serie_b.png
+CONMEBOL,Brazil,Série C,league,3rd-tier,,Men,Senior,,,brazil_serie_c.png
+CONMEBOL,Brazil,Série D,league,4th-tier,,Men,Senior,,,brazil_serie_d.png
+CONMEBOL,Brazil,Campeonato Acreano ,league,5th-tier,,Men,Senior,,,brazil_acreano_1a_divisao.png
+CONMEBOL,Brazil,Campeonato Alagoano ,league,5th-tier,,Men,Senior,,,brazil_alagoas_1a_divisao.png
+CONMEBOL,Brazil,Campeonato Baiano ,league,5th-tier,,Men,Senior,,,brazil_baiano_1a_divisao.png
+CONMEBOL,Brazil,Campeonato Brasiliense,league,5th-tier,,Men,Senior,,,brazil_campeonato_brasiliense.png
+CONMEBOL,Brazil,Campeonato Carioca,league,5th-tier,,Men,Senior,,,brazil_campeonato_carioca.png
+CONMEBOL,Brazil,Campeonato Catarinense,league,5th-tier,,Men,Senior,,,brazil_campeonato_catarinense.png
+CONMEBOL,Brazil,Campeonato Gaúcho,league,5th-tier,,Men,Senior,,,brazil_campeonato_gaucho.png
+CONMEBOL,Brazil,Campeonato Goiano,league,5th-tier,,Men,Senior,,,brazil_campeonato_goiano.png
+CONMEBOL,Brazil,Campeonato Mineiro,league,5th-tier,,Men,Senior,,,brazil_campeonato_mineiro.png
+CONMEBOL,Brazil,Campeonato Paraense,league,5th-tier,,Men,Senior,,,brazil_campeonato_paraense.png
+CONMEBOL,Brazil,Campeonato Paranaense,league,5th-tier,,Men,Senior,,,brazil_campeonato_paranaense.png
+CONMEBOL,Brazil,Campeonato Potiguar,league,5th-tier,,Men,Senior,,,brazil_campeonato_potiguar.png
+CONMEBOL,Brazil,Campeonato Cearense,league,5th-tier,,Men,Senior,,,brazil_cearense_serie_a.png
+CONMEBOL,Brazil,Campeonato Paraibano,league,5th-tier,,Men,Senior,,,brazil_paraiba_1a_divisao.png
+CONMEBOL,Brazil,Campeonato Pernambucano,league,5th-tier,,Men,Senior,,,brazil_pernambuco_serie_a1.png
+CONMEBOL,Brazil,Campeonato Sergipão,league,5th-tier,,Men,Senior,,,brazil_sergipano_1a_divisao.png
+CONMEBOL,Brazil,São Paulo Youth Cup,cup,,,Men,Youth,,,brazil_sao_paulo_youth_cup.png
+CONMEBOL,Brazil,CBF Brasileiro U20,league,,,Men,Youth,,,brazil_cbf_brasileiro_u20.png
+CONMEBOL,Brazil,Brasileirão Feminino - Série A1,league,1st-tier,,Women,Senior,,,brazil_brasileirao_feminino_serie_a1.png
+CONMEBOL,Chile,Primera División,league,1st-tier,,Men,Senior,,,chile_primera_division.png
+CONMEBOL,Chile,Liga de Ascenso,league,2nd-tier,,Men,Senior,,,chile_liga_de_ascenso.png
+CONMEBOL,Chile,Segunda Division,league,3rd-tier,,Men,Senior,,,chile_segunda_division.png
+CONMEBOL,Chile,Tercera Division,league,4th-tier,,Men,Senior,,,chile_tercera_division.png
+CONMEBOL,Colombia,Liga Águila,league,1st-tier,,Men,Senior,,,colombia_liga_aguila.png
+CONMEBOL,Colombia,Torneo Águila,league,2nd-tier,,Men,Senior,,,colombia_torneo_aguila.png
+CONMEBOL,Ecuador,Copa Pilsener Serie A,league,1st-tier,,Men,Senior,,,ecuador_copa_pilsener_serie_a.png
+CONMEBOL,Ecuador,Copa Pilsener Serie B,league,2nd-tier,,Men,Senior,,,ecuador_copa_pilsener_serie_b.png
+CONMEBOL,Paraguay,Primera División,league,1st-tier,,Men,Senior,,,paraguay_primera_division.png
+CONMEBOL,Paraguay,Division Intermedia,league,2nd-tier,,Men,Senior,,,paraguay_division_intermedia.png
+CONMEBOL,Peru,Primera División,league,1st-tier,,Men,Senior,,,peru_primera_division.png
+CONMEBOL,Peru,Segunda División,league,2nd-tier,,Men,Senior,,,peru_segunda_division.png
+CONMEBOL,Uruguay,Primera División,league,1st-tier,,Men,Senior,,,uruguay_primera_division.png
+CONMEBOL,Uruguay,Segunda División,league,2nd-tier,,Men,Senior,,,uruguay_segunda_division.png
+CONMEBOL,Uruguay,Primera Divisional C,league,3rd-tier,,Men,Senior,,,uruguay_primera_divisional_c.png
+CONMEBOL,Uruguay,Primera División Femenina,league,1st-tier,,Women,Senior,,,uruguay_primera_division_femenina.png
+CONMEBOL,Venezuela,Primera División,league,1st-tier,,Men,Senior,,,venezuela_primera_division.png
+FIFA,,FIFA Club World Cup,cup,1st-tier,Clubs,Men,Senior,,,world_fifa_club_world_cup.png
+FIFA,,FIFA Intercontinental Cup,cup,2nd-tier,Clubs,Men,Senior,,,world_fifa_intercontinental_cup.png
+FIFA,,FIFA Women's Champions Cup,cup,,Clubs,Women,Senior,,,world_fifa_women_s_champions_cup.png
+FIFA,,FIFA World Cup,cup,1st-tier,National Teams,Men,Senior,,,world_fifa_world_cup.png
+FIFA,,Summer Olympics,cup,2nd-tier,National Teams,Men,Senior,,,world_summer_olympics.png
+FIFA,,FIFA Women's World Cup,cup,1st-tier,National Teams,Women,Youth,,,world_fifa_women_s_world_cup.png
+FIFA,,FIFA U-20 World Cup,cup,,National Teams,Men,Youth,,,world_fifa_u_20_world_cup.png
+FIFA,,Pan American Games,cup,,National Teams,Men,Senior,,,world_pan_american_games.png
+FIFA,,FIFA U-17 World Cup,cup,,National Teams,Men,Youth,,,world_fifa_u_17_world_cup.png
+FIFA,,Women's Finalissima,cup,2nd-tier,National Teams,Women,Senior,,,world_women_s_finalissima.png
+FIFA,,FIFA Friendlies,friendly,,National Teams,Men,Senior,,,world_fifa_friendlies.png
+FIFA,,Finalissima,cup,3rd-tier,National Teams,Men,Senior,,,world_finalissima.png
+FIFA,,FIFA U-20 Women's World Cup,cup,,National Teams,Women,Youth,,,world_fifa_u_20_women_s_world_cup.png
+FIFA,,FIFA U-17 Women's World Cup,cup,,National Teams,Women,Youth,,,world_fifa_u_17_women_s_world_cup.png
+FIFA,,FIFA Youth Friendlies,friendly,,National Teams,Men,Youth,,,world_fifa_youth_friendlies.png
+OFC,Fiji,Inter District Competition,cup,,Amateur Cup,Men,Senior,,,fiji_inter_district_competition.png
+OFC,,OFC Champions League,cup,,Clubs,Men,Senior,,,oceania_ofc_champions_league.png
+OFC,Fiji,Battle of Giants,cup,,League cup,Men,Senior,,,fiji_battle_of_giants.png
+OFC,Cook Islands,FA Cup,cup,,National Cup,Men,Senior,,,cook_islands_fa_cup.png
+OFC,Fiji,Fiji FACT,cup,,National Cup,Men,Senior,,,fiji_fiji_fact.png
+OFC,,WC Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for World Cup,oceania_wc_qualification.png
+OFC,,OFC Nations Cup,cup,,National Teams,Men,Senior,,,oceania_ofc_nations_cup.png
+OFC,,Pacific Games,cup,,National Teams,Men,Senior,,,oceania_pacific_games.png
+OFC,,OFC U-19 Championship,cup,,National Teams,Men,Youth,,,oceania_ofc_u_20_championship.png
+OFC,,OFC U-19 Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for OFC U-19 Championship,oceania_ofc_u_20_qualifiers.png
+OFC,,OFC U-16 Championship,cup,,National Teams,Men,Youth,,,oceania_ofc_u_17_championship.png
+OFC,,OFC U-16 Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for OFC U-16 Championship,oceania_ofc_u_17_qualifiers.png
+OFC,,OFC Women's Nations Cup,cup,,National Teams,Women,Senior,,Women's cup; Linked with Qualifiers for the FIFA Women's World Cup and Women's Olympic Football Tournament.,oceania_ofc_women_s_nations_cup.png
+OFC,,OFC Women's Nations Cup Qualifiers,qualifiers,,National Teams,Women,Senior,,Qualifiers for OFC Women's Nations Cup,oceania_ofc_women_s_nations_cup_qualifiers.png
+OFC,,OFC U-19 Women's Championship,cup,,National Teams,Women,Youth,,,oceania_ofc_u_19_women_s_championship.png
+OFC,Cook Islands,Charity Shield,cup,,Super Cup,Men,Senior,,,cook_islands_charity_shield.png
+OFC,Fiji,Champion vs Champion,cup,,Super Cup,Men,Senior,,,fiji_champion_vs_champion.png
+OFC,American Samoa,FFAS Senior League Division 1,league,1st-tier,,Men,Senior,,,american_samoa_ffas_senior_league_division_1.png
+OFC,Cook Islands,CIFA Premiership,league,1st-tier,,Men,Senior,,,cook_islands_cifa_premiership.png
+OFC,Fiji,Premier League,league,1st-tier,,Men,Senior,,,fiji_premier_league.png
+OFC,New Caledonia,Super Ligue,league,1st-tier,,Men,Senior,,,new_caledonia_super_ligue.png
+OFC,New Zealand,New Zealand National League,league,1st-tier,,Men,Senior,,,new_zealand_new_zealand_national_league.png
+OFC,Papua New Guinea,National Soccer League,league,1st-tier,,Men,Senior,,,papua_new_guinea_national_soccer_league.png
+OFC,Samoa,FFS Premier League,league,1st-tier,,Men,Senior,,,samoa_ffs_premier_league.png
+OFC,Solomon Islands,Telekom S-League,league,1st-tier,,Men,Senior,,,solomon_islands_telekom_s_league.png
+OFC,Tahiti,Ligue 1,league,1st-tier,,Men,Senior,,,tahiti_ligue_1.png
+OFC,Tahiti,Ligue 2,league,2nd-tier,,Men,Senior,,,tahiti_ligue_2.png
+OFC,Tonga,Premier Division,league,1st-tier,,Men,Senior,,,tonga_premier_division.png
+UEFA,England,Football League Trophy,cup,,Domestic Cup,Men,Senior,,,england_football_league_trophy.png
+UEFA,England,FA Trophy,cup,,Amateur Cup,Men,Senior,,,england_fa_trophy.png
+UEFA,Switzerland,Erste Liga Cup,cup,,Amateur Cup,Men,Senior,,,switzerland_erste_liga_cup.png
+UEFA,,UEFA Champions League,cup,1st-tier,Clubs,Men,Senior,,,europe_uefa_champions_league.png
+UEFA,,UEFA Europa League,cup,2nd-tier,Clubs,Men,Senior,,,europe_uefa_europa_league.png
+UEFA,,UEFA Europa Conference League,cup,3rd-tier,Clubs,Men,Senior,,,europe_uefa_europa_conference_league.png
+UEFA,,UEFA Super Cup,cup,4th-tier,Clubs,Men,Senior,,,europe_uefa_super_cup.png
+UEFA,,UEFA Youth League,cup,,Clubs,Men,Youth,,,europe_uefa_youth_league.png
+UEFA,,UEFA Women's Champions League,cup,1st-tier,Clubs,Women,Senior,,,europe_uefa_women_s_champions_league.png
+UEFA,,UEFA Women's Europa Cup,cup,2nd-tier,Clubs,Women,Senior,,,europe_uefa_women_s_europa_cup.png
+UEFA,England,Football League Cup,cup,,League cup,Men,Senior,,,england_football_league_cup.png
+UEFA,Finland,Liigacup,cup,,League cup,Men,Senior,,,finland_liigacup.png
+UEFA,France,Coupe de la Ligue,cup,,League cup,Men,Senior,defunct,,france_coupe_de_la_ligue.png
+UEFA,France,Coupe LFFP,cup,,League cup,Women,Senior,,,france_coupe_lffp.png
+UEFA,Hungary,Magyar Ligakupa,cup,,League cup,Men,Senior,defunct,,hungary_magyar_ligakupa.png
+UEFA,Israel,Toto Cup Al,cup,,League cup,Men,Senior,,,israel_toto_cup_al.png
+UEFA,Northern Ireland,League Cup,cup,,League cup,Men,Senior,,,northern_ireland_league_cup.png
+UEFA,Portugal,Taça da Liga,cup,,League cup,Men,Senior,,,portugal_taca_da_liga.png
+UEFA,Republic of Ireland,League of Ireland Cup,cup,,League cup,Men,Senior,,,republic_of_ireland_league_of_ireland_cup.png
+UEFA,Romania,Cupa Ligii,cup,,League cup,Men,Senior,,,romania_cupa_ligii.png
+UEFA,Scotland,Scottish League Cup,cup,,League cup,Men,Senior,,,scotland_scottish_league_cup.png
+UEFA,Wales,League Cup,cup,,League cup,Men,Senior,,,wales_league_cup.png
+UEFA,Scotland,Scottish Challenge Cup,cup,,Domestic Cup,Men,Senior,,,scotland_scottish_challenge_cup.png
+UEFA,Albania,Kupa e Shqipërisë,cup,,National Cup,Men,Senior,,,albania_kupa_e_shqiperise.png
+UEFA,Andorra,Copa Constitució,cup,,National Cup,Men,Senior,,,andorra_copa_constitucio.png
+UEFA,Armenia,Armenian Cup,cup,,National Cup,Men,Senior,,,armenia_armenian_cup.png
+UEFA,Austria,ÖFB Cup,cup,,National Cup,Men,Senior,,,austria_ofb_cup.png
+UEFA,Azerbaijan,Azərbaycan Kuboku,cup,,National Cup,Men,Senior,,,azerbaijan_azrbaycan_kuboku.png
+UEFA,Belarus,Kubok Belarusi,cup,,National Cup,Men,Senior,,,belarus_kubok_belarusi.png
+UEFA,Belgium,Coupe de Belgique,unknown,,National Cup,Men,Senior,,,belgium_coupe_de_belgique.png
+UEFA,Bosnia & Herzegovina,BiH Kup,cup,,National Cup,Men,Senior,,,bosnia_and_herzegovina_bih_kup.png
+UEFA,Bulgaria,Kupa na Bulgarija,cup,,National Cup,Men,Senior,,,bulgaria_kupa_na_bulgarija.png
+UEFA,Croatia,HR Nogometni Kup,cup,,National Cup,Men,Senior,,,croatia_hr_nogometni_kup.png
+UEFA,Cyprus,Kypello Kyprou,cup,,National Cup,Men,Senior,,,cyprus_kypello_kyprou.png
+UEFA,Czechia,Pohár FAČR,cup,,National Cup,Men,Senior,,,czechia_pohar_cmfs.png
+UEFA,Denmark,Pokalen,cup,,National Cup,Men,Senior,,,denmark_dbu_pokalen.png
+UEFA,England,FA Cup,cup,,National Cup,Men,Senior,,,england_fa_cup.png
+UEFA,Estonia,Eesti Karikas,cup,,National Cup,Men,Senior,,,estonia_eesti_karikas.png
+UEFA,Faroe Islands,Løgmanssteypið,cup,,National Cup,Men,Senior,,,faroe_islands_lgmanssteypi.png
+UEFA,Finland,Suomen Cup,cup,,National Cup,Men,Senior,,,finland_suomen_cup.png
+UEFA,France,Coupe de France,cup,,National Cup,Men,Senior,,,france_coupe_de_france.png
+UEFA,France,Coupe de France Féminine,cup,,National Cup,Women,Senior,,,france_coupe_de_france_feminine.png
+UEFA,Georgia,David Kipiani Cup,cup,,National Cup,Men,Senior,,,georgia_david_kipiani_cup.png
+UEFA,Germany,DFB-Pokal,cup,,National Cup,Men,Senior,,,germany_dfb_pokal.png
+UEFA,Germany,Frauen DFB-Pokal,cup,,National Cup,Women,Senior,,,germany_frauen_dfb_pokal.png
+UEFA,Germany,DFB-Junioren-Vereinspokal,cup,,National Cup,Men,Youth,,,germany_dfb_junioren_vereinspokal.png
+UEFA,Greece,Greek Cup,cup,,National Cup,Men,Senior,,,greece_greek_cup.png
+UEFA,Hungary,Magyar Kupa,cup,,National Cup,Men,Senior,,,hungary_magyar_kupa.png
+UEFA,Iceland,Mjólkurbikar,cup,,National Cup,Men,Senior,,,iceland_mjolkurbikar.png
+UEFA,Iceland,Mjólkurbikar kvenna,cup,,National Cup,Women,Senior,,,iceland_mjolkurbikar_kvenna.png
+UEFA,Israel,State Cup,cup,,National Cup,Men,Senior,,,israel_state_cup.png
+UEFA,Italy,Coppa Italia,cup,,National Cup,Men,Senior,,,italy_coppa_italia.png
+UEFA,Kazakhstan,Kubok Kazahstana,cup,,National Cup,Men,Senior,,,kazakhstan_kubok_kazahstana.png
+UEFA,Latvia,Latvijas kauss,cup,,National Cup,Men,Senior,,,latvia_latvijas_kauss.png
+UEFA,Liechtenstein,FL1-Aktiv Cup,cup,,National Cup,Men,Senior,,,liechtenstein_fl1_aktiv_cup.png
+UEFA,Lithuania,LFF taurės,cup,,National Cup,Men,Senior,,,lithuania_lff_taures.png
+UEFA,Luxembourg,Coupe de Luxembourg,cup,,National Cup,Men,Senior,,,luxembourg_coupe_de_luxembourg.png
+UEFA,Malta,FA Trophy,cup,,National Cup,Men,Senior,,,malta_fa_trophy.png
+UEFA,Moldova,Cupa Moldovei,cup,,National Cup,Men,Senior,,,moldova_cupa_moldovei.png
+UEFA,Montenegro,Kup Crne Gore,cup,,National Cup,Men,Senior,,,montenegro_kup_crne_gore.png
+UEFA,Netherlands,KNVB Beker,cup,,National Cup,Men,Senior,,,netherlands_knvb_beker.png
+UEFA,North Macedonia,Kup na Makedoniјa,cup,,National Cup,Men,Senior,,,north_macedonia_kup_na_makedonia.png
+UEFA,Northern Ireland,Irish Cup,cup,,National Cup,Men,Senior,,,northern_ireland_irish_cup.png
+UEFA,Northern Ireland,NIFL Charity Shield,cup,,National Cup,Men,Senior,,,northern_ireland_nifl_charity_shield.png
+UEFA,Norway,NM Cupen,cup,,National Cup,Men,Senior,,,norway_nm_cupen.png
+UEFA,Poland,Puchar Polski,cup,,National Cup,Men,Senior,,,poland_puchar_polski.png
+UEFA,Portugal,Taça de Portugal,cup,,National Cup,Men,Senior,,,portugal_taca_de_portugal.png
+UEFA,Republic of Ireland,FAI Cup,cup,,National Cup,Men,Senior,,,republic_of_ireland_fai_cup.png
+UEFA,Romania,Cupa României,cup,,National Cup,Men,Senior,,,romania_cupa_romaniei.png
+UEFA,Russia,Russian Cup,cup,,National Cup,Men,Senior,,,russia_russian_cup.png
+UEFA,San Marino,Coppa Titano,cup,,National Cup,Men,Senior,,,san_marino_coppa_titano.png
+UEFA,Scotland,Scottish Cup,cup,,National Cup,Men,Senior,,,scotland_scottish_cup.png
+UEFA,Serbia,Kup Srbije,cup,,National Cup,Men,Senior,,,serbia_kup_srbije.png
+UEFA,Slovakia,Slovenský Pohár,cup,,National Cup,Men,Senior,,,slovakia_slovensky_pohar.png
+UEFA,Slovenia,Pokal Slovenije,cup,,National Cup,Men,Senior,,,slovenia_pokal_slovenije.png
+UEFA,Slovenia,Ženski Pokal NZS,cup,,National Cup,Women,Senior,,,slovenia_zenski_pokal_nzs.png
+UEFA,Spain,Copa del Rey,cup,,National Cup,Men,Senior,,,spain_copa_del_rey.png
+UEFA,Sweden,Svenska Cupen,cup,,National Cup,Men,Senior,,,sweden_svenska_cupen.png
+UEFA,Switzerland,Schweizer Pokal,cup,,National Cup,Men,Senior,,,switzerland_schweizer_pokal.png
+UEFA,Türkiye,Türkiye Kupası,cup,,National Cup,Men,Senior,,,turkiye_turkiye_kupas.png
+UEFA,Ukraine,Kubok Ukrainy,cup,,National Cup,Men,Senior,,,ukraine_kubok_ukrainy.png
+UEFA,,UEFA Nations League,cup,,National Teams,Men,Senior,,Linked with entry to the European Championship and the European Qualifiers for the FIFA World Cup.,europe_uefa_nations_league.png
+UEFA,,WC Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for World Cup,europe_wc_qualification.png
+UEFA,,European Championship,cup,,National Teams,Men,Senior,,,europe_european_championship.png
+UEFA,,UEFA Euro Qualification,qualifiers,,National Teams,Men,Senior,,Qualifiers for European Championship,europe_uefa_euro_qualification.png
+UEFA,,UEFA U-21 Championship,cup,,National Teams,Men,Youth,,,europe_uefa_u_21_championship.png
+UEFA,,UEFA U-21 Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for UEFA U-21 Championship,europe_uefa_u_21_qualifiers.png
+UEFA,,UEFA U-19 Championship,cup,,National Teams,Men,Youth,,,europe_uefa_u_19_championship.png
+UEFA,,UEFA U-19 Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for UEFA U-19 Championship,europe_uefa_u_19_qualifiers.png
+UEFA,,UEFA U-17 Championship,cup,,National Teams,Men,Youth,,,europe_uefa_u_17_championship.png
+UEFA,,UEFA U-17 Qualifiers,qualifiers,,National Teams,Men,Youth,,Qualifiers for UEFA U-17 Championship,europe_uefa_u_17_qualifiers.png
+UEFA,,Baltic Cup,cup,,National Teams,Men,Senior,,"Between the Estonian, Latvian and Lithuanian national teams.",europe_baltic_cup.png
+UEFA,,U-17 Baltic Cup,cup,,National Teams,Men,Youth,,,europe_u_17_baltic_cup.png
+UEFA,,UEFA Women's Nations League,cup,,National Teams,Women,Senior,,,europe_uefa_women_s_nations_league.png
+UEFA,,UEFA Women's EURO,cup,,National Teams,Women,Senior,,,europe_uefa_women_s_euro.png
+UEFA,,UEFA Women's EURO Qualifiers,qualifiers,,National Teams,Women,Senior,,Qualifiers for UEFA Women's EURO,europe_uefa_women_s_euro_qualifiers.png
+UEFA,,UEFA Women's U-17 Championship,women,,National Teams,Women,Youth,,,europe_uefa_women_s_u_17_championship.png
+UEFA,,UEFA Women's U-17 Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for UEFA Women's U-17 Championship,europe_uefa_women_s_u_17_qualifiers.png
+UEFA,,UEFA Women's U-19 Championship,women,,National Teams,Women,Youth,,,europe_uefa_women_s_u_19_championship.png
+UEFA,,UEFA Women's U-19 Qualifiers,qualifiers,,National Teams,Women,Youth,,Qualifiers for UEFA Women's U-19 Championship,europe_uefa_women_s_u_19_qualifiers.png
+UEFA,,Baltic Women's Cup,cup,,National Teams,Women,Youth,,,europe_baltic_women_s_cup.png
+UEFA,Albania,Superkupa e Shqipërisë,cup,,Super Cup,Men,Senior,,,albania_superkupa_e_shqiperise.png
+UEFA,Andorra,Supercopa,cup,,Super Cup,Men,Senior,,,andorra_supercopa.png
+UEFA,Armenia,Supercup,cup,,Super Cup,Men,Senior,,,armenia_supercup.png
+UEFA,Austria,ÖFB-Supercup,cup,,Super Cup,Men,Senior,,,austria_ofb_supercup.png
+UEFA,Azerbaijan,Azərbaycan Superkuboku,cup,,Super Cup,Men,Senior,,,azerbaijan_azrbaycan_superkuboku.png
+UEFA,Belarus,Superkubok Belarusi,cup,,Super Cup,Men,Senior,,,belarus_superkubok_belarusi.png
+UEFA,Belgium,Supercoupe de Belgique,unknown,,Super Cup,Men,Senior,,,belgium_supercoupe_de_belgique.png
+UEFA,Bulgaria,Superkupa na Bulgarija,cup,,Super Cup,Men,Senior,,,bulgaria_superkupa_na_bulgarija.png
+UEFA,Croatia,HR Nogometni Superkup,cup,,Super Cup,Men,Senior,,,croatia_hr_nogometni_superkup.png
+UEFA,Cyprus,Super Cup,cup,,Super Cup,Men,Senior,,,cyprus_ltv_super_cup.png
+UEFA,Czechia,Superpohár,cup,,Super Cup,Men,Senior,,,czechia_synot_tip_superpohar.png
+UEFA,England,FA Community Shield,cup,,Super Cup,Men,Senior,,,england_fa_community_shield.png
+UEFA,Estonia,Superkarikas,cup,,Super Cup,Men,Senior,,,estonia_superkarikas.png
+UEFA,Faroe Islands,Stórsteypadystur,cup,,Super Cup,Men,Senior,,,faroe_islands_storsteypadystur.png
+UEFA,France,Trophée des Champions,cup,,Super Cup,Men,Senior,,,france_trophee_des_champions.png
+UEFA,France,Trophée des Championnes,cup,,Super Cup,Women,Senior,,,france_trophee_des_championnes.png
+UEFA,Georgia,Georgian Super Cup,cup,,Super Cup,Men,Senior,,,georgia_georgian_super_cup.png
+UEFA,Germany,Franz Beckenbauer Supercup,cup,,Super Cup,Men,Senior,,,germany_franz_beckenbauer_supercup.png
+UEFA,Greece,Souper Kap Ellados,cup,,Super Cup,Men,Senior,defunct,,greece_souper_kap_ellados.png
+UEFA,Hungary,Szuperkupa,cup,,Super Cup,Men,Senior,,,hungary_szuperkupa.png
+UEFA,Iceland,Meistarakeppni,cup,,Super Cup,Men,Senior,,,iceland_meistarakeppni.png
+UEFA,Israel,Super Cup,cup,,Super Cup,Men,Senior,,,israel_super_cup.png
+UEFA,Italy,Supercoppa,cup,,Super Cup,Men,Senior,,,italy_supercoppa.png
+UEFA,Kazakhstan,Superkubok Kazahstana,cup,,Super Cup,Men,Senior,,,kazakhstan_superkubok_kazahstana.png
+UEFA,Lithuania,LFF Supertaurė,cup,,Super Cup,Men,Senior,,,lithuania_lff_supertaure.png
+UEFA,Malta,Super Cup,cup,,Super Cup,Men,Senior,,,malta_super_cup.png
+UEFA,Moldova,Supercupa Moldovei,cup,,Super Cup,Men,Senior,,,moldova_supercupa_moldovei.png
+UEFA,Netherlands,Johan Cruijff Schaal,cup,,Super Cup,Men,Senior,,,netherlands_johan_cruijff_schaal.png
+UEFA,North Macedonia,Superkup na Makedoniјa,cup,,Super Cup,Men,Senior,,,north_macedonia_superkup_na_makedonia.png
+UEFA,Poland,Superpuchar Polski,cup,,Super Cup,Men,Senior,,,poland_superpuchar_polski.png
+UEFA,Portugal,Supertaça Cândido de Oliveira,cup,,Super Cup,Men,Senior,,,portugal_supertaca_candido_de_oliveira.png
+UEFA,Portugal,Supertaça Feminina de Futbol,cup,,Super Cup,Women,Senior,,,portugal_supertaca_feminina_de_futbol.png
+UEFA,Republic of Ireland,FAI President's Cup,cup,,Super Cup,Men,Senior,,,republic_of_ireland_fai_president_s_cup.png
+UEFA,Romania,Supercupa României,cup,,Super Cup,Men,Senior,,,romania_supercupa_romaniei.png
+UEFA,Russia,Russian Super Cup,cup,,Super Cup,Men,Senior,,,russia_russian_super_cup.png
+UEFA,San Marino,Supercoppa,cup,,Super Cup,Men,Senior,,,san_marino_supercoppa.png
+UEFA,Slovakia,Slovenský Superpohár,cup,,Super Cup,Men,Senior,,,slovakia_slovensky_superpohar.png
+UEFA,Slovenia,Superpokal,cup,,Super Cup,Men,Senior,,,slovenia_superpokal.png
+UEFA,Spain,Supercopa de España,cup,,Super Cup,Men,Senior,,,spain_supercopa_de_espana.png
+UEFA,Sweden,Svenska Supercupen,cup,,Super Cup,Men,Senior,,,sweden_svenska_supercupen.png
+UEFA,Türkiye,TFF Süper Kupa,cup,,Super Cup,Men,Senior,,,turkiye_tff_super_kupa.png
+UEFA,Ukraine,Superkubok Ukrainy,cup,,Super Cup,Men,Senior,,,ukraine_superkubok_ukrainy.png
+UEFA,Albania,Kategoria Superiore,league,1st-tier,,Men,Senior,,,albania_kategoria_superiore.png
+UEFA,Albania,Kategoria e parë,league,2nd-tier,,Men,Senior,,,albania_kategoria_e_pare.png
+UEFA,Albania,Kategoria e Dytë,league,3rd-tier,,Men,Senior,,,albania_kategoria_e_dyte.png
+UEFA,Albania,Kategoria e Tretë,league,4th-tier,,Men,Senior,,,albania_kategoria_e_trete.png
+UEFA,Albania,U 19 superiore,league,1st-tier,,Men,Youth,,,albania_u_19_superiore.png
+UEFA,Albania,U 17 superiore,league,1st-tier,,Men,Youth,,,albania_u_17_superiore.png
+UEFA,Andorra,Primera Divisió,league,1st-tier,,Men,Senior,,,andorra_primera_divisio.png
+UEFA,Andorra,Segona Divisió,league,2nd-tier,,Men,Senior,,,andorra_segona_divisio.png
+UEFA,Armenia,Premier League,league,1st-tier,,Men,Senior,,,armenia_premier_league.png
+UEFA,Armenia,First Division,league,2nd-tier,,Men,Senior,,,armenia_first_division.png
+UEFA,Austria,Bundesliga,league,1st-tier,,Men,Senior,,,austria_bundesliga.png
+UEFA,Austria,2. Liga,league,2nd-tier,,Men,Senior,,,austria_2_liga.png
+UEFA,Austria,Regionalliga West,league,3rd-tier,,Men,Senior,,,austria_regionalliga.png
+UEFA,Austria,Regionalliga Mitte,league,3rd-tier,,Men,Senior,,,austria_regionalliga.png
+UEFA,Austria,Regionalliga Ost,league,3rd-tier,,Men,Senior,,,austria_regionalliga.png
+UEFA,Austria,Jugendliga U18,league,1st-tier,,Men,Youth,,,austria_jugendliga_u18.png
+UEFA,Austria,Frauen Bundesliga,league,1st-tier,,Women,Senior,,,austria_frauen_bundesliga.png
+UEFA,Austria,2. Frauenliga,league,2nd-tier,,Women,Senior,,,austria_2_frauenliga.png
+UEFA,Azerbaijan,Premyer Liqası,league,1st-tier,,Men,Senior,,,azerbaijan_premyer_liqas.png
+UEFA,Azerbaijan,Birinci Divizionu,league,2nd-tier,,Men,Senior,,,azerbaijan_birinci_divizionu.png
+UEFA,Belarus,Vyshaya Liha,league,1st-tier,,Men,Senior,,,belarus_vyshaya_liha.png
+UEFA,Belarus,Pervaya Liha,league,2nd-tier,,Men,Senior,,,belarus_pervaya_liha.png
+UEFA,Belarus,Vtorya Liha,league,3rd-tier,,Men,Senior,,,belarus_vtorya_liha.png
+UEFA,Belgium,Jupiler Pro League,league,1st-tier,,Men,Senior,,,belgium_jupiler_pro_league.png
+UEFA,Belgium,Challenger Pro League,league,2nd-tier,,Men,Senior,,,belgium_challenger_pro_league.png
+UEFA,Belgium,Nationale 1,league,3rd-tier,,Men,Senior,,,belgium_nationale_1.png
+UEFA,Belgium,Division 2,league,4th-tier,,Men,Senior,,,belgium_division_2.png
+UEFA,Belgium,Division 3,league,5th-tier,,Men,Senior,,,belgium_division_3.png
+UEFA,Belgium,Pro League U21 - Group 1,league,,,Men,Youth,,,belgium_pro_league_u21_group_1.png
+UEFA,Belgium,Pro League U21 - Group 2,league,,,Men,Youth,,,belgium_pro_league_u21_group_2.png
+UEFA,Belgium,U18 Elite,league,,,Men,Youth,,,belgium_u18_elite.png
+UEFA,Belgium,Superleague,league,1st-tier,,Women,Senior,,,belgium_superleague.png
+UEFA,Belgium,Division I National,league,2nd-tier,,Women,Senior,,,belgium_division_i_national.png
+UEFA,Bosnia & Herzegovina,Premier Liga,league,1st-tier,,Men,Senior,,,bosnia_and_herzegovina_premier_liga.png
+UEFA,Bosnia & Herzegovina,Prva Liga,league,2nd-tier,,Men,Senior,,,bosnia_and_herzegovina_prva_liga.png
+UEFA,Bulgaria,A PFG,unknown,1st-tier,,Men,Senior,,,bulgaria_a_pfg.png
+UEFA,Bulgaria,B PFG,unknown,2nd-tier,,Men,Senior,,,bulgaria_b_pfg.png
+UEFA,Croatia,Prva Liga,league,1st-tier,,Men,Senior,,,croatia_prva_liga.png
+UEFA,Croatia,2. HNL,league,2nd-tier,,Men,Senior,,,croatia_2_hnl.png
+UEFA,Cyprus,Cyprus League,league,1st-tier,,Men,Senior,,,cyprus_proathlita_cyta.png
+UEFA,Czechia,Fortuna Liga,league,1st-tier,,Men,Senior,,,czechia_fortuna_liga.png
+UEFA,Czechia,Národní Liga,league,2nd-tier,,Men,Senior,,,czechia_narodni_liga.png
+UEFA,Czechia,Bohemian Football League A,league,3rd-tier,,Men,Senior,,,czechia_3_liga.png
+UEFA,Czechia,Bohemian Football League B,league,3rd-tier,,Men,Senior,,,czechia_3_liga.png
+UEFA,Denmark,Superliga,league,1st-tier,,Men,Senior,,,denmark_superliga.png
+UEFA,Denmark,Betinia Liga,league,2nd-tier,,Men,Senior,,,denmark_nordicbet_liga.png
+UEFA,Denmark,2. Division,league,3rd-tier,,Men,Senior,,,denmark_2_division.png
+UEFA,Denmark,3. Division,league,4th-tier,,Men,Senior,,,denmark_3_division.png
+UEFA,Denmark,U19 Drenge Ligaen,league,1st-tier,,Men,Youth,,,denmark_u19_drenge_ligaen.png
+UEFA,Denmark,U19 Drenge Divisionen,league,2nd-tier,,Men,Youth,,,denmark_u19_drenge_divisionen.png
+UEFA,Denmark,U17 Drenge Ligaen,league,1st-tier,,Men,Youth,,,denmark_u17_drenge_ligaen.png
+UEFA,Denmark,U17 Drenge Divisionen,league,2nd-tier,,Men,Youth,,,denmark_u17_drenge_divisionen.png
+UEFA,Denmark,Elitedivisionen,league,1st-tier,,Women,Senior,,,denmark_elitedivisionen.png
+UEFA,England,Premier League,league,1st-tier,,Men,Senior,,,england_premier_league.png
+UEFA,England,Championship,unknown,2nd-tier,,Men,Senior,,,england_championship.png
+UEFA,England,League One,league,3rd-tier,,Men,Senior,,,england_league_one.png
+UEFA,England,League Two,league,4th-tier,,Men,Senior,,,england_league_two.png
+UEFA,England,Premier League 2 - Division 1,league,1st-tier,,Men,Youth,,,england_premier_league_2_division_1.png
+UEFA,England,Premier League 2 - Division 2,league,2nd-tier,,Men,Youth,,,england_premier_league_2_division_2.png
+UEFA,England,U18 Premier League,league,,,Men,Youth,,,england_u18_premier_league.png
+UEFA,England,FA WSL,league,1st-tier,,Women,Senior,,,england_fa_wsl.png
+UEFA,England,WSL 2,league,2nd-tier,,Women,Senior,,,england_wsl_2.png
+UEFA,Estonia,Meistriliiga,league,1st-tier,,Men,Senior,,,estonia_meistriliiga.png
+UEFA,Estonia,Esiliiga,league,2nd-tier,,Men,Senior,,,estonia_esiliiga.png
+UEFA,Estonia,Esiliiga B,league,3rd-tier,,Men,Senior,,,estonia_esiliiga_b.png
+UEFA,Faroe Islands,Effodeildin,league,1st-tier,,Men,Senior,,,faroe_islands_effodeildin.png
+UEFA,Faroe Islands,1. deild,league,2nd-tier,,Men,Senior,,,faroe_islands_1_deild.png
+UEFA,Faroe Islands,2. deild,league,3rd-tier,,Men,Senior,,,faroe_islands_2_deild.png
+UEFA,Finland,Veikkausliiga,league,1st-tier,,Men,Senior,,,finland_veikkausliiga.png
+UEFA,Finland,Ykkösliiga,league,2nd-tier,,Men,Senior,,,finland_ykkosliiga.png
+UEFA,Finland,Ykkönen,league,3rd-tier,,Men,Senior,,,finland_ykkonen.png
+UEFA,Finland,Kakkonen,league,4th-tier,,Men,Senior,,,finland_kakkonen.png
+UEFA,Finland,Kansallinen Liiga,league,1st-tier,,Women,Senior,,,finland_kansallinen_liiga.png
+UEFA,France,Ligue 1,league,1st-tier,,Men,Senior,,,france_ligue_1.png
+UEFA,France,Ligue 2,league,2nd-tier,,Men,Senior,,,france_ligue_2.png
+UEFA,France,National 1,league,3rd-tier,,Men,Senior,,,france_national_1.png
+UEFA,France,National 2,league,4th-tier,,Men,Senior,,,france_national_2.png
+UEFA,France,National 3,league,5th-tier,,Men,Senior,,,france_national_3.png
+UEFA,France,Ligue Espoirs,league,,,Men,Youth,,,france_ligue_espoirs.png
+UEFA,France,Championnat National U19,league,,,Men,Youth,,,france_championnat_national_u19.png
+UEFA,France,Coupe Gambardella,cup,,,Men,Youth,,,france_coupe_gambardella.png
+UEFA,France,Première Ligue,league,1st-tier,,Women,Senior,,,france_premiere_ligue.png
+UEFA,France,Seconde Ligue,league,2nd-tier,,Women,Senior,,,france_seconde_ligue.png
+UEFA,France,D3 Féminine,league,3rd-tier,,Women,Senior,,,france_d3_feminine.png
+UEFA,East Germany,DDR-Oberliga,league,1st-tier,,Men,Senior,,,gdr_ddr_oberliga.png
+UEFA,Georgia,Erovnuli Liga,league,1st-tier,,Men,Senior,,,georgia_erovnuli_liga.png
+UEFA,Georgia,Erovnuli Liga 2,league,2nd-tier,,Men,Senior,,,georgia_erovnuli_liga_2.png
+UEFA,Germany,Bundesliga,league,1st-tier,,Men,Senior,,,germany_bundesliga.png
+UEFA,Germany,2. Bundesliga,league,2nd-tier,,Men,Senior,,,germany_2_bundesliga.png
+UEFA,Germany,3. Liga,league,3rd-tier,,Men,Senior,,,germany_3_liga.png
+UEFA,Germany,Regionalliga,league,4th-tier,,Men,Senior,,,germany_regionalliga.png
+UEFA,Germany,Frauen Bundesliga,league,1st-tier,,Women,Senior,,,germany_frauen_bundesliga.png
+UEFA,Germany,U-19 DFB Nachwuchsliga,league,,,Men,Youth,,,germany_u_19_dfb_nachwuchsliga.png
+UEFA,Germany,U-17 DFB Nachwuchsliga,league,,,Men,Youth,,,germany_u_17_dfb_nachwuchsliga.png
+UEFA,Gibraltar,Premier League,league,1st-tier,,Men,Senior,,,gibraltar_premier_league.png
+UEFA,Greece,Super League,league,1st-tier,,Men,Senior,,,greece_super_league.png
+UEFA,Greece,Super League 2,league,2nd-tier,,Men,Senior,,,greece_super_league_2.png
+UEFA,Hungary,NB I,unknown,1st-tier,,Men,Senior,,,hungary_nb_i.png
+UEFA,Hungary,NB II,unknown,2nd-tier,,Men,Senior,,,hungary_nb_ii.png
+UEFA,Hungary,NB III,unknown,3rd-tier,,Men,Senior,,,hungary_nb_iii.png
+UEFA,Iceland,Besta Deildin,league,1st-tier,,Men,Senior,,,iceland_besta_deildin.png
+UEFA,Iceland,1. deild,league,2nd-tier,,Men,Senior,,,iceland_1_deild.png
+UEFA,Iceland,2. deild,league,3rd-tier,,Men,Senior,,,iceland_2_deild.png
+UEFA,Iceland,3. deild,league,4th-tier,,Men,Senior,,,iceland_3_deild.png
+UEFA,Iceland,Úrvalsdeild kvenna,league,1st-tier,,Women,Senior,,,iceland_pepsi_deildin_kvenna.png
+UEFA,Iceland,1. deild kvenna,league,2nd-tier,,Women,Senior,,,iceland_1_deild_kvenna.png
+UEFA,Israel,Ligat ha'Al,league,1st-tier,,Men,Senior,,,israel_ligat_ha_al.png
+UEFA,Israel,Liga Leumit,league,2nd-tier,,Men,Senior,,,israel_liga_leumit.png
+UEFA,Italy,Serie A,league,1st-tier,,Men,Senior,,,italy_serie_a.png
+UEFA,Italy,Serie B,league,2nd-tier,,Men,Senior,,,italy_serie_b.png
+UEFA,Italy,Serie C,league,3rd-tier,,Men,Senior,,,italy_serie_c.png
+UEFA,Italy,Serie D,league,4th-tier,,Men,Senior,,,italy_serie_d.png
+UEFA,Italy,Campionato Primavera 1,league,1st-tier,,Men,Youth,,,italy_campionato_primavera_1.png
+UEFA,Italy,Serie A Femminile,league,1st-tier,,Women,Senior,,,italy_serie_a_femminile.png
+UEFA,Kazakhstan,Kazakhstan Premier League,league,1st-tier,,Men,Senior,,,kazakhstan_kazakhstan_premier_league.png
+UEFA,Kazakhstan,Birinşi Liga,league,2nd-tier,,Men,Senior,,,kazakhstan_birinsi_liga.png
+UEFA,Kosovo,SuperLiga,league,1st-tier,,Men,Senior,,,kosovo_superliga.png
+UEFA,Latvia,Virslīga,league,1st-tier,,Men,Senior,,,latvia_virsliga.png
+UEFA,Latvia,Pirmā līga,league,2nd-tier,,Men,Senior,,,latvia_pirma_liga.png
+UEFA,Lithuania,A Lyga,league,1st-tier,,Men,Senior,,,lithuania_a_lyga.png
+UEFA,Lithuania,Pirma Lyga,league,2nd-tier,,Men,Senior,,,lithuania_pirma_lyga.png
+UEFA,Luxembourg,BGL Ligue,league,1st-tier,,Men,Senior,,,luxembourg_bgl_ligue.png
+UEFA,Luxembourg,Promotion d'Honneur,league,2nd-tier,,Men,Senior,,,luxembourg_promotion_d_honneur.png
+UEFA,Luxembourg,Division 1,league,3rd-tier,,Men,Senior,,,luxembourg_division_1.png
+UEFA,Luxembourg,Division 2,league,4th-tier,,Men,Senior,,,luxembourg_division_2.png
+UEFA,Malta,Premier League,league,1st-tier,,Men,Senior,,,malta_premier_league.png
+UEFA,Malta,First Division,league,2nd-tier,,Men,Senior,,,malta_first_division.png
+UEFA,Malta,BOV National Amateur League,league,3rd-tier,,Men,Senior,,,malta_bov_national_amateur_league.png
+UEFA,Moldova,Super Liga,league,1st-tier,,Men,Senior,,,moldova_super_liga.png
+UEFA,Moldova,Liga 1,league,2nd-tier,,Men,Senior,,,moldova_liga_1.png
+UEFA,Montenegro,1.CFL,league,1st-tier,,Men,Senior,,,montenegro_1_cfl.png
+UEFA,Montenegro,Druga Crnogorska Liga,league,2nd-tier,,Men,Senior,,,montenegro_druga_crnogorska_liga.png
+UEFA,Netherlands,Eredivisie,league,1st-tier,,Men,Senior,,,netherlands_eredivisie.png
+UEFA,Netherlands,Keuken Kampioen Divisie,league,2nd-tier,,Men,Senior,,,netherlands_keuken_kampioen_divisie.png
+UEFA,Netherlands,Tweede Divisie,league,3rd-tier,,Men,Senior,,,netherlands_tweede_divisie.png
+UEFA,Netherlands,Eredivisie Vrouwen,league,1st-tier,,Women,Senior,,,netherlands_eredivisie_vrouwen.png
+UEFA,North Macedonia,Prva Fudbalska Liga,league,1st-tier,,Men,Senior,,,north_macedonia_prva_fudbalska_liga.png
+UEFA,North Macedonia,Vtora Fudbalska Liga,league,2nd-tier,,Men,Senior,,,north_macedonia_vtora_fudbalska_liga.png
+UEFA,Northern Ireland,Premiership,league,1st-tier,,Men,Senior,,,northern_ireland_premiership.png
+UEFA,Northern Ireland,Championship 1,league,2nd-tier,,Men,Senior,,,northern_ireland_championship_1.png
+UEFA,Northern Ireland,Championship 2,league,3rd-tier,,Men,Senior,,,northern_ireland_championship_2.png
+UEFA,Norway,Eliteserien,league,1st-tier,,Men,Senior,,,norway_eliteserien.png
+UEFA,Norway,OBOS-ligaen,league,2nd-tier,,Men,Senior,,,norway_obos_ligaen.png
+UEFA,Norway,PostNord-ligaen,league,3rd-tier,,Men,Senior,,,norway_postnord_ligaen.png
+UEFA,Norway,Toppserien,league,1st-tier,,Women,Senior,,,norway_toppserien.png
+UEFA,Poland,Ekstraklasa,league,1st-tier,,Men,Senior,,,poland_ekstraklasa.png
+UEFA,Poland,I liga,league,2nd-tier,,Men,Senior,,,poland_i_liga.png
+UEFA,Poland,II liga,league,2nd-tier,,Men,Senior,,,poland_ii_liga.png
+UEFA,Portugal,Liga Portugal,league,1st-tier,,Men,Senior,,,portugal_liga_portugal.png
+UEFA,Portugal,Liga Portugal 2,league,2nd-tier,,Men,Senior,,,portugal_liga_portugal_2.png
+UEFA,Portugal,Liga 3,league,3rd-tier,,Men,Senior,,,portugal_liga_3.png
+UEFA,Portugal,Campeonato Portugal,unknown,4th-tier,,Men,Senior,,,portugal_campeonato_portugal.png
+UEFA,Portugal,Liga Revelação U23,league,,,Men,Youth,,,portugal_liga_revelacao_u23.png
+UEFA,Portugal,Liga BPI,league,1st-tier,,Women,Senior,,,portugal_liga_bpi.png
+UEFA,Republic of Ireland,Premier Division,league,1st-tier,,Men,Senior,,,republic_of_ireland_premier_division.png
+UEFA,Republic of Ireland,First Division,league,2nd-tier,,Men,Senior,,,republic_of_ireland_first_division.png
+UEFA,Romania,SuperLiga,league,1st-tier,,Men,Senior,,,romania_superliga.png
+UEFA,Romania,Liga II,league,2nd-tier,,Men,Senior,,,romania_liga_ii.png
+UEFA,Russia,RFPL,unknown,1st-tier,,Men,Senior,,,russia_rfpl.png
+UEFA,Russia,Pervaja Liga,league,2nd-tier,,Men,Senior,,,russia_pervaja_liga.png
+UEFA,Russia,Youth Football League,league,1st-tier,,Men,Youth,,,russia_youth_football_league.png
+UEFA,Russia,Youth Football League - Div B,league,2nd-tier,,Men,Youth,,,russia_youth_football_league_div_b.png
+UEFA,San Marino,Campionato Sanmarinese,league,1st-tier,,Men,Senior,,,san_marino_campionato_sanmarinese.png
+UEFA,Scotland,Premier League,league,1st-tier,,Men,Senior,,,scotland_premier_league.png
+UEFA,Scotland,Championship,unknown,2nd-tier,,Men,Senior,,,scotland_championship.png
+UEFA,Scotland,Scottish League One,league,3rd-tier,,Men,Senior,,,scotland_scottish_league_one.png
+UEFA,Scotland,Scottish League Two,league,4th-tier,,Men,Senior,,,scotland_scottish_league_two.png
+UEFA,Scotland,SWPL 1,league,1st-tier,,Women,Senior,,,scotland_swpl_1.png
+UEFA,Scotland,SWPL 2,league,2nd-tier,,Women,Senior,,,scotland_swpl_2.png
+UEFA,Serbia,Super Liga,league,1st-tier,,Men,Senior,,,serbia_super_liga.png
+UEFA,Serbia,Prva Liga,league,2nd-tier,,Men,Senior,,,serbia_prva_liga.png
+UEFA,Slovakia,Nikè Liga,league,1st-tier,,Men,Senior,,,slovakia_nike_liga.png
+UEFA,Slovakia,II. Liga,league,2nd-tier,,Men,Senior,,,slovakia_ii_liga.png
+UEFA,Slovakia,III. liga,league,3rd-tier,,Men,Senior,,,slovakia_iii_liga.png
+UEFA,Slovakia,I. liga Ženy,league,1st-tier,,Women,Senior,,,slovakia_i_liga_zeny.png
+UEFA,Slovenia,Prva Liga,league,1st-tier,,Men,Senior,,,slovenia_prva_liga.png
+UEFA,Slovenia,2. SNL,league,2nd-tier,,Men,Senior,,,slovenia_2_snl.png
+UEFA,Slovenia,3. SNL,league,3rd-tier,,Men,Senior,,,slovenia_3_snl.png
+UEFA,Slovenia,1. Slovenska Mladinska Liga U19,league,,,Men,Youth,,,slovenia_1_slovenska_mladinska_liga.png
+UEFA,Slovenia,1. Slovenska Kadetska Liga U17,league,,,Men,Youth,,,slovenia_1_slovenska_kadetska_liga.png
+UEFA,Slovenia,1. SŽNL,league,1st-tier,,Women,Senior,,,slovenia_1_sznl.png
+UEFA,Spain,La Liga,league,1st-tier,,Men,Senior,,,spain_la_liga.png
+UEFA,Spain,La Liga 2,league,2nd-tier,,Men,Senior,,,spain_la_liga_2.png
+UEFA,Spain,Primera Federación,league,3rd-tier,,Men,Senior,,,spain_primera_federacion.png
+UEFA,Spain,Segunda Federación,league,4th-tier,,Men,Senior,,,spain_segunda_federacion.png
+UEFA,Spain,Liga F,league,1st-tier,,Women,Senior,,,spain_liga_f.png
+UEFA,Sweden,Allsvenskan,league,1st-tier,,Men,Senior,,,sweden_allsvenskan.png
+UEFA,Sweden,Superettan,league,2nd-tier,,Men,Senior,,,sweden_superettan.png
+UEFA,Sweden,Ettan,league,3rd-tier,,Men,Senior,,,sweden_ettan.png
+UEFA,Sweden,Division 2,league,4th-tier,,Men,Senior,,,sweden_division_2.png
+UEFA,Sweden,U21 Allsvenskan,league,,,Men,Senior,,,sweden_u21_allsvenskan.png
+UEFA,Sweden,Damallsvenskan,league,1st-tier,,Men,Senior,,,sweden_damallsvenskan.png
+UEFA,Sweden,Elitettan,league,2nd-tier,,Men,Senior,,,sweden_elitettan.png
+UEFA,Switzerland,Super League,league,1st-tier,,Men,Senior,,,switzerland_super_league.png
+UEFA,Switzerland,Challenge League,league,2nd-tier,,Men,Senior,,,switzerland_challenge_league.png
+UEFA,Switzerland,1. Liga Promotion,league,3rd-tier,,Men,Senior,,,switzerland_1_liga_promotion.png
+UEFA,Switzerland,1. Liga,league,4th-tier,,Men,Senior,,,switzerland_1_liga.png
+UEFA,Switzerland,Women's Super League,league,1st-tier,,Women,Senior,,,switzerland_women_s_super_league.png
+UEFA,Switzerland,U18 Liga,league,,,Men,Youth,,,switzerland_u18_liga.png
+UEFA,Türkiye,Süper Lig,league,1st-tier,,Men,Senior,,,turkiye_super_lig.png
+UEFA,Türkiye,1. Lig,league,2nd-tier,,Men,Senior,,,turkiye_1_lig.png
+UEFA,Türkiye,2. Lig,league,3rd-tier,,Men,Senior,,,turkiye_2_lig.png
+UEFA,Türkiye,Kadınlar 1. Lig,league,1st-tier,,Women,Senior,,,turkiye_kadnlar_1_lig.png
+UEFA,Ukraine,Premier Liha,league,1st-tier,,Men,Senior,,,ukraine_premier_liha.png
+UEFA,Ukraine,Persha Liha,league,2nd-tier,,Men,Senior,,,ukraine_persha_liha.png
+UEFA,Ukraine,Druha Liha,league,3rd-tier,,Men,Senior,,,ukraine_druha_liha.png
+UEFA,Ukraine,Championat U-21,league,,,Men,Youth,,,ukraine_championat_u_21.png
+UEFA,Ukraine,Vyshcha Liha,league,1st-tier,,Women,Senior,,,ukraine_vyshcha_liha.png
+UEFA,Wales,Welsh Premier League,league,1st-tier,,Men,Senior,,,wales_welsh_premier_league.png
+UEFA,Wales,FAW Tier 2,league,2nd-tier,,Men,Senior,,,wales_faw_tier_2.png
+UEFA,Wales,Cymru Alliance,league,2nd-tier,,Men,Senior,defunct,,wales_cymru_alliance.png
+UEFA,Wales,Welsh Football League Division One,league,,,Women,Senior,,,wales_welsh_football_league_division_one.png

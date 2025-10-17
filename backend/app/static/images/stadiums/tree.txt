@@ -1,0 +1,3885 @@
+.
+├── afghanistan
+│   ├── ghazi-olympic-stadium-103233.jpg
+│   └── thumbs
+│       └── ghazi-olympic-stadium-103233.jpg
+├── albania
+│   ├── air-albania-stadium-2000001344.jpg
+│   ├── elbasan-arena-1300025.jpg
+│   ├── kukes-arena-11021001.jpg
+│   ├── stadiumi-abdurrahman-roza-haxhiu-1300087.jpg
+│   ├── stadiumi-brian-filipi-1300024.jpg
+│   ├── stadiumi-flamurtari-1300026.jpg
+│   ├── stadiumi-gjirokastra-1300033.jpg
+│   ├── stadiumi-laci-1300029.jpg
+│   ├── stadiumi-loni-papuciu-1300020.jpg
+│   ├── stadiumi-loro-borici-1300041.jpg
+│   ├── stadiumi-niko-dovana-1300038.jpg
+│   ├── stadiumi-redi-maloku-11000278.jpg
+│   ├── stadiumi-selman-stermasi-8502565.jpg
+│   ├── stadiumi-skenderbeu-1300035.jpg
+│   ├── stadiumi-tomori-1300040.jpg
+│   └── thumbs
+│       ├── air-albania-stadium-2000001344.jpg
+│       ├── elbasan-arena-1300025.jpg
+│       ├── kukes-arena-11021001.jpg
+│       ├── stadiumi-abdurrahman-roza-haxhiu-1300087.jpg
+│       ├── stadiumi-brian-filipi-1300024.jpg
+│       ├── stadiumi-flamurtari-1300026.jpg
+│       ├── stadiumi-gjirokastra-1300033.jpg
+│       ├── stadiumi-laci-1300029.jpg
+│       ├── stadiumi-loni-papuciu-1300020.jpg
+│       ├── stadiumi-loro-borici-1300041.jpg
+│       ├── stadiumi-niko-dovana-1300038.jpg
+│       ├── stadiumi-redi-maloku-11000278.jpg
+│       ├── stadiumi-selman-stermasi-8502565.jpg
+│       ├── stadiumi-skenderbeu-1300035.jpg
+│       └── stadiumi-tomori-1300040.jpg
+├── algeria
+│   ├── 20-aout-105327.jpg
+│   ├── stade-abed-hamdani-8628601.jpg
+│   ├── stade-ahmed-zabana-5340082.jpg
+│   ├── stade-akid-lotfi-105324.jpg
+│   ├── stade-de-lunite-maghrebine-5360130.jpg
+│   ├── stade-du-19-mai-1956-105335.jpg
+│   ├── stade-du-1er-novembre-105331.jpg
+│   ├── stade-du-1er-novembre-105333.jpg
+│   ├── stade-du-1er-novembre-5360132.jpg
+│   ├── stade-du-20-aout-1955-12035847.jpg
+│   ├── stade-du-20-aout-1955-5360156.jpg
+│   ├── stade-du-24-fevrier-1956-105334.jpg
+│   ├── stade-du-5-juillet-7601796.jpg
+│   ├── stade-du-8-mai-1945-105329.jpg
+│   ├── stade-habib-bouakeul-105325.jpg
+│   ├── stade-messaoud-zeggar-8625323.jpg
+│   ├── stade-mohamed-bensaid-7600121.jpg
+│   ├── stade-mohamed-boumezrag-8625065.jpg
+│   ├── stade-mohamed-hamlaoui-105328.jpg
+│   ├── stade-mustapha-tchaker-7600042.jpg
+│   ├── stade-olympique-du-5-juillet-103024.jpg
+│   ├── stade-omar-hamadi-105332.jpg
+│   └── thumbs
+│       ├── 20-aout-105327.jpg
+│       ├── stade-abed-hamdani-8628601.jpg
+│       ├── stade-ahmed-zabana-5340082.jpg
+│       ├── stade-akid-lotfi-105324.jpg
+│       ├── stade-de-lunite-maghrebine-5360130.jpg
+│       ├── stade-du-19-mai-1956-105335.jpg
+│       ├── stade-du-1er-novembre-105331.jpg
+│       ├── stade-du-1er-novembre-105333.jpg
+│       ├── stade-du-1er-novembre-5360132.jpg
+│       ├── stade-du-20-aout-1955-12035847.jpg
+│       ├── stade-du-20-aout-1955-5360156.jpg
+│       ├── stade-du-24-fevrier-1956-105334.jpg
+│       ├── stade-du-5-juillet-7601796.jpg
+│       ├── stade-du-8-mai-1945-105329.jpg
+│       ├── stade-habib-bouakeul-105325.jpg
+│       ├── stade-messaoud-zeggar-8625323.jpg
+│       ├── stade-mohamed-bensaid-7600121.jpg
+│       ├── stade-mohamed-boumezrag-8625065.jpg
+│       ├── stade-mohamed-hamlaoui-105328.jpg
+│       ├── stade-mustapha-tchaker-7600042.jpg
+│       ├── stade-olympique-du-5-juillet-103024.jpg
+│       └── stade-omar-hamadi-105332.jpg
+├── angola
+│   ├── estadio-11-de-novembro-12012512.jpg
+│   ├── estadio-da-cidadela-103025.jpg
+│   ├── estadio-dos-coqueiros-23017923.jpg
+│   ├── estadio-franca-ndalu-95053320.jpg
+│   ├── estadio-nacional-de-ombaka-12012513.jpg
+│   └── thumbs
+│       ├── estadio-11-de-novembro-12012512.jpg
+│       ├── estadio-da-cidadela-103025.jpg
+│       ├── estadio-dos-coqueiros-23017923.jpg
+│       ├── estadio-franca-ndalu-95053320.jpg
+│       └── estadio-nacional-de-ombaka-12012513.jpg
+├── argentina
+│   ├── 15-de-abril-102469.jpg
+│   ├── 23-de-agosto-108535.jpg
+│   ├── alberto-j-armando-la-bombonera-102443.jpg
+│   ├── alfredo-beranger-3101524.jpg
+│   ├── alfredo-ramos-952703.jpg
+│   ├── alfredo-terrera-14018429.jpg
+│   ├── antonio-romero-965379.jpg
+│   ├── arq-ricardo-etcheverri-108534.jpg
+│   ├── brigadier-general-estanislao-lopez-102463.jpg
+│   ├── centenario-ciudad-de-quilmes-102488.jpg
+│   ├── chacarita-juniors-102494.jpg
+│   ├── ciudad-de-caseros-108533.jpg
+│   ├── ciudad-de-lanus-nestor-diaz-perez-la-fortaleza-102451.jpg
+│   ├── ciudad-de-vicente-lopez-102453.jpg
+│   ├── claudio-chiqui-tapia-952696.jpg
+│   ├── comandante-andres-guacurari-14022188.jpg
+│   ├── diego-armando-maradona-959671.jpg
+│   ├── don-jose-dellagiovanna-coliseo-de-victoria-3100079.jpg
+│   ├── don-leon-kolbowski-108519.jpg
+│   ├── eduardo-gallardon-102496.jpg
+│   ├── el-gigante-del-norte-108536.jpg
+│   ├── estadio-de-la-avenida-956890.jpg
+│   ├── estadio-del-centenario-3101445.jpg
+│   ├── eva-peron-3101517.jpg
+│   ├── florencio-sola-102441.jpg
+│   ├── fragata-presidente-sarmiento-102471.jpg
+│   ├── gigante-de-arroyito-108544.jpg
+│   ├── guillermo-laza-956735.jpg
+│   ├── islas-malvinas-108513.jpg
+│   ├── jose-amalfitani-102459.jpg
+│   ├── jose-antonio-romero-feris-102960.jpg
+│   ├── jose-eduardo-nehin-el-serpentario-961375.jpg
+│   ├── jose-maria-minella-3100076.jpg
+│   ├── juan-carmelo-zerillo-102448.jpg
+│   ├── juan-domingo-peron-monumental-de-alta-cordoba-108537.jpg
+│   ├── juan-pasquale-3101505.jpg
+│   ├── julio-cesar-villagra-el-gigante-de-alberdi-14034924.jpg
+│   ├── julio-humberto-grondona-el-viaducto-108520.jpg
+│   ├── la-ciudadela-102475.jpg
+│   ├── libertadores-de-america-ricardo-e-bochini-102450.jpg
+│   ├── malvinas-argentinas-108550.jpg
+│   ├── malvinas-argentinas-951441.jpg
+│   ├── marcelo-alberto-bielsa-coloso-del-parque-102452.jpg
+│   ├── mario-alberto-kempes-102442.jpg
+│   ├── mas-monumental-102455.jpg
+│   ├── miguel-sancho-6300047.jpg
+│   ├── monumental-jose-fierro-3100077.jpg
+│   ├── municipal-de-comodoro-rivadavia-951335.jpg
+│   ├── norberto-tito-tomaghello-108527.jpg
+│   ├── nueva-espana-102444.jpg
+│   ├── nuevo-francisco-urbano-14093858.jpg
+│   ├── padre-ernesto-martearena-951442.jpg
+│   ├── pedro-bidegain-nuevo-gasometro-102457.jpg
+│   ├── presbitero-bartolome-grella-3101458.jpg
+│   ├── presidente-peron-el-cilindro-de-avellaneda-102454.jpg
+│   ├── raul-conti-958200.jpg
+│   ├── roberto-natalio-carminatti-108543.jpg
+│   ├── thumbs
+│   │   ├── 15-de-abril-102469.jpg
+│   │   ├── 23-de-agosto-108535.jpg
+│   │   ├── alberto-j-armando-la-bombonera-102443.jpg
+│   │   ├── alfredo-beranger-3101524.jpg
+│   │   ├── alfredo-ramos-952703.jpg
+│   │   ├── alfredo-terrera-14018429.jpg
+│   │   ├── antonio-romero-965379.jpg
+│   │   ├── arq-ricardo-etcheverri-108534.jpg
+│   │   ├── brigadier-general-estanislao-lopez-102463.jpg
+│   │   ├── centenario-ciudad-de-quilmes-102488.jpg
+│   │   ├── chacarita-juniors-102494.jpg
+│   │   ├── ciudad-de-caseros-108533.jpg
+│   │   ├── ciudad-de-lanus-nestor-diaz-perez-la-fortaleza-102451.jpg
+│   │   ├── ciudad-de-vicente-lopez-102453.jpg
+│   │   ├── claudio-chiqui-tapia-952696.jpg
+│   │   ├── comandante-andres-guacurari-14022188.jpg
+│   │   ├── diego-armando-maradona-959671.jpg
+│   │   ├── don-jose-dellagiovanna-coliseo-de-victoria-3100079.jpg
+│   │   ├── don-leon-kolbowski-108519.jpg
+│   │   ├── eduardo-gallardon-102496.jpg
+│   │   ├── el-gigante-del-norte-108536.jpg
+│   │   ├── estadio-de-la-avenida-956890.jpg
+│   │   ├── estadio-del-centenario-3101445.jpg
+│   │   ├── eva-peron-3101517.jpg
+│   │   ├── florencio-sola-102441.jpg
+│   │   ├── fragata-presidente-sarmiento-102471.jpg
+│   │   ├── gigante-de-arroyito-108544.jpg
+│   │   ├── guillermo-laza-956735.jpg
+│   │   ├── islas-malvinas-108513.jpg
+│   │   ├── jose-amalfitani-102459.jpg
+│   │   ├── jose-antonio-romero-feris-102960.jpg
+│   │   ├── jose-eduardo-nehin-el-serpentario-961375.jpg
+│   │   ├── jose-maria-minella-3100076.jpg
+│   │   ├── juan-carmelo-zerillo-102448.jpg
+│   │   ├── juan-domingo-peron-monumental-de-alta-cordoba-108537.jpg
+│   │   ├── juan-pasquale-3101505.jpg
+│   │   ├── julio-cesar-villagra-el-gigante-de-alberdi-14034924.jpg
+│   │   ├── julio-humberto-grondona-el-viaducto-108520.jpg
+│   │   ├── la-ciudadela-102475.jpg
+│   │   ├── libertadores-de-america-ricardo-e-bochini-102450.jpg
+│   │   ├── malvinas-argentinas-108550.jpg
+│   │   ├── malvinas-argentinas-951441.jpg
+│   │   ├── marcelo-alberto-bielsa-coloso-del-parque-102452.jpg
+│   │   ├── mario-alberto-kempes-102442.jpg
+│   │   ├── mas-monumental-102455.jpg
+│   │   ├── miguel-sancho-6300047.jpg
+│   │   ├── monumental-jose-fierro-3100077.jpg
+│   │   ├── municipal-de-comodoro-rivadavia-951335.jpg
+│   │   ├── norberto-tito-tomaghello-108527.jpg
+│   │   ├── nueva-espana-102444.jpg
+│   │   ├── nuevo-francisco-urbano-14093858.jpg
+│   │   ├── padre-ernesto-martearena-951442.jpg
+│   │   ├── pedro-bidegain-nuevo-gasometro-102457.jpg
+│   │   ├── presbitero-bartolome-grella-3101458.jpg
+│   │   ├── presidente-peron-el-cilindro-de-avellaneda-102454.jpg
+│   │   ├── raul-conti-958200.jpg
+│   │   ├── roberto-natalio-carminatti-108543.jpg
+│   │   ├── tomas-adolfo-duco-102449.jpg
+│   │   └── victor-antonio-legrotaglie-956892.jpg
+│   ├── tomas-adolfo-duco-102449.jpg
+│   └── victor-antonio-legrotaglie-956892.jpg
+├── armenia
+│   ├── gyumri-city-stadium-484461.jpg
+│   ├── mika-stadium-59006202.jpg
+│   ├── thumbs
+│   │   ├── gyumri-city-stadium-484461.jpg
+│   │   ├── mika-stadium-59006202.jpg
+│   │   ├── urartu-59029263.jpg
+│   │   └── vazgen-sargsyan-hanrapetakan-stadium-59006195.jpg
+│   ├── urartu-59029263.jpg
+│   └── vazgen-sargsyan-hanrapetakan-stadium-59006195.jpg
+├── australia
+│   ├── allianz-stadium-425197.jpg
+│   ├── campbelltown-stadium-426510.jpg
+│   ├── canberra-stadium-122991.jpg
+│   ├── hbf-park-123002.jpg
+│   ├── lakeside-stadium-129983.jpg
+│   ├── mcdonald-jones-stadium-425585.jpg
+│   ├── stadium-australia-120229.jpg
+│   ├── suncorp-stadium-122989.jpg
+│   ├── thumbs
+│   │   ├── allianz-stadium-425197.jpg
+│   │   ├── campbelltown-stadium-426510.jpg
+│   │   ├── canberra-stadium-122991.jpg
+│   │   ├── hbf-park-123002.jpg
+│   │   ├── lakeside-stadium-129983.jpg
+│   │   ├── mcdonald-jones-stadium-425585.jpg
+│   │   ├── stadium-australia-120229.jpg
+│   │   ├── suncorp-stadium-122989.jpg
+│   │   └── western-sydney-stadium-123000.jpg
+│   └── western-sydney-stadium-123000.jpg
+├── austria
+│   ├── allianz-stadion-16152805.jpg
+│   ├── cashpoint-arena-5607424.jpg
+│   ├── datenpol-arena-136561.jpg
+│   ├── ernst-happel-stadion-102962.jpg
+│   ├── lavanttal-arena-16042424.jpg
+│   ├── nv-arena-16066768.jpg
+│   ├── pappelstadion-136559.jpg
+│   ├── red-bull-arena-1300080.jpg
+│   ├── reichshofstadion-136556.jpg
+│   ├── rudolf-tonn-stadion-5605472.jpg
+│   ├── sparkasse-arena-birkenwiese-5604965.jpg
+│   ├── stadion-wiener-neustadt-16012385.jpg
+│   ├── thumbs
+│   │   ├── allianz-stadion-16152805.jpg
+│   │   ├── cashpoint-arena-5607424.jpg
+│   │   ├── datenpol-arena-136561.jpg
+│   │   ├── ernst-happel-stadion-102962.jpg
+│   │   ├── lavanttal-arena-16042424.jpg
+│   │   ├── nv-arena-16066768.jpg
+│   │   ├── pappelstadion-136559.jpg
+│   │   ├── red-bull-arena-1300080.jpg
+│   │   ├── reichshofstadion-136556.jpg
+│   │   ├── rudolf-tonn-stadion-5605472.jpg
+│   │   ├── sparkasse-arena-birkenwiese-5604965.jpg
+│   │   ├── stadion-wiener-neustadt-16012385.jpg
+│   │   └── tivoli-stadion-tirol-5603780.jpg
+│   └── tivoli-stadion-tirol-5603780.jpg
+├── azerbaijan
+│   ├── ask-arena-8057260.jpg
+│   ├── azrsun-arena-59094339.jpg
+│   ├── thumbs
+│   │   ├── ask-arena-8057260.jpg
+│   │   ├── azrsun-arena-59094339.jpg
+│   │   └── tovuz-shr-stadionu-1652227.jpg
+│   └── tovuz-shr-stadionu-1652227.jpg
+├── bahamas
+│   ├── thomas-robinson-103153.jpg
+│   └── thumbs
+│       └── thomas-robinson-103153.jpg
+├── bangladesh
+│   ├── bangabandhu-national-stadium-103236.jpg
+│   └── thumbs
+│       └── bangabandhu-national-stadium-103236.jpg
+├── barbados
+│   ├── thumbs
+│   │   └── waterford-national-stadium-103170.jpg
+│   └── waterford-national-stadium-103170.jpg
+├── belarus
+│   ├── atlant-1300135.jpg
+│   ├── borisov-arena-17026511.jpg
+│   ├── dinamo-1300115.jpg
+│   ├── neman-7480062.jpg
+│   ├── spartak-1300117.jpg
+│   ├── stadium-of-fc-minsk-17000063.jpg
+│   ├── thumbs
+│   │   ├── atlant-1300135.jpg
+│   │   ├── borisov-arena-17026511.jpg
+│   │   ├── dinamo-1300115.jpg
+│   │   ├── neman-7480062.jpg
+│   │   ├── spartak-1300117.jpg
+│   │   ├── stadium-of-fc-minsk-17000063.jpg
+│   │   └── yunost-1300121.jpg
+│   └── yunost-1300121.jpg
+├── belgium
+│   ├── bosuil-751.jpg
+│   ├── cegeka-arena-753.jpg
+│   ├── daio-wasabi-stayen-stadium-759.jpg
+│   ├── daknamstadion-758.jpg
+│   ├── de-leunen-768.jpg
+│   ├── dender-football-complex-764.jpg
+│   ├── diaz-arena-771.jpg
+│   ├── elindus-arena-777.jpg
+│   ├── freethiel-776.jpg
+│   ├── guldensporenstadion-770.jpg
+│   ├── herman-vanderpoortenstadion-lisp-760.jpg
+│   ├── jan-breydelstadion-746.jpg
+│   ├── kehrweg-798.jpg
+│   ├── king-power-at-den-dreef-stadion-807.jpg
+│   ├── le-canonnier-747.jpg
+│   ├── lotto-park-755.jpg
+│   ├── olympisch-stadion-kiel-763.jpg
+│   ├── oscar-van-kesbeeckstadion-805.jpg
+│   ├── planet-group-arena-8154209.jpg
+│   ├── rocourt-18093277.jpg
+│   ├── stade-charles-tondreau-780.jpg
+│   ├── stade-du-pays-de-charleroi-757.jpg
+│   ├── stade-du-tivoli-762.jpg
+│   ├── stade-edmond-machtens-756.jpg
+│   ├── stade-joseph-marien-parc-duden-811.jpg
+│   ├── stade-justin-peeters-787.jpg
+│   ├── stade-leburton-781.jpg
+│   ├── stade-maurice-dufrasne-sclessin-752.jpg
+│   ├── stade-roi-baudouin-102965.jpg
+│   ├── thumbs
+│   │   ├── bosuil-751.jpg
+│   │   ├── cegeka-arena-753.jpg
+│   │   ├── daio-wasabi-stayen-stadium-759.jpg
+│   │   ├── daknamstadion-758.jpg
+│   │   ├── de-leunen-768.jpg
+│   │   ├── dender-football-complex-764.jpg
+│   │   ├── diaz-arena-771.jpg
+│   │   ├── elindus-arena-777.jpg
+│   │   ├── freethiel-776.jpg
+│   │   ├── guldensporenstadion-770.jpg
+│   │   ├── herman-vanderpoortenstadion-lisp-760.jpg
+│   │   ├── jan-breydelstadion-746.jpg
+│   │   ├── kehrweg-798.jpg
+│   │   ├── king-power-at-den-dreef-stadion-807.jpg
+│   │   ├── le-canonnier-747.jpg
+│   │   ├── lotto-park-755.jpg
+│   │   ├── olympisch-stadion-kiel-763.jpg
+│   │   ├── oscar-van-kesbeeckstadion-805.jpg
+│   │   ├── planet-group-arena-8154209.jpg
+│   │   ├── rocourt-18093277.jpg
+│   │   ├── stade-charles-tondreau-780.jpg
+│   │   ├── stade-du-pays-de-charleroi-757.jpg
+│   │   ├── stade-du-tivoli-762.jpg
+│   │   ├── stade-edmond-machtens-756.jpg
+│   │   ├── stade-joseph-marien-parc-duden-811.jpg
+│   │   ├── stade-justin-peeters-787.jpg
+│   │   ├── stade-leburton-781.jpg
+│   │   ├── stade-maurice-dufrasne-sclessin-752.jpg
+│   │   ├── stade-roi-baudouin-102965.jpg
+│   │   └── t-kuipje-778.jpg
+│   └── t-kuipje-778.jpg
+├── bolivia
+│   ├── felix-capriles-308097.jpg
+│   ├── hernando-siles-308092.jpg
+│   ├── jesus-bermudez-5240010.jpg
+│   ├── olimpico-patria-5240004.jpg
+│   ├── ramon-tahuichi-aguilera-308095.jpg
+│   ├── thumbs
+│   │   ├── felix-capriles-308097.jpg
+│   │   ├── hernando-siles-308092.jpg
+│   │   ├── jesus-bermudez-5240010.jpg
+│   │   ├── olimpico-patria-5240004.jpg
+│   │   ├── ramon-tahuichi-aguilera-308095.jpg
+│   │   └── victor-agustin-ugarte-5240006.jpg
+│   └── victor-agustin-ugarte-5240006.jpg
+├── bosnia-herzegovina
+│   ├── bilino-polje-1300209.jpg
+│   ├── gradski-stadion-5741997.jpg
+│   ├── grbavica-1300207.jpg
+│   ├── otoka-8500750.jpg
+│   ├── pirota-5742018.jpg
+│   ├── stadion-krupe-krupa-na-vrbasu-21026936.jpg
+│   ├── stadion-pod-bijelim-brijegom-5742021.jpg
+│   ├── thumbs
+│   │   ├── bilino-polje-1300209.jpg
+│   │   ├── gradski-stadion-5741997.jpg
+│   │   ├── grbavica-1300207.jpg
+│   │   ├── otoka-8500750.jpg
+│   │   ├── pirota-5742018.jpg
+│   │   ├── stadion-krupe-krupa-na-vrbasu-21026936.jpg
+│   │   ├── stadion-pod-bijelim-brijegom-5742021.jpg
+│   │   └── tusanj-1300212.jpg
+│   └── tusanj-1300212.jpg
+├── botswana
+│   ├── national-stadium-103027.jpg
+│   └── thumbs
+│       └── national-stadium-103027.jpg
+├── brazil
+│   ├── aflitos-102538.jpg
+│   ├── albertao-8825232.jpg
+│   ├── alfredo-jaconi-102554.jpg
+│   ├── allianz-parque-19065975.jpg
+│   ├── almeidao-301209.jpg
+│   ├── amigao-301211.jpg
+│   ├── arena-acreana-19024487.jpg
+│   ├── arena-barueri-19044057.jpg
+│   ├── arena-castelao-312272.jpg
+│   ├── arena-conda-301305.jpg
+│   ├── arena-da-amazonia-19131097.jpg
+│   ├── arena-das-dunas-19047507.jpg
+│   ├── arena-gremio-19140605.jpg
+│   ├── arena-independencia-107202.jpg
+│   ├── arena-joinville-2102346.jpg
+│   ├── arena-mrv-19342425.jpg
+│   ├── arena-pantanal-19213335.jpg
+│   ├── arruda-102539.jpg
+│   ├── baenao-107200.jpg
+│   ├── barradao-102552.jpg
+│   ├── beira-rio-102537.jpg
+│   ├── bento-freitas-301265.jpg
+│   ├── bezerrao-102543.jpg
+│   ├── brinco-de-ouro-102536.jpg
+│   ├── caninde-102544.jpg
+│   ├── casa-de-apostas-arena-fonte-nova-19047509.jpg
+│   ├── centenario-301267.jpg
+│   ├── colosso-da-lagoa-319161.jpg
+│   ├── cornelio-de-barros-19005120.jpg
+│   ├── couto-pereira-107196.jpg
+│   ├── estadio-antonio-accioly-19371625.jpg
+│   ├── estadio-banpara-curuzu-102542.jpg
+│   ├── estadio-coaracy-da-mata-fonseca-301101.jpg
+│   ├── estadio-da-ressacada-107209.jpg
+│   ├── estadio-da-serrinha-301917.jpg
+│   ├── estadio-do-cafe-107199.jpg
+│   ├── estadio-nabi-abi-chedid-102527.jpg
+│   ├── estadio-nilton-santos-8832911.jpg
+│   ├── estadio-passo-dareia-301285.jpg
+│   ├── frasqueirao-19022649.jpg
+│   ├── heriberto-hulse-102530.jpg
+│   ├── ilha-do-retiro-102550.jpg
+│   ├── itaipava-arena-pernambuco-19047510.jpg
+│   ├── joia-da-princesa-301124.jpg
+│   ├── ligga-arena-107207.jpg
+│   ├── mangueirao-484779.jpg
+│   ├── maracana-102987.jpg
+│   ├── melao-2114445.jpg
+│   ├── mineirao-102531.jpg
+│   ├── moises-lucarelli-102546.jpg
+│   ├── morenao-107243.jpg
+│   ├── morumbis-102549.jpg
+│   ├── novelli-junior-107217.jpg
+│   ├── orlando-scarpelli-301307.jpg
+│   ├── presidente-vargas-301213.jpg
+│   ├── radialista-mario-helenio-301199.jpg
+│   ├── raulino-de-oliveira-107241.jpg
+│   ├── rei-pele-107233.jpg
+│   ├── santa-cruz-127387.jpg
+│   ├── sao-januario-102551.jpg
+│   ├── thumbs
+│   │   ├── aflitos-102538.jpg
+│   │   ├── albertao-8825232.jpg
+│   │   ├── alfredo-jaconi-102554.jpg
+│   │   ├── allianz-parque-19065975.jpg
+│   │   ├── almeidao-301209.jpg
+│   │   ├── amigao-301211.jpg
+│   │   ├── arena-acreana-19024487.jpg
+│   │   ├── arena-barueri-19044057.jpg
+│   │   ├── arena-castelao-312272.jpg
+│   │   ├── arena-conda-301305.jpg
+│   │   ├── arena-da-amazonia-19131097.jpg
+│   │   ├── arena-das-dunas-19047507.jpg
+│   │   ├── arena-gremio-19140605.jpg
+│   │   ├── arena-independencia-107202.jpg
+│   │   ├── arena-joinville-2102346.jpg
+│   │   ├── arena-mrv-19342425.jpg
+│   │   ├── arena-pantanal-19213335.jpg
+│   │   ├── arruda-102539.jpg
+│   │   ├── baenao-107200.jpg
+│   │   ├── barradao-102552.jpg
+│   │   ├── beira-rio-102537.jpg
+│   │   ├── bento-freitas-301265.jpg
+│   │   ├── bezerrao-102543.jpg
+│   │   ├── brinco-de-ouro-102536.jpg
+│   │   ├── caninde-102544.jpg
+│   │   ├── casa-de-apostas-arena-fonte-nova-19047509.jpg
+│   │   ├── centenario-301267.jpg
+│   │   ├── colosso-da-lagoa-319161.jpg
+│   │   ├── cornelio-de-barros-19005120.jpg
+│   │   ├── couto-pereira-107196.jpg
+│   │   ├── estadio-antonio-accioly-19371625.jpg
+│   │   ├── estadio-banpara-curuzu-102542.jpg
+│   │   ├── estadio-coaracy-da-mata-fonseca-301101.jpg
+│   │   ├── estadio-da-ressacada-107209.jpg
+│   │   ├── estadio-da-serrinha-301917.jpg
+│   │   ├── estadio-do-cafe-107199.jpg
+│   │   ├── estadio-nabi-abi-chedid-102527.jpg
+│   │   ├── estadio-nilton-santos-8832911.jpg
+│   │   ├── estadio-passo-dareia-301285.jpg
+│   │   ├── frasqueirao-19022649.jpg
+│   │   ├── heriberto-hulse-102530.jpg
+│   │   ├── ilha-do-retiro-102550.jpg
+│   │   ├── itaipava-arena-pernambuco-19047510.jpg
+│   │   ├── joia-da-princesa-301124.jpg
+│   │   ├── ligga-arena-107207.jpg
+│   │   ├── mangueirao-484779.jpg
+│   │   ├── maracana-102987.jpg
+│   │   ├── melao-2114445.jpg
+│   │   ├── mineirao-102531.jpg
+│   │   ├── moises-lucarelli-102546.jpg
+│   │   ├── morenao-107243.jpg
+│   │   ├── morumbis-102549.jpg
+│   │   ├── novelli-junior-107217.jpg
+│   │   ├── orlando-scarpelli-301307.jpg
+│   │   ├── presidente-vargas-301213.jpg
+│   │   ├── radialista-mario-helenio-301199.jpg
+│   │   ├── raulino-de-oliveira-107241.jpg
+│   │   ├── rei-pele-107233.jpg
+│   │   ├── santa-cruz-127387.jpg
+│   │   ├── sao-januario-102551.jpg
+│   │   ├── vila-capanema-102541.jpg
+│   │   └── walter-ribeiro-2115500.jpg
+│   ├── vila-capanema-102541.jpg
+│   └── walter-ribeiro-2115500.jpg
+├── bulgaria
+│   ├── aleksandar-shalamanov-1300192.jpg
+│   ├── arena-arda-22051521.jpg
+│   ├── arena-sozopol-22056535.jpg
+│   ├── balgarska-armiya-116148.jpg
+│   ├── beroe-5410507.jpg
+│   ├── druzhba-1300183.jpg
+│   ├── gradski-stadion-1300198.jpg
+│   ├── gradski-stadion-5410495.jpg
+│   ├── hristo-botev-1300181.jpg
+│   ├── hristo-botev-5410505.jpg
+│   ├── hristo-botev-7500314.jpg
+│   ├── ivaylo-1300184.jpg
+│   ├── lazur-1300190.jpg
+│   ├── lokomotiv-7500296.jpg
+│   ├── ludogorets-arena-7500306.jpg
+│   ├── ogosta-1300189.jpg
+│   ├── pomorie-7500315.jpg
+│   ├── thumbs
+│   │   ├── aleksandar-shalamanov-1300192.jpg
+│   │   ├── arena-arda-22051521.jpg
+│   │   ├── arena-sozopol-22056535.jpg
+│   │   ├── balgarska-armiya-116148.jpg
+│   │   ├── beroe-5410507.jpg
+│   │   ├── druzhba-1300183.jpg
+│   │   ├── gradski-stadion-1300198.jpg
+│   │   ├── gradski-stadion-5410495.jpg
+│   │   ├── hristo-botev-1300181.jpg
+│   │   ├── hristo-botev-5410505.jpg
+│   │   ├── hristo-botev-7500314.jpg
+│   │   ├── ivaylo-1300184.jpg
+│   │   ├── lazur-1300190.jpg
+│   │   ├── lokomotiv-7500296.jpg
+│   │   ├── ludogorets-arena-7500306.jpg
+│   │   ├── ogosta-1300189.jpg
+│   │   ├── pomorie-7500315.jpg
+│   │   ├── ticha-138158.jpg
+│   │   ├── trace-arena-22024037.jpg
+│   │   ├── vasil-levski-102967.jpg
+│   │   └── vivacom-arena-georgi-asparuhov-1300185.jpg
+│   ├── ticha-138158.jpg
+│   ├── trace-arena-22024037.jpg
+│   ├── vasil-levski-102967.jpg
+│   └── vivacom-arena-georgi-asparuhov-1300185.jpg
+├── cameroon
+│   ├── stade-de-la-reunification-105274.jpg
+│   ├── stade-omnisports-ahmadou-ahidjo-103030.jpg
+│   ├── stade-omnisports-roumde-adjia-105276.jpg
+│   └── thumbs
+│       ├── stade-de-la-reunification-105274.jpg
+│       ├── stade-omnisports-ahmadou-ahidjo-103030.jpg
+│       └── stade-omnisports-roumde-adjia-105276.jpg
+├── canada
+│   ├── bmo-field-72003114.jpg
+│   ├── clarke-field-20031274.jpg
+│   ├── lamport-stadium-72000781.jpg
+│   ├── princess-auto-stadium-20502272.jpg
+│   ├── td-place-72000780.jpg
+│   └── thumbs
+│       ├── bmo-field-72003114.jpg
+│       ├── clarke-field-20031274.jpg
+│       ├── lamport-stadium-72000781.jpg
+│       ├── princess-auto-stadium-20502272.jpg
+│       └── td-place-72000780.jpg
+├── chile
+│   ├── bicentenario-fiscal-de-talca-308155.jpg
+│   ├── bicentenario-francisco-sanchez-rumoroso-308121.jpg
+│   ├── bicentenario-german-becker-107643.jpg
+│   ├── bicentenario-la-granja-5250783.jpg
+│   ├── bicentenario-municipal-de-la-florida-308117.jpg
+│   ├── bicentenario-municipal-lucio-farina-fernandez-5250778.jpg
+│   ├── bicentenario-municipal-luis-valenzuela-hermosilla-5250766.jpg
+│   ├── bicentenario-municipal-nelson-oyarzun-308151.jpg
+│   ├── cap-75015836.jpg
+│   ├── carlos-dittborn-308139.jpg
+│   ├── el-cobre-308140.jpg
+│   ├── el-teniente-107642.jpg
+│   ├── estadio-elias-figueroa-brander-5250429.jpg
+│   ├── estadio-nacional-julio-martinez-pradanos-102989.jpg
+│   ├── estadio-regional-calvo-y-bascunan-de-antofagasta-308136.jpg
+│   ├── la-portada-308144.jpg
+│   ├── monumental-david-arellano-107639.jpg
+│   ├── municipal-de-la-cisterna-308129.jpg
+│   ├── municipal-de-la-pintana-5250789.jpg
+│   ├── municipal-de-lo-barnechea-5250763.jpg
+│   ├── municipal-de-san-felipe-308157.jpg
+│   ├── municipal-joaquin-munoz-garcia-5250779.jpg
+│   ├── municipal-nicolas-chahuan-nazar-5251594.jpg
+│   ├── municipal-roberto-bravo-santibanez-308149.jpg
+│   ├── municipal-zorros-del-desierto-de-calama-308118.jpg
+│   ├── parque-municipal-de-valdivia-75016859.jpg
+│   ├── regional-de-chinquihue-8826869.jpg
+│   ├── san-carlos-de-apoquindo-107644.jpg
+│   ├── santa-laura-308134.jpg
+│   ├── sausalito-308124.jpg
+│   ├── thumbs
+│   │   ├── bicentenario-fiscal-de-talca-308155.jpg
+│   │   ├── bicentenario-francisco-sanchez-rumoroso-308121.jpg
+│   │   ├── bicentenario-german-becker-107643.jpg
+│   │   ├── bicentenario-la-granja-5250783.jpg
+│   │   ├── bicentenario-municipal-de-la-florida-308117.jpg
+│   │   ├── bicentenario-municipal-lucio-farina-fernandez-5250778.jpg
+│   │   ├── bicentenario-municipal-luis-valenzuela-hermosilla-5250766.jpg
+│   │   ├── bicentenario-municipal-nelson-oyarzun-308151.jpg
+│   │   ├── cap-75015836.jpg
+│   │   ├── carlos-dittborn-308139.jpg
+│   │   ├── el-cobre-308140.jpg
+│   │   ├── el-teniente-107642.jpg
+│   │   ├── estadio-elias-figueroa-brander-5250429.jpg
+│   │   ├── estadio-nacional-julio-martinez-pradanos-102989.jpg
+│   │   ├── estadio-regional-calvo-y-bascunan-de-antofagasta-308136.jpg
+│   │   ├── la-portada-308144.jpg
+│   │   ├── monumental-david-arellano-107639.jpg
+│   │   ├── municipal-de-la-cisterna-308129.jpg
+│   │   ├── municipal-de-la-pintana-5250789.jpg
+│   │   ├── municipal-de-lo-barnechea-5250763.jpg
+│   │   ├── municipal-de-san-felipe-308157.jpg
+│   │   ├── municipal-joaquin-munoz-garcia-5250779.jpg
+│   │   ├── municipal-nicolas-chahuan-nazar-5251594.jpg
+│   │   ├── municipal-roberto-bravo-santibanez-308149.jpg
+│   │   ├── municipal-zorros-del-desierto-de-calama-308118.jpg
+│   │   ├── parque-municipal-de-valdivia-75016859.jpg
+│   │   ├── regional-de-chinquihue-8826869.jpg
+│   │   ├── san-carlos-de-apoquindo-107644.jpg
+│   │   ├── santa-laura-308134.jpg
+│   │   ├── sausalito-308124.jpg
+│   │   └── tierra-de-campeones-308142.jpg
+│   └── tierra-de-campeones-308142.jpg
+├── china-pr
+│   ├── beijing-olympic-sports-centre-5620120.jpg
+│   ├── chengdu-city-sports-centre-131136.jpg
+│   ├── chongqing-olympic-sports-centre-5630222.jpg
+│   ├── guiyang-city-olympic-sports-centre-stadium-23145425.jpg
+│   ├── haihe-education-park-sports-centre-23235597.jpg
+│   ├── harbin-int-convention-exhibition-sports-centre-5627018.jpg
+│   ├── hefei-olympic-sports-centre-5636620.jpg
+│   ├── helanshan-stadium-23141266.jpg
+│   ├── he-long-stadium-5620134.jpg
+│   ├── hohhot-city-stadium-23025586.jpg
+│   ├── huanglong-sports-centre-136004.jpg
+│   ├── jinshan-sports-centre-23043469.jpg
+│   ├── jinzhou-stadium-131141.jpg
+│   ├── langfang-city-stadium-23437469.jpg
+│   ├── longquanyi-stadium-1021137.jpg
+│   ├── shaanxi-provincial-stadium-131203.jpg
+│   ├── shenyang-olympic-sports-centre-23025587.jpg
+│   ├── thumbs
+│   │   ├── beijing-olympic-sports-centre-5620120.jpg
+│   │   ├── chengdu-city-sports-centre-131136.jpg
+│   │   ├── chongqing-olympic-sports-centre-5630222.jpg
+│   │   ├── guiyang-city-olympic-sports-centre-stadium-23145425.jpg
+│   │   ├── haihe-education-park-sports-centre-23235597.jpg
+│   │   ├── harbin-int-convention-exhibition-sports-centre-5627018.jpg
+│   │   ├── hefei-olympic-sports-centre-5636620.jpg
+│   │   ├── helanshan-stadium-23141266.jpg
+│   │   ├── he-long-stadium-5620134.jpg
+│   │   ├── hohhot-city-stadium-23025586.jpg
+│   │   ├── huanglong-sports-centre-136004.jpg
+│   │   ├── jinshan-sports-centre-23043469.jpg
+│   │   ├── jinzhou-stadium-131141.jpg
+│   │   ├── langfang-city-stadium-23437469.jpg
+│   │   ├── longquanyi-stadium-1021137.jpg
+│   │   ├── shaanxi-provincial-stadium-131203.jpg
+│   │   ├── shenyang-olympic-sports-centre-23025587.jpg
+│   │   ├── tiantai-stadium-5629248.jpg
+│   │   ├── tiexi-stadium-5620148.jpg
+│   │   ├── tuodong-stadium-136646.jpg
+│   │   ├── xinhua-road-stadium-131216.jpg
+│   │   ├── xinjiang-sports-centre-23009510.jpg
+│   │   ├── yanji-all-peoples-sports-centre-stadium-23190054.jpg
+│   │   └── zibo-city-sports-centre-23107321.jpg
+│   ├── tiantai-stadium-5629248.jpg
+│   ├── tiexi-stadium-5620148.jpg
+│   ├── tuodong-stadium-136646.jpg
+│   ├── xinhua-road-stadium-131216.jpg
+│   ├── xinjiang-sports-centre-23009510.jpg
+│   ├── yanji-all-peoples-sports-centre-stadium-23190054.jpg
+│   └── zibo-city-sports-centre-23107321.jpg
+├── colombia
+│   ├── alfonso-lopez-pumarejo-5261644.jpg
+│   ├── alvaro-gomez-hurtado-76003536.jpg
+│   ├── armando-maestre-pavajeau-76000869.jpg
+│   ├── ciro-lopez-5261244.jpg
+│   ├── doce-de-octubre-303800.jpg
+│   ├── estadio-alberto-grisales-5261618.jpg
+│   ├── estadio-atanasio-girardot-303789.jpg
+│   ├── estadio-bello-horizonte-rey-pele-5260944.jpg
+│   ├── estadio-centenario-de-armenia-303798.jpg
+│   ├── estadio-de-la-independencia-5262016.jpg
+│   ├── estadio-departamental-libertad-303797.jpg
+│   ├── estadio-deportivo-cali-76013736.jpg
+│   ├── estadio-erwin-oneill-76062060.jpg
+│   ├── estadio-general-santander-5260942.jpg
+│   ├── estadio-guillermo-plazas-alcid-303793.jpg
+│   ├── estadio-hernan-ramirez-villegas-308517.jpg
+│   ├── estadio-jaraguay-76036412.jpg
+│   ├── estadio-metropolitano-ciudad-de-itagui-5261620.jpg
+│   ├── estadio-metropolitano-de-techo-5262012.jpg
+│   ├── estadio-nemesio-camacho-el-campin-102991.jpg
+│   ├── estadio-olimpico-jaime-moron-leon-303791.jpg
+│   ├── estadio-olimpico-pascual-guerrero-303788.jpg
+│   ├── estadio-olimpico-romelio-martinez-5260943.jpg
+│   ├── estadio-palogrande-303796.jpg
+│   ├── estadio-polideportivo-sur-303792.jpg
+│   ├── estadio-sierra-nevada-76053549.jpg
+│   ├── metropolitano-roberto-melendez-303794.jpg
+│   └── thumbs
+│       ├── alfonso-lopez-pumarejo-5261644.jpg
+│       ├── alvaro-gomez-hurtado-76003536.jpg
+│       ├── armando-maestre-pavajeau-76000869.jpg
+│       ├── ciro-lopez-5261244.jpg
+│       ├── doce-de-octubre-303800.jpg
+│       ├── estadio-alberto-grisales-5261618.jpg
+│       ├── estadio-atanasio-girardot-303789.jpg
+│       ├── estadio-bello-horizonte-rey-pele-5260944.jpg
+│       ├── estadio-centenario-de-armenia-303798.jpg
+│       ├── estadio-de-la-independencia-5262016.jpg
+│       ├── estadio-departamental-libertad-303797.jpg
+│       ├── estadio-deportivo-cali-76013736.jpg
+│       ├── estadio-erwin-oneill-76062060.jpg
+│       ├── estadio-general-santander-5260942.jpg
+│       ├── estadio-guillermo-plazas-alcid-303793.jpg
+│       ├── estadio-hernan-ramirez-villegas-308517.jpg
+│       ├── estadio-jaraguay-76036412.jpg
+│       ├── estadio-metropolitano-ciudad-de-itagui-5261620.jpg
+│       ├── estadio-metropolitano-de-techo-5262012.jpg
+│       ├── estadio-nemesio-camacho-el-campin-102991.jpg
+│       ├── estadio-olimpico-jaime-moron-leon-303791.jpg
+│       ├── estadio-olimpico-pascual-guerrero-303788.jpg
+│       ├── estadio-olimpico-romelio-martinez-5260943.jpg
+│       ├── estadio-palogrande-303796.jpg
+│       ├── estadio-polideportivo-sur-303792.jpg
+│       ├── estadio-sierra-nevada-76053549.jpg
+│       └── metropolitano-roberto-melendez-303794.jpg
+├── croatia
+│   ├── aldo-drosina-1300231.jpg
+│   ├── gradski-stadion-129938.jpg
+│   ├── gradski-stadion-ivan-kusek-apas-106753.jpg
+│   ├── gradski-vrt-1300233.jpg
+│   ├── hrvatski-vitezovi-24013634.jpg
+│   ├── ivan-laljak-ivic-1300230.jpg
+│   ├── kantrida-24050644.jpg
+│   ├── kranjceviceva-127665.jpg
+│   ├── maksimir-129736.jpg
+│   ├── nsc-stjepan-spajic-1300242.jpg
+│   ├── park-mladezi-129753.jpg
+│   ├── poljud-1300229.jpg
+│   ├── rujevica-24050633.jpg
+│   ├── src-mladost-129745.jpg
+│   ├── stadion-hnk-cibalia-1300227.jpg
+│   ├── stadion-krimeja-1300246.jpg
+│   ├── stanovi-1300240.jpg
+│   ├── subicevac-1300237.jpg
+│   ├── sv-josip-radnik-sesvete-24019594.jpg
+│   └── thumbs
+│       ├── aldo-drosina-1300231.jpg
+│       ├── gradski-stadion-129938.jpg
+│       ├── gradski-stadion-ivan-kusek-apas-106753.jpg
+│       ├── gradski-vrt-1300233.jpg
+│       ├── hrvatski-vitezovi-24013634.jpg
+│       ├── ivan-laljak-ivic-1300230.jpg
+│       ├── kantrida-24050644.jpg
+│       ├── kranjceviceva-127665.jpg
+│       ├── maksimir-129736.jpg
+│       ├── nsc-stjepan-spajic-1300242.jpg
+│       ├── park-mladezi-129753.jpg
+│       ├── poljud-1300229.jpg
+│       ├── rujevica-24050633.jpg
+│       ├── src-mladost-129745.jpg
+│       ├── stadion-hnk-cibalia-1300227.jpg
+│       ├── stadion-krimeja-1300246.jpg
+│       ├── stanovi-1300240.jpg
+│       ├── subicevac-1300237.jpg
+│       └── sv-josip-radnik-sesvete-24019594.jpg
+├── cuba
+│   ├── estadio-pedro-marrero-5430464.jpg
+│   └── thumbs
+│       └── estadio-pedro-marrero-5430464.jpg
+├── cyprus
+│   ├── aek-arena-georgios-karapatakis-26034317.jpg
+│   ├── antonis-papadopoulos-1300259.jpg
+│   ├── ethnikos-achnas-stadium-1300262.jpg
+│   ├── gsp-1300260.jpg
+│   ├── makareio-692448.jpg
+│   ├── stelios-kyriakidis-1300267.jpg
+│   ├── thumbs
+│   │   ├── aek-arena-georgios-karapatakis-26034317.jpg
+│   │   ├── antonis-papadopoulos-1300259.jpg
+│   │   ├── ethnikos-achnas-stadium-1300262.jpg
+│   │   ├── gsp-1300260.jpg
+│   │   ├── makareio-692448.jpg
+│   │   ├── stelios-kyriakidis-1300267.jpg
+│   │   └── vitex-ammochostos-epistrofi-1300263.jpg
+│   └── vitex-ammochostos-epistrofi-1300263.jpg
+├── czechia
+│   ├── andruv-stadion-1300293.jpg
+│   ├── dolicek-131292.jpg
+│   ├── doosan-arena-1300298.jpg
+│   ├── fortuna-arena-1300294.jpg
+│   ├── juliska-25005066.jpg
+│   ├── kollarova-25001308.jpg
+│   ├── letna-136149.jpg
+│   ├── loko-trans-arena-136168.jpg
+│   ├── malsovicka-arena-1300290.jpg
+│   ├── mestsky-stadion-1300308.jpg
+│   ├── mestsky-stadion-arena-vitkovice-136164.jpg
+│   ├── mestsky-stadion-miroslava-valenty-131290.jpg
+│   ├── na-litavce-116157.jpg
+│   ├── na-streleckem-ostrove-1300289.jpg
+│   ├── na-strelnici-1300291.jpg
+│   ├── stadion-josefa-masopusta-136163.jpg
+│   ├── stadion-rudolfa-labaje-136169.jpg
+│   ├── stadion-v-jiraskove-ulici-136165.jpg
+│   ├── stadion-v-kvapilove-ulici-25054823.jpg
+│   ├── stovky-136193.jpg
+│   ├── thumbs
+│   │   ├── andruv-stadion-1300293.jpg
+│   │   ├── dolicek-131292.jpg
+│   │   ├── doosan-arena-1300298.jpg
+│   │   ├── fortuna-arena-1300294.jpg
+│   │   ├── juliska-25005066.jpg
+│   │   ├── kollarova-25001308.jpg
+│   │   ├── letna-136149.jpg
+│   │   ├── loko-trans-arena-136168.jpg
+│   │   ├── malsovicka-arena-1300290.jpg
+│   │   ├── mestsky-stadion-1300308.jpg
+│   │   ├── mestsky-stadion-arena-vitkovice-136164.jpg
+│   │   ├── mestsky-stadion-miroslava-valenty-131290.jpg
+│   │   ├── na-litavce-116157.jpg
+│   │   ├── na-streleckem-ostrove-1300289.jpg
+│   │   ├── na-strelnici-1300291.jpg
+│   │   ├── stadion-josefa-masopusta-136163.jpg
+│   │   ├── stadion-rudolfa-labaje-136169.jpg
+│   │   ├── stadion-v-jiraskove-ulici-136165.jpg
+│   │   ├── stadion-v-kvapilove-ulici-25054823.jpg
+│   │   ├── stovky-136193.jpg
+│   │   ├── u-nisy-1300295.jpg
+│   │   ├── viktoria-zizkov-1300299.jpg
+│   │   └── znojmo-5640054.jpg
+│   ├── u-nisy-1300295.jpg
+│   ├── viktoria-zizkov-1300299.jpg
+│   └── znojmo-5640054.jpg
+├── denmark
+│   ├── aalborg-portland-park-813.jpg
+│   ├── alpi-arena-878.jpg
+│   ├── autocentralen-park-871.jpg
+│   ├── blue-water-arena-835.jpg
+│   ├── brndby-stadion-830.jpg
+│   ├── cepheus-park-randers-890.jpg
+│   ├── ceres-park-arena-817.jpg
+│   ├── ds-arena-930211.jpg
+│   ├── energi-viborg-arena-912.jpg
+│   ├── gentofte-sportspark-851.jpg
+│   ├── gladsaxe-stadion-846.jpg
+│   ├── holbk-stadion-858.jpg
+│   ├── hsm-arena-930203.jpg
+│   ├── jysk-park-29129395.jpg
+│   ├── lyngby-stadion-875.jpg
+│   ├── mch-arena-934952.jpg
+│   ├── middelfart-stadion-930249.jpg
+│   ├── monjasa-park-27004958.jpg
+│   ├── parken-838.jpg
+│   ├── right-to-dream-park-837.jpg
+│   ├── riisvangen-stadion-816.jpg
+│   ├── roskilde-idrtspark-894.jpg
+│   ├── soffy-road-933833.jpg
+│   ├── sterbro-stadion-826.jpg
+│   ├── sundby-idrtspark-3400011.jpg
+│   ├── sydbank-park-849.jpg
+│   ├── thumbs
+│   │   ├── aalborg-portland-park-813.jpg
+│   │   ├── alpi-arena-878.jpg
+│   │   ├── autocentralen-park-871.jpg
+│   │   ├── blue-water-arena-835.jpg
+│   │   ├── brndby-stadion-830.jpg
+│   │   ├── cepheus-park-randers-890.jpg
+│   │   ├── ceres-park-arena-817.jpg
+│   │   ├── ds-arena-930211.jpg
+│   │   ├── energi-viborg-arena-912.jpg
+│   │   ├── gentofte-sportspark-851.jpg
+│   │   ├── gladsaxe-stadion-846.jpg
+│   │   ├── holbk-stadion-858.jpg
+│   │   ├── hsm-arena-930203.jpg
+│   │   ├── jysk-park-29129395.jpg
+│   │   ├── lyngby-stadion-875.jpg
+│   │   ├── mch-arena-934952.jpg
+│   │   ├── middelfart-stadion-930249.jpg
+│   │   ├── monjasa-park-27004958.jpg
+│   │   ├── parken-838.jpg
+│   │   ├── right-to-dream-park-837.jpg
+│   │   ├── riisvangen-stadion-816.jpg
+│   │   ├── roskilde-idrtspark-894.jpg
+│   │   ├── soffy-road-933833.jpg
+│   │   ├── sterbro-stadion-826.jpg
+│   │   ├── sundby-idrtspark-3400011.jpg
+│   │   ├── sydbank-park-849.jpg
+│   │   └── vejle-stadion-1705043.jpg
+│   └── vejle-stadion-1705043.jpg
+├── dominican-republic
+│   ├── estadio-olimpico-felix-sanchez-103156.jpg
+│   └── thumbs
+│       └── estadio-olimpico-felix-sanchez-103156.jpg
+├── dr-congo
+│   ├── stade-alphonse-massemba-debat-103034.jpg
+│   └── thumbs
+│       └── stade-alphonse-massemba-debat-103034.jpg
+├── egypt
+│   ├── 30-june-stadium-13196537.jpg
+│   ├── alexandria-stadium-105228.jpg
+│   ├── cairo-international-stadium-103037.jpg
+│   ├── haras-el-hodoud-stadium-23017658.jpg
+│   ├── ismailia-stadium-105230.jpg
+│   ├── khaled-bichara-stadium-12033284.jpg
+│   ├── military-academy-stadium-23017659.jpg
+│   ├── petro-sport-stadium-12040733.jpg
+│   ├── suez-sports-stadium-23017665.jpg
+│   └── thumbs
+│       ├── 30-june-stadium-13196537.jpg
+│       ├── alexandria-stadium-105228.jpg
+│       ├── cairo-international-stadium-103037.jpg
+│       ├── haras-el-hodoud-stadium-23017658.jpg
+│       ├── ismailia-stadium-105230.jpg
+│       ├── khaled-bichara-stadium-12033284.jpg
+│       ├── military-academy-stadium-23017659.jpg
+│       ├── petro-sport-stadium-12040733.jpg
+│       └── suez-sports-stadium-23017665.jpg
+├── el-salvador
+│   ├── estadio-cuscatlan-308288.jpg
+│   ├── estadio-juan-francisco-barraza-308287.jpg
+│   ├── estadio-oscar-alberto-quiteno-308285.jpg
+│   └── thumbs
+│       ├── estadio-cuscatlan-308288.jpg
+│       ├── estadio-juan-francisco-barraza-308287.jpg
+│       └── estadio-oscar-alberto-quiteno-308285.jpg
+├── england
+│   ├── adams-park-742.jpg
+│   ├── aesseal-new-york-stadium-29082569.jpg
+│   ├── aggborough-669.jpg
+│   ├── ashton-gate-619.jpg
+│   ├── attis-arena-707.jpg
+│   ├── bet365-stadium-100076.jpg
+│   ├── bloomfield-road-613.jpg
+│   ├── blundell-park-658.jpg
+│   ├── boundary-park-694.jpg
+│   ├── bower-fold-718.jpg
+│   ├── bramall-lane-708.jpg
+│   ├── brisbane-road-674.jpg
+│   ├── broadfield-stadium-640.jpg
+│   ├── brunton-park-626.jpg
+│   ├── carrow-road-691.jpg
+│   ├── cherry-red-records-stadium-211584.jpg
+│   ├── city-ground-692.jpg
+│   ├── cledara-abbey-stadium-624.jpg
+│   ├── coventry-building-society-arena-5009114.jpg
+│   ├── crabble-athletic-ground-647.jpg
+│   ├── craven-cottage-654.jpg
+│   ├── croud-meadow-29005271.jpg
+│   ├── crown-oil-arena-703.jpg
+│   ├── deepdale-700.jpg
+│   ├── deva-stadium-633.jpg
+│   ├── dw-stadium-737.jpg
+│   ├── eco-power-stadium-5121942.jpg
+│   ├── edgeley-park-720.jpg
+│   ├── elland-road-671.jpg
+│   ├── emirates-stadium-5114336.jpg
+│   ├── envirovent-stadium-5100048.jpg
+│   ├── etihad-stadium-5114325.jpg
+│   ├── ewood-park-612.jpg
+│   ├── fratton-park-699.jpg
+│   ├── gateshead-international-stadium-655.jpg
+│   ├── gigg-lane-623.jpg
+│   ├── goodison-park-650.jpg
+│   ├── gtech-community-stadium-29128182.jpg
+│   ├── hayes-lane-5100154.jpg
+│   ├── highbury-stadium-7940023.jpg
+│   ├── hillsborough-709.jpg
+│   ├── home-park-697.jpg
+│   ├── huish-park-743.jpg
+│   ├── jobserve-community-stadium-156499.jpg
+│   ├── kenilworth-road-677.jpg
+│   ├── keys-park-106581.jpg
+│   ├── kingfield-stadium-739.jpg
+│   ├── king-power-stadium-5110660.jpg
+│   ├── lner-stadium-675.jpg
+│   ├── london-stadium-29076584.jpg
+│   ├── matrade-loftus-road-stadium-701.jpg
+│   ├── mazuma-mobile-stadium-29039507.jpg
+│   ├── meadow-lane-693.jpg
+│   ├── meadow-park-29074488.jpg
+│   ├── mill-farm-90063867.jpg
+│   ├── mkm-stadium-5105217.jpg
+│   ├── molineux-740.jpg
+│   ├── moss-rose-678.jpg
+│   ├── new-bucks-head-726.jpg
+│   ├── oakwell-606.jpg
+│   ├── old-trafford-680.jpg
+│   ├── one-call-stadium-681.jpg
+│   ├── pirelli-stadium-5006861.jpg
+│   ├── plainmoor-727.jpg
+│   ├── portman-road-667.jpg
+│   ├── poundland-bescot-stadium-731.jpg
+│   ├── prenton-park-729.jpg
+│   ├── priestfield-stadium-656.jpg
+│   ├── riverside-stadium-685.jpg
+│   ├── roots-hall-714.jpg
+│   ├── selhurst-park-642.jpg
+│   ├── silverlake-stadium-8600598.jpg
+│   ├── sixfields-689.jpg
+│   ├── smh-group-stadium-29059109.jpg
+│   ├── stadium-mk-5114356.jpg
+│   ├── stadium-of-light-722.jpg
+│   ├── st-andrews-knighthead-park-609.jpg
+│   ├── st-james-park-688.jpg
+│   ├── st-marys-stadium-5102453.jpg
+│   ├── stonebridge-road-5100158.jpg
+│   ├── the-county-ground-725.jpg
+│   ├── the-den-686.jpg
+│   ├── the-hawthorns-734.jpg
+│   ├── the-hive-1371.jpg
+│   ├── the-john-smiths-stadium-664.jpg
+│   ├── the-kassam-stadium-5105151.jpg
+│   ├── the-lamex-stadium-719.jpg
+│   ├── the-new-lawn-28007250.jpg
+│   ├── the-recreation-ground-5100174.jpg
+│   ├── the-shay-660.jpg
+│   ├── the-tottenham-hotspur-stadium-28096287.jpg
+│   ├── the-toughsheet-community-stadium-614.jpg
+│   ├── the-valley-628.jpg
+│   ├── the-walks-stadium-113523.jpg
+│   ├── thumbs
+│   │   ├── adams-park-742.jpg
+│   │   ├── aesseal-new-york-stadium-29082569.jpg
+│   │   ├── aggborough-669.jpg
+│   │   ├── ashton-gate-619.jpg
+│   │   ├── attis-arena-707.jpg
+│   │   ├── bet365-stadium-100076.jpg
+│   │   ├── bloomfield-road-613.jpg
+│   │   ├── blundell-park-658.jpg
+│   │   ├── boundary-park-694.jpg
+│   │   ├── bower-fold-718.jpg
+│   │   ├── bramall-lane-708.jpg
+│   │   ├── brisbane-road-674.jpg
+│   │   ├── broadfield-stadium-640.jpg
+│   │   ├── brunton-park-626.jpg
+│   │   ├── carrow-road-691.jpg
+│   │   ├── cherry-red-records-stadium-211584.jpg
+│   │   ├── city-ground-692.jpg
+│   │   ├── cledara-abbey-stadium-624.jpg
+│   │   ├── coventry-building-society-arena-5009114.jpg
+│   │   ├── crabble-athletic-ground-647.jpg
+│   │   ├── craven-cottage-654.jpg
+│   │   ├── croud-meadow-29005271.jpg
+│   │   ├── crown-oil-arena-703.jpg
+│   │   ├── deepdale-700.jpg
+│   │   ├── deva-stadium-633.jpg
+│   │   ├── dw-stadium-737.jpg
+│   │   ├── eco-power-stadium-5121942.jpg
+│   │   ├── edgeley-park-720.jpg
+│   │   ├── elland-road-671.jpg
+│   │   ├── emirates-stadium-5114336.jpg
+│   │   ├── envirovent-stadium-5100048.jpg
+│   │   ├── etihad-stadium-5114325.jpg
+│   │   ├── ewood-park-612.jpg
+│   │   ├── fratton-park-699.jpg
+│   │   ├── gateshead-international-stadium-655.jpg
+│   │   ├── gigg-lane-623.jpg
+│   │   ├── goodison-park-650.jpg
+│   │   ├── gtech-community-stadium-29128182.jpg
+│   │   ├── hayes-lane-5100154.jpg
+│   │   ├── highbury-stadium-7940023.jpg
+│   │   ├── hillsborough-709.jpg
+│   │   ├── home-park-697.jpg
+│   │   ├── huish-park-743.jpg
+│   │   ├── jobserve-community-stadium-156499.jpg
+│   │   ├── kenilworth-road-677.jpg
+│   │   ├── keys-park-106581.jpg
+│   │   ├── kingfield-stadium-739.jpg
+│   │   ├── king-power-stadium-5110660.jpg
+│   │   ├── lner-stadium-675.jpg
+│   │   ├── london-stadium-29076584.jpg
+│   │   ├── matrade-loftus-road-stadium-701.jpg
+│   │   ├── mazuma-mobile-stadium-29039507.jpg
+│   │   ├── meadow-lane-693.jpg
+│   │   ├── meadow-park-29074488.jpg
+│   │   ├── mill-farm-90063867.jpg
+│   │   ├── mkm-stadium-5105217.jpg
+│   │   ├── molineux-740.jpg
+│   │   ├── moss-rose-678.jpg
+│   │   ├── new-bucks-head-726.jpg
+│   │   ├── oakwell-606.jpg
+│   │   ├── old-trafford-680.jpg
+│   │   ├── one-call-stadium-681.jpg
+│   │   ├── pirelli-stadium-5006861.jpg
+│   │   ├── plainmoor-727.jpg
+│   │   ├── portman-road-667.jpg
+│   │   ├── poundland-bescot-stadium-731.jpg
+│   │   ├── prenton-park-729.jpg
+│   │   ├── priestfield-stadium-656.jpg
+│   │   ├── riverside-stadium-685.jpg
+│   │   ├── roots-hall-714.jpg
+│   │   ├── selhurst-park-642.jpg
+│   │   ├── silverlake-stadium-8600598.jpg
+│   │   ├── sixfields-689.jpg
+│   │   ├── smh-group-stadium-29059109.jpg
+│   │   ├── stadium-mk-5114356.jpg
+│   │   ├── stadium-of-light-722.jpg
+│   │   ├── st-andrews-knighthead-park-609.jpg
+│   │   ├── st-james-park-688.jpg
+│   │   ├── st-marys-stadium-5102453.jpg
+│   │   ├── stonebridge-road-5100158.jpg
+│   │   ├── the-county-ground-725.jpg
+│   │   ├── the-den-686.jpg
+│   │   ├── the-hawthorns-734.jpg
+│   │   ├── the-hive-1371.jpg
+│   │   ├── the-john-smiths-stadium-664.jpg
+│   │   ├── the-kassam-stadium-5105151.jpg
+│   │   ├── the-lamex-stadium-719.jpg
+│   │   ├── the-new-lawn-28007250.jpg
+│   │   ├── the-recreation-ground-5100174.jpg
+│   │   ├── the-shay-660.jpg
+│   │   ├── the-tottenham-hotspur-stadium-28096287.jpg
+│   │   ├── the-toughsheet-community-stadium-614.jpg
+│   │   ├── the-valley-628.jpg
+│   │   ├── the-walks-stadium-113523.jpg
+│   │   ├── turf-moor-622.jpg
+│   │   ├── twerton-park-608.jpg
+│   │   ├── vale-park-698.jpg
+│   │   ├── vicarage-road-732.jpg
+│   │   ├── villa-park-603.jpg
+│   │   ├── wembley-102969.jpg
+│   │   ├── westleigh-park-5100133.jpg
+│   │   └── wham-stadium-109219.jpg
+│   ├── turf-moor-622.jpg
+│   ├── twerton-park-608.jpg
+│   ├── vale-park-698.jpg
+│   ├── vicarage-road-732.jpg
+│   ├── villa-park-603.jpg
+│   ├── wembley-102969.jpg
+│   ├── westleigh-park-5100133.jpg
+│   └── wham-stadium-109219.jpg
+├── equatorial-guinea
+│   ├── nuevo-estadio-de-malabo-12010509.jpg
+│   └── thumbs
+│       └── nuevo-estadio-de-malabo-12010509.jpg
+├── eritrea
+│   ├── cicero-stadium-129513.jpg
+│   └── thumbs
+│       └── cicero-stadium-129513.jpg
+├── estonia
+│   ├── hiiu-kunstmurustaadion-31001099.jpg
+│   ├── kadrioru-staadion-1300316.jpg
+│   ├── lillekula-staadion-5220182.jpg
+│   └── thumbs
+│       ├── hiiu-kunstmurustaadion-31001099.jpg
+│       ├── kadrioru-staadion-1300316.jpg
+│       └── lillekula-staadion-5220182.jpg
+├── ethiopia
+│   ├── addis-ababa-stadium-103039.jpg
+│   ├── bahir-dar-stadium-13206166.jpg
+│   └── thumbs
+│       ├── addis-ababa-stadium-103039.jpg
+│       └── bahir-dar-stadium-13206166.jpg
+├── faroe-islands
+│   ├── thumbs
+│   │   └── torsvllur-8300371.jpg
+│   └── torsvllur-8300371.jpg
+├── fiji
+│   ├── national-stadium-103185.jpg
+│   └── thumbs
+│       └── national-stadium-103185.jpg
+├── finland
+│   ├── arto-tolsa-areena-121264.jpg
+│   ├── harjun-stadion-510001.jpg
+│   ├── kuopion-keskuskentta-521612.jpg
+│   ├── lahden-stadion-1300369.jpg
+│   ├── pohjan-stadion-510057.jpg
+│   ├── porin-stadion-1300368.jpg
+│   ├── raatin-stadion-127400.jpg
+│   ├── rovaniemen-keskuskentta-1300367.jpg
+│   ├── tammelan-stadion-1300366.jpg
+│   ├── tapiolan-urheilupuisto-129133.jpg
+│   ├── tehtaan-kentta-1300365.jpg
+│   ├── thumbs
+│   │   ├── arto-tolsa-areena-121264.jpg
+│   │   ├── harjun-stadion-510001.jpg
+│   │   ├── kuopion-keskuskentta-521612.jpg
+│   │   ├── lahden-stadion-1300369.jpg
+│   │   ├── pohjan-stadion-510057.jpg
+│   │   ├── porin-stadion-1300368.jpg
+│   │   ├── raatin-stadion-127400.jpg
+│   │   ├── rovaniemen-keskuskentta-1300367.jpg
+│   │   ├── tammelan-stadion-1300366.jpg
+│   │   ├── tapiolan-urheilupuisto-129133.jpg
+│   │   ├── tehtaan-kentta-1300365.jpg
+│   │   └── toolon-jalkapallostadion-115602.jpg
+│   └── toolon-jalkapallostadion-115602.jpg
+├── france
+│   ├── allianz-riviera-8437525.jpg
+│   ├── decathlon-arena-stade-pierre-mauroy-34012570.jpg
+│   ├── matmut-atlantique-48031770.jpg
+│   ├── parc-des-princes-977.jpg
+│   ├── parc-des-sports-dannecy-6200208.jpg
+│   ├── roazhon-park-995.jpg
+│   ├── stade-abbe-deschamps-919.jpg
+│   ├── stade-armand-cesari-987.jpg
+│   ├── stade-auguste-bonal-957.jpg
+│   ├── stade-auguste-delaune-983.jpg
+│   ├── stade-bauer-982.jpg
+│   ├── stade-bollaert-delelis-980.jpg
+│   ├── stade-charlety-6201378.jpg
+│   ├── stade-credit-agricole-la-licorne-6200321.jpg
+│   ├── stade-de-la-beaujoire-louis-fonteneau-952.jpg
+│   ├── stade-de-la-meinau-981.jpg
+│   ├── stade-de-la-mosson-967.jpg
+│   ├── stade-de-la-rabine-6200179.jpg
+│   ├── stade-de-la-source-914708.jpg
+│   ├── stade-de-laube-929.jpg
+│   ├── stade-de-la-vallee-du-cher-958.jpg
+│   ├── stade-de-roudourou-942.jpg
+│   ├── stade-des-alpes-8430432.jpg
+│   ├── stade-dominique-duvauchelle-998.jpg
+│   ├── stade-du-hainaut-34007838.jpg
+│   ├── stade-du-moustoir-yves-allainmat-948.jpg
+│   ├── stade-francis-le-basser-991.jpg
+│   ├── stade-francis-le-ble-990.jpg
+│   ├── stade-francois-coty-3500150.jpg
+│   ├── stade-gabriel-montpied-938.jpg
+│   ├── stade-gaston-gerard-934.jpg
+│   ├── stade-gaston-petit-936.jpg
+│   ├── stade-geoffroy-guichard-928.jpg
+│   ├── stade-georges-pompidou-921.jpg
+│   ├── stade-jean-laville-946.jpg
+│   ├── stade-leo-lagrange-34012414.jpg
+│   ├── stade-leo-lagrange-85048623.jpg
+│   ├── stade-leo-lagrange-931.jpg
+│   ├── stade-leo-lagrange-de-poissy-914538.jpg
+│   ├── stade-louis-dugauguez-910859.jpg
+│   ├── stade-marcel-picot-927.jpg
+│   ├── stade-marie-marvingt-8437659.jpg
+│   ├── stade-michel-amand-ex-stade-de-la-pepiniere-994.jpg
+│   ├── stade-michel-dornano-992.jpg
+│   ├── stade-oceane-8442058.jpg
+│   ├── stade-orange-velodrome-975.jpg
+│   ├── stade-parsemain-8434673.jpg
+│   ├── stade-paul-lignon-984.jpg
+│   ├── stade-pierre-brisson-922.jpg
+│   ├── stade-raymond-kopa-986.jpg
+│   ├── stade-robert-bobin-50067919.jpg
+│   ├── stade-robert-diochon-954.jpg
+│   ├── stade-saint-symphorien-950.jpg
+│   ├── stadium-de-toulouse-996.jpg
+│   └── thumbs
+│       ├── allianz-riviera-8437525.jpg
+│       ├── decathlon-arena-stade-pierre-mauroy-34012570.jpg
+│       ├── matmut-atlantique-48031770.jpg
+│       ├── parc-des-princes-977.jpg
+│       ├── parc-des-sports-dannecy-6200208.jpg
+│       ├── roazhon-park-995.jpg
+│       ├── stade-abbe-deschamps-919.jpg
+│       ├── stade-armand-cesari-987.jpg
+│       ├── stade-auguste-bonal-957.jpg
+│       ├── stade-auguste-delaune-983.jpg
+│       ├── stade-bauer-982.jpg
+│       ├── stade-bollaert-delelis-980.jpg
+│       ├── stade-charlety-6201378.jpg
+│       ├── stade-credit-agricole-la-licorne-6200321.jpg
+│       ├── stade-de-la-beaujoire-louis-fonteneau-952.jpg
+│       ├── stade-de-la-meinau-981.jpg
+│       ├── stade-de-la-mosson-967.jpg
+│       ├── stade-de-la-rabine-6200179.jpg
+│       ├── stade-de-la-source-914708.jpg
+│       ├── stade-de-laube-929.jpg
+│       ├── stade-de-la-vallee-du-cher-958.jpg
+│       ├── stade-de-roudourou-942.jpg
+│       ├── stade-des-alpes-8430432.jpg
+│       ├── stade-dominique-duvauchelle-998.jpg
+│       ├── stade-du-hainaut-34007838.jpg
+│       ├── stade-du-moustoir-yves-allainmat-948.jpg
+│       ├── stade-francis-le-basser-991.jpg
+│       ├── stade-francis-le-ble-990.jpg
+│       ├── stade-francois-coty-3500150.jpg
+│       ├── stade-gabriel-montpied-938.jpg
+│       ├── stade-gaston-gerard-934.jpg
+│       ├── stade-gaston-petit-936.jpg
+│       ├── stade-geoffroy-guichard-928.jpg
+│       ├── stade-georges-pompidou-921.jpg
+│       ├── stade-jean-laville-946.jpg
+│       ├── stade-leo-lagrange-34012414.jpg
+│       ├── stade-leo-lagrange-85048623.jpg
+│       ├── stade-leo-lagrange-931.jpg
+│       ├── stade-leo-lagrange-de-poissy-914538.jpg
+│       ├── stade-louis-dugauguez-910859.jpg
+│       ├── stade-marcel-picot-927.jpg
+│       ├── stade-marie-marvingt-8437659.jpg
+│       ├── stade-michel-amand-ex-stade-de-la-pepiniere-994.jpg
+│       ├── stade-michel-dornano-992.jpg
+│       ├── stade-oceane-8442058.jpg
+│       ├── stade-orange-velodrome-975.jpg
+│       ├── stade-parsemain-8434673.jpg
+│       ├── stade-paul-lignon-984.jpg
+│       ├── stade-pierre-brisson-922.jpg
+│       ├── stade-raymond-kopa-986.jpg
+│       ├── stade-robert-bobin-50067919.jpg
+│       ├── stade-robert-diochon-954.jpg
+│       ├── stade-saint-symphorien-950.jpg
+│       └── stadium-de-toulouse-996.jpg
+├── georgia
+│   ├── boris-paichadzis-sakhelobis-dinamo-arena-1300401.jpg
+│   ├── mikheil-meskhis-sakhelobis-stadioni-492756.jpg
+│   ├── poladi-1300509.jpg
+│   ├── ramaz-shengelias-sakhelobis-stadioni-1300511.jpg
+│   ├── tamaz-stepanias-sakhelobis-stadioni-1300527.jpg
+│   ├── tengiz-burjanadzis-sakhelobis-stadioni-1300396.jpg
+│   └── thumbs
+│       ├── boris-paichadzis-sakhelobis-dinamo-arena-1300401.jpg
+│       ├── mikheil-meskhis-sakhelobis-stadioni-492756.jpg
+│       ├── poladi-1300509.jpg
+│       ├── ramaz-shengelias-sakhelobis-stadioni-1300511.jpg
+│       ├── tamaz-stepanias-sakhelobis-stadioni-1300527.jpg
+│       └── tengiz-burjanadzis-sakhelobis-stadioni-1300396.jpg
+├── germany
+│   ├── ad-hoc-arena-im-ernst-abbe-sportfeld-1301.jpg
+│   ├── allianz-arena-8700726.jpg
+│   ├── audi-sportpark-29074562.jpg
+│   ├── bayarena-1291.jpg
+│   ├── bbbank-wildpark-1318.jpg
+│   ├── borussia-park-8701015.jpg
+│   ├── bremer-brucke-1350.jpg
+│   ├── brita-arena-91004216.jpg
+│   ├── carl-benz-stadion-1338.jpg
+│   ├── ddv-stadion-1284.jpg
+│   ├── eilenriedestadion-879317.jpg
+│   ├── eintracht-stadion-1302.jpg
+│   ├── eintracht-stadion-b-platz-879421.jpg
+│   ├── erzgebirgsstadion-6000043.jpg
+│   ├── esv-stadion-91003338.jpg
+│   ├── europa-park-stadion-91183670.jpg
+│   ├── fritz-walter-stadion-1285.jpg
+│   ├── gp-stadion-am-hardtwald-6000036.jpg
+│   ├── grotenburg-stadion-1319.jpg
+│   ├── hansch-arena-1337.jpg
+│   ├── holstein-stadion-1310.jpg
+│   ├── home-deluxe-arena-35014241.jpg
+│   ├── jahnstadion-regensburg-91137650.jpg
+│   ├── leuna-chemie-stadion-91100189.jpg
+│   ├── ludwigsparkstadion-1288.jpg
+│   ├── max-morlock-stadion-1287.jpg
+│   ├── mdcc-arena-1282.jpg
+│   ├── merck-stadion-am-bollenfalltor-1335.jpg
+│   ├── merkur-spiel-arena-8718293.jpg
+│   ├── mewa-arena-29074561.jpg
+│   ├── millerntor-stadion-1312.jpg
+│   ├── neuer-tivoli-91013556.jpg
+│   ├── niederrheinstadion-1327.jpg
+│   ├── olympiastadion-berlin-1317.jpg
+│   ├── ostseestadion-1306.jpg
+│   ├── psd-bank-arena-1308.jpg
+│   ├── rheinenergiestadion-1286.jpg
+│   ├── schauinsland-reisen-arena-1322.jpg
+│   ├── sportpark-hohenberg-879644.jpg
+│   ├── sportpark-ronhof-thomas-sommer-1330.jpg
+│   ├── sportpark-unterhaching-1331.jpg
+│   ├── stadion-am-bieberer-berg-1320.jpg
+│   ├── stadion-an-der-alten-forsterei-6000018.jpg
+│   ├── stadion-an-der-hafenstrae-91107967.jpg
+│   ├── stadion-auf-der-waldau-1334.jpg
+│   ├── stadion-der-freundschaft-1303.jpg
+│   ├── stadtisches-stadion-an-der-grunwalder-strae-6000062.jpg
+│   ├── sudstadion-1323.jpg
+│   ├── thumbs
+│   │   ├── ad-hoc-arena-im-ernst-abbe-sportfeld-1301.jpg
+│   │   ├── allianz-arena-8700726.jpg
+│   │   ├── audi-sportpark-29074562.jpg
+│   │   ├── bayarena-1291.jpg
+│   │   ├── bbbank-wildpark-1318.jpg
+│   │   ├── borussia-park-8701015.jpg
+│   │   ├── bremer-brucke-1350.jpg
+│   │   ├── brita-arena-91004216.jpg
+│   │   ├── carl-benz-stadion-1338.jpg
+│   │   ├── ddv-stadion-1284.jpg
+│   │   ├── eilenriedestadion-879317.jpg
+│   │   ├── eintracht-stadion-1302.jpg
+│   │   ├── eintracht-stadion-b-platz-879421.jpg
+│   │   ├── erzgebirgsstadion-6000043.jpg
+│   │   ├── esv-stadion-91003338.jpg
+│   │   ├── europa-park-stadion-91183670.jpg
+│   │   ├── fritz-walter-stadion-1285.jpg
+│   │   ├── gp-stadion-am-hardtwald-6000036.jpg
+│   │   ├── grotenburg-stadion-1319.jpg
+│   │   ├── hansch-arena-1337.jpg
+│   │   ├── holstein-stadion-1310.jpg
+│   │   ├── home-deluxe-arena-35014241.jpg
+│   │   ├── jahnstadion-regensburg-91137650.jpg
+│   │   ├── leuna-chemie-stadion-91100189.jpg
+│   │   ├── ludwigsparkstadion-1288.jpg
+│   │   ├── max-morlock-stadion-1287.jpg
+│   │   ├── mdcc-arena-1282.jpg
+│   │   ├── merck-stadion-am-bollenfalltor-1335.jpg
+│   │   ├── merkur-spiel-arena-8718293.jpg
+│   │   ├── mewa-arena-29074561.jpg
+│   │   ├── millerntor-stadion-1312.jpg
+│   │   ├── neuer-tivoli-91013556.jpg
+│   │   ├── niederrheinstadion-1327.jpg
+│   │   ├── olympiastadion-berlin-1317.jpg
+│   │   ├── ostseestadion-1306.jpg
+│   │   ├── psd-bank-arena-1308.jpg
+│   │   ├── rheinenergiestadion-1286.jpg
+│   │   ├── schauinsland-reisen-arena-1322.jpg
+│   │   ├── sportpark-hohenberg-879644.jpg
+│   │   ├── sportpark-ronhof-thomas-sommer-1330.jpg
+│   │   ├── sportpark-unterhaching-1331.jpg
+│   │   ├── stadion-am-bieberer-berg-1320.jpg
+│   │   ├── stadion-an-der-alten-forsterei-6000018.jpg
+│   │   ├── stadion-an-der-hafenstrae-91107967.jpg
+│   │   ├── stadion-auf-der-waldau-1334.jpg
+│   │   ├── stadion-der-freundschaft-1303.jpg
+│   │   ├── stadtisches-stadion-an-der-grunwalder-strae-6000062.jpg
+│   │   ├── sudstadion-1323.jpg
+│   │   ├── voith-arena-880296.jpg
+│   │   ├── volksparkstadion-1315.jpg
+│   │   ├── volkswagen-arena-1351.jpg
+│   │   ├── vonovia-ruhrstadion-1348.jpg
+│   │   ├── weserstadion-platz-11-6000024.jpg
+│   │   ├── wirmachendruck-arena-8700469.jpg
+│   │   ├── wohninvest-weserstadion-1339.jpg
+│   │   └── wwk-arena-91000175.jpg
+│   ├── voith-arena-880296.jpg
+│   ├── volksparkstadion-1315.jpg
+│   ├── volkswagen-arena-1351.jpg
+│   ├── vonovia-ruhrstadion-1348.jpg
+│   ├── weserstadion-platz-11-6000024.jpg
+│   ├── wirmachendruck-arena-8700469.jpg
+│   ├── wohninvest-weserstadion-1339.jpg
+│   └── wwk-arena-91000175.jpg
+├── ghana
+│   ├── accra-sports-stadium-ohene-djan-stadium-103042.jpg
+│   ├── agyemang-badu-ii-park-13113094.jpg
+│   ├── baba-yara-sports-stadium-5390195.jpg
+│   ├── len-clay-stadium-105247.jpg
+│   ├── tarkwa-nsueam-assembly-park-13111494.jpg
+│   └── thumbs
+│       ├── accra-sports-stadium-ohene-djan-stadium-103042.jpg
+│       ├── agyemang-badu-ii-park-13113094.jpg
+│       ├── baba-yara-sports-stadium-5390195.jpg
+│       ├── len-clay-stadium-105247.jpg
+│       └── tarkwa-nsueam-assembly-park-13111494.jpg
+├── greece
+│   ├── ael-fc-arena-36036395.jpg
+│   ├── agia-sofia-36087483.jpg
+│   ├── anthi-karagianni-1300557.jpg
+│   ├── diagoras-stadium-687530.jpg
+│   ├── doxa-dramas-ground-687529.jpg
+│   ├── georgios-kamaras-4200032.jpg
+│   ├── georgios-karaiskakis-1300548.jpg
+│   ├── grigorios-labrakis-129674.jpg
+│   ├── kaftanzogleio-1300550.jpg
+│   ├── kleanthis-vikelidis-1300545.jpg
+│   ├── makedonikos-ground-684935.jpg
+│   ├── municipal-athletic-center-of-katerini-a-687582.jpg
+│   ├── municipal-ground-of-nikaia-1300549.jpg
+│   ├── municipal-ground-of-perivolia-129724.jpg
+│   ├── municipal-ground-of-serres-129679.jpg
+│   ├── municipal-stadium-of-karditsa-687566.jpg
+│   ├── municipal-stadium-of-kerkyra-684328.jpg
+│   ├── municipal-stadium-of-mytilini-687586.jpg
+│   ├── municipal-stadium-of-pyrgos-1300564.jpg
+│   ├── municipal-stadium-of-trikala-129655.jpg
+│   ├── municipal-stadium-of-veroia-687528.jpg
+│   ├── panetolikos-ground-687519.jpg
+│   ├── panthessaliko-687596.jpg
+│   ├── stavros-mavrothalassitis-129654.jpg
+│   ├── theodoros-kolokotronis-697604.jpg
+│   ├── theodoros-vardinogiannis-1300552.jpg
+│   ├── thumbs
+│   │   ├── ael-fc-arena-36036395.jpg
+│   │   ├── agia-sofia-36087483.jpg
+│   │   ├── anthi-karagianni-1300557.jpg
+│   │   ├── diagoras-stadium-687530.jpg
+│   │   ├── doxa-dramas-ground-687529.jpg
+│   │   ├── georgios-kamaras-4200032.jpg
+│   │   ├── georgios-karaiskakis-1300548.jpg
+│   │   ├── grigorios-labrakis-129674.jpg
+│   │   ├── kaftanzogleio-1300550.jpg
+│   │   ├── kleanthis-vikelidis-1300545.jpg
+│   │   ├── makedonikos-ground-684935.jpg
+│   │   ├── municipal-athletic-center-of-katerini-a-687582.jpg
+│   │   ├── municipal-ground-of-nikaia-1300549.jpg
+│   │   ├── municipal-ground-of-perivolia-129724.jpg
+│   │   ├── municipal-ground-of-serres-129679.jpg
+│   │   ├── municipal-stadium-of-karditsa-687566.jpg
+│   │   ├── municipal-stadium-of-kerkyra-684328.jpg
+│   │   ├── municipal-stadium-of-mytilini-687586.jpg
+│   │   ├── municipal-stadium-of-pyrgos-1300564.jpg
+│   │   ├── municipal-stadium-of-trikala-129655.jpg
+│   │   ├── municipal-stadium-of-veroia-687528.jpg
+│   │   ├── panetolikos-ground-687519.jpg
+│   │   ├── panthessaliko-687596.jpg
+│   │   ├── stavros-mavrothalassitis-129654.jpg
+│   │   ├── theodoros-kolokotronis-697604.jpg
+│   │   ├── theodoros-vardinogiannis-1300552.jpg
+│   │   ├── toumba-1300556.jpg
+│   │   └── zosimades-129680.jpg
+│   ├── toumba-1300556.jpg
+│   └── zosimades-129680.jpg
+├── guadeloupe
+│   ├── stade-rene-serge-nabajoth-82062599.jpg
+│   └── thumbs
+│       └── stade-rene-serge-nabajoth-82062599.jpg
+├── guatemala
+│   ├── doroteo-guamuch-flores-103147.jpg
+│   ├── estadio-cementos-progreso-8827171.jpg
+│   └── thumbs
+│       ├── doroteo-guamuch-flores-103147.jpg
+│       └── estadio-cementos-progreso-8827171.jpg
+├── guinea
+│   ├── stade-du-28-septembre-103044.jpg
+│   └── thumbs
+│       └── stade-du-28-septembre-103044.jpg
+├── guinea-bissau
+│   ├── estadio-24-de-setembro-23017885.jpg
+│   └── thumbs
+│       └── estadio-24-de-setembro-23017885.jpg
+├── haiti
+│   ├── stade-sylvio-cator-103159.jpg
+│   └── thumbs
+│       └── stade-sylvio-cator-103159.jpg
+├── honduras
+│   ├── estadio-excelsior-7720005.jpg
+│   ├── estadio-francisco-morazan-308278.jpg
+│   ├── estadio-yankel-rosenthal-87001966.jpg
+│   └── thumbs
+│       ├── estadio-excelsior-7720005.jpg
+│       ├── estadio-francisco-morazan-308278.jpg
+│       └── estadio-yankel-rosenthal-87001966.jpg
+├── hungary
+│   ├── balmazujvarosi-varosi-stadion-38005238.jpg
+│   ├── beke-ter-1300582.jpg
+│   ├── bozsik-arena-1300587.jpg
+│   ├── budai-ii-laszlo-stadion-7520454.jpg
+│   ├── buzanszky-jeno-stadion-7521364.jpg
+│   ├── eto-park-1300584.jpg
+│   ├── fehervari-ut-7521408.jpg
+│   ├── groupama-arena-38037284.jpg
+│   ├── haladas-sportkomplexum-1300586.jpg
+│   ├── illovszky-rudolf-stadion-1300591.jpg
+│   ├── kolorcity-arena-7521390.jpg
+│   ├── ligeti-stadion-1300593.jpg
+│   ├── nagyerdei-stadion-38037135.jpg
+│   ├── pancho-arena-38037285.jpg
+│   ├── perutz-stadion-7520452.jpg
+│   ├── pmfc-stadion-7520453.jpg
+│   ├── puskas-arena-102974.jpg
+│   ├── rakoczi-stadion-7520448.jpg
+│   ├── revesz-geza-utca-1300600.jpg
+│   ├── szektoi-stadion-7520449.jpg
+│   ├── szent-gellert-forum-29199212.jpg
+│   ├── szentmarjay-tibor-varosi-stadion-38005648.jpg
+│   ├── szusza-ferenc-stadion-1300592.jpg
+│   ├── thumbs
+│   │   ├── balmazujvarosi-varosi-stadion-38005238.jpg
+│   │   ├── beke-ter-1300582.jpg
+│   │   ├── bozsik-arena-1300587.jpg
+│   │   ├── budai-ii-laszlo-stadion-7520454.jpg
+│   │   ├── buzanszky-jeno-stadion-7521364.jpg
+│   │   ├── eto-park-1300584.jpg
+│   │   ├── fehervari-ut-7521408.jpg
+│   │   ├── groupama-arena-38037284.jpg
+│   │   ├── haladas-sportkomplexum-1300586.jpg
+│   │   ├── illovszky-rudolf-stadion-1300591.jpg
+│   │   ├── kolorcity-arena-7521390.jpg
+│   │   ├── ligeti-stadion-1300593.jpg
+│   │   ├── nagyerdei-stadion-38037135.jpg
+│   │   ├── pancho-arena-38037285.jpg
+│   │   ├── perutz-stadion-7520452.jpg
+│   │   ├── pmfc-stadion-7520453.jpg
+│   │   ├── puskas-arena-102974.jpg
+│   │   ├── rakoczi-stadion-7520448.jpg
+│   │   ├── revesz-geza-utca-1300600.jpg
+│   │   ├── szektoi-stadion-7520449.jpg
+│   │   ├── szent-gellert-forum-29199212.jpg
+│   │   ├── szentmarjay-tibor-varosi-stadion-38005648.jpg
+│   │   ├── szusza-ferenc-stadion-1300592.jpg
+│   │   ├── tiszaligeti-stadion-38020152.jpg
+│   │   ├── uj-hidegkuti-nandor-stadion-1300588.jpg
+│   │   ├── varkerti-stadion-38013480.jpg
+│   │   ├── varosi-stadion-mezokovesd-38004841.jpg
+│   │   ├── wittmann-antal-park-7521401.jpg
+│   │   ├── zsengeller-gyula-sporttelep-38004837.jpg
+│   │   └── zte-arena-1300594.jpg
+│   ├── tiszaligeti-stadion-38020152.jpg
+│   ├── uj-hidegkuti-nandor-stadion-1300588.jpg
+│   ├── varkerti-stadion-38013480.jpg
+│   ├── varosi-stadion-mezokovesd-38004841.jpg
+│   ├── wittmann-antal-park-7521401.jpg
+│   ├── zsengeller-gyula-sporttelep-38004837.jpg
+│   └── zte-arena-1300594.jpg
+├── iceland
+│   ├── framvollur-ulfarsardal-39033654.jpg
+│   ├── grenivikurvollur-7840058.jpg
+│   ├── hasteinsvollur-7840061.jpg
+│   ├── kaplakrikavollur-7840071.jpg
+│   ├── kopavogsvollur-7840047.jpg
+│   ├── korinn-39006752.jpg
+│   ├── laugardalsvollur-1300632.jpg
+│   ├── thumbs
+│   │   ├── framvollur-ulfarsardal-39033654.jpg
+│   │   ├── grenivikurvollur-7840058.jpg
+│   │   ├── hasteinsvollur-7840061.jpg
+│   │   ├── kaplakrikavollur-7840071.jpg
+│   │   ├── kopavogsvollur-7840047.jpg
+│   │   ├── korinn-39006752.jpg
+│   │   ├── laugardalsvollur-1300632.jpg
+│   │   └── vikingsvollur-5410247.jpg
+│   └── vikingsvollur-5410247.jpg
+├── india
+│   ├── ambedkar-stadium-5512137.jpg
+│   ├── barasat-stadium-40008980.jpg
+│   ├── cooperage-ground-5512131.jpg
+│   ├── ems-corporation-stadium-40009222.jpg
+│   ├── fatorda-stadium-5512152.jpg
+│   ├── jawaharlal-nehru-international-stadium-5512146.jpg
+│   ├── jawaharlal-nehru-stadium-40023043.jpg
+│   ├── jawaharlal-nehru-stadium-40035917.jpg
+│   ├── jrd-tata-sports-complex-40035908.jpg
+│   ├── kalinga-stadium-2000001576.jpg
+│   ├── khuman-lampak-main-stadium-5623228.jpg
+│   ├── mumbai-football-arena-40030001.jpg
+│   ├── rajiv-gandhi-stadium-40023183.jpg
+│   ├── salt-lake-stadium-103240.jpg
+│   ├── shree-shiv-chhatrapati-sports-complex-40008910.jpg
+│   ├── sree-kanteerava-stadium-5512166.jpg
+│   ├── thumbs
+│   │   ├── ambedkar-stadium-5512137.jpg
+│   │   ├── barasat-stadium-40008980.jpg
+│   │   ├── cooperage-ground-5512131.jpg
+│   │   ├── ems-corporation-stadium-40009222.jpg
+│   │   ├── fatorda-stadium-5512152.jpg
+│   │   ├── jawaharlal-nehru-international-stadium-5512146.jpg
+│   │   ├── jawaharlal-nehru-stadium-40023043.jpg
+│   │   ├── jawaharlal-nehru-stadium-40035917.jpg
+│   │   ├── jrd-tata-sports-complex-40035908.jpg
+│   │   ├── kalinga-stadium-2000001576.jpg
+│   │   ├── khuman-lampak-main-stadium-5623228.jpg
+│   │   ├── mumbai-football-arena-40030001.jpg
+│   │   ├── rajiv-gandhi-stadium-40023183.jpg
+│   │   ├── salt-lake-stadium-103240.jpg
+│   │   ├── shree-shiv-chhatrapati-sports-complex-40008910.jpg
+│   │   ├── sree-kanteerava-stadium-5512166.jpg
+│   │   ├── tilak-maidan-5512168.jpg
+│   │   └── trc-football-turf-40036967.jpg
+│   ├── tilak-maidan-5512168.jpg
+│   └── trc-football-turf-40036967.jpg
+├── indonesia
+│   ├── aji-imbut-41035812.jpg
+│   ├── batakan-41063219.jpg
+│   ├── gajayana-135524.jpg
+│   ├── galuh-41046936.jpg
+│   ├── gawalise-41002080.jpg
+│   ├── gelora-bumi-kartini-41012030.jpg
+│   ├── gelora-bung-karno-103241.jpg
+│   ├── gelora-bung-tomo-41041209.jpg
+│   ├── gelora-joko-samudro-41050673.jpg
+│   ├── jatidiri-135498.jpg
+│   ├── kanjuruhan-7746616.jpg
+│   ├── krida-41002093.jpg
+│   ├── maguwoharjo-7746664.jpg
+│   ├── manahan-5622871.jpg
+│   ├── mandala-135516.jpg
+│   ├── mandala-krida-135501.jpg
+│   ├── pakansari-7749303.jpg
+│   ├── patriot-chandrabhaga-7742380.jpg
+│   ├── si-jalak-harupat-7749300.jpg
+│   ├── singaperbangsa-41002076.jpg
+│   ├── sultan-agung-7748389.jpg
+│   ├── sumpah-pemuda-way-halim-41053440.jpg
+│   ├── teladan-135492.jpg
+│   └── thumbs
+│       ├── aji-imbut-41035812.jpg
+│       ├── batakan-41063219.jpg
+│       ├── gajayana-135524.jpg
+│       ├── galuh-41046936.jpg
+│       ├── gawalise-41002080.jpg
+│       ├── gelora-bumi-kartini-41012030.jpg
+│       ├── gelora-bung-karno-103241.jpg
+│       ├── gelora-bung-tomo-41041209.jpg
+│       ├── gelora-joko-samudro-41050673.jpg
+│       ├── jatidiri-135498.jpg
+│       ├── kanjuruhan-7746616.jpg
+│       ├── krida-41002093.jpg
+│       ├── maguwoharjo-7746664.jpg
+│       ├── manahan-5622871.jpg
+│       ├── mandala-135516.jpg
+│       ├── mandala-krida-135501.jpg
+│       ├── pakansari-7749303.jpg
+│       ├── patriot-chandrabhaga-7742380.jpg
+│       ├── si-jalak-harupat-7749300.jpg
+│       ├── singaperbangsa-41002076.jpg
+│       ├── sultan-agung-7748389.jpg
+│       ├── sumpah-pemuda-way-halim-41053440.jpg
+│       └── teladan-135492.jpg
+├── iran
+│   ├── azadi-103242.jpg
+│   ├── fouladshahr-1018246.jpg
+│   ├── ghadir-23239977.jpg
+│   ├── imam-reza-23359956.jpg
+│   ├── naghsh-e-jahan-1003845.jpg
+│   ├── pars-shiraz-23240301.jpg
+│   ├── shahid-vatani-1039039.jpg
+│   ├── takhti-1018245.jpg
+│   ├── takhti-5512201.jpg
+│   ├── thumbs
+│   │   ├── azadi-103242.jpg
+│   │   ├── fouladshahr-1018246.jpg
+│   │   ├── ghadir-23239977.jpg
+│   │   ├── imam-reza-23359956.jpg
+│   │   ├── naghsh-e-jahan-1003845.jpg
+│   │   ├── pars-shiraz-23240301.jpg
+│   │   ├── shahid-vatani-1039039.jpg
+│   │   ├── takhti-1018245.jpg
+│   │   ├── takhti-5512201.jpg
+│   │   └── yadegar-e-emam-1003846.jpg
+│   └── yadegar-e-emam-1003846.jpg
+├── iraq
+│   ├── al-shaab-stadium-103243.jpg
+│   ├── basra-international-stadium-23321811.jpg
+│   └── thumbs
+│       ├── al-shaab-stadium-103243.jpg
+│       └── basra-international-stadium-23321811.jpg
+├── israel
+│   ├── acre-stadium-42016223.jpg
+│   ├── afula-ilit-42024898.jpg
+│   ├── bloomfield-1300656.jpg
+│   ├── doha-7862505.jpg
+│   ├── green-stadium-7864602.jpg
+│   ├── haberfeld-128287.jpg
+│   ├── hamoshava-7870755.jpg
+│   ├── levita-1300666.jpg
+│   ├── lod-stadium-42001297.jpg
+│   ├── municipal-stadium-of-herzliya-1300663.jpg
+│   ├── municipal-stadium-of-kiryat-shmona-7862196.jpg
+│   ├── nes-ziona-municipal-stadium-42012273.jpg
+│   ├── netanya-stadium-7862374.jpg
+│   ├── ramat-gan-102975.jpg
+│   ├── sala-7862504.jpg
+│   ├── teddy-1300655.jpg
+│   ├── thumbs
+│   │   ├── acre-stadium-42016223.jpg
+│   │   ├── afula-ilit-42024898.jpg
+│   │   ├── bloomfield-1300656.jpg
+│   │   ├── doha-7862505.jpg
+│   │   ├── green-stadium-7864602.jpg
+│   │   ├── haberfeld-128287.jpg
+│   │   ├── hamoshava-7870755.jpg
+│   │   ├── levita-1300666.jpg
+│   │   ├── lod-stadium-42001297.jpg
+│   │   ├── municipal-stadium-of-herzliya-1300663.jpg
+│   │   ├── municipal-stadium-of-kiryat-shmona-7862196.jpg
+│   │   ├── nes-ziona-municipal-stadium-42012273.jpg
+│   │   ├── netanya-stadium-7862374.jpg
+│   │   ├── ramat-gan-102975.jpg
+│   │   ├── sala-7862504.jpg
+│   │   ├── teddy-1300655.jpg
+│   │   ├── turner-stadium-42012282.jpg
+│   │   ├── yaacov-grundman-stadium-7862507.jpg
+│   │   └── yud-alef-stadium-128288.jpg
+│   ├── turner-stadium-42012282.jpg
+│   ├── yaacov-grundman-stadium-7862507.jpg
+│   └── yud-alef-stadium-128288.jpg
+├── italy
+│   ├── adriatico-giovanni-cornacchia-1239.jpg
+│   ├── alberto-braglia-1226.jpg
+│   ├── alberto-picco-1263.jpg
+│   ├── alberto-pinto-1179.jpg
+│   ├── allianz-stadium-1209.jpg
+│   ├── angelo-massimino-cibali-1164.jpg
+│   ├── arechi-1254.jpg
+│   ├── arena-garibaldi-romeo-anconetani-1241.jpg
+│   ├── armando-picchi-1215.jpg
+│   ├── artemio-franchi-1260.jpg
+│   ├── avicor-stadium-selvapiana-nuovo-romagnoli-829168.jpg
+│   ├── benito-stirpe-43156635.jpg
+│   ├── brianteo-u-power-stadium-1228.jpg
+│   ├── bruno-benelli-1248.jpg
+│   ├── carlo-speroni-1245.jpg
+│   ├── cino-e-lillo-del-duca-1162.jpg
+│   ├── ciro-vigorito-1170.jpg
+│   ├── citta-di-arezzo-1161.jpg
+│   ├── dacia-arena-friuli-1273.jpg
+│   ├── danilo-martelli-700197.jpg
+│   ├── ennio-tardini-1235.jpg
+│   ├── erasmo-iacovone-1264.jpg
+│   ├── euganeo-1234.jpg
+│   ├── ezio-scida-707656.jpg
+│   ├── gewiss-stadium-1163.jpg
+│   ├── giovanni-zini-1191.jpg
+│   ├── giuseppe-moccagatta-1157.jpg
+│   ├── giuseppe-sinigaglia-1188.jpg
+│   ├── leonardo-garilli-1240.jpg
+│   ├── libero-liberati-1267.jpg
+│   ├── luigi-ferraris-1201.jpg
+│   ├── mapei-stadium-citta-del-tricolore-1249.jpg
+│   ├── marcantonio-bentegodi-1185.jpg
+│   ├── marcello-melani-1242.jpg
+│   ├── marco-druso-7987178.jpg
+│   ├── mario-rigamonti-1174.jpg
+│   ├── mario-rigamonti-mario-ceppi-1213.jpg
+│   ├── nereo-rocco-1271.jpg
+│   ├── nicola-ceravolo-1182.jpg
+│   ├── olimpico-1211.jpg
+│   ├── olimpico-grande-torino-43005752.jpg
+│   ├── oreste-granillo-829198.jpg
+│   ├── orogel-stadium-dino-manuzzi-1183.jpg
+│   ├── partenio-adriano-lombardi-1165.jpg
+│   ├── pier-cesare-tombolato-7987373.jpg
+│   ├── pier-luigi-penzo-1275.jpg
+│   ├── pino-zaccheria-1198.jpg
+│   ├── renato-curi-1238.jpg
+│   ├── renato-dallara-1172.jpg
+│   ├── renzo-barbera-la-favorita-1186.jpg
+│   ├── riviera-delle-palme-700104.jpg
+│   ├── romeo-galli-6100023.jpg
+│   ├── romeo-menti-1208.jpg
+│   ├── romeo-menti-707603.jpg
+│   ├── san-filippo-franco-scoglio-1407614.jpg
+│   ├── san-nicola-1168.jpg
+│   ├── san-siro-1205.jpg
+│   ├── san-vito-gigi-marulla-1189.jpg
+│   ├── silvio-piola-1231.jpg
+│   ├── silvio-piola-1247.jpg
+│   ├── simonetta-lamberti-707650.jpg
+│   ├── stadio-artemio-franchi-1196.jpg
+│   ├── stadio-carlo-castellani-computer-gross-arena-1192.jpg
+│   ├── stadio-comunale-paolo-mazza-1253.jpg
+│   ├── stadio-diego-armando-maradona-1229.jpg
+│   ├── thumbs
+│   │   ├── adriatico-giovanni-cornacchia-1239.jpg
+│   │   ├── alberto-braglia-1226.jpg
+│   │   ├── alberto-picco-1263.jpg
+│   │   ├── alberto-pinto-1179.jpg
+│   │   ├── allianz-stadium-1209.jpg
+│   │   ├── angelo-massimino-cibali-1164.jpg
+│   │   ├── arechi-1254.jpg
+│   │   ├── arena-garibaldi-romeo-anconetani-1241.jpg
+│   │   ├── armando-picchi-1215.jpg
+│   │   ├── artemio-franchi-1260.jpg
+│   │   ├── avicor-stadium-selvapiana-nuovo-romagnoli-829168.jpg
+│   │   ├── benito-stirpe-43156635.jpg
+│   │   ├── brianteo-u-power-stadium-1228.jpg
+│   │   ├── bruno-benelli-1248.jpg
+│   │   ├── carlo-speroni-1245.jpg
+│   │   ├── cino-e-lillo-del-duca-1162.jpg
+│   │   ├── ciro-vigorito-1170.jpg
+│   │   ├── citta-di-arezzo-1161.jpg
+│   │   ├── dacia-arena-friuli-1273.jpg
+│   │   ├── danilo-martelli-700197.jpg
+│   │   ├── ennio-tardini-1235.jpg
+│   │   ├── erasmo-iacovone-1264.jpg
+│   │   ├── euganeo-1234.jpg
+│   │   ├── ezio-scida-707656.jpg
+│   │   ├── gewiss-stadium-1163.jpg
+│   │   ├── giovanni-zini-1191.jpg
+│   │   ├── giuseppe-moccagatta-1157.jpg
+│   │   ├── giuseppe-sinigaglia-1188.jpg
+│   │   ├── leonardo-garilli-1240.jpg
+│   │   ├── libero-liberati-1267.jpg
+│   │   ├── luigi-ferraris-1201.jpg
+│   │   ├── mapei-stadium-citta-del-tricolore-1249.jpg
+│   │   ├── marcantonio-bentegodi-1185.jpg
+│   │   ├── marcello-melani-1242.jpg
+│   │   ├── marco-druso-7987178.jpg
+│   │   ├── mario-rigamonti-1174.jpg
+│   │   ├── mario-rigamonti-mario-ceppi-1213.jpg
+│   │   ├── nereo-rocco-1271.jpg
+│   │   ├── nicola-ceravolo-1182.jpg
+│   │   ├── olimpico-1211.jpg
+│   │   ├── olimpico-grande-torino-43005752.jpg
+│   │   ├── oreste-granillo-829198.jpg
+│   │   ├── orogel-stadium-dino-manuzzi-1183.jpg
+│   │   ├── partenio-adriano-lombardi-1165.jpg
+│   │   ├── pier-cesare-tombolato-7987373.jpg
+│   │   ├── pier-luigi-penzo-1275.jpg
+│   │   ├── pino-zaccheria-1198.jpg
+│   │   ├── renato-curi-1238.jpg
+│   │   ├── renato-dallara-1172.jpg
+│   │   ├── renzo-barbera-la-favorita-1186.jpg
+│   │   ├── riviera-delle-palme-700104.jpg
+│   │   ├── romeo-galli-6100023.jpg
+│   │   ├── romeo-menti-1208.jpg
+│   │   ├── romeo-menti-707603.jpg
+│   │   ├── san-filippo-franco-scoglio-1407614.jpg
+│   │   ├── san-nicola-1168.jpg
+│   │   ├── san-siro-1205.jpg
+│   │   ├── san-vito-gigi-marulla-1189.jpg
+│   │   ├── silvio-piola-1231.jpg
+│   │   ├── silvio-piola-1247.jpg
+│   │   ├── simonetta-lamberti-707650.jpg
+│   │   ├── stadio-artemio-franchi-1196.jpg
+│   │   ├── stadio-carlo-castellani-computer-gross-arena-1192.jpg
+│   │   ├── stadio-comunale-paolo-mazza-1253.jpg
+│   │   ├── stadio-diego-armando-maradona-1229.jpg
+│   │   ├── unipol-domus-43358366.jpg
+│   │   └── via-del-mare-1212.jpg
+│   ├── unipol-domus-43358366.jpg
+│   └── via-del-mare-1212.jpg
+├── ivory-coast
+│   ├── stade-felix-houphouet-boigny-103035.jpg
+│   ├── stade-robert-champroux-5390196.jpg
+│   └── thumbs
+│       ├── stade-felix-houphouet-boigny-103035.jpg
+│       └── stade-robert-champroux-5390196.jpg
+├── jamaica
+│   ├── harbour-view-stadium-790944.jpg
+│   ├── independence-park-103160.jpg
+│   └── thumbs
+│       ├── harbour-view-stadium-790944.jpg
+│       └── independence-park-103160.jpg
+├── japan
+│   ├── ajinomoto-stadium-775558.jpg
+│   ├── best-denki-stadium-107282.jpg
+│   ├── city-light-stadium-783310.jpg
+│   ├── denka-big-swan-stadium-780796.jpg
+│   ├── edion-stadium-hiroshima-102574.jpg
+│   ├── ekimae-real-estate-stadium-107310.jpg
+│   ├── fukuda-denshi-arena-786449.jpg
+│   ├── iai-stadium-nihondaira-102575.jpg
+│   ├── ibaraki-stadium-102577.jpg
+│   ├── jit-recycle-ink-stadium-3901573.jpg
+│   ├── kawasaki-stadium-102566.jpg
+│   ├── lemon-gas-stadium-hiratsuka-102564.jpg
+│   ├── machida-stadium-780799.jpg
+│   ├── nack5-stadium-omiya-107306.jpg
+│   ├── nagoya-stadium-775189.jpg
+│   ├── nd-soft-stadium-yamagata-107302.jpg
+│   ├── nissan-stadium-102569.jpg
+│   ├── noevir-stadium-kobe-780793.jpg
+│   ├── oita-bank-dome-107304.jpg
+│   ├── sapporo-stadium-776297.jpg
+│   ├── takebishi-stadium-kyoto-107300.jpg
+│   ├── thumbs
+│   │   ├── ajinomoto-stadium-775558.jpg
+│   │   ├── best-denki-stadium-107282.jpg
+│   │   ├── city-light-stadium-783310.jpg
+│   │   ├── denka-big-swan-stadium-780796.jpg
+│   │   ├── edion-stadium-hiroshima-102574.jpg
+│   │   ├── ekimae-real-estate-stadium-107310.jpg
+│   │   ├── fukuda-denshi-arena-786449.jpg
+│   │   ├── iai-stadium-nihondaira-102575.jpg
+│   │   ├── ibaraki-stadium-102577.jpg
+│   │   ├── jit-recycle-ink-stadium-3901573.jpg
+│   │   ├── kawasaki-stadium-102566.jpg
+│   │   ├── lemon-gas-stadium-hiratsuka-102564.jpg
+│   │   ├── machida-stadium-780799.jpg
+│   │   ├── nack5-stadium-omiya-107306.jpg
+│   │   ├── nagoya-stadium-775189.jpg
+│   │   ├── nd-soft-stadium-yamagata-107302.jpg
+│   │   ├── nissan-stadium-102569.jpg
+│   │   ├── noevir-stadium-kobe-780793.jpg
+│   │   ├── oita-bank-dome-107304.jpg
+│   │   ├── sapporo-stadium-776297.jpg
+│   │   ├── takebishi-stadium-kyoto-107300.jpg
+│   │   ├── transcosmos-stadium-nagasaki-783318.jpg
+│   │   ├── urawa-stadium-780795.jpg
+│   │   ├── yamaha-stadium-102576.jpg
+│   │   ├── yodoko-sakura-stadium-45052676.jpg
+│   │   └── yurtec-stadium-sendai-107284.jpg
+│   ├── transcosmos-stadium-nagasaki-783318.jpg
+│   ├── urawa-stadium-780795.jpg
+│   ├── yamaha-stadium-102576.jpg
+│   ├── yodoko-sakura-stadium-45052676.jpg
+│   └── yurtec-stadium-sendai-107284.jpg
+├── jordan
+│   ├── amman-international-stadium-103245.jpg
+│   └── thumbs
+│       └── amman-international-stadium-103245.jpg
+├── kazakhstan
+│   ├── astana-arena-484603.jpg
+│   ├── ortalq-stadion-jetisu-taldqorgan-149249.jpg
+│   ├── stadion-im-gani-muratbaeva-484605.jpg
+│   ├── taraz-484621.jpg
+│   └── thumbs
+│       ├── astana-arena-484603.jpg
+│       ├── ortalq-stadion-jetisu-taldqorgan-149249.jpg
+│       ├── stadion-im-gani-muratbaeva-484605.jpg
+│       └── taraz-484621.jpg
+├── kenya
+│   ├── moi-international-sports-centre-23017864.jpg
+│   └── thumbs
+│       └── moi-international-sports-centre-23017864.jpg
+├── kuwait
+│   ├── al-kuwait-sports-club-stadium-135309.jpg
+│   ├── jaber-al-ahmad-international-stadium-23017678.jpg
+│   ├── mohammed-al-hamad-stadium-135307.jpg
+│   └── thumbs
+│       ├── al-kuwait-sports-club-stadium-135309.jpg
+│       ├── jaber-al-ahmad-international-stadium-23017678.jpg
+│       └── mohammed-al-hamad-stadium-135307.jpg
+├── kyrgyzstan
+│   ├── stadion-im-dolena-omurzakova-103251.jpg
+│   └── thumbs
+│       └── stadion-im-dolena-omurzakova-103251.jpg
+├── latvia
+│   ├── skonto-stadions-485733.jpg
+│   └── thumbs
+│       └── skonto-stadions-485733.jpg
+├── lebanon
+│   ├── camille-chamoun-sports-city-stadium-128275.jpg
+│   └── thumbs
+│       └── camille-chamoun-sports-city-stadium-128275.jpg
+├── liberia
+│   ├── samuel-kanyon-doe-sports-complex-103078.jpg
+│   └── thumbs
+│       └── samuel-kanyon-doe-sports-complex-103078.jpg
+├── libya
+│   ├── benina-martyrs-of-february-stadium-12029119.jpg
+│   └── thumbs
+│       └── benina-martyrs-of-february-stadium-12029119.jpg
+├── liechtenstein
+│   ├── rheinpark-stadion-129503.jpg
+│   └── thumbs
+│       └── rheinpark-stadion-129503.jpg
+├── lithuania
+│   ├── lff-stadionas-2300012.jpg
+│   └── thumbs
+│       └── lff-stadionas-2300012.jpg
+├── madagascar
+│   ├── stade-municipal-de-mahamasina-103080.jpg
+│   └── thumbs
+│       └── stade-municipal-de-mahamasina-103080.jpg
+├── malawi
+│   ├── bingu-stadium-13200799.jpg
+│   ├── kamuzu-stadium-103081.jpg
+│   └── thumbs
+│       ├── bingu-stadium-13200799.jpg
+│       └── kamuzu-stadium-103081.jpg
+├── malaysia
+│   ├── stadium-bandaraya-pulau-pinang-1032022.jpg
+│   ├── stadium-bolasepak-kuala-lumpur-5623392.jpg
+│   ├── stadium-darul-aman-135360.jpg
+│   ├── stadium-darul-makmur-135378.jpg
+│   ├── stadium-hang-jebat-1033156.jpg
+│   ├── stadium-hang-tuah-8650003.jpg
+│   ├── stadium-likas-135350.jpg
+│   ├── stadium-nasional-bukit-jalil-5625181.jpg
+│   ├── stadium-perak-135383.jpg
+│   ├── stadium-petaling-jaya-5625182.jpg
+│   ├── stadium-sarawak-23120846.jpg
+│   ├── stadium-shah-alam-103255.jpg
+│   ├── stadium-sultan-mizan-zainal-abidin-23024820.jpg
+│   ├── stadium-sultan-muhammad-iv-135373.jpg
+│   ├── stadium-tan-sri-dato-haji-hassan-yunus-135375.jpg
+│   ├── stadium-tuanku-abdul-rahman-135363.jpg
+│   ├── stadium-tuanku-syed-putra-135366.jpg
+│   └── thumbs
+│       ├── stadium-bandaraya-pulau-pinang-1032022.jpg
+│       ├── stadium-bolasepak-kuala-lumpur-5623392.jpg
+│       ├── stadium-darul-aman-135360.jpg
+│       ├── stadium-darul-makmur-135378.jpg
+│       ├── stadium-hang-jebat-1033156.jpg
+│       ├── stadium-hang-tuah-8650003.jpg
+│       ├── stadium-likas-135350.jpg
+│       ├── stadium-nasional-bukit-jalil-5625181.jpg
+│       ├── stadium-perak-135383.jpg
+│       ├── stadium-petaling-jaya-5625182.jpg
+│       ├── stadium-sarawak-23120846.jpg
+│       ├── stadium-shah-alam-103255.jpg
+│       ├── stadium-sultan-mizan-zainal-abidin-23024820.jpg
+│       ├── stadium-sultan-muhammad-iv-135373.jpg
+│       ├── stadium-tan-sri-dato-haji-hassan-yunus-135375.jpg
+│       ├── stadium-tuanku-abdul-rahman-135363.jpg
+│       └── stadium-tuanku-syed-putra-135366.jpg
+├── mali
+│   ├── stade-du-26-mars-103082.jpg
+│   └── thumbs
+│       └── stade-du-26-mars-103082.jpg
+├── malta
+│   ├── ta-qali-national-stadium-1300785.jpg
+│   └── thumbs
+│       └── ta-qali-national-stadium-1300785.jpg
+├── mauritius
+│   ├── stade-george-v-23017825.jpg
+│   └── thumbs
+│       └── stade-george-v-23017825.jpg
+├── mexico
+│   ├── estadio-3-de-marzo-136005.jpg
+│   ├── estadio-agustin-coruco-diaz-136036.jpg
+│   ├── estadio-akron-51008486.jpg
+│   ├── estadio-alfonso-lastras-136026.jpg
+│   ├── estadio-andres-quintana-roo-51001643.jpg
+│   ├── estadio-azteca-103143.jpg
+│   ├── estadio-bbva-51014707.jpg
+│   ├── estadio-caliente-5666377.jpg
+│   ├── estadio-carlos-iturralde-136033.jpg
+│   ├── estadio-carlos-vega-villalba-136038.jpg
+│   ├── estadio-centenario-mo-5666640.jpg
+│   ├── estadio-corona-tsm-51008487.jpg
+│   ├── estadio-cuauhtemoc-115443.jpg
+│   ├── estadio-dorados-5666339.jpg
+│   ├── estadio-heroe-de-nacozari-51008484.jpg
+│   ├── estadio-hidalgo-116205.jpg
+│   ├── estadio-jalisco-115442.jpg
+│   ├── estadio-la-corregidora-116281.jpg
+│   ├── estadio-leon-116279.jpg
+│   ├── estadio-luis-pirata-fuente-116280.jpg
+│   ├── estadio-marte-r-gomez-136029.jpg
+│   ├── estadio-miguel-aleman-valdes-116284.jpg
+│   ├── estadio-morelos-116283.jpg
+│   ├── estadio-nemesio-diez-136006.jpg
+│   ├── estadio-olimpico-benito-juarez-136039.jpg
+│   ├── estadio-olimpico-de-la-buap-5666638.jpg
+│   ├── estadio-olimpico-de-tapachula-5665535.jpg
+│   ├── estadio-olimpico-universitario-104467.jpg
+│   ├── estadio-olimpico-universitario-de-colima-136035.jpg
+│   ├── estadio-sergio-leon-chavez-308316.jpg
+│   ├── estadio-tamaulipas-5660011.jpg
+│   ├── estadio-tecnologico-de-oaxaca-51034376.jpg
+│   ├── estadio-tlahuicole-5666486.jpg
+│   ├── estadio-universitario-alberto-chivo-cordoba-51011262.jpg
+│   ├── estadio-universitario-de-nuevo-leon-104471.jpg
+│   ├── estadio-victoria-5664699.jpg
+│   ├── estadio-victor-manuel-reyna-5660016.jpg
+│   └── thumbs
+│       ├── estadio-3-de-marzo-136005.jpg
+│       ├── estadio-agustin-coruco-diaz-136036.jpg
+│       ├── estadio-akron-51008486.jpg
+│       ├── estadio-alfonso-lastras-136026.jpg
+│       ├── estadio-andres-quintana-roo-51001643.jpg
+│       ├── estadio-azteca-103143.jpg
+│       ├── estadio-bbva-51014707.jpg
+│       ├── estadio-caliente-5666377.jpg
+│       ├── estadio-carlos-iturralde-136033.jpg
+│       ├── estadio-carlos-vega-villalba-136038.jpg
+│       ├── estadio-centenario-mo-5666640.jpg
+│       ├── estadio-corona-tsm-51008487.jpg
+│       ├── estadio-cuauhtemoc-115443.jpg
+│       ├── estadio-dorados-5666339.jpg
+│       ├── estadio-heroe-de-nacozari-51008484.jpg
+│       ├── estadio-hidalgo-116205.jpg
+│       ├── estadio-jalisco-115442.jpg
+│       ├── estadio-la-corregidora-116281.jpg
+│       ├── estadio-leon-116279.jpg
+│       ├── estadio-luis-pirata-fuente-116280.jpg
+│       ├── estadio-marte-r-gomez-136029.jpg
+│       ├── estadio-miguel-aleman-valdes-116284.jpg
+│       ├── estadio-morelos-116283.jpg
+│       ├── estadio-nemesio-diez-136006.jpg
+│       ├── estadio-olimpico-benito-juarez-136039.jpg
+│       ├── estadio-olimpico-de-la-buap-5666638.jpg
+│       ├── estadio-olimpico-de-tapachula-5665535.jpg
+│       ├── estadio-olimpico-universitario-104467.jpg
+│       ├── estadio-olimpico-universitario-de-colima-136035.jpg
+│       ├── estadio-sergio-leon-chavez-308316.jpg
+│       ├── estadio-tamaulipas-5660011.jpg
+│       ├── estadio-tecnologico-de-oaxaca-51034376.jpg
+│       ├── estadio-tlahuicole-5666486.jpg
+│       ├── estadio-universitario-alberto-chivo-cordoba-51011262.jpg
+│       ├── estadio-universitario-de-nuevo-leon-104471.jpg
+│       ├── estadio-victoria-5664699.jpg
+│       └── estadio-victor-manuel-reyna-5660016.jpg
+├── moldova
+│   ├── complexul-sportiv-sheriff-arena-sheriff-5410248.jpg
+│   ├── thumbs
+│   │   ├── complexul-sportiv-sheriff-arena-sheriff-5410248.jpg
+│   │   └── zimbru-5410249.jpg
+│   └── zimbru-5410249.jpg
+├── monaco
+│   ├── stade-louis-ii-926.jpg
+│   └── thumbs
+│       └── stade-louis-ii-926.jpg
+├── montenegro
+│   ├── gradski-stadion-kraj-bistrice-131114.jpg
+│   └── thumbs
+│       └── gradski-stadion-kraj-bistrice-131114.jpg
+├── morocco
+│   ├── stade-adrar-13161977.jpg
+│   ├── stade-du-prince-moulay-abdallah-105305.jpg
+│   ├── stade-el-abdi-5390202.jpg
+│   ├── stade-mohammed-v-103085.jpg
+│   ├── stade-saniat-rmel-12005113.jpg
+│   └── thumbs
+│       ├── stade-adrar-13161977.jpg
+│       ├── stade-du-prince-moulay-abdallah-105305.jpg
+│       ├── stade-el-abdi-5390202.jpg
+│       ├── stade-mohammed-v-103085.jpg
+│       └── stade-saniat-rmel-12005113.jpg
+├── mozambique
+│   ├── estadio-da-machava-103086.jpg
+│   ├── estadio-nacional-do-zimpeto-13103080.jpg
+│   └── thumbs
+│       ├── estadio-da-machava-103086.jpg
+│       └── estadio-nacional-do-zimpeto-13103080.jpg
+├── myanmar
+│   ├── bogyoke-aung-san-stadium-103258.jpg
+│   ├── thumbs
+│   │   ├── bogyoke-aung-san-stadium-103258.jpg
+│   │   └── thuwunna-stadium-1037320.jpg
+│   └── thuwunna-stadium-1037320.jpg
+├── namibia
+│   ├── sam-nujoma-stadium-103087.jpg
+│   └── thumbs
+│       └── sam-nujoma-stadium-103087.jpg
+├── nepal
+│   ├── dasharath-rangasala-stadium-103259.jpg
+│   └── thumbs
+│       └── dasharath-rangasala-stadium-103259.jpg
+├── netherlands
+│   ├── abe-lenstra-stadion-1444.jpg
+│   ├── afas-stadion-37002796.jpg
+│   ├── bingoal-stadion-1436.jpg
+│   ├── cambuur-stadion-1419.jpg
+│   ├── covebo-stadion-de-koel-1451.jpg
+│   ├── de-adelaarshorst-1433.jpg
+│   ├── de-geusselt-1437.jpg
+│   ├── de-grolsch-veste-1427.jpg
+│   ├── de-krommedijk-1421.jpg
+│   ├── de-kuip-1431.jpg
+│   ├── de-oude-meerdijk-1423.jpg
+│   ├── de-vijverberg-1420.jpg
+│   ├── erve-asito-128401.jpg
+│   ├── euroborg-1426.jpg
+│   ├── fortuna-sittard-stadion-1432.jpg
+│   ├── frans-heesen-stadion-1448.jpg
+│   ├── gelredome-1450.jpg
+│   ├── gs-staalwerken-stadion-1435.jpg
+│   ├── het-goffertstadion-1439.jpg
+│   ├── het-kasteel-7200005.jpg
+│   ├── jan-louwers-stadion-1422.jpg
+│   ├── johan-cruijff-arena-1417.jpg
+│   ├── koning-willem-ii-stadion-1452.jpg
+│   ├── kras-stadion-1429.jpg
+│   ├── mac3park-stadion-1430.jpg
+│   ├── mandemakers-stadion-7200003.jpg
+│   ├── parkstad-limburg-stadion-1443.jpg
+│   ├── philips-stadion-1440.jpg
+│   ├── rat-verlegh-stadion-1438.jpg
+│   ├── stadion-de-vliert-1425.jpg
+│   ├── stadion-galgenwaard-1428.jpg
+│   ├── telstar-stadion-1447.jpg
+│   ├── thumbs
+│   │   ├── abe-lenstra-stadion-1444.jpg
+│   │   ├── afas-stadion-37002796.jpg
+│   │   ├── bingoal-stadion-1436.jpg
+│   │   ├── cambuur-stadion-1419.jpg
+│   │   ├── covebo-stadion-de-koel-1451.jpg
+│   │   ├── de-adelaarshorst-1433.jpg
+│   │   ├── de-geusselt-1437.jpg
+│   │   ├── de-grolsch-veste-1427.jpg
+│   │   ├── de-krommedijk-1421.jpg
+│   │   ├── de-kuip-1431.jpg
+│   │   ├── de-oude-meerdijk-1423.jpg
+│   │   ├── de-vijverberg-1420.jpg
+│   │   ├── erve-asito-128401.jpg
+│   │   ├── euroborg-1426.jpg
+│   │   ├── fortuna-sittard-stadion-1432.jpg
+│   │   ├── frans-heesen-stadion-1448.jpg
+│   │   ├── gelredome-1450.jpg
+│   │   ├── gs-staalwerken-stadion-1435.jpg
+│   │   ├── het-goffertstadion-1439.jpg
+│   │   ├── het-kasteel-7200005.jpg
+│   │   ├── jan-louwers-stadion-1422.jpg
+│   │   ├── johan-cruijff-arena-1417.jpg
+│   │   ├── koning-willem-ii-stadion-1452.jpg
+│   │   ├── kras-stadion-1429.jpg
+│   │   ├── mac3park-stadion-1430.jpg
+│   │   ├── mandemakers-stadion-7200003.jpg
+│   │   ├── parkstad-limburg-stadion-1443.jpg
+│   │   ├── philips-stadion-1440.jpg
+│   │   ├── rat-verlegh-stadion-1438.jpg
+│   │   ├── stadion-de-vliert-1425.jpg
+│   │   ├── stadion-galgenwaard-1428.jpg
+│   │   ├── telstar-stadion-1447.jpg
+│   │   ├── van-donge-de-roo-stadion-1424.jpg
+│   │   └── yanmar-stadion-862710.jpg
+│   ├── van-donge-de-roo-stadion-1424.jpg
+│   └── yanmar-stadion-862710.jpg
+├── nicaragua
+│   ├── estadio-nacional-dennis-martinez-103149.jpg
+│   └── thumbs
+│       └── estadio-nacional-dennis-martinez-103149.jpg
+├── niger
+│   ├── stade-du-general-seyni-kountche-105291.jpg
+│   └── thumbs
+│       └── stade-du-general-seyni-kountche-105291.jpg
+├── nigeria
+│   ├── abubakar-tafawa-balewa-stadium-5390206.jpg
+│   ├── akure-township-stadium-5410050.jpg
+│   ├── aper-aku-stadium-5410042.jpg
+│   ├── dan-anyiam-stadium-5410032.jpg
+│   ├── enyimba-international-stadium-5410001.jpg
+│   ├── lafia-township-stadium-12011485.jpg
+│   ├── moshood-abiola-national-stadium-5410184.jpg
+│   ├── nnamdi-azikiwe-stadium-105370.jpg
+│   ├── sani-abacha-stadium-5410027.jpg
+│   └── thumbs
+│       ├── abubakar-tafawa-balewa-stadium-5390206.jpg
+│       ├── akure-township-stadium-5410050.jpg
+│       ├── aper-aku-stadium-5410042.jpg
+│       ├── dan-anyiam-stadium-5410032.jpg
+│       ├── enyimba-international-stadium-5410001.jpg
+│       ├── lafia-township-stadium-12011485.jpg
+│       ├── moshood-abiola-national-stadium-5410184.jpg
+│       ├── nnamdi-azikiwe-stadium-105370.jpg
+│       └── sani-abacha-stadium-5410027.jpg
+├── northern-ireland
+│   ├── ballymena-showgrounds-116338.jpg
+│   ├── celtic-park-belfast-410005.jpg
+│   ├── clandeboye-park-1300837.jpg
+│   ├── coleraine-showgrounds-1300843.jpg
+│   ├── dixon-park-116337.jpg
+│   ├── ferney-park-410000.jpg
+│   ├── fortwilliam-park-410011.jpg
+│   ├── hagan-park-410600.jpg
+│   ├── holm-park-130033.jpg
+│   ├── inver-park-116333.jpg
+│   ├── knockramer-park-415952.jpg
+│   ├── lakeview-park-410008.jpg
+│   ├── limavady-showgrounds-116335.jpg
+│   ├── mourneview-park-1300840.jpg
+│   ├── riada-stadium-1900969.jpg
+│   ├── seaview-1300839.jpg
+│   ├── shamrock-park-1300844.jpg
+│   ├── solitude-1300838.jpg
+│   ├── stangmore-park-116332.jpg
+│   ├── the-oval-1300841.jpg
+│   ├── the-showgrounds-116336.jpg
+│   ├── thumbs
+│   │   ├── ballymena-showgrounds-116338.jpg
+│   │   ├── celtic-park-belfast-410005.jpg
+│   │   ├── clandeboye-park-1300837.jpg
+│   │   ├── coleraine-showgrounds-1300843.jpg
+│   │   ├── dixon-park-116337.jpg
+│   │   ├── ferney-park-410000.jpg
+│   │   ├── fortwilliam-park-410011.jpg
+│   │   ├── hagan-park-410600.jpg
+│   │   ├── holm-park-130033.jpg
+│   │   ├── inver-park-116333.jpg
+│   │   ├── knockramer-park-415952.jpg
+│   │   ├── lakeview-park-410008.jpg
+│   │   ├── limavady-showgrounds-116335.jpg
+│   │   ├── mourneview-park-1300840.jpg
+│   │   ├── riada-stadium-1900969.jpg
+│   │   ├── seaview-1300839.jpg
+│   │   ├── shamrock-park-1300844.jpg
+│   │   ├── solitude-1300838.jpg
+│   │   ├── stangmore-park-116332.jpg
+│   │   ├── the-oval-1300841.jpg
+│   │   ├── the-showgrounds-116336.jpg
+│   │   ├── wilgar-park-410006.jpg
+│   │   └── windsor-park-1300842.jpg
+│   ├── wilgar-park-410006.jpg
+│   └── windsor-park-1300842.jpg
+├── north-korea
+│   ├── kim-il-sung-stadium-5623080.jpg
+│   ├── may-day-stadium-103248.jpg
+│   └── thumbs
+│       ├── kim-il-sung-stadium-5623080.jpg
+│       └── may-day-stadium-103248.jpg
+├── north-macedonia
+│   ├── cair-116202.jpg
+│   ├── gradski-stadion-kratovo-116201.jpg
+│   ├── stadion-boris-trajkovski-62026666.jpg
+│   ├── thumbs
+│   │   ├── cair-116202.jpg
+│   │   ├── gradski-stadion-kratovo-116201.jpg
+│   │   ├── stadion-boris-trajkovski-62026666.jpg
+│   │   └── tose-proeski-national-arena-102971.jpg
+│   └── tose-proeski-national-arena-102971.jpg
+├── norway
+│   ├── agotnes-stadion-1301034.jpg
+│   ├── aka-arena-1301001.jpg
+│   ├── aker-stadion-1300473.jpg
+│   ├── arasen-stadion-1300468.jpg
+│   ├── aspmyra-stadion-1300458.jpg
+│   ├── bislett-stadion-1300500.jpg
+│   ├── brann-stadion-1300484.jpg
+│   ├── briskeby-1300462.jpg
+│   ├── bryne-stadion-1300449.jpg
+│   ├── color-line-stadion-761722.jpg
+│   ├── consto-arena-1300472.jpg
+│   ├── extra-arena-1301042.jpg
+│   ├── fosshaugane-campus-1300487.jpg
+│   ├── fredrikstad-stadion-772994.jpg
+│   ├── frogner-stadion-769376.jpg
+│   ├── fyka-stadion-6500387.jpg
+│   ├── gjemselund-1300466.jpg
+│   ├── gjvik-stadion-802010.jpg
+│   ├── grefsen-stadion-1300465.jpg
+│   ├── guldbergaunet-stadion-1300492.jpg
+│   ├── halden-stadion-750754.jpg
+│   ├── haugesund-sparebank-arena-1300457.jpg
+│   ├── hddvoll-1300464.jpg
+│   ├── intility-arena-53136988.jpg
+│   ├── jessheim-stadion-53076091.jpg
+│   ├── jotun-arena-53020755.jpg
+│   ├── kfum-arena-53042561.jpg
+│   ├── lerkendal-stadion-1300450.jpg
+│   ├── marienlyst-stadion-1300497.jpg
+│   ├── mells-stadion-1300474.jpg
+│   ├── nadderud-stadion-1300489.jpg
+│   ├── nammo-stadion-53137752.jpg
+│   ├── nordmre-stadion-1300467.jpg
+│   ├── nybergsund-stadion-1300974.jpg
+│   ├── pors-stadion-802011.jpg
+│   ├── randaberg-stadion-1301014.jpg
+│   ├── romssa-arena-1300499.jpg
+│   ├── sarpsborg-stadion-1300482.jpg
+│   ├── selbak-stadion-1300483.jpg
+│   ├── skagerak-arena-53010518.jpg
+│   ├── ski-stadion-1300485.jpg
+│   ├── sparebanken-sr-arena-53010517.jpg
+│   ├── sr-bank-arena-763486.jpg
+│   ├── stampesletta-53010266.jpg
+│   ├── strmmen-stadion-1300496.jpg
+│   ├── thumbs
+│   │   ├── agotnes-stadion-1301034.jpg
+│   │   ├── aka-arena-1301001.jpg
+│   │   ├── aker-stadion-1300473.jpg
+│   │   ├── arasen-stadion-1300468.jpg
+│   │   ├── aspmyra-stadion-1300458.jpg
+│   │   ├── bislett-stadion-1300500.jpg
+│   │   ├── brann-stadion-1300484.jpg
+│   │   ├── briskeby-1300462.jpg
+│   │   ├── bryne-stadion-1300449.jpg
+│   │   ├── color-line-stadion-761722.jpg
+│   │   ├── consto-arena-1300472.jpg
+│   │   ├── extra-arena-1301042.jpg
+│   │   ├── fosshaugane-campus-1300487.jpg
+│   │   ├── fredrikstad-stadion-772994.jpg
+│   │   ├── frogner-stadion-769376.jpg
+│   │   ├── fyka-stadion-6500387.jpg
+│   │   ├── gjemselund-1300466.jpg
+│   │   ├── gjvik-stadion-802010.jpg
+│   │   ├── grefsen-stadion-1300465.jpg
+│   │   ├── guldbergaunet-stadion-1300492.jpg
+│   │   ├── halden-stadion-750754.jpg
+│   │   ├── haugesund-sparebank-arena-1300457.jpg
+│   │   ├── hddvoll-1300464.jpg
+│   │   ├── intility-arena-53136988.jpg
+│   │   ├── jessheim-stadion-53076091.jpg
+│   │   ├── jotun-arena-53020755.jpg
+│   │   ├── kfum-arena-53042561.jpg
+│   │   ├── lerkendal-stadion-1300450.jpg
+│   │   ├── marienlyst-stadion-1300497.jpg
+│   │   ├── mells-stadion-1300474.jpg
+│   │   ├── nadderud-stadion-1300489.jpg
+│   │   ├── nammo-stadion-53137752.jpg
+│   │   ├── nordmre-stadion-1300467.jpg
+│   │   ├── nybergsund-stadion-1300974.jpg
+│   │   ├── pors-stadion-802011.jpg
+│   │   ├── randaberg-stadion-1301014.jpg
+│   │   ├── romssa-arena-1300499.jpg
+│   │   ├── sarpsborg-stadion-1300482.jpg
+│   │   ├── selbak-stadion-1300483.jpg
+│   │   ├── skagerak-arena-53010518.jpg
+│   │   ├── ski-stadion-1300485.jpg
+│   │   ├── sparebanken-sr-arena-53010517.jpg
+│   │   ├── sr-bank-arena-763486.jpg
+│   │   ├── stampesletta-53010266.jpg
+│   │   ├── strmmen-stadion-1300496.jpg
+│   │   ├── tnsberg-gressbane-1300976.jpg
+│   │   ├── tuil-arena-1300498.jpg
+│   │   ├── ullevaal-stadion-117250.jpg
+│   │   └── varden-amfi-1300461.jpg
+│   ├── tnsberg-gressbane-1300976.jpg
+│   ├── tuil-arena-1300498.jpg
+│   ├── ullevaal-stadion-117250.jpg
+│   └── varden-amfi-1300461.jpg
+├── oman
+│   ├── sultan-qaboos-sports-complex-138451.jpg
+│   └── thumbs
+│       └── sultan-qaboos-sports-complex-138451.jpg
+├── palestine
+│   ├── faisal-al-husseini-international-stadium-42019773.jpg
+│   └── thumbs
+│       └── faisal-al-husseini-international-stadium-42019773.jpg
+├── panama
+│   ├── rommel-fernandez-308273.jpg
+│   └── thumbs
+│       └── rommel-fernandez-308273.jpg
+├── paraguay
+│   ├── defensores-del-chaco-102995.jpg
+│   ├── feliciano-caceres-107638.jpg
+│   ├── general-pablo-rojas-107636.jpg
+│   ├── la-huerta-5280276.jpg
+│   ├── luis-alfonso-giagni-5280002.jpg
+│   └── thumbs
+│       ├── defensores-del-chaco-102995.jpg
+│       ├── feliciano-caceres-107638.jpg
+│       ├── general-pablo-rojas-107636.jpg
+│       ├── la-huerta-5280276.jpg
+│       └── luis-alfonso-giagni-5280002.jpg
+├── peru
+│   ├── alejandro-villanueva-matute-303806.jpg
+│   ├── campeones-del-36-308106.jpg
+│   ├── elias-aguirre-308112.jpg
+│   ├── estadio-25-de-noviembre-77012261.jpg
+│   ├── estadio-alberto-gallardo-303810.jpg
+│   ├── estadio-centenario-manuel-rivera-sanchez-77002644.jpg
+│   ├── estadio-huancayo-303814.jpg
+│   ├── estadio-juan-maldonado-gamarra-77046479.jpg
+│   ├── estadio-nacional-102997.jpg
+│   ├── guillermo-briceno-rosamedina-77001476.jpg
+│   ├── heraclio-tapia-5290587.jpg
+│   ├── heroes-de-san-ramon-5290572.jpg
+│   ├── inca-garcilaso-de-la-vega-308110.jpg
+│   ├── ivan-elias-moreno-77001479.jpg
+│   ├── jorge-basadre-5290569.jpg
+│   ├── julio-lores-colan-5290524.jpg
+│   ├── mansiche-308115.jpg
+│   ├── max-augustin-5290574.jpg
+│   ├── miguel-grau-303809.jpg
+│   ├── monumental-universidad-san-marcos-5290611.jpg
+│   ├── monumental-virgen-de-chapi-303808.jpg
+│   ├── rosas-pampa-303807.jpg
+│   └── thumbs
+│       ├── alejandro-villanueva-matute-303806.jpg
+│       ├── campeones-del-36-308106.jpg
+│       ├── elias-aguirre-308112.jpg
+│       ├── estadio-25-de-noviembre-77012261.jpg
+│       ├── estadio-alberto-gallardo-303810.jpg
+│       ├── estadio-centenario-manuel-rivera-sanchez-77002644.jpg
+│       ├── estadio-huancayo-303814.jpg
+│       ├── estadio-juan-maldonado-gamarra-77046479.jpg
+│       ├── estadio-nacional-102997.jpg
+│       ├── guillermo-briceno-rosamedina-77001476.jpg
+│       ├── heraclio-tapia-5290587.jpg
+│       ├── heroes-de-san-ramon-5290572.jpg
+│       ├── inca-garcilaso-de-la-vega-308110.jpg
+│       ├── ivan-elias-moreno-77001479.jpg
+│       ├── jorge-basadre-5290569.jpg
+│       ├── julio-lores-colan-5290524.jpg
+│       ├── mansiche-308115.jpg
+│       ├── max-augustin-5290574.jpg
+│       ├── miguel-grau-303809.jpg
+│       ├── monumental-universidad-san-marcos-5290611.jpg
+│       ├── monumental-virgen-de-chapi-303808.jpg
+│       └── rosas-pampa-303807.jpg
+├── philippines
+│   ├── rizal-memorial-stadium-103262.jpg
+│   └── thumbs
+│       └── rizal-memorial-stadium-103262.jpg
+├── poland
+│   ├── arena-lublin-96064589.jpg
+│   ├── bielsko-biaa-city-stadium-715295.jpg
+│   ├── bruk-bet-termalica-sports-stadium-96000062.jpg
+│   ├── dyskobolia-grodzisk-wielkopolski-stadium-129586.jpg
+│   ├── ernest-pohl-stadium-1300865.jpg
+│   ├── florian-krygier-city-stadium-96135495.jpg
+│   ├── gdynia-city-stadium-715294.jpg
+│   ├── gieksa-arena-1300864.jpg
+│   ├── gks-gornik-stadium-129590.jpg
+│   ├── gks-katowice-stadium-129589.jpg
+│   ├── henryk-reyman-city-stadium-1300882.jpg
+│   ├── jozef-pisudski-cracovia-stadium-129609.jpg
+│   ├── marshall-jozef-pisudski-stadium-96030294.jpg
+│   ├── mielec-city-stadium-54015077.jpg
+│   ├── mosir-96023089.jpg
+│   ├── ojca-wadysawa-augustynka-714684.jpg
+│   ├── orlen-stadion-106871.jpg
+│   ├── osir-olsztyn-1300873.jpg
+│   ├── piotr-wieczorek-city-stadium-96021188.jpg
+│   ├── polsat-plus-arena-gdansk-54007381.jpg
+│   ├── poznan-stadium-1300867.jpg
+│   ├── rakow-city-football-stadium-1300871.jpg
+│   ├── stadion-miejski-w-biaymstoku-715833.jpg
+│   ├── tarczynski-arena-wrocaw-54007382.jpg
+│   ├── thumbs
+│   │   ├── arena-lublin-96064589.jpg
+│   │   ├── bielsko-biaa-city-stadium-715295.jpg
+│   │   ├── bruk-bet-termalica-sports-stadium-96000062.jpg
+│   │   ├── dyskobolia-grodzisk-wielkopolski-stadium-129586.jpg
+│   │   ├── ernest-pohl-stadium-1300865.jpg
+│   │   ├── florian-krygier-city-stadium-96135495.jpg
+│   │   ├── gdynia-city-stadium-715294.jpg
+│   │   ├── gieksa-arena-1300864.jpg
+│   │   ├── gks-gornik-stadium-129590.jpg
+│   │   ├── gks-katowice-stadium-129589.jpg
+│   │   ├── henryk-reyman-city-stadium-1300882.jpg
+│   │   ├── jozef-pisudski-cracovia-stadium-129609.jpg
+│   │   ├── marshall-jozef-pisudski-stadium-96030294.jpg
+│   │   ├── mielec-city-stadium-54015077.jpg
+│   │   ├── mosir-96023089.jpg
+│   │   ├── ojca-wadysawa-augustynka-714684.jpg
+│   │   ├── orlen-stadion-106871.jpg
+│   │   ├── osir-olsztyn-1300873.jpg
+│   │   ├── piotr-wieczorek-city-stadium-96021188.jpg
+│   │   ├── polsat-plus-arena-gdansk-54007381.jpg
+│   │   ├── poznan-stadium-1300867.jpg
+│   │   ├── rakow-city-football-stadium-1300871.jpg
+│   │   ├── stadion-miejski-w-biaymstoku-715833.jpg
+│   │   ├── tarczynski-arena-wrocaw-54007382.jpg
+│   │   ├── tychy-city-stadium-54013538.jpg
+│   │   ├── wadysaw-krol-city-stadium-1300869.jpg
+│   │   ├── white-eagle-stadium-710105.jpg
+│   │   └── widzew-odz-city-stadium-96048181.jpg
+│   ├── tychy-city-stadium-54013538.jpg
+│   ├── wadysaw-krol-city-stadium-1300869.jpg
+│   ├── white-eagle-stadium-710105.jpg
+│   └── widzew-odz-city-stadium-96048181.jpg
+├── portugal
+│   ├── complexo-desportivo-do-freamunde-1502.jpg
+│   ├── estadio-alfredo-da-silva-729462.jpg
+│   ├── estadio-antonio-coimbra-da-mota-1483.jpg
+│   ├── estadio-cidade-de-barcelos-1464.jpg
+│   ├── estadio-cidade-de-coimbra-1486.jpg
+│   ├── estadio-comendador-joaquim-de-almeida-freitas-1482.jpg
+│   ├── estadio-conde-dias-garcia-1521.jpg
+│   ├── estadio-da-capital-do-movel-1476.jpg
+│   ├── estadio-d-afonso-henriques-1458.jpg
+│   ├── estadio-da-luz-741564.jpg
+│   ├── estadio-da-madeira-725047.jpg
+│   ├── estadio-de-sao-luis-1463.jpg
+│   ├── estadio-de-sao-miguel-1541.jpg
+│   ├── estadio-do-aves-1475.jpg
+│   ├── estadio-do-bessa-seculo-xxi-1457.jpg
+│   ├── estadio-do-bonfim-1470.jpg
+│   ├── estadio-do-dragao-745265.jpg
+│   ├── estadio-do-mar-1499.jpg
+│   ├── estadio-do-maritimo-1526.jpg
+│   ├── estadio-dos-arcos-1469.jpg
+│   ├── estadio-do-trofense-900201.jpg
+│   ├── estadio-do-varzim-1487.jpg
+│   ├── estadio-do-vizela-1496.jpg
+│   ├── estadio-joao-cardoso-1517.jpg
+│   ├── estadio-jose-alvalade-741565.jpg
+│   ├── estadio-jose-arcanjo-1538.jpg
+│   ├── estadio-manuel-marques-1516.jpg
+│   ├── estadio-marcolino-de-castro-1479.jpg
+│   ├── estadio-municipal-22-de-junho-1490.jpg
+│   ├── estadio-municipal-25-de-abril-1477.jpg
+│   ├── estadio-municipal-de-agueda-900197.jpg
+│   ├── estadio-municipal-de-arouca-729501.jpg
+│   ├── estadio-municipal-de-aveiro-741569.jpg
+│   ├── estadio-municipal-de-braga-741568.jpg
+│   ├── estadio-municipal-de-fafe-1503.jpg
+│   ├── estadio-municipal-de-leiria-1460.jpg
+│   ├── estadio-municipal-de-rio-maior-725017.jpg
+│   ├── estadio-municipal-do-fontelo-1480.jpg
+│   ├── estadio-municipal-dr-jose-vieira-de-carvalho-1495.jpg
+│   ├── estadio-municipal-engo-manuel-branco-teixeira-1468.jpg
+│   ├── portimao-estadio-1531.jpg
+│   └── thumbs
+│       ├── complexo-desportivo-do-freamunde-1502.jpg
+│       ├── estadio-alfredo-da-silva-729462.jpg
+│       ├── estadio-antonio-coimbra-da-mota-1483.jpg
+│       ├── estadio-cidade-de-barcelos-1464.jpg
+│       ├── estadio-cidade-de-coimbra-1486.jpg
+│       ├── estadio-comendador-joaquim-de-almeida-freitas-1482.jpg
+│       ├── estadio-conde-dias-garcia-1521.jpg
+│       ├── estadio-da-capital-do-movel-1476.jpg
+│       ├── estadio-d-afonso-henriques-1458.jpg
+│       ├── estadio-da-luz-741564.jpg
+│       ├── estadio-da-madeira-725047.jpg
+│       ├── estadio-de-sao-luis-1463.jpg
+│       ├── estadio-de-sao-miguel-1541.jpg
+│       ├── estadio-do-aves-1475.jpg
+│       ├── estadio-do-bessa-seculo-xxi-1457.jpg
+│       ├── estadio-do-bonfim-1470.jpg
+│       ├── estadio-do-dragao-745265.jpg
+│       ├── estadio-do-mar-1499.jpg
+│       ├── estadio-do-maritimo-1526.jpg
+│       ├── estadio-dos-arcos-1469.jpg
+│       ├── estadio-do-trofense-900201.jpg
+│       ├── estadio-do-varzim-1487.jpg
+│       ├── estadio-do-vizela-1496.jpg
+│       ├── estadio-joao-cardoso-1517.jpg
+│       ├── estadio-jose-alvalade-741565.jpg
+│       ├── estadio-jose-arcanjo-1538.jpg
+│       ├── estadio-manuel-marques-1516.jpg
+│       ├── estadio-marcolino-de-castro-1479.jpg
+│       ├── estadio-municipal-22-de-junho-1490.jpg
+│       ├── estadio-municipal-25-de-abril-1477.jpg
+│       ├── estadio-municipal-de-agueda-900197.jpg
+│       ├── estadio-municipal-de-arouca-729501.jpg
+│       ├── estadio-municipal-de-aveiro-741569.jpg
+│       ├── estadio-municipal-de-braga-741568.jpg
+│       ├── estadio-municipal-de-fafe-1503.jpg
+│       ├── estadio-municipal-de-leiria-1460.jpg
+│       ├── estadio-municipal-de-rio-maior-725017.jpg
+│       ├── estadio-municipal-do-fontelo-1480.jpg
+│       ├── estadio-municipal-dr-jose-vieira-de-carvalho-1495.jpg
+│       ├── estadio-municipal-engo-manuel-branco-teixeira-1468.jpg
+│       └── portimao-estadio-1531.jpg
+├── qatar
+│   ├── abdullah-bin-khalifa-stadium-23228061.jpg
+│   ├── ahmed-bin-ali-stadium-5627158.jpg
+│   ├── grand-hamad-stadium-5626852.jpg
+│   ├── hamad-bin-khalifa-stadium-5622854.jpg
+│   ├── jassim-bin-hamad-stadium-5626028.jpg
+│   ├── khalifa-international-stadium-103263.jpg
+│   └── thumbs
+│       ├── abdullah-bin-khalifa-stadium-23228061.jpg
+│       ├── ahmed-bin-ali-stadium-5627158.jpg
+│       ├── grand-hamad-stadium-5626852.jpg
+│       ├── hamad-bin-khalifa-stadium-5622854.jpg
+│       ├── jassim-bin-hamad-stadium-5626028.jpg
+│       └── khalifa-international-stadium-103263.jpg
+├── republic-of-ireland
+│   ├── athlone-town-stadium-562039.jpg
+│   ├── aviva-stadium-52029709.jpg
+│   ├── bishopsgate-129382.jpg
+│   ├── dalymount-park-1300906.jpg
+│   ├── drom-129440.jpg
+│   ├── eamonn-deacy-park-1300910.jpg
+│   ├── fahys-field-129436.jpg
+│   ├── finn-park-1300919.jpg
+│   ├── hunky-dorys-park-1300923.jpg
+│   ├── markets-field-52077077.jpg
+│   ├── milebush-park-129441.jpg
+│   ├── oriel-park-1300909.jpg
+│   ├── richmond-park-1300911.jpg
+│   ├── tallaght-stadium-552203.jpg
+│   ├── the-carlisle-grounds-1300917.jpg
+│   ├── the-showgrounds-1300914.jpg
+│   ├── thumbs
+│   │   ├── athlone-town-stadium-562039.jpg
+│   │   ├── aviva-stadium-52029709.jpg
+│   │   ├── bishopsgate-129382.jpg
+│   │   ├── dalymount-park-1300906.jpg
+│   │   ├── drom-129440.jpg
+│   │   ├── eamonn-deacy-park-1300910.jpg
+│   │   ├── fahys-field-129436.jpg
+│   │   ├── finn-park-1300919.jpg
+│   │   ├── hunky-dorys-park-1300923.jpg
+│   │   ├── markets-field-52077077.jpg
+│   │   ├── milebush-park-129441.jpg
+│   │   ├── oriel-park-1300909.jpg
+│   │   ├── richmond-park-1300911.jpg
+│   │   ├── tallaght-stadium-552203.jpg
+│   │   ├── the-carlisle-grounds-1300917.jpg
+│   │   ├── the-showgrounds-1300914.jpg
+│   │   ├── tolka-park-1300913.jpg
+│   │   ├── turners-cross-1300907.jpg
+│   │   └── ucd-bowl-52007326.jpg
+│   ├── tolka-park-1300913.jpg
+│   ├── turners-cross-1300907.jpg
+│   └── ucd-bowl-52007326.jpg
+├── reunion
+│   ├── stade-jean-ivoula-917512.jpg
+│   └── thumbs
+│       └── stade-jean-ivoula-917512.jpg
+├── romania
+│   ├── 1-mai-slobozia-57004156.jpg
+│   ├── anghel-iordanescu-57104738.jpg
+│   ├── arena-nationala-57069488.jpg
+│   ├── areni-5410610.jpg
+│   ├── ceahlaul-1300942.jpg
+│   ├── central-academia-gh-hagi-57138418.jpg
+│   ├── cetate-7540058.jpg
+│   ├── cluj-arena-57069489.jpg
+│   ├── comunal-afumati-57072102.jpg
+│   ├── concordia-57004161.jpg
+│   ├── constantin-radulescu-7541501.jpg
+│   ├── dinamo-1300943.jpg
+│   ├── emil-alexandrescu-1300961.jpg
+│   ├── eugen-popescu-1300955.jpg
+│   ├── farul-1300944.jpg
+│   ├── flacara-57003593.jpg
+│   ├── francisc-von-neumann-7540053.jpg
+│   ├── iftimie-ilisei-7540079.jpg
+│   ├── ilie-oana-1300963.jpg
+│   ├── ion-comsa-57004158.jpg
+│   ├── ion-oblemenco-5410493.jpg
+│   ├── jean-padureanu-1300945.jpg
+│   ├── marin-anastasovici-7547026.jpg
+│   ├── metalul-57059093.jpg
+│   ├── michael-klein-7540088.jpg
+│   ├── milcovul-7540045.jpg
+│   ├── mircea-chivu-7540056.jpg
+│   ├── municipal-botosani-7541052.jpg
+│   ├── municipal-braila-7540048.jpg
+│   ├── municipal-constantina-dita-7540062.jpg
+│   ├── municipal-constantina-dita-ii-sintetic-57048684.jpg
+│   ├── municipal-drobeta-turnu-severin-7546218.jpg
+│   ├── municipal-miercurea-ciuc-57110311.jpg
+│   ├── municipal-sibiu-1300946.jpg
+│   ├── municipal-turda-7549019.jpg
+│   ├── nicolae-dobrin-1300940.jpg
+│   ├── orasenesc-mioveni-7543237.jpg
+│   ├── otelul-1300947.jpg
+│   ├── petre-libardi-1300957.jpg
+│   ├── rapid-giulesti-1300948.jpg
+│   ├── stefan-dobay-57050299.jpg
+│   ├── thumbs
+│   │   ├── 1-mai-slobozia-57004156.jpg
+│   │   ├── anghel-iordanescu-57104738.jpg
+│   │   ├── arena-nationala-57069488.jpg
+│   │   ├── areni-5410610.jpg
+│   │   ├── ceahlaul-1300942.jpg
+│   │   ├── central-academia-gh-hagi-57138418.jpg
+│   │   ├── cetate-7540058.jpg
+│   │   ├── cluj-arena-57069489.jpg
+│   │   ├── comunal-afumati-57072102.jpg
+│   │   ├── concordia-57004161.jpg
+│   │   ├── constantin-radulescu-7541501.jpg
+│   │   ├── dinamo-1300943.jpg
+│   │   ├── emil-alexandrescu-1300961.jpg
+│   │   ├── eugen-popescu-1300955.jpg
+│   │   ├── farul-1300944.jpg
+│   │   ├── flacara-57003593.jpg
+│   │   ├── francisc-von-neumann-7540053.jpg
+│   │   ├── iftimie-ilisei-7540079.jpg
+│   │   ├── ilie-oana-1300963.jpg
+│   │   ├── ion-comsa-57004158.jpg
+│   │   ├── ion-oblemenco-5410493.jpg
+│   │   ├── jean-padureanu-1300945.jpg
+│   │   ├── marin-anastasovici-7547026.jpg
+│   │   ├── metalul-57059093.jpg
+│   │   ├── michael-klein-7540088.jpg
+│   │   ├── milcovul-7540045.jpg
+│   │   ├── mircea-chivu-7540056.jpg
+│   │   ├── municipal-botosani-7541052.jpg
+│   │   ├── municipal-braila-7540048.jpg
+│   │   ├── municipal-constantina-dita-7540062.jpg
+│   │   ├── municipal-constantina-dita-ii-sintetic-57048684.jpg
+│   │   ├── municipal-drobeta-turnu-severin-7546218.jpg
+│   │   ├── municipal-miercurea-ciuc-57110311.jpg
+│   │   ├── municipal-sibiu-1300946.jpg
+│   │   ├── municipal-turda-7549019.jpg
+│   │   ├── nicolae-dobrin-1300940.jpg
+│   │   ├── orasenesc-mioveni-7543237.jpg
+│   │   ├── otelul-1300947.jpg
+│   │   ├── petre-libardi-1300957.jpg
+│   │   ├── rapid-giulesti-1300948.jpg
+│   │   ├── stefan-dobay-57050299.jpg
+│   │   ├── tunari-57059083.jpg
+│   │   └── viorel-mateianu-5410614.jpg
+│   ├── tunari-57059083.jpg
+│   └── viorel-mateianu-5410614.jpg
+├── russia
+│   ├── ak-bars-arena-58058603.jpg
+│   ├── akhmat-arena-58059397.jpg
+│   ├── anji-arena-8059359.jpg
+│   ├── arena-khimki-130599.jpg
+│   ├── arsenal-stadium-130569.jpg
+│   ├── betboom-arena-8055722.jpg
+│   ├── central-stadium-130582.jpg
+│   ├── central-stadium-477735.jpg
+│   ├── ekaterinburg-arena-1301099.jpg
+│   ├── fisht-olympic-stadium-58066607.jpg
+│   ├── gazovik-stadium-8073220.jpg
+│   ├── geolog-1301088.jpg
+│   ├── kaliningrad-stadium-58066605.jpg
+│   ├── krasnodar-stadium-58053777.jpg
+│   ├── kuban-stadium-130610.jpg
+│   ├── lenin-stadium-130635.jpg
+│   ├── lokomotiv-130579.jpg
+│   ├── nizhniy-novgorod-stadium-58066606.jpg
+│   ├── novye-khimki-58001911.jpg
+│   ├── republican-spartak-stadium-1301096.jpg
+│   ├── rostov-arena-58066612.jpg
+│   ├── rubin-kazan-8068699.jpg
+│   ├── salyut-8054217.jpg
+│   ├── shinnik-stadium-130578.jpg
+│   ├── solidarnost-samara-arena-58066609.jpg
+│   ├── spartak-130580.jpg
+│   ├── spartak-130629.jpg
+│   ├── thumbs
+│   │   ├── ak-bars-arena-58058603.jpg
+│   │   ├── akhmat-arena-58059397.jpg
+│   │   ├── anji-arena-8059359.jpg
+│   │   ├── arena-khimki-130599.jpg
+│   │   ├── arsenal-stadium-130569.jpg
+│   │   ├── betboom-arena-8055722.jpg
+│   │   ├── central-stadium-130582.jpg
+│   │   ├── central-stadium-477735.jpg
+│   │   ├── ekaterinburg-arena-1301099.jpg
+│   │   ├── fisht-olympic-stadium-58066607.jpg
+│   │   ├── gazovik-stadium-8073220.jpg
+│   │   ├── geolog-1301088.jpg
+│   │   ├── kaliningrad-stadium-58066605.jpg
+│   │   ├── krasnodar-stadium-58053777.jpg
+│   │   ├── kuban-stadium-130610.jpg
+│   │   ├── lenin-stadium-130635.jpg
+│   │   ├── lokomotiv-130579.jpg
+│   │   ├── nizhniy-novgorod-stadium-58066606.jpg
+│   │   ├── novye-khimki-58001911.jpg
+│   │   ├── republican-spartak-stadium-1301096.jpg
+│   │   ├── rostov-arena-58066612.jpg
+│   │   ├── rubin-kazan-8068699.jpg
+│   │   ├── salyut-8054217.jpg
+│   │   ├── shinnik-stadium-130578.jpg
+│   │   ├── solidarnost-samara-arena-58066609.jpg
+│   │   ├── spartak-130580.jpg
+│   │   ├── spartak-130629.jpg
+│   │   ├── torpedo-1301101.jpg
+│   │   ├── trud-stadium-130581.jpg
+│   │   ├── veb-arena-1301089.jpg
+│   │   ├── volgograd-arena-58066610.jpg
+│   │   ├── vtb-arena-central-stadium-dinamo-1301087.jpg
+│   │   └── zvezda-130568.jpg
+│   ├── torpedo-1301101.jpg
+│   ├── trud-stadium-130581.jpg
+│   ├── veb-arena-1301089.jpg
+│   ├── volgograd-arena-58066610.jpg
+│   ├── vtb-arena-central-stadium-dinamo-1301087.jpg
+│   └── zvezda-130568.jpg
+├── rwanda
+│   ├── stade-amahoro-103090.jpg
+│   └── thumbs
+│       └── stade-amahoro-103090.jpg
+├── san-marino
+│   ├── san-marino-stadium-102983.jpg
+│   └── thumbs
+│       └── san-marino-stadium-102983.jpg
+├── saudi-arabia
+│   ├── al-hazm-club-stadium-1025813.jpg
+│   ├── al-shoalah-club-stadium-1025812.jpg
+│   ├── king-abdulaziz-stadium-5410597.jpg
+│   ├── king-abdullah-sports-city-the-shining-jewel-23321112.jpg
+│   ├── king-fahd-international-stadium-136608.jpg
+│   ├── king-salman-bin-abdulaziz-sport-city-stadium-23166076.jpg
+│   ├── prince-abdulaziz-bin-musaed-stadium-5410599.jpg
+│   ├── prince-abdullah-bin-jalawi-stadium-1025804.jpg
+│   ├── prince-mohammed-bin-fahd-stadium-5622722.jpg
+│   ├── prince-saud-bin-jalawi-stadium-5410601.jpg
+│   └── thumbs
+│       ├── al-hazm-club-stadium-1025813.jpg
+│       ├── al-shoalah-club-stadium-1025812.jpg
+│       ├── king-abdulaziz-stadium-5410597.jpg
+│       ├── king-abdullah-sports-city-the-shining-jewel-23321112.jpg
+│       ├── king-fahd-international-stadium-136608.jpg
+│       ├── king-salman-bin-abdulaziz-sport-city-stadium-23166076.jpg
+│       ├── prince-abdulaziz-bin-musaed-stadium-5410599.jpg
+│       ├── prince-abdullah-bin-jalawi-stadium-1025804.jpg
+│       ├── prince-mohammed-bin-fahd-stadium-5622722.jpg
+│       └── prince-saud-bin-jalawi-stadium-5410601.jpg
+├── scotland
+│   ├── 3g-arena-netherdale-5202312.jpg
+│   ├── ainslie-park-stadium-5201665.jpg
+│   ├── balmoor-stadium-130922.jpg
+│   ├── balmoral-stadium-61088848.jpg
+│   ├── bellslea-park-5201575.jpg
+│   ├── borough-briggs-130920.jpg
+│   ├── broadwood-stadium-102619.jpg
+│   ├── cappielow-park-102629.jpg
+│   ├── celtic-park-102618.jpg
+│   ├── central-park-102621.jpg
+│   ├── dudgeon-park-5201494.jpg
+│   ├── dumbarton-football-stadium-135876.jpg
+│   ├── east-end-park-102624.jpg
+│   ├── easter-road-102632.jpg
+│   ├── excelsior-stadium-114148.jpg
+│   ├── fir-park-stadium-102637.jpg
+│   ├── forthbank-stadium-102647.jpg
+│   ├── galabank-5201466.jpg
+│   ├── gayfield-park-102614.jpg
+│   ├── glebe-park-102617.jpg
+│   ├── hampden-park-102640.jpg
+│   ├── harlaw-park-5201602.jpg
+│   ├── ibrox-stadium-102642.jpg
+│   ├── islecroft-stadium-5201553.jpg
+│   ├── kilmac-stadium-102622.jpg
+│   ├── links-park-stadium-102636.jpg
+│   ├── mcdiarmid-park-102644.jpg
+│   ├── mgm-timber-bayview-stadium-102625.jpg
+│   ├── new-central-park-5201609.jpg
+│   ├── newtown-park-5201498.jpg
+│   ├── north-lodge-park-5201580.jpg
+│   ├── ochilview-park-102646.jpg
+│   ├── palmerston-park-102639.jpg
+│   ├── pittodrie-stadium-102578.jpg
+│   ├── prestonfield-5201621.jpg
+│   ├── raydale-park-5100046.jpg
+│   ├── somerset-park-102615.jpg
+│   ├── stair-park-102648.jpg
+│   ├── starks-park-102641.jpg
+│   ├── station-park-102628.jpg
+│   ├── tannadice-park-102623.jpg
+│   ├── the-bbsp-stadium-rugby-park-102634.jpg
+│   ├── the-falkirk-stadium-5208610.jpg
+│   ├── the-smisa-stadium-61014157.jpg
+│   ├── thumbs
+│   │   ├── 3g-arena-netherdale-5202312.jpg
+│   │   ├── ainslie-park-stadium-5201665.jpg
+│   │   ├── balmoor-stadium-130922.jpg
+│   │   ├── balmoral-stadium-61088848.jpg
+│   │   ├── bellslea-park-5201575.jpg
+│   │   ├── borough-briggs-130920.jpg
+│   │   ├── broadwood-stadium-102619.jpg
+│   │   ├── cappielow-park-102629.jpg
+│   │   ├── celtic-park-102618.jpg
+│   │   ├── central-park-102621.jpg
+│   │   ├── dudgeon-park-5201494.jpg
+│   │   ├── dumbarton-football-stadium-135876.jpg
+│   │   ├── east-end-park-102624.jpg
+│   │   ├── easter-road-102632.jpg
+│   │   ├── excelsior-stadium-114148.jpg
+│   │   ├── fir-park-stadium-102637.jpg
+│   │   ├── forthbank-stadium-102647.jpg
+│   │   ├── galabank-5201466.jpg
+│   │   ├── gayfield-park-102614.jpg
+│   │   ├── glebe-park-102617.jpg
+│   │   ├── hampden-park-102640.jpg
+│   │   ├── harlaw-park-5201602.jpg
+│   │   ├── ibrox-stadium-102642.jpg
+│   │   ├── islecroft-stadium-5201553.jpg
+│   │   ├── kilmac-stadium-102622.jpg
+│   │   ├── links-park-stadium-102636.jpg
+│   │   ├── mcdiarmid-park-102644.jpg
+│   │   ├── mgm-timber-bayview-stadium-102625.jpg
+│   │   ├── new-central-park-5201609.jpg
+│   │   ├── newtown-park-5201498.jpg
+│   │   ├── north-lodge-park-5201580.jpg
+│   │   ├── ochilview-park-102646.jpg
+│   │   ├── palmerston-park-102639.jpg
+│   │   ├── pittodrie-stadium-102578.jpg
+│   │   ├── prestonfield-5201621.jpg
+│   │   ├── raydale-park-5100046.jpg
+│   │   ├── somerset-park-102615.jpg
+│   │   ├── stair-park-102648.jpg
+│   │   ├── starks-park-102641.jpg
+│   │   ├── station-park-102628.jpg
+│   │   ├── tannadice-park-102623.jpg
+│   │   ├── the-bbsp-stadium-rugby-park-102634.jpg
+│   │   ├── the-falkirk-stadium-5208610.jpg
+│   │   ├── the-smisa-stadium-61014157.jpg
+│   │   ├── tynecastle-park-102631.jpg
+│   │   ├── victoria-park-5201510.jpg
+│   │   └── zlx-stadium-142102.jpg
+│   ├── tynecastle-park-102631.jpg
+│   ├── victoria-park-5201510.jpg
+│   └── zlx-stadium-142102.jpg
+├── senegal
+│   ├── stade-leopold-sedar-senghor-103092.jpg
+│   └── thumbs
+│       └── stade-leopold-sedar-senghor-103092.jpg
+├── serbia
+│   ├── cair-1301362.jpg
+│   ├── cika-daca-120781.jpg
+│   ├── dragan-nikolic-5740715.jpg
+│   ├── gradski-stadion-1301361.jpg
+│   ├── gradski-stadion-131116.jpg
+│   ├── gradski-stadion-5748007.jpg
+│   ├── gradski-stadion-kraj-despotovice-5742994.jpg
+│   ├── gradski-stadion-kraj-morave-1301382.jpg
+│   ├── karaore-5741841.jpg
+│   ├── mladost-132324.jpg
+│   ├── radomir-antic-1301380.jpg
+│   ├── sc-stadion-vozdovac-5744632.jpg
+│   ├── slavko-maletin-vava-5743464.jpg
+│   ├── stadion-fk-buducnost-5756756.jpg
+│   ├── stadion-fk-kolubara-136484.jpg
+│   ├── stadion-fk-macva-5740641.jpg
+│   ├── stadion-fk-partizan-1301364.jpg
+│   ├── stadion-na-banovom-brdu-1301373.jpg
+│   ├── thumbs
+│   │   ├── cair-1301362.jpg
+│   │   ├── cika-daca-120781.jpg
+│   │   ├── dragan-nikolic-5740715.jpg
+│   │   ├── gradski-stadion-1301361.jpg
+│   │   ├── gradski-stadion-131116.jpg
+│   │   ├── gradski-stadion-5748007.jpg
+│   │   ├── gradski-stadion-kraj-despotovice-5742994.jpg
+│   │   ├── gradski-stadion-kraj-morave-1301382.jpg
+│   │   ├── karaore-5741841.jpg
+│   │   ├── mladost-132324.jpg
+│   │   ├── radomir-antic-1301380.jpg
+│   │   ├── sc-stadion-vozdovac-5744632.jpg
+│   │   ├── slavko-maletin-vava-5743464.jpg
+│   │   ├── stadion-fk-buducnost-5756756.jpg
+│   │   ├── stadion-fk-kolubara-136484.jpg
+│   │   ├── stadion-fk-macva-5740641.jpg
+│   │   ├── stadion-fk-partizan-1301364.jpg
+│   │   ├── stadion-na-banovom-brdu-1301373.jpg
+│   │   └── tsc-arena-5747643.jpg
+│   └── tsc-arena-5747643.jpg
+├── sierra-leone
+│   ├── national-stadium-85006356.jpg
+│   └── thumbs
+│       └── national-stadium-85006356.jpg
+├── slovakia
+│   ├── city-arena-stadion-antona-malatinskeho-63025723.jpg
+│   ├── fc-vion-7560051.jpg
+│   ├── mestsky-futbalovy-stadion-dubnica-n-v-5410534.jpg
+│   ├── mestsky-stadion-skalica-63025381.jpg
+│   ├── mfk-tatran-63000894.jpg
+│   ├── mol-arena-1301159.jpg
+│   ├── ntc-poprad-63004282.jpg
+│   ├── pod-cebratom-5410535.jpg
+│   ├── pod-dubnom-1301168.jpg
+│   ├── pod-zoborom-7560027.jpg
+│   ├── puchov-976183.jpg
+│   ├── senica-7561525.jpg
+│   ├── spartak-myjava-63010728.jpg
+│   ├── stadion-pomle-63011668.jpg
+│   ├── tehelne-pole-63010504.jpg
+│   ├── thumbs
+│   │   ├── city-arena-stadion-antona-malatinskeho-63025723.jpg
+│   │   ├── fc-vion-7560051.jpg
+│   │   ├── mestsky-futbalovy-stadion-dubnica-n-v-5410534.jpg
+│   │   ├── mestsky-stadion-skalica-63025381.jpg
+│   │   ├── mfk-tatran-63000894.jpg
+│   │   ├── mol-arena-1301159.jpg
+│   │   ├── ntc-poprad-63004282.jpg
+│   │   ├── pod-cebratom-5410535.jpg
+│   │   ├── pod-dubnom-1301168.jpg
+│   │   ├── pod-zoborom-7560027.jpg
+│   │   ├── puchov-976183.jpg
+│   │   ├── senica-7561525.jpg
+│   │   ├── spartak-myjava-63010728.jpg
+│   │   ├── stadion-pomle-63011668.jpg
+│   │   ├── tehelne-pole-63010504.jpg
+│   │   ├── zelpo-arena-7560039.jpg
+│   │   ├── zemplin-7563793.jpg
+│   │   └── ziar-nad-hronom-7560049.jpg
+│   ├── zelpo-arena-7560039.jpg
+│   ├── zemplin-7563793.jpg
+│   └── ziar-nad-hronom-7560049.jpg
+├── slovenia
+│   ├── arena-zdezele-7584356.jpg
+│   ├── fazanerija-1301192.jpg
+│   ├── ljudski-vrt-1301191.jpg
+│   ├── mestni-stadion-lendava-7580032.jpg
+│   ├── mestni-stadion-ptuj-7580026.jpg
+│   ├── nogometni-stadion-rajko-stolfa-7580037.jpg
+│   ├── ob-jezeru-1301195.jpg
+│   ├── sc-dravograd-128651.jpg
+│   ├── sportni-park-aluminij-7580025.jpg
+│   ├── sportni-park-beltinci-1301187.jpg
+│   ├── sportni-park-ilirija-64004294.jpg
+│   ├── sportni-park-nova-gorica-1301188.jpg
+│   ├── src-bonifika-138172.jpg
+│   ├── stadion-matije-gubca-7582144.jpg
+│   ├── stozice-64016210.jpg
+│   └── thumbs
+│       ├── arena-zdezele-7584356.jpg
+│       ├── fazanerija-1301192.jpg
+│       ├── ljudski-vrt-1301191.jpg
+│       ├── mestni-stadion-lendava-7580032.jpg
+│       ├── mestni-stadion-ptuj-7580026.jpg
+│       ├── nogometni-stadion-rajko-stolfa-7580037.jpg
+│       ├── ob-jezeru-1301195.jpg
+│       ├── sc-dravograd-128651.jpg
+│       ├── sportni-park-aluminij-7580025.jpg
+│       ├── sportni-park-beltinci-1301187.jpg
+│       ├── sportni-park-ilirija-64004294.jpg
+│       ├── sportni-park-nova-gorica-1301188.jpg
+│       ├── src-bonifika-138172.jpg
+│       ├── stadion-matije-gubca-7582144.jpg
+│       └── stozice-64016210.jpg
+├── somalia
+│   ├── mogadishu-stadium-103095.jpg
+│   └── thumbs
+│       └── mogadishu-stadium-103095.jpg
+├── south-africa
+│   ├── athlone-stadium-104487.jpg
+│   ├── cape-town-stadium-104488.jpg
+│   ├── dobsonville-stadium-5690904.jpg
+│   ├── dr-rantlai-petrus-molemela-stadium-104492.jpg
+│   ├── fnb-stadium-131243.jpg
+│   ├── goble-park-131279.jpg
+│   ├── harry-gwala-stadium-5680135.jpg
+│   ├── kabokweni-stadium-65041698.jpg
+│   ├── kanyamazane-stadium-5689988.jpg
+│   ├── lucas-masterpieces-moripe-stadium-5680125.jpg
+│   ├── makhulong-stadium-131237.jpg
+│   ├── moses-mabhida-stadium-5687008.jpg
+│   ├── old-peter-mokaba-stadium-65035948.jpg
+│   ├── orlando-stadium-104482.jpg
+│   ├── peter-mokaba-stadium-5687731.jpg
+│   ├── princess-magogo-stadium-5680134.jpg
+│   ├── royal-bafokeng-sports-palace-5685438.jpg
+│   ├── thohoyandou-stadium-5680136.jpg
+│   └── thumbs
+│       ├── athlone-stadium-104487.jpg
+│       ├── cape-town-stadium-104488.jpg
+│       ├── dobsonville-stadium-5690904.jpg
+│       ├── dr-rantlai-petrus-molemela-stadium-104492.jpg
+│       ├── fnb-stadium-131243.jpg
+│       ├── goble-park-131279.jpg
+│       ├── harry-gwala-stadium-5680135.jpg
+│       ├── kabokweni-stadium-65041698.jpg
+│       ├── kanyamazane-stadium-5689988.jpg
+│       ├── lucas-masterpieces-moripe-stadium-5680125.jpg
+│       ├── makhulong-stadium-131237.jpg
+│       ├── moses-mabhida-stadium-5687008.jpg
+│       ├── old-peter-mokaba-stadium-65035948.jpg
+│       ├── orlando-stadium-104482.jpg
+│       ├── peter-mokaba-stadium-5687731.jpg
+│       ├── princess-magogo-stadium-5680134.jpg
+│       ├── royal-bafokeng-sports-palace-5685438.jpg
+│       └── thohoyandou-stadium-5680136.jpg
+├── south-korea
+│   ├── ansan-wa-stadium-66002792.jpg
+│   ├── bucheon-stadium-135417.jpg
+│   ├── busan-asiad-main-stadium-5700026.jpg
+│   ├── busan-gudeok-stadium-134628.jpg
+│   ├── changwon-football-center-66012716.jpg
+│   ├── chuncheon-songam-sports-town-stadium-66011067.jpg
+│   ├── daejeon-world-cup-stadium-5700007.jpg
+│   ├── dgb-daegu-bank-park-5704217.jpg
+│   ├── gwangyang-football-stadium-135419.jpg
+│   ├── incheon-football-stadium-66014436.jpg
+│   ├── jeju-world-cup-stadium-5700011.jpg
+│   ├── jeonju-world-cup-stadium-5700008.jpg
+│   ├── seoul-world-cup-stadium-5700002.jpg
+│   ├── steelyard-5700054.jpg
+│   ├── suwon-big-bird-stadium-5700006.jpg
+│   ├── suwon-stadium-134629.jpg
+│   ├── tancheon-stadium-5703928.jpg
+│   ├── thumbs
+│   │   ├── ansan-wa-stadium-66002792.jpg
+│   │   ├── bucheon-stadium-135417.jpg
+│   │   ├── busan-asiad-main-stadium-5700026.jpg
+│   │   ├── busan-gudeok-stadium-134628.jpg
+│   │   ├── changwon-football-center-66012716.jpg
+│   │   ├── chuncheon-songam-sports-town-stadium-66011067.jpg
+│   │   ├── daejeon-world-cup-stadium-5700007.jpg
+│   │   ├── dgb-daegu-bank-park-5704217.jpg
+│   │   ├── gwangyang-football-stadium-135419.jpg
+│   │   ├── incheon-football-stadium-66014436.jpg
+│   │   ├── jeju-world-cup-stadium-5700011.jpg
+│   │   ├── jeonju-world-cup-stadium-5700008.jpg
+│   │   ├── seoul-world-cup-stadium-5700002.jpg
+│   │   ├── steelyard-5700054.jpg
+│   │   ├── suwon-big-bird-stadium-5700006.jpg
+│   │   ├── suwon-stadium-134629.jpg
+│   │   ├── tancheon-stadium-5703928.jpg
+│   │   ├── ulsan-munsu-football-stadium-134632.jpg
+│   │   └── yi-sun-sin-stadium-2000001537.jpg
+│   ├── ulsan-munsu-football-stadium-134632.jpg
+│   └── yi-sun-sin-stadium-2000001537.jpg
+├── south-sudan
+│   ├── juba-stadium-13113222.jpg
+│   └── thumbs
+│       └── juba-stadium-13113222.jpg
+├── spain
+│   ├── abanca-riazor-1035.jpg
+│   ├── alfredo-di-stefano-67000003.jpg
+│   ├── alvarez-claro-109028.jpg
+│   ├── a-malata-1050.jpg
+│   ├── anxo-carro-1021.jpg
+│   ├── balaidos-1031.jpg
+│   ├── benito-villamarin-1053.jpg
+│   ├── butarque-1014.jpg
+│   ├── camp-desports-1076.jpg
+│   ├── campos-anexos-nuevo-jose-zorrilla-67034781.jpg
+│   ├── can-misses-4212169.jpg
+│   ├── carlos-belmonte-1006.jpg
+│   ├── cartagonova-4203004.jpg
+│   ├── castalia-1018.jpg
+│   ├── ciudad-de-tudela-4212420.jpg
+│   ├── ciutat-de-valencia-1046.jpg
+│   ├── civitas-metropolitano-67089815.jpg
+│   ├── coliseum-1042.jpg
+│   ├── el-alcoraz-4212295.jpg
+│   ├── el-helmantico-1073.jpg
+│   ├── el-malecon-109012.jpg
+│   ├── el-plantio-4200567.jpg
+│   ├── el-sadar-1032.jpg
+│   ├── el-sardinero-1051.jpg
+│   ├── el-toralin-7445380.jpg
+│   ├── estadi-johan-cruyff-31041532.jpg
+│   ├── estadi-mallorca-son-moix-6700010.jpg
+│   ├── estadio-de-gran-canaria-7454220.jpg
+│   ├── estadio-de-la-ceramica-1080.jpg
+│   ├── estadio-de-vallecas-1052.jpg
+│   ├── estadio-el-molinon-enrique-castro-quini-1071.jpg
+│   ├── estadio-fernando-torres-67188333.jpg
+│   ├── estadi-olimpic-lluis-companys-1049.jpg
+│   ├── estadio-romano-jose-fouto-1029.jpg
+│   ├── francisco-artes-carrasco-1503181.jpg
+│   ├── francisco-de-la-hera-1038.jpg
+│   ├── heliodoro-rodriguez-lopez-1025.jpg
+│   ├── ipurua-1067.jpg
+│   ├── jose-rico-perez-1044.jpg
+│   ├── la-condomina-1059.jpg
+│   ├── la-fuensanta-4200577.jpg
+│   ├── la-nova-creu-alta-1027.jpg
+│   ├── la-romareda-1065.jpg
+│   ├── la-rosaleda-1047.jpg
+│   ├── lasesarre-1012.jpg
+│   ├── martinez-valero-1037.jpg
+│   ├── mendizorroza-1015.jpg
+│   ├── mestalla-1078.jpg
+│   ├── montilivi-1503187.jpg
+│   ├── municipal-anduva-4212198.jpg
+│   ├── municipal-de-la-linea-4212112.jpg
+│   ├── municipal-de-linarejos-4212109.jpg
+│   ├── narcis-sala-4212120.jpg
+│   ├── nou-estadi-4203007.jpg
+│   ├── nuevo-arcangel-1033.jpg
+│   ├── nuevo-carlos-tartiere-1060.jpg
+│   ├── nuevo-colombino-1066.jpg
+│   ├── nuevo-jose-zorrilla-1064.jpg
+│   ├── nuevo-las-gaunas-1019.jpg
+│   ├── nuevo-la-victoria-1045.jpg
+│   ├── nuevo-los-carmenes-1043.jpg
+│   ├── nuevo-los-pajaritos-1023.jpg
+│   ├── nuevo-mirador-4203034.jpg
+│   ├── nuevo-mirandilla-1030.jpg
+│   ├── nuevo-roman-suarez-puerta-4213011.jpg
+│   ├── nuevo-vivero-1017.jpg
+│   ├── pasaron-1048.jpg
+│   ├── pedro-escartin-814969.jpg
+│   ├── principe-felipe-1028.jpg
+│   ├── ramon-sanchez-pizjuan-1070.jpg
+│   ├── reino-de-leon-1034.jpg
+│   ├── ruta-de-la-plata-7445382.jpg
+│   ├── salto-del-caballo-1026.jpg
+│   ├── santiago-bernabeu-1056.jpg
+│   ├── stage-front-stadium-67015508.jpg
+│   └── thumbs
+│       ├── abanca-riazor-1035.jpg
+│       ├── alfredo-di-stefano-67000003.jpg
+│       ├── alvarez-claro-109028.jpg
+│       ├── a-malata-1050.jpg
+│       ├── anxo-carro-1021.jpg
+│       ├── balaidos-1031.jpg
+│       ├── benito-villamarin-1053.jpg
+│       ├── butarque-1014.jpg
+│       ├── camp-desports-1076.jpg
+│       ├── campos-anexos-nuevo-jose-zorrilla-67034781.jpg
+│       ├── can-misses-4212169.jpg
+│       ├── carlos-belmonte-1006.jpg
+│       ├── cartagonova-4203004.jpg
+│       ├── castalia-1018.jpg
+│       ├── ciudad-de-tudela-4212420.jpg
+│       ├── ciutat-de-valencia-1046.jpg
+│       ├── civitas-metropolitano-67089815.jpg
+│       ├── coliseum-1042.jpg
+│       ├── el-alcoraz-4212295.jpg
+│       ├── el-helmantico-1073.jpg
+│       ├── el-malecon-109012.jpg
+│       ├── el-plantio-4200567.jpg
+│       ├── el-sadar-1032.jpg
+│       ├── el-sardinero-1051.jpg
+│       ├── el-toralin-7445380.jpg
+│       ├── estadi-johan-cruyff-31041532.jpg
+│       ├── estadi-mallorca-son-moix-6700010.jpg
+│       ├── estadio-de-gran-canaria-7454220.jpg
+│       ├── estadio-de-la-ceramica-1080.jpg
+│       ├── estadio-de-vallecas-1052.jpg
+│       ├── estadio-el-molinon-enrique-castro-quini-1071.jpg
+│       ├── estadio-fernando-torres-67188333.jpg
+│       ├── estadi-olimpic-lluis-companys-1049.jpg
+│       ├── estadio-romano-jose-fouto-1029.jpg
+│       ├── francisco-artes-carrasco-1503181.jpg
+│       ├── francisco-de-la-hera-1038.jpg
+│       ├── heliodoro-rodriguez-lopez-1025.jpg
+│       ├── ipurua-1067.jpg
+│       ├── jose-rico-perez-1044.jpg
+│       ├── la-condomina-1059.jpg
+│       ├── la-fuensanta-4200577.jpg
+│       ├── la-nova-creu-alta-1027.jpg
+│       ├── la-romareda-1065.jpg
+│       ├── la-rosaleda-1047.jpg
+│       ├── lasesarre-1012.jpg
+│       ├── martinez-valero-1037.jpg
+│       ├── mendizorroza-1015.jpg
+│       ├── mestalla-1078.jpg
+│       ├── montilivi-1503187.jpg
+│       ├── municipal-anduva-4212198.jpg
+│       ├── municipal-de-la-linea-4212112.jpg
+│       ├── municipal-de-linarejos-4212109.jpg
+│       ├── narcis-sala-4212120.jpg
+│       ├── nou-estadi-4203007.jpg
+│       ├── nuevo-arcangel-1033.jpg
+│       ├── nuevo-carlos-tartiere-1060.jpg
+│       ├── nuevo-colombino-1066.jpg
+│       ├── nuevo-jose-zorrilla-1064.jpg
+│       ├── nuevo-las-gaunas-1019.jpg
+│       ├── nuevo-la-victoria-1045.jpg
+│       ├── nuevo-los-carmenes-1043.jpg
+│       ├── nuevo-los-pajaritos-1023.jpg
+│       ├── nuevo-mirador-4203034.jpg
+│       ├── nuevo-mirandilla-1030.jpg
+│       ├── nuevo-roman-suarez-puerta-4213011.jpg
+│       ├── nuevo-vivero-1017.jpg
+│       ├── pasaron-1048.jpg
+│       ├── pedro-escartin-814969.jpg
+│       ├── principe-felipe-1028.jpg
+│       ├── ramon-sanchez-pizjuan-1070.jpg
+│       ├── reino-de-leon-1034.jpg
+│       ├── ruta-de-la-plata-7445382.jpg
+│       ├── salto-del-caballo-1026.jpg
+│       ├── santiago-bernabeu-1056.jpg
+│       └── stage-front-stadium-67015508.jpg
+├── sri-lanka
+│   ├── sugathadasa-stadium-103266.jpg
+│   └── thumbs
+│       └── sugathadasa-stadium-103266.jpg
+├── stadium.png
+├── sudan
+│   ├── al-merrikh-stadium-105346.jpg
+│   └── thumbs
+│       └── al-merrikh-stadium-105346.jpg
+├── suriname
+│   ├── andre-kamperveen-stadion-103165.jpg
+│   └── thumbs
+│       └── andre-kamperveen-stadion-103165.jpg
+├── sweden
+│   ├── angelholms-ip-4300687.jpg
+│   ├── boden-arena-68016954.jpg
+│   ├── boras-arena-8111842.jpg
+│   ├── bravida-arena-93049693.jpg
+│   ├── domnarvsvallen-1114.jpg
+│   ├── eleda-stadion-68011805.jpg
+│   ├── eyravallen-1134.jpg
+│   ├── finnvedsvallen-1733.jpg
+│   ├── gamla-ullevi-68005347.jpg
+│   ├── gammliavallen-1149.jpg
+│   ├── gavlevallen-93060187.jpg
+│   ├── grimsta-ip-1103.jpg
+│   ├── guldfageln-arena-68022645.jpg
+│   ├── gutavallen-1154.jpg
+│   ├── hitachi-energy-arena-68016966.jpg
+│   ├── idrottsparken-sundsvall-1111.jpg
+│   ├── jamtkraft-arena-68016968.jpg
+│   ├── kopparvallen-atvidaberg-1084.jpg
+│   ├── landskrona-ip-1124.jpg
+│   ├── linkoping-arena-93032724.jpg
+│   ├── malmo-stadion-1109.jpg
+│   ├── nya-parken-1092.jpg
+│   ├── olympia-helsingborg-93070906.jpg
+│   ├── orjans-vall-1097.jpg
+│   ├── paskbergsvallen-1731.jpg
+│   ├── skarsjovallen-1138.jpg
+│   ├── sodertalje-fotbollsarena-68000326.jpg
+│   ├── stadsparksvallen-6410548.jpg
+│   ├── stora-valla-1087.jpg
+│   ├── strandvallen-1128.jpg
+│   ├── studenternas-ip-1117.jpg
+│   ├── thumbs
+│   │   ├── angelholms-ip-4300687.jpg
+│   │   ├── boden-arena-68016954.jpg
+│   │   ├── boras-arena-8111842.jpg
+│   │   ├── bravida-arena-93049693.jpg
+│   │   ├── domnarvsvallen-1114.jpg
+│   │   ├── eleda-stadion-68011805.jpg
+│   │   ├── eyravallen-1134.jpg
+│   │   ├── finnvedsvallen-1733.jpg
+│   │   ├── gamla-ullevi-68005347.jpg
+│   │   ├── gammliavallen-1149.jpg
+│   │   ├── gavlevallen-93060187.jpg
+│   │   ├── grimsta-ip-1103.jpg
+│   │   ├── guldfageln-arena-68022645.jpg
+│   │   ├── gutavallen-1154.jpg
+│   │   ├── hitachi-energy-arena-68016966.jpg
+│   │   ├── idrottsparken-sundsvall-1111.jpg
+│   │   ├── jamtkraft-arena-68016968.jpg
+│   │   ├── kopparvallen-atvidaberg-1084.jpg
+│   │   ├── landskrona-ip-1124.jpg
+│   │   ├── linkoping-arena-93032724.jpg
+│   │   ├── malmo-stadion-1109.jpg
+│   │   ├── nya-parken-1092.jpg
+│   │   ├── olympia-helsingborg-93070906.jpg
+│   │   ├── orjans-vall-1097.jpg
+│   │   ├── paskbergsvallen-1731.jpg
+│   │   ├── skarsjovallen-1138.jpg
+│   │   ├── sodertalje-fotbollsarena-68000326.jpg
+│   │   ├── stadsparksvallen-6410548.jpg
+│   │   ├── stora-valla-1087.jpg
+│   │   ├── strandvallen-1128.jpg
+│   │   ├── studenternas-ip-1117.jpg
+│   │   ├── tidavallen-4300722.jpg
+│   │   ├── tingvalla-ip-1100.jpg
+│   │   ├── tunavallen-eskilstuna-1575.jpg
+│   │   ├── vanersvallen-4300729.jpg
+│   │   ├── vangavallen-1112.jpg
+│   │   └── vinavallen-1742.jpg
+│   ├── tidavallen-4300722.jpg
+│   ├── tingvalla-ip-1100.jpg
+│   ├── tunavallen-eskilstuna-1575.jpg
+│   ├── vanersvallen-4300729.jpg
+│   ├── vangavallen-1112.jpg
+│   └── vinavallen-1742.jpg
+├── switzerland
+│   ├── brugglifeld-5722518.jpg
+│   ├── centre-sportif-de-colovray-5723900.jpg
+│   ├── cornaredo-1301214.jpg
+│   ├── fcs-park-98017421.jpg
+│   ├── kybunpark-98004802.jpg
+│   ├── letzigrund-5722523.jpg
+│   ├── paul-gruninger-stadion-98005845.jpg
+│   ├── schutzenwiese-5722529.jpg
+│   ├── sportpark-bergholz-5720014.jpg
+│   ├── stade-de-geneve-1301218.jpg
+│   ├── stade-de-la-maladiere-5722524.jpg
+│   ├── stade-de-la-tuiliere-84151491.jpg
+│   ├── stade-de-tourbillon-5722525.jpg
+│   ├── stade-municipal-5722532.jpg
+│   ├── stadio-comunale-riva-iv-5726211.jpg
+│   ├── st-jakob-park-5722520.jpg
+│   ├── stockhorn-arena-98009286.jpg
+│   ├── swissporarena-98005981.jpg
+│   ├── thumbs
+│   │   ├── brugglifeld-5722518.jpg
+│   │   ├── centre-sportif-de-colovray-5723900.jpg
+│   │   ├── cornaredo-1301214.jpg
+│   │   ├── fcs-park-98017421.jpg
+│   │   ├── kybunpark-98004802.jpg
+│   │   ├── letzigrund-5722523.jpg
+│   │   ├── paul-gruninger-stadion-98005845.jpg
+│   │   ├── schutzenwiese-5722529.jpg
+│   │   ├── sportpark-bergholz-5720014.jpg
+│   │   ├── stade-de-geneve-1301218.jpg
+│   │   ├── stade-de-la-maladiere-5722524.jpg
+│   │   ├── stade-de-la-tuiliere-84151491.jpg
+│   │   ├── stade-de-tourbillon-5722525.jpg
+│   │   ├── stade-municipal-5722532.jpg
+│   │   ├── stadio-comunale-riva-iv-5726211.jpg
+│   │   ├── st-jakob-park-5722520.jpg
+│   │   ├── stockhorn-arena-98009286.jpg
+│   │   ├── swissporarena-98005981.jpg
+│   │   └── wankdorf-1301220.jpg
+│   └── wankdorf-1301220.jpg
+├── tanzania
+│   ├── benjamin-mkapa-national-stadium-12010711.jpg
+│   └── thumbs
+│       └── benjamin-mkapa-national-stadium-12010711.jpg
+├── thailand
+│   ├── bg-stadium-23081899.jpg
+│   ├── chang-arena-23176968.jpg
+│   ├── thumbs
+│   │   ├── bg-stadium-23081899.jpg
+│   │   ├── chang-arena-23176968.jpg
+│   │   └── thunderdome-stadium-23063078.jpg
+│   └── thunderdome-stadium-23063078.jpg
+├── togo
+│   ├── stade-de-kegue-23017719.jpg
+│   └── thumbs
+│       └── stade-de-kegue-23017719.jpg
+├── tonga
+│   ├── teufaiva-sport-stadium-148956.jpg
+│   └── thumbs
+│       └── teufaiva-sport-stadium-148956.jpg
+├── tree.txt
+├── trinidad-tobago
+│   ├── ato-boldon-stadium-791159.jpg
+│   ├── hasely-crawford-stadium-5625933.jpg
+│   ├── mannie-ramjohn-stadium-5625937.jpg
+│   └── thumbs
+│       ├── ato-boldon-stadium-791159.jpg
+│       ├── hasely-crawford-stadium-5625933.jpg
+│       └── mannie-ramjohn-stadium-5625937.jpg
+├── tunisia
+│   ├── stade-abdelaziz-chtioui-105256.jpg
+│   ├── stade-du-15-octobre-5390007.jpg
+│   ├── stade-olympique-5390012.jpg
+│   ├── stade-olympique-7601512.jpg
+│   ├── stade-taieb-mhiri-5390000.jpg
+│   └── thumbs
+│       ├── stade-abdelaziz-chtioui-105256.jpg
+│       ├── stade-du-15-octobre-5390007.jpg
+│       ├── stade-olympique-5390012.jpg
+│       ├── stade-olympique-7601512.jpg
+│       └── stade-taieb-mhiri-5390000.jpg
+├── turkiye
+│   ├── alanya-oba-stadyumu-70042979.jpg
+│   ├── alsancak-mustafa-denizli-stadyumu-70112733.jpg
+│   ├── aydn-adnan-menderes-stadyumu-130394.jpg
+│   ├── balkesir-ataturk-stadyumu-130412.jpg
+│   ├── bandrma-17-eylul-stadyumu-453171.jpg
+│   ├── basaksehir-fatih-terim-stadyumu-70076263.jpg
+│   ├── besiktas-inonu-spor-kompleksi-tupras-stadyumu-70086181.jpg
+│   ├── bg-group-sivas-4-eylul-stadyumu-70080939.jpg
+│   ├── bolu-ataturk-stadyumu-130400.jpg
+│   ├── bornova-aziz-kocaoglu-stadyumu-70099576.jpg
+│   ├── corendon-airlines-park-antalya-stadyumu-70081852.jpg
+│   ├── cotanak-spor-kompleksi-stadyumu-70108826.jpg
+│   ├── denizli-ataturk-stadyumu-1301241.jpg
+│   ├── dr-necmettin-seyhoglu-stadyumu-70023717.jpg
+│   ├── eryaman-stadyumu-70110735.jpg
+│   ├── erzurum-kazm-karabekir-stadyumu-70064054.jpg
+│   ├── gursel-aksel-stadyumu-70096158.jpg
+│   ├── izmir-ataturk-stadyumu-130385.jpg
+│   ├── manisa-19-mays-stadyumu-462452.jpg
+│   ├── mersin-stadyumu-70061835.jpg
+│   ├── recep-tayyip-erdogan-stadyumu-130406.jpg
+│   ├── samsun-yeni-19-mays-stadyumu-70081853.jpg
+│   ├── sanlurfa-11-nisan-stadyumu-70023836.jpg
+│   ├── senol-gunes-spor-kompleksi-papara-park-stadyumu-70086091.jpg
+│   ├── spor-toto-akhisar-stadyumu-70092786.jpg
+│   ├── thumbs
+│   │   ├── alanya-oba-stadyumu-70042979.jpg
+│   │   ├── alsancak-mustafa-denizli-stadyumu-70112733.jpg
+│   │   ├── aydn-adnan-menderes-stadyumu-130394.jpg
+│   │   ├── balkesir-ataturk-stadyumu-130412.jpg
+│   │   ├── bandrma-17-eylul-stadyumu-453171.jpg
+│   │   ├── basaksehir-fatih-terim-stadyumu-70076263.jpg
+│   │   ├── besiktas-inonu-spor-kompleksi-tupras-stadyumu-70086181.jpg
+│   │   ├── bg-group-sivas-4-eylul-stadyumu-70080939.jpg
+│   │   ├── bolu-ataturk-stadyumu-130400.jpg
+│   │   ├── bornova-aziz-kocaoglu-stadyumu-70099576.jpg
+│   │   ├── corendon-airlines-park-antalya-stadyumu-70081852.jpg
+│   │   ├── cotanak-spor-kompleksi-stadyumu-70108826.jpg
+│   │   ├── denizli-ataturk-stadyumu-1301241.jpg
+│   │   ├── dr-necmettin-seyhoglu-stadyumu-70023717.jpg
+│   │   ├── eryaman-stadyumu-70110735.jpg
+│   │   ├── erzurum-kazm-karabekir-stadyumu-70064054.jpg
+│   │   ├── gursel-aksel-stadyumu-70096158.jpg
+│   │   ├── izmir-ataturk-stadyumu-130385.jpg
+│   │   ├── manisa-19-mays-stadyumu-462452.jpg
+│   │   ├── mersin-stadyumu-70061835.jpg
+│   │   ├── recep-tayyip-erdogan-stadyumu-130406.jpg
+│   │   ├── samsun-yeni-19-mays-stadyumu-70081853.jpg
+│   │   ├── sanlurfa-11-nisan-stadyumu-70023836.jpg
+│   │   ├── senol-gunes-spor-kompleksi-papara-park-stadyumu-70086091.jpg
+│   │   ├── spor-toto-akhisar-stadyumu-70092786.jpg
+│   │   ├── ulker-stadyumu-fenerbahce-sukru-saracoglu-spor-kompleksi-1301242.jpg
+│   │   ├── yeni-adana-stadyumu-70086094.jpg
+│   │   ├── yeni-eskisehir-stadyumu-70080940.jpg
+│   │   ├── yeni-malatya-stadyumu-70075749.jpg
+│   │   ├── yeni-sakarya-ataturk-stadyumu-70086093.jpg
+│   │   └── yldz-entegre-kocaeli-stadyumu-70086096.jpg
+│   ├── ulker-stadyumu-fenerbahce-sukru-saracoglu-spor-kompleksi-1301242.jpg
+│   ├── yeni-adana-stadyumu-70086094.jpg
+│   ├── yeni-eskisehir-stadyumu-70080940.jpg
+│   ├── yeni-malatya-stadyumu-70075749.jpg
+│   ├── yeni-sakarya-ataturk-stadyumu-70086093.jpg
+│   └── yldz-entegre-kocaeli-stadyumu-70086096.jpg
+├── uae
+│   ├── al-nahyan-stadium-7880397.jpg
+│   ├── al-rashid-stadium-23159069.jpg
+│   ├── baniyas-club-stadium-135437.jpg
+│   ├── hazza-bin-zayed-stadium-23237500.jpg
+│   ├── mohammed-bin-zayed-stadium-135451.jpg
+│   ├── rashid-al-maktoum-stadium-135440.jpg
+│   ├── sharjah-stadium-23237513.jpg
+│   ├── the-sevens-23237498.jpg
+│   ├── thumbs
+│   │   ├── al-nahyan-stadium-7880397.jpg
+│   │   ├── al-rashid-stadium-23159069.jpg
+│   │   ├── baniyas-club-stadium-135437.jpg
+│   │   ├── hazza-bin-zayed-stadium-23237500.jpg
+│   │   ├── mohammed-bin-zayed-stadium-135451.jpg
+│   │   ├── rashid-al-maktoum-stadium-135440.jpg
+│   │   ├── sharjah-stadium-23237513.jpg
+│   │   ├── the-sevens-23237498.jpg
+│   │   ├── zabeel-stadium-7880408.jpg
+│   │   └── zayed-sports-city-stadium-103272.jpg
+│   ├── zabeel-stadium-7880408.jpg
+│   └── zayed-sports-city-stadium-103272.jpg
+├── uganda
+│   ├── mandela-national-stadium-103102.jpg
+│   └── thumbs
+│       └── mandela-national-stadium-103102.jpg
+├── ukraine
+│   ├── arena-lviv-71016259.jpg
+│   ├── avanhard-stadium-1301290.jpg
+│   ├── bukovyna-stadium-5316263.jpg
+│   ├── central-1301291.jpg
+│   ├── central-stadium-chornomorets-71016258.jpg
+│   ├── cherkasy-arena-71012369.jpg
+│   ├── dnipro-arena-71010885.jpg
+│   ├── inhulets-71089532.jpg
+│   ├── kolos-stadium-71094995.jpg
+│   ├── lokomotyv-stadium-71008916.jpg
+│   ├── municipal-central-stadium-rukh-1301285.jpg
+│   ├── naftovyk-5316458.jpg
+│   ├── nika-stadium-5311250.jpg
+│   ├── nova-bavaria-5322940.jpg
+│   ├── obolon-arena-71012361.jpg
+│   ├── oleh-babaiev-kremin-arena-71045455.jpg
+│   ├── oleksiy-butovskyi-vorskla-stadium-1301294.jpg
+│   ├── prapor-71023485.jpg
+│   ├── roman-shukhevych-stadium-1301283.jpg
+│   ├── slavutych-arena-71002557.jpg
+│   ├── thumbs
+│   │   ├── arena-lviv-71016259.jpg
+│   │   ├── avanhard-stadium-1301290.jpg
+│   │   ├── bukovyna-stadium-5316263.jpg
+│   │   ├── central-1301291.jpg
+│   │   ├── central-stadium-chornomorets-71016258.jpg
+│   │   ├── cherkasy-arena-71012369.jpg
+│   │   ├── dnipro-arena-71010885.jpg
+│   │   ├── inhulets-71089532.jpg
+│   │   ├── kolos-stadium-71094995.jpg
+│   │   ├── lokomotyv-stadium-71008916.jpg
+│   │   ├── municipal-central-stadium-rukh-1301285.jpg
+│   │   ├── naftovyk-5316458.jpg
+│   │   ├── nika-stadium-5311250.jpg
+│   │   ├── nova-bavaria-5322940.jpg
+│   │   ├── obolon-arena-71012361.jpg
+│   │   ├── oleh-babaiev-kremin-arena-71045455.jpg
+│   │   ├── oleksiy-butovskyi-vorskla-stadium-1301294.jpg
+│   │   ├── prapor-71023485.jpg
+│   │   ├── roman-shukhevych-stadium-1301283.jpg
+│   │   ├── slavutych-arena-71002557.jpg
+│   │   ├── trudovi-rezervy-5316271.jpg
+│   │   ├── ukraina-stadium-1301279.jpg
+│   │   ├── valeriy-lobanovskyi-stadium-dynamo-483758.jpg
+│   │   ├── volodymyr-boiko-stadium-5312541.jpg
+│   │   ├── yunist-71017166.jpg
+│   │   ├── yunist-stadium-71012375.jpg
+│   │   └── zirka-1301296.jpg
+│   ├── trudovi-rezervy-5316271.jpg
+│   ├── ukraina-stadium-1301279.jpg
+│   ├── valeriy-lobanovskyi-stadium-dynamo-483758.jpg
+│   ├── volodymyr-boiko-stadium-5312541.jpg
+│   ├── yunist-71017166.jpg
+│   ├── yunist-stadium-71012375.jpg
+│   └── zirka-1301296.jpg
+├── uruguay
+│   ├── campeon-del-siglo-78070678.jpg
+│   ├── complejo-rentistas-116319.jpg
+│   ├── estadio-belvedere-104444.jpg
+│   ├── estadio-centenario-102999.jpg
+│   ├── estadio-charrua-5512781.jpg
+│   ├── estadio-domingo-burgueno-miguel-116312.jpg
+│   ├── estadio-ing-agr-raul-saturnino-goyenola-308165.jpg
+│   ├── estadio-jose-nasazzi-116308.jpg
+│   ├── estadio-luis-franzini-104442.jpg
+│   ├── estadio-municipal-arquitecto-antonio-e-ubilla-8826796.jpg
+│   ├── estadio-municipal-atilio-paiva-olivera-8826795.jpg
+│   ├── estadio-municipal-parque-artigas-78037865.jpg
+│   ├── estadio-olimpico-pedro-arispe-116318.jpg
+│   ├── gran-parque-central-8826798.jpg
+│   ├── jardines-del-hipodromo-maria-mincheff-de-lazaroff-104441.jpg
+│   ├── monumental-luis-troccoli-104437.jpg
+│   ├── parque-alfredo-victor-viera-104438.jpg
+│   ├── parque-capurro-5512763.jpg
+│   └── thumbs
+│       ├── campeon-del-siglo-78070678.jpg
+│       ├── complejo-rentistas-116319.jpg
+│       ├── estadio-belvedere-104444.jpg
+│       ├── estadio-centenario-102999.jpg
+│       ├── estadio-charrua-5512781.jpg
+│       ├── estadio-domingo-burgueno-miguel-116312.jpg
+│       ├── estadio-ing-agr-raul-saturnino-goyenola-308165.jpg
+│       ├── estadio-jose-nasazzi-116308.jpg
+│       ├── estadio-luis-franzini-104442.jpg
+│       ├── estadio-municipal-arquitecto-antonio-e-ubilla-8826796.jpg
+│       ├── estadio-municipal-atilio-paiva-olivera-8826795.jpg
+│       ├── estadio-municipal-parque-artigas-78037865.jpg
+│       ├── estadio-olimpico-pedro-arispe-116318.jpg
+│       ├── gran-parque-central-8826798.jpg
+│       ├── jardines-del-hipodromo-maria-mincheff-de-lazaroff-104441.jpg
+│       ├── monumental-luis-troccoli-104437.jpg
+│       ├── parque-alfredo-victor-viera-104438.jpg
+│       └── parque-capurro-5512763.jpg
+├── usa
+│   ├── al-lang-stadium-20015163.jpg
+│   ├── allianz-field-72047537.jpg
+│   ├── america-first-field-72003128.jpg
+│   ├── audi-field-29144034.jpg
+│   ├── bank-of-america-stadium-20032542.jpg
+│   ├── bmo-stadium-72049314.jpg
+│   ├── camping-world-stadium-1409.jpg
+│   ├── cashman-field-20047169.jpg
+│   ├── city-stadium-1413.jpg
+│   ├── dicks-sporting-goods-park-981291.jpg
+│   ├── dignity-health-sports-park-72040432.jpg
+│   ├── dignity-health-sports-park-track-field-complex-20047170.jpg
+│   ├── gillette-stadium-978163.jpg
+│   ├── greater-nevada-field-20044938.jpg
+│   ├── heart-health-park-20030375.jpg
+│   ├── h-e-b-park-20041621.jpg
+│   ├── highmark-stadium-20031716.jpg
+│   ├── historic-crew-stadium-6800066.jpg
+│   ├── inter-co-stadium-72042162.jpg
+│   ├── louisville-slugger-field-20033616.jpg
+│   ├── lowercom-field-29144036.jpg
+│   ├── lumen-field-978652.jpg
+│   ├── mercedes-benz-stadium-72047297.jpg
+│   ├── msu-soccer-park-at-pittser-field-72036939.jpg
+│   ├── paypal-park-72013735.jpg
+│   ├── phoenix-rising-soccer-complex-at-wild-horse-pass-20044949.jpg
+│   ├── providence-park-976182.jpg
+│   ├── raymond-james-stadium-127224.jpg
+│   ├── seatgeek-stadium-981288.jpg
+│   ├── shell-energy-stadium-72036654.jpg
+│   ├── soldier-field-72018533.jpg
+│   ├── subaru-park-72020972.jpg
+│   ├── taft-stadium-20031506.jpg
+│   ├── thumbs
+│   │   ├── al-lang-stadium-20015163.jpg
+│   │   ├── allianz-field-72047537.jpg
+│   │   ├── america-first-field-72003128.jpg
+│   │   ├── audi-field-29144034.jpg
+│   │   ├── bank-of-america-stadium-20032542.jpg
+│   │   ├── bmo-stadium-72049314.jpg
+│   │   ├── camping-world-stadium-1409.jpg
+│   │   ├── cashman-field-20047169.jpg
+│   │   ├── city-stadium-1413.jpg
+│   │   ├── dicks-sporting-goods-park-981291.jpg
+│   │   ├── dignity-health-sports-park-72040432.jpg
+│   │   ├── dignity-health-sports-park-track-field-complex-20047170.jpg
+│   │   ├── gillette-stadium-978163.jpg
+│   │   ├── greater-nevada-field-20044938.jpg
+│   │   ├── heart-health-park-20030375.jpg
+│   │   ├── h-e-b-park-20041621.jpg
+│   │   ├── highmark-stadium-20031716.jpg
+│   │   ├── historic-crew-stadium-6800066.jpg
+│   │   ├── inter-co-stadium-72042162.jpg
+│   │   ├── louisville-slugger-field-20033616.jpg
+│   │   ├── lowercom-field-29144036.jpg
+│   │   ├── lumen-field-978652.jpg
+│   │   ├── mercedes-benz-stadium-72047297.jpg
+│   │   ├── msu-soccer-park-at-pittser-field-72036939.jpg
+│   │   ├── paypal-park-72013735.jpg
+│   │   ├── phoenix-rising-soccer-complex-at-wild-horse-pass-20044949.jpg
+│   │   ├── providence-park-976182.jpg
+│   │   ├── raymond-james-stadium-127224.jpg
+│   │   ├── seatgeek-stadium-981288.jpg
+│   │   ├── shell-energy-stadium-72036654.jpg
+│   │   ├── soldier-field-72018533.jpg
+│   │   ├── subaru-park-72020972.jpg
+│   │   ├── taft-stadium-20031506.jpg
+│   │   ├── toyota-field-of-san-antonio-20029837.jpg
+│   │   ├── toyota-stadium-979452.jpg
+│   │   ├── tql-stadium-29219876.jpg
+│   │   ├── wakemed-soccer-park-72018532.jpg
+│   │   └── yankee-stadium-72041886.jpg
+│   ├── toyota-field-of-san-antonio-20029837.jpg
+│   ├── toyota-stadium-979452.jpg
+│   ├── tql-stadium-29219876.jpg
+│   ├── wakemed-soccer-park-72018532.jpg
+│   └── yankee-stadium-72041886.jpg
+├── uzbekistan
+│   ├── lokomotiv-stadioni-23063412.jpg
+│   ├── milliy-stadioni-59092517.jpg
+│   ├── qarshi-markaziy-1046335.jpg
+│   └── thumbs
+│       ├── lokomotiv-stadioni-23063412.jpg
+│       ├── milliy-stadioni-59092517.jpg
+│       └── qarshi-markaziy-1046335.jpg
+├── venezuela
+│   ├── agustin-tovar-76003518.jpg
+│   ├── cocodrilos-sports-park-86005812.jpg
+│   ├── cte-cachamay-109197.jpg
+│   ├── florentino-oropeza-86005821.jpg
+│   ├── jose-encarnacion-pachencho-romero-308171.jpg
+│   ├── metropolitano-de-lara-19018838.jpg
+│   ├── monumental-de-maturin-19018836.jpg
+│   ├── olimpico-jose-antonio-anzoategui-86005797.jpg
+│   ├── polideportivo-de-pueblo-nuevo-308169.jpg
+│   └── thumbs
+│       ├── agustin-tovar-76003518.jpg
+│       ├── cocodrilos-sports-park-86005812.jpg
+│       ├── cte-cachamay-109197.jpg
+│       ├── florentino-oropeza-86005821.jpg
+│       ├── jose-encarnacion-pachencho-romero-308171.jpg
+│       ├── metropolitano-de-lara-19018838.jpg
+│       ├── monumental-de-maturin-19018836.jpg
+│       ├── olimpico-jose-antonio-anzoategui-86005797.jpg
+│       └── polideportivo-de-pueblo-nuevo-308169.jpg
+├── wales
+│   ├── cardiff-city-stadium-5005130.jpg
+│   └── thumbs
+│       └── cardiff-city-stadium-5005130.jpg
+└── zambia
+    ├── independence-stadium-103104.jpg
+    ├── national-heroes-stadium-13112647.jpg
+    ├── nchanga-stadium-23017700.jpg
+    └── thumbs
+        ├── independence-stadium-103104.jpg
+        ├── national-heroes-stadium-13112647.jpg
+        └── nchanga-stadium-23017700.jpg
+
+291 directories, 3592 files

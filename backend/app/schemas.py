@@ -66,16 +66,32 @@ class StadiumRead(BaseModel):
     class Config: from_attributes = True
 
 class CompetitionCreate(BaseModel):
+    # allow caller to provide slug, else importer will generate
+    slug: Optional[str] = None
     name: str
     type: str
+    tier: Optional[int] = None
+    cup_rank: Optional[str] = None        
+    gender: Optional[str] = None
+    age_group: Optional[str] = None
+    status: Optional[str] = "active"
+    notes: Optional[str] = None
     logo_filename: Optional[str] = None
     country_id: Optional[int] = None
-    organizer_code: Optional[str] = None  
+    organizer_ass_id: Optional[int] = None
+    organizer_code: Optional[str] = None   
 
 class CompetitionRead(BaseModel):
     competition_id: int
+    slug: str
     name: str
     type: str
+    tier: Optional[int] = None
+    cup_rank: Optional[str] = None
+    gender: Optional[str] = None
+    age_group: Optional[str] = None
+    status: str
+    notes: Optional[str] = None
     logo_filename: Optional[str] = None
     country_id: Optional[int] = None
     organizer_ass_id: Optional[int] = None

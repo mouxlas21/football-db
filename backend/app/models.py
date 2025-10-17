@@ -63,11 +63,30 @@ class Competition(Base):
     __tablename__ = "competition"
 
     competition_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
-    type: Mapped[str] = mapped_column(Text, nullable=False)  # 'league' | 'cup' | ...
+
+    slug: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    name: Mapped[str] = mapped_column(Text, nullable=False)
+    type: Mapped[str] = mapped_column(Text, nullable=False)          
+    tier: Mapped[int | None] = mapped_column(SmallInteger)
+    cup_rank: Mapped[str | None] = mapped_column(Text)                  
+    gender: Mapped[str | None] = mapped_column(Text)
+    age_group: Mapped[str | None] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(Text, nullable=False, default="active")
+    notes: Mapped[str | None] = mapped_column(Text)
+
     logo_filename: Mapped[str | None] = mapped_column(Text)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
     organizer_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.utcnow)
+
+    __table_args__ = (
+        UniqueConstraint("name", "country_id", "organizer_ass_id", name="uq_comp_name_country_org"),
+        Index("idx_comp_country", "country_id"),
+        Index("idx_comp_organizer", "organizer_ass_id"),
+        Index("idx_comp_type_tier", "type", "tier"),
+    )
 
 class Club(Base):
     __tablename__ = "club"

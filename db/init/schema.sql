@@ -51,15 +51,32 @@ CREATE INDEX IF NOT EXISTS idx_stadium_closed_year ON stadium(closed_year);
 CREATE INDEX IF NOT EXISTS idx_stadium_name_ci ON stadium((lower(name)));
 
 CREATE TABLE IF NOT EXISTS competition (
-  competition_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE,
-  type TEXT NOT NULL,
-  logo_filename TEXT,
-  country_id BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
-  organizer_ass_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
+  competition_id      BIGSERIAL PRIMARY KEY,
+  slug                TEXT NOT NULL UNIQUE,          
+  name                TEXT NOT NULL,
+  type                TEXT NOT NULL,                 
+  tier                SMALLINT,                      
+  cup_rank              TEXT,                          
+  gender              TEXT,                          
+  age_group           TEXT,                          
+  status              TEXT NOT NULL DEFAULT 'active',
+  notes               TEXT,
+  logo_filename       TEXT,
+
+  country_id          BIGINT REFERENCES country(country_id) ON DELETE SET NULL,
+  organizer_ass_id    BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
+
+  created_at          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+
+  -- guard against exact duplicates across same country+organizer
+  UNIQUE (name, country_id, organizer_ass_id)
 );
 
-CREATE INDEX IF NOT EXISTS idx_competition_organizer_ass_id ON competition(organizer_ass_id);
+-- Useful indexes
+CREATE INDEX IF NOT EXISTS idx_comp_country       ON competition (country_id);
+CREATE INDEX IF NOT EXISTS idx_comp_organizer     ON competition (organizer_ass_id);
+CREATE INDEX IF NOT EXISTS idx_comp_type_tier     ON competition (type, tier);
 
 CREATE TABLE IF NOT EXISTS club (
   club_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
