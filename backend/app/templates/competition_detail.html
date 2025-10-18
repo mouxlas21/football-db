@@ -1,35 +1,132 @@
+{% set is_national = country is not none %}
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>{{ competition.name }}</title></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ competition.name }}</title>
+  <style>
+    :root {
+      --bg: #0b0d10; --card: #12151a; --muted: #8b97a6; --text: #e8edf3; --accent: #4ea1ff; --ring: #274766; --border: #1c222b;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f6f7f9; --card:#fff; --muted:#64748b; --text:#0f172a; --accent:#0b72e7; --ring:#cfe3ff; --border:#e6e8ec; }
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial,Noto Sans; background:radial-gradient(1200px 800px at 20% -10%, rgba(78,161,255,.12), transparent 60%), radial-gradient(900px 600px at 100% 10%, rgba(78,161,255,.08), transparent 60%), var(--bg); color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin:32px auto;padding:0 20px}
+
+    .comp-header{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.02)}
+    .comp-logo{width:72px;height:72px;border-radius:16px;background:linear-gradient(180deg,#1f2530,#161a22);border:1px solid var(--border);display:grid;place-items:center;overflow:hidden}
+    .comp-logo img{width:100%;height:100%;object-fit:contain}
+    .comp-headline{display:flex;flex-direction:column;gap:6px}
+    .comp-name{font-size:clamp(22px,2.8vw,30px);font-weight:700;letter-spacing:.2px}
+    .meta-line{display:inline-flex;gap:12px;align-items:center;color:var(--muted);font-size:14px}
+    .meta-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--border);border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(0,0,0,.05))}
+    .meta-logo{width:22px;height:22px;border-radius:999px;overflow:hidden;background:#11141a;border:1px solid var(--border)}
+    .meta-logo img{width:100%;height:100%;object-fit:cover}
+    .meta-link{color:var(--muted)} .meta-link:hover{color:var(--text)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    @media (max-width:960px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.02)}
+    .card h2{margin:0 0 12px;font-size:16px;letter-spacing:.4px;text-transform:uppercase;color:var(--muted)}
+    .details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px}
+    @media (max-width:640px){.details{grid-template-columns:1fr}}
+    .detail{display:flex;flex-direction:column;gap:6px;padding:10px 12px;border:1px dashed var(--border);border-radius:12px}
+    .label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+    .value{font-size:15px;font-weight:600}
+
+    .seasons{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+    .seasons header{padding:14px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+    .seasons h3{margin:0;font-size:14px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+    .season-list{max-height:70vh;overflow-y:auto}
+    .season-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--border);transition:background 140ms ease,color 140ms ease}
+    .season-item:last-child{border-bottom:0}
+    .season-item a{flex:1}
+    .season-item:hover{background:rgba(78,161,255,.08)}
+    .season-year{font-weight:700}
+    .season-meta{font-size:12px;color:var(--muted)}
+    .badge{font-size:11px;padding:4px 8px;border:1px solid var(--ring);border-radius:999px;color:var(--accent);background:rgba(78,161,255,.12)}
+  </style>
+</head>
 <body>
-  <h1>{{ competition.name }}</h1>
-  {% if competition.logo_filename %}
-  <p><img src="{{ competition_logo_url(competition.logo_filename, 'big') }}" alt="{{ competition.name }} logo" style="height:64px;"></p>
-  {% endif %}
-  <p><strong>Type:</strong> {{ competition.type }}</p>
-  <p><strong>Country:</strong> {{ country.name if country else '—' }}</p>
-  {% if organizer %}
-    <p><strong>Organizer:</strong> <a href="/associations/{{ organizer.ass_id }}">{{ organizer.code }}</a> — {{ organizer.name }}</p>
-  {% else %}
-    <p><strong>Organizer:</strong> —</p>
-  {% endif %}
-
-  {% if seasons and seasons|length %}
-    <h2>Seasons</h2>
-    <ul>
-      {% for s in seasons %}
-        <li>
-          {{ s.name }}
-          — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}{% if competition.type == 'league' %}/league/overview{% else %}/cup/overview{% endif %}">Overview</a>
-          {% if competition.type == 'league' %}
-            — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}/league/table">Standings</a>
-            — <a href="/competitions/{{ competition.competition_id }}/seasons/{{ s.season_id }}/league/matchday/1">Matchday 1</a>
+  <div class="wrap">
+    <section class="comp-header" aria-label="Competition header">
+      <div class="comp-logo" aria-hidden="true">
+        {% if filename and image_base %}
+          <img src="{{ BASE_COMP_IMG }}/{{ image_base }}/{{ filename }}" alt="{{ competition.name }} logo" />
+        {% else %}
+          <img src="/static/images/placeholder_comp.png" alt="Logo placeholder" />
+        {% endif %}
+      </div>
+      <div class="comp-headline">
+        <div class="comp-name">{{ competition.name }}</div>
+        <div class="meta-line">
+          {% if is_national and country %}
+            <a class="meta-pill meta-link" href="/countries/{{ country.country_id }}" title="Go to country">
+              <span class="meta-logo">
+                {% if country_flag_url %}
+                  <img src="{{ country_flag_url }}" alt="{{ country.name }} flag" />
+                {% endif %}
+              </span>
+              <span>Country: {{ country.name }}</span>
+            </a>
+          {% elif organizer %}
+            <a class="meta-pill meta-link" href="/associations/{{ organizer.ass_id }}" title="Go to federation">
+              <span class="meta-logo">
+                {% if organizer_logo_url %}
+                  <img src="{{ organizer_logo_url }}" alt="{{ organizer.code }} logo" />
+                {% endif %}
+              </span>
+              <span>Organizer: {{ organizer.name }}</span>
+            </a>
           {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+        </div>
+      </div>
+    </section>
 
-  <p><a href="/competitions">← Back to competitions</a></p>
+    <section class="grid" aria-label="Competition content">
+      <article class="card" aria-label="Overview">
+        <h2>Overview</h2>
+        <div class="details">
+          <div class="detail"><div class="label">Type</div><div class="value">{{ competition.type or '—' }}</div></div>
+          <div class="detail"><div class="label">Level / Tier</div><div class="value">{{ competition.tier if competition.tier is not none else '—' }}</div></div>
+          <div class="detail"><div class="label">Gender</div><div class="value">{{ competition.gender or '—' }}</div></div>
+          <div class="detail"><div class="label">Age Group</div><div class="value">{{ competition.age_group or '—' }}</div></div>
+          <div class="detail"><div class="label">Status</div><div class="value">{{ competition.status or '—' }}</div></div>
+          <div class="detail"><div class="label">Organizer</div><div class="value">{{ organizer.name if organizer else '—' }}</div></div>
+        </div>
+      </article>
+
+      <aside class="seasons" aria-label="Seasons list">
+        <header>
+          <h3>Seasons</h3>
+          {% if current_season_label %}
+            <span class="badge">Current: {{ current_season_label }}</span>
+          {% endif %}
+        </header>
+        <div class="season-list" role="list">
+          {% for s in seasons_sorted %}
+            <div class="season-item" role="listitem">
+              <a href="/seasons/{{ s.season_id }}" class="season-year" aria-label="Open season">{{ s.season_name or s.name or 'Season' }}</a>
+              {% if s.winner_name %}
+                <span class="season-meta">Winner: {{ s.winner_name }}</span>
+              {% else %}
+                <span class="season-meta">&nbsp;</span>
+              {% endif %}
+            </div>
+          {% else %}
+            <div class="season-item" role="listitem">
+              <span class="season-year">No seasons available</span>
+              <span class="season-meta"></span>
+            </div>
+          {% endfor %}
+        </div>
+      </aside>
+    </section>
+  </div>
 </body>
 </html>

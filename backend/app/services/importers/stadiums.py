@@ -1,6 +1,6 @@
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
-from sqlalchemy import select
+from sqlalchemy import select, func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Stadium
@@ -80,6 +80,7 @@ class StadiumsImporter(BaseImporter):
                     setattr(existing, f, v)
                     changed = True
             if changed:
+                existing.updated_at = func.now()
                 db.flush()
             return False
 

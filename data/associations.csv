@@ -5,3 +5,17 @@ CONCACAF,"Confederation of North, Central America and Caribbean Association Foot
 AFC,Asian Football Confederation,confederation,FIFA,afc.png
 CAF,Confederation of African Football,confederation,FIFA,caf.png
 OFC,Oceania Football Confederation,confederation,FIFA,ofc.png
+CECAFA,Council for East and Central Africa Football Associations,sub_confederation,CAF,
+UNIFFAC,Central African Football Federations' Union,sub_confederation,CAF,
+UNAF,Union of North African Football,sub_confederation,CAF,
+COSAFA,Council of Southern Africa Football Associations,sub_confederation,CAF,
+WAFU-UFOA,West African Football Union,sub_confederation,CAF,
+CAFA,Central Asian Football Association,sub_confederation,AFC,
+EAFF,East Asian Football Federation,sub_confederation,AFC,
+AFF,ASEAN Football Federation,sub_confederation,AFC,
+SAFF,South Asian Football Federation,sub_confederation,AFC,
+WAFF,West Asian Football Federation,sub_confederation,AFC,
+CFU,Caribbean Football Union,sub_confederation,CONCACAF,
+UNCAF,Central American Football Union,sub_confederation,CONCACAF,
+NAFU,North American Football Union,sub_confederation,CONCACAF,
+UAFA,Union of Arab Football Associations,sub_confederation,"AFC,CAF",

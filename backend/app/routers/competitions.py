@@ -290,9 +290,19 @@ def competition_detail_page(competition_id: int, request: Request, db: Session =
     organizer = db.execute(select(Association).where(Association.ass_id == comp.organizer_ass_id)).scalar_one_or_none() if comp.organizer_ass_id else None
     seasons = db.execute(select(Season).where(Season.competition_id == comp.competition_id)).scalars().all()
 
+    # Paths & assets
     country_name = country.name if country else None
     assoc_code = organizer.code if organizer else None
     image_base = _image_base(country_name, assoc_code)
+    country_flag_url = _country_flag_url(country) if country else None
+    organizer_logo_url = _federation_logo_url(assoc_code) if assoc_code else None
+
+    # Sorting seasons (DESC by label; supports .season_name or .name)
+    def _season_label(s):
+        return getattr(s, "season_name", None) or getattr(s, "name", "") or ""
+
+    seasons_sorted = sorted(seasons, key=_season_label, reverse=True)
+    current_season_label = _season_label(seasons_sorted[0]) if seasons_sorted else None
 
     return templates.TemplateResponse(
         "competition_detail.html",
@@ -301,9 +311,14 @@ def competition_detail_page(competition_id: int, request: Request, db: Session =
             "competition": comp,
             "country": country,
             "organizer": organizer,
-            "seasons": seasons,
+            "seasons": seasons,  # original (optional)
+            "seasons_sorted": seasons_sorted,
+            "current_season_label": current_season_label,
             "image_base": image_base,
             "filename": comp.logo_filename,
             "BASE_COMP_IMG": BASE_COMP_IMG,
+            "country_flag_url": country_flag_url,
+            "organizer_logo_url": organizer_logo_url,
         },
     )
+

@@ -4,20 +4,32 @@ from sqlalchemy import (
     BigInteger,
     Integer,
     String,
+    Table,
+    Column,
     Text,
     Date,
     DateTime,
+    func,
     SmallInteger,
     ForeignKey,
     Index,
     Enum,
     UniqueConstraint,
+    PrimaryKeyConstraint,
 )
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 from sqlalchemy.dialects.postgresql import ARRAY
 
 from .db import Base
 from datetime import date, datetime
+
+association_parent = Table(
+    "association_parent",
+    Base.metadata,
+    Column("ass_id", BigInteger, ForeignKey("association.ass_id", ondelete="CASCADE"), nullable=False),
+    Column("parent_ass_id", BigInteger, ForeignKey("association.ass_id", ondelete="CASCADE"), nullable=False),
+    PrimaryKeyConstraint("ass_id", "parent_ass_id"),
+)
 
 class Association(Base):
     __tablename__ = "association"
@@ -27,21 +39,35 @@ class Association(Base):
     name:   Mapped[str] = mapped_column(Text, nullable=False)
     level:  Mapped[str] = mapped_column(Text, nullable=False)  # 'federation' | 'confederation' | 'association' | 'league_body'
     logo_filename: Mapped[str | None] = mapped_column(Text)
-    parent_org_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
+
+    parents = relationship(
+        "Association",
+        secondary=association_parent,
+        primaryjoin=lambda: Association.ass_id == association_parent.c.ass_id,
+        secondaryjoin=lambda: Association.ass_id == association_parent.c.parent_ass_id,
+        backref="children",
+        lazy="selectin",
+    )
 
 class Country(Base):
     __tablename__ = "country"
 
     country_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     name: Mapped[str] = mapped_column(Text, nullable=False, unique=True)
+    nat_association: Mapped[str | None] = mapped_column(Text)
     flag_filename: Mapped[str | None] = mapped_column(Text)
     confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
+    sub_confederation: Mapped[str | None] = mapped_column(Text)
     fifa_code: Mapped[str | None] = mapped_column(String(3), unique=True)
     c_status: Mapped[str] = mapped_column(
         Enum('active', 'historical', name='country_status', create_type=False),
         nullable=False,
         server_default='active'
     )
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
 
 class Stadium(Base):
     __tablename__ = "stadium"
@@ -58,6 +84,8 @@ class Stadium(Base):
     renovated_years: Mapped[list[int] | None] = mapped_column(ARRAY(SmallInteger))
     closed_year: Mapped[int | None] = mapped_column(SmallInteger)
     tenants: Mapped[list[str] | None] = mapped_column(ARRAY(Text))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
 
 class Competition(Base):
     __tablename__ = "competition"
@@ -73,13 +101,11 @@ class Competition(Base):
     age_group: Mapped[str | None] = mapped_column(Text)
     status: Mapped[str] = mapped_column(Text, nullable=False, default="active")
     notes: Mapped[str | None] = mapped_column(Text)
-
     logo_filename: Mapped[str | None] = mapped_column(Text)
     country_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("country.country_id", ondelete="SET NULL"))
     organizer_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
-
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.utcnow)
-    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
 
     __table_args__ = (
         UniqueConstraint("name", "country_id", "organizer_ass_id", name="uq_comp_name_country_org"),
@@ -120,6 +146,8 @@ class Team(Base):
     gender: Mapped[str | None] = mapped_column(Text)
     age_group: Mapped[str | None] = mapped_column(Text)
     squad_level: Mapped[str | None] = mapped_column(Text)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
 
 class Person(Base):
     __tablename__ = "person"

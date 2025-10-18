@@ -1,5 +1,6 @@
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
 from app.models import Country
@@ -59,7 +60,10 @@ class CountriesImporter(BaseImporter):
         stmt = (
             insert(Country)
             .values(**kwargs)
-            .on_conflict_do_nothing(index_elements=["name"])
+            .on_conflict_do_update(
+                index_elements=["name"],
+                set_={"updated_at": func.now()},
+            )
         )
-        result = db.execute(stmt)
-        return bool(getattr(result, "rowcount", 0))
+        res = db.execute(stmt)
+        return bool(getattr(res, "rowcount", 0))

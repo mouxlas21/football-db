@@ -4,13 +4,23 @@
 
 CREATE TABLE IF NOT EXISTS association (
   ass_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  code TEXT NOT NULL UNIQUE,     -- 'FIFA','UEFA','CONMEBOL','DFB','FA', ...
+  code TEXT NOT NULL UNIQUE,
   name TEXT NOT NULL,
-  level TEXT NOT NULL CHECK (level IN ('federation','confederation','association','league_body')),
+  level TEXT NOT NULL CHECK (level IN ('federation','confederation','association','sub_confederation')),
   logo_filename TEXT,
-  parent_org_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL
+
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- Self-referential junction table for multi-parent hierarchy
+CREATE TABLE IF NOT EXISTS association_parent (
+  ass_id        BIGINT NOT NULL REFERENCES association(ass_id) ON DELETE CASCADE,
+  parent_ass_id BIGINT NOT NULL REFERENCES association(ass_id) ON DELETE CASCADE,
+  PRIMARY KEY (ass_id, parent_ass_id)
+);
+
+-- Country status enum
 DO $$
 BEGIN
   IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'country_status') THEN
@@ -18,17 +28,26 @@ BEGIN
   END IF;
 END$$;
 
+-- Countries
+DROP TABLE IF EXISTS country;
+
 CREATE TABLE IF NOT EXISTS country (
   country_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name TEXT NOT NULL UNIQUE,
-  flag_filename TEXT,
-  confed_ass_id BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
+  nat_association   TEXT,
+  flag_filename     TEXT,
+  confed_ass_id     BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
+  sub_confederation TEXT,
   fifa_code VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$'),
-  c_status country_status NOT NULL DEFAULT 'active'
+  c_status country_status NOT NULL DEFAULT 'active',
+
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- Indexes
 CREATE INDEX IF NOT EXISTS ix_country_name ON country(name);
-CREATE INDEX IF NOT EXISTS idx_country_onfed_ass_id ON country(confed_ass_id);
+CREATE INDEX IF NOT EXISTS idx_country_confed_ass_id ON country(confed_ass_id);
 CREATE INDEX IF NOT EXISTS ix_country_status ON country(c_status);
 
 CREATE TABLE IF NOT EXISTS stadium (
@@ -43,7 +62,10 @@ CREATE TABLE IF NOT EXISTS stadium (
   lng             DOUBLE PRECISION,
   renovated_years SMALLINT[],      
   closed_year     SMALLINT,       
-  tenants         TEXT[]           
+  tenants         TEXT[],  
+
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()         
 );
 
 CREATE INDEX IF NOT EXISTS idx_stadium_country_id ON stadium(country_id);
@@ -101,6 +123,9 @@ CREATE TABLE IF NOT EXISTS team (
   gender TEXT,
   age_group TEXT,
   squad_level TEXT,
+
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 
   CONSTRAINT chk_team_affiliation
     CHECK (
@@ -566,4 +591,4 @@ CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id ON match_event(fixture_id)
 --CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
 --CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
 
-INSERT INTO association (code, name, level, parent_org_id, logo_filename) VALUES ('FIFA','Fédération Internationale de Football Association','federation',NULL,'fifa.png');
+INSERT INTO association (code, name, level, logo_filename) VALUES ('FIFA','Fédération Internationale de Football Association','federation','fifa.png');

@@ -435,7 +435,7 @@ Denmark,MCH Arena,Football Club Midtjylland,"Herning, Denmark",12055,2004,,,56.1
 Denmark,Holbæk Stadion,,"Hobro , Denmark",7500,1958,,,56.635,9.82,holbk-stadion-858.jpg
 Denmark,Sundby Idrætspark,Boldklubben af 1908,"Copenhagen, Denmark",7200,1922,,,55.650044,12.602123,sundby-idrtspark-3400011.jpg
 Denmark,Riisvangen Stadion,FC Aarhus,"Aarhus, Denmark",5000,1939,,,56.17882,10.21099,riisvangen-stadion-816.jpg
-Dominican Republic,Estadio Olímpico Félix Sánchez,Club Deportivo Pantoja,"Santo Domingo , Dominican Republic",27000,1974,,,18.480454,69.918662,estadio-olimpico-felix-sanchez-103156.jpg
+Dominican Republic,Estadio Olímpico Félix Sánchez,Club Deportivo Pantoja,"Santo Domingo , Dominican Republic",27000,1974,,,18.480454,-69.918662,estadio-olimpico-felix-sanchez-103156.jpg
 Egypt,Khaled Bichara Stadium,El Gouna Football Club,"El Gouna , Egypt",12000,2009,,,27.36,33.66,khaled-bichara-stadium-12033284.jpg
 Egypt,Alexandria Stadium,Al-Ittihad Alexandria,"Alexandria , Egypt",13660,1929,,,31.197096,29.913239,alexandria-stadium-105228.jpg
 Egypt,30 June Stadium,Coca-Cola Football Club,"Cairo, Egypt",30000,2012,,,30.02,31.37361,30-june-stadium-13196537.jpg
@@ -445,111 +445,111 @@ Egypt,Ismailia Stadium,Ismaily Sporting Club,"Ismailia , Egypt",30000,,2009,,30.
 Egypt,Cairo International Stadium,"Ahly Al-Monshah, Zamalek Sporting Club","Cairo, Egypt",75000,1960,,,30.0691139,31.3123333,cairo-international-stadium-103037.jpg
 Egypt,Military Academy Stadium,Tala'ea Al-Gaish,"Cairo, Egypt",28500,1989,,,30.111095,31.367565,military-academy-stadium-23017659.jpg
 Egypt,Suez Sports Stadium,Suez Cement,"Suez , Egypt",27000,1990,,,29.9575,32.5425,suez-sports-stadium-23017665.jpg
-El Salvador,Estadio Cuscatlán,CD Atlético Marte,"San Salvador , El Salvador",44836,1976,,,13.68111,89.2225,estadio-cuscatlan-308288.jpg
-El Salvador,Estadio Juan Francisco Barraza,C.D. Águila,"San Miguel, El Salvador",14000,,,,13.482576,88.169038,estadio-juan-francisco-barraza-308287.jpg
-El Salvador,Estadio Oscar Alberto Quiteño,CD FAS,"Santa Ana, El Salvador",17500,1963,,,13.97645,89.56884,estadio-oscar-alberto-quiteno-308285.jpg
-England,Old Trafford,Manchester United,"Manchester ,  England",74197,1910,,,53.46306,2.29139,old-trafford-680.jpg
-England,One Call Stadium,Mansfield Town,"Mansfield, England",9186,,,,53.13806,1.20056,one-call-stadium-681.jpg
-England,Brunton Park,Carlisle United,"Carlisle ,  England",17949,1909,,,54.8956,2.9137,brunton-park-626.jpg
-England,Kenilworth Road,Luton Town,"Luton , England",12056,1905,,,51.88417,0.43167,kenilworth-road-677.jpg
-England,Mill Farm,AFC Fylde,"Wesham , England",6000,2016,,,53.7973,2.889,mill-farm-90063867.jpg
-England,Highbury Stadium,Fleetwood Town,"Fleetwood , England",5327,1939,,,53.9165,3.0247,highbury-stadium-7940023.jpg
-England,Croud Meadow,Shrewsbury Town,"Shrewsbury , England",9875,2007,,,52.6886,2.7493,croud-meadow-29005271.jpg
-England,Oakwell,Barnsley,"Barnsley , England",23287,,,,53.55222,1.4675,oakwell-606.jpg
-England,The Recreation Ground,Aldershot Town,"Aldershot , England",7100,1927,,,51.24833,0.75472,the-recreation-ground-5100174.jpg
-England,Kingfield Stadium,Woking,"Woking , England",6000,1922,,,51.3063333,0.5588111,kingfield-stadium-739.jpg
-England,Deva Stadium,Chester,"Chester , England",5400,1992,,,53.1892,2.9238,deva-stadium-633.jpg
-England,Molineux,Wolverhampton Wanderers,"Wolverhampton , England",31750,,,,52.59028,2.13028,molineux-740.jpg
-England,Crown Oil Arena,Rochdale,"Rochdale , England",10249,,,,53.62083,2.18,crown-oil-arena-703.jpg
-England,Turf Moor,Burnley,"Burnley , England",21944,,,,53.78917,2.23028,turf-moor-622.jpg
-England,Gtech Community Stadium,Brentford,"London , England",17250,2020,,,51.49083,0.28861,gtech-community-stadium-29128182.jpg
-England,Vicarage Road,Watford,"Watford , England",22220,1921,,,51.64972,0.40139,vicarage-road-732.jpg
-England,bet365 Stadium,Stoke City,"Stoke-on-Trent,  England",30089,1997,,,52.98833,2.17556,bet365-stadium-100076.jpg
-England,LNER Stadium,Lincoln City,"Lincoln , England",10669,,,,53.21833,0.54083,lner-stadium-675.jpg
-England,The Den,Millwall,"London , England",20146,1993,,,51.48583,0.05083,the-den-686.jpg
-England,Elland Road,Leeds United,"Leeds , England",37645,,,,53.77778,1.57222,elland-road-671.jpg
-England,MKM Stadium,Hull City,"Hull , England",25586,2002,,,53.74611,0.36778,mkm-stadium-5105217.jpg
-England,Stadium MK,Milton Keynes Dons,"Milton Keynes , England",30500,2007,,,52.00944,0.73333,stadium-mk-5114356.jpg
-England,Meadow Park,Sunderland Ryhope CA,"Sunderland , England",49000,1997,,,54.9144290694,1.3881729694,meadow-park-29074488.jpg
-England,Edgeley Park,Stockport County,"Stockport , England",10852,,,,53.39972,2.16639,edgeley-park-720.jpg
-England,Sixfields,Northampton Town,"Northampton , England",8203,1994,,,52.23528,0.93333,sixfields-689.jpg
-England,New Bucks Head,AFC Telford United,"Wellington , England",6300,2003,,,52.6974,2.5014,new-bucks-head-726.jpg
-England,EnviroVent Stadium,Harrogate Town,"Harrogate , England",5000,1920,,,53.99167,1.51444,envirovent-stadium-5100048.jpg
-England,Emirates Stadium,Arsenal,"London , England",60704,2006,,,51.55667,0.10611,emirates-stadium-5114336.jpg
+El Salvador,Estadio Cuscatlán,CD Atlético Marte,"San Salvador , El Salvador",44836,1976,,,13.68111,-89.2225,estadio-cuscatlan-308288.jpg
+El Salvador,Estadio Juan Francisco Barraza,C.D. Águila,"San Miguel, El Salvador",14000,,,,13.482576,-88.169038,estadio-juan-francisco-barraza-308287.jpg
+El Salvador,Estadio Oscar Alberto Quiteño,CD FAS,"Santa Ana, El Salvador",17500,1963,,,13.97645,-89.56884,estadio-oscar-alberto-quiteno-308285.jpg
+England,Old Trafford,Manchester United,"Manchester ,  England",74197,1910,,,53.46306,-2.29139,old-trafford-680.jpg
+England,One Call Stadium,Mansfield Town,"Mansfield, England",9186,,,,53.13806,-1.20056,one-call-stadium-681.jpg
+England,Brunton Park,Carlisle United,"Carlisle ,  England",17949,1909,,,54.8956,-2.9137,brunton-park-626.jpg
+England,Kenilworth Road,Luton Town,"Luton , England",12056,1905,,,51.88417,-0.43167,kenilworth-road-677.jpg
+England,Mill Farm,AFC Fylde,"Wesham , England",6000,2016,,,53.7973,-2.8895,mill-farm-90063867.jpg
+England,Highbury Stadium,Fleetwood Town,"Fleetwood , England",5327,1939,,,53.9165,-3.0247,highbury-stadium-7940023.jpg
+England,Croud Meadow,Shrewsbury Town,"Shrewsbury , England",9875,2007,,,52.6886,-2.7493,croud-meadow-29005271.jpg
+England,Oakwell,Barnsley,"Barnsley , England",23287,,,,53.55222,-1.4675,oakwell-606.jpg
+England,The Recreation Ground,Aldershot Town,"Aldershot , England",7100,1927,,,51.24833,-0.75472,the-recreation-ground-5100174.jpg
+England,Kingfield Stadium,Woking,"Woking , England",6000,1922,,,51.3063333,-0.5588111,kingfield-stadium-739.jpg
+England,Deva Stadium,Chester,"Chester , England",5400,1992,,,53.1892,-2.9238,deva-stadium-633.jpg
+England,Molineux,Wolverhampton Wanderers,"Wolverhampton , England",31750,,,,52.59028,-2.13028,molineux-740.jpg
+England,Crown Oil Arena,Rochdale,"Rochdale , England",10249,,,,53.62083,-2.18,crown-oil-arena-703.jpg
+England,Turf Moor,Burnley,"Burnley , England",21944,,,,53.78917,-2.23028,turf-moor-622.jpg
+England,Gtech Community Stadium,Brentford,"London , England",17250,2020,,,51.49083,-0.28861,gtech-community-stadium-29128182.jpg
+England,Vicarage Road,Watford,"Watford , England",22220,1921,,,51.64972,-0.40139,vicarage-road-732.jpg
+England,bet365 Stadium,Stoke City,"Stoke-on-Trent,  England",30089,1997,,,52.98833,-2.17556,bet365-stadium-100076.jpg
+England,LNER Stadium,Lincoln City,"Lincoln , England",10669,,,,53.21833,-0.54083,lner-stadium-675.jpg
+England,The Den,Millwall,"London , England",20146,1993,,,51.48583,-0.05083,the-den-686.jpg
+England,Elland Road,Leeds United,"Leeds , England",37645,,,,53.77778,-1.57222,elland-road-671.jpg
+England,MKM Stadium,Hull City,"Hull , England",25586,2002,,,53.74611,-0.36778,mkm-stadium-5105217.jpg
+England,Stadium MK,Milton Keynes Dons,"Milton Keynes , England",30500,2007,,,52.00944,-0.73333,stadium-mk-5114356.jpg
+England,Meadow Park,Sunderland Ryhope CA,"Sunderland , England",49000,1997,,,54.9144290694,-1.3881729694,meadow-park-29074488.jpg
+England,Edgeley Park,Stockport County,"Stockport , England",10852,,,,53.39972,-2.16639,edgeley-park-720.jpg
+England,Sixfields,Northampton Town,"Northampton , England",8203,1994,,,52.23528,-0.93333,sixfields-689.jpg
+England,New Bucks Head,AFC Telford United,"Wellington , England",6300,2003,,,52.6974,-2.5014,new-bucks-head-726.jpg
+England,EnviroVent Stadium,Harrogate Town,"Harrogate , England",5000,1920,,,53.99167,-1.51444,envirovent-stadium-5100048.jpg
+England,Emirates Stadium,Arsenal,"London , England",60704,2006,,,51.5550821,-0.1083998,emirates-stadium-5114336.jpg
 England,The Valley,Charlton Athletic,"London , England",27111,1919,,1985,51.48639,0.03639,the-valley-628.jpg
-England,Wembley,,"London , England",90000,2007,,,51.55556,0.27944,wembley-102969.jpg
-England,Villa Park,Aston Villa,"Birmingham , England",43205,,,,52.50917,1.88472,villa-park-603.jpg
-England,Vale Park,Port Vale,"Stoke-on-Trent , England",16800,1950,,,53.04972,2.1925,vale-park-698.jpg
-England,Poundland Bescot Stadium,Walsall,"Walsall , England",11300,1990,,,52.5655,1.9909,poundland-bescot-stadium-731.jpg
+England,Wembley,,"London , England",90000,2007,,,51.55556,-0.27944,wembley-102969.jpg
+England,Villa Park,Aston Villa,"Birmingham , England",43205,,,,52.50917,-1.88472,villa-park-603.jpg
+England,Vale Park,Port Vale,"Stoke-on-Trent , England",16800,1950,,,53.04972,-2.1925,vale-park-698.jpg
+England,Poundland Bescot Stadium,Walsall,"Walsall , England",11300,1990,,,52.5655,-1.9909,poundland-bescot-stadium-731.jpg
 England,Stonebridge Road,Ebbsfleet United,"Northfleet, England",4769,1905,,,51.44944,0.32222,stonebridge-road-5100158.jpg
-England,JobServe Community Stadium,Colchester United,"Colchester , England",10105,2008,,,51.923,0.897,jobserve-community-stadium-156499.jpg
+England,JobServe Community Stadium,Colchester United,"Colchester , England",10105,2008,,,51.923,0.898,jobserve-community-stadium-156499.jpg
 England,Priestfield Stadium,Gillingham,"Gillingham , England",11582,,,,51.38417,0.56083,priestfield-stadium-656.jpg
-England,Home Park,Plymouth Argyle,"Plymouth , England",17900,,,,50.38806,4.15083,home-park-697.jpg
-England,Mazuma Mobile Stadium,Morecambe,"Morecambe , England",6476,2010,,,54.0615,2.8672,mazuma-mobile-stadium-29039507.jpg
+England,Home Park,Plymouth Argyle,"Plymouth , England",17900,,,,50.38806,-4.15083,home-park-697.jpg
+England,Mazuma Mobile Stadium,Morecambe,"Morecambe , England",6476,2010,,,54.0615,-2.8672,mazuma-mobile-stadium-29039507.jpg
 England,Etihad Stadium,Manchester City,"Manchester , England",4998,2014,,,53.48111,2.19278,etihad-stadium-5114325.jpg
-England,Gateshead International Stadium,Gateshead,"Gateshead , England",11800,1955,,,54.96111,1.57972,gateshead-international-stadium-655.jpg
+England,Gateshead International Stadium,Gateshead,"Gateshead , England",11800,1955,,,54.96111,-1.57972,gateshead-international-stadium-655.jpg
 England,SMH Group Stadium,Chesterfield,"Chesterfield , England",10292,2010,,,53.25361,1.42583,smh-group-stadium-29059109.jpg
-England,Boundary Park,Oldham Athletic,"Oldham , England",13186,1904,,,53.55528,2.12861,boundary-park-694.jpg
-England,Coventry Building Society Arena,Coventry City,"Coventry , England",40000,2005,,,52.44806,1.49556,coventry-building-society-arena-5009114.jpg
-England,Meadow Lane,Notts County,"Nottingham , England",19841,1910,,,52.9425,1.13722,meadow-lane-693.jpg
-England,Blundell Park,Grimsby Town,"Cleethorpes , England",9546,,,,53.57028,0.04639,blundell-park-658.jpg
-England,Fratton Park,Portsmouth,"Portsmouth , England",20867,,,,50.79639,1.06389,fratton-park-699.jpg
+England,Boundary Park,Oldham Athletic,"Oldham , England",13186,1904,,,53.55528,-2.12861,boundary-park-694.jpg
+England,Coventry Building Society Arena,Coventry City,"Coventry , England",40000,2005,,,52.44806,-1.49556,coventry-building-society-arena-5009114.jpg
+England,Meadow Lane,Notts County,"Nottingham , England",19841,1910,,,52.9425,-1.13722,meadow-lane-693.jpg
+England,Blundell Park,Grimsby Town,"Cleethorpes , England",9546,,,,53.57028,-0.04639,blundell-park-658.jpg
+England,Fratton Park,Portsmouth,"Portsmouth , England",20867,,,,50.79639,-1.06389,fratton-park-699.jpg
 England,Attis Arena,Scunthorpe United,"Scunthorpe , England",9088,1988,,,53.58667,0.69528,attis-arena-707.jpg
-England,Huish Park,Yeovil Town,"Yeovil , England",9565,1990,,,50.95028,2.67389,huish-park-743.jpg
-England,City Ground,Nottingham Forest,"Nottingham , England",30404,,,,52.94,1.13278,city-ground-692.jpg
-England,The New Lawn,Forest Green Rovers,"Nailsworth , England",5147,2006,,,51.69889,2.23778,the-new-lawn-28007250.jpg
-England,Aggborough,Kidderminster Harriers,"Kidderminster , England",6444,,,,52.38056,2.24278,aggborough-669.jpg
+England,Huish Park,Yeovil Town,"Yeovil , England",9565,1990,,,50.95028,-2.67389,huish-park-743.jpg
+England,City Ground,Nottingham Forest,"Nottingham , England",30404,,,,52.94,-1.13278,city-ground-692.jpg
+England,The New Lawn,Forest Green Rovers,"Nailsworth , England",5147,2006,,,51.69889,-2.23778,the-new-lawn-28007250.jpg
+England,Aggborough,Kidderminster Harriers,"Kidderminster , England",6444,,,,52.38056,-2.24278,aggborough-669.jpg
 England,St. James' Park,Newcastle United,"Newcastle , England",52264,,,,54.97556,1.62167,st-james-park-688.jpg
-England,Broadfield Stadium,Crawley Town,"Crawley, England",5567,1997,,,51.09972,0.19472,broadfield-stadium-640.jpg
-England,Gigg Lane,Bury,"Bury , England",12500,,,,53.58056,2.29472,gigg-lane-623.jpg
-England,The County Ground,Swindon Town,"Swindon , England",14753,1892,,,51.56444,1.77056,the-county-ground-725.jpg
+England,Broadfield Stadium,Crawley Town,"Crawley, England",5567,1997,,,51.09972,-0.19472,broadfield-stadium-640.jpg
+England,Gigg Lane,Bury,"Bury , England",12500,,,,53.58056,-2.29472,gigg-lane-623.jpg
+England,The County Ground,Swindon Town,"Swindon , England",14753,1892,,,51.56444,-1.77056,the-county-ground-725.jpg
 England,Cledara Abbey Stadium,Cambridge United,"Cambridge , England",7937,1932,,,52.2121,0.15415,cledara-abbey-stadium-624.jpg
-England,Ashton Gate,Bristol City,"Bristol , England",26462,,,,51.44,2.62028,ashton-gate-619.jpg
-England,Craven Cottage,Fulham,"London , England",28800,,,,51.475,0.22167,craven-cottage-654.jpg
-England,Bramall Lane,Sheffield United,"Sheffield , England",32050,,,,53.37028,1.47083,bramall-lane-708.jpg
-England,Bower Fold,Stalybridge Celtic,"Stalybridge , England",6500,,,,53.47528,2.04389,bower-fold-718.jpg
+England,Ashton Gate,Bristol City,"Bristol , England",26462,,,,51.44,-2.62028,ashton-gate-619.jpg
+England,Craven Cottage,Fulham,"London , England",28800,,,,51.475,-0.22167,craven-cottage-654.jpg
+England,Bramall Lane,Sheffield United,"Sheffield , England",32050,,,,53.37028,-1.47083,bramall-lane-708.jpg
+England,Bower Fold,Stalybridge Celtic,"Stalybridge , England",6500,,,,53.47528,-2.04389,bower-fold-718.jpg
 England,The Walks Stadium,King's Lynn,"King's Lynn , England",8200,,,,52.7501,0.4074,the-walks-stadium-113523.jpg
 England,Hayes Lane,Bromley,"London , England",5000,1938,,,51.39,0.02111,hayes-lane-5100154.jpg
 England,St. Andrew's @ Knighthead Park,Birmingham City,"Birmingham , England",29409,1906,,,52.47583,1.86806,st-andrews-knighthead-park-609.jpg
-England,Brisbane Road,Leyton Orient,"Leyton , England",9271,,,,51.56028,0.01278,brisbane-road-674.jpg
+England,Brisbane Road,Leyton Orient,"Leyton , England",9271,,,,51.56028,-0.01278,brisbane-road-674.jpg
 England,Ewood Park,Blackburn Rovers,"Blackburn , England",31367,,,,53.72861,2.48917,ewood-park-612.jpg
-England,Silverlake Stadium,Eastleigh,"Eastleigh , England",5192,1957,,,50.95222,1.37167,silverlake-stadium-8600598.jpg
-England,DW Stadium,Wigan Athletic,"Wigan , England",25138,1999,,,53.54778,2.65389,dw-stadium-737.jpg
-England,The John Smith's Stadium,Huddersfield Town,"Huddersfield , England",24121,1994,,,53.65417,1.76833,the-john-smiths-stadium-664.jpg
-England,The Toughsheet Community Stadium,Bolton Wanderers,"Bolton , England",28723,1997,,,53.58056,2.53556,the-toughsheet-community-stadium-614.jpg
+England,Silverlake Stadium,Eastleigh,"Eastleigh , England",5192,1957,,,50.95222,-1.3717,silverlake-stadium-8600598.jpg
+England,DW Stadium,Wigan Athletic,"Wigan , England",25138,1999,,,53.54778,-2.65389,dw-stadium-737.jpg
+England,The John Smith's Stadium,Huddersfield Town,"Huddersfield , England",24121,1994,,,53.65417,-1.76833,the-john-smiths-stadium-664.jpg
+England,The Toughsheet Community Stadium,Bolton Wanderers,"Bolton , England",28723,1997,,,53.58056,-2.53556,the-toughsheet-community-stadium-614.jpg
 England,Crabble Athletic Ground,Dover Athletic,"River, England",6500,,,,51.138,1.285,crabble-athletic-ground-647.jpg
-England,Prenton Park,Tranmere Rovers,"Birkenhead , England",16587,1912,,,53.37361,3.0325,prenton-park-729.jpg
-England,Keys Park,Hednesford Town,"Hednesford , England",6039,,,,52.6976,1.9888306,keys-park-106581.jpg
-England,The Kassam Stadium,Oxford United,"Oxford , England",12500,2001,,,51.71639,1.20806,the-kassam-stadium-5105151.jpg
-England,Eco-Power Stadium,Doncaster Rovers,"Doncaster , England",15231,2007,,,53.50972,1.11389,eco-power-stadium-5121942.jpg
-England,The Hive,Barnet,"London , England",6500,2013,,,51.602599,0.291785,the-hive-1371.jpg
+England,Prenton Park,Tranmere Rovers,"Birkenhead , England",16587,1912,,,53.37361,-3.0325,prenton-park-729.jpg
+England,Keys Park,Hednesford Town,"Hednesford , England",6039,,,,52.6976,-1.9888306,keys-park-106581.jpg
+England,The Kassam Stadium,Oxford United,"Oxford , England",12500,2001,,,51.71639,-1.20806,the-kassam-stadium-5105151.jpg
+England,Eco-Power Stadium,Doncaster Rovers,"Doncaster , England",15231,2007,,,53.50972,-1.11389,eco-power-stadium-5121942.jpg
+England,The Hive,Barnet,"London , England",6500,2013,,,51.602599,-0.291785,the-hive-1371.jpg
 England,Selhurst Park,Crystal Palace,"London , England",25486,1924,,,51.39833,0.08556,selhurst-park-642.jpg
-England,The Tottenham Hotspur Stadium,Tottenham Hotspur,"London , England",62850,2019,,,51.60444,0.06639,the-tottenham-hotspur-stadium-28096287.jpg
-England,MATRADE Loftus Road Stadium,Queens Park Rangers,"London , England",18439,1904,,,51.50917,0.23222,matrade-loftus-road-stadium-701.jpg
-England,Cherry Red Records Stadium,AFC Wimbledon,"London , England",9215,2020,,,51.43139,0.18667,cherry-red-records-stadium-211584.jpg
-England,Pirelli Stadium,Burton Albion,"Burton-on-Trent , England",6912,2005,,,52.82194,1.62694,pirelli-stadium-5006861.jpg
-England,Hillsborough,Sheffield Wednesday,"Sheffield , England",39732,,,,53.41139,1.50056,hillsborough-709.jpg
-England,Bloomfield Road,Blackpool,"Blackpool , England",16500,,,,53.80472,3.04806,bloomfield-road-613.jpg
-England,Goodison Park,Everton,"Liverpool , England",39414,,,,53.43889,2.96639,goodison-park-650.jpg
-England,Adams Park,Wycombe Wanderers,"Wycombe , England",10446,1990,,,51.63056,0.80028,adams-park-742.jpg
+England,The Tottenham Hotspur Stadium,Tottenham Hotspur,"London , England",62850,2019,,,51.60444,-0.06639,the-tottenham-hotspur-stadium-28096287.jpg
+England,MATRADE Loftus Road Stadium,Queens Park Rangers,"London , England",18439,1904,,,51.50917,-0.23222,matrade-loftus-road-stadium-701.jpg
+England,Cherry Red Records Stadium,AFC Wimbledon,"London , England",9215,2020,,,51.43139,-0.18667,cherry-red-records-stadium-211584.jpg
+England,Pirelli Stadium,Burton Albion,"Burton-on-Trent , England",6912,2005,,,52.82194,-1.62694,pirelli-stadium-5006861.jpg
+England,Hillsborough,Sheffield Wednesday,"Sheffield , England",39732,,,,53.41139,-1.50056,hillsborough-709.jpg
+England,Bloomfield Road,Blackpool,"Blackpool , England",16500,,,,53.80472,-3.04806,bloomfield-road-613.jpg
+England,Goodison Park,Everton,"Liverpool , England",39414,,,,53.43889,-2.96639,goodison-park-650.jpg
+England,Adams Park,Wycombe Wanderers,"Wycombe , England",10446,1990,,,51.63056,-0.80028,adams-park-742.jpg
 England,Carrow Road,Norwich City,"Norwich , England",27150,1935,,,52.62222,1.30917,carrow-road-691.jpg
-England,London Stadium,West Ham United,"London , England",62500,2012,,,51.53861,0.01639,london-stadium-29076584.jpg
-England,Westleigh Park,Havant & Waterlooville,"Havant , England",5300,,,,50.8670778,0.9741389,westleigh-park-5100133.jpg
+England,London Stadium,West Ham United,"London , England",62500,2012,,,51.53861,-0.01639,london-stadium-29076584.jpg
+England,Westleigh Park,Havant & Waterlooville,"Havant , England",5300,,,,50.8670778,-0.9741389,westleigh-park-5100133.jpg
 England,Riverside Stadium,Middlesbrough,"Middlesbrough , England",34742,1995,,,54.57833,1.21694,riverside-stadium-685.jpg
 England,Portman Road,Ipswich Town,"Ipswich , England",30056,,,,52.055,1.14472,portman-road-667.jpg
-England,Plainmoor,Torquay United,"Torquay , England",6200,1921,,,50.47639,3.52389,plainmoor-727.jpg
-England,Twerton Park,Bath City,"Bath , England",8840,1909,,,51.3788,2.395,twerton-park-608.jpg
-England,The Hawthorns,West Bromwich Albion,"West Bromwich , England",26804,1900,,,52.50917,1.96389,the-hawthorns-734.jpg
-England,King Power Stadium,Leicester City,"Leicester , England",32259,2002,,,52.62028,1.14222,king-power-stadium-5110660.jpg
-England,The Lamex Stadium,Stevenage,"Stevenage , England",7318,1961,,,51.8898389,0.1936083,the-lamex-stadium-719.jpg
-England,St. Mary's Stadium,Southampton,"Southampton , England",32384,2001,,,50.90583,1.39111,st-marys-stadium-5102453.jpg
-England,Deepdale,Preston North End,"Preston , England",23404,,,,53.77222,2.68806,deepdale-700.jpg
-England,The Shay,FC Halifax Town,"Halifax , England",10401,1921,,,53.71611,1.85917,the-shay-660.jpg
-England,Moss Rose,Macclesfield Town,"Macclesfield , England",5300,,,,53.24278,2.12722,moss-rose-678.jpg
-England,AESSEAL New York Stadium,Rotherham United,"Rotherham , England",12021,2012,,,53.4279,1.362,aesseal-new-york-stadium-29082569.jpg
+England,Plainmoor,Torquay United,"Torquay , England",6200,1921,,,50.47639,-3.52389,plainmoor-727.jpg
+England,Twerton Park,Bath City,"Bath , England",8840,1909,,,51.3788,-2.395,twerton-park-608.jpg
+England,The Hawthorns,West Bromwich Albion,"West Bromwich , England",26804,1900,,,52.50917,-1.96389,the-hawthorns-734.jpg
+England,King Power Stadium,Leicester City,"Leicester , England",32259,2002,,,52.62028,-1.14222,king-power-stadium-5110660.jpg
+England,The Lamex Stadium,Stevenage,"Stevenage , England",7318,1961,,,51.8898389,-0.1936083,the-lamex-stadium-719.jpg
+England,St. Mary's Stadium,Southampton,"Southampton , England",32384,2001,,,50.90583,-1.39111,st-marys-stadium-5102453.jpg
+England,Deepdale,Preston North End,"Preston , England",23404,,,,53.77222,-2.68806,deepdale-700.jpg
+England,The Shay,FC Halifax Town,"Halifax , England",10401,1921,,,53.71611,-1.85917,the-shay-660.jpg
+England,Moss Rose,Macclesfield Town,"Macclesfield , England",5300,,,,53.24278,-2.12722,moss-rose-678.jpg
+England,AESSEAL New York Stadium,Rotherham United,"Rotherham , England",12021,2012,,,53.4279,-1.362,aesseal-new-york-stadium-29082569.jpg
 England,Roots Hall,Southend United,"Southend-on-Sea , England",12392,1955,,,51.54917,0.70167,roots-hall-714.jpg
-England,Stadium of Light,Sunderland,"Sunderland , England",49000,1997,,,54.9144290694,1.3881729694,stadium-of-light-722.jpg
-England,Wham Stadium,Accrington Stanley,"Accrington , England",5450,1968,,,53.76528,2.37083,wham-stadium-109219.jpg
+England,Stadium of Light,Sunderland,"Sunderland , England",49000,1997,,,54.9144290694,-1.3881729694,stadium-of-light-722.jpg
+England,Wham Stadium,Accrington Stanley,"Accrington , England",5450,1968,,,53.76528,-2.37083,wham-stadium-109219.jpg
 Equatorial Guinea,Nuevo Estadio de Malabo,Sony Elá Nguema,"Malabo , Equatorial Guinea",15250,2007,,,3.725,8.76917,nuevo-estadio-de-malabo-12010509.jpg
 Eritrea,Cicero Stadium,Tesfa FC,"Asmara , Eritrea",10000,1939,,,15.3492722,38.9212556,cicero-stadium-129513.jpg
 Estonia,Kadrioru staadion,FC Levadia Tallinn,"Tallinn , Estonia",5000,1926,,,59.4344722,24.7834444,kadrioru-staadion-1300316.jpg
@@ -557,8 +557,8 @@ Estonia,Hiiu kunstmurustaadion,Tallinna JK Jalgpallihaigla,"Laagri, Estonia",500
 Estonia,Lilleküla staadion,FC Flora Tallinn,"Tallinn , Estonia",14336,2001,,,59.42139,24.73194,lillekula-staadion-5220182.jpg
 Ethiopia,Addis Ababa Stadium,Saint George Sports Club,"Addis Ababa , Ethiopia",20000,1940,,,9.013306,38.756417,addis-ababa-stadium-103039.jpg
 Ethiopia,Bahir Dar Stadium,Bahir Dar Kenema,"Bahir Dar , Ethiopia",52000,,,,11.584528,37.382944,bahir-dar-stadium-13206166.jpg
-Faroe Islands,Tórsvøllur,,"Tórshavn , Faroe Islands",6500,1999,,,62.01917,6.77806,torsvllur-8300371.jpg
-Fiji,National Stadium,Suva FC,"Suva Fiji, Flagicon",15446,,,,18.15,178.44917,national-stadium-103185.jpg
+Faroe Islands,Tórsvøllur,,"Tórshavn , Faroe Islands",6500,1999,,,62.01917,-6.77806,torsvllur-8300371.jpg
+Fiji,National Stadium,Suva FC,"Suva, Fiji",15446,,,,-18.15,178.44917,national-stadium-103185.jpg
 Finland,Raatin stadion,AC Oulu,"Oulu , Finland",4392,1953,,,65.01972,25.46583,raatin-stadion-127400.jpg
 Finland,Rovaniemen keskuskenttä,Rovaniemen Palloseura,"Rovaniemi, Finland",2800,1953,,,66.49972,25.72167,rovaniemen-keskuskentta-1300367.jpg
 Finland,Töölön jalkapallostadion,Helsingin Jalkapalloklubi,"Helsinki , Finland",10770,2000,,,60.1875,24.9225,toolon-jalkapallostadion-115602.jpg
@@ -572,10 +572,10 @@ Finland,Tapiolan urheilupuisto,,"Espoo, Finland",6000,2029,,,60.179111,24.781306
 Finland,Porin Stadion,Musan Salama,"Pori , Finland",12300,1965,,,61.47667,21.77444,porin-stadion-1300368.jpg
 Finland,Tammelan stadion,Tampere United,"Tampere , Finland",8017,2023,,,61.5003,23.7853,tammelan-stadion-1300366.jpg
 France,Decathlon Arena - Stade Pierre Mauroy,LOSC Lille,"Lille , France",50186,2012,,,50.6119,3.1304,decathlon-arena-stade-pierre-mauroy-34012570.jpg
-France,Roazhon Park,Stade Rennais FC,"Rennes , France",29778,1912,,,48.1075,1.71278,roazhon-park-995.jpg
-France,Stade du Moustoir - Yves Allainmat,FC Lorient,"Lorient , France",18110,1959,,,47.74889,3.36944,stade-du-moustoir-yves-allainmat-948.jpg
-France,Stade de la Rabine,Vannes OC,"Vannes , France",11303,2001,,,47.65194,2.76111,stade-de-la-rabine-6200179.jpg
-France,Stade Francis-Le Blé,Stade Brestois 29,"Brest, France",15220,1922,,,48.402932,4.461694,stade-francis-le-ble-990.jpg
+France,Roazhon Park,Stade Rennais FC,"Rennes , France",29778,1912,,,48.1075,-1.71278,roazhon-park-995.jpg
+France,Stade du Moustoir - Yves Allainmat,FC Lorient,"Lorient , France",18110,1959,,,47.74889,-3.36944,stade-du-moustoir-yves-allainmat-948.jpg
+France,Stade de la Rabine,Vannes OC,"Vannes , France",11303,2001,,,47.65194,-2.76111,stade-de-la-rabine-6200179.jpg
+France,Stade Francis-Le Blé,Stade Brestois 29,"Brest, France",15220,1922,,,48.402932,-4.461694,stade-francis-le-ble-990.jpg
 France,Stade Océane,Havre AC,"Le Havre , France",25178,2012,,,49.49889,0.16972,stade-oceane-8442058.jpg
 France,Stade Léo Lagrange,Stade Nazairien,"Besançon , France",10500,1939,,,47.243847,6.003274,stade-leo-lagrange-34012414.jpg
 France,Stade Bauer,Red Star FC,"Paris , France",5600,1909,"1922–1923, 1947, 1975, 2021",,48.9058,2.3408,stade-bauer-982.jpg
@@ -589,27 +589,27 @@ France,Parc des Princes,Paris Saint-Germain,"Paris , France",47929,1897,1972,,48
 France,Stade Abbé-Deschamps,AJ Auxerre,"Auxerre , France",18541,1918,,,47.7867528,3.5886639,stade-abbe-deschamps-919.jpg
 France,Parc des Sports d'Annecy,Annecy,"Annecy , France",15660,1964,,,45.916497,6.118054,parc-des-sports-dannecy-6200208.jpg
 France,Stade Orange Vélodrome,Olympique de Marseille,"Marseille, France",67394,1937,,,43.26972,5.39583,stade-orange-velodrome-975.jpg
-France,Stade Paul-Lignon,Rodez Aveyron Football,"Rodez, France",6800,1940,2019,,44.35,2.5636,stade-paul-lignon-984.jpg
+France,Stade Paul-Lignon,Rodez Aveyron Football,"Rodez, France",6800,1940,2019,,44.351667,2.563611,stade-paul-lignon-984.jpg
 France,Stade Pierre-Brisson,AS Beauvais Oise,"Beauvais , France",10178,,,,49.43167,2.11389,stade-pierre-brisson-922.jpg
 France,Stade Marcel-Picot,AS Nancy Lorraine,"Tomblaine , France",20087,1926,,,48.6955,6.210687,stade-marcel-picot-927.jpg
 France,Stade Charléty,Paris FC,"Paris , France",20000,1939,1994,,48.81861,2.34667,stade-charlety-6201378.jpg
 France,Stade Auguste-Delaune,Stade de Reims,"Reims , France",21029,1935,,,49.24667,4.025,stade-auguste-delaune-983.jpg
 France,Stade Bollaert-Delelis,RC Lens,"Lens , France",38223,1933,,,50.43278,2.815,stade-bollaert-delelis-980.jpg
 France,Stade Crédit Agricole La Licorne,Amiens SC,"Amiens , France",12097,1999,,,49.894209,2.263312,stade-credit-agricole-la-licorne-6200321.jpg
-France,Matmut Atlantique,FC Girondins de Bordeaux,"Bordeaux , France",42115,2015,,,44.89722,0.56167,matmut-atlantique-48031770.jpg
+France,Matmut Atlantique,FC Girondins de Bordeaux,"Bordeaux , France",42115,2015,,,44.89722,-0.56167,matmut-atlantique-48031770.jpg
 France,Stade Gaston-Petit,La Berrichonne de Châteauroux,"Châteauroux, France",17173,1964,,,46.80194,1.72167,stade-gaston-petit-936.jpg
 France,Stade Armand-Cesari,SC Bastia,"Furiani , France",16048,1932,,,42.65139,9.44278,stade-armand-cesari-987.jpg
-France,Stade Francis Le Basser,Stade Lavallois MFC,"Laval , France",11107,1969,,,48.0825,0.75472,stade-francis-le-basser-991.jpg
+France,Stade Francis Le Basser,Stade Lavallois MFC,"Laval , France",11107,1969,,,48.0825,-0.75472,stade-francis-le-basser-991.jpg
 France,Stade Jean Laville,Football Club Gueugnonnais,"Gueugnon , France",13800,1919,,,46.5950861,4.0560583,stade-jean-laville-946.jpg
 France,Stade du Hainaut,Valenciennes FC,"Valenciennes , France",25172,2011,,,50.348389,3.531611,stade-du-hainaut-34007838.jpg
 France,Stade Léo Lagrange,Besançon Football,"Besançon , France",10500,1939,,,47.243847,6.003274,stade-leo-lagrange-931.jpg
 France,Stade Auguste-Bonal,FC Sochaux-Montbéliard,"Montbéliard, France",20025,1931,,,47.5125,6.81111,stade-auguste-bonal-957.jpg
 France,Stade Michel-Amand (ex Stade de la Pépinière),Stade Poitevin Football Club,"Poitiers , France",12000,1989,,,46.5951845,0.3641732,stade-michel-amand-ex-stade-de-la-pepiniere-994.jpg
-France,Stade de Roudourou,En Avant Guingamp,"Guingamp , France",19033,1990,,,48.566285,3.164599,stade-de-roudourou-942.jpg
+France,Stade de Roudourou,En Avant Guingamp,"Guingamp , France",19033,1990,,,48.566285,-3.164599,stade-de-roudourou-942.jpg
 France,Stade de La Meinau,RC Strasbourg Alsace,"Strasbourg , France",26109,1914,,,48.56,7.755,stade-de-la-meinau-981.jpg
 France,Stade François Coty,AC Ajaccio,"Ajaccio  , France",10446,1968,,,41.9310806,8.776725,stade-francois-coty-3500150.jpg
 France,Stade Saint-Symphorien,FC Metz,"Metz , France",30000,1923,,,49.109813,6.159511,stade-saint-symphorien-950.jpg
-France,Stade Michel-d'Ornano,Stade Malherbe Caen,"Caen , France",20300,1993,,,49.1794611,0.3967667,stade-michel-dornano-992.jpg
+France,Stade Michel-d'Ornano,Stade Malherbe Caen,"Caen , France",20300,1993,,,49.1794611,-0.3967667,stade-michel-dornano-992.jpg
 France,Stade des Alpes,Grenoble Foot 38,"Grenoble, France",20068,2008,,,45.187428,5.740099,stade-des-alpes-8430432.jpg
 France,Stade Dominique Duvauchelle,Union Sportive Créteil-Lusitanos Football,"Créteil , France",12150,1983,,,48.76806,2.46167,stade-dominique-duvauchelle-998.jpg
 France,Stade de l'Aube,ESTAC Troyes,"Troyes , France",20400,1924,,,48.307561,4.098458,stade-de-laube-929.jpg
@@ -618,11 +618,11 @@ France,Stade de la Source,US Orléans,"Orléans, France",7533,1976,"2011, 2014, 
 France,Stade de la Mosson,Montpellier Hérault SC,"Montpellier , France",20484,1972,,,43.62222,3.81194,stade-de-la-mosson-967.jpg
 France,Stade Louis Dugauguez,Club Sportif Sedan Ardennes,"Sedan , France",23189,2000,,,49.694147,4.938847,stade-louis-dugauguez-910859.jpg
 France,Stade Robert-Diochon,FC Rouen 1899,"Le Petit-Quevilly , France",8372,1917,,,49.411078,1.070738,stade-robert-diochon-954.jpg
-France,Stade Raymond-Kopa,Angers SCO,"Angers , France",19800,1912,,,47.460458,0.530741,stade-raymond-kopa-986.jpg
+France,Stade Raymond-Kopa,Angers SCO,"Angers , France",19800,1912,,,47.460458,-0.530741,stade-raymond-kopa-986.jpg
 France,Stade Georges Pompidou,Olympique de Valence,"Valence , France",15128,1974,,,48.87667,2.52222,stade-georges-pompidou-921.jpg
 France,Stade Léo Lagrange,Union Sportive Maubeugeoise,"Besançon , France",10500,1939,,,47.243847,6.003274,stade-leo-lagrange-85048623.jpg
 France,Stade Parsemain,Istres FC,"Fos-sur-Mer , France",12500,2005,,,43.46932111,4.94937667,stade-parsemain-8434673.jpg
-France,Stade de la Beaujoire - Louis Fonteneau,FC Nantes,"Nantes , France",35318,1984,,,47.256,1.525,stade-de-la-beaujoire-louis-fonteneau-952.jpg
+France,Stade de la Beaujoire - Louis Fonteneau,FC Nantes,"Nantes , France",35318,1984,,,47.256,-1.525,stade-de-la-beaujoire-louis-fonteneau-952.jpg
 France,Allianz Riviera,OGC Nice,"Nice , France",36178,2013,,,43.70528,7.1925,allianz-riviera-8437525.jpg
 France,Stade Marie Marvingt,Le Mans FC,"Le Mans , France",25064,2011,,,47.959,0.2234,stade-marie-marvingt-8437659.jpg
 Georgia,Tengiz Burjanadzis Sakhelobis Stadioni,Dila Gori,"Gori , Georgia",5000,,,,41.98306,44.10389,tengiz-burjanadzis-sakhelobis-stadioni-1300396.jpg
@@ -687,11 +687,11 @@ Germany,Stadion An der Alten Försterei,1. FC Union Berlin,"Köpenick , Berlin, 
 Germany,Grotenburg-Stadion,KFC Uerdingen 05,"Krefeld , Germany",34500,1927,,,51.33889,6.60361,grotenburg-stadion-1319.jpg
 Germany,wohninvest WESERSTADION,SV Werder Bremen,"Bremen , Germany",42100,1947,,,53.06639,8.8375,wohninvest-weserstadion-1339.jpg
 Germany,BBBank Wildpark,Karlsruher SC,"Karlsruhe , Germany",34302,1955,,,49.02,8.41306,bbbank-wildpark-1318.jpg
-Ghana,Len Clay Stadium,Ashanti Gold Sporting Club,"Obuasi , Ghana",20000,1990,,,6.20861,1.67722,len-clay-stadium-105247.jpg
-Ghana,Tarkwa-Nsueam Assembly Park,Medeama Sporting Club,"Tarkwa , Ghana",10000,,,,5.301,1.9924,tarkwa-nsueam-assembly-park-13111494.jpg
-Ghana,Agyemang Badu II Park,Aduana Stars,"Dormaa Ahenkro , Ghana",10000,,,,7.26522222,2.86536111,agyemang-badu-ii-park-13113094.jpg
-Ghana,Accra Sports Stadium (Ohene Djan Stadium),Hearts of Oak SC,"Accra , Ghana",40000,1961,,,5.55139,0.19194,accra-sports-stadium-ohene-djan-stadium-103042.jpg
-Ghana,Baba Yara Sports Stadium,Asante Kotoko SC,"Kumasi , Ghana",40528,1959,,,6.6826806,1.6051111,baba-yara-sports-stadium-5390195.jpg
+Ghana,Len Clay Stadium,Ashanti Gold Sporting Club,"Obuasi , Ghana",20000,1990,,,6.20861,-1.678,len-clay-stadium-105247.jpg
+Ghana,Tarkwa-Nsueam Assembly Park,Medeama Sporting Club,"Tarkwa , Ghana",10000,,,,5.301,-1.9924,tarkwa-nsueam-assembly-park-13111494.jpg
+Ghana,Agyemang Badu II Park,Aduana Stars,"Dormaa Ahenkro , Ghana",10000,,,,7.265222,-2.865361,agyemang-badu-ii-park-13113094.jpg
+Ghana,Accra Sports Stadium (Ohene Djan Stadium),Hearts of Oak SC,"Accra , Ghana",40000,1961,,,5.55139,-0.19194,accra-sports-stadium-ohene-djan-stadium-103042.jpg
+Ghana,Baba Yara Sports Stadium,Asante Kotoko SC,"Kumasi , Ghana",40528,1959,,,6.6826806,-1.6051111,baba-yara-sports-stadium-5390195.jpg
 Greece,Zosimades,PAS Giannina,"Ioannina , Greece",7652,,,,,,zosimades-129680.jpg
 Greece,Municipal Athletic Center of Katerini A',SFK Pierikos,"Katerini , Greece",4995,1964,,,40.2614,22.5119,municipal-athletic-center-of-katerini-a-687582.jpg
 Greece,Grigorios Labrakis,Athens Kallithea FC,"Athens , Greece",6300,1970,,,37.9601,23.7151,grigorios-labrakis-129674.jpg
@@ -716,19 +716,19 @@ Greece,Municipal Stadium of Trikala,AO Trikala,"Trikala , Greece",15000,,,,39.55
 Greece,Theodoros Vardinogiannis,OFI Crete,"Heraklion , Greece",9833,1951,,,35.33806,25.11472,theodoros-vardinogiannis-1300552.jpg
 Greece,Municipal Ground of Nikaia,AO Ionikos Nikaias,"Attica , Greece",4999,,,,37.9771222,23.635,municipal-ground-of-nikaia-1300549.jpg
 Greece,Anthi Karagianni,AO Kavala,"Kavala , Greece",10550,,,,40.94694,24.43611,anthi-karagianni-1300557.jpg
-Greece,Doxa Dramas Ground,GS Doxa Dramas,"Drama, Greece",7000,1953,,,41.1517,24.1337,doxa-dramas-ground-687529.jpg
+Greece,Doxa Dramas Ground,GS Doxa Dramas,"Drama, Greece",7000,1953,,,41.151667,24.13625,doxa-dramas-ground-687529.jpg
 Greece,Municipal Stadium of Kerkyra,AO Kerkyra,"Corfu , Greece",3000,,,,39.6113639,19.9158361,municipal-stadium-of-kerkyra-684328.jpg
 Greece,Kaftanzogleio,GS Iraklis Salonika,"Thessaloniki , Greece",27560,1960,,,40.62556,22.96694,kaftanzogleio-1300550.jpg
 Greece,Municipal Ground of Serres,MGS Panserraikos,"Serres , Greece",9500,,,,41.0847,23.5466,municipal-ground-of-serres-129679.jpg
 Guadeloupe,Stade René Serge Nabajoth,,,7500,,,,16.269167,-61.508333,stade-rene-serge-nabajoth-82062599.jpg
-Guatemala,Estadio Cementos Progreso,,"Guatemala City , Guatemala",17000,1991,,,14.6760778,90.4885472,estadio-cementos-progreso-8827171.jpg
-Guatemala,Doroteo Guamuch Flores,CSD Comunicaciones,"Guatemala City , Guatemala",26116,1950,,,14.6257639,90.5104889,doroteo-guamuch-flores-103147.jpg
-Guinea,Stade du 28 Septembre,Horoya Athletique Club,"Conakry , Guinea",25000,,,,9.545861,13.672917,stade-du-28-septembre-103044.jpg
-Guinea-Bissau,Estádio 24 de Setembro,,"Bissau , Guinea Bissau",20000,1989,,,11.843472,15.59083,estadio-24-de-setembro-23017885.jpg
-Haiti,Stade Sylvio Cator,Racing Club Haitien,"Port-au-Prince , Haiti",10500,1953,,,18.5360583,72.3424417,stade-sylvio-cator-103159.jpg
-Honduras,Estadio Francisco Morazán,CD Real España,San Pedro Sula Honduras,18000,1938,,,15.5075,88.03333,estadio-francisco-morazan-308278.jpg
-Honduras,Estadio Excelsior,CD Platense,"Puerto Cortés , Honduras",7910,,,,15.846856,87.937794,estadio-excelsior-7720005.jpg
-Honduras,Estadio Yankel Rosenthal,CD Marathón,"San Pedro Sula , Honduras",5500,2010,,,15.49556,87.99917,estadio-yankel-rosenthal-87001966.jpg
+Guatemala,Estadio Cementos Progreso,,"Guatemala City , Guatemala",17000,1991,,,14.6760778,-90.4885472,estadio-cementos-progreso-8827171.jpg
+Guatemala,Doroteo Guamuch Flores,CSD Comunicaciones,"Guatemala City , Guatemala",26116,1950,,,14.6257639,-90.5104889,doroteo-guamuch-flores-103147.jpg
+Guinea,Stade du 28 Septembre,Horoya Athletique Club,"Conakry , Guinea",25000,,,,9.545861,-13.672917,stade-du-28-septembre-103044.jpg
+Guinea-Bissau,Estádio 24 de Setembro,,"Bissau , Guinea Bissau",20000,1989,,,11.843472,-15.59083,estadio-24-de-setembro-23017885.jpg
+Haiti,Stade Sylvio Cator,Racing Club Haitien,"Port-au-Prince , Haiti",10500,1953,,,18.5360583,-72.3424417,stade-sylvio-cator-103159.jpg
+Honduras,Estadio Francisco Morazán,CD Real España,San Pedro Sula Honduras,18000,1938,,,15.5075,-88.03333,estadio-francisco-morazan-308278.jpg
+Honduras,Estadio Excelsior,CD Platense,"Puerto Cortés , Honduras",7910,,,,15.846856,-87.937794,estadio-excelsior-7720005.jpg
+Honduras,Estadio Yankel Rosenthal,CD Marathón,"San Pedro Sula , Honduras",5500,2010,,,15.49556,-87.99917,estadio-yankel-rosenthal-87001966.jpg
 Hungary,Puskás Aréna,,"Budapest , Hungary",67215,2019,,,47.5031757,19.094446,puskas-arena-102974.jpg
 Hungary,Perutz Stadion,Pápa ELC,"Pápa , Hungary",5500,,,,47.3349,17.4741,perutz-stadion-7520452.jpg
 Hungary,Fehérvári út,Paksi Futball Club,"Paks , Hungary",4671,1966,,,46.63361,18.8525,fehervari-ut-7521408.jpg
@@ -759,14 +759,14 @@ Hungary,Buzánszky Jenő Stadion,Dorogi Futball Club,"Dorog , Hungary",4000,1921
 Hungary,Kolorcity Aréna,Kolorcity Kazincbarcika Sport Club,"Kazincbarcika , Hungary",1020,2020,,,48.24389,20.61028,kolorcity-arena-7521390.jpg
 Hungary,ETO Park,ETO FC Győr,"Győr , Hungary",15600,2008,,,47.6957687,17.663827,eto-park-1300584.jpg
 Hungary,Szent Gellért Fórum,Szeged-Csanád Grosics Akadémia,"Szeged , Hungary",8256,2019,,,46.261361,20.118139,szent-gellert-forum-29199212.jpg
-Iceland,Víkingsvöllur,Víkingur R.,"Reykjavík , Iceland",1149,2001,20,,64.116389,21.855139,vikingsvollur-5410247.jpg
-Iceland,Kópavogsvöllur,Ungmennafélagið Breiðablik,"Kópavogur , Iceland",3009,1975,,,64.10389,21.89667,kopavogsvollur-7840047.jpg
-Iceland,Grenivíkurvöllur,Magni Grenivík,"Grindavík , Iceland",1450,,,,63.8446361,22.4296278,grenivikurvollur-7840058.jpg
-Iceland,Laugardalsvöllur,,"Reykjavík , Iceland",9500,1959,,,64.143583,21.878944,laugardalsvollur-1300632.jpg
-Iceland,Hásteinsvöllur,Íþróttabandalag Vestmannaeyja,"Vestmannaeyjar , Iceland",2300,1912,"19, 20",,63.4394139,20.28795,hasteinsvollur-7840061.jpg
-Iceland,Kaplakrikavöllur,Fimleikafélag Hafnarfjarðar,"Hafnarfjörður , Iceland",6450,1973,,,64.07583,21.93861,kaplakrikavollur-7840071.jpg
-Iceland,Framvöllur Úlfarsárdal,Fram,"Reykjavík , Iceland",1200,,,,64.1313175,21.7359524,framvollur-ulfarsardal-39033654.jpg
-Iceland,Kórinn,Handknattleiksfélag Kópavogs,"Kópavogur , Iceland",2050,2007,,,64.0825912,21.8261433,korinn-39006752.jpg
+Iceland,Víkingsvöllur,Víkingur R.,"Reykjavík , Iceland",1149,2001,20,,64.116389,-21.855139,vikingsvollur-5410247.jpg
+Iceland,Kópavogsvöllur,Ungmennafélagið Breiðablik,"Kópavogur , Iceland",3009,1975,,,64.10389,-21.89667,kopavogsvollur-7840047.jpg
+Iceland,Grenivíkurvöllur,Magni Grenivík,"Grindavík , Iceland",1450,,,,63.8446361,-22.4296278,grenivikurvollur-7840058.jpg
+Iceland,Laugardalsvöllur,,"Reykjavík , Iceland",9500,1959,,,64.143583,-21.878944,laugardalsvollur-1300632.jpg
+Iceland,Hásteinsvöllur,Íþróttabandalag Vestmannaeyja,"Vestmannaeyjar , Iceland",2300,1912,"19, 20",,63.4394139,-20.28795,hasteinsvollur-7840061.jpg
+Iceland,Kaplakrikavöllur,Fimleikafélag Hafnarfjarðar,"Hafnarfjörður , Iceland",6450,1973,,,64.07583,-21.93861,kaplakrikavollur-7840071.jpg
+Iceland,Framvöllur Úlfarsárdal,Fram,"Reykjavík , Iceland",1200,,,,64.1313175,-21.7359524,framvollur-ulfarsardal-39033654.jpg
+Iceland,Kórinn,Handknattleiksfélag Kópavogs,"Kópavogur , Iceland",2050,2007,,,64.0825912,-21.8261433,korinn-39006752.jpg
 India,Fatorda Stadium,Salgaocar Football Club,"Margao, India",19000,1989,,,15.28917,73.96222,fatorda-stadium-5512152.jpg
 India,Jawaharlal Nehru International Stadium,Football Club Kochin,"Kochi , India",40000,1996,,,9.99722,76.30111,jawaharlal-nehru-international-stadium-5512146.jpg
 India,Jawaharlal Nehru Stadium,Delhi Dynamos FC,"New Delhi , India",60254,1983,,,28.582873,77.23438,jawaharlal-nehru-stadium-40023043.jpg
@@ -785,29 +785,29 @@ India,JRD Tata Sports Complex,Jamshedpur FC,"Jamshedpur , India",24424,1991,,,22
 India,Khuman Lampak Main Stadium,Tiddim Road Athletic Union FC,"Imphal  , India",35285,1999,,,24.8227,93.9525,khuman-lampak-main-stadium-5623228.jpg
 India,Sree Kanteerava Stadium,Bengaluru FC,"Bangalore , India",25810,1997,,,12.9697,77.5934,sree-kanteerava-stadium-5512166.jpg
 India,Kalinga Stadium,Odisha FC,"Bhubaneswar , India",15000,1978,,,20.2880627393246,85.8238194830596,kalinga-stadium-2000001576.jpg
-Indonesia,Pakansari,Persikabo Bogor,"Cibinong , Indonesia",30000,2015,,,6.495,106.833361,pakansari-7749303.jpg
-Indonesia,Si Jalak Harupat,Persikab Kab. Bandung,"Soreang , Indonesia",27000,2005,,,6.99639,107.52972,si-jalak-harupat-7749300.jpg
-Indonesia,Patriot Chandrabhaga,Pelita Madura United,"Bekasi , Indonesia",30000,1982,,,6.238358,106.991897,patriot-chandrabhaga-7742380.jpg
-Indonesia,Sultan Agung,Persiba Bantul,"Bantul , Indonesia",30000,2007,,,7.87525,110.380389,sultan-agung-7748389.jpg
-Indonesia,Gawalise,Persipal Palu,"Palu , Indonesia",20000,,,,0.9229639,119.8395528,gawalise-41002080.jpg
-Indonesia,Mandala Krida,PSIM Yogyakarta,"Yogyakarta , Indonesia",25000,,,,7.79583,110.38417,mandala-krida-135501.jpg
-Indonesia,Galuh,PS Galuh Ciamis,"Ciamis , Indonesia",20000,,,,7.33417,108.35639,galuh-41046936.jpg
-Indonesia,Gelora Joko Samudro,Persegres Gresik United,"Gresik , Indonesia",25000,2017,,,7.185389,112.65075,gelora-joko-samudro-41050673.jpg
-Indonesia,Teladan,PSMS Medan,"Medan, Indonesia",20000,1953,,,3.56472,98.69556,teladan-135492.jpg
-Indonesia,Gelora Bung Tomo,Persebaya Surabaya,"Surabaya , Indonesia",46806,2010,,,7.223278,112.622722,gelora-bung-tomo-41041209.jpg
-Indonesia,Mandala,Persewar Waropen,"Jayapura  , Indonesia",30000,,,,2.53056,140.72361,mandala-135516.jpg
-Indonesia,Maguwoharjo,PSS Sleman,"Sleman Regency , Indonedia",35000,2007,,,7.7505,110.4182,maguwoharjo-7746664.jpg
-Indonesia,Aji Imbut,Mitra Kutai Kertanegara FC,"Tenggarong , Indonesia",35000,2008,,,0.425,117.0075,aji-imbut-41035812.jpg
-Indonesia,Gajayana,Persema Malang,"Malang , Indonesia",25000,1926,,,7.975513,112.624975,gajayana-135524.jpg
-Indonesia,Krida,PSIR Rembang,"Yogyakarta , Indonesia",25000,,,,7.79583,110.38417,krida-41002093.jpg
-Indonesia,Gelora Bung Karno,ASIOP Apacinti FC,"Gelora , Indonesia",77193,1962,,2016,6.2185778,106.8025111,gelora-bung-karno-103241.jpg
-Indonesia,Gelora Bumi Kartini,Persijap Jepara,"Jepara , Indonedia",20000,,,,6.583517,110.66369,gelora-bumi-kartini-41012030.jpg
-Indonesia,Batakan,Persiba Balikpapan,"Balikpapan , Indonesia",40000,2017,,,1.233167,116.943333,batakan-41063219.jpg
-Indonesia,Jatidiri,PSIS Semarang,"Semarang , Indonesia",18000,1991,,,7.026147,110.409356,jatidiri-135498.jpg
-Indonesia,Sumpah Pemuda Way Halim,Persires Lampung Sakti FC,"Lampung , Indonesia",25000,,,,5.37889,105.27944,sumpah-pemuda-way-halim-41053440.jpg
-Indonesia,Manahan,Persis Solo,"Surakarta , Indonesia",20000,1998,,2018,7.55556,110.80639,manahan-5622871.jpg
-Indonesia,Singaperbangsa,Persika Karawang,"Karawang , Indonesia",25000,,,,6.302641,107.306235,singaperbangsa-41002076.jpg
-Indonesia,Kanjuruhan,Persekam Metro FC,"Malang  , Indonesia",21603,2004,,2022,8.15028,112.57389,kanjuruhan-7746616.jpg
+Indonesia,Pakansari,Persikabo Bogor,"Cibinong , Indonesia",30000,2015,,,-6.495,106.833361,pakansari-7749303.jpg
+Indonesia,Si Jalak Harupat,Persikab Kab. Bandung,"Soreang , Indonesia",27000,2005,,,-6.99639,107.52972,si-jalak-harupat-7749300.jpg
+Indonesia,Patriot Chandrabhaga,Pelita Madura United,"Bekasi , Indonesia",30000,1982,,,-6.238358,106.991897,patriot-chandrabhaga-7742380.jpg
+Indonesia,Sultan Agung,Persiba Bantul,"Bantul , Indonesia",30000,2007,,,-7.87525,110.380389,sultan-agung-7748389.jpg
+Indonesia,Gawalise,Persipal Palu,"Palu , Indonesia",20000,,,,-0.9229639,119.8395528,gawalise-41002080.jpg
+Indonesia,Mandala Krida,PSIM Yogyakarta,"Yogyakarta , Indonesia",25000,,,,-7.79583,110.38417,mandala-krida-135501.jpg
+Indonesia,Galuh,PS Galuh Ciamis,"Ciamis , Indonesia",20000,,,,-7.33417,108.35639,galuh-41046936.jpg
+Indonesia,Gelora Joko Samudro,Persegres Gresik United,"Gresik , Indonesia",25000,2017,,,-7.185389,112.65075,gelora-joko-samudro-41050673.jpg
+Indonesia,Teladan,PSMS Medan,"Medan, Indonesia",20000,1953,,,-3.56472,98.69556,teladan-135492.jpg
+Indonesia,Gelora Bung Tomo,Persebaya Surabaya,"Surabaya , Indonesia",46806,2010,,,-7.223278,112.622722,gelora-bung-tomo-41041209.jpg
+Indonesia,Mandala,Persewar Waropen,"Jayapura  , Indonesia",30000,,,,-2.53056,140.72361,mandala-135516.jpg
+Indonesia,Maguwoharjo,PSS Sleman,"Sleman Regency , Indonedia",35000,2007,,,-7.7505,110.4182,maguwoharjo-7746664.jpg
+Indonesia,Aji Imbut,Mitra Kutai Kertanegara FC,"Tenggarong , Indonesia",35000,2008,,,-0.425,117.0075,aji-imbut-41035812.jpg
+Indonesia,Gajayana,Persema Malang,"Malang , Indonesia",25000,1926,,,-7.975513,112.624975,gajayana-135524.jpg
+Indonesia,Krida,PSIR Rembang,"Yogyakarta , Indonesia",25000,,,,-7.79583,110.38417,krida-41002093.jpg
+Indonesia,Gelora Bung Karno,ASIOP Apacinti FC,"Gelora , Indonesia",77193,1962,,2016,-6.2185778,106.8025111,gelora-bung-karno-103241.jpg
+Indonesia,Gelora Bumi Kartini,Persijap Jepara,"Jepara , Indonedia",20000,,,,-6.583517,110.66369,gelora-bumi-kartini-41012030.jpg
+Indonesia,Batakan,Persiba Balikpapan,"Balikpapan , Indonesia",40000,2017,,,-1.233167,116.943333,batakan-41063219.jpg
+Indonesia,Jatidiri,PSIS Semarang,"Semarang , Indonesia",18000,1991,,,-7.026147,110.409356,jatidiri-135498.jpg
+Indonesia,Sumpah Pemuda Way Halim,Persires Lampung Sakti FC,"Lampung , Indonesia",25000,,,,-5.37889,105.27944,sumpah-pemuda-way-halim-41053440.jpg
+Indonesia,Manahan,Persis Solo,"Surakarta , Indonesia",20000,1998,,2018,-7.55556,110.80639,manahan-5622871.jpg
+Indonesia,Singaperbangsa,Persika Karawang,"Karawang , Indonesia",25000,,,,-6.302641,107.306235,singaperbangsa-41002076.jpg
+Indonesia,Kanjuruhan,Persekam Metro FC,"Malang  , Indonesia",21603,2004,,2022,-8.15028,112.57389,kanjuruhan-7746616.jpg
 Iran,Imam Reza,Padideh,"Mashhad , Iran",27700,2017,,,36.32556,59.57,imam-reza-23359956.jpg
 Iran,Azadi,"Esteghlal Football Club, Persepolis Football Club","Tehran , Iran",78116,1971,,,35.72444,51.27556,azadi-103242.jpg
 Iran,Pars Shiraz,Qashqai Shiraz,"Shiraz , Iran",50000,2017,,,29.565,52.49139,pars-shiraz-23240301.jpg
@@ -907,9 +907,9 @@ Italy,Partenio - Adriano Lombardi,U.S. Avellino 1912,"Avellino , Italy",26000,19
 Italy,Mario Rigamonti,Brescia Calcio,"Brescia , Italy",19550,1959,,,45.57056,10.23694,mario-rigamonti-1174.jpg
 Italy,Artemio Franchi,Siena F.C. S.S.D.,"Siena , Italy",15373,1923,,,43.32167,11.32611,artemio-franchi-1260.jpg
 Ivory Coast,Stade Robert Champroux,Africa Sports d'Abidjan,"Abidjan , Ivory Coast",10000,,,,5.305146,-3.992361,stade-robert-champroux-5390196.jpg
-Ivory Coast,Stade Félix Houphouet-Boigny,ASEC Mimosas,"Abidjan , Ivory Coast",33000,1964,,,5.32825,4.018417,stade-felix-houphouet-boigny-103035.jpg
-Jamaica,Independence Park,,"Kingston, Jamaica",35000,1962,,,18.00194,76.77167,independence-park-103160.jpg
-Jamaica,Harbour View Stadium,Harbour View FC,"Harbour View, Jamaica",7000,1991,,,17.95639,76.71722,harbour-view-stadium-790944.jpg
+Ivory Coast,Stade Félix Houphouet-Boigny,ASEC Mimosas,"Abidjan , Ivory Coast",33000,1964,,,5.32825,-4.018417,stade-felix-houphouet-boigny-103035.jpg
+Jamaica,Independence Park,,"Kingston, Jamaica",35000,1962,,,18.00194,-76.77167,independence-park-103160.jpg
+Jamaica,Harbour View Stadium,Harbour View FC,"Harbour View, Jamaica",7000,1991,,,17.95639,-76.71722,harbour-view-stadium-790944.jpg
 Japan,Transcosmos Stadium Nagasaki,V-Varen Nagasaki,"Isahaya , Japan",20246,1969,,,32.838611,130.039444,transcosmos-stadium-nagasaki-783318.jpg
 Japan,Ibaraki Stadium,Kashima Antlers,"Kashima , Japan",40728,1993,,,35.991694,140.6405,ibaraki-stadium-102577.jpg
 Japan,Best Denki Stadium,Avispa Fukuoka,"Fukuoka , Japan",21562,1995,,,33.585889,130.46079,best-denki-stadium-107282.jpg
@@ -941,19 +941,19 @@ Kazakhstan,Ortalıq Stadion Jetisu Taldıqorğan,Jetisu Taldyqorğan,"Taldıqor�
 Kazakhstan,Taraz,FK Taraz,"Taraz , Kazakhstan",12525,1936,,,42.901751,71.382224,taraz-484621.jpg
 Kazakhstan,Astana Arena,Jeńis Astana,"Astana , Kazakhstan",30244,2009,,,51.108167,71.4025,astana-arena-484603.jpg
 Kazakhstan,Stadion im. Gani Muratbaeva,Qaisar Qyzylorda,"Kyzylorda , Kazakhstan",6800,1968,,,44.826029,65.503439,stadion-im-gani-muratbaeva-484605.jpg
-Kenya,Moi International Sports Centre,Mathare United FC,"Nairobi, Kenya",48063,1987,,,1.229972,36.892389,moi-international-sports-centre-23017864.jpg
+Kenya,Moi International Sports Centre,Mathare United FC,"Nairobi, Kenya",48063,1987,,,-1.229972,36.892389,moi-international-sports-centre-23017864.jpg
 Kuwait,Mohammed Al-Hamad Stadium,Al-Qadsia Sporting Club,"Hawally , Kuwait",22000,1960,,,29.34,48.03028,mohammed-al-hamad-stadium-135307.jpg
 Kuwait,Jaber Al-Ahmad International Stadium,,"Kuwait City , Kuwait",60000,2010,,,29.2714278,47.91861,jaber-al-ahmad-international-stadium-23017678.jpg
 Kuwait,Al-Kuwait Sports Club Stadium,Kuwait Sporting Club,"Kaifan , Kuwait",12350,1964,,,29.3425,47.95194,al-kuwait-sports-club-stadium-135309.jpg
 Kyrgyzstan,Stadion im. Dolena Omurzakova,,"Bishkek , Kyrgyzstan",23000,1941,,,42.880175,74.5979389,stadion-im-dolena-omurzakova-103251.jpg
 Latvia,Skonto stadions,FK Auda,"Riga, Latvia",8087,2000,,,56.96139,24.11639,skonto-stadions-485733.jpg
 Lebanon,Camille Chamoun Sports City Stadium,,"Beirut , Lebanon",49500,1957,,,33.86722,35.49611,camille-chamoun-sports-city-stadium-128275.jpg
-Liberia,Samuel Kanyon Doe Sports Complex,,"Paynesville , Liberia",22000,1986,,,6.25667,10.70222,samuel-kanyon-doe-sports-complex-103078.jpg
+Liberia,Samuel Kanyon Doe Sports Complex,,"Paynesville , Liberia",22000,1986,,,6.25667,-10.70222,samuel-kanyon-doe-sports-complex-103078.jpg
 Libya,Benina Martyrs of February Stadium,"Al-Nassr Benghazi Sports, Cultural and Social Club","Benina , Libya",10550,2009,,,32.08,20.26167,benina-martyrs-of-february-stadium-12029119.jpg
 Liechtenstein,Rheinpark Stadion,FC Vaduz,"Vaduz , Liechtenstein",7584,1998,,,47.14028,9.51028,rheinpark-stadion-129503.jpg
 Lithuania,LFF Stadionas,FK Žalgiris Vilnius,"Vilnius , Lithuania",5067,1957,,,54.66861,25.29444,lff-stadionas-2300012.jpg
 Madagascar,Stade Municipal de Mahamasina,COSFA,"Antananarivo , Madagascar",40880,,,,,,stade-municipal-de-mahamasina-103080.jpg
-Malawi,Bingu Stadium,,"Lilongwe , Malawi",41100,2017,,,13.9438119,33.7530957,bingu-stadium-13200799.jpg
+Malawi,Bingu Stadium,,"Lilongwe , Malawi",41100,2017,,,-13.9438119,33.7530957,bingu-stadium-13200799.jpg
 Malawi,Kamuzu Stadium,Big Bullets FC,"Blantyre , Malawi",35000,1964,,,15.79889,35.0345,kamuzu-stadium-103081.jpg
 Malaysia,Stadium Darul Makmur,Sri Pahang FC,"Kuantan , Malaysia",40000,1973,,,3.81472,103.32389,stadium-darul-makmur-135378.jpg
 Malaysia,Stadium Tuanku Abdul Rahman,Negeri Sembilan FC,"Paroi , Malaysia",45000,1992,,,2.7259,101.9831,stadium-tuanku-abdul-rahman-135363.jpg
@@ -972,57 +972,57 @@ Malaysia,Stadium Hang Jebat,Melaka FC,"Krubong / Paya Rumput  , Malaysia",40000,
 Malaysia,Stadium Sultan Muhammad IV,Kelantan FC,"Kota Bharu , Malaysia",30000,1967,,,6.12389,102.24333,stadium-sultan-muhammad-iv-135373.jpg
 Malaysia,Stadium Bandaraya Pulau Pinang,Penang FC,"George Town , Malaysia",20000,1956,,,5.4117,100.3145,stadium-bandaraya-pulau-pinang-1032022.jpg
 Malaysia,Stadium Sultan Mizan Zainal Abidin,Terengganu FC,"Gong Badak , Malaysia",50000,2008,,,5.37278,103.10639,stadium-sultan-mizan-zainal-abidin-23024820.jpg
-Mali,Stade du 26 Mars,Stade Malien de Bamako,"Bamako , Mali",50000,2001,,,12.60444,7.92167,stade-du-26-mars-103082.jpg
+Mali,Stade du 26 Mars,Stade Malien de Bamako,"Bamako , Mali",50000,2001,,,12.60444,-7.92167,stade-du-26-mars-103082.jpg
 Malta,Ta' Qali National Stadium,Birkirkara FC,"Ta' Qali , Malta",16907,1981,,,35.895,14.41528,ta-qali-national-stadium-1300785.jpg
-Mauritius,Stade George V,Curepipe Starlight Sports Club,"Curepipe , Mauritius",6500,1955,,,20.3212667,57.52965,stade-george-v-23017825.jpg
-Mexico,Estadio Azteca,Club de Fútbol América,"Mexico City , Mexico",87523,1966,,,19.30306,99.15056,estadio-azteca-103143.jpg
-Mexico,Estadio Tecnológico de Oaxaca,Alebrijes de Oaxaca Fútbol Club,"Oaxaca City , Mexico",16000,2016,,,17.0802048,96.7465228,estadio-tecnologico-de-oaxaca-51034376.jpg
-Mexico,Estadio Tamaulipas,CDS Tampico Madero,"Tampico - Ciudad Madero , Mexico",19667,1966,,,22.2799778,97.8506778,estadio-tamaulipas-5660011.jpg
-Mexico,Estadio Miguel Alemán Valdés,Celaya Fútbol Club,"Celaya , Mexico",23182,1954,,,20.535,100.81833,estadio-miguel-aleman-valdes-116284.jpg
-Mexico,Estadio Olímpico Universitario,Club Universidad Nacional,"Mexico City , Mexico",69000,1952,,,19.33194,99.19222,estadio-olimpico-universitario-104467.jpg
-Mexico,Estadio Carlos Iturralde,Venados Fútbol Club Yucatán,"Mérida, Mexico",15087,1987,,,20.94583,89.59361,estadio-carlos-iturralde-136033.jpg
-Mexico,Estadio Cuauhtémoc,Club Puebla,"Puebla City , Mexico",51726,1968,,,19.07806,98.16444,estadio-cuauhtemoc-115443.jpg
-Mexico,Estadio Olímpico Universitario de Colima,Loros de la Universidad de Colima,"Colima City, Mexico",11812,1994,,,19.2461,103.7014,estadio-olimpico-universitario-de-colima-136035.jpg
-Mexico,Estadio Luis 'Pirata' Fuente,Tiburones Rojos de Veracruz,"Boca del Río , Mexico",27500,1967,,,19.1642222,96.1250167,estadio-luis-pirata-fuente-116280.jpg
-Mexico,Estadio Morelos,Club Atlético Morelia,"Morelia , Mexico",35000,1989,,,19.7187417,101.2336222,estadio-morelos-116283.jpg
-Mexico,Estadio Universitario Alberto 'Chivo' Córdoba,Universidad Autónoma del Estado de México,"Toluca , Mexico ",35000,1964,,,19.2851556,99.6761306,estadio-universitario-alberto-chivo-cordoba-51011262.jpg
-Mexico,Estadio Jalisco,Atlas Fútbol Club,"Guadalajara , Mexico",56713,1960,,,20.705,103.32806,estadio-jalisco-115442.jpg
-Mexico,Estadio Alfonso Lastras,Club Atlético San Luis,"San Luis Potosí , Mexico",28429,2002,,,22.13861,100.95083,estadio-alfonso-lastras-136026.jpg
-Mexico,Estadio Agustín 'Coruco' Díaz,Cañeros del Zacatepec,"Zacatepec , Mexico",24313,1964,,,18.6551,99.1921,estadio-agustin-coruco-diaz-136036.jpg
-Mexico,Estadio Héroe de Nacozari,Cimarrones de Sonora Fútbol Club,"Hermosillo , Mexico",18747,1985,,,29.1076944,110.9957639,estadio-heroe-de-nacozari-51008484.jpg
-Mexico,Estadio BBVA,Club de Fútbol Monterrey Rayados,"Guadalupe , Mexico",53529,2015,,,25.66917,100.24444,estadio-bbva-51014707.jpg
-Mexico,Estadio Nemesio Díez,Deportivo Toluca,"Toluca de Lerdo, Mexico",30000,1935,,,19.28722,99.66667,estadio-nemesio-diez-136006.jpg
-Mexico,Estadio Víctor Manuel Reyna,Jaguares de Chiapas FC,"Tuxtla Gutiérrez , Mexico",29001,1982,,,16.7627833,93.0963694,estadio-victor-manuel-reyna-5660016.jpg
-Mexico,Estadio León,Club León,"León, Guanajuato",31297,1967,,,21.11556,101.65778,estadio-leon-116279.jpg
-Mexico,Estadio Carlos Vega Villalba,Universidad Autónoma de Zacatecas,"Zacatecas , Mexico",20777,1986,,,22.7667889,102.5492778,estadio-carlos-vega-villalba-136038.jpg
-Mexico,Estadio La Corregidora,Querétaro Fútbol Club,"Querétaro , Mexico",34130,1985,,,20.57778,100.36639,estadio-la-corregidora-116281.jpg
-Mexico,Estadio Sergio León Chávez,CD Irapuato,"Irapuato , Mexico",25000,1969,,,20.6845,101.3563,estadio-sergio-leon-chavez-308316.jpg
-Mexico,Estadio Caliente,Club Tijuana Xoloitzcuintles de Caliente,"Tijuana , Mexico",27333,2007,,,32.50611,116.99306,estadio-caliente-5666377.jpg
-Mexico,Estadio Universitario de Nuevo León,Club Tigres U.A.N.L.,"San Nicolas de los Garza , Mexico",41886,1967,,,25.723,100.312,estadio-universitario-de-nuevo-leon-104471.jpg
-Mexico,Estadio Hidalgo,Club de Fútbol Pachuca,"Pachuca , Mexico",25922,1993,,,20.10528,98.75611,estadio-hidalgo-116205.jpg
-Mexico,Estadio Olímpico Benito Juárez,Fútbol Club Juárez,"Ciudad Juárez , Mexico",19703,1981,,,31.75306,106.46778,estadio-olimpico-benito-juarez-136039.jpg
-Mexico,Estadio Olímpico de Tapachula,,"Tapachula , Mexico",18017,1988,,,14.8686361,92.2922778,estadio-olimpico-de-tapachula-5665535.jpg
-Mexico,Estadio 3 de Marzo,Club Tecos UAG B,"Zapopan , Mexico",18779,1971,,,20.69389,103.41611,estadio-3-de-marzo-136005.jpg
-Mexico,Estadio Marte R. Gómez,Club de Fútbol Correcaminos de la U.A.T.,"Ciudad Victoria , Mexico",10520,1939,,,23.73945,99.1524667,estadio-marte-r-gomez-136029.jpg
-Mexico,Estadio Corona (TSM),Club Santos Laguna,"Torreón , Mexico",29101,2009,,,25.629,103.379,estadio-corona-tsm-51008487.jpg
-Mexico,Estadio Victoria,Deportivo Necaxa,"Aguascalientes , Mexico",23851,2003,,,21.88056,102.27556,estadio-victoria-5664699.jpg
-Mexico,Estadio Tlahuicole,Tlaxcala Fútbol Club,"Tlaxcala City, Mexico",11135,1961,,,19.325694,98.230417,estadio-tlahuicole-5666486.jpg
-Mexico,Estadio Olímpico de la BUAP,Lobos BUAP,"Puebla , Mexico",19283,1992,,,18.99722,98.1975,estadio-olimpico-de-la-buap-5666638.jpg
-Mexico,Estadio Centenario (MO),Murciélagos FC,"Los Mochis , Mexico",11134,2004,,,25.797361,109.031528,estadio-centenario-mo-5666640.jpg
-Mexico,Estadio Dorados,Club Deportivo Dorados de Sinaloa,"Culiacan , Mexico",20108,2003,,,24.83056,107.40417,estadio-dorados-5666339.jpg
-Mexico,Estadio Akron,Club Deportivo Guadalajara,"Zapopan , Mexico",49813,2010,,,20.68167,103.46278,estadio-akron-51008486.jpg
-Mexico,Estadio Andrés Quintana Roo,Club Pioneros de Cancún,"Cancún , Mexico",18844,2007,,,21.150995,86.838348,estadio-andres-quintana-roo-51001643.jpg
+Mauritius,Stade George V,Curepipe Starlight Sports Club,"Curepipe , Mauritius",6500,1955,,,-20.3212667,57.52965,stade-george-v-23017825.jpg
+Mexico,Estadio Azteca,Club de Fútbol América,"Mexico City , Mexico",87523,1966,,,19.30306,-99.15056,estadio-azteca-103143.jpg
+Mexico,Estadio Tecnológico de Oaxaca,Alebrijes de Oaxaca Fútbol Club,"Oaxaca City , Mexico",16000,2016,,,17.0802048,-96.7465228,estadio-tecnologico-de-oaxaca-51034376.jpg
+Mexico,Estadio Tamaulipas,CDS Tampico Madero,"Tampico - Ciudad Madero , Mexico",19667,1966,,,22.2799778,-97.8506778,estadio-tamaulipas-5660011.jpg
+Mexico,Estadio Miguel Alemán Valdés,Celaya Fútbol Club,"Celaya , Mexico",23182,1954,,,20.535,-100.81833,estadio-miguel-aleman-valdes-116284.jpg
+Mexico,Estadio Olímpico Universitario,Club Universidad Nacional,"Mexico City , Mexico",69000,1952,,,19.33194,-99.19222,estadio-olimpico-universitario-104467.jpg
+Mexico,Estadio Carlos Iturralde,Venados Fútbol Club Yucatán,"Mérida, Mexico",15087,1987,,,20.94583,-89.59361,estadio-carlos-iturralde-136033.jpg
+Mexico,Estadio Cuauhtémoc,Club Puebla,"Puebla City , Mexico",51726,1968,,,19.07806,-98.16444,estadio-cuauhtemoc-115443.jpg
+Mexico,Estadio Olímpico Universitario de Colima,Loros de la Universidad de Colima,"Colima City, Mexico",11812,1994,,,19.2461,-103.7014,estadio-olimpico-universitario-de-colima-136035.jpg
+Mexico,Estadio Luis 'Pirata' Fuente,Tiburones Rojos de Veracruz,"Boca del Río , Mexico",27500,1967,,,19.1642222,-96.1250167,estadio-luis-pirata-fuente-116280.jpg
+Mexico,Estadio Morelos,Club Atlético Morelia,"Morelia , Mexico",35000,1989,,,19.7187417,-101.2336222,estadio-morelos-116283.jpg
+Mexico,Estadio Universitario Alberto 'Chivo' Córdoba,Universidad Autónoma del Estado de México,"Toluca , Mexico ",35000,1964,,,19.2851556,-99.6761306,estadio-universitario-alberto-chivo-cordoba-51011262.jpg
+Mexico,Estadio Jalisco,Atlas Fútbol Club,"Guadalajara , Mexico",56713,1960,,,20.705,-103.32806,estadio-jalisco-115442.jpg
+Mexico,Estadio Alfonso Lastras,Club Atlético San Luis,"San Luis Potosí , Mexico",28429,2002,,,22.13861,-100.95083,estadio-alfonso-lastras-136026.jpg
+Mexico,Estadio Agustín 'Coruco' Díaz,Cañeros del Zacatepec,"Zacatepec , Mexico",24313,1964,,,18.6551,-99.1921,estadio-agustin-coruco-diaz-136036.jpg
+Mexico,Estadio Héroe de Nacozari,Cimarrones de Sonora Fútbol Club,"Hermosillo , Mexico",18747,1985,,,29.1076944,-110.9957639,estadio-heroe-de-nacozari-51008484.jpg
+Mexico,Estadio BBVA,Club de Fútbol Monterrey Rayados,"Guadalupe , Mexico",53529,2015,,,25.66917,-100.24444,estadio-bbva-51014707.jpg
+Mexico,Estadio Nemesio Díez,Deportivo Toluca,"Toluca de Lerdo, Mexico",30000,1935,,,19.28722,-99.66667,estadio-nemesio-diez-136006.jpg
+Mexico,Estadio Víctor Manuel Reyna,Jaguares de Chiapas FC,"Tuxtla Gutiérrez , Mexico",29001,1982,,,16.7627833,-93.0963694,estadio-victor-manuel-reyna-5660016.jpg
+Mexico,Estadio León,Club León,"León, Guanajuato",31297,1967,,,21.11556,-101.65778,estadio-leon-116279.jpg
+Mexico,Estadio Carlos Vega Villalba,Universidad Autónoma de Zacatecas,"Zacatecas , Mexico",20777,1986,,,22.7667889,-102.5492778,estadio-carlos-vega-villalba-136038.jpg
+Mexico,Estadio La Corregidora,Querétaro Fútbol Club,"Querétaro , Mexico",34130,1985,,,20.57778,-100.36639,estadio-la-corregidora-116281.jpg
+Mexico,Estadio Sergio León Chávez,CD Irapuato,"Irapuato , Mexico",25000,1969,,,20.6845,-101.3563,estadio-sergio-leon-chavez-308316.jpg
+Mexico,Estadio Caliente,Club Tijuana Xoloitzcuintles de Caliente,"Tijuana , Mexico",27333,2007,,,32.50611,-116.99306,estadio-caliente-5666377.jpg
+Mexico,Estadio Universitario de Nuevo León,Club Tigres U.A.N.L.,"San Nicolas de los Garza , Mexico",41886,1967,,,25.723,-100.312,estadio-universitario-de-nuevo-leon-104471.jpg
+Mexico,Estadio Hidalgo,Club de Fútbol Pachuca,"Pachuca , Mexico",25922,1993,,,20.10528,-98.75611,estadio-hidalgo-116205.jpg
+Mexico,Estadio Olímpico Benito Juárez,Fútbol Club Juárez,"Ciudad Juárez , Mexico",19703,1981,,,31.75306,-106.46778,estadio-olimpico-benito-juarez-136039.jpg
+Mexico,Estadio Olímpico de Tapachula,,"Tapachula , Mexico",18017,1988,,,14.8686361,-92.2922778,estadio-olimpico-de-tapachula-5665535.jpg
+Mexico,Estadio 3 de Marzo,Club Tecos UAG B,"Zapopan , Mexico",18779,1971,,,20.69389,-103.41611,estadio-3-de-marzo-136005.jpg
+Mexico,Estadio Marte R. Gómez,Club de Fútbol Correcaminos de la U.A.T.,"Ciudad Victoria , Mexico",10520,1939,,,23.73945,-99.1524667,estadio-marte-r-gomez-136029.jpg
+Mexico,Estadio Corona (TSM),Club Santos Laguna,"Torreón , Mexico",29101,2009,,,25.629,-103.379,estadio-corona-tsm-51008487.jpg
+Mexico,Estadio Victoria,Deportivo Necaxa,"Aguascalientes , Mexico",23851,2003,,,21.88056,-102.27556,estadio-victoria-5664699.jpg
+Mexico,Estadio Tlahuicole,Tlaxcala Fútbol Club,"Tlaxcala City, Mexico",11135,1961,,,19.325694,-98.230417,estadio-tlahuicole-5666486.jpg
+Mexico,Estadio Olímpico de la BUAP,Lobos BUAP,"Puebla , Mexico",19283,1992,,,18.99722,-98.1975,estadio-olimpico-de-la-buap-5666638.jpg
+Mexico,Estadio Centenario (MO),Murciélagos FC,"Los Mochis , Mexico",11134,2004,,,25.797361,-109.031528,estadio-centenario-mo-5666640.jpg
+Mexico,Estadio Dorados,Club Deportivo Dorados de Sinaloa,"Culiacan , Mexico",20108,2003,,,24.83056,-107.40417,estadio-dorados-5666339.jpg
+Mexico,Estadio Akron,Club Deportivo Guadalajara,"Zapopan , Mexico",49813,2010,,,20.68167,-103.46278,estadio-akron-51008486.jpg
+Mexico,Estadio Andrés Quintana Roo,Club Pioneros de Cancún,"Cancún , Mexico",18844,2007,,,21.150995,-86.838348,estadio-andres-quintana-roo-51001643.jpg
 Moldova,Complexul Sportiv Sheriff - Arena Sheriff,FC Sheriff Tiraspol,"Tiraspol , Moldova",12746,2002,,,46.83833,29.5575,complexul-sportiv-sheriff-arena-sheriff-5410248.jpg
 Moldova,Zimbru,FC Zimbru Chişinău,"Chișinău , Moldova",10104,2006,,,,,zimbru-5410249.jpg
 Monaco,Stade Louis II,AS Monaco,"Fontvieille, Monaco",81338,1985,,,43.7275,7.4155,stade-louis-ii-926.jpg
 Montenegro,Gradski stadion kraj Bistrice,FK Sutjeska Nikšić,"Nikšić , Montenegro",5214,1946,,,42.7849472,18.9537306,gradski-stadion-kraj-bistrice-131114.jpg
-Morocco,Stade Adrar,Hassania Union Sport Agadir,"Agadir , Morocco",45480,2013,,,30.4272,9.5404,stade-adrar-13161977.jpg
-Morocco,Stade Saniat Rmel,Moghreb Atlético de Tétouan,"Tétouan , Morocco",7000,,,,35.5725,5.34861,stade-saniat-rmel-12005113.jpg
-Morocco,Stade Mohammed V,"Raja Club Athletic, Wydad Athletic Club","Casablanca, Morocco",45000,1955,,,33.58278,7.64694,stade-mohammed-v-103085.jpg
-Morocco,Stade du Prince Moulay Abdallah,AS Forces Armées Royales,"Rabat , Morocco",69500,2025,,,33.95944,6.88861,stade-du-prince-moulay-abdallah-105305.jpg
-Morocco,Stade El Abdi,Difaa Hassani Jadidi,"El Jadida , Morocco",15000,,,,33.24164,8.493274,stade-el-abdi-5390202.jpg
-Mozambique,Estádio da Machava,Clube Ferroviário de Maputo,Matola Mozambique,45000,1968,,,25.917425,32.5262889,estadio-da-machava-103086.jpg
-Mozambique,Estádio Nacional do Zimpeto,,"Maputo, Mozambique",42000,2011,,,25.828,32.575,estadio-nacional-do-zimpeto-13103080.jpg
+Morocco,Stade Adrar,Hassania Union Sport Agadir,"Agadir , Morocco",45480,2013,,,30.4272,-9.5404,stade-adrar-13161977.jpg
+Morocco,Stade Saniat Rmel,Moghreb Atlético de Tétouan,"Tétouan , Morocco",7000,,,,35.5725,-5.34861,stade-saniat-rmel-12005113.jpg
+Morocco,Stade Mohammed V,"Raja Club Athletic, Wydad Athletic Club","Casablanca, Morocco",45000,1955,,,33.58278,-7.64694,stade-mohammed-v-103085.jpg
+Morocco,Stade du Prince Moulay Abdallah,AS Forces Armées Royales,"Rabat , Morocco",69500,2025,,,33.95944,-6.88861,stade-du-prince-moulay-abdallah-105305.jpg
+Morocco,Stade El Abdi,Difaa Hassani Jadidi,"El Jadida , Morocco",15000,,,,33.24164,-8.493274,stade-el-abdi-5390202.jpg
+Mozambique,Estádio da Machava,Clube Ferroviário de Maputo,Matola Mozambique,45000,1968,,,-25.917425,32.5262889,estadio-da-machava-103086.jpg
+Mozambique,Estádio Nacional do Zimpeto,,"Maputo, Mozambique",42000,2011,,,-25.828,32.575,estadio-nacional-do-zimpeto-13103080.jpg
 Myanmar,Thuwunna Stadium,Institute of Sport and Physical Education,"Yangon , Myanmar",50000,1985,,,16.8213139,96.1868278,thuwunna-stadium-1037320.jpg
 Myanmar,Bogyoke Aung San Stadium,YCDC,"Yangon, Myanmar",40000,1909,,,16.7838611,96.160725,bogyoke-aung-san-stadium-103258.jpg
 Namibia,Sam Nujoma Stadium,Black Africa SC,"Windhoek , Namibia",10300,2005,,,-22.515892,17.060679,sam-nujoma-stadium-103087.jpg
@@ -1061,7 +1061,7 @@ Netherlands,Bingoal Stadion,ADO Den Haag,"The Hague , Netherlands",15000,2007,,,
 Netherlands,De Oude Meerdijk,FC Emmen,"Emmen , Netherlands",8600,1977,,,52.77472,6.94556,de-oude-meerdijk-1423.jpg
 Netherlands,Het Goffertstadion,N.E.C. Nijmegen,"Nijmegen , Netherlands",12500,1939,,,51.8225,5.83667,het-goffertstadion-1439.jpg
 Netherlands,Johan Cruijff ArenA,AFC Ajax,"Amsterdam , Netherlands",55865,1996,,,52.31417,4.94194,johan-cruijff-arena-1417.jpg
-Nicaragua,Estadio Nacional Dennis Martínez,CD Walter Ferreti,"Managua , Nicaragua",20000,2011,,,12.10917,86.27306,estadio-nacional-dennis-martinez-103149.jpg
+Nicaragua,Estadio Nacional Dennis Martínez,CD Walter Ferreti,"Managua , Nicaragua",20000,2011,,,12.10917,-86.27306,estadio-nacional-dennis-martinez-103149.jpg
 Niger,Stade du Général Seyni Kountché,,"Niamey , Niger",50000,1989,,,13.52725,2.108972,stade-du-general-seyni-kountche-105291.jpg
 Nigeria,Sani Abacha Stadium,Kano Pillars F.C.,"Kano , Nigeria",16000,1998,,,11.99972,8.52917,sani-abacha-stadium-5410027.jpg
 Nigeria,Nnamdi Azikiwe Stadium,Rangers International F.C. of Enugu,"Enugu , Nigeria",22000,1959,,,6.4443,7.4965,nnamdi-azikiwe-stadium-105370.jpg
@@ -1078,29 +1078,29 @@ North Macedonia,Čair,Sloga Jugomagnat,"Skopje , North Macedonia",4500,1927,,,42
 North Macedonia,Stadion Boris Trajkovski,FK Madžari Solidarnost 92 Skopje,"Skopje , North Macedonia",3000,1937,,,42.0004,21.5029,stadion-boris-trajkovski-62026666.jpg
 North Macedonia,Toše Proeski National Arena,FK Vardar Skopje,"Skopje , North Macedonia",33011,1947,,,42.00556,21.42556,tose-proeski-national-arena-102971.jpg
 North Macedonia,Gradski stadion Kratovo,FK Sileks Kratovo,"Kratovo , North Macedonia",1800,,,,42.0808,22.1641,gradski-stadion-kratovo-116201.jpg
-Northern Ireland,Ballymena Showgrounds,Ballymena United,"Ballymena , Northern Ireland",4100,1903,,,54.8701,6.26507,ballymena-showgrounds-116338.jpg
-Northern Ireland,Wilgar Park,Dundela,"Belfast , Northern Ireland",1200,,,,54.599486,5.878361,wilgar-park-410006.jpg
-Northern Ireland,Clandeboye Park,Ards,"Bangor , Northern Ireland",2850,1935,,,54.651625,5.684475,clandeboye-park-1300837.jpg
-Northern Ireland,Inver Park,Larne,"Larne , Northern Ireland",3000,1918,,,54.85,5.82694,inver-park-116333.jpg
-Northern Ireland,Seaview,Crusaders,"Belfast , Northern Ireland",3383,,,,54.62417,5.92194,seaview-1300839.jpg
-Northern Ireland,Hagan Park,Coagh United,"Coagh , Northern Ireland",2000,,,,54.6475,6.6149,hagan-park-410600.jpg
-Northern Ireland,The Oval,Glentoran,"Belfast , Northern Ireland",26556,1892,,,54.6029639,5.8913194,the-oval-1300841.jpg
-Northern Ireland,Fortwilliam Park,Tobermore United,"Tobermore ,  Northern Ireland",1500,,,,54.8173,6.7012,fortwilliam-park-410011.jpg
-Northern Ireland,The Showgrounds,Newry City A.F.C.,"Greenbank Industrial Estate, Newry, County Down , BT34 2QF",7949,1923,,,54.1504444,6.3206056,the-showgrounds-116336.jpg
-Northern Ireland,Ferney Park,Ballinamallard United,"Ballinamallard , Northern Ireland",2000,,,,54.41435,7.59975,ferney-park-410000.jpg
-Northern Ireland,Dixon Park,Ballyclare Comrades,"Ballyclare , Northern Ireland",2398,,,,54.7506944,6.0019417,dixon-park-116337.jpg
-Northern Ireland,Solitude,Cliftonville,"Belfast , Northern Ireland",8000,1890,,,54.61944,5.94722,solitude-1300838.jpg
-Northern Ireland,Stangmore Park,Dungannon Swifts,"Dungannon , Northern Ireland",2000,1975,,,54.4895,6.746,stangmore-park-116332.jpg
+Northern Ireland,Ballymena Showgrounds,Ballymena United,"Ballymena , Northern Ireland",4100,1903,,,54.8701,-6.26507,ballymena-showgrounds-116338.jpg
+Northern Ireland,Wilgar Park,Dundela,"Belfast , Northern Ireland",1200,,,,54.599486,-5.878361,wilgar-park-410006.jpg
+Northern Ireland,Clandeboye Park,Ards,"Bangor , Northern Ireland",2850,1935,,,54.651625,-5.684475,clandeboye-park-1300837.jpg
+Northern Ireland,Inver Park,Larne,"Larne , Northern Ireland",3000,1918,,,54.85,-5.82694,inver-park-116333.jpg
+Northern Ireland,Seaview,Crusaders,"Belfast , Northern Ireland",3383,,,,54.62417,-5.92194,seaview-1300839.jpg
+Northern Ireland,Hagan Park,Coagh United,"Coagh , Northern Ireland",2000,,,,54.6475,-6.6149,hagan-park-410600.jpg
+Northern Ireland,The Oval,Glentoran,"Belfast , Northern Ireland",26556,1892,,,54.6029639,-5.8913194,the-oval-1300841.jpg
+Northern Ireland,Fortwilliam Park,Tobermore United,"Tobermore ,  Northern Ireland",1500,,,,54.8173,-6.7012,fortwilliam-park-410011.jpg
+Northern Ireland,The Showgrounds,Newry City A.F.C.,"Greenbank Industrial Estate, Newry, County Down , BT34 2QF",7949,1923,,,54.1504444,-6.3206056,the-showgrounds-116336.jpg
+Northern Ireland,Ferney Park,Ballinamallard United,"Ballinamallard , Northern Ireland",2000,,,,54.41435,-7.59975,ferney-park-410000.jpg
+Northern Ireland,Dixon Park,Ballyclare Comrades,"Ballyclare , Northern Ireland",2398,,,,54.7506944,-6.0019417,dixon-park-116337.jpg
+Northern Ireland,Solitude,Cliftonville,"Belfast , Northern Ireland",8000,1890,,,54.61944,-5.94722,solitude-1300838.jpg
+Northern Ireland,Stangmore Park,Dungannon Swifts,"Dungannon , Northern Ireland",2000,1975,,,54.4895,-6.746,stangmore-park-116332.jpg
 Northern Ireland,Knockramer Park,Oxford Sunnyside,"Lurgan , Northern Ireland",1600,,,,,,knockramer-park-415952.jpg
-Northern Ireland,Limavady Showgrounds,Limavady United,"Limavady , Northern Ireland",,,,,55.0492389,6.936775,limavady-showgrounds-116335.jpg
+Northern Ireland,Limavady Showgrounds,Limavady United,"Limavady , Northern Ireland",,,,,55.0492389,-6.936775,limavady-showgrounds-116335.jpg
 Northern Ireland,Lakeview Park,Loughgall,"Loughgall , Northern Ireland",1650,,,,,,lakeview-park-410008.jpg
-Northern Ireland,Shamrock Park,Portadown,"Portadown, Northern Ireland",2770,,,,54.41306,6.45778,shamrock-park-1300844.jpg
-Northern Ireland,Holm Park,Armagh City,"Armagh , Northern Ireland",3000,,,,54.3392667,6.6262056,holm-park-130033.jpg
-Northern Ireland,Celtic Park (Belfast),Donegal Celtic,"Belfast , Northern Ireland",8283,,,,54.5736917,6.0236583,celtic-park-belfast-410005.jpg
-Northern Ireland,Riada Stadium,Ballymoney United,"Ballymoney , Northern Ireland",5752,,,,55.06167,6.49833,riada-stadium-1900969.jpg
-Northern Ireland,Mourneview Park,Glenavon,"Lurgan, Northern Ireland",4160,1895,,,54.45389,6.33639,mourneview-park-1300840.jpg
-Northern Ireland,Windsor Park,Linfield,"Belfast , Northern Ireland",18500,1905,,,54.5825,5.95528,windsor-park-1300842.jpg
-Northern Ireland,Coleraine Showgrounds,Coleraine,"Coleraine , Northern Ireland",3500,1907,,,55.13278,6.66028,coleraine-showgrounds-1300843.jpg
+Northern Ireland,Shamrock Park,Portadown,"Portadown, Northern Ireland",2770,,,,54.41306,-6.45778,shamrock-park-1300844.jpg
+Northern Ireland,Holm Park,Armagh City,"Armagh , Northern Ireland",3000,,,,54.3392667,-6.6262056,holm-park-130033.jpg
+Northern Ireland,Celtic Park (Belfast),Donegal Celtic,"Belfast , Northern Ireland",8283,,,,54.5736917,-6.0236583,celtic-park-belfast-410005.jpg
+Northern Ireland,Riada Stadium,Ballymoney United,"Ballymoney , Northern Ireland",5752,,,,55.06167,-6.49833,riada-stadium-1900969.jpg
+Northern Ireland,Mourneview Park,Glenavon,"Lurgan, Northern Ireland",4160,1895,,,54.45389,-6.33639,mourneview-park-1300840.jpg
+Northern Ireland,Windsor Park,Linfield,"Belfast , Northern Ireland",18500,1905,,,54.5825,-5.95528,windsor-park-1300842.jpg
+Northern Ireland,Coleraine Showgrounds,Coleraine,"Coleraine , Northern Ireland",3500,1907,,,55.13278,-6.66028,coleraine-showgrounds-1300843.jpg
 Norway,Ullevaal Stadion,,"Oslo , Norway",27182,1926,,,59.94889,10.73417,ullevaal-stadion-117250.jpg
 Norway,Jessheim Stadion,Ullensaker/Kisa IL,"Jessheim , Norway",4500,2011,,,60.15056,11.16444,jessheim-stadion-53076091.jpg
 Norway,Ski Stadion,Ski IL,"Ski , Norway",,,,,59.718537,10.850768,ski-stadion-1300485.jpg
@@ -1152,34 +1152,34 @@ Norway,KFUM Arena,KFUM-Kameratene Oslo,"Oslo , Norway",3300,2007,,,59.889556,10.
 Norway,Selbak Stadion,Selbak Turn & IF,"Ski , Norway",,,,,59.718537,10.850768,selbak-stadion-1300483.jpg
 Oman,Sultan Qaboos Sports Complex,Bosher Club,"Muscat , Oman",28000,1985,,,23.57306,58.39944,sultan-qaboos-sports-complex-138451.jpg
 Palestine,Faisal Al-Husseini International Stadium,Al-Hilal Al-Quds,"Ar-Ram , Palestine",12500,,,,31.8475,35.23028,faisal-al-husseini-international-stadium-42019773.jpg
-Panama,Rommel Fernández,CD Plaza Amador,"Panama City, Panama",23000,1970,,,9.03583,79.46944,rommel-fernandez-308273.jpg
-Paraguay,La Huerta,Club Libertad,"Asunción , Paraguay",15000,2005,,,25.27783,57.611023,la-huerta-5280276.jpg
-Paraguay,Feliciano Cáceres,Club Sportivo Luqueño,"Luque , Paraguay",24000,1999,,,25.27222,57.49306,feliciano-caceres-107638.jpg
-Paraguay,Luis Alfonso Giagni,Club Sol de América,"Villa Elisa, Paraguay",11000,1984,,,25.367314,57.58486,luis-alfonso-giagni-5280002.jpg
-Paraguay,Defensores del Chaco,,"Asunción , Paraguay",36000,1917,,,25.2920722,57.6573806,defensores-del-chaco-102995.jpg
-Paraguay,General Pablo Rojas,Club Cerro Porteño,"Asunción , Paraguay",45000,1970,,,25.3,57.6375,general-pablo-rojas-107636.jpg
-Peru,Estadio Alberto Gallardo,Club Sporting Cristal S.A.,"Lima , Peru",21000,1961,,,12.038,77.045,estadio-alberto-gallardo-303810.jpg
-Peru,Estadio Nacional,,"Lima , Peru",50086,1952,,,12.067278,77.033722,estadio-nacional-102997.jpg
-Peru,Campeones del 36,Club Alianza Atlético Sullana,"Sullana , Peru",12000,2000,,,4.897,80.6844,campeones-del-36-308106.jpg
-Peru,Heraclio Tapia,Club Social y Deportivo León de Huánuco,"Huánuco , Peru",25000,,,,9.940567,76.252778,heraclio-tapia-5290587.jpg
-Peru,Estadio Huancayo,Deportivo Wanka,"Huancayo , Peru",15000,1962,,,12.07278,75.20194,estadio-huancayo-303814.jpg
-Peru,Estadio 25 de Noviembre,Cobresol Fútbol Club,"Moquegua , Peru",21000,2009,,,17.185731,70.930052,estadio-25-de-noviembre-77012261.jpg
-Peru,Rosas Pampa,Club Sport Ancash,"Huaraz , Peru",18000,,,,9.526583,77.533611,rosas-pampa-303807.jpg
-Peru,Miguel Grau,Club Sport Boys Association,"Callao , Peru",17000,1996,,,12.05972,77.11995,miguel-grau-303809.jpg
-Peru,Jorge Basadre,Club Coronel Bolognesi FC,"Tacna , Peru",19850,2000,,,18.005,70.25306,jorge-basadre-5290569.jpg
+Panama,Rommel Fernández,CD Plaza Amador,"Panama City, Panama",23000,1970,,,9.03583,-79.46944,rommel-fernandez-308273.jpg
+Paraguay,La Huerta,Club Libertad,"Asunción , Paraguay",15000,2005,,,-25.27783,-57.611023,la-huerta-5280276.jpg
+Paraguay,Feliciano Cáceres,Club Sportivo Luqueño,"Luque , Paraguay",24000,1999,,,-25.27222,-57.49306,feliciano-caceres-107638.jpg
+Paraguay,Luis Alfonso Giagni,Club Sol de América,"Villa Elisa, Paraguay",11000,1984,,,-25.367314,-57.58486,luis-alfonso-giagni-5280002.jpg
+Paraguay,Defensores del Chaco,,"Asunción , Paraguay",36000,1917,,,-25.2920722,-57.6573806,defensores-del-chaco-102995.jpg
+Paraguay,General Pablo Rojas,Club Cerro Porteño,"Asunción , Paraguay",45000,1970,,,-25.3,-57.6375,general-pablo-rojas-107636.jpg
+Peru,Estadio Alberto Gallardo,Club Sporting Cristal S.A.,"Lima , Peru",21000,1961,,,-12.038,-77.045,estadio-alberto-gallardo-303810.jpg
+Peru,Estadio Nacional,,"Lima , Peru",50086,1952,,,-12.067278,-77.033722,estadio-nacional-102997.jpg
+Peru,Campeones del 36,Club Alianza Atlético Sullana,"Sullana , Peru",12000,2000,,,-4.897,-80.6844,campeones-del-36-308106.jpg
+Peru,Heraclio Tapia,Club Social y Deportivo León de Huánuco,"Huánuco , Peru",25000,,,,-9.940567,-76.252778,heraclio-tapia-5290587.jpg
+Peru,Estadio Huancayo,Deportivo Wanka,"Huancayo , Peru",15000,1962,,,-12.07278,-75.20194,estadio-huancayo-303814.jpg
+Peru,Estadio 25 de Noviembre,Cobresol Fútbol Club,"Moquegua , Peru",21000,2009,,,-17.185731,-70.930052,estadio-25-de-noviembre-77012261.jpg
+Peru,Rosas Pampa,Club Sport Ancash,"Huaraz , Peru",18000,,,,-9.526583,-77.533611,rosas-pampa-303807.jpg
+Peru,Miguel Grau,Club Sport Boys Association,"Callao , Peru",17000,1996,,,-12.05972,-77.11995,miguel-grau-303809.jpg
+Peru,Jorge Basadre,Club Coronel Bolognesi FC,"Tacna , Peru",19850,2000,,,-18.005,-70.25306,jorge-basadre-5290569.jpg
 Peru,Julio Lores Colán,Club Social Unión Huaral,"Huaral , Peru",6000,1952,,,,,julio-lores-colan-5290524.jpg
-Peru,Estadio Centenario Manuel Rivera Sánchez,Club Deportivo José Gálvez,"Chimbote , Peru",32000,2007,,,9.10001,78.560207,estadio-centenario-manuel-rivera-sanchez-77002644.jpg
-Peru,Max Augustin,Colegio Nacional de Iquitos S.A.,"Iquitos , Peru",24576,1942,,,3.74361,73.25278,max-augustin-5290574.jpg
-Peru,Inca Garcilaso de la Vega,"Asociación Deportiva Fútbol Profesional Cienciano, Club Deportivo Garcilaso, Cusco Fútbol Club S.A.","Cusco , Peru",45056,1958,,,13.525,71.966,inca-garcilaso-de-la-vega-308110.jpg
-Peru,Héroes de San Ramón,Universidad Técnica de Cajamarca,"Cajamarca , Peru",18000,1942,,,7.16167,78.51083,heroes-de-san-ramon-5290572.jpg
-Peru,Iván Elías Moreno,Club Centro Deportivo Municipal,"Lima , Peru",13773,2002,,,12.2201056,76.934925,ivan-elias-moreno-77001479.jpg
-Peru,Monumental Virgen de Chapi,Football Club Melgar,"Arequipa , Peru",40217,1993,,,16.40729,71.520203,monumental-virgen-de-chapi-303808.jpg
-Peru,"Alejandro Villanueva, 'Matute'",Club Alianza Lima,"Lima , Peru",33938,1974,,,12.0685417,77.0228861,alejandro-villanueva-matute-303806.jpg
-Peru,Monumental Universidad San Marcos,C Deportivo UNM San Marcos,"Lima , Peru",32000,1951,,,12.057,77.075,monumental-universidad-san-marcos-5290611.jpg
-Peru,Elías Aguirre,Club Juan Aurich,"Chiclayo , Peru",23000,1970,,,6.76833,79.86083,elias-aguirre-308112.jpg
-Peru,Mansiche,Club Deportivo Universidad César Vallejo,"Trujillo , Peru",25036,1946,,,8.106655,79.030977,mansiche-308115.jpg
-Peru,Guillermo Briceño Rosamedina,C D Franciscano San Román,"Juliaca , Peru",20030,1966,,,15.5027,70.1234,guillermo-briceno-rosamedina-77001476.jpg
-Peru,Estadio Juan Maldonado Gamarra,"C Social, Deportivo y Cultural Comerciantes Unidos","Cutervo , Peru",12000,2014,,,6.3809,78.8146,estadio-juan-maldonado-gamarra-77046479.jpg
+Peru,Estadio Centenario Manuel Rivera Sánchez,Club Deportivo José Gálvez,"Chimbote , Peru",32000,2007,,,-9.10001,-78.560207,estadio-centenario-manuel-rivera-sanchez-77002644.jpg
+Peru,Max Augustin,Colegio Nacional de Iquitos S.A.,"Iquitos , Peru",24576,1942,,,-3.74361,-73.25278,max-augustin-5290574.jpg
+Peru,Inca Garcilaso de la Vega,"Asociación Deportiva Fútbol Profesional Cienciano, Club Deportivo Garcilaso, Cusco Fútbol Club S.A.","Cusco , Peru",45056,1958,,,-13.525,-71.966,inca-garcilaso-de-la-vega-308110.jpg
+Peru,Héroes de San Ramón,Universidad Técnica de Cajamarca,"Cajamarca , Peru",18000,1942,,,-7.16167,-78.51083,heroes-de-san-ramon-5290572.jpg
+Peru,Iván Elías Moreno,Club Centro Deportivo Municipal,"Lima , Peru",13773,2002,,,-12.2201056,-76.934925,ivan-elias-moreno-77001479.jpg
+Peru,Monumental Virgen de Chapi,Football Club Melgar,"Arequipa , Peru",40217,1993,,,-16.40729,-71.520203,monumental-virgen-de-chapi-303808.jpg
+Peru,"Alejandro Villanueva, 'Matute'",Club Alianza Lima,"Lima , Peru",33938,1974,,,-12.0685417,-77.0228861,alejandro-villanueva-matute-303806.jpg
+Peru,Monumental Universidad San Marcos,C Deportivo UNM San Marcos,"Lima , Peru",32000,1951,,,-12.057916,-77.083634,monumental-universidad-san-marcos-5290611.jpg
+Peru,Elías Aguirre,Club Juan Aurich,"Chiclayo , Peru",23000,1970,,,-6.76833,-79.86083,elias-aguirre-308112.jpg
+Peru,Mansiche,Club Deportivo Universidad César Vallejo,"Trujillo , Peru",25036,1946,,,-8.106655,-79.030977,mansiche-308115.jpg
+Peru,Guillermo Briceño Rosamedina,C D Franciscano San Román,"Juliaca , Peru",20030,1966,,,-15.5027,-70.1234,guillermo-briceno-rosamedina-77001476.jpg
+Peru,Estadio Juan Maldonado Gamarra,"C Social, Deportivo y Cultural Comerciantes Unidos","Cutervo , Peru",12000,2014,,,-6.3809,-78.8146,estadio-juan-maldonado-gamarra-77046479.jpg
 Philippines,Rizal Memorial Stadium,Manila Lions,"Manila , Philippines",12873,1934,,,14.5634028,120.992,rizal-memorial-stadium-103262.jpg
 Poland,Marshall Józef Piłsudski Stadium,Broń 1926 Radom,"Radom , Poland",4500,,,,51.4,21.2,marshall-jozef-pisudski-stadium-96030294.jpg
 Poland,Ernest Pohl Stadium,Górnik Zabrze,"Łęczna , Poland",7200,2003,,,51.30167,22.87611,ernest-pohl-stadium-1300865.jpg
@@ -1209,72 +1209,72 @@ Poland,Stadion Miejski w Białymstoku,Jagiellonia Białystok,"Białystok , Polan
 Poland,Raków City Football Stadium,Raków Częstochowa,"Częstochowa , Poland",5500,1955,,,50.776748,19.159229,rakow-city-football-stadium-1300871.jpg
 Poland,Tarczyński Arena Wrocław,Śląsk Wrocław,"Wrocław , Poland",42771,2011,,,51.141167,16.943778,tarczynski-arena-wrocaw-54007382.jpg
 Poland,Polsat Plus Arena Gdańsk,Lechia Gdańsk,"Gdańsk , Poland",41620,2011,,,54.39,18.64028,polsat-plus-arena-gdansk-54007381.jpg
-Portugal,Estádio do Bessa Século XXI,Boavista Futebol Clube,"Porto , Portugal",28263,1910,,,41.16222,8.64278,estadio-do-bessa-seculo-xxi-1457.jpg
-Portugal,Estádio Alfredo da Silva,Grupo Desportivo Fabril do Barreiro,"Vila das Aves , Portugal",6230,1981,,,41.366932,8.411789,estadio-alfredo-da-silva-729462.jpg
-Portugal,Estádio D. Afonso Henriques,Vitória Sport Club,"Guimarães , Portugal",30029,1965,,,41.44583,8.30111,estadio-d-afonso-henriques-1458.jpg
-Portugal,Estádio Municipal Eng.º Manuel Branco Teixeira,Grupo Desportivo de Chaves,"Chaves, Portugal",8400,1949,,,41.7506,7.46499,estadio-municipal-engo-manuel-branco-teixeira-1468.jpg
-Portugal,Estádio Municipal de Aveiro,Sport Clube Beira-Mar,"Aveiro , Portugal",32830,2003,,,40.6475,8.59361,estadio-municipal-de-aveiro-741569.jpg
-Portugal,Estádio do Mar,Leixões Sport Clube,"Matosinhos , Portugal",6000,1964,,,41.1839694,8.6669194,estadio-do-mar-1499.jpg
-Portugal,Estádio da Luz,Sport Lisboa e Benfica,"Lisbon , Portugal",68100,2003,,,38.7527,9.1847,estadio-da-luz-741564.jpg
-Portugal,Estádio José Alvalade,Sporting Clube de Portugal,"Lisbon , Portugal",52095,2003,,,38.76111,9.16083,estadio-jose-alvalade-741565.jpg
-Portugal,Estádio Municipal de Arouca,Futebol Clube de Arouca,"Arouca , Portugal",5600,2006,,,40.933,8.2503,estadio-municipal-de-arouca-729501.jpg
-Portugal,Estádio Marcolino de Castro,Clube Desportivo Feirense,"Santa Maria da Feira , Portugal",5401,1962,,,40.9266889,8.5458139,estadio-marcolino-de-castro-1479.jpg
-Portugal,Estádio José Arcanjo,Sporting Clube Olhanense,"Olhão , Portugal",5661,1984,,,37.0291278,7.8484833,estadio-jose-arcanjo-1538.jpg
-Portugal,Estádio do Aves,Clube Desportivo das Aves,"Vila das Aves , Portugal",6230,1981,,,41.366932,8.411789,estadio-do-aves-1475.jpg
-Portugal,Estádio Municipal de Braga,Sporting Clube de Braga,"Braga , Portugal",30286,2003,,,41.5625,8.43,estadio-municipal-de-braga-741568.jpg
-Portugal,Estádio do Dragão,Futebol Clube do Porto,"Porto , Portugal",50033,2003,,,41.1618,8.5839,estadio-do-dragao-745265.jpg
-Portugal,Estádio de São Miguel,Clube Desportivo Santa Clara,"Ponta Delgada ( Azores ), Portugal",12500,1976,,,37.763694,25.622611,estadio-de-sao-miguel-1541.jpg
-Portugal,Estádio João Cardoso,Clube Desportivo de Tondela,"Tondela , Portugal",5000,,,,40.51204111,8.082825,estadio-joao-cardoso-1517.jpg
-Portugal,Estádio Municipal do Fontelo,Académico de Viseu Futebol Clube,"Viseu , Portugal",6912,1928,,,40.65944,7.90083,estadio-municipal-do-fontelo-1480.jpg
-Portugal,Estádio de São Luís,Sporting Clube Farense,"Faro , Portugal",7000,1923,,,37.022861,7.928444,estadio-de-sao-luis-1463.jpg
-Portugal,Estádio António Coimbra da Mota,Estoril Praia Futebol,"Alcabideche , Portugal",8000,1939,,,38.71583,9.40639,estadio-antonio-coimbra-da-mota-1483.jpg
-Portugal,Estádio Cidade de Barcelos,Gil Vicente Futebol Clube,"Barcelos , Portugal",12046,2004,,,41.551,8.623,estadio-cidade-de-barcelos-1464.jpg
-Portugal,Estádio Municipal Dr. José Vieira de Carvalho,Futebol Clube da Maia,"Maia , Portugal",12000,,,,41.2345694,8.6182194,estadio-municipal-dr-jose-vieira-de-carvalho-1495.jpg
-Portugal,Estádio do Marítimo,Clube Sport Marítimo,"Madeira , Portugal",10600,1957,,,32.6455611,16.9283306,estadio-do-maritimo-1526.jpg
-Portugal,Estádio da Madeira,Clube Desportivo Nacional,"Madeira , Portugal",5200,1999,,,32.670625,16.883525,estadio-da-madeira-725047.jpg
+Portugal,Estádio do Bessa Século XXI,Boavista Futebol Clube,"Porto , Portugal",28263,1910,,,41.16222,-8.64278,estadio-do-bessa-seculo-xxi-1457.jpg
+Portugal,Estádio Alfredo da Silva,Grupo Desportivo Fabril do Barreiro,"Vila das Aves , Portugal",6230,1981,,,41.366932,-8.411789,estadio-alfredo-da-silva-729462.jpg
+Portugal,Estádio D. Afonso Henriques,Vitória Sport Club,"Guimarães , Portugal",30029,1965,,,41.44583,-8.30111,estadio-d-afonso-henriques-1458.jpg
+Portugal,Estádio Municipal Eng.º Manuel Branco Teixeira,Grupo Desportivo de Chaves,"Chaves, Portugal",8400,1949,,,41.7506,-7.46499,estadio-municipal-engo-manuel-branco-teixeira-1468.jpg
+Portugal,Estádio Municipal de Aveiro,Sport Clube Beira-Mar,"Aveiro , Portugal",32830,2003,,,40.6475,-8.59361,estadio-municipal-de-aveiro-741569.jpg
+Portugal,Estádio do Mar,Leixões Sport Clube,"Matosinhos , Portugal",6000,1964,,,41.1839694,-8.6669194,estadio-do-mar-1499.jpg
+Portugal,Estádio da Luz,Sport Lisboa e Benfica,"Lisbon , Portugal",68100,2003,,,38.7527,-9.1847,estadio-da-luz-741564.jpg
+Portugal,Estádio José Alvalade,Sporting Clube de Portugal,"Lisbon , Portugal",52095,2003,,,38.76111,-9.16083,estadio-jose-alvalade-741565.jpg
+Portugal,Estádio Municipal de Arouca,Futebol Clube de Arouca,"Arouca , Portugal",5600,2006,,,40.933,-8.2503,estadio-municipal-de-arouca-729501.jpg
+Portugal,Estádio Marcolino de Castro,Clube Desportivo Feirense,"Santa Maria da Feira , Portugal",5401,1962,,,40.9266889,-8.5458139,estadio-marcolino-de-castro-1479.jpg
+Portugal,Estádio José Arcanjo,Sporting Clube Olhanense,"Olhão , Portugal",5661,1984,,,37.0291278,-7.8484833,estadio-jose-arcanjo-1538.jpg
+Portugal,Estádio do Aves,Clube Desportivo das Aves,"Vila das Aves , Portugal",6230,1981,,,41.366932,-8.411789,estadio-do-aves-1475.jpg
+Portugal,Estádio Municipal de Braga,Sporting Clube de Braga,"Braga , Portugal",30286,2003,,,41.5625,-8.43,estadio-municipal-de-braga-741568.jpg
+Portugal,Estádio do Dragão,Futebol Clube do Porto,"Porto , Portugal",50033,2003,,,41.1618,-8.5839,estadio-do-dragao-745265.jpg
+Portugal,Estádio de São Miguel,Clube Desportivo Santa Clara,"Ponta Delgada ( Azores ), Portugal",12500,1976,,,37.763694,-25.622611,estadio-de-sao-miguel-1541.jpg
+Portugal,Estádio João Cardoso,Clube Desportivo de Tondela,"Tondela , Portugal",5000,,,,40.51204111,-8.082825,estadio-joao-cardoso-1517.jpg
+Portugal,Estádio Municipal do Fontelo,Académico de Viseu Futebol Clube,"Viseu , Portugal",6912,1928,,,40.65944,-7.90083,estadio-municipal-do-fontelo-1480.jpg
+Portugal,Estádio de São Luís,Sporting Clube Farense,"Faro , Portugal",7000,1923,,,37.022861,-7.928444,estadio-de-sao-luis-1463.jpg
+Portugal,Estádio António Coimbra da Mota,Estoril Praia Futebol,"Alcabideche , Portugal",8000,1939,,,38.71583,-9.40639,estadio-antonio-coimbra-da-mota-1483.jpg
+Portugal,Estádio Cidade de Barcelos,Gil Vicente Futebol Clube,"Barcelos , Portugal",12046,2004,,,41.551,-8.623,estadio-cidade-de-barcelos-1464.jpg
+Portugal,Estádio Municipal Dr. José Vieira de Carvalho,Futebol Clube da Maia,"Maia , Portugal",12000,,,,41.2345694,-8.6182194,estadio-municipal-dr-jose-vieira-de-carvalho-1495.jpg
+Portugal,Estádio do Marítimo,Clube Sport Marítimo,"Madeira , Portugal",10600,1957,,,32.6455611,-16.9283306,estadio-do-maritimo-1526.jpg
+Portugal,Estádio da Madeira,Clube Desportivo Nacional,"Madeira , Portugal",5200,1999,,,32.670625,-16.883525,estadio-da-madeira-725047.jpg
 Portugal,Estádio Manuel Marques,Sport Clube União Torreense,"Torres Vedras , Portugal",2431,,,,39.094878,-9.256594,estadio-manuel-marques-1516.jpg
-Portugal,Estádio Conde Dias Garcia,Associação Desportiva Sanjoanense,"São João da Madeira , Portugal",8500,1935,,,40.8982389,8.4990722,estadio-conde-dias-garcia-1521.jpg
-Portugal,Estádio Municipal de Fafe,Associação Desportiva de Fafe,"Fafe , Portugal",4000,1968,,,41.4471611,8.1681972,estadio-municipal-de-fafe-1503.jpg
-Portugal,Estádio Comendador Joaquim de Almeida Freitas,Moreirense Futebol Clube,"Moreira de Cónegos , Portugal",6150,2002,,,41.37806,8.35472,estadio-comendador-joaquim-de-almeida-freitas-1482.jpg
-Portugal,Estádio do Trofense,Clube Desportivo Trofense,"Trofa , Portugal",5017,1950,,,41.3328333,8.5643667,estadio-do-trofense-900201.jpg
-Portugal,Estádio Municipal 25 de Abril,Futebol Clube de Penafiel,"Penafiel , Portugal",5230,1934,,,41.2117,8.2779194,estadio-municipal-25-de-abril-1477.jpg
-Portugal,Estádio Municipal de Águeda,Recreio Desportivo de Águeda,"Águeda , Portugal",10000,2003,,,40.5623722,8.4417917,estadio-municipal-de-agueda-900197.jpg
-Portugal,Estádio do Bonfim,Vitória Futebol Clube,"Setúbal , Portugal",15497,1962,,,38.531,8.891,estadio-do-bonfim-1470.jpg
-Portugal,Estádio Municipal de Rio Maior,Rio Maior Sport Clube,"Rio Maior , Portugal",7000,2003,,,39.34444,8.93528,estadio-municipal-de-rio-maior-725017.jpg
+Portugal,Estádio Conde Dias Garcia,Associação Desportiva Sanjoanense,"São João da Madeira , Portugal",8500,1935,,,40.8982389,-8.4990722,estadio-conde-dias-garcia-1521.jpg
+Portugal,Estádio Municipal de Fafe,Associação Desportiva de Fafe,"Fafe , Portugal",4000,1968,,,41.4471611,-8.1681972,estadio-municipal-de-fafe-1503.jpg
+Portugal,Estádio Comendador Joaquim de Almeida Freitas,Moreirense Futebol Clube,"Moreira de Cónegos , Portugal",6150,2002,,,41.37806,-8.35472,estadio-comendador-joaquim-de-almeida-freitas-1482.jpg
+Portugal,Estádio do Trofense,Clube Desportivo Trofense,"Trofa , Portugal",5017,1950,,,41.3328333,-8.5643667,estadio-do-trofense-900201.jpg
+Portugal,Estádio Municipal 25 de Abril,Futebol Clube de Penafiel,"Penafiel , Portugal",5230,1934,,,41.2117,-8.2779194,estadio-municipal-25-de-abril-1477.jpg
+Portugal,Estádio Municipal de Águeda,Recreio Desportivo de Águeda,"Águeda , Portugal",10000,2003,,,40.5623722,-8.4417917,estadio-municipal-de-agueda-900197.jpg
+Portugal,Estádio do Bonfim,Vitória Futebol Clube,"Setúbal , Portugal",15497,1962,,,38.531,-8.891,estadio-do-bonfim-1470.jpg
+Portugal,Estádio Municipal de Rio Maior,Rio Maior Sport Clube,"Rio Maior , Portugal",7000,2003,,,39.34444,-8.93528,estadio-municipal-de-rio-maior-725017.jpg
 Portugal,Estádio do Vizela,Futebol Clube de Vizela,"Vizela , Portugal",6000,,,,,,estadio-do-vizela-1496.jpg
-Portugal,Estádio da Capital do Móvel,Futebol Clube Paços de Ferreira,"Paços de Ferreira , Portugal",9076,1973,,,41.27139,8.38528,estadio-da-capital-do-movel-1476.jpg
-Portugal,Complexo Desportivo do Freamunde,Sport Clube Freamunde,Freamunde Portugal,5000,,,,41.27639,8.33944,complexo-desportivo-do-freamunde-1502.jpg
-Portugal,Estádio Cidade de Coimbra,Associação Académica de Coimbra,"Coimbra , Portugal",29622,2003,,,40.20333,8.40778,estadio-cidade-de-coimbra-1486.jpg
-Portugal,Estádio Municipal 22 de Junho,Futebol Clube Famalicão,"Vila Nova de Famalicão , Portugal",5186,1952,,,41.40139,8.5225,estadio-municipal-22-de-junho-1490.jpg
-Portugal,Portimão Estádio,Portimonense Sporting Clube,"Portimão , Portugal",4961,1937,,,37.13583,8.53972,portimao-estadio-1531.jpg
-Portugal,Estádio dos Arcos,Rio Ave Futebol Clube,"Vila do Conde , Portugal",5300,1985,,,41.36278,8.74028,estadio-dos-arcos-1469.jpg
-Portugal,Estádio do Varzim,Varzim Sport Clube,"Póvoa de Varzim , Portugal",7280,,,,41.3878361,8.772575,estadio-do-varzim-1487.jpg
-Portugal,Estádio Municipal de Leiria,União Desportiva de Leiria,"Marinha Grande , Portugal",5200,1992,,,39.736977,8.931459,estadio-municipal-de-leiria-1460.jpg
+Portugal,Estádio da Capital do Móvel,Futebol Clube Paços de Ferreira,"Paços de Ferreira , Portugal",9076,1973,,,41.27139,-8.38528,estadio-da-capital-do-movel-1476.jpg
+Portugal,Complexo Desportivo do Freamunde,Sport Clube Freamunde,Freamunde Portugal,5000,,,,41.27639,-8.33944,complexo-desportivo-do-freamunde-1502.jpg
+Portugal,Estádio Cidade de Coimbra,Associação Académica de Coimbra,"Coimbra , Portugal",29622,2003,,,40.20333,-8.40778,estadio-cidade-de-coimbra-1486.jpg
+Portugal,Estádio Municipal 22 de Junho,Futebol Clube Famalicão,"Vila Nova de Famalicão , Portugal",5186,1952,,,41.40139,-8.5225,estadio-municipal-22-de-junho-1490.jpg
+Portugal,Portimão Estádio,Portimonense Sporting Clube,"Portimão , Portugal",4961,1937,,,37.13583,-8.53972,portimao-estadio-1531.jpg
+Portugal,Estádio dos Arcos,Rio Ave Futebol Clube,"Vila do Conde , Portugal",5300,1985,,,41.36278,-8.74028,estadio-dos-arcos-1469.jpg
+Portugal,Estádio do Varzim,Varzim Sport Clube,"Póvoa de Varzim , Portugal",7280,,,,41.3878361,-8.772575,estadio-do-varzim-1487.jpg
+Portugal,Estádio Municipal de Leiria,União Desportiva de Leiria,"Marinha Grande , Portugal",5200,1992,,,39.736977,-8.931459,estadio-municipal-de-leiria-1460.jpg
 Qatar,Khalifa International Stadium,Al-Mesaimeer Sports Club,"Doha , Qatar",45857,1976,,,25.26361,51.44806,khalifa-international-stadium-103263.jpg
 Qatar,Grand Hamad Stadium,Al-Arabi Sports Club,"Doha , Qatar",13000,,,,25.258708,51.520509,grand-hamad-stadium-5626852.jpg
 Qatar,Abdullah bin Khalifa Stadium,Lekhwiya II,"Doha , Qatar",10221,2013,,,25.3727111,51.4692667,abdullah-bin-khalifa-stadium-23228061.jpg
 Qatar,Ahmed bin Ali Stadium,Al-Sailiya Sports Club,"Doha , Qatar",12000,,,,25.2518917,51.5353611,ahmed-bin-ali-stadium-5627158.jpg
 Qatar,Jassim bin Hamad Stadium,Al-Sadd Sports Club,"Al Rayyan , Qatar",15000,1975,,,25.267358,51.484251,jassim-bin-hamad-stadium-5626028.jpg
 Qatar,Hamad bin Khalifa Stadium,Al-Ahli Sports Club Doha,"Doha , Qatar",12000,,,,25.2518917,51.5353611,hamad-bin-khalifa-stadium-5622854.jpg
-Republic of Ireland,UCD Bowl,University College Dublin,"Dublin , Republic of Ireland",3000,,,,53.31028,6.22806,ucd-bowl-52007326.jpg
-Republic of Ireland,Dalymount Park,Bohemian F.C.,"Dublin , Republic of Ireland",4500,1901,,,53.36167,6.275,dalymount-park-1300906.jpg
-Republic of Ireland,The Carlisle Grounds,Bray Wanderers FC,"Bray , Republic of Ireland",3200,,,,53.20583,6.10278,the-carlisle-grounds-1300917.jpg
-Republic of Ireland,Tolka Park,Shelbourne F.C.,"Dublin , Republic of Ireland",5750,1924,,,53.3675,6.25194,tolka-park-1300913.jpg
-Republic of Ireland,Drom,Salthill Devon,"Galway , Republic of Ireland",2000,2002,,,53.29318,9.133338,drom-129440.jpg
+Republic of Ireland,UCD Bowl,University College Dublin,"Dublin , Republic of Ireland",3000,,,,53.31028,-6.22806,ucd-bowl-52007326.jpg
+Republic of Ireland,Dalymount Park,Bohemian F.C.,"Dublin , Republic of Ireland",4500,1901,,,53.36167,-6.275,dalymount-park-1300906.jpg
+Republic of Ireland,The Carlisle Grounds,Bray Wanderers FC,"Bray , Republic of Ireland",3200,,,,53.20583,-6.10278,the-carlisle-grounds-1300917.jpg
+Republic of Ireland,Tolka Park,Shelbourne F.C.,"Dublin , Republic of Ireland",5750,1924,,,53.3675,-6.25194,tolka-park-1300913.jpg
+Republic of Ireland,Drom,Salthill Devon,"Galway , Republic of Ireland",2000,2002,,,53.29318,-9.133338,drom-129440.jpg
 Republic of Ireland,Fahy's Field,Mervue United,"Galway , Republic of Ireland",,,,,,,fahys-field-129436.jpg
-Republic of Ireland,Markets Field,Treaty United,"Limerick , Republic of Ireland",3500,1880,,,52.6603,8.6149,markets-field-52077077.jpg
-Republic of Ireland,Richmond Park,St. Patrick's Athletic,"Dublin , Republic of Ireland",5500,1925,,,53.34083,6.31667,richmond-park-1300911.jpg
-Republic of Ireland,Oriel Park,Dundalk F.C.,"Dundalk , Ireland",4500,1919,,,54,6.4166,oriel-park-1300909.jpg
-Republic of Ireland,Bishopsgate,Longford Town,"Longford , Republic of Ireland",5097,,,,53.724,7.854,bishopsgate-129382.jpg
-Republic of Ireland,The Showgrounds,Sligo Rovers,"Sligo , Republic of Ireland",4200,1928,,,54.27,8.48722,the-showgrounds-1300914.jpg
-Republic of Ireland,Eamonn Deacy Park,Galway United,"Galway , Republic of Ireland",5000,1935,1993,,53.28472,9.05639,eamonn-deacy-park-1300910.jpg
-Republic of Ireland,Tallaght Stadium,Shamrock Rovers,"Dublin , Republic of Ireland",10547,2009,,,53.28352,6.37371,tallaght-stadium-552203.jpg
-Republic of Ireland,Aviva Stadium,,"Dublin , Republic of Ireland",51711,2010,,,53.33528,6.22833,aviva-stadium-52029709.jpg
-Republic of Ireland,Finn Park,Finn Harps,"Ballybofey , Republic of Ireland",4458,1954,,,54.798,7.7785,finn-park-1300919.jpg
-Republic of Ireland,Milebush Park,Castlebar Celtic,"Castlebar , Republic of Ireland",1500,1954,,,53.8525,9.2975,milebush-park-129441.jpg
-Republic of Ireland,Turners Cross,Cork City,"Cork , Republic of Ireland",7485,1800,,,51.88556,8.46778,turners-cross-1300907.jpg
-Republic of Ireland,Athlone Town Stadium,Athlone Town,"Athlone , Republic of Ireland",5000,2007,,,53.4275,7.91917,athlone-town-stadium-562039.jpg
-Republic of Ireland,Hunky Dorys Park,Drogheda United,"Drogheda , Republic of Ireland",3500,1979,,,53.72333,6.35722,hunky-dorys-park-1300923.jpg
+Republic of Ireland,Markets Field,Treaty United,"Limerick , Republic of Ireland",3500,1880,,,52.6603,-8.6149,markets-field-52077077.jpg
+Republic of Ireland,Richmond Park,St. Patrick's Athletic,"Dublin , Republic of Ireland",5500,1925,,,53.34083,-6.31667,richmond-park-1300911.jpg
+Republic of Ireland,Oriel Park,Dundalk F.C.,"Dundalk , Ireland",4500,1919,,,54,-6.4166,oriel-park-1300909.jpg
+Republic of Ireland,Bishopsgate,Longford Town,"Longford , Republic of Ireland",5097,,,,53.724,-7.854,bishopsgate-129382.jpg
+Republic of Ireland,The Showgrounds,Sligo Rovers,"Sligo , Republic of Ireland",4200,1928,,,54.27,-8.48722,the-showgrounds-1300914.jpg
+Republic of Ireland,Eamonn Deacy Park,Galway United,"Galway , Republic of Ireland",5000,1935,1993,,53.28472,-9.05639,eamonn-deacy-park-1300910.jpg
+Republic of Ireland,Tallaght Stadium,Shamrock Rovers,"Dublin , Republic of Ireland",10547,2009,,,53.28352,-6.37371,tallaght-stadium-552203.jpg
+Republic of Ireland,Aviva Stadium,,"Dublin , Republic of Ireland",51711,2010,,,53.33528,-6.22833,aviva-stadium-52029709.jpg
+Republic of Ireland,Finn Park,Finn Harps,"Ballybofey , Republic of Ireland",4458,1954,,,54.798,-7.7785,finn-park-1300919.jpg
+Republic of Ireland,Milebush Park,Castlebar Celtic,"Castlebar , Republic of Ireland",1500,1954,,,53.8525,-9.2975,milebush-park-129441.jpg
+Republic of Ireland,Turners Cross,Cork City,"Cork , Republic of Ireland",7485,1800,,,51.88556,-8.46778,turners-cross-1300907.jpg
+Republic of Ireland,Athlone Town Stadium,Athlone Town,"Athlone , Republic of Ireland",5000,2007,,,53.4275,-7.91917,athlone-town-stadium-562039.jpg
+Republic of Ireland,Hunky Dorys Park,Drogheda United,"Drogheda , Republic of Ireland",3500,1979,,,53.72333,-6.35722,hunky-dorys-park-1300923.jpg
 Réunion,Stade Jean Ivoula,Saint-Denis Football Club,"Saint-Denis, Réunion",7500,,,,-20.895,55.501389,stade-jean-ivoula-917512.jpg
 Romania,Viorel Mateianu,CS Minaur Baia Mare,"Baia Mare , Romania",8000,1923,,,47.665,23.57917,viorel-mateianu-5410614.jpg
 Romania,Municipal - Turda,ACS Sticla Arieşul Turda,"Turda , Romania",10000,1975,,,46.56306,23.82361,municipal-turda-7549019.jpg
@@ -1352,7 +1352,7 @@ Russia,BetBoom Arena,FK Ufa,"Ufa , Russia",15132,1967,,,54.82611,56.06167,betboo
 Russia,Central Stadium,Yenisey Krasnoyarsk,"Krasnoyarsk , Russia",15000,1967,,,55.9984028,92.8846639,central-stadium-477735.jpg
 Russia,Trud Stadium,Tom Tomsk,"Tomsk , Russia",10028,1929,,,56.47417,84.95667,trud-stadium-130581.jpg
 Russia,Rubin Kazan,Rubin-2 Kazan,"Kazan , Russia",24200,1960,,,55.79694,49.09889,rubin-kazan-8068699.jpg
-Rwanda,Stade Amahoro,Rayon Sports FC,"Kigali , Rwanda",45508,1986,,,1.955028,30.114222,stade-amahoro-103090.jpg
+Rwanda,Stade Amahoro,Rayon Sports FC,"Kigali , Rwanda",45508,1986,,,-1.955028,30.114222,stade-amahoro-103090.jpg
 San Marino,San Marino Stadium,San Marino Calcio,"Serravalle , San Marino",4798,1969,,,43.97139,12.47694,san-marino-stadium-102983.jpg
 Saudi Arabia,King Abdullah Sports City 'The Shining Jewel',Al-Ittihad Club Jeddah,"Jeddah , Saudi Arabia",62345,2014,,,21.76262694,39.16509611,king-abdullah-sports-city-the-shining-jewel-23321112.jpg
 Saudi Arabia,Al-Hazm Club Stadium,Al-Kholood Club,"Ar Rass , Saudi Arabia",5100,1982,,,25.862222,43.502361,al-hazm-club-stadium-1025813.jpg
@@ -1364,54 +1364,54 @@ Saudi Arabia,Prince Abdullah bin Jalawi Stadium,Hajer Football Club,"Hofuf , Sau
 Saudi Arabia,Prince Mohammed bin Fahd Stadium,Al-Ettifaq Football Club,"Dammam , Saudi Arabia",26000,1973,,,,,prince-mohammed-bin-fahd-stadium-5622722.jpg
 Saudi Arabia,Prince Abdulaziz bin Musa'ed Stadium,Al-Tai Football Club,"Hail , Saudi Arabia",12250,1981,,,27.50398,41.697589,prince-abdulaziz-bin-musaed-stadium-5410599.jpg
 Saudi Arabia,King Abdulaziz Stadium,Al-Wehda Football Club,"Mecca , Saudi Arabia",27672,1986,,,21.485528,39.973744,king-abdulaziz-stadium-5410597.jpg
-Scotland,Balmoral Stadium,Cove Rangers,"Aberdeen , Scotland",2602,2018,,,57.113,2.097,balmoral-stadium-61088848.jpg
-Scotland,Excelsior Stadium,Glasgow University,"Airdrie , Scotland",10101,1998,,,55.85972,3.95972,excelsior-stadium-114148.jpg
-Scotland,Borough Briggs,Elgin City,"Elgin, Scotland",4520,1921,,,57.65194,3.32083,borough-briggs-130920.jpg
-Scotland,Victoria Park,Buckie Thistle,"Buckie , Scotland",3000,,,,57.6730556,2.96625,victoria-park-5201510.jpg
-Scotland,Links Park Stadium,Montrose,"Montrose , Scotland",4936,,,,56.71389,2.45889,links-park-stadium-102636.jpg
-Scotland,Tannadice Park,Dundee United,"Dundee , Scotland",14223,,,,56.47472,2.96889,tannadice-park-102623.jpg
-Scotland,Station Park,Forfar Athletic,"Forfar , Scotland",6777,,,,56.65222,2.885,station-park-102628.jpg
-Scotland,Somerset Park,Ayr United,"Ayr , Scotland",10185,,,,55.46944,4.62,somerset-park-102615.jpg
-Scotland,Bellslea Park,Fraserburgh,"Fraserburgh , Scotland",3000,,,,57.6900222,2.0039694,bellslea-park-5201575.jpg
-Scotland,Glebe Park,Brechin City,"Brechin , Scotland",4083,1919,,,56.73528,2.65639,glebe-park-102617.jpg
-Scotland,Ochilview Park,Stenhousemuir,"Stenhousemuir , Scotland",3746,,,,56.02833,3.81472,ochilview-park-102646.jpg
-Scotland,East End Park,Dunfermline Athletic,"Dunfermline , Scotland",11480,,,,56.07528,3.44194,east-end-park-102624.jpg
-Scotland,Palmerston Park,Queen Of The South,"Dumfries , Scotland",8690,1919,,,55.07028,3.62472,palmerston-park-102639.jpg
-Scotland,3G Arena Netherdale,Gala Fairydean Rovers,"Galashiels , Scotland",4000,1912,,,55.607445,2.782545,3g-arena-netherdale-5202312.jpg
-Scotland,Galabank,Annan Athletic,"Annan, Scotland",2504,,,,54.99389,3.26167,galabank-5201466.jpg
-Scotland,Central Park,Cowdenbeath,"Cowdenbeath , Scotland",4309,1917,,,56.1087389,3.3470972,central-park-102621.jpg
-Scotland,Hampden Park,Queen's Park,"Glasgow, Scotland",51866,1903,,,55.82583,4.25194,hampden-park-102640.jpg
-Scotland,Easter Road,Hibernian,"Edinburgh, Scotland",20421,,,,55.96167,3.16556,easter-road-102632.jpg
-Scotland,Harlaw Park,Inverurie Loco Works,"Inverurie , Scotland",2500,,,,57.291472,2.382361,harlaw-park-5201602.jpg
-Scotland,MGM Timber Bayview Stadium,East Fife,"Methil , Scotland",1980,1998,,,56.18861,2.99889,mgm-timber-bayview-stadium-102625.jpg
-Scotland,The Falkirk Stadium,East Stirlingshire,"Falkirk , Scotland",7937,2004,,,56.00528,3.75278,the-falkirk-stadium-5208610.jpg
-Scotland,Islecroft Stadium,Dalbeattie Star,"Dalbeattie , Scotland",1320,,,,54.934989,3.817444,islecroft-stadium-5201553.jpg
-Scotland,McDiarmid Park,St Johnstone,"Perth , Scotland",10696,1989,,,56.40972,3.47694,mcdiarmid-park-102644.jpg
-Scotland,Broadwood Stadium,Cumbernauld Colts,"Cumbernauld , Scotland",8086,1994,,,55.944775,4.0370861,broadwood-stadium-102619.jpg
-Scotland,Forthbank Stadium,Stirling Albion,"Stirling , Scotland",3808,1993,,,56.11889,3.91167,forthbank-stadium-102647.jpg
-Scotland,Ibrox Stadium,Rangers,"Glasgow, Scotland",51700,,,,55.85306,4.30917,ibrox-stadium-102642.jpg
-Scotland,Celtic Park,Celtic,"Glasgow, Scotland",60411,,,,55.84972,4.20556,celtic-park-102618.jpg
-Scotland,Dumbarton Football Stadium,Dumbarton,"Dumbarton , Scotland",2020,2000,,,55.93833,4.56139,dumbarton-football-stadium-135876.jpg
-Scotland,"The BBSP Stadium, Rugby Park",Kilmarnock,"Kilmarnock , Scotland",15003,,,,55.60417,4.50806,the-bbsp-stadium-rugby-park-102634.jpg
-Scotland,Fir Park Stadium,Motherwell,"Motherwell , Scotland",13677,,,,55.78,3.98,fir-park-stadium-102637.jpg
-Scotland,Balmoor Stadium,Peterhead,"Peterhead , Scotland",3150,1997,,,57.51167,1.79583,balmoor-stadium-130922.jpg
-Scotland,Ainslie Park Stadium,The Spartans,"Edinburgh , Scotland",3612,2008,,,55.97167,3.23333,ainslie-park-stadium-5201665.jpg
-Scotland,Pittodrie Stadium,Aberdeen,"Aberdeen , Scotland",19274,,,,57.15917,2.08889,pittodrie-stadium-102578.jpg
-Scotland,Newtown Park,Bo'ness United,"Bo'ness , Scotland",2500,,,,56.0095,3.6116,newtown-park-5201498.jpg
-Scotland,Tynecastle Park,Heart Of Midlothian,"Edinburgh, Scotland",19852,,,,55.93917,3.23222,tynecastle-park-102631.jpg
-Scotland,The SMISA Stadium,St Mirren,"Paisley , Scotland",7937,2009,,,55.85056,4.44389,the-smisa-stadium-61014157.jpg
-Scotland,ZLX Stadium,Clyde,"Cumbernauld , Scotland",8086,1994,,,55.944775,4.0370861,zlx-stadium-142102.jpg
-Scotland,Gayfield Park,Arbroath,"Arbroath , Scotland",6600,,,,56.55222,2.59139,gayfield-park-102614.jpg
-Scotland,North Lodge Park,Formartine United,"Pitmedden , Scotland",1800,,,,57.33806,2.19611,north-lodge-park-5201580.jpg
-Scotland,Raydale Park,Gretna,"Gretna , Scotland",1030,1946,,,54.9932139,3.0719194,raydale-park-5100046.jpg
-Scotland,Stair Park,Stranraer,"Stranraer , Scotland",4178,1907,,,54.90222,5.0125,stair-park-102648.jpg
-Scotland,Dudgeon Park,Brora Rangers,"Brora , Scotland",4000,,,,58.00813,3.858143,dudgeon-park-5201494.jpg
-Scotland,New Central Park,Kelty Hearts,"Kelty , Scotland",2181,,,,56.1359,3.3786,new-central-park-5201609.jpg
-Scotland,Cappielow Park,Greenock Morton,"Greenock , Scotland",11589,,,,55.94139,4.72694,cappielow-park-102629.jpg
-Scotland,Stark's Park,Raith Rovers,"Kirkcaldy , Scotland",8867,,,,56.09972,3.16833,starks-park-102641.jpg
-Scotland,Kilmac Stadium,Dundee,"Dundee , Scotland",11775,,,,56.47472,2.97361,kilmac-stadium-102622.jpg
-Scotland,Prestonfield,Linlithgow Rose,"Linlithgow , Scotland",2264,1949,,,55.9727,3.6121,prestonfield-5201621.jpg
-Senegal,Stade Léopold Sedar Senghor,ASC Jeanne d'Arc,"Dakar , Senegal",40000,1985,,,14.7466944,17.4520139,stade-leopold-sedar-senghor-103092.jpg
+Scotland,Balmoral Stadium,Cove Rangers,"Aberdeen , Scotland",2602,2018,,,57.113,-2.097,balmoral-stadium-61088848.jpg
+Scotland,Excelsior Stadium,Glasgow University,"Airdrie , Scotland",10101,1998,,,55.85972,-3.95972,excelsior-stadium-114148.jpg
+Scotland,Borough Briggs,Elgin City,"Elgin, Scotland",4520,1921,,,57.65194,-3.32083,borough-briggs-130920.jpg
+Scotland,Victoria Park,Buckie Thistle,"Buckie , Scotland",3000,,,,57.6730556,-2.96625,victoria-park-5201510.jpg
+Scotland,Links Park Stadium,Montrose,"Montrose , Scotland",4936,,,,56.71389,-2.45889,links-park-stadium-102636.jpg
+Scotland,Tannadice Park,Dundee United,"Dundee , Scotland",14223,,,,56.47472,-2.96889,tannadice-park-102623.jpg
+Scotland,Station Park,Forfar Athletic,"Forfar , Scotland",6777,,,,56.65222,-2.885,station-park-102628.jpg
+Scotland,Somerset Park,Ayr United,"Ayr , Scotland",10185,,,,55.46944,-4.62,somerset-park-102615.jpg
+Scotland,Bellslea Park,Fraserburgh,"Fraserburgh , Scotland",3000,,,,57.6900222,-2.0039694,bellslea-park-5201575.jpg
+Scotland,Glebe Park,Brechin City,"Brechin , Scotland",4083,1919,,,56.73528,-2.65639,glebe-park-102617.jpg
+Scotland,Ochilview Park,Stenhousemuir,"Stenhousemuir , Scotland",3746,,,,56.02833,-3.81472,ochilview-park-102646.jpg
+Scotland,East End Park,Dunfermline Athletic,"Dunfermline , Scotland",11480,,,,56.07528,-3.44194,east-end-park-102624.jpg
+Scotland,Palmerston Park,Queen Of The South,"Dumfries , Scotland",8690,1919,,,55.07028,-3.62472,palmerston-park-102639.jpg
+Scotland,3G Arena Netherdale,Gala Fairydean Rovers,"Galashiels , Scotland",4000,1912,,,55.607445,-2.782545,3g-arena-netherdale-5202312.jpg
+Scotland,Galabank,Annan Athletic,"Annan, Scotland",2504,,,,54.99389,-3.26167,galabank-5201466.jpg
+Scotland,Central Park,Cowdenbeath,"Cowdenbeath , Scotland",4309,1917,,,56.1087389,-3.3470972,central-park-102621.jpg
+Scotland,Hampden Park,Queen's Park,"Glasgow, Scotland",51866,1903,,,55.82583,-4.25194,hampden-park-102640.jpg
+Scotland,Easter Road,Hibernian,"Edinburgh, Scotland",20421,,,,55.96167,-3.16556,easter-road-102632.jpg
+Scotland,Harlaw Park,Inverurie Loco Works,"Inverurie , Scotland",2500,,,,57.291472,-2.382361,harlaw-park-5201602.jpg
+Scotland,MGM Timber Bayview Stadium,East Fife,"Methil , Scotland",1980,1998,,,56.18861,-2.99889,mgm-timber-bayview-stadium-102625.jpg
+Scotland,The Falkirk Stadium,East Stirlingshire,"Falkirk , Scotland",7937,2004,,,56.00528,-3.75278,the-falkirk-stadium-5208610.jpg
+Scotland,Islecroft Stadium,Dalbeattie Star,"Dalbeattie , Scotland",1320,,,,54.934989,-3.817444,islecroft-stadium-5201553.jpg
+Scotland,McDiarmid Park,St Johnstone,"Perth , Scotland",10696,1989,,,56.40972,-3.47694,mcdiarmid-park-102644.jpg
+Scotland,Broadwood Stadium,Cumbernauld Colts,"Cumbernauld , Scotland",8086,1994,,,55.944775,-4.0370861,broadwood-stadium-102619.jpg
+Scotland,Forthbank Stadium,Stirling Albion,"Stirling , Scotland",3808,1993,,,56.11889,-3.91167,forthbank-stadium-102647.jpg
+Scotland,Ibrox Stadium,Rangers,"Glasgow, Scotland",51700,,,,55.85306,-4.30917,ibrox-stadium-102642.jpg
+Scotland,Celtic Park,Celtic,"Glasgow, Scotland",60411,,,,55.84972,-4.20556,celtic-park-102618.jpg
+Scotland,Dumbarton Football Stadium,Dumbarton,"Dumbarton , Scotland",2020,2000,,,55.93833,-4.56139,dumbarton-football-stadium-135876.jpg
+Scotland,"The BBSP Stadium, Rugby Park",Kilmarnock,"Kilmarnock , Scotland",15003,,,,55.60417,-4.50806,the-bbsp-stadium-rugby-park-102634.jpg
+Scotland,Fir Park Stadium,Motherwell,"Motherwell , Scotland",13677,,,,55.78,-3.98,fir-park-stadium-102637.jpg
+Scotland,Balmoor Stadium,Peterhead,"Peterhead , Scotland",3150,1997,,,57.51167,-1.79583,balmoor-stadium-130922.jpg
+Scotland,Ainslie Park Stadium,The Spartans,"Edinburgh , Scotland",3612,2008,,,55.97167,-3.23333,ainslie-park-stadium-5201665.jpg
+Scotland,Pittodrie Stadium,Aberdeen,"Aberdeen , Scotland",19274,,,,57.15917,-2.08889,pittodrie-stadium-102578.jpg
+Scotland,Newtown Park,Bo'ness United,"Bo'ness , Scotland",2500,,,,56.0095,-3.6116,newtown-park-5201498.jpg
+Scotland,Tynecastle Park,Heart Of Midlothian,"Edinburgh, Scotland",19852,,,,55.93917,-3.23222,tynecastle-park-102631.jpg
+Scotland,The SMISA Stadium,St Mirren,"Paisley , Scotland",7937,2009,,,55.85056,-4.44389,the-smisa-stadium-61014157.jpg
+Scotland,ZLX Stadium,Clyde,"Cumbernauld , Scotland",8086,1994,,,55.944775,-4.0370861,zlx-stadium-142102.jpg
+Scotland,Gayfield Park,Arbroath,"Arbroath , Scotland",6600,,,,56.55222,-2.59139,gayfield-park-102614.jpg
+Scotland,North Lodge Park,Formartine United,"Pitmedden , Scotland",1800,,,,57.33806,-2.19611,north-lodge-park-5201580.jpg
+Scotland,Raydale Park,Gretna,"Gretna , Scotland",1030,1946,,,54.9932139,-3.0719194,raydale-park-5100046.jpg
+Scotland,Stair Park,Stranraer,"Stranraer , Scotland",4178,1907,,,54.90222,-5.0125,stair-park-102648.jpg
+Scotland,Dudgeon Park,Brora Rangers,"Brora , Scotland",4000,,,,58.00813,-3.858143,dudgeon-park-5201494.jpg
+Scotland,New Central Park,Kelty Hearts,"Kelty , Scotland",2181,,,,56.1359,-3.3786,new-central-park-5201609.jpg
+Scotland,Cappielow Park,Greenock Morton,"Greenock , Scotland",11589,,,,55.94139,-4.72694,cappielow-park-102629.jpg
+Scotland,Stark's Park,Raith Rovers,"Kirkcaldy , Scotland",8867,,,,56.09972,-3.16833,starks-park-102641.jpg
+Scotland,Kilmac Stadium,Dundee,"Dundee , Scotland",11775,,,,56.47472,-2.97361,kilmac-stadium-102622.jpg
+Scotland,Prestonfield,Linlithgow Rose,"Linlithgow , Scotland",2264,1949,,,55.9727,-3.6121,prestonfield-5201621.jpg
+Senegal,Stade Léopold Sedar Senghor,ASC Jeanne d'Arc,"Dakar , Senegal",40000,1985,,,14.7466944,-17.4520139,stade-leopold-sedar-senghor-103092.jpg
 Serbia,Stadion FK Kolubara,FK Kolubara Lazarevac,"Lazarevac , Serbia",2500,1968,,,44.383889,20.26625,stadion-fk-kolubara-136484.jpg
 Serbia,Čair,FK Radnički Niš,"Niš , Serbia",18151,,,,43.3155278,21.9085333,cair-1301362.jpg
 Serbia,SC Stadion – Voždovac,FK Voždovac Beograd,"Belgrade , Serbia",5200,2013,,,44.774889,20.490194,sc-stadion-vozdovac-5744632.jpg
@@ -1431,7 +1431,7 @@ Serbia,Gradski stadion kraj Morave,FK Borac 1926 Čačak,"Čačak , Serbia",8000
 Serbia,Stadion na Banovom brdu,FK Čukarički Beograd,"Leskovac , Serbia",8136,2023,,,42.9904006,21.9595868,stadion-na-banovom-brdu-1301373.jpg
 Serbia,Stadion FK Budućnost,FK Budućnost Dobanovci,"Bor, Serbia.",5000,1957,,,44.0719444,22.102472,stadion-fk-buducnost-5756756.jpg
 Serbia,Mladost,FK Napredak Kruševac,"Kruševac , Serbia",10331,,,,43.5831139,21.3381222,mladost-132324.jpg
-Sierra Leone,National Stadium,Mighty Blackpool,"Freetown , Sierra Leone",45000,1980,,,8.479556,13.249056,national-stadium-85006356.jpg
+Sierra Leone,National Stadium,Mighty Blackpool,"Freetown , Sierra Leone",45000,1980,,,8.479556,-13.249056,national-stadium-85006356.jpg
 Slovakia,City Arena - Stadion Antona Malatinskeho,FC Spartak Trnava,"Trnava , Slovakia",18200,2015,,,48.37333,17.59167,city-arena-stadion-antona-malatinskeho-63025723.jpg
 Slovakia,Pod Dubnom,MSK Žilina,"Žilina , Slovakia",10785,1941,,,49.2291194,18.7447889,pod-dubnom-1301168.jpg
 Slovakia,MOL Arena,FK DAC 1904 Dunajská Streda,"Dunajská Streda , Slovakia",12700,1953,,,47.999111,17.619111,mol-arena-1301159.jpg
@@ -1466,24 +1466,24 @@ Slovenia,Mestni stadion Lendava,NK Nafta 1903,"Lendava , Slovenia",2000,,,,46.55
 Slovenia,Športni park Nova Gorica,ND Gorica,"Nova Gorica , Slovenia",3100,1964,,,45.95583,13.64139,sportni-park-nova-gorica-1301188.jpg
 Slovenia,Športni park Aluminij,NK Aluminij Kidričevo,"Kidričevo , Slovenia",1200,1950,,,46.40778,15.78972,sportni-park-aluminij-7580025.jpg
 Somalia,Mogadishu Stadium,Muqdisho,"Mogadishu , Somalia",65000,1977,,,2.0675444,45.3354583,mogadishu-stadium-103095.jpg
-South Africa,Dr. Rantlai Petrus Molemela Stadium,Marumo Gallants Football Club,"Bloemfontein, South Africa",22000,1982,,,29.17417,26.23361,dr-rantlai-petrus-molemela-stadium-104492.jpg
-South Africa,Princess Magogo Stadium,Uthongathi Football Club,"KwaMashu , South Africa",12000,,,,29.744249,30.971264,princess-magogo-stadium-5680134.jpg
-South Africa,FNB Stadium,Kaizer Chiefs Football Club,"Johannesburg , South Africa",94736,1989,,,26.23472,27.98222,fnb-stadium-131243.jpg
-South Africa,Athlone Stadium,Santos Football Club,"Cape Town , South Africa",34000,1972,,,33.961889,18.517333,athlone-stadium-104487.jpg
-South Africa,Lucas Masterpieces Moripe Stadium,Mamelodi Sundowns Football Club,"Pretoria , South Africa",28900,,,,25.7759194,28.0728694,lucas-masterpieces-moripe-stadium-5680125.jpg
-South Africa,Thohoyandou Stadium,Black Leopards Football Club,"Thohoyandou , South Africa",20000,1994,,,22.9862694,30.46255,thohoyandou-stadium-5680136.jpg
-South Africa,Orlando Stadium,Orlando Pirates Football Club,"Johannesburg , South Africa",37313,1959,,,26.2318944,27.9228917,orlando-stadium-104482.jpg
-South Africa,Kabokweni Stadium,TS Sporting Football Club,"Johannesburg , South Africa",94736,1989,,,26.23472,27.98222,kabokweni-stadium-65041698.jpg
-South Africa,Harry Gwala Stadium,Maritzburg City Football Club,"Pietermaritzburg , South Africa",12000,,,,29.6173878,30.3856409,harry-gwala-stadium-5680135.jpg
-South Africa,Royal Bafokeng Sports Palace,Platinum Stars Football Club,"Phokeng , South Africa",44530,1999,,,25.5786,27.1607,royal-bafokeng-sports-palace-5685438.jpg
-South Africa,KaNyamazane Stadium,Mbombela United Football Club,"KaNyamazane , South Africa",15000,,,,25.4649,31.1819,kanyamazane-stadium-5689988.jpg
-South Africa,Dobsonville Stadium,Moroka Swallows,"Johannesburg , South Africa",24000,1975,,,26.22667,27.86417,dobsonville-stadium-5690904.jpg
+South Africa,Dr. Rantlai Petrus Molemela Stadium,Marumo Gallants Football Club,"Bloemfontein, South Africa",22000,1982,,,-29.17417,26.23361,dr-rantlai-petrus-molemela-stadium-104492.jpg
+South Africa,Princess Magogo Stadium,Uthongathi Football Club,"KwaMashu , South Africa",12000,,,,-29.744249,30.971264,princess-magogo-stadium-5680134.jpg
+South Africa,FNB Stadium,Kaizer Chiefs Football Club,"Johannesburg , South Africa",94736,1989,,,-26.23472,27.98222,fnb-stadium-131243.jpg
+South Africa,Athlone Stadium,Santos Football Club,"Cape Town , South Africa",34000,1972,,,-33.961889,18.517333,athlone-stadium-104487.jpg
+South Africa,Lucas Masterpieces Moripe Stadium,Mamelodi Sundowns Football Club,"Pretoria , South Africa",28900,,,,-25.7759194,28.0728694,lucas-masterpieces-moripe-stadium-5680125.jpg
+South Africa,Thohoyandou Stadium,Black Leopards Football Club,"Thohoyandou , South Africa",20000,1994,,,-22.9862694,30.46255,thohoyandou-stadium-5680136.jpg
+South Africa,Orlando Stadium,Orlando Pirates Football Club,"Johannesburg , South Africa",37313,1959,,,-26.2318944,27.9228917,orlando-stadium-104482.jpg
+South Africa,Kabokweni Stadium,TS Sporting Football Club,"Johannesburg , South Africa",94736,1989,,,-26.23472,27.98222,kabokweni-stadium-65041698.jpg
+South Africa,Harry Gwala Stadium,Maritzburg City Football Club,"Pietermaritzburg , South Africa",12000,,,,-29.6173878,30.3856409,harry-gwala-stadium-5680135.jpg
+South Africa,Royal Bafokeng Sports Palace,Platinum Stars Football Club,"Phokeng , South Africa",44530,1999,,,-25.5786,27.1607,royal-bafokeng-sports-palace-5685438.jpg
+South Africa,KaNyamazane Stadium,Mbombela United Football Club,"KaNyamazane , South Africa",15000,,,,-25.4649,31.1819,kanyamazane-stadium-5689988.jpg
+South Africa,Dobsonville Stadium,Moroka Swallows,"Johannesburg , South Africa",24000,1975,,,-26.22667,27.86417,dobsonville-stadium-5690904.jpg
 South Africa,Makhulong Stadium,Highlands Park Football Club,"Gauteng , South Africa",10000,,,,,,makhulong-stadium-131237.jpg
-South Africa,Goble Park,Free State Stars,"Bethlehem, South Africa",5000,,,,28.23167,28.305,goble-park-131279.jpg
-South Africa,Moses Mabhida Stadium,AmaZulu Football Club,"Durban , South Africa",55500,2009,,,29.829,31.0303,moses-mabhida-stadium-5687008.jpg
-South Africa,Peter Mokaba Stadium,Polokwane City Football Club,"Polokwane , South Africa",45500,2010,,,23.924689,29.468765,peter-mokaba-stadium-5687731.jpg
-South Africa,Old Peter Mokaba Stadium,Magesi Football Club,"Polokwane , South Africa",15000,1976,,,23.92417,29.465,old-peter-mokaba-stadium-65035948.jpg
-South Africa,Cape Town Stadium,Cape Town City Football Club,"Cape Town , South Africa",58300,2009,,,33.90333,18.41111,cape-town-stadium-104488.jpg
+South Africa,Goble Park,Free State Stars,"Bethlehem, South Africa",5000,,,,-28.23167,28.305,goble-park-131279.jpg
+South Africa,Moses Mabhida Stadium,AmaZulu Football Club,"Durban , South Africa",55500,2009,,,-29.829,31.0303,moses-mabhida-stadium-5687008.jpg
+South Africa,Peter Mokaba Stadium,Polokwane City Football Club,"Polokwane , South Africa",45500,2010,,,-23.924689,29.468765,peter-mokaba-stadium-5687731.jpg
+South Africa,Old Peter Mokaba Stadium,Magesi Football Club,"Polokwane , South Africa",15000,1976,,,-23.92417,29.465,old-peter-mokaba-stadium-65035948.jpg
+South Africa,Cape Town Stadium,Cape Town City Football Club,"Cape Town , South Africa",58300,2009,,,-33.90333,18.41111,cape-town-stadium-104488.jpg
 South Korea,Tancheon Stadium,Seongnam FC,"Seongnam , South Korea",16146,2002,,,37.410153,127.121322,tancheon-stadium-5703928.jpg
 South Korea,Suwon Stadium,Suwon FC,"Suwon , South Korea",44031,2001,,,37.286278,127.036889,suwon-stadium-134629.jpg
 South Korea,Chuncheon Songam Sports Town Stadium,Gangwon FC,"Chuncheon , South Korea",20000,2009,,,37.856075,127.6910528,chuncheon-songam-sports-town-stadium-66011067.jpg
@@ -1504,84 +1504,84 @@ South Korea,DGB Daegu Bank Park,Daegu FC,"Daegu , South Korea",66422,2001,,,,,dg
 South Korea,Gwangyang Football Stadium,Jeonnam Dragons FC,"Gwangyang , South Korea",13496,1993,,,34.9330556,127.7275,gwangyang-football-stadium-135419.jpg
 South Korea,Seoul World Cup Stadium,FC Seoul,"Seoul , South Korea",66704,2001,,,37.568222,126.897361,seoul-world-cup-stadium-5700002.jpg
 South Sudan,Juba Stadium,Kator FC,"Juba , South Sudan",10000,1962,,,4.84306,31.61583,juba-stadium-13113222.jpg
-Spain,Nuevo Arcángel,Córdoba C.F.,"Córdoba , Spain",20989,1993,,,37.8722944,4.7646417,nuevo-arcangel-1033.jpg
+Spain,Nuevo Arcángel,Córdoba C.F.,"Córdoba , Spain",20989,1993,,,37.8722944,-4.7646417,nuevo-arcangel-1033.jpg
 Spain,Castalia,C.D. Castellón,"Castelló de la Plana , Spain",15500,1987,,,39.9960528,0.0387917,castalia-1018.jpg
-Spain,Estadio de Vallecas,Rayo Vallecano de Madrid,"Madrid , Spain",14708,1976,,,40.39194,3.65889,estadio-de-vallecas-1052.jpg
-Spain,Benito Villamarín,Real Betis Balompié,"Seville , Spain",60721,1929,,,37.35639,5.98139,benito-villamarin-1053.jpg
-Spain,A Malata,Racing Club Ferrol,"Ferrol , Spain",11669,1993,,,43.4912,8.2394,a-malata-1050.jpg
-Spain,Reino de León,Cultural y Deportiva Leonesa,"León, Spain",13346,2001,,,42.587482,5.576699,reino-de-leon-1034.jpg
-Spain,El Sadar,Club Atlético Osasuna,"Pamplona , Spain",23516,1967,,,42.79667,1.63694,el-sadar-1032.jpg
-Spain,Nuevo Los Cármenes,Granada C.F.,"Granada , Spain",21600,1995,,,37.15306,3.59583,nuevo-los-carmenes-1043.jpg
-Spain,El Alcoraz,S.D. Huesca,"Huesca , Spain",9100,1972,,,42.13194,0.42444,el-alcoraz-4212295.jpg
+Spain,Estadio de Vallecas,Rayo Vallecano de Madrid,"Madrid , Spain",14708,1976,,,40.39194,-3.65889,estadio-de-vallecas-1052.jpg
+Spain,Benito Villamarín,Real Betis Balompié,"Seville , Spain",60721,1929,,,37.35639,-5.98139,benito-villamarin-1053.jpg
+Spain,A Malata,Racing Club Ferrol,"Ferrol , Spain",11669,1993,,,43.4912,-8.2394,a-malata-1050.jpg
+Spain,Reino de León,Cultural y Deportiva Leonesa,"León, Spain",13346,2001,,,42.587482,-5.576699,reino-de-leon-1034.jpg
+Spain,El Sadar,Club Atlético Osasuna,"Pamplona , Spain",23516,1967,,,42.79667,-1.63694,el-sadar-1032.jpg
+Spain,Nuevo Los Cármenes,Granada C.F.,"Granada , Spain",21600,1995,,,37.15306,-3.59583,nuevo-los-carmenes-1043.jpg
+Spain,El Alcoraz,S.D. Huesca,"Huesca , Spain",9100,1972,,,42.13194,-0.42444,el-alcoraz-4212295.jpg
 Spain,Estadi Olímpic Lluís Companys,F.C. Barcelona,"Barcelona , Spain",55926,1929,,,41.36472,2.15556,estadi-olimpic-lluis-companys-1049.jpg
 Spain,La Nova Creu Alta,C.E. Sabadell F.C.,"Sabadell , Spain",11908,1967,,,41.55472,2.09194,la-nova-creu-alta-1027.jpg
-Spain,Ciutat de València,Levante U.D.,"Valencia , Spain",26354,1969,,,39.49472,0.36417,ciutat-de-valencia-1046.jpg
-Spain,Nuevo Colombino,R.C. Recreativo de Huelva,"Huelva , Spain",21670,2001,,,37.24639,6.95417,nuevo-colombino-1066.jpg
-Spain,Ipurúa,S.D. Eibar,"Eibar , Spain",8164,1947,,,43.1817056,2.4758028,ipurua-1067.jpg
+Spain,Ciutat de València,Levante U.D.,"Valencia , Spain",26354,1969,,,39.49472,-0.36417,ciutat-de-valencia-1046.jpg
+Spain,Nuevo Colombino,R.C. Recreativo de Huelva,"Huelva , Spain",21670,2001,,,37.24639,-6.95417,nuevo-colombino-1066.jpg
+Spain,Ipurúa,S.D. Eibar,"Eibar , Spain",8164,1947,,,43.1817056,-2.4758028,ipurua-1067.jpg
 Spain,Stage Front Stadium,R.C.D. Espanyol de Barcelona,"Barcelona , Spain",40500,2009,,,41.34778,2.07556,stage-front-stadium-67015508.jpg
 Spain,Nou Estadi,Club Gimnàstic de Tarragona,"Tarragona , Spain",14591,1972,,,41.12694,1.27278,nou-estadi-4203007.jpg
-Spain,Francisco de la Hera,Extremadura U.D.,"Almendralejo , Spain",11580,1951,,,38.6844111,6.4146056,francisco-de-la-hera-1038.jpg
-Spain,Municipal de Linarejos,C.D. Linares,"Linares , Spain",10000,1955,,,38.102995,3.622964,municipal-de-linarejos-4212109.jpg
-Spain,Nuevo Las Gaunas,C.D. Logroñés SAD,"Logroño , Spain",16000,2002,,,42.45333,2.45333,nuevo-las-gaunas-1019.jpg
+Spain,Francisco de la Hera,Extremadura U.D.,"Almendralejo , Spain",11580,1951,,,38.6844111,-6.4146056,francisco-de-la-hera-1038.jpg
+Spain,Municipal de Linarejos,C.D. Linares,"Linares , Spain",10000,1955,,,38.102995,-3.622964,municipal-de-linarejos-4212109.jpg
+Spain,Nuevo Las Gaunas,C.D. Logroñés SAD,"Logroño , Spain",16000,2002,,,42.45333,-2.45333,nuevo-las-gaunas-1019.jpg
 Spain,Camp d'Esports,Club Lleida Esportiu,"Lleida , Catalonia",13500,,,,41.6212667,0.6141472,camp-desports-1076.jpg
 Spain,Estadi Mallorca Son Moix,R.C.D. Mallorca,"Palma de Mallorca , Spain",26020,1999,,,39.59,2.63,estadi-mallorca-son-moix-6700010.jpg
-Spain,Mendizorroza,Deportivo Alavés,"Vitoria-Gasteiz , Spain",19840,1924,,,42.8371111,2.6880444,mendizorroza-1015.jpg
-Spain,Anxo Carro,C.D. Lugo,"Lugo , Spain",7114,1974,,,43.00333,7.57083,anxo-carro-1021.jpg
-Spain,Príncipe Felipe,C.P. Cacereño,"Cáceres , Spain",7000,1977,,,39.4871,6.4123,principe-felipe-1028.jpg
-Spain,El Sardinero,Real Racing Club de Santander,"Santander , Spain",22308,1988,,,43.47639,3.79333,el-sardinero-1051.jpg
-Spain,Nuevo La Victoria,Real Jaén C.F.,"Jaén , Spain",12569,2001,,,37.776159,3.786839,nuevo-la-victoria-1045.jpg
-Spain,Coliseum,Getafe C.F.,"Getafe , Spain",16500,1998,,,40.32556,3.71472,coliseum-1042.jpg
-Spain,Cívitas Metropolitano,Club Atlético de Madrid,"Madrid , Spain",70692,1994,,2004,40.43611,3.59944,civitas-metropolitano-67089815.jpg
-Spain,Alfredo Di Stéfano,Real Madrid Castilla C.F.,"Madrid , Spain",5797,2006,,,40.47667,3.61417,alfredo-di-stefano-67000003.jpg
-Spain,Martínez Valero,Elche C.F.,"Elche , Spain",31388,1976,,,38.26694,0.66333,martinez-valero-1037.jpg
-Spain,El Plantío,Burgos C.F.,"Burgos , Spain",12194,1964,,,42.34417,3.68056,el-plantio-4200567.jpg
-Spain,Estadio de La Cerámica,Villarreal C.F.,"Villarreal , Spain",23008,1923,,,39.94417,0.10361,estadio-de-la-ceramica-1080.jpg
-Spain,Nuevo Carlos Tartiere,Real Oviedo,"Oviedo , Spain",30500,2000,,,43.360783,5.870222,nuevo-carlos-tartiere-1060.jpg
-Spain,Abanca-Riazor,R.C. Deportivo de La Coruña,"A Coruña , Spain",32490,1944,,,43.3687,8.4175,abanca-riazor-1035.jpg
-Spain,Lasesarre,Barakaldo C.F.,"Barakaldo , Spain",7960,2003,,,43.30278,2.98639,lasesarre-1012.jpg
-Spain,Nuevo Los Pajaritos,C.D. Numancia de Soria,"Soria , Spain",8261,1999,,,41.75444,2.46778,nuevo-los-pajaritos-1023.jpg
+Spain,Mendizorroza,Deportivo Alavés,"Vitoria-Gasteiz , Spain",19840,1924,,,42.8371111,-2.6880444,mendizorroza-1015.jpg
+Spain,Anxo Carro,C.D. Lugo,"Lugo , Spain",7114,1974,,,43.00333,-7.57083,anxo-carro-1021.jpg
+Spain,Príncipe Felipe,C.P. Cacereño,"Cáceres , Spain",7000,1977,,,39.4871,-6.4123,principe-felipe-1028.jpg
+Spain,El Sardinero,Real Racing Club de Santander,"Santander , Spain",22308,1988,,,43.47639,-3.79333,el-sardinero-1051.jpg
+Spain,Nuevo La Victoria,Real Jaén C.F.,"Jaén , Spain",12569,2001,,,37.776159,-3.786839,nuevo-la-victoria-1045.jpg
+Spain,Coliseum,Getafe C.F.,"Getafe , Spain",16500,1998,,,40.32556,-3.71472,coliseum-1042.jpg
+Spain,Cívitas Metropolitano,Club Atlético de Madrid,"Madrid , Spain",70692,1994,,2004,-40.43611,3.59944,civitas-metropolitano-67089815.jpg
+Spain,Alfredo Di Stéfano,Real Madrid Castilla C.F.,"Madrid , Spain",5797,2006,,,40.47667,-3.61417,alfredo-di-stefano-67000003.jpg
+Spain,Martínez Valero,Elche C.F.,"Elche , Spain",31388,1976,,,38.26694,-0.66333,martinez-valero-1037.jpg
+Spain,El Plantío,Burgos C.F.,"Burgos , Spain",12194,1964,,,42.34417,-3.68056,el-plantio-4200567.jpg
+Spain,Estadio de La Cerámica,Villarreal C.F.,"Villarreal , Spain",23008,1923,,,39.94417,-0.10361,estadio-de-la-ceramica-1080.jpg
+Spain,Nuevo Carlos Tartiere,Real Oviedo,"Oviedo , Spain",30500,2000,,,43.360783,-5.870222,nuevo-carlos-tartiere-1060.jpg
+Spain,Abanca-Riazor,R.C. Deportivo de La Coruña,"A Coruña , Spain",32490,1944,,,43.3687,-8.4175,abanca-riazor-1035.jpg
+Spain,Lasesarre,Barakaldo C.F.,"Barakaldo , Spain",7960,2003,,,43.30278,-2.98639,lasesarre-1012.jpg
+Spain,Nuevo Los Pajaritos,C.D. Numancia de Soria,"Soria , Spain",8261,1999,,,41.75444,-2.46778,nuevo-los-pajaritos-1023.jpg
 Spain,Montilivi,Girona F.C.,"Girona , Spain",14624,1970,,,41.96139,2.82861,montilivi-1503187.jpg
-Spain,Nuevo José Zorrilla,Real Valladolid C.F.,"Valladolid , Spain",27618,1982,,,41.64444,4.76111,nuevo-jose-zorrilla-1064.jpg
-Spain,Nuevo Mirador,Algeciras C.F.,Algeciras Spain,7200,,,,36.16333,5.46528,nuevo-mirador-4203034.jpg
-Spain,Santiago Bernabéu,Real Madrid C.F.,"Madrid , Spain",83186,1947,,,40.45306,3.68833,santiago-bernabeu-1056.jpg
-Spain,Estadio El Molinón-Enrique Castro Quini,Real Sporting de Gijón,"Gijón , Spain",29371,1908,,,43.53611,5.63722,estadio-el-molinon-enrique-castro-quini-1071.jpg
+Spain,Nuevo José Zorrilla,Real Valladolid C.F.,"Valladolid , Spain",27618,1982,,,41.64444,-4.76111,nuevo-jose-zorrilla-1064.jpg
+Spain,Nuevo Mirador,Algeciras C.F.,Algeciras Spain,7200,,,,36.16333,-5.46528,nuevo-mirador-4203034.jpg
+Spain,Santiago Bernabéu,Real Madrid C.F.,"Madrid , Spain",83186,1947,,,40.45306,-3.68833,santiago-bernabeu-1056.jpg
+Spain,Estadio El Molinón-Enrique Castro Quini,Real Sporting de Gijón,"Gijón , Spain",29371,1908,,,43.53611,-5.63722,estadio-el-molinon-enrique-castro-quini-1071.jpg
 Spain,Narcís Sala,U.E. Sant Andreu,"Barcelona , Spain",6563,1970,,,41.4288361,2.1930472,narcis-sala-4212120.jpg
-Spain,Pasarón,Pontevedra C.F.,"Pontevedra , Spain",12000,1965,,,42.438,8.641,pasaron-1048.jpg
-Spain,Pedro Escartín,C.D. Guadalajara,"Guadalajara , Spain",6000,1967,,,40.634278,3.182657,pedro-escartin-814969.jpg
-Spain,Mestalla,Valencia C.F.,"Valencia , Spain",49430,1923,,,39.47472,0.35833,mestalla-1078.jpg
-Spain,Nuevo Mirandilla,Cádiz C.F.,"Cádiz , Spain",20724,1955,,,36.50278,6.27306,nuevo-mirandilla-1030.jpg
-Spain,Ruta de la Plata,Zamora C.F. B,"Zamora , Spain",7813,2002,,,41.48639,5.74806,ruta-de-la-plata-7445382.jpg
-Spain,El Malecón,R.S. Gimnástica de Torrelavega,"Torrelavega , Spain",6007,1922,,,43.35056,4.06389,el-malecon-109012.jpg
-Spain,Heliodoro Rodríguez López,C.D. Tenerife,"Santa Cruz de Tenerife , Spain",22824,1925,,,28.46306,16.26056,heliodoro-rodriguez-lopez-1025.jpg
-Spain,Carlos Belmonte,Albacete Balompié,"Albacete , Spain",17524,1960,,,38.9811167,1.8521417,carlos-belmonte-1006.jpg
-Spain,El Toralín,S.D. Ponferradina,"Ponferrada , Spain",8400,2000,,,42.5574,6.5999722,el-toralin-7445380.jpg
-Spain,Municipal de La Línea,Real Balompédica Linense,"La Línea de la Concepción , Spain",10800,1969,,,36.1585,5.34025,municipal-de-la-linea-4212112.jpg
-Spain,Estadio de Gran Canaria,U.D. Las Palmas,"Las Palmas , Spain",32392,2003,,,28.10028,15.45667,estadio-de-gran-canaria-7454220.jpg
-Spain,José Rico Pérez,Hércules de Alicante C.F.,"Alicante , Spain",24704,1974,,,38.35722,0.4925,jose-rico-perez-1044.jpg
+Spain,Pasarón,Pontevedra C.F.,"Pontevedra , Spain",12000,1965,,,42.438,-8.641,pasaron-1048.jpg
+Spain,Pedro Escartín,C.D. Guadalajara,"Guadalajara , Spain",6000,1967,,,40.634278,-3.182657,pedro-escartin-814969.jpg
+Spain,Mestalla,Valencia C.F.,"Valencia , Spain",49430,1923,,,39.47472,-0.35833,mestalla-1078.jpg
+Spain,Nuevo Mirandilla,Cádiz C.F.,"Cádiz , Spain",20724,1955,,,36.50278,-6.27306,nuevo-mirandilla-1030.jpg
+Spain,Ruta de la Plata,Zamora C.F. B,"Zamora , Spain",7813,2002,,,41.48639,-5.74806,ruta-de-la-plata-7445382.jpg
+Spain,El Malecón,R.S. Gimnástica de Torrelavega,"Torrelavega , Spain",6007,1922,,,43.35056,-4.06389,el-malecon-109012.jpg
+Spain,Heliodoro Rodríguez López,C.D. Tenerife,"Santa Cruz de Tenerife , Spain",22824,1925,,,28.46306,-16.26056,heliodoro-rodriguez-lopez-1025.jpg
+Spain,Carlos Belmonte,Albacete Balompié,"Albacete , Spain",17524,1960,,,38.9811167,-1.8521417,carlos-belmonte-1006.jpg
+Spain,El Toralín,S.D. Ponferradina,"Ponferrada , Spain",8400,2000,,,42.5574,-6.5999722,el-toralin-7445380.jpg
+Spain,Municipal de La Línea,Real Balompédica Linense,"La Línea de la Concepción , Spain",10800,1969,,,36.1585,-5.34025,municipal-de-la-linea-4212112.jpg
+Spain,Estadio de Gran Canaria,U.D. Las Palmas,"Las Palmas , Spain",32392,2003,,,28.10028,-15.45667,estadio-de-gran-canaria-7454220.jpg
+Spain,José Rico Pérez,Hércules de Alicante C.F.,"Alicante , Spain",24704,1974,,,38.35722,-0.4925,jose-rico-perez-1044.jpg
 Spain,Can Misses,U.D. Ibiza,"Ibiza , Spain",6000,,,,38.9142389,1.4152,can-misses-4212169.jpg
-Spain,Francisco Artés Carrasco,Lorca Atlético C.F.,"Lorca, Spain",8120,2003,,,37.6388167,1.7351222,francisco-artes-carrasco-1503181.jpg
-Spain,Nuevo Román Suárez Puerta,Real Avilés C.F.,"Avilés , Spain",5352,1943,,,43.5575,5.9306,nuevo-roman-suarez-puerta-4213011.jpg
-Spain,La Fuensanta,U.B. Conquense,"Cuenca , Spain",6000,1940,,,40.07722,2.14028,la-fuensanta-4200577.jpg
-Spain,La Rosaleda,Málaga C.F.,"Málaga , Spain",30044,1941,,,36.7342,4.4266,la-rosaleda-1047.jpg
-Spain,Butarque,C.D. Leganés,"Leganés , Spain",14500,1998,,,40.3404,3.7607,butarque-1014.jpg
-Spain,Álvarez Claro,U.D. Melilla,"Melilla , Spain",8000,1945,,,35.285,2.94944,alvarez-claro-109028.jpg
-Spain,La Romareda,Real Zaragoza,"Zaragoza , Spain",33608,1957,,,41.63667,0.90194,la-romareda-1065.jpg
-Spain,Balaídos,R.C. Celta de Vigo,"Vigo, Spain",24870,1928,,,42.2118,8.7397,balaidos-1031.jpg
-Spain,Municipal Anduva,C.D. Mirandés,"Miranda de Ebro , Spain",5759,1950,,,42.68083,2.93556,municipal-anduva-4212198.jpg
-Spain,El Helmántico,U.D. Salamanca S.A.D.,"Salamanca , Spain",17341,1970,,,40.99528,5.665,el-helmantico-1073.jpg
-Spain,Cartagonova,Imperial Promesas C.F.,"Cartagena , Spain",15105,1988,,,37.609746,0.995977,cartagonova-4203004.jpg
-Spain,Salto del Caballo,C.D. Toledo,"Toledo , Spain",5500,1973,,,39.869,4.0181,salto-del-caballo-1026.jpg
+Spain,Francisco Artés Carrasco,Lorca Atlético C.F.,"Lorca, Spain",8120,2003,,,37.6388167,-1.7351222,francisco-artes-carrasco-1503181.jpg
+Spain,Nuevo Román Suárez Puerta,Real Avilés C.F.,"Avilés , Spain",5352,1943,,,43.5575,-5.9306,nuevo-roman-suarez-puerta-4213011.jpg
+Spain,La Fuensanta,U.B. Conquense,"Cuenca , Spain",6000,1940,,,40.07722,-2.14028,la-fuensanta-4200577.jpg
+Spain,La Rosaleda,Málaga C.F.,"Málaga , Spain",30044,1941,,,36.7342,-4.4266,la-rosaleda-1047.jpg
+Spain,Butarque,C.D. Leganés,"Leganés , Spain",14500,1998,,,40.3404,-3.7607,butarque-1014.jpg
+Spain,Álvarez Claro,U.D. Melilla,"Melilla , Spain",8000,1945,,,35.285,-2.94944,alvarez-claro-109028.jpg
+Spain,La Romareda,Real Zaragoza,"Zaragoza , Spain",33608,1957,,,41.63667,-0.90194,la-romareda-1065.jpg
+Spain,Balaídos,R.C. Celta de Vigo,"Vigo, Spain",24870,1928,,,42.2118,-8.7397,balaidos-1031.jpg
+Spain,Municipal Anduva,C.D. Mirandés,"Miranda de Ebro , Spain",5759,1950,,,42.68083,-2.93556,municipal-anduva-4212198.jpg
+Spain,El Helmántico,U.D. Salamanca S.A.D.,"Salamanca , Spain",17341,1970,,,40.99528,-5.665,el-helmantico-1073.jpg
+Spain,Cartagonova,Imperial Promesas C.F.,"Cartagena , Spain",15105,1988,,,37.609746,-0.995977,cartagonova-4203004.jpg
+Spain,Salto del Caballo,C.D. Toledo,"Toledo , Spain",5500,1973,,,39.869,-4.0181,salto-del-caballo-1026.jpg
 Spain,Estadi Johan Cruyff,F.C. Barcelona Atlètic,"Barcelona , Spain",6000,2019,,,41.37417,2.05056,estadi-johan-cruyff-31041532.jpg
-Spain,La Condomina,UCAM Murcia C.F.,"Murcia , Spain",31179,2006,,,38.04222,1.14472,la-condomina-1059.jpg
-Spain,Nuevo Vivero,C.D. Badajoz,"Badajoz , Spain",14898,1999,,,38.8589222,7.0058861,nuevo-vivero-1017.jpg
-Spain,Ramón Sánchez-Pizjuán,Sevilla F.C.,"Seville , Spain",42714,1958,,,37.384,5.9705,ramon-sanchez-pizjuan-1070.jpg
-Spain,Ciudad de Tudela,C.D. Tudelano,"Tudela , Spain",11000,1969,,,42.0574,1.612,ciudad-de-tudela-4212420.jpg
-Spain,Campos Anexos Nuevo José Zorrilla,Real Valladolid C.F. Promesas,"Valladolid , Spain",27618,1982,,,41.64444,4.76111,campos-anexos-nuevo-jose-zorrilla-67034781.jpg
-Spain,Estadio Romano José Fouto,A.D. Mérida,"Mérida , Spain",14600,1954,,,38.9139333,6.3364056,estadio-romano-jose-fouto-1029.jpg
-Spain,Estadio Fernando Torres,C.F. Fuenlabrada,"Fuenlabrada , Spain",5400,2011,,,40.29167,3.8260972,estadio-fernando-torres-67188333.jpg
+Spain,La Condomina,UCAM Murcia C.F.,"Murcia , Spain",31179,2006,,,38.04222,-1.14472,la-condomina-1059.jpg
+Spain,Nuevo Vivero,C.D. Badajoz,"Badajoz , Spain",14898,1999,,,38.8589222,-7.0058861,nuevo-vivero-1017.jpg
+Spain,Ramón Sánchez-Pizjuán,Sevilla F.C.,"Seville , Spain",42714,1958,,,37.384,-5.9705,ramon-sanchez-pizjuan-1070.jpg
+Spain,Ciudad de Tudela,C.D. Tudelano,"Tudela , Spain",11000,1969,,,42.0574,-1.612,ciudad-de-tudela-4212420.jpg
+Spain,Campos Anexos Nuevo José Zorrilla,Real Valladolid C.F. Promesas,"Valladolid , Spain",27618,1982,,,41.64444,-4.76111,campos-anexos-nuevo-jose-zorrilla-67034781.jpg
+Spain,Estadio Romano José Fouto,A.D. Mérida,"Mérida , Spain",14600,1954,,,38.9139333,-6.3364056,estadio-romano-jose-fouto-1029.jpg
+Spain,Estadio Fernando Torres,C.F. Fuenlabrada,"Fuenlabrada , Spain",5400,2011,,,40.29167,-3.8260972,estadio-fernando-torres-67188333.jpg
 Sri Lanka,Sugathadasa Stadium,Colombo Football Club,"Colombo , Sri Lanka",25000,1962,,,6.94806,79.86861,sugathadasa-stadium-103266.jpg
 Sudan,Al-Merrikh Stadium,Al-Merreikh Omdurman,"Omdurman , Sudan",43000,1964,,,15.641278,32.471556,al-merrikh-stadium-105346.jpg
-Suriname,André Kamperveen Stadion,SV Transvaal,"Paramaribo, Suriname",7100,1953,,,5.837389,55.160806,andre-kamperveen-stadion-103165.jpg
+Suriname,André Kamperveen Stadion,SV Transvaal,"Paramaribo, Suriname",7100,1953,,,5.837389,-55.160806,andre-kamperveen-stadion-103165.jpg
 Sweden,Örjans Vall,Halmstads BK,"Halmstad , Sweden",11100,1922,,,56.68417,12.86639,orjans-vall-1097.jpg
 Sweden,Nya Parken,IFK Norrköping FK,"Norrköping , Sweden",16000,1903,,,58.58444,16.17306,nya-parken-1092.jpg
 Sweden,Borås Arena,IF Elfsborg,"Borås , Sweden",14500,2005,,,57.73444,12.93472,boras-arena-8111842.jpg
@@ -1638,16 +1638,16 @@ Switzerland,swissporarena,FC Luzern,"Lucerne , Switzerland",16800,2011,,,47.0333
 Switzerland,Schützenwiese,FC Winterthur,"Winterthur, Switzerland",8550,,,,47.500755,8.71751,schutzenwiese-5722529.jpg
 Switzerland,Stade de Tourbillon,FC Sion,"Sion , Switzerland",14283,,,,46.23333,7.37639,stade-de-tourbillon-5722525.jpg
 Switzerland,Sportpark Bergholz,FC Wil 1900,"Wil , Switzerland",6048,1963,,,47.458333,9.037222,sportpark-bergholz-5720014.jpg
-Tanzania,Benjamin Mkapa National Stadium,Simba Sports Club,"Dar es Salaam , Tanzania",60000,2007,,,6.853563,39.273821,benjamin-mkapa-national-stadium-12010711.jpg
+Tanzania,Benjamin Mkapa National Stadium,Simba Sports Club,"Dar es Salaam , Tanzania",60000,2007,,,-6.853563,39.273821,benjamin-mkapa-national-stadium-12010711.jpg
 Thailand,Chang Arena,Buriram United,"Buriram , Thailand",32600,2011,,,14.965952,103.094555,chang-arena-23176968.jpg
 Thailand,BG Stadium,BG Pathum United,"Pathum Thani, Thailand",15114,2010,,,14.000649,100.679028,bg-stadium-23081899.jpg
 Thailand,Thunderdome Stadium,Nongjorg,"Bangkok , Thailand",15000,1998,,,13.917989,100.547411,thunderdome-stadium-23063078.jpg
 Bahamas,Thomas Robinson,,"Nassau, Bahamas",15023,1981,"2005, 2014",,25.0543806,-77.3602167,thomas-robinson-103153.jpg
 Togo,Stade de Kégué,,"Lomé , Togo",25000,2000,,,6.20222,1.23972,stade-de-kegue-23017719.jpg
-Tonga,Teufaiva Sport Stadium,,"Nuku'Alofa , Tonga",10000,,,,21.14139,175.207389,teufaiva-sport-stadium-148956.jpg
-Trinidad & Tobago,Ato Boldon Stadium,Central FC (TRI),"Couva , Trinidad and Tobago",10000,2001,,,10.424717,61.417185,ato-boldon-stadium-791159.jpg
-Trinidad & Tobago,Mannie Ramjohn Stadium,Williams Connection,"Marabella , Trinidad",10000,2001,,,10.303371,61.441673,mannie-ramjohn-stadium-5625937.jpg
-Trinidad & Tobago,Hasely Crawford Stadium,Defence Force,"Port of Spain , Trinidad and Tobago",22575,1982,,,10.6615222,61.5330333,hasely-crawford-stadium-5625933.jpg
+Tonga,Teufaiva Sport Stadium,,"Nuku'Alofa , Tonga",10000,,,,-21.14139,-175.207389,teufaiva-sport-stadium-148956.jpg
+Trinidad & Tobago,Ato Boldon Stadium,Central FC (TRI),"Couva , Trinidad and Tobago",10000,2001,,,10.424717,-61.417185,ato-boldon-stadium-791159.jpg
+Trinidad & Tobago,Mannie Ramjohn Stadium,Williams Connection,"Marabella , Trinidad and Tobago",10000,2001,,,10.303371,-61.441673,mannie-ramjohn-stadium-5625937.jpg
+Trinidad & Tobago,Hasely Crawford Stadium,Defence Force,"Port of Spain , Trinidad and Tobago",22575,1982,,,10.6615222,-61.5330333,hasely-crawford-stadium-5625933.jpg
 Tunisia,Stade Taïeb Mhiri,Club Sportif Sfaxien,"Sfax , Tunisia",12600,1938,,,34.73361,10.74639,stade-taieb-mhiri-5390000.jpg
 Tunisia,Stade Olympique,Espérance Sportive de Tunis,"Radès , Tunisia",65000,2001,,,36.74778,10.27278,stade-olympique-7601512.jpg
 Tunisia,Stade du 15 octobre,Club Athlétique Bizertin,"Bizerte , Tunisia",20000,1990,,,37.278923,9.865583,stade-du-15-octobre-5390007.jpg
@@ -1722,38 +1722,38 @@ UAE,Hazza Bin Zayed Stadium,Al-Ain Football Club,"Al-Ain , United Arab Emirates"
 UAE,Baniyas Club Stadium,Baniyas Sports Club,"Abu Dhabi , United Arab Emirates",6927,2010,,,24.34986,54.68571,baniyas-club-stadium-135437.jpg
 UAE,The Sevens,,"Dubai , United Arab Emirates",44000,2008,,,24.99575,55.467833,the-sevens-23237498.jpg
 UAE,Rashid Al-Maktoum Stadium,Al-Nasr Sports Club,"Dubai , United Arab Emirates",15058,1981,,,25.24,55.31306,rashid-al-maktoum-stadium-135440.jpg
-USA,Louisville Slugger Field,,"Louisville, Kentucky , United States",13131,2000,,,38.2561861,85.7446528,louisville-slugger-field-20033616.jpg
-USA,Shell Energy Stadium,Houston Dynamo FC,"Houston, Texas , United States",20656,2012,,,29.7522,95.3524,shell-energy-stadium-72036654.jpg
-USA,Dignity Health Sports Park Track & Field Complex,LA Galaxy II,"Carson, California , United States",27000,2003,,,33.864,118.261,dignity-health-sports-park-track-field-complex-20047170.jpg
-USA,Lower.com Field,Columbus Crew,"Columbus, Ohio , United States",20371,2021,,,39.9684611,83.0170889,lowercom-field-29144036.jpg
-USA,MSU Soccer Park at Pittser Field,New York Red Bulls Academy,"New York City, New York , United States",5000,2005,,,40.7933056,73.9253417,msu-soccer-park-at-pittser-field-72036939.jpg
-USA,Yankee Stadium,New York City FC,"New York City, New York , United States",46537,2009,,,40.82917,73.92639,yankee-stadium-72041886.jpg
-USA,H-E-B Park,Rio Grande Valley Toros,"Edinburg, Texas , United States",12000,2017,,,26.2826,98.1352,h-e-b-park-20041621.jpg
-USA,Soldier Field,Chicago Fire FC,"Chicago, Illinois , United States",66944,1924,,2002,41.8623,87.6167,soldier-field-72018533.jpg
-USA,Phoenix Rising Soccer Complex at Wild Horse Pass,Phoenix Rising FC,"Phoenix, Arizona , United States",10000,2023,,,33.44528,112.00194,phoenix-rising-soccer-complex-at-wild-horse-pass-20044949.jpg
-USA,Heart Health Park,Sacramento Republic FC,"Sacramento, California , United States",11569,2014,,,38.59111,121.43806,heart-health-park-20030375.jpg
-USA,Allianz Field,Minnesota United FC,"Saint Paul , Minnesota , United States",19400,2019,,,44.953111,93.164722,allianz-field-72047537.jpg
-USA,Mercedes-Benz Stadium,Atlanta United FC,"Atlanta, Georgia , United States",71000,2017,,,33.75556,84.4,mercedes-benz-stadium-72047297.jpg
-USA,BMO Stadium,Los Angeles Football Club Academy,"Los Angeles, California , United States",22000,2018,,,34.012778,118.284083,bmo-stadium-72049314.jpg
-USA,Dignity Health Sports Park,LA Galaxy,"Carson, California , United States",27000,2003,,,33.864,118.261,dignity-health-sports-park-72040432.jpg
-USA,WakeMed Soccer Park,North Carolina FC,"Cary, North Carolina , United States",10000,2002,,,35.7861639,78.7551056,wakemed-soccer-park-72018532.jpg
-USA,Toyota Field of San Antonio,San Antonio FC,"San Antonio , Texas , United States",8296,2013,,,29.5389083,98.3946167,toyota-field-of-san-antonio-20029837.jpg
-USA,Cashman Field,Las Vegas Lights,"Las Vegas , Nevada , United States",9334,1983,,,36.179667,115.129972,cashman-field-20047169.jpg
-USA,Highmark Stadium,Pittsburgh Riverhounds,"Pittsburgh, Pennsylvania , United States",3500,2013,,,40.43611,80.00944,highmark-stadium-20031716.jpg
-USA,Toyota Stadium,FC Dallas,"Frisco, Texas , United States",11000,2005,,,33.15444,96.83528,toyota-stadium-979452.jpg
-USA,Al Lang Stadium,Tampa Bay Rowdies,"St. Petersburg, Florida , United States",7227,1947,,,27.7681,82.6331,al-lang-stadium-20015163.jpg
-USA,Inter&Co Stadium,Orlando City SC,"Orlando, Florida , United States",25500,2017,,,28.5411,81.3893,inter-co-stadium-72042162.jpg
-USA,Dick's Sporting Goods Park,Colorado Rapids,"Commerce City, Colorado , United States",18061,2007,,,39.80556,104.89194,dicks-sporting-goods-park-981291.jpg
-USA,Gillette Stadium,New England Revolution,"Foxborough, Massachusetts , United States",64628,2002,,,42.091,71.264,gillette-stadium-978163.jpg
-USA,PayPal Park,San Jose Earthquakes,"San Jose, California , United States",18000,2015,,,37.35139,121.925,paypal-park-72013735.jpg
-USA,TQL Stadium,FC Cincinnati,"Cincinnati, Ohio , United States",26000,2021,,,39.11139,84.52222,tql-stadium-29219876.jpg
-USA,Bank of America Stadium,Charlotte Football Club,"Charlotte, North Carolina , United States",74867,1996,,,35.22583,80.85278,bank-of-america-stadium-20032542.jpg
-USA,Providence Park,Portland Timbers,"Portland, Oregon , United States",25218,1926,,,45.52139,122.69167,providence-park-976182.jpg
-USA,City Stadium,Richmond Kickers,"Richmond, Virginia , United States",22611,1929,,,37.549697,77.486781,city-stadium-1413.jpg
-USA,Historic Crew Stadium,Columbus Crew 2,"Columbus, Ohio , United States",22555,1999,,,40.00944,82.99111,historic-crew-stadium-6800066.jpg
-USA,Audi Field,D.C. United,"Washington, D.C. , United States",20000,2018,,,38.868411,77.012869,audi-field-29144034.jpg
-USA,America First Field,Real Salt Lake,"Sandy, Utah , United States",20213,2008,,,40.5829,111.8934,america-first-field-72003128.jpg
-USA,Subaru Park,Philadelphia Union,"Chester, Pennsylvania , United States",18500,2010,,,39.83222,75.37889,subaru-park-72020972.jpg
+USA,Louisville Slugger Field,,"Louisville, Kentucky , United States",13131,2000,,,38.2561861,-85.7446528,louisville-slugger-field-20033616.jpg
+USA,Shell Energy Stadium,Houston Dynamo FC,"Houston, Texas , United States",20656,2012,,,29.7522,-95.3524,shell-energy-stadium-72036654.jpg
+USA,Dignity Health Sports Park Track & Field Complex,LA Galaxy II,"Carson, California , United States",27000,2003,,,33.864,-118.261,dignity-health-sports-park-track-field-complex-20047170.jpg
+USA,Lower.com Field,Columbus Crew,"Columbus, Ohio , United States",20371,2021,,,39.9684611,-83.0170889,lowercom-field-29144036.jpg
+USA,MSU Soccer Park at Pittser Field,New York Red Bulls Academy,"New York City, New York , United States",5000,2005,,,40.7933056,-73.9253417,msu-soccer-park-at-pittser-field-72036939.jpg
+USA,Yankee Stadium,New York City FC,"New York City, New York , United States",46537,2009,,,40.82917,-73.92639,yankee-stadium-72041886.jpg
+USA,H-E-B Park,Rio Grande Valley Toros,"Edinburg, Texas , United States",12000,2017,,,26.2826,-98.1352,h-e-b-park-20041621.jpg
+USA,Soldier Field,Chicago Fire FC,"Chicago, Illinois , United States",66944,1924,,2002,41.8623,-87.6167,soldier-field-72018533.jpg
+USA,Phoenix Rising Soccer Complex at Wild Horse Pass,Phoenix Rising FC,"Phoenix, Arizona , United States",10000,2023,,,33.44528,-112.00194,phoenix-rising-soccer-complex-at-wild-horse-pass-20044949.jpg
+USA,Heart Health Park,Sacramento Republic FC,"Sacramento, California , United States",11569,2014,,,38.59111,-121.43806,heart-health-park-20030375.jpg
+USA,Allianz Field,Minnesota United FC,"Saint Paul , Minnesota , United States",19400,2019,,,44.953111,-93.164722,allianz-field-72047537.jpg
+USA,Mercedes-Benz Stadium,Atlanta United FC,"Atlanta, Georgia , United States",71000,2017,,,33.75556,-84.4,mercedes-benz-stadium-72047297.jpg
+USA,BMO Stadium,Los Angeles Football Club Academy,"Los Angeles, California , United States",22000,2018,,,34.012778,-118.284083,bmo-stadium-72049314.jpg
+USA,Dignity Health Sports Park,LA Galaxy,"Carson, California , United States",27000,2003,,,33.864,-118.261,dignity-health-sports-park-72040432.jpg
+USA,WakeMed Soccer Park,North Carolina FC,"Cary, North Carolina , United States",10000,2002,,,35.7861639,-78.7551056,wakemed-soccer-park-72018532.jpg
+USA,Toyota Field of San Antonio,San Antonio FC,"San Antonio , Texas , United States",8296,2013,,,29.5389083,-98.3946167,toyota-field-of-san-antonio-20029837.jpg
+USA,Cashman Field,Las Vegas Lights,"Las Vegas , Nevada , United States",9334,1983,,,36.179667,-115.129972,cashman-field-20047169.jpg
+USA,Highmark Stadium,Pittsburgh Riverhounds,"Pittsburgh, Pennsylvania , United States",3500,2013,,,40.43611,-80.00944,highmark-stadium-20031716.jpg
+USA,Toyota Stadium,FC Dallas,"Frisco, Texas , United States",11000,2005,,,33.15444,-96.83528,toyota-stadium-979452.jpg
+USA,Al Lang Stadium,Tampa Bay Rowdies,"St. Petersburg, Florida , United States",7227,1947,,,27.7681,-82.6331,al-lang-stadium-20015163.jpg
+USA,Inter&Co Stadium,Orlando City SC,"Orlando, Florida , United States",25500,2017,,,28.5411,-81.3893,inter-co-stadium-72042162.jpg
+USA,Dick's Sporting Goods Park,Colorado Rapids,"Commerce City, Colorado , United States",18061,2007,,,39.80556,-104.89194,dicks-sporting-goods-park-981291.jpg
+USA,Gillette Stadium,New England Revolution,"Foxborough, Massachusetts , United States",64628,2002,,,42.091,-71.264,gillette-stadium-978163.jpg
+USA,PayPal Park,San Jose Earthquakes,"San Jose, California , United States",18000,2015,,,37.35139,-121.925,paypal-park-72013735.jpg
+USA,TQL Stadium,FC Cincinnati,"Cincinnati, Ohio , United States",26000,2021,,,39.11139,-84.52222,tql-stadium-29219876.jpg
+USA,Bank of America Stadium,Charlotte Football Club,"Charlotte, North Carolina , United States",74867,1996,,,35.22583,-80.85278,bank-of-america-stadium-20032542.jpg
+USA,Providence Park,Portland Timbers,"Portland, Oregon , United States",25218,1926,,,45.52139,-122.69167,providence-park-976182.jpg
+USA,City Stadium,Richmond Kickers,"Richmond, Virginia , United States",22611,1929,,,37.549697,-77.486781,city-stadium-1413.jpg
+USA,Historic Crew Stadium,Columbus Crew 2,"Columbus, Ohio , United States",22555,1999,,,40.00944,-82.99111,historic-crew-stadium-6800066.jpg
+USA,Audi Field,D.C. United,"Washington, D.C. , United States",20000,2018,,,38.868411,-77.012869,audi-field-29144034.jpg
+USA,America First Field,Real Salt Lake,"Sandy, Utah , United States",20213,2008,,,40.5829,-111.8934,america-first-field-72003128.jpg
+USA,Subaru Park,Philadelphia Union,"Chester, Pennsylvania , United States",18500,2010,,,39.83222,-75.37889,subaru-park-72020972.jpg
 Uruguay,Monumental Luis Tróccoli,Club Atlético Cerro,"Montevideo , Uruguay",25000,1964,,,34.867386,56.251969,monumental-luis-troccoli-104437.jpg
 Uruguay,Parque Capurro,Centro Atlético Fénix,"Montevideo , Uruguay",10000,,,,34.87338,56.212358,parque-capurro-5512763.jpg
 Uruguay,Estadio Ing. Agr. Raúl Saturnino Goyenola,Tacuarembó Fútbol Club,"Tacuarembó , Uruguay",12000,1955,,,31.71194,55.99194,estadio-ing-agr-raul-saturnino-goyenola-308165.jpg
@@ -1781,16 +1781,16 @@ USA,Lumen Field,Seattle Sounders (USL),"Seattle, Washington , United States",687
 Uzbekistan,Qarshi Markaziy,Nasaf Qarshi,"Qarshi , Uzbekistan",21000,2006,,,38.83833,65.81361,qarshi-markaziy-1046335.jpg
 Uzbekistan,Lokomotiv Stadioni,Lokomotiv Toshkent,"Tashkent, Uzbekistan",8000,2012,,,41.36111,69.395,lokomotiv-stadioni-23063412.jpg
 Uzbekistan,Milliy Stadioni,Bunyodkor Toshkent,"Tashkent , Uzbekistan",34800,2012,,,41.27972,69.2125,milliy-stadioni-59092517.jpg
-Venezuela,Metropolitano de Lara,Asociación Civil Deportivo Lara,"Cabudare , Venezuela",47913,2007,,,9.9935444,69.2198583,metropolitano-de-lara-19018838.jpg
-Venezuela,José Encarnación 'Pachencho' Romero,Zulianos,"Maracaibo , Venezuela",40800,1971,,,10.6741139,71.6450111,jose-encarnacion-pachencho-romero-308171.jpg
-Venezuela,Olímpico José Antonio Anzoátegui,Deportivo Anzoátegui S.C.,"Puerto la Cruz , Venezuela",37485,1965,,,10.1800833,64.6561167,olimpico-jose-antonio-anzoategui-86005797.jpg
-Venezuela,Polideportivo de Pueblo Nuevo,Deportivo Táchira F.C.,"San Cristóbal, Venezuela",38755,1976,,,7.78639,72.19778,polideportivo-de-pueblo-nuevo-308169.jpg
-Venezuela,CTE Cachamay,Minervén S.C.,"Ciudad Guayana , Venezuela",41600,1980,,,8.3125,62.69667,cte-cachamay-109197.jpg
-Venezuela,Agustín Tovar,Zamora Fútbol Club,"Barinas , Venezuela",24234,2007,,,8.62443,70.207401,agustin-tovar-76003518.jpg
-Venezuela,Cocodrilos Sports Park,Caracas Fútbol Club B,"Caracas , Venezuela",3500,2005,,,10.4741833,66.9390639,cocodrilos-sports-park-86005812.jpg
-Venezuela,Florentino Oropeza,Yaracuyanos F.C.,"San Felipe , Venezuela",10000,1997,,,10.333,68.756167,florentino-oropeza-86005821.jpg
-Venezuela,Monumental de Maturín,Monagas Sport Club,"Maturín , Venezuela",52000,2007,,,9.70993334182079,63.2677446053749,monumental-de-maturin-19018836.jpg
-Wales,Cardiff City Stadium,Cardiff City,"Cardiff , Wales",33280,2009,,,51.4727806,3.2030611,cardiff-city-stadium-5005130.jpg
-Zambia,Independence Stadium,Kafue Celtic FC,"Lusaka , Zambia",30000,1964,,,15.3710639,28.2696306,independence-stadium-103104.jpg
+Venezuela,Metropolitano de Lara,Asociación Civil Deportivo Lara,"Cabudare , Venezuela",47913,2007,,,9.9935444,-69.2198583,metropolitano-de-lara-19018838.jpg
+Venezuela,José Encarnación 'Pachencho' Romero,Zulianos,"Maracaibo , Venezuela",40800,1971,,,10.6741139,-71.6450111,jose-encarnacion-pachencho-romero-308171.jpg
+Venezuela,Olímpico José Antonio Anzoátegui,Deportivo Anzoátegui S.C.,"Puerto la Cruz , Venezuela",37485,1965,,,10.1800833,-64.6561167,olimpico-jose-antonio-anzoategui-86005797.jpg
+Venezuela,Polideportivo de Pueblo Nuevo,Deportivo Táchira F.C.,"San Cristóbal, Venezuela",38755,1976,,,7.78639,-72.19778,polideportivo-de-pueblo-nuevo-308169.jpg
+Venezuela,CTE Cachamay,Minervén S.C.,"Ciudad Guayana , Venezuela",41600,1980,,,8.3125,-62.69667,cte-cachamay-109197.jpg
+Venezuela,Agustín Tovar,Zamora Fútbol Club,"Barinas , Venezuela",24234,2007,,,8.62443,-70.207401,agustin-tovar-76003518.jpg
+Venezuela,Cocodrilos Sports Park,Caracas Fútbol Club B,"Caracas , Venezuela",3500,2005,,,10.4741833,-66.9390639,cocodrilos-sports-park-86005812.jpg
+Venezuela,Florentino Oropeza,Yaracuyanos F.C.,"San Felipe , Venezuela",10000,1997,,,10.333,-68.756167,florentino-oropeza-86005821.jpg
+Venezuela,Monumental de Maturín,Monagas Sport Club,"Maturín , Venezuela",52000,2007,,,9.70993334182079,-63.2677446053749,monumental-de-maturin-19018836.jpg
+Wales,Cardiff City Stadium,Cardiff City,"Cardiff , Wales",33280,2009,,,51.4727806,-3.2030611,cardiff-city-stadium-5005130.jpg
+Zambia,Independence Stadium,Kafue Celtic FC,"Lusaka , Zambia",30000,1964,,,-15.3710639,28.2696306,independence-stadium-103104.jpg
 Zambia,Nchanga Stadium,Nchanga Rangers FC,"Chingola, Zambia",20000,,,,-12.5244,27.8636,nchanga-stadium-23017700.jpg
-Zambia,National Heroes Stadium,NAPSA Stars FC,"Lusaka , Zambia",60000,2014,,,15.369507,28.272641,national-heroes-stadium-13112647.jpg
+Zambia,National Heroes Stadium,NAPSA Stars FC,"Lusaka , Zambia",60000,2014,,,-15.369507,28.272641,national-heroes-stadium-13112647.jpg

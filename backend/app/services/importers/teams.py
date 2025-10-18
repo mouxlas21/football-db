@@ -88,6 +88,7 @@ class TeamsImporter(BaseImporter):
                     setattr(existing, f, v)
                     changed = True
             if changed:
+                existing.updated_at = func.now()
                 db.flush()
             # return False to indicate we didn't INSERT (same as your original pattern)
             return False

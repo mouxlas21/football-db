@@ -194,8 +194,8 @@ AFC,Myanmar,Myanmar National League,league,1st-tier,,Men,Senior,,,myanmar_myanma
 AFC,Myanmar,MNL-2,league,2nd-tier,,Men,Senior,,,myanmar_mnl_2.png
 AFC,Nepal,A Division League,league,1st-tier,,Men,Senior,,,nepal_a_division_league.png
 AFC,Nepal,B Division League,league,2nd-tier,,Men,Senior,,,nepal_b_division_league.png
-AFC,Northern Mariana Islands,M-League Division 1,league,1st-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_1.png
-AFC,Northern Mariana Islands,M-League Division 2,league,2nd-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_2.png
+AFC,Northern Mariana,M-League Division 1,league,1st-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_1.png
+AFC,Northern Mariana,M-League Division 2,league,2nd-tier,,Men,Senior,,,northern_mariana_islands_m_league_division_2.png
 AFC,Oman,Omantel Professional League,league,1st-tier,,Men,Senior,,,oman_omantel_professional_league.png
 AFC,Oman,Omani First Division League,league,2nd-tier,,Men,Senior,,,oman_omani_first_division_league.png
 AFC,Oman,Omani Second Division League,league,3rd-tier,,Men,Senior,,,oman_omani_second_division_league.png
@@ -259,7 +259,7 @@ CAF,Ivory Coast,Coupe Nationale,cup,,National Cup,Men,Senior,,,cote_divoire_coup
 CAF,Egypt,Egypt Cup,cup,,National Cup,Men,Senior,,,egypt_egypt_cup.png
 CAF,Ethiopia,EFF Cup,cup,,National Cup,Men,Senior,,,ethiopia_eff_cup.png
 CAF,Ethiopia,EFF U-17 Cup,cup,,National Cup,Men,Senior,,,ethiopia_eff_u_17_cup.png
-CAF,Gambia,FA Cup,cup,,National Cup,Men,Senior,,,gambia_fa_cup.png
+CAF,The Gambia,FA Cup,cup,,National Cup,Men,Senior,,,gambia_fa_cup.png
 CAF,Kenya,FKF President's Cup,cup,,National Cup,Men,Senior,,,kenya_fkf_president_s_cup.png
 CAF,Lesotho,Independence Cup,cup,,National Cup,Men,Senior,,,lesotho_independence_cup.png
 CAF,Madagascar,Coupe de Madagascar,cup,,National Cup,Men,Senior,,,madagascar_coupe_de_madagascar.png
@@ -307,7 +307,7 @@ CAF,Cameroon,Trophée des Champions,cup,,Super Cup,Men,Senior,,,cameroon_trophee
 CAF,Cameroon,Trophée des Championnes,cup,,Super Cup,Women,Senior,,,cameroon_trophee_des_championnes.png
 CAF,Ivory Coast,Super Coupe,cup,,Super Cup,Men,Senior,,,cote_divoire_super_coupe.png
 CAF,Egypt,Egypt Super Cup,cup,,Super Cup,Men,Senior,,,egypt_egypt_super_cup.png
-CAF,Gambia,Super Cup,cup,,Super Cup,Men,Senior,,,gambia_super_cup.png
+CAF,The Gambia,Super Cup,cup,,Super Cup,Men,Senior,,,gambia_super_cup.png
 CAF,Kenya,Super Cup,super_cup,,Super Cup,Men,Senior,,,kenya_super_cup.png
 CAF,Liberia,Super Cup,cup,,Super Cup,Men,Senior,,,liberia_super_cup.png
 CAF,Madagascar,Supercoupe de Madagascar,cup,,Super Cup,Men,Senior,,,madagascar_supercoupe_de_madagascar.png
@@ -365,9 +365,9 @@ CAF,Ethiopia,Women Premier League,league,,,Women,Senior,,,ethiopia_women_premier
 CAF,Ethiopia,Women Higher League,league,,,Women,Senior,,,ethiopia_women_higher_league.png
 CAF,Gabon,National Foot 1,league,1st-tier,,Men,Senior,,,gabon_national_foot_1.png
 CAF,Gabon,National Foot 2,league,2nd-tier,,Men,Senior,,,gabon_national_foot_2.png
-CAF,Gambia,GFA First Division,league,1st-tier,,Men,Senior,,,gambia_gfa_first_division.png
-CAF,Gambia,GFF National League Div 2,league,2nd-tier,,Men,Senior,,,gambia_gff_national_league_div_2.png
-CAF,Gambia,National Women League,league,1st-tier,,Women,Senior,,,gambia_national_women_league.png
+CAF,The Gambia,GFA First Division,league,1st-tier,,Men,Senior,,,gambia_gfa_first_division.png
+CAF,The Gambia,GFF National League Div 2,league,2nd-tier,,Men,Senior,,,gambia_gff_national_league_div_2.png
+CAF,The Gambia,National Women League,league,1st-tier,,Women,Senior,,,gambia_national_women_league.png
 CAF,Kenya,Kenya Premier League,league,1st-tier,,Men,Senior,,,kenya_kenya_premier_league.png
 CAF,Kenya,National Super League,league,2nd-tier,,Men,Senior,,,kenya_national_super_league.png
 CAF,Kenya,KPL U20 Championship,league,1st-tier,,Men,Youth,,,kenya_kpl_u20_championship.png

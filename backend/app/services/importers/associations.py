@@ -1,10 +1,12 @@
 from typing import Dict, Any, Tuple
 from sqlalchemy.orm import Session
-from sqlalchemy import select, func
+from sqlalchemy import select, func, delete
 from sqlalchemy.dialects.postgresql import insert
 from .base import BaseImporter
-from app.models import Association
+from app.models import Association, association_parent
 from .utils.helpers import _to_int
+
+import json, re
 
 class AssociationsImporter(BaseImporter):
     entity = "associations"
@@ -44,45 +46,73 @@ class AssociationsImporter(BaseImporter):
             return row.ass_id
 
         return None
+    
+    def _split_tokens(self, val) -> list[str]:
+        if not val:
+            return []
+        s = str(val).strip()
+        # JSON array first
+        if s.startswith("[") and s.endswith("]"):
+            try:
+                data = json.loads(s)
+                if isinstance(data, list):
+                    return [str(x) for x in data]
+            except Exception:
+                pass
+        # Fallback: comma / semicolon
+        return [t.strip() for t in re.split(r"[;,]", s) if t.strip()]
+
 
     def parse_row(self, raw: Dict[str, Any], db: Session) -> Tuple[bool, Dict[str, Any]]:
         code = (raw.pop("code", None) or "").strip().upper()
         name = (raw.pop("name", None) or "").strip()
-        level = (raw.pop("level", None) or "").strip().lower()  # 'federation'|'confederation'|'association'|'league_body'
+        level = (raw.pop("level", None) or "").strip().lower()
+        level = level.replace("-", "_")
 
-        if not code or not name or level not in {"federation", "confederation", "association", "league_body"}:
+        allowed = {"federation","confederation","sub_confederation","association","league_body"}
+        if not code or not name or level not in allowed:
             return False, {}
 
-        # Accept parent_org_id as:
-        #  - numeric id (e.g., 1)
-        #  - association code (e.g., 'FIFA', 'UEFA')
-        #  - association name (case-insensitive full match)
-        parent_token = raw.pop("parent_org_id", None)
-        parent_org_id = self._resolve_parent_id(parent_token, db)
-
-        # logo filename (single, used for base/small/big in templates)
         logo_filename = (raw.pop("logo_filename", None) or raw.pop("logo", None) or None)
         if logo_filename:
             logo_filename = logo_filename.strip() or None
+
+        # Accept multiple parents via 'parents' | 'parent_org_id' | 'parent'
+        parents_raw = raw.pop("parents", None) or raw.pop("parent_org_id", None) or raw.pop("parent", None)
+        parent_tokens = self._split_tokens(parents_raw)
+        parent_ids = [pid for tok in parent_tokens if (pid := self._resolve_parent_id(tok, db))]
 
         return True, {
             "code": code,
             "name": name,
             "level": level,
-            "parent_org_id": parent_org_id,
             "logo_filename": logo_filename,
+            "_parent_ids": parent_ids,   # handled in upsert
         }
 
     def upsert(self, kwargs: Dict[str, Any], db: Session) -> bool:
-        # code is unique
+        parent_ids = kwargs.pop("_parent_ids", [])
+
+        # Upsert association by unique code
         stmt = insert(Association).values(**kwargs).on_conflict_do_update(
             index_elements=["code"],
             set_={
                 "name": kwargs["name"],
                 "level": kwargs["level"],
-                "parent_org_id": kwargs["parent_org_id"],
                 "logo_filename": kwargs.get("logo_filename"),
+                "updated_at": func.now(),
             },
         )
-        res = db.execute(stmt)
-        return bool(getattr(res, "rowcount", 0))
+        db.execute(stmt)
+
+        # Fetch ass_id after upsert
+        ass_id = db.execute(select(Association.ass_id).where(Association.code == kwargs["code"])).scalar_one()
+
+        # Replace parent links atomically: delete then insert unique set
+        db.execute(delete(association_parent).where(association_parent.c.ass_id == ass_id))
+        if parent_ids:
+            rows = [{"ass_id": ass_id, "parent_ass_id": pid} for pid in sorted(set(parent_ids))]
+            db.execute(association_parent.insert(), rows)
+
+        return True
+
