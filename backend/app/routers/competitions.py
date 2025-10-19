@@ -6,6 +6,8 @@ from sqlalchemy import select
 from ..db import get_db
 from ..models import Competition, Country, Association, Season
 from ..core.templates import templates
+from ..utils.comp_sort import international_sort_key, _gender_priority, _age_priority, _domestic_bucket, _type_priority, _league_metric, _cup_metric
+
 import unicodedata, re
 
 router = APIRouter(prefix="/competitions", tags=["competitions"])
@@ -120,77 +122,11 @@ def _country_flag_url(country_obj: Optional[Country]) -> Optional[str]:
         return f"/static/images/competitions/countries/{slug}/thumbs/{slug}.png"
     return None
 
-# ---------- sorting utilities ----------
-_CUP_ORDER = {
-    "national cup": 0,
-    "league cup": 1,
-    "super cup": 2,
-    "domestic cup": 3,
-    "state cup": 4,
-    "amateur cup": 5,
-    "commemorative": 6,
-}
-def _cup_rank_priority(s: Optional[str]) -> int:
-    return _CUP_ORDER.get((s or "").strip().lower(), 999)
-
-def _gender_priority(s: Optional[str]) -> int:
-    v = (s or "").strip().lower()
-    if v in ("m", "men", "male"): return 0
-    if v in ("w", "women", "female"): return 1
-    return 2
-
-def _age_priority(s: Optional[str]) -> int:
-    v = (s or "").strip().lower()
-    if v in ("senior", "open"): return 0
-    if v in ("youth", "u23", "u21", "u20", "u19", "u18", "u17", "u16", "u15"): return 1
-    return 2
-
-def _type_priority(t: Optional[str]) -> int:
-    v = (t or "").strip().lower()
-    if v == "league": return 0
-    if v == "cup": return 1
-    return 2  # qualifiers/other
-
-def _domestic_bucket(x: Dict[str, Any]) -> int:
-    """
-    0 = Clubs, 1 = National Teams, 2 = Qualifiers
-    Clubs if cup_rank says clubs/club OR type == league.
-    National Teams if cup_rank says NT.
-    Qualifiers if type is qualifier(s)/qualification.
-    """
-    t = (x.get("type") or "").strip().lower()
-    cr = (x.get("cup_rank") or "").strip().lower()
-    if t in ("qualifier", "qualifiers", "qualification"):
-        return 2
-    if cr in ("national teams", "national_team", "national-teams", "nt"):
-        return 1
-    if cr in ("clubs", "club") or t == "league":
-        return 0
-    return 0
-
-def _league_metric(x: Dict[str, Any]) -> int:
-    try:
-        return int(x.get("tier")) if x.get("tier") is not None else 9999
-    except Exception:
-        return 9999
-
-def _cup_metric(x: Dict[str, Any]) -> int:
-    return _cup_rank_priority(x.get("cup_rank"))
-
 def _domestic_sort_key(x: Dict[str, Any]):
     # men→women→unknown; within each: senior→youth→unknown
     gpri = _gender_priority(x.get("gender"))
     apri = _age_priority(x.get("age_group"))
     bucket = _domestic_bucket(x)
-    tpri = _type_priority(x.get("type"))
-    metric = _league_metric(x) if (x.get("type") or "").lower() == "league" else (_cup_metric(x) if (x.get("type") or "").lower() == "cup" else 9999)
-    return (gpri, apri, bucket, tpri, metric, x.get("name") or "")
-
-# *** NEW: International sort matches the domestic logic ***
-def _international_sort_key(x: Dict[str, Any]):
-    gpri = _gender_priority(x.get("gender"))
-    apri = _age_priority(x.get("age_group"))
-    bucket = _domestic_bucket(x)   # same bucket logic works for internationals
     tpri = _type_priority(x.get("type"))
     metric = _league_metric(x) if (x.get("type") or "").lower() == "league" else (_cup_metric(x) if (x.get("type") or "").lower() == "cup" else 9999)
     return (gpri, apri, bucket, tpri, metric, x.get("name") or "")
@@ -264,7 +200,7 @@ def competitions_page(request: Request, db: Session = Depends(get_db)):
     # sort
     for fg in fed_groups.values():
         # International now has the same priority stack as domestic
-        fg["international"].sort(key=_international_sort_key)
+        fg["international"].sort(key=international_sort_key)
 
         domestic = list(fg["domestic_by_country"].values())
         for grp in domestic:

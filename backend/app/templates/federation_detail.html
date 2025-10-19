@@ -5,9 +5,43 @@
   <title>{{ a.code }} — {{ a.name }} — Football Database</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link href="/static/css/main.css" rel="stylesheet"/>
+
   <style>
-    .grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
-    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .layout-grid { 
+      display:grid; 
+      gap:1rem; 
+      grid-template-columns: 1fr; 
+    }
+    .card-grid{
+      display:grid;
+      gap:.75rem;
+      grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    }
+    .card-item {
+      border:1px solid #eee;
+      border-radius:10px;
+      background:#fff;
+      padding:.6rem;
+      display:block;
+      color:inherit;
+      text-decoration:none;
+    }
+    .thumb {
+      height:100px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#fafafa;
+      border:1px dashed #eee;
+      border-radius:8px;
+      margin-bottom:.5rem;
+    }
+    .thumb img {
+      max-height:100%;
+      max-width:100%;
+      object-fit:contain;
+    }
+    @media (min-width: 900px) { .layout-grid { grid-template-columns: 1fr 1fr; } }
     .card { border:1px solid #e5e7eb; border-radius:12px; padding:1rem; background:#fff; }
     .card h3 { margin:.25rem 0 .75rem; }
     .muted { color:#6b7280; }
@@ -18,7 +52,14 @@
     nav a { margin-left:.6rem; }
 
     /* header row */
-    .header-flex { display:flex; justify-content:space-between; align-items:flex-start; gap:1rem; }
+    .header-flex { position: relative; }
+    .header-flex > h1 {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+      text-align: center;
+    }
     .logo img { display:block; height:auto; max-height:none; } /* natural size */
     .logo { line-height:0; } /* remove inline gap */
 
@@ -33,20 +74,12 @@
     .members-list li a { text-decoration:none; color:#111; }
     .members-list li a:hover { text-decoration:underline; }
   </style>
+
 </head>
 <body>
   <main class="container" style="padding:1rem; max-width:1000px;">
     <header class="card header-flex">
-      <div>
-        <h1 style="margin:0 0 .25rem">{{ a.code }} — {{ a.name }}</h1>
-        <p class="muted" style="margin:.25rem 0 0">
-          {% if parent %}
-            Parent: <a href="/associations/{{ parent.ass_id }}">{{ parent.code }}</a>
-          {% else %}
-            Parent: —
-          {% endif %}
-        </p>
-      </div>
+      <h1 style="margin:0;">{{ a.name }}</h1>
 
       {% if a.logo_filename %}
         <div class="logo">
@@ -60,89 +93,114 @@
       </nav>
     </header>
 
-    <section class="grid" style="margin-top:1rem">
+    <section class="layout-grid" style="margin-top:1rem">
       <div class="card">
         <h3>About</h3>
-        <p><strong>Code:</strong> {{ a.code }}</p>
         <p><strong>Name:</strong> {{ a.name }}</p>
+        <p><strong>Code:</strong> {{ a.code }}</p>
+
+        <div class="muted" style="margin:.25rem 0 0">
+          {% if parents and parents|length %}
+            Parent:
+            {% for p in parents %}
+              <a href="/confederations/{{ p.ass_id }}">{{ p.code }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          {% else %}
+            Parent: —
+          {% endif %}
+
+          {% if level == 'confederation' and sub_confeds and sub_confeds|length %}
+            <br>
+            Sub-confederations:
+            {% for sc in sub_confeds %}
+              <a href="/confederations/{{ sc.ass_id }}">{{ sc.code }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          {% endif %}
+        </div>
       </div>
 
       <div class="card">
         <h3>
-            {% if is_fifa %}Members (confederations){% else %}Members (countries){% endif %}
+          {% if level == 'federation' %}
+            Members (confederations)
+          {% else %}
+            Members (countries)
+          {% endif %}
         </h3>
 
-        {% if is_fifa %}
-            {% if children_confeds and children_confeds|length %}
-            <div class="members-box">
-                <ul class="members-list">
-                {% for assoc in children_confeds %}
-                    <li>
-                    {% if assoc.logo_filename %}
-                        <img src="/static/images/associations/{{ assoc.logo_filename }}" alt="{{ assoc.code }} logo" style="height:16px;">
-                    {% endif %}
-                    <a href="/confederations/{{ assoc.ass_id }}">{{ assoc.code }}</a> — {{ assoc.name }}
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-            {% else %}
+        {% if level == 'federation' %}
+          {% if children_confeds and children_confeds|length %}
+          <div class="members-box">
+            <ul class="members-list">
+              {% for assoc in children_confeds %}
+                <li>
+                  {% if assoc.logo_filename %}
+                    <img src="/static/images/associations/{{ assoc.logo_filename }}" alt="{{ assoc.code }} logo" style="height:16px;">
+                  {% endif %}
+                  <a href="/confederations/{{ assoc.ass_id }}">{{ assoc.code }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% else %}
             <p class="muted">No member confederations listed.</p>
-            {% endif %}
+          {% endif %}
+
         {% else %}
-            {% if (countries_active and countries_active|length) or (countries_former and countries_former|length) %}
+          {% if (countries_active and countries_active|length) or (countries_former and countries_former|length) %}
             <div class="members-box">
-                <ul class="members-list">
+              <ul class="members-list">
                 {% for c in countries_active %}
-                    <li>
+                  <li>
                     {% if c.flag_filename %}
-                        <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag">
+                      <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag">
                     {% endif %}
                     <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
-                    </li>
+                  </li>
                 {% endfor %}
-
                 {% if countries_former and countries_former|length %}
-                    <li class="separator" style="opacity:.8; padding-top:.4rem; margin-top:.4rem; border-top:1px dashed #ddd;">
+                  <li class="separator" style="opacity:.8; padding-top:.4rem; margin-top:.4rem; border-top:1px dashed #ddd;">
                     — former members —
-                    </li>
-                    {% for c in countries_former %}
+                  </li>
+                  {% for c in countries_former %}
                     <li>
-                        {% if c.flag_filename %}
+                      {% if c.flag_filename %}
                         <img src="{{ flag_url(c.flag_filename, 'main') }}" alt="{{ c.name }} flag">
-                        {% endif %}
-                        <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
+                      {% endif %}
+                      <a href="/countries/{{ c.country_id }}">{{ c.name }}</a>
                     </li>
-                    {% endfor %}
+                  {% endfor %}
                 {% endif %}
-                </ul>
+              </ul>
             </div>
-            {% else %}
+          {% else %}
             <p class="muted">No member countries listed.</p>
-            {% endif %}
+          {% endif %}
         {% endif %}
+
       </div>
-
-
+    </section>
 
     <section style="margin-top:1rem">
       <div class="card">
         <h3>Competitions organized by {{ a.code }}</h3>
-        {% set comps = (intl_club or []) + (intl_nat or []) %}
-        {% if comps and comps|length %}
-          <table class="clean">
-            <thead>
-              <tr><th>Competition</th><th>Type</th></tr>
-            </thead>
-            <tbody>
-              {% for c in comps %}
-                <tr>
-                  <td><a href="/competitions/{{ c.competition_id }}">{{ c.name }}</a></td>
-                  <td>{{ c.type }}</td>
-                </tr>
-              {% endfor %}
-            </tbody>
-          </table>
+        {% if intl_sorted and intl_sorted|length %}
+          <div class="card-grid">  <!-- was class="grid" -->
+            {% for c in intl_sorted %}
+              <a class="card-item" href="/competitions/{{ c.id }}">
+                <div class="thumb">
+                  {% if c.filename and c.image_base %}
+                    <img src="/static/images/competitions/{{ c.image_base }}/thumbs/{{ c.filename }}"
+                        alt="{{ c.name }}"
+                        onerror="this.onerror=null;this.src='/static/images/competitions/{{ c.image_base }}/{{ c.filename }}'">
+                  {% else %}
+                    <div class="muted">No image</div>
+                  {% endif %}
+                </div>
+                <div style="font-weight:600; text-align:center;">{{ c.name }}</div>
+              </a>
+            {% endfor %}
+          </div>
         {% else %}
           <p class="muted">No competitions listed.</p>
         {% endif %}

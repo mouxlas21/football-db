@@ -1,7 +1,7 @@
 name,confed_ass_id,fifa_code,flag_filename,status,nat_association,sub_confederation
 Afghanistan,AFC,AFG,afg.png,active,Afghanistan Football Federation,CAFA
 Albania,UEFA,ALB,alb.png,active,Albanian Football Association,
-Algeria,CAF,ALG,alg.png,active,Algerian Football Federation,UNAF
+Algeria,CAF,ALG,alg.png,active,Algerian Football Federation,"UNAF,UAFA"
 American Samoa,OFC,ASA,asa.png,active,Football Federation American Samoa,
 Andorra,UEFA,AND,and.png,active,Andorran Football Federation,
 Angola,CAF,ANG,ang.png,active,Angolan Football Federation,COSAFA
@@ -14,13 +14,13 @@ Australia,AFC,AUS,aus.png,active,Football Australia,AFF
 Austria,UEFA,AUT,aut.png,active,Austrian Football Association,
 Azerbaijan,UEFA,AZE,aze.png,active,Association of Football Federations of Azerbaijan,
 Bahamas,CONCACAF,BAH,bah.png,active,Bahamas Football Association,CFU
-Bahrain,AFC,BHR,bhr.png,active,Bahrain Football Association,WAFF
+Bahrain,AFC,BHR,bhr.png,active,Bahrain Football Association,"WAFF,UAFA"
 Bangladesh,AFC,BAN,ban.png,active,Bangladesh Football Federation,SAFF
 Barbados,CONCACAF,BRB,brb.png,active,Barbados Football Association,CFU
 Belarus,UEFA,BLR,blr.png,active,Football Federation of Belarus,
 Belgium,UEFA,BEL,bel.png,active,Royal Belgian Football Association,
 Belize,CONCACAF,BLZ,blz.png,active,Football Federation of Belize,UNCAF
-Benin,CAF,BEN,ben.png,active,Benin Football Federation,WAFU-UFOA
+Benin,CAF,BEN,ben.png,active,Benin Football Federation,WAFU
 Bermuda,CONCACAF,BER,ber.png,active,Bermuda Football Association,CFU
 Bhutan,AFC,BHU,bhu.png,active,Bhutan Football Federation,SAFF
 Bolivia,CONMEBOL,BOL,bol.png,active,Bolivian Football Federation,
@@ -31,12 +31,12 @@ Brazil,CONMEBOL,BRA,bra.png,active,Brazilian Football Confederation,
 British Virgin Islands,CONCACAF,VGB,vgb.png,active,British Virgin Islands Football Association,CFU
 Brunei,AFC,BRU,bru.png,active,Football Association of Brunei Darussalam,AFF
 Bulgaria,UEFA,BUL,bul.png,active,Bulgarian Football Union,
-Burkina Faso,CAF,BFA,bfa.png,active,Burkinabé Football Federation,WAFU-UFOA
+Burkina Faso,CAF,BFA,bfa.png,active,Burkinabé Football Federation,WAFU
 Burundi,CAF,BDI,bdi.png,active,Football Federation of Burundi,CECAFA
 Cambodia,AFC,CAM,cam.png,active,Football Federation of Cambodia,AFF
 Cameroon,CAF,CMR,cmr.png,active,Cameroonian Football Federation,UNIFFAC
 Canada,CONCACAF,CAN,can.png,active,Canadian Soccer Association,NAFU
-Cape Verde,CAF,CPV,cpv.png,active,Cape Verdean Football Federation,WAFU-UFOA
+Cape Verde,CAF,CPV,cpv.png,active,Cape Verdean Football Federation,WAFU
 Cayman Islands,CONCACAF,CAY,cay.png,active,Cayman Islands Football Association,CFU
 Central African Republic,CAF,CTA,cta.png,active,Central African Football Federation,UNIFFAC
 Chad,CAF,CHA,cha.png,active,Chadian Football Federation,UNIFFAC
@@ -44,7 +44,7 @@ Chile,CONMEBOL,CHI,chi.png,active,Football Federation of Chile,
 China PR,AFC,CHN,chn.png,active,Chinese Football Association,EAFF
 Chinese Taipei,AFC,TPE,tpe.png,active,Chinese Taipei Football Association,EAFF
 Colombia,CONMEBOL,COL,col.png,active,Colombian Football Federation,
-Comoros,CAF,COM,com.png,active,Comoros Football Federation,COSAFA
+Comoros,CAF,COM,com.png,active,Comoros Football Federation,"COSAFA,UAFA"
 Congo,CAF,CGO,cgo.png,active,Congolese Football Federation,UNIFFAC
 Cook Islands,OFC,COK,cok.png,active,Cook Islands Football Association,
 Costa Rica,CONCACAF,CRC,crc.png,active,Costa Rican Football Federation,UNCAF
@@ -55,12 +55,12 @@ Curaçao,CONCACAF,CUW,cuw.png,active,Curaçao Football Federation,CFU
 Cyprus,UEFA,CYP,cyp.png,active,Cyprus Football Association,
 Czechia,UEFA,CZE,cze.png,active,Football Association of the Czech Republic,
 Denmark,UEFA,DEN,den.png,active,Danish Football Association,
-Djibouti,CAF,DJI,dji.png,active,Djiboutian Football Federation,CECAFA
+Djibouti,CAF,DJI,dji.png,active,Djiboutian Football Federation,"CECAFA,UAFA"
 Dominica,CONCACAF,DMA,dma.png,active,Dominica Football Association,CFU
 Dominican Republic,CONCACAF,DOM,dom.png,active,Dominican Football Federation,CFU
 DR Congo,CAF,COD,cod.png,active,Congolese Association Football Federation,UNIFFAC
 Ecuador,CONMEBOL,ECU,ecu.png,active,Ecuadorian Football Federation,
-Egypt,CAF,EGY,egy.png,active,Egyptian Football Association,UNAF
+Egypt,CAF,EGY,egy.png,active,Egyptian Football Association,"UNAF,UAFA"
 El Salvador,CONCACAF,SLV,slv.png,active,Salvadoran Football Federation,UNCAF
 England,UEFA,ENG,eng.png,active,The Football Association,
 Equatorial Guinea,CAF,EQG,eqg.png,active,Equatoguinean Football Federation,UNIFFAC
@@ -76,15 +76,15 @@ French Guiana,CONCACAF,GUF,guf.png,active,Ligue de Football de la Guyane,CFU
 Gabon,CAF,GAB,gab.png,active,Gabonese Football Federation,UNIFFAC
 Georgia,UEFA,GEO,geo.png,active,Georgian Football Federation,
 Germany,UEFA,GER,ger.png,active,German Football Association,
-Ghana,CAF,GHA,gha.png,active,Ghana Football Association,WAFU-UFOA
+Ghana,CAF,GHA,gha.png,active,Ghana Football Association,WAFU
 Gibraltar,UEFA,GIB,gib.png,active,Gibraltar Football Association,
 Greece,UEFA,GRE,gre.png,active,Hellenic Football Federation,
 Grenada,CONCACAF,GRN,grn.png,active,Grenada Football Association,CFU
 Guadeloupe,CONCACAF,GLP,glp.png,active,Guadeloupean League of Football,CFU
 Guam,AFC,GUM,gum.png,active,Guam Football Association,EAFF
 Guatemala,CONCACAF,GUA,gua.png,active,National Football Federation of Guatemala,UNCAF
-Guinea,CAF,GUI,gui.png,active,Guinean Football Federation,WAFU-UFOA
-Guinea-Bissau,CAF,GNB,gnb.png,active,Football Federation of Guinea-Bissau,WAFU-UFOA
+Guinea,CAF,GUI,gui.png,active,Guinean Football Federation,WAFU
+Guinea-Bissau,CAF,GNB,gnb.png,active,Football Federation of Guinea-Bissau,WAFU
 Guyana,CONCACAF,GUY,guy.png,active,Guyana Football Federation,CFU
 Haiti,CONCACAF,HAI,hai.png,active,Haitian Football Federation,CFU
 Honduras,CONCACAF,HON,hon.png,active,National Autonomous Federation of Football of Honduras,UNCAF
@@ -94,25 +94,25 @@ Iceland,UEFA,ISL,isl.png,active,Football Association of Iceland,
 India,AFC,IND,ind.png,active,All India Football Federation,SAFF
 Indonesia,AFC,IDN,idn.png,active,Football Association of Indonesia,AFF
 Iran,AFC,IRN,irn.png,active,Football Federation Islamic Republic of Iran,CAFA
-Iraq,AFC,IRQ,irq.png,active,Iraq Football Association,WAFF
+Iraq,AFC,IRQ,irq.png,active,Iraq Football Association,"WAFF,UAFA"
 Israel,UEFA,ISR,isr.png,active,Israel Football Association,
 Italy,UEFA,ITA,ita.png,active,Italian Football Federation,
-Ivory Coast,CAF,CIV,civ.png,active,Ivorian Football Federation,WAFU-UFOA
+Ivory Coast,CAF,CIV,civ.png,active,Ivorian Football Federation,WAFU
 Jamaica,CONCACAF,JAM,jam.png,active,Jamaica Football Federation,CFU
 Japan,AFC,JPN,jpn.png,active,Japan Football Association,EAFF
-Jordan,AFC,JOR,jor.png,active,Jordan Football Association,WAFF
+Jordan,AFC,JOR,jor.png,active,Jordan Football Association,"WAFF,UAFA"
 Kazakhstan,UEFA,KAZ,kaz.png,active,Football Federation of Kazakhstan,
 Kenya,CAF,KEN,ken.png,active,Football Kenya Federation,CECAFA
 Kiribati,OFC,KIR,kir.png,active,Kiribati Islands Football Federation,
 Kosovo,UEFA,KOS,kos.png,active,Football Federation of Kosovo,
-Kuwait,AFC,KUW,kuw.png,active,Kuwait Football Association,WAFF
+Kuwait,AFC,KUW,kuw.png,active,Kuwait Football Association,"WAFF,UAFA"
 Kyrgyzstan,AFC,KGZ,kgz.png,active,Football Federation of the Kyrgyz Republic,CAFA
 Laos,AFC,LAO,lao.png,active,Lao Football Federation,AFF
 Latvia,UEFA,LVA,lva.png,active,Latvian Football Federation,
-Lebanon,AFC,LIB,lib.png,active,Lebanon Football Association,WAFF
+Lebanon,AFC,LIB,lib.png,active,Lebanon Football Association,"WAFF,UAFA"
 Lesotho,CAF,LES,les.png,active,Lesotho Football Association,COSAFA
-Liberia,CAF,LBR,lbr.png,active,Liberia Football Association,WAFU-UFOA
-Libya,CAF,LBY,lby.png,active,Libyan Football Federation,UNAF
+Liberia,CAF,LBR,lbr.png,active,Liberia Football Association,WAFU
+Libya,CAF,LBY,lby.png,active,Libyan Football Federation,"UNAF,UAFA"
 Liechtenstein,UEFA,LIE,lie.png,active,Liechtenstein Football Association,
 Lithuania,UEFA,LTU,ltu.png,active,Lithuanian Football Federation,
 Luxembourg,UEFA,LUX,lux.png,active,Luxembourg Football Federation,
@@ -121,10 +121,10 @@ Madagascar,CAF,MAD,mad.png,active,Malagasy Football Federation,COSAFA
 Malawi,CAF,MWI,mwi.png,active,Football Association of Malawi,COSAFA
 Malaysia,AFC,MAS,mas.png,active,Football Association of Malaysia,AFF
 Maldives,AFC,MDV,mdv.png,active,Football Association of Maldives,SAFF
-Mali,CAF,MLI,mli.png,active,Malian Football Federation,WAFU-UFOA
+Mali,CAF,MLI,mli.png,active,Malian Football Federation,WAFU
 Malta,UEFA,MLT,mlt.png,active,Malta Football Association,
 Martinique,CONCACAF,MTQ,mtq.png,active,Ligue de football de la Martinique,CFU
-Mauritania,CAF,MTN,mtn.png,active,Football Federation of the Islamic Republic of Mauritania,WAFU-UFOA
+Mauritania,CAF,MTN,mtn.png,active,Football Federation of the Islamic Republic of Mauritania,"WAFU,UAFA"
 Mauritius,CAF,MRI,mri.png,active,Mauritius Football Association,COSAFA
 Mayotte,CAF,MAY,may.png,active,,
 Mexico,CONCACAF,MEX,mex.png,active,Mexican Federation of Association Football,NAFU
@@ -134,7 +134,7 @@ Monaco,UEFA,MON,mon.png,active,Monégasque Football Federation,
 Mongolia,AFC,MNG,mng.png,active,Mongolian Football Federation,EAFF
 Montenegro,UEFA,MNE,mne.png,active,Football Association of Montenegro,
 Montserrat,CONCACAF,MSR,msr.png,active,Montserrat Football Association,CFU
-Morocco,CAF,MAR,mar.png,active,Royal Moroccan Football Federation,UNAF
+Morocco,CAF,MAR,mar.png,active,Royal Moroccan Football Federation,"UNAF,UAFA"
 Mozambique,CAF,MOZ,moz.png,active,Mozambican Football Federation,COSAFA
 Myanmar,AFC,MYA,mya.png,active,Myanmar Football Federation,AFF
 Namibia,CAF,NAM,nam.png,active,Namibia Football Association,COSAFA
@@ -143,16 +143,16 @@ Netherlands,UEFA,NED,ned.png,active,Royal Dutch Football Association,
 New Caledonia,OFC,NCL,ncl.png,active,New Caledonian Football Federation,
 New Zealand,OFC,NZL,nzl.png,active,New Zealand Football,
 Nicaragua,CONCACAF,NCA,nca.png,active,Nicaraguan Football Federation,UNCAF
-Niger,CAF,NIG,nig.png,active,Nigerien Football Federation,WAFU-UFOA
-Nigeria,CAF,NGA,nga.png,active,Nigeria Football Federation,WAFU-UFOA
+Niger,CAF,NIG,nig.png,active,Nigerien Football Federation,WAFU
+Nigeria,CAF,NGA,nga.png,active,Nigeria Football Federation,WAFU
 North Korea,AFC,PRK,prk.png,active,DPR Korea Football Association,EAFF
 North Macedonia,UEFA,MKD,mkd.png,active,Football Federation of Macedonia,
 Northern Ireland,UEFA,NIR,nir.png,active,Irish Football Association,
 Northern Mariana,AFC,NMI,nmi.png,active,Northern Mariana Islands Football Association,EAFF
 Norway,UEFA,NOR,nor.png,active,Football Association of Norway,
-Oman,AFC,OMA,oma.png,active,Oman Football Association,WAFF
+Oman,AFC,OMA,oma.png,active,Oman Football Association,"WAFF,UAFA"
 Pakistan,AFC,PAK,pak.png,active,Pakistan Football Federation,SAFF
-Palestine,AFC,PLE,ple.png,active,Palestinian Football Association,WAFF
+Palestine,AFC,PLE,ple.png,active,Palestinian Football Association,"WAFF,UAFA"
 Panama,CONCACAF,PAN,pan.png,active,Panamanian Football Federation,UNCAF
 Papua New Guinea,OFC,PNG,png.png,active,Papua New Guinea Football Association,
 Paraguay,CONMEBOL,PAR,par.png,active,Paraguayan Football Association,
@@ -161,7 +161,7 @@ Philippines,AFC,PHI,phi.png,active,Philippine Football Federation,AFF
 Poland,UEFA,POL,pol.png,active,Polish Football Association,
 Portugal,UEFA,POR,por.png,active,Portuguese Football Federation,
 Puerto Rico,CONCACAF,PUR,pur.png,active,Puerto Rican Football Federation,CFU
-Qatar,AFC,QAT,qat.png,active,Qatar Football Association,WAFF
+Qatar,AFC,QAT,qat.png,active,Qatar Football Association,"WAFF,UAFA"
 Republic of Ireland,UEFA,IRL,irl.png,active,Football Association of Ireland,
 Réunion,CAF,REU,reu.png,active,Réunionese Football League,
 Romania,UEFA,ROU,rou.png,active,Romanian Football Federation,
@@ -175,44 +175,44 @@ Saint-Martin,CONCACAF,SMN,smn.png,active,Football Committee of Saint Martin,CFU
 Samoa,OFC,SAM,sam.png,active,Football Federation Samoa,
 San Marino,UEFA,SMR,smr.png,active,San Marino Football Federation,
 São Tomé & Príncipe,CAF,STP,stp.png,active,São Toméan Football Federation,UNIFFAC
-Saudi Arabia,AFC,KSA,ksa.png,active,Saudi Arabian Football Federation,WAFF
+Saudi Arabia,AFC,KSA,ksa.png,active,Saudi Arabian Football Federation,"WAFF,UAFA"
 Scotland,UEFA,SCO,sco.png,active,Scottish Football Association,
-Senegal,CAF,SEN,sen.png,active,Senegalese Football Federation,WAFU-UFOA
+Senegal,CAF,SEN,sen.png,active,Senegalese Football Federation,WAFU
 Serbia,UEFA,SRB,srb.png,active,Football Association of Serbia,
 Seychelles,CAF,SEY,sey.png,active,Seychelles Football Federation,COSAFA
-Sierra Leone,CAF,SLE,sle.png,active,Sierra Leone Football Association,WAFU-UFOA
+Sierra Leone,CAF,SLE,sle.png,active,Sierra Leone Football Association,WAFU
 Singapore,AFC,SIN,sin.png,active,Football Association of Singapore,AFF
 Sint Maarten,CONCACAF,SMA,sma.png,active,Sint Maarten Soccer Association,CFU
 Slovakia,UEFA,SVK,svk.png,active,Slovak Football Association,
 Slovenia,UEFA,SVN,svn.png,active,Football Association of Slovenia,
 Solomon Islands,OFC,SOL,sol.png,active,Solomon Islands Football Federation,
-Somalia,CAF,SOM,som.png,active,Somali Football Federation,CECAFA
+Somalia,CAF,SOM,som.png,active,Somali Football Federation,"CECAFA,UAFA"
 South Africa,CAF,RSA,rsa.png,active,South African Football Association,COSAFA
 South Korea,AFC,KOR,kor.png,active,Korea Football Association,EAFF
 South Sudan,CAF,SSD,ssd.png,active,South Sudan Football Association,CECAFA
 Spain,UEFA,ESP,esp.png,active,Royal Spanish Football Federation,
 Sri Lanka,AFC,SRI,sri.png,active,Football Federation of Sri Lanka,SAFF
 St. Barthélemy,CONCACAF,BLM,blm.png,active,,
-Sudan,CAF,SUD,sud.png,active,Sudan Football Association,CECAFA
+Sudan,CAF,SUD,sud.png,active,Sudan Football Association,"CECAFA,UAFA"
 Suriname,CONCACAF,SUR,sur.png,active,Surinamese Football Association,CFU
 Sweden,UEFA,SWE,swe.png,active,Swedish Football Association,
 Switzerland,UEFA,SUI,sui.png,active,Swiss Football Association,
-Syria,AFC,SYR,syr.png,active,Syrian Arab Federation for Football,WAFF
+Syria,AFC,SYR,syr.png,active,Syrian Arab Federation for Football,"WAFF,UAFA"
 Tahiti,OFC,TAH,tah.png,active,Tahitian Football Federation,
 Tajikistan,AFC,TJK,tjk.png,active,Tajikistan Football Federation,CAFA
 Tanzania,CAF,TAN,tan.png,active,Tanzania Football Federation,CECAFA
 Thailand,AFC,THA,tha.png,active,Football Association of Thailand,AFF
-The Gambia,CAF,GAM,gam.png,active,Gambia Football Federation,WAFU-UFOA
+The Gambia,CAF,GAM,gam.png,active,Gambia Football Federation,WAFU
 Timor-Leste,AFC,TLS,tls.png,active,Football Federation of Timor-Leste,AFF
-Togo,CAF,TOG,tog.png,active,Togolese Football Federation,WAFU-UFOA
+Togo,CAF,TOG,tog.png,active,Togolese Football Federation,WAFU
 Tonga,OFC,TGA,tga.png,active,Tonga Football Association,
 Trinidad & Tobago,CONCACAF,TRI,tri.png,active,Trinidad and Tobago Football Federation,CFU
-Tunisia,CAF,TUN,tun.png,active,Tunisian Football Federation,UNAF
+Tunisia,CAF,TUN,tun.png,active,Tunisian Football Federation,"UNAF,UAFA"
 Türkiye,UEFA,TUR,tur.png,active,Turkish Football Federation,
 Turkmenistan,AFC,TKM,tkm.png,active,Football Federation of Turkmenistan,CAFA
 Turks & Caicos Islands,CONCACAF,TCA,tca.png,active,Turks and Caicos Islands Football Association,CFU
 Tuvalu,OFC,TUV,tuv.png,active,Tuvalu National Football Association,
-UAE,AFC,UAE,uae.png,active,United Arab Emirates Football Association,WAFF
+UAE,AFC,UAE,uae.png,active,United Arab Emirates Football Association,"WAFF,UAFA"
 Uganda,CAF,UGA,uga.png,active,Federation of Uganda Football Associations,CECAFA
 Ukraine,UEFA,UKR,ukr.png,active,Ukrainian Association of Football,
 Uruguay,CONMEBOL,URU,uru.png,active,Uruguayan Football Association,
@@ -224,7 +224,7 @@ Venezuela,CONMEBOL,VEN,ven.png,active,Venezuelan Football Federation,
 Vietnam,AFC,VIE,vie.png,active,Vietnam Football Federation,AFF
 Wales,UEFA,WAL,wal.png,active,Football Association of Wales,
 Wallis & Futuna,OFC,WFI,wfi.png,active,,
-Yemen,AFC,YEM,yem.png,active,Yemen Football Association,WAFF
+Yemen,AFC,YEM,yem.png,active,Yemen Football Association,"WAFF,UAFA"
 Zambia,CAF,ZAM,zam.png,active,Football Association of Zambia,COSAFA
 Zanzibar,CAF,ZAN,zan.png,active,Zanzibar Football Association,CECAFA
 Zimbabwe,CAF,ZIM,zim.png,active,Zimbabwe Football Association,COSAFA

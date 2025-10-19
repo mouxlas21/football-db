@@ -1,12 +1,13 @@
 # app/routers/confederations.py
 from fastapi import APIRouter, Depends, Request, Query, HTTPException
 from fastapi.responses import HTMLResponse
-from sqlalchemy import select
+from sqlalchemy import select, Table, func
 from sqlalchemy.orm import Session
 
 from ..db import get_db
 from ..models import Association, Country, Competition
 from ..core.templates import templates
+from ..utils.comp_sort import international_sort_key
 
 router = APIRouter(prefix="/confederations", tags=["confederations"])
 
@@ -52,74 +53,104 @@ def confederations_page(
 @router.get("/{ass_id}", response_class=HTMLResponse, response_model=None)
 def federation_detail(request: Request, ass_id: int, db: Session = Depends(get_db)):
     a = db.execute(select(Association).where(Association.ass_id == ass_id)).scalar_one_or_none()
-    if not a or not _is_confed_code(a.code):
-        raise HTTPException(status_code=404, detail="Confederation not found")
+    if not a:
+        raise HTTPException(status_code=404, detail="Association not found")
 
-    code_norm = (a.code or "").strip().upper()
-    is_fifa = code_norm == "FIFA"
+    level = (a.level or "").strip().lower()  # 'federation' | 'confederation' | 'sub_confederation'
+    is_fifa = (a.code or "").strip().upper() == "FIFA"
 
-    parent = None
-    if not is_fifa:
-        parent = db.execute(select(Association).where(Association.code == "FIFA")).scalar_one_or_none()
+    # association_parent table for parent/children
+    association_parent = Table("association_parent", Association.metadata, autoload_with=db.bind)
 
-    # If FIFA → members are the six regional confeds
-    children_confeds = []
+    # --- Parent (dynamic via association_parent) ---
+    parents = db.execute(
+        select(Association)
+        .join(association_parent, association_parent.c.parent_ass_id == Association.ass_id)
+        .where(association_parent.c.ass_id == a.ass_id)
+        .order_by(Association.code.asc())
+    ).scalars().all()
+
+    # --- Children (dynamic via association_parent) ---
+    children = db.execute(
+        select(Association)
+        .join(association_parent, association_parent.c.ass_id == Association.ass_id)
+        .where(association_parent.c.parent_ass_id == a.ass_id)
+        .order_by(Association.code.asc())
+    ).scalars().all()
+
+    # map children to the right buckets for the template
+    children_confeds = children if level == "federation" else []      # FIFA: shows regional confeds in Members
+    sub_confeds      = children if level == "confederation" else []    # Confed: shows sub-confeds inline under Parent
+
+    # --- Members (countries) ---
     countries_active, countries_former = [], []
 
-    if is_fifa:
-        children_confeds = db.execute(
-            select(Association).where(Association.code.in_(REGIONAL_CODES))
-        ).scalars().all()
-        # order them in the fixed order
-        order_map = {c: i for i, c in enumerate(REGIONAL_CODES)}
-        children_confeds.sort(key=lambda x: order_map.get((x.code or "").strip().upper(), 999))
-    else:
-        # For regional confeds → member countries
-        countries_active = db.execute(
-            select(Country)
-            .where(Country.confed_ass_id == a.ass_id)
-            .where(Country.c_status == "active")
-            .order_by(Country.name.asc())
-        ).scalars().all()
-        countries_former = db.execute(
-            select(Country)
-            .where(Country.confed_ass_id == a.ass_id)
-            .where(Country.c_status != "active")
-            .order_by(Country.name.asc())
-        ).scalars().all()
+    if level in ("confederation", "sub_confederation"):
+        if level == "sub_confederation":
+            country_sub_confed = Table("country_sub_confed", Association.metadata, autoload_with=db.bind)
 
-    # Competitions organized by this federation (best effort)
+            countries_active = db.execute(
+                select(Country)
+                .join(country_sub_confed, country_sub_confed.c.country_id == Country.country_id)
+                .where(country_sub_confed.c.sub_confed_ass_id == a.ass_id)
+                .where(Country.c_status == "active")
+                .order_by(Country.name.asc())
+            ).scalars().all()
+
+            countries_former = db.execute(
+                select(Country)
+                .join(country_sub_confed, country_sub_confed.c.country_id == Country.country_id)
+                .where(country_sub_confed.c.sub_confed_ass_id == a.ass_id)
+                .where(Country.c_status != "active")
+                .order_by(Country.name.asc())
+            ).scalars().all()
+        else:
+            countries_active = db.execute(
+                select(Country)
+                .where(Country.confed_ass_id == a.ass_id, Country.c_status == "active")
+                .order_by(Country.name.asc())
+            ).scalars().all()
+
+            countries_former = db.execute(
+                select(Country)
+                .where(Country.confed_ass_id == a.ass_id, Country.c_status != "active")
+                .order_by(Country.name.asc())
+            ).scalars().all()
+
+    # --- Competitions (international only) with images for the cards ---
     comps = db.execute(
         select(Competition)
-        .where(Competition.organizer_ass_id == a.ass_id)   # the organizer is this confed
-        .where(Competition.country_id.is_(None))           # international only
+        .where(Competition.organizer_ass_id == a.ass_id)
+        .where(Competition.country_id.is_(None))
         .order_by(Competition.name.asc())
     ).scalars().all()
 
-    intl_club, intl_nat = [], []
-    if comps and hasattr(Competition, "type"):
-        for c in comps:
-            t = (getattr(c, "type", "") or "").lower()
-            if "club" in t:
-                intl_club.append(c)
-            elif "national" in t:
-                intl_nat.append(c)
-            else:
-                intl_club.append(c)
-    else:
-        intl_club = comps
+    img_base = f"federations/{(a.code or '').strip().lower()}"
+    intl_vm = [{
+        "id": c.competition_id,
+        "name": c.name,
+        "type": c.type,
+        "tier": c.tier,
+        "cup_rank": c.cup_rank,
+        "gender": c.gender,
+        "age_group": c.age_group,
+        "filename": getattr(c, "logo_filename", None),
+        "image_base": img_base,
+    } for c in comps]
+    intl_sorted = sorted(intl_vm, key=international_sort_key)
 
     return templates.TemplateResponse(
         "federation_detail.html",
         {
             "request": request,
             "a": a,
-            "parent": parent,
+            "level": level,
             "is_fifa": is_fifa,
-            "children_confeds": children_confeds,
-            "countries_active": countries_active,
-            "countries_former": countries_former,
-            "intl_club": intl_club,
-            "intl_nat": intl_nat,
+            "parents": parents,                      # now dynamic
+            "children_confeds": children_confeds,  # only for federation level
+            "sub_confeds": sub_confeds,            # only for confederation level
+            "countries_active": countries_active,  # confed or sub_confed
+            "countries_former": countries_former,  # confed or sub_confed
+            "intl_sorted": intl_sorted,
         },
     )

@@ -51,6 +51,11 @@ class Association(Base):
         lazy="selectin",
     )
 
+class CountrySubConfed(Base):
+    __tablename__ = "country_sub_confed"
+    country_id: Mapped[int] = mapped_column(ForeignKey("country.country_id", ondelete="CASCADE"), primary_key=True)
+    sub_confed_ass_id: Mapped[int] = mapped_column(ForeignKey("association.ass_id", ondelete="CASCADE"), primary_key=True)
+
 class Country(Base):
     __tablename__ = "country"
 
@@ -59,15 +64,11 @@ class Country(Base):
     nat_association: Mapped[str | None] = mapped_column(Text)
     flag_filename: Mapped[str | None] = mapped_column(Text)
     confed_ass_id: Mapped[int | None] = mapped_column(BigInteger, ForeignKey("association.ass_id", ondelete="SET NULL"))
-    sub_confederation: Mapped[str | None] = mapped_column(Text)
     fifa_code: Mapped[str | None] = mapped_column(String(3), unique=True)
-    c_status: Mapped[str] = mapped_column(
-        Enum('active', 'historical', name='country_status', create_type=False),
-        nullable=False,
-        server_default='active'
-    )
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
-    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)
+    sub_confederations: Mapped[list["Association"]] = relationship("Association", secondary="country_sub_confed", primaryjoin="Country.country_id==CountrySubConfed.country_id", secondaryjoin="CountrySubConfed.sub_confed_ass_id==Association.ass_id", viewonly=True,)
+    c_status: Mapped[str] = mapped_column(Enum("active", "historical", name="country_status", create_type=False), nullable=False, server_default="active",)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now())
 
 class Stadium(Base):
     __tablename__ = "stadium"

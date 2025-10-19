@@ -30,9 +30,11 @@ class CountryCreate(BaseModel):
     nat_association: Optional[str] = None
     flag_filename: Optional[str] = None
     fifa_code: Optional[str] = None
-    confederation_code: Optional[str] = None
-    sub_confederation: Optional[str] = None
-    c_status: Optional[str] = Field(default='active', pattern='^(active|historical)$')
+
+    confederation_code: Optional[str] = None  # legacy convenience if you ever parse CSV
+    confed_ass_id: Optional[int] = None
+
+    c_status: Optional[str] = Field(default="active", pattern="^(active|historical)$")
 
 class CountryRead(BaseModel):
     country_id: int
@@ -41,9 +43,10 @@ class CountryRead(BaseModel):
     flag_filename: Optional[str] = None
     fifa_code: Optional[str] = None
     confed_ass_id: Optional[int] = None
-    sub_confederation: Optional[str] = None
     c_status: CountryStatus
-    class Config: from_attributes = True
+
+    class Config:
+        from_attributes = True
     
 class StadiumCreate(BaseModel):
     name: str

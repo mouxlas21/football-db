@@ -28,27 +28,37 @@ BEGIN
   END IF;
 END$$;
 
--- Countries
-DROP TABLE IF EXISTS country;
+-- Drop & recreate
+DROP TABLE IF EXISTS country CASCADE;
 
-CREATE TABLE IF NOT EXISTS country (
-  country_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE,
+CREATE TABLE country (
+  country_id        BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name              TEXT NOT NULL UNIQUE,
   nat_association   TEXT,
   flag_filename     TEXT,
+
   confed_ass_id     BIGINT REFERENCES association(ass_id) ON DELETE SET NULL,
-  sub_confederation TEXT,
-  fifa_code VARCHAR(3) UNIQUE CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$'),
+
+  fifa_code VARCHAR(3) UNIQUE
+    CHECK (char_length(fifa_code) = 3 AND fifa_code ~ '^[A-Z]{3}$'),
+
   c_status country_status NOT NULL DEFAULT 'active',
 
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- Indexes
 CREATE INDEX IF NOT EXISTS ix_country_name ON country(name);
 CREATE INDEX IF NOT EXISTS idx_country_confed_ass_id ON country(confed_ass_id);
 CREATE INDEX IF NOT EXISTS ix_country_status ON country(c_status);
+
+CREATE TABLE country_sub_confed (
+  country_id        BIGINT NOT NULL REFERENCES country(country_id) ON DELETE CASCADE,
+  sub_confed_ass_id BIGINT NOT NULL REFERENCES association(ass_id) ON DELETE CASCADE,
+  PRIMARY KEY (country_id, sub_confed_ass_id)
+);
+
+CREATE INDEX idx_csc_sub_confed ON country_sub_confed(sub_confed_ass_id);
 
 CREATE TABLE IF NOT EXISTS stadium (
   stadium_id      BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
