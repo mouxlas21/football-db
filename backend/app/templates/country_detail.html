@@ -11,27 +11,146 @@
     <div class="card">
       <h1 style="margin:0 0 .5rem; display:flex; align-items:center; gap:.5rem">
         {% if country.flag_filename %}
-          <img src="{{ flag_url(country.flag_filename, 'normal') }}" alt="{{ country.name }} flag" style="height:22px;">
+          <img src="/static/images/countries/flags/small/{{ country.flag_filename }}" alt="{{ country.name }} flag">
         {% endif %}
         <span>{{ country.name }}</span>
       </h1>
-      <p><strong>FIFA CODE</strong> {{ country.fifa_code or '—' }}</p>
+
+      <p style="margin:.25rem 0">
+        <strong>Confederation:</strong>
+        {% if association %}
+          <a href="/confederations/{{ association.ass_id }}">{{ association.code }}</a> — {{ association.name }}
+        {% else %}
+          —
+        {% endif %}
+      </p>
+
+      {% if country.nat_association %}
+      <p style="margin:.25rem 0">
+        <strong>National association:</strong> {{ country.nat_association }}
+      </p>
+      {% endif %}
+
+      <p style="margin:.25rem 0">
+        <strong>FIFA CODE</strong> {{ country.fifa_code or '—' }}
+      </p>
     </div>
 
+    <!-- National Teams -->
     <section style="margin-top:1rem">
-      <h2 style="margin:0 0 .5rem">Associations</h2>
+      <h2 style="margin:0 0 .5rem">National Teams</h2>
       <div class="card">
-        {% if association %}
-          <p>
-            <strong>Confederation:</strong>
-            <a href="/confederations/{{ association.ass_id }}">{{ association.code }}</a> — {{ association.name }}
-          </p>
-        {% else %}
-          <p><strong>Confederation:</strong> —</p>
-        {% endif %}
+
+        <!-- Senior & Reserves -->
+        <h3 style="margin:.25rem 0 .5rem">Senior & Reserves</h3>
+        <div style="overflow:auto">
+          <table style="width:100%; border-collapse:collapse">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Team</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Gender</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Squad</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% set seniors_m = national.men or [] %}
+              {% set seniors_w = national.women or [] %}
+              {% if seniors_m or seniors_w %}
+                {% for t in seniors_m %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                      {% set logo = t.logo_filename or fifa_png %}
+                      {% if logo %}
+                        <img src="/static/images/countries/teams/small/{{ logo }}" alt="{{ t.name }} logo"
+                             style="width:50px;height:50px;object-fit:contain">
+                      {% endif %}
+                      <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">Men</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ t.squad_level or 'first' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;"><a href="/teams/{{ t.team_id }}">View</a></td>
+                  </tr>
+                {% endfor %}
+                {% for t in seniors_w %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                      {% set logo = t.logo_filename or fifa_png %}
+                      {% if logo %}
+                        <img src="/static/images/countries/teams/small/{{ logo }}" alt="{{ t.name }} logo"
+                             style="width:50px;height:50px;object-fit:contain">
+                      {% endif %}
+                      <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">Women</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ t.squad_level or 'first' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;"><a href="/teams/{{ t.team_id }}">View</a></td>
+                  </tr>
+                {% endfor %}
+              {% else %}
+                <tr><td colspan="4" style="padding:.75rem">—</td></tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Youth -->
+        <h3 style="margin:1rem 0 .5rem">Youth</h3>
+        <div style="overflow:auto">
+          <table style="width:100%; border-collapse:collapse">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Team</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Gender</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Age Group</th>
+                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% set youths_m = national.men_youth or [] %}
+              {% set youths_w = national.women_youth or [] %}
+              {% if youths_m or youths_w %}
+                {% for t in youths_m %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                      {% set logo = t.logo_filename or fifa_png %}
+                      {% if logo %}
+                        <img src="/static/images/countries/teams/small/{{ logo }}" alt="{{ t.name }} logo"
+                             style="width:50px;height:50px;object-fit:contain">
+                      {% endif %}
+                      <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">Men</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ t.age_group or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;"><a href="/teams/{{ t.team_id }}">View</a></td>
+                  </tr>
+                {% endfor %}
+                {% for t in youths_w %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                      {% set logo = t.logo_filename or fifa_png %}
+                      {% if logo %}
+                        <img src="/static/images/countries/teams/small/{{ logo }}" alt="{{ t.name }} logo"
+                             style="width:50px;height:50px;object-fit:contain">
+                      {% endif %}
+                      <a href="/teams/{{ t.team_id }}">{{ t.name }}</a>
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">Women</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ t.age_group or '—' }}</td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;"><a href="/teams/{{ t.team_id }}">View</a></td>
+                  </tr>
+                {% endfor %}
+              {% else %}
+                <tr><td colspan="4" style="padding:.75rem">—</td></tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </section>
 
+    <!-- Leagues -->
     <section style="margin-top:1rem">
       <h2 style="margin:0 0 .5rem">Leagues</h2>
       <div class="card">
@@ -40,38 +159,65 @@
             <thead>
               <tr>
                 <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">League</th>
-                <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Tier</th>
                 <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
               </tr>
             </thead>
             <tbody>
               {% for lg in leagues %}
-              <tr>
-                <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.name }}</td>
-                <td style="padding:.5rem; border-bottom:1px dashed #eee;">{{ lg.tier if lg.tier is not none else '—' }}</td>
-                <td style="padding:.5rem; border-bottom:1px dashed #eee;">
-                  <a href="/competitions/{{ lg.competition_id }}">View</a>
-                </td>
-              </tr>
+                <tr>
+                  <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                    {% if lg.logo_filename %}
+                      <img src="/static/images/competitions/countries/{{ country_slug }}/thumbs/{{ lg.logo_filename }}"
+                           alt="{{ lg.name }} logo" style="height:20px" loading="lazy">
+                    {% endif %}
+                    {{ lg.name }}
+                  </td>
+                  <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                    <a href="/competitions/{{ lg.competition_id }}">View</a>
+                  </td>
+                </tr>
               {% else %}
-              <tr><td colspan="3" style="padding:.75rem">No leagues yet.</td></tr>
+                <tr><td colspan="2" style="padding:.75rem">No leagues yet.</td></tr>
               {% endfor %}
             </tbody>
           </table>
         </div>
-        <div class="footer">
-          <a href="/competitions?country_id={{ country.country_id }}&type=league"> Browse all leagues in {{ country.name }}</a>
-        </div>
       </div>
     </section>
 
+    <!-- Cups & Competitions -->
     <section style="margin-top:1rem">
       <h2 style="margin:0 0 .5rem">Cups & Competitions</h2>
       <div class="card">
         {% if cups and cups|length > 0 %}
-          <!-- render cups when you add that table -->
+          <div style="overflow:auto">
+            <table style="width:100%; border-collapse:collapse">
+              <thead>
+                <tr>
+                  <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Competition</th>
+                  <th style="text-align:left; padding:.5rem; border-bottom:1px solid #eee;">Open</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for cp in cups %}
+                  <tr>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee; display:flex; align-items:center; gap:.5rem">
+                      {% if cp.logo_filename %}
+                        <img src="/static/images/competitions/countries/{{ country_slug }}/thumbs/{{ cp.logo_filename }}"
+                             alt="{{ cp.name }} logo" style="height:20px" loading="lazy">
+                      {% endif %}
+                      {{ cp.name }}
+                    </td>
+                    <td style="padding:.5rem; border-bottom:1px dashed #eee;">
+                      <a href="/competitions/{{ cp.competition_id }}">View</a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
         {% else %}
-          <p style="margin:0">No cups yet. (We’ll add this when the cups table is in.)</p>
+          <p style="margin:0">No cups yet.</p>
         {% endif %}
       </div>
     </section>

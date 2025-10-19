@@ -41,25 +41,27 @@ def ensure_national_teams(db: Session) -> None:
     """
     # Insert missing senior default national team
     db.execute(text("""
-        INSERT INTO team (name, type, club_id, national_country_id, gender, age_group, squad_level)
-        SELECT co.name, 'national', NULL, co.country_id, 'men', 'senior', 'first'
+        INSERT INTO team (name, type, club_id, national_country_id, gender, age_group, squad_level, logo_filename)
+        SELECT co.name, 'national', NULL, co.country_id, NULL, NULL, 'first', co.flag_filename
         FROM country co
         LEFT JOIN team t
-               ON t.type = 'national'
-              AND t.national_country_id = co.country_id
-              AND t.age_group IS NULL
-              AND t.gender    IS NULL
+            ON t.type = 'national'
+            AND t.national_country_id = co.country_id
+            AND t.age_group IS NULL
+            AND t.gender    IS NULL
         WHERE t.team_id IS NULL;
     """))
 
     # Sync *only* the senior default national team’s name
     db.execute(text("""
         UPDATE team t
-        SET name = co.name
+        SET name = co.name,
+            logo_filename = co.flag_filename
         FROM country co
         WHERE t.type = 'national'
-          AND t.national_country_id = co.country_id
-          AND t.age_group IS NULL
-          AND t.gender    IS NULL
-          AND t.name IS DISTINCT FROM co.name;
+            AND t.national_country_id = co.country_id
+            AND t.age_group IS NULL
+            AND t.gender    IS NULL
+            AND (t.name IS DISTINCT FROM co.name
+                OR t.logo_filename IS DISTINCT FROM co.flag_filename);
     """))

@@ -16,6 +16,10 @@ class CountriesImporter(BaseImporter):
         name = (raw.pop("name", None) or raw.pop("Name", None) or "").strip()
         if not name:
             return False, {}
+        
+        nat_association = (raw.pop("nat_association", None) or raw.pop("association", None))
+        if nat_association:
+            nat_association = nat_association.strip() or None
 
         # fifa_code (normalize to upper; allow empty)
         fifa_code = (
@@ -54,6 +58,7 @@ class CountriesImporter(BaseImporter):
             "fifa_code": fifa_code,
             "confed_ass_id": confed_ass_id,
             "flag_filename": flag_filename,
+            "nat_association": nat_association,
             "c_status": c_status,
             # keep sub-confeds separate — written to junction table in upsert()
             "sub_confed_ids": list(dict.fromkeys([i for i in sub_confed_ids if i])),  # unique, non-null
@@ -73,6 +78,7 @@ class CountriesImporter(BaseImporter):
                     "flag_filename": kwargs.get("flag_filename"),
                     "fifa_code": kwargs.get("fifa_code"),
                     "confed_ass_id": kwargs.get("confed_ass_id"),
+                    "nat_association": kwargs.get("nat_association"),
                     "c_status": kwargs.get("c_status"),
                     "updated_at": func.now(),
                 },

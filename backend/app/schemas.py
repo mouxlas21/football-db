@@ -10,7 +10,6 @@ class AssociationCreate(BaseModel):
     name: str
     level: str
     logo_filename: Optional[str] = None
-    # Accept id/code/name tokens; importer will resolve
     parents: List[str | int] = []
 
 class AssociationRead(BaseModel):
@@ -19,7 +18,6 @@ class AssociationRead(BaseModel):
     name: str
     level: str
     logo_filename: Optional[str] = None
-    # Return parent IDs (simple), or swap to nested mini if you prefer later
     parent_ass_ids: List[int] = []
 
     class Config:
@@ -30,8 +28,7 @@ class CountryCreate(BaseModel):
     nat_association: Optional[str] = None
     flag_filename: Optional[str] = None
     fifa_code: Optional[str] = None
-
-    confederation_code: Optional[str] = None  # legacy convenience if you ever parse CSV
+    confederation_code: Optional[str] = None 
     confed_ass_id: Optional[int] = None
 
     c_status: Optional[str] = Field(default="active", pattern="^(active|historical)$")
