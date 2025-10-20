@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS association (
   ass_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   code TEXT NOT NULL UNIQUE,
   name TEXT NOT NULL,
+  founded_year SMALLINT,
   level TEXT NOT NULL CHECK (level IN ('federation','confederation','association','sub_confederation')),
   logo_filename TEXT,
 
@@ -601,4 +602,4 @@ CREATE INDEX IF NOT EXISTS idx_match_event_fixture_id ON match_event(fixture_id)
 --CREATE INDEX IF NOT EXISTS idx_team_match_stats_fixture_id       ON team_match_stats(fixture_id);
 --CREATE INDEX IF NOT EXISTS idx_player_match_stats_fixture_id     ON player_match_stats(fixture_id);
 
-INSERT INTO association (code, name, level, logo_filename) VALUES ('FIFA','Fédération Internationale de Football Association','federation','fifa.png');
+INSERT INTO association (code, name, founded_year, level, logo_filename) VALUES ('FIFA','Fédération Internationale de Football Association',1904,'federation','fifa.png');

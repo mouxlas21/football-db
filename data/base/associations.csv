@@ -1,21 +1,21 @@
-code,name,level,parent_org_id,logo_filename
-UEFA,Union of European Football Associations,confederation,FIFA,uefa.png
-CONMEBOL,Confederación Sudamericana de Fútbol,confederation,FIFA,conmebol.png
-CONCACAF,"Confederation of North, Central America and Caribbean Association Football",confederation,FIFA,concacaf.png
-AFC,Asian Football Confederation,confederation,FIFA,afc.png
-CAF,Confederation of African Football,confederation,FIFA,caf.png
-OFC,Oceania Football Confederation,confederation,FIFA,ofc.png
-CECAFA,Council for East and Central Africa Football Associations,sub_confederation,CAF,
-UNIFFAC,Central African Football Federations' Union,sub_confederation,CAF,
-UNAF,Union of North African Football,sub_confederation,CAF,
-COSAFA,Council of Southern Africa Football Associations,sub_confederation,CAF,
-WAFU,West African Football Union,sub_confederation,CAF,
-CAFA,Central Asian Football Association,sub_confederation,AFC,
-EAFF,East Asian Football Federation,sub_confederation,AFC,
-AFF,ASEAN Football Federation,sub_confederation,AFC,
-SAFF,South Asian Football Federation,sub_confederation,AFC,
-WAFF,West Asian Football Federation,sub_confederation,AFC,
-CFU,Caribbean Football Union,sub_confederation,CONCACAF,
-UNCAF,Central American Football Union,sub_confederation,CONCACAF,
-NAFU,North American Football Union,sub_confederation,CONCACAF,
-UAFA,Union of Arab Football Associations,sub_confederation,"AFC,CAF",
+code,name,founded_year,level,parent_org_id,logo_filename
+UEFA,Union of European Football Associations,1954,confederation,FIFA,uefa.png
+CONMEBOL,Confederación Sudamericana de Fútbol,1916,confederation,FIFA,conmebol.png
+CONCACAF,"Confederation of North, Central America and Caribbean Association Football",1961,confederation,FIFA,concacaf.png
+AFC,Asian Football Confederation,1954,confederation,FIFA,afc.png
+CAF,Confederation of African Football,1957,confederation,FIFA,caf.png
+OFC,Oceania Football Confederation,1966,confederation,FIFA,ofc.png
+CECAFA,Council for East and Central Africa Football Associations,1973,sub_confederation,CAF,
+UNIFFAC,Central African Football Federations' Union,1959,sub_confederation,CAF,
+UNAF,Union of North African Football,2005,sub_confederation,CAF,
+COSAFA,Council of Southern Africa Football Associations,1983,sub_confederation,CAF,
+WAFU,West African Football Union,1975,sub_confederation,CAF,
+CAFA,Central Asian Football Association,2015,sub_confederation,AFC,
+EAFF,East Asian Football Federation,2002,sub_confederation,AFC,
+AFF,ASEAN Football Federation,1984,sub_confederation,AFC,
+SAFF,South Asian Football Federation,1997,sub_confederation,AFC,
+WAFF,West Asian Football Federation,2001,sub_confederation,AFC,
+CFU,Caribbean Football Union,1978,sub_confederation,CONCACAF,
+UNCAF,Central American Football Union,1990,sub_confederation,CONCACAF,
+NAFU,North American Football Union,1961,sub_confederation,CONCACAF,
+UAFA,Union of Arab Football Associations,1974,sub_confederation,"AFC,CAF",

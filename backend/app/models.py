@@ -37,7 +37,8 @@ class Association(Base):
     ass_id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     code:   Mapped[str] = mapped_column(Text, unique=True, nullable=False)
     name:   Mapped[str] = mapped_column(Text, nullable=False)
-    level:  Mapped[str] = mapped_column(Text, nullable=False)  # 'federation' | 'confederation' | 'association' | 'league_body'
+    founded_year: Mapped[int | None] = mapped_column(SmallInteger)
+    level:  Mapped[str] = mapped_column(Text, nullable=False)  
     logo_filename: Mapped[str | None] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(),)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=datetime.now, server_default=func.now(), onupdate=func.now(),)

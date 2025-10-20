@@ -8,6 +8,7 @@ CountryStatus = Literal['active', 'historical']
 class AssociationCreate(BaseModel):
     code: str
     name: str
+    founded_year: Optional[int] = None
     level: str
     logo_filename: Optional[str] = None
     parents: List[str | int] = []
@@ -16,6 +17,7 @@ class AssociationRead(BaseModel):
     ass_id: int
     code: str
     name: str
+    founded_year: Optional[int] = None
     level: str
     logo_filename: Optional[str] = None
     parent_ass_ids: List[int] = []

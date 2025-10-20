@@ -66,6 +66,7 @@ class AssociationsImporter(BaseImporter):
     def parse_row(self, raw: Dict[str, Any], db: Session) -> Tuple[bool, Dict[str, Any]]:
         code = (raw.pop("code", None) or "").strip().upper()
         name = (raw.pop("name", None) or "").strip()
+        founded_year = _to_int(raw.pop("founded_year", None))
         level = (raw.pop("level", None) or "").strip().lower()
         level = level.replace("-", "_")
 
@@ -85,6 +86,7 @@ class AssociationsImporter(BaseImporter):
         return True, {
             "code": code,
             "name": name,
+            "founded_year": founded_year,
             "level": level,
             "logo_filename": logo_filename,
             "_parent_ids": parent_ids,   # handled in upsert
@@ -98,6 +100,7 @@ class AssociationsImporter(BaseImporter):
             index_elements=["code"],
             set_={
                 "name": kwargs["name"],
+                "founded_year": kwargs["founded_year"],
                 "level": kwargs["level"],
                 "logo_filename": kwargs.get("logo_filename"),
                 "updated_at": func.now(),

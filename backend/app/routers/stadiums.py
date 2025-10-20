@@ -3,7 +3,7 @@ from typing import Dict, Any, List
 import re, unicodedata
 
 from fastapi import APIRouter, Depends, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from sqlalchemy.orm import Session
 from sqlalchemy import select, func
 
@@ -150,7 +150,6 @@ def stadium_detail(request: Request, stadium_id: int, db: Session = Depends(get_
     )
     r = db.execute(stmt).first()
     if not r:
-        from fastapi.responses import RedirectResponse
         return RedirectResponse("/stadiums", status_code=303)
 
     country_slug = slugify_country(r.country_name)
